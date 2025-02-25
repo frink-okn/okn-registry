@@ -11,7 +11,10 @@ tpf: https://frink.apps.renci.org/ldf/fiokg
 frink-options:
   lakefs-repo: fio-kg
   documentation-path: fio-kg
-  contact: torsten.hahmann@maine.edu
+contact:
+  email: torsten.hahmann@maine.edu  
+  github: ""
+  label: ""
 ---
 The FIO KG is part of the SAWGraph project.
 

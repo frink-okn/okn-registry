@@ -11,7 +11,10 @@ tpf: https://frink.apps.renci.org/ldf/climatepub4kg
 frink-options:
   lakefs-repo: climatepub4-kg
   documentation-path: climatepub4-kg
-  contact: edragut@temple.edu
+contact:
+  email: edragut@temple.edu  
+  github: ""
+  label: ""
 ---
 Climate Models KG is a knowledge graph to support evaluation and development of climate models.
 

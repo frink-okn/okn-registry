@@ -10,6 +10,9 @@ tpf: https://frink.apps.renci.org/ldf/semopenalex
 frink-options:
   lakefs-repo: sem-open-alex-kg
   documentation-path: sem-open-alex-kg
-  contact: lew.lefton@gmail.com
+contact:
+  email: lew.lefton@gmail.com  
+  github: ""
+  label: ""
 ---
 This Proto-OKN copy of [SemOpenAlex](https://semopenalex.org/) is provided by the NSF [CollabNext](https://collabnext.io) project.

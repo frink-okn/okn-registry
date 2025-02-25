@@ -11,7 +11,10 @@ tpf: https://frink.apps.renci.org/ldf/hydrologykg
 frink-options:
   lakefs-repo: hydrology-kg
   documentation-path: hydrology-kg
-  contact: torsten.hahmann@maine.edu
+contact:
+  email: torsten.hahmann@maine.edu  
+  github: ""
+  label: ""
 ---
 The Hydrology KG is part of the SAWGraph project.
 

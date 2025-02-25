@@ -11,7 +11,10 @@ tpf: https://frink.apps.renci.org/ldf/ruralkg
 frink-options:
   lakefs-repo: rural-kg
   documentation-path: rural-kg
-  contact: jiaqi.gong@ua.edu
+contact:
+  email: jiaqi.gong@ua.edu  
+  github: ""
+  label: ""
 ---
 Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience.
 

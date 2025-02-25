@@ -11,6 +11,9 @@ tpf: https://frink.apps.renci.org/ldf/geoconnex
 frink-options:
   lakefs-repo: geoconnex
   documentation-path: geoconnex
-  contact: "apadilla@lincolninst.edu"
+contact:
+  email: "apadilla@lincolninst.edu"
+  github: ""
+  label: ""  
 ---
 Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic features to enable seamless water data discovery, access, and collaborative monitoring.

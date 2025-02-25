@@ -11,6 +11,9 @@ tpf: https://frink.apps.renci.org/ldf/securechainkg
 frink-options:
   lakefs-repo: secure-chain-kg
   documentation-path: secure-chain-kg
-  contact: tianyi@purdue.edu
+contact:
+  email: tianyi@purdue.edu  
+  github: ""
+  label: ""
 ---
 SecureChain KG is a knowledge graph for resilient, trustworthy, and secure software supply chains.

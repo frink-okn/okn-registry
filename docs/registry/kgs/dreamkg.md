@@ -11,6 +11,9 @@ tpf: https://frink.apps.renci.org/ldf/dreamkg
 frink-options:
   lakefs-repo: dream-kg
   documentation-path: dream-kg
-  contact: yuzhou.chen@temple.edu
+contact:
+  email: yuzhou.chen@temple.edu  
+  github: ""
+  label: ""
 ---
 Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graph (DREAM-KG) is an Open Knowledge Network to partially address homelessness with consideration of the social, economic, environmental, and political factors.

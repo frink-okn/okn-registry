@@ -11,6 +11,9 @@ tpf: https://frink.apps.renci.org/ldf/wildlifekg
 frink-options:
   lakefs-repo: wildlife-kg
   documentation-path: wildlife-kg
-  contact: xzhang33@nd.edu
+contact:
+  email: xzhang33@nd.edu  
+  github: ""
+  label: ""
 ---
 This project seeks to create a comprehensive, integrative knowledge network for the management of wildlife in the context of climate change

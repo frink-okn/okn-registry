@@ -11,7 +11,10 @@ tpf: https://frink.apps.renci.org/ldf/scales
 frink-options:
   lakefs-repo: scales-kg
   documentation-path: scales-kg
-  contact: apah@gsu.edu
+contact:
+  email: apah@gsu.edu  
+  github: ""
+  label: ""
 ---
 SCALES is an integrated justice platform to connect criminal justice data across data silos.
 

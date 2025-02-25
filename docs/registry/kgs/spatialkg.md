@@ -11,7 +11,10 @@ tpf: https://frink.apps.renci.org/ldf/spatialkg
 frink-options:
   lakefs-repo: spatial-kg
   documentation-path: spatial-kg
-  contact: torsten.hahmann@maine.edu
+contact:
+  email: torsten.hahmann@maine.edu  
+  github: ""
+  label: ""
 ---
 The SAWGraph Spatial KG is part of the SAWGraph project.
 

@@ -11,7 +11,10 @@ tpf: https://frink.apps.renci.org/ldf/biobricks-ice
 frink-options:
   lakefs-repo: biobricks-ice-kg
   documentation-path: biobricks-ice-kg
-  contact: tom@insilica.co
+contact:  
+  email: tom@insilica.co
+  github: ""
+  label: ""
 ---
 Biobricks ICE is an open knowledge graph for cheminformatics and chemical safety.
 

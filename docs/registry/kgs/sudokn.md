@@ -11,7 +11,10 @@ tpf: https://frink.apps.renci.org/ldf/sudokn
 frink-options:
   lakefs-repo: sudokn-kg
   documentation-path: sudokn-kg
-  contact: farhad.ameri@asu.edu
+contact:
+  email: farhad.ameri@asu.edu  
+  github: ""
+  label: ""
 ---
 SUDOKN is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers.
 

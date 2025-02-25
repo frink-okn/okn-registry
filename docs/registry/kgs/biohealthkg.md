@@ -11,7 +11,10 @@ funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
 frink-options:
   lakefs-repo: biohealth
   documentation-path: "biohealth"
-  contact: aidong@virginia.edu
+contact:
+  email: aidong@virginia.edu
+  label: ""
+  github: ""
 ---
 Bio-Health KG is a dynamically-updated open knowledge network for health: integrating biomedical insights with social determinants of health.
 

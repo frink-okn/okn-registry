@@ -11,7 +11,10 @@ tpf: https://frink.apps.renci.org/ldf/sawgraph
 frink-options:
   lakefs-repo: sawgraph-kg
   documentation-path: sawgraph-kg
-  contact: torsten.hahmann@maine.edu
+contact:
+  email: torsten.hahmann@maine.edu  
+  github: ""
+  label: ""
 ---
 SAWGraph is an open knowledge network to monitor and trace PFAS and other contaminants in the nation's food and water systems.
 
