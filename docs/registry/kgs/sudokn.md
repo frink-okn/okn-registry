@@ -8,6 +8,13 @@ homepage: https://projects.engineering.asu.edu/sudokn/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
 sparql: https://frink.apps.renci.org/sudokn/sparql
 tpf: https://frink.apps.renci.org/ldf/sudokn
+frink-options:
+  lakefs-repo: sudokn-kg
+  documentation-path: sudokn-kg
+contact:
+  email: farhad.ameri@asu.edu  
+  github: ""
+  label: ""
 ---
 SUDOKN is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers.
 

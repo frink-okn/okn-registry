@@ -8,6 +8,13 @@ homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://frink.apps.renci.org/sawgraph/sparql
 tpf: https://frink.apps.renci.org/ldf/sawgraph
+frink-options:
+  lakefs-repo: sawgraph-kg
+  documentation-path: sawgraph-kg
+contact:
+  email: torsten.hahmann@maine.edu  
+  github: ""
+  label: ""
 ---
 SAWGraph is an open knowledge network to monitor and trace PFAS and other contaminants in the nation's food and water systems.
 
