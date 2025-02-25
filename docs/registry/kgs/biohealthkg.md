@@ -10,7 +10,7 @@ funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
 #tpf: https://frink.apps.renci.org/ldf/biohealthkg
 frink-options:
   lakefs-repo: biohealth
-  documentation-path: ""
+  documentation-path: "biohealth"
   contact: aidong@virginia.edu
 ---
 Bio-Health KG is a dynamically-updated open knowledge network for health: integrating biomedical insights with social determinants of health.
