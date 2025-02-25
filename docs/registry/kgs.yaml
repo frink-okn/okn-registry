@@ -1,74 +1,74 @@
 kgs:
-- description: Bio-Health KG is a dynamically-updated open knowledge network for health,
+- contact:
+    email: ''
+    github: ''
+    label: ''
+  description: The Urban Flooding Open Knowledge Network (UF-OKN) is an informational
+    infrastructure built using knowledge graphs aiming to extract structured content
+    from the information scattered across open-source geospatial datasets and hydrologic
+    models.
+  frink-options:
+    documentation-path: ufokn-kg
+    lakefs-repo: urban-flooding-open-knowledge-network
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
+  homepage: https://ufokn.com
+  shortname: ufokn
+  sparql: https://frink.apps.renci.org/ufokn/sparql
+  template: overrides/kg.html
+  title: UF-OKN
+  tpf: https://frink.apps.renci.org/ldf/ufokn
+- contact:
+    email: ''
+    github: ''
+    label: ''
+  description: Wikidata is a free and open knowledge base that can be read and edited
+    by both humans and machines
+  homepage: https://www.wikidata.org/
+  shortname: wikidata
+  sparql: https://frink.apps.renci.org/wikidata/sparql
+  template: overrides/kg.html
+  title: Wikidata
+  tpf: https://frink.apps.renci.org/ldf/wikidata
+- contact:
+    email: aidong@virginia.edu
+    github: ''
+    label: ''
+  description: Bio-Health KG is a dynamically-updated open knowledge network for health,
     integrating biomedical insights with social determinants of health.
+  frink-options:
+    documentation-path: biohealth
+    lakefs-repo: biohealth
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
   shortname: biohealthkg
   stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
   template: overrides/kg.html
   title: Bio-Health KG
-- description: Biobricks ICE is an open knowledge graph for cheminformatics and chemical
-    safety.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
-  homepage: https://github.com/biobricks-ai
-  shortname: biobricks-ice
-  sparql: https://frink.apps.renci.org/biobricks-ice/sparql
-  stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
+- contact:
+    email: apadilla@lincolninst.edu
+    github: ''
+    label: ''
+  description: Geoconnex is an open, community-driven knowledge graph linking U.S.
+    hydrologic features to enable seamless water data discovery, access, and collaborative
+    monitoring.
+  frink-options:
+    documentation-path: geoconnex
+    lakefs-repo: geoconnex
+  funding: null
+  homepage: https://docs.geoconnex.us/about/intro
+  shortname: geoconnex
+  sparql: https://frink.apps.renci.org/geoconnex/sparql
   template: overrides/kg.html
-  title: BioBricks ICE
-  tpf: https://frink.apps.renci.org/ldf/biobricks-ice
-- description: Climate Models KG is a knowledge graph to support evaluation and development
-    of climate models.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
-  shortname: climatemodelskg
-  sparql: https://frink.apps.renci.org/climatepub4kg/sparql
-  stats: https://frink.renci.org/kg-stats/climate-kg
-  template: overrides/kg.html
-  title: Climate Models KG
-  tpf: https://frink.apps.renci.org/ldf/climatepub4kg
-- description: Comprehensive information on scientific publications and related entities.
-  homepage: https://semopenalex.org/
-  shortname: semopenalex
-  sparql: https://frink.apps.renci.org/semopenalex/sparql
-  template: overrides/kg.html
-  title: SemOpenAlex
-  tpf: https://frink.apps.renci.org/ldf/semopenalex
-- description: Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs
-    to Address Homelessness With Explainable AI
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
-  homepage: https://dreamkg.com/
-  shortname: dreamkg
-  sparql: https://frink.apps.renci.org/dreamkg/sparql
-  stats: https://frink.renci.org/kg-stats/dream-kg
-  template: overrides/kg.html
-  title: DREAM-KG
-  tpf: https://frink.apps.renci.org/ldf/dreamkg
-- description: Integrated suite of OBO ontologies with precomputed inferred relationships
-  homepage: https://github.com/INCATools/ubergraph/
-  shortname: ubergraph
-  sparql: https://frink.apps.renci.org/ubergraph/sparql
-  template: overrides/kg.html
-  title: Ubergraph
-  tpf: https://frink.apps.renci.org/ldf/ubergraph
-- description: Neighborhood Information KG (NIKG) is a knowledge graph warehouse for
-    neighborhood information.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
-  shortname: nikg
-  sparql: https://frink.apps.renci.org/neighborhood-information-kg/sparql
-  stats: https://frink.renci.org/kg-stats/nikg
-  template: overrides/kg.html
-  title: Neighborhood Information KG
-  tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
-- description: Rural Resilience KG is a cross-domain knowledge graph to integrate
-    health and justice for rural resilience.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
-  shortname: ruralkg
-  sparql: https://frink.apps.renci.org/ruralkg/sparql
-  stats: https://frink.renci.org/kg-stats/rural-kg
-  template: overrides/kg.html
-  title: Rural Resilience KG
-  tpf: https://frink.apps.renci.org/ldf/ruralkg
-- description: SCALES is an integrated justice platform to connect criminal justice
+  title: GEOCONNEX
+  tpf: https://frink.apps.renci.org/ldf/geoconnex
+- contact:
+    email: apah@gsu.edu
+    github: ''
+    label: ''
+  description: SCALES is an integrated justice platform to connect criminal justice
     data across data silos.
+  frink-options:
+    documentation-path: scales-kg
+    lakefs-repo: scales-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
   homepage: https://scales-okn.org/
   shortname: scales
@@ -77,74 +77,15 @@ kgs:
   template: overrides/kg.html
   title: SCALES
   tpf: https://frink.apps.renci.org/ldf/scales
-- description: Safe Agricultural Products and Water Graph (SAWGraph) is an open knowledge
-    network to monitor and trace PFAS and other contaminants in the nation's food
-    and water systems.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: sawgraph
-  sparql: https://frink.apps.renci.org/sawgraph/sparql
-  stats: https://frink.renci.org/kg-stats/sawgraph
-  template: overrides/kg.html
-  title: SAWGraph
-  tpf: https://frink.apps.renci.org/ldf/sawgraph
-- description: Scalable Precision Medicine Open Knowledge Engine (SPOKE) integrates
-    data from NASA's GeneLab and social determinants of health data.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
-  homepage: https://spoke.ucsf.edu
-  shortname: spoke
-  sparql: https://frink.apps.renci.org/spoke/sparql
-  stats: https://frink.renci.org/kg-stats/spoke-kg
-  template: overrides/kg.html
-  title: SPOKE
-  tpf: https://frink.apps.renci.org/ldf/spoke
-- description: SecureChain is a knowledge graph for resilient, trustworthy, and secure
-    software supply chains.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
-  homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
-  shortname: securechainkg
-  sparql: https://frink.apps.renci.org/securechainkg/sparql
-  stats: https://frink.renci.org/kg-stats/secure-chain-kg
-  template: overrides/kg.html
-  title: SecureChain KG
-  tpf: https://frink.apps.renci.org/ldf/securechainkg
-- description: Supply and Demand Open Knowledge Network is an interconnected network
-    of publicly available manufacturing capability data focused on Small and Medium-Sized
-    Manufacturers.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
-  homepage: https://projects.engineering.asu.edu/sudokn/
-  shortname: sudokn
-  sparql: https://frink.apps.renci.org/sudokn/sparql
-  stats: https://frink.renci.org/kg-stats/sudokn
-  template: overrides/kg.html
-  title: SUDOKN
-  tpf: https://frink.apps.renci.org/ldf/sudokn
-- description: The FIO KG is part of the SAWGraph project.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: fiokg
-  sparql: https://frink.apps.renci.org/fiokg/sparql
-  template: overrides/kg.html
-  title: SAWGraph FIO KG
-  tpf: https://frink.apps.renci.org/ldf/fiokg
-- description: The Hydrology KG is part of the SAWGraph project.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: hydrologykg
-  sparql: https://frink.apps.renci.org/hydrologykg/sparql
-  template: overrides/kg.html
-  title: SAWGraph Hydrology KG
-  tpf: https://frink.apps.renci.org/ldf/hydrologykg
-- description: The SAWGraph Spatial KG is part of the SAWGraph project.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: spatialkg
-  sparql: https://frink.apps.renci.org/spatialkg/sparql
-  template: overrides/kg.html
-  title: SAWGraph Spatial KG
-  tpf: https://frink.apps.renci.org/ldf/spatialkg
-- description: The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil
+- contact:
+    email: cli@uta.edu
+    github: ''
+    label: ''
+  description: The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil
     carbon modeling, which is crucial for voluntary carbon markets.
+  frink-options:
+    documentation-path: soc-kg
+    lakefs-repo: soc-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
   homepage: https://idir.uta.edu/sockg/
   shortname: sockg
@@ -153,19 +94,223 @@ kgs:
   template: overrides/kg.html
   title: SOC-KG
   tpf: https://frink.apps.renci.org/ldf/sockg
-- description: The Urban Flooding Open Knowledge Network (UF-OKN) is an informational
-    infrastructure built using knowledge graphs aiming to extract structured content
-    from the information scattered across open-source geospatial datasets and hydrologic
-    models.
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
-  homepage: https://ufokn.com
-  shortname: ufokn
-  sparql: https://frink.apps.renci.org/ufokn/sparql
+- contact:
+    email: edragut@temple.edu
+    github: ''
+    label: ''
+  description: Climate Models KG is a knowledge graph to support evaluation and development
+    of climate models.
+  frink-options:
+    documentation-path: climatepub4-kg
+    lakefs-repo: climatepub4-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
+  shortname: climatemodelskg
+  sparql: https://frink.apps.renci.org/climatepub4kg/sparql
+  stats: https://frink.renci.org/kg-stats/climate-kg
   template: overrides/kg.html
-  title: UF-OKN
-  tpf: https://frink.apps.renci.org/ldf/ufokn
-- description: This project seeks to create a comprehensive, integrative knowledge
+  title: Climate Models KG
+  tpf: https://frink.apps.renci.org/ldf/climatepub4kg
+- contact:
+    email: farhad.ameri@asu.edu
+    github: ''
+    label: ''
+  description: Supply and Demand Open Knowledge Network is an interconnected network
+    of publicly available manufacturing capability data focused on Small and Medium-Sized
+    Manufacturers.
+  frink-options:
+    documentation-path: sudokn-kg
+    lakefs-repo: sudokn-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
+  homepage: https://projects.engineering.asu.edu/sudokn/
+  shortname: sudokn
+  sparql: https://frink.apps.renci.org/sudokn/sparql
+  stats: https://frink.renci.org/kg-stats/sudokn
+  template: overrides/kg.html
+  title: SUDOKN
+  tpf: https://frink.apps.renci.org/ldf/sudokn
+- contact:
+    email: frink-okn@renci.org
+    github: ''
+    label: ''
+  description: Integrated suite of OBO ontologies with precomputed inferred relationships
+  frink-options:
+    documentation-path: ubergraph
+    lakefs-repo: ubergraph
+  homepage: https://github.com/INCATools/ubergraph/
+  shortname: ubergraph
+  sparql: https://frink.apps.renci.org/ubergraph/sparql
+  template: overrides/kg.html
+  title: Ubergraph
+  tpf: https://frink.apps.renci.org/ldf/ubergraph
+- contact:
+    email: jiaqi.gong@ua.edu
+    github: ''
+    label: ''
+  description: Rural Resilience KG is a cross-domain knowledge graph to integrate
+    health and justice for rural resilience.
+  frink-options:
+    documentation-path: rural-kg
+    lakefs-repo: rural-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
+  shortname: ruralkg
+  sparql: https://frink.apps.renci.org/ruralkg/sparql
+  stats: https://frink.renci.org/kg-stats/rural-kg
+  template: overrides/kg.html
+  title: Rural Resilience KG
+  tpf: https://frink.apps.renci.org/ldf/ruralkg
+- contact:
+    email: jinggao@purdue.edu
+    github: ''
+    label: ''
+  description: Neighborhood Information KG (NIKG) is a knowledge graph warehouse for
+    neighborhood information.
+  frink-options:
+    documentation-path: neighborhood-kg
+    lakefs-repo: neighborhood-information-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
+  shortname: nikg
+  sparql: https://frink.apps.renci.org/neighborhood-information-kg/sparql
+  stats: https://frink.renci.org/kg-stats/nikg
+  template: overrides/kg.html
+  title: Neighborhood Information KG
+  tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
+- contact:
+    email: lew.lefton@gmail.com
+    github: ''
+    label: ''
+  description: Comprehensive information on scientific publications and related entities.
+  frink-options:
+    documentation-path: sem-open-alex-kg
+    lakefs-repo: sem-open-alex-kg
+  homepage: https://semopenalex.org/
+  shortname: semopenalex
+  sparql: https://frink.apps.renci.org/semopenalex/sparql
+  template: overrides/kg.html
+  title: SemOpenAlex
+  tpf: https://frink.apps.renci.org/ldf/semopenalex
+- contact:
+    email: sergio.Baranzini@ucsf.edu
+    github: ''
+    label: ''
+  description: Scalable Precision Medicine Open Knowledge Engine (SPOKE) integrates
+    data from NASA's GeneLab and social determinants of health data.
+  frink-options:
+    documentation-path: spoke-kg
+    lakefs-repo: spoke-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
+  homepage: https://spoke.ucsf.edu
+  shortname: spoke
+  sparql: https://frink.apps.renci.org/spoke/sparql
+  stats: https://frink.renci.org/kg-stats/spoke-kg
+  template: overrides/kg.html
+  title: SPOKE
+  tpf: https://frink.apps.renci.org/ldf/spoke
+- contact:
+    email: tianyi@purdue.edu
+    github: ''
+    label: ''
+  description: SecureChain is a knowledge graph for resilient, trustworthy, and secure
+    software supply chains.
+  frink-options:
+    documentation-path: secure-chain-kg
+    lakefs-repo: secure-chain-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
+  homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
+  shortname: securechainkg
+  sparql: https://frink.apps.renci.org/securechainkg/sparql
+  stats: https://frink.renci.org/kg-stats/secure-chain-kg
+  template: overrides/kg.html
+  title: SecureChain KG
+  tpf: https://frink.apps.renci.org/ldf/securechainkg
+- contact:
+    email: tom@insilica.co
+    github: ''
+    label: ''
+  description: Biobricks ICE is an open knowledge graph for cheminformatics and chemical
+    safety.
+  frink-options:
+    documentation-path: biobricks-ice-kg
+    lakefs-repo: biobricks-ice-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai
+  shortname: biobricks-ice
+  sparql: https://frink.apps.renci.org/biobricks-ice/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
+  template: overrides/kg.html
+  title: BioBricks ICE
+  tpf: https://frink.apps.renci.org/ldf/biobricks-ice
+- contact:
+    email: torsten.hahmann@maine.edu
+    github: ''
+    label: ''
+  description: Safe Agricultural Products and Water Graph (SAWGraph) is an open knowledge
+    network to monitor and trace PFAS and other contaminants in the nation's food
+    and water systems.
+  frink-options:
+    documentation-path: sawgraph-kg
+    lakefs-repo: sawgraph-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: sawgraph
+  sparql: https://frink.apps.renci.org/sawgraph/sparql
+  stats: https://frink.renci.org/kg-stats/sawgraph
+  template: overrides/kg.html
+  title: SAWGraph
+  tpf: https://frink.apps.renci.org/ldf/sawgraph
+- contact:
+    email: torsten.hahmann@maine.edu
+    github: ''
+    label: ''
+  description: The FIO KG is part of the SAWGraph project.
+  frink-options:
+    documentation-path: fio-kg
+    lakefs-repo: fio-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: fiokg
+  sparql: https://frink.apps.renci.org/fiokg/sparql
+  template: overrides/kg.html
+  title: SAWGraph FIO KG
+  tpf: https://frink.apps.renci.org/ldf/fiokg
+- contact:
+    email: torsten.hahmann@maine.edu
+    github: ''
+    label: ''
+  description: The Hydrology KG is part of the SAWGraph project.
+  frink-options:
+    documentation-path: hydrology-kg
+    lakefs-repo: hydrology-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: hydrologykg
+  sparql: https://frink.apps.renci.org/hydrologykg/sparql
+  template: overrides/kg.html
+  title: SAWGraph Hydrology KG
+  tpf: https://frink.apps.renci.org/ldf/hydrologykg
+- contact:
+    email: torsten.hahmann@maine.edu
+    github: ''
+    label: ''
+  description: The SAWGraph Spatial KG is part of the SAWGraph project.
+  frink-options:
+    documentation-path: spatial-kg
+    lakefs-repo: spatial-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: spatialkg
+  sparql: https://frink.apps.renci.org/spatialkg/sparql
+  template: overrides/kg.html
+  title: SAWGraph Spatial KG
+  tpf: https://frink.apps.renci.org/ldf/spatialkg
+- contact:
+    email: xzhang33@nd.edu
+    github: ''
+    label: ''
+  description: This project seeks to create a comprehensive, integrative knowledge
     network for the management of wildlife in the context of climate change
+  frink-options:
+    documentation-path: wildlife-kg
+    lakefs-repo: wildlife-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
   homepage: https://sites.nd.edu/kn-wildlife/
   shortname: wildlifekn
@@ -173,11 +318,20 @@ kgs:
   template: overrides/kg.html
   title: Wildlife-KN
   tpf: https://frink.apps.renci.org/ldf/wildlifekg
-- description: Wikidata is a free and open knowledge base that can be read and edited
-    by both humans and machines
-  homepage: https://www.wikidata.org/
-  shortname: wikidata
-  sparql: https://frink.apps.renci.org/wikidata/sparql
+- contact:
+    email: yuzhou.chen@temple.edu
+    github: ''
+    label: ''
+  description: Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs
+    to Address Homelessness With Explainable AI
+  frink-options:
+    documentation-path: dream-kg
+    lakefs-repo: dream-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
+  homepage: https://dreamkg.com/
+  shortname: dreamkg
+  sparql: https://frink.apps.renci.org/dreamkg/sparql
+  stats: https://frink.renci.org/kg-stats/dream-kg
   template: overrides/kg.html
-  title: Wikidata
-  tpf: https://frink.apps.renci.org/ldf/wikidata
+  title: DREAM-KG
+  tpf: https://frink.apps.renci.org/ldf/dreamkg

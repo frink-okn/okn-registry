@@ -10,6 +10,7 @@
 | [climatemodelskg](kgs/climatemodelskg/) | Climate Models KG | Climate Models KG is a knowledge graph to support evaluation and development of climate models. |
 | [dreamkg](kgs/dreamkg/) | DREAM-KG | Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness With Explainable AI |
 | [fiokg](kgs/fiokg/) | SAWGraph FIO KG | The FIO KG is part of the SAWGraph project. |
+| [geoconnex](kgs/geoconnex/) | GEOCONNEX | Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic features to enable seamless water data discovery, access, and collaborative monitoring. |
 | [hydrologykg](kgs/hydrologykg/) | SAWGraph Hydrology KG | The Hydrology KG is part of the SAWGraph project. |
 | [nikg](kgs/nikg/) | Neighborhood Information KG | Neighborhood Information KG (NIKG) is a knowledge graph warehouse for neighborhood information. |
 | [ruralkg](kgs/ruralkg/) | Rural Resilience KG | Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience. |
