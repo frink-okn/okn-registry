@@ -13,7 +13,7 @@ frink-options:
   documentation-path: "biohealth"
 contact:
   email: aidong@virginia.edu
-  label: ""
+  label: "Aidong Zhang"
   github: ""
 ---
 Bio-Health KG is a dynamically-updated open knowledge network for health: integrating biomedical insights with social determinants of health.

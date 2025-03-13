@@ -12,9 +12,9 @@ frink-options:
   lakefs-repo: spoke-kg
   documentation-path: spoke-kg
 contact:
-  email: sergio.Baranzini@ucsf.edu  
+  email: sergio.baranzini@ucsf.edu
   github: ""
-  label: ""
+  label: "Sergio Baranzini"
 ---
 Scalable Precision Medicine Open Knowledge Engine (SPOKE) integrates data from NASA's GeneLab and social determinants of health data. 
 

@@ -14,6 +14,6 @@ frink-options:
 contact:
   email: yuzhou.chen@temple.edu  
   github: ""
-  label: ""
+  label: "Yuzhou Chen"
 ---
 Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graph (DREAM-KG) is an Open Knowledge Network to partially address homelessness with consideration of the social, economic, environmental, and political factors.

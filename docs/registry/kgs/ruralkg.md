@@ -12,9 +12,9 @@ frink-options:
   lakefs-repo: rural-kg
   documentation-path: rural-kg
 contact:
-  email: jiaqi.gong@ua.edu  
+  email: jiaqi.gong@ua.edu
   github: ""
-  label: ""
+  label: "Jiaqi Gong"
 ---
 Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience.
 

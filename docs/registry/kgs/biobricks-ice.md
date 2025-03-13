@@ -14,7 +14,7 @@ frink-options:
 contact:  
   email: tom@insilica.co
   github: ""
-  label: ""
+  label: "Tom Luechtefeld"
 ---
 Biobricks ICE is an open knowledge graph for cheminformatics and chemical safety.
 

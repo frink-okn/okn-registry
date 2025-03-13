@@ -14,7 +14,7 @@ frink-options:
 contact:
   email: torsten.hahmann@maine.edu  
   github: ""
-  label: ""
+  label: "Torsten Hahmann"
 ---
 SAWGraph is an open knowledge network to monitor and trace PFAS and other contaminants in the nation's food and water systems.
 
