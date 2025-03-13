@@ -12,6 +12,22 @@
           <dt>Project homepage</dt>
           <dd><a href="{{ page.meta.homepage }}">{{ page.meta.homepage }}</a></dd>
           {% endif %}
+          {% if page.meta.contact.email %}
+          <dt>Contact</dt>
+          <dd>
+              <a href="mailto:{{ page.meta.contact.email }}">
+                  {% if page.meta.contact.label %}
+                  {{ page.meta.contact.label }}
+                  {% else %}
+                  {{ page.meta.contact.email }}
+                  {% endif %}
+              </a>
+              {% if page.meta.contact.github %}
+              <br>
+              <a href="https://github.com/{{ page.meta.contact.github }}">@{{ page.meta.contact.github }}</a>
+              {% endif %}
+          </dd>
+          {% endif %}
           {% if page.meta.funding %}
           <dt>Funding</dt>
           <dd><a href="{{ page.meta.funding }}">{{ page.meta.funding }}</a></dd>

@@ -11,8 +11,8 @@ frink-options:
   lakefs-repo: ubergraph
   documentation-path: ubergraph
 contact:
-  email: frink-okn@renci.org  
-  github: ""
-  label: ""
+  email: balhoff@renci.org  
+  github: balhoff
+  label: Jim Balhoff
 ---
 [Ubergraph](https://github.com/INCATools/ubergraph) is an RDF triplestore which provides a SPARQL query endpoint to an integrated suite of OBO ontologies, and includes precomputed inferred edges which allow logically complete queries over those ontologies for a subset of OWL. This Proto-OKN copy of the Ubergraph triplestore is provided by the NSF [FRINK](https://frink.renci.org) project.

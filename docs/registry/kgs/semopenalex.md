@@ -13,6 +13,6 @@ frink-options:
 contact:
   email: lew.lefton@gmail.com  
   github: ""
-  label: ""
+  label: "Lew Lefton"
 ---
 This Proto-OKN copy of [SemOpenAlex](https://semopenalex.org/) is provided by the NSF [CollabNext](https://collabnext.io) project.

@@ -12,9 +12,9 @@ frink-options:
   lakefs-repo: urban-flooding-open-knowledge-network
   documentation-path: ufokn-kg  
 contact: 
-  email: ""
+  email: "yeghialt@ucmail.uc.edu"
   github: ""
-  label: ""
+  label: "Lilit Yeghiazarian"
 ---
 UF-OKN is an informational infrastructure built using knowledge graphs aiming to extract structured content from the information scattered across open-source geospatial datasets and hydrologic models.
 

@@ -12,9 +12,9 @@ frink-options:
   lakefs-repo: fio-kg
   documentation-path: fio-kg
 contact:
-  email: torsten.hahmann@maine.edu  
+  email: torsten.hahmann@maine.edu
   github: ""
-  label: ""
+  label: "Torsten Hahmann"
 ---
 The FIO KG is part of the SAWGraph project.
 

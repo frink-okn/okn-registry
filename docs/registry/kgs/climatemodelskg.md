@@ -14,7 +14,7 @@ frink-options:
 contact:
   email: edragut@temple.edu  
   github: ""
-  label: ""
+  label: "Eduard Dragut"
 ---
 Climate Models KG is a knowledge graph to support evaluation and development of climate models.
 

@@ -14,7 +14,7 @@ frink-options:
 contact:
   email: torsten.hahmann@maine.edu  
   github: ""
-  label: ""
+  label: "Torsten Hahmann"
 ---
 The SAWGraph Spatial KG is part of the SAWGraph project.
 

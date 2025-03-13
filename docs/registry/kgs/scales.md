@@ -14,7 +14,7 @@ frink-options:
 contact:
   email: apah@gsu.edu  
   github: ""
-  label: ""
+  label: "Adam Pah"
 ---
 SCALES is an integrated justice platform to connect criminal justice data across data silos.
 
