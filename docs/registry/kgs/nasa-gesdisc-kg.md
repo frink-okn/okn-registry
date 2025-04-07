@@ -12,8 +12,8 @@ frink-options:
   lakefs-repo: nasa-gesdisc
   documentation-path: nasa-gesdisc
 contact:
-  email: lisa@renci.orgLisa Stillwell  
+  email: lisa@renci.org  
   github: ""
-  label: "Armin Mehrabian"
+  label: "Lisa Stillwell"
 ---
 The primary goal of the NASA Knowledge Graph is to bridge scientific publications with the datasets they reference, facilitating deeper insights and research opportunities within NASA's scientific and data ecosystem. By organizing these interconnections within a graph structure, this dataset enables advanced analyses, such as discovering influential datasets, understanding research trends, and exploring scientific collaborations. 
