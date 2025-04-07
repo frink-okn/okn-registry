@@ -171,6 +171,29 @@ kgs:
   title: SemOpenAlex
   tpf: https://frink.apps.renci.org/ldf/semopenalex
 - contact:
+    email: lisa@renci.org
+    github: ''
+    label: Lisa Stillwell
+  description: The NASA Knowledge Graph Dataset is an expansive graph-based dataset
+    designed to integrate and interconnect information about satellite datasets, scientific
+    publications, instruments, platforms, projects, data centers, and science keywords.
+    This knowledge graph is particularly focused on datasets managed by NASA's Distributed
+    Active Archive Centers (DAACs), which are NASA's data repositories responsible
+    for archiving and distributing scientific data. In addition to NASA DAACs, the
+    graph includes datasets from 184 data providers worldwide, including various government
+    agencies and academic institutions.
+  frink-options:
+    documentation-path: nasa-gesdisc
+    lakefs-repo: nasa-gesdisc
+  funding: null
+  homepage: https://disc.gsfc.nasa.gov
+  shortname: nasa-gesdisc-kg
+  sparql: https://frink.apps.renci.org/nasa-gesdisc-kg/sparql
+  stats: https://frink.renci.org/kg-stats/nasa-gesdisc-kg
+  template: overrides/kg.html
+  title: NASA-GESDISC-KG
+  tpf: https://frink.apps.renci.org/ldf/nasa-gesdisc-kg
+- contact:
     email: sergio.baranzini@ucsf.edu
     github: ''
     label: Sergio Baranzini
