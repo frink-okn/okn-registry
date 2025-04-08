@@ -1,0 +1,12 @@
+#+ summary: What is the adrenal gland part of?
+#+ tags:
+#+   - ubergraph
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX adrenal_gland: <http://purl.obolibrary.org/obo/UBERON_0002369>
+PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
+SELECT DISTINCT ?x ?x_label
+WHERE {
+  adrenal_gland: part_of: ?x .
+  ?x rdfs:label ?x_label .
+}

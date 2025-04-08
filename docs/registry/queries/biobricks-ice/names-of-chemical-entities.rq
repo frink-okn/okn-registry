@@ -1,0 +1,23 @@
+#+ summary: List the names of chemical entities and optionally their CAS RN and DSSTOXSID if available
+#+ tags:
+#+   - biobricks-ice
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX CHEMINF: <http://purl.obolibrary.org/obo/CHEMINF_>
+PREFIX CAS: <http://identifiers.org/cas/>
+PREFIX EDAM: <http://edamontology.org/>
+SELECT  ?cas ?dsstox ?name
+WHERE {
+  ?s a CHEMINF:000000 ;
+    rdfs:label ?name .
+  OPTIONAL {
+    ?s EDAM:has_identifier ?dsstox.
+    ?dsstox a CHEMINF:000568. # DSSTOX SID
+  }
+  OPTIONAL {
+    ?s EDAM:has_identifier ?cas .
+    ?cas a CHEMINF:000446 . # CAS RN
+  }
+}
+LIMIT 200

@@ -1,0 +1,18 @@
+#+ summary: Cell types in abdominal organs
+#+ tags:
+#+   - ubergraph
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cell: <http://purl.obolibrary.org/obo/CL_0000000>
+PREFIX organ: <http://purl.obolibrary.org/obo/UBERON_0000062>
+PREFIX abdomen: <http://purl.obolibrary.org/obo/UBERON_0000916>
+PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
+SELECT DISTINCT ?cell ?cell_label ?organ ?organ_label
+WHERE {
+  ?cell rdfs:subClassOf cell: .
+  ?cell part_of: ?organ .
+  ?organ rdfs:subClassOf organ: .
+  ?organ part_of: abdomen: .
+  ?cell rdfs:label ?cell_label .
+  ?organ rdfs:label ?organ_label .
+}

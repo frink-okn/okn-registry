@@ -1,0 +1,12 @@
+#+ summary: List 100 providers in RURAL-KG
+#+ tags:
+#+   - ruralkg
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX treatment: <http://sail.ua.edu/ruralkg/treatmentprovider/>
+SELECT ?provider ?providerName
+WHERE {
+  ?provider rdf:type treatment:TreatmentProvider ;
+    treatment:name ?providerName .
+}
+LIMIT 100
