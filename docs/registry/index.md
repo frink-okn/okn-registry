@@ -6,7 +6,7 @@
 | Shortname | Title | Description |
 | :-------- | :---- | :---------- |
 | [biobricks-ice](kgs/biobricks-ice/) | BioBricks ICE | Biobricks ICE is an open knowledge graph for cheminformatics and chemical safety. |
-| [biohealthkg](kgs/biohealthkg/) | Bio-Health KG | Bio-Health KG is a dynamically-updated open knowledge network for health, integrating biomedical insights with social determinants of health. |
+| [biohealth](kgs/biohealth/) | Bio-Health KG | Bio-Health KG is a dynamically-updated open knowledge network for health, integrating biomedical insights with social determinants of health. |
 | [climatemodelskg](kgs/climatemodelskg/) | Climate Models KG | Climate Models KG is a knowledge graph to support evaluation and development of climate models. |
 | [dreamkg](kgs/dreamkg/) | DREAM-KG | Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness With Explainable AI |
 | [fiokg](kgs/fiokg/) | SAWGraph FIO KG | The FIO KG is part of the SAWGraph project. |
