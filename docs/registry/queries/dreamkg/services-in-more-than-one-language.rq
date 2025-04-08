@@ -1,0 +1,14 @@
+#+ summary: List services that are provided in more than one language
+#+ tags:
+#+   - dreamkg
+
+PREFIX dreamkg: <http://www.semanticweb.org/dreamkg/ijcai/>
+PREFIX sdo: <http://schema.org/>
+SELECT ?service (GROUP_CONCAT(DISTINCT ?languageLabel; separator=" / ") AS ?languages) 
+WHERE {
+  ?service sdo:category ?language .
+  ?language sdo:inCodeSet dreamkg:_CategoryCodeSet_Languages .
+  ?language sdo:codeValue ?languageLabel
+}
+GROUP BY ?service
+HAVING(COUNT(DISTINCT ?languageLabel) > 1)

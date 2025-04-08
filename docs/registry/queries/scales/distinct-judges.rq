@@ -1,0 +1,13 @@
+#+ summary: List distinct judges
+#+ tags:
+#+   - scales
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX j: <http://release.niem.gov/niem/domains/jxdm/7.2/#>
+PREFIX nc: <http://release.niem.gov/niem/niem-core/5.0/>
+SELECT DISTINCT ?judgeName
+WHERE {
+  ?judge rdf:type j:Judge ;
+         nc:PersonFullName ?judgeName .
+}
+LIMIT 100

@@ -1,0 +1,10 @@
+#+ summary: List SCALES ontology event labels
+#+ tags:
+#+   - scales
+
+PREFIX scales: <http://schemas.scales-okn.org/rdf/scales#>
+SELECT DISTINCT ?eventLabel
+WHERE {
+  ?docket scales:OntologyLabel ?eventLabel .
+}
+LIMIT 100

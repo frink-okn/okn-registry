@@ -1,0 +1,12 @@
+#+ summary: List software dependencies of versions of ffmpeg
+#+ tags:
+#+   - securechainkg
+
+PREFIX schema: <http://schema.org/>
+PREFIX sc: <https://w3id.org/secure-chain/>
+SELECT ?vuln ?software {
+  ?software schema:name "ffmpeg" .
+  ?software sc:hasSoftwareVersion ?package .
+  ?package sc:vulnerableTo ?vuln .
+}
+LIMIT 100

@@ -1,0 +1,11 @@
+#+ summary: List services that are available on Saturday or Sunday
+#+ tags:
+#+   - dreamkg
+
+PREFIX dreamkg: <http://www.semanticweb.org/dreamkg/ijcai/>
+PREFIX sdo: <http://schema.org/>
+SELECT DISTINCT ?service {
+  ?service sdo:hoursAvailable ?hours .
+  ?hours sdo:dayOfWeek ?dow .
+  FILTER(?dow IN ("Saturday","Sunday"))
+}

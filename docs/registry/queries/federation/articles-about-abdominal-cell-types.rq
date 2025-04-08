@@ -1,0 +1,22 @@
+#+ summary: Scientific articles in Wikidata about a cell type that Ubergraph says is part of the abdomen
+#+ tags:
+#+   - ubergraph
+#+   - wikidata
+
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wdtn: <http://www.wikidata.org/prop/direct-normalized/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cell: <http://purl.obolibrary.org/obo/CL_0000000>
+PREFIX abdomen: <http://purl.obolibrary.org/obo/UBERON_0000916>
+PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
+SELECT DISTINCT ?cell ?cell_label ?article ?title
+WHERE {
+  ?cell rdfs:subClassOf cell: .
+  ?cell part_of: abdomen: .
+  ?wikicell wdtn:P7963 ?cell .
+  ?article wdt:P921 ?wikicell .
+  ?article rdfs:label ?title .
+  ?cell rdfs:label ?cell_label .
+}
+LIMIT 1000
