@@ -21,10 +21,12 @@ kgs:
     documentation-path: biohealth
     lakefs-repo: biohealth
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
-  shortname: biohealthkg
+  shortname: biohealth
+  sparql: https://frink.apps.renci.org/biohealth/sparql
   stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
   template: overrides/kg.html
   title: Bio-Health KG
+  tpf: https://frink.apps.renci.org/ldf/biohealth
 - contact:
     email: apadilla@lincolninst.edu
     github: ''
