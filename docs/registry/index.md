@@ -6,12 +6,13 @@
 | Shortname | Title | Description |
 | :-------- | :---- | :---------- |
 | [biobricks-ice](kgs/biobricks-ice/) | BioBricks ICE | Biobricks ICE is an open knowledge graph for cheminformatics and chemical safety. |
-| [biohealthkg](kgs/biohealthkg/) | Bio-Health KG | Bio-Health KG is a dynamically-updated open knowledge network for health, integrating biomedical insights with social determinants of health. |
+| [biohealth](kgs/biohealth/) | Bio-Health KG | Bio-Health KG is a dynamically-updated open knowledge network for health, integrating biomedical insights with social determinants of health. |
 | [climatemodelskg](kgs/climatemodelskg/) | Climate Models KG | Climate Models KG is a knowledge graph to support evaluation and development of climate models. |
 | [dreamkg](kgs/dreamkg/) | DREAM-KG | Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness With Explainable AI |
 | [fiokg](kgs/fiokg/) | SAWGraph FIO KG | The FIO KG is part of the SAWGraph project. |
 | [geoconnex](kgs/geoconnex/) | GEOCONNEX | Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic features to enable seamless water data discovery, access, and collaborative monitoring. |
 | [hydrologykg](kgs/hydrologykg/) | SAWGraph Hydrology KG | The Hydrology KG is part of the SAWGraph project. |
+| [nasa-gesdisc-kg](kgs/nasa-gesdisc-kg/) | NASA-GESDISC-KG | The NASA Knowledge Graph Dataset is an expansive graph-based dataset designed to integrate and interconnect information about satellite datasets, scientific publications, instruments, platforms, projects, data centers, and science keywords. This knowledge graph is particularly focused on datasets managed by NASA's Distributed Active Archive Centers (DAACs), which are NASA's data repositories responsible for archiving and distributing scientific data. In addition to NASA DAACs, the graph includes datasets from 184 data providers worldwide, including various government agencies and academic institutions. |
 | [nikg](kgs/nikg/) | Neighborhood Information KG | Neighborhood Information KG (NIKG) is a knowledge graph warehouse for neighborhood information. |
 | [ruralkg](kgs/ruralkg/) | Rural Resilience KG | Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience. |
 | [sawgraph](kgs/sawgraph/) | SAWGraph | Safe Agricultural Products and Water Graph (SAWGraph) is an open knowledge network to monitor and trace PFAS and other contaminants in the nation's food and water systems. |

@@ -1,0 +1,12 @@
+#+ summary: Processes that output glucose
+#+ tags:
+#+   - ubergraph
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX has_output: <http://purl.obolibrary.org/obo/RO_0002234>
+SELECT ?process ?label
+WHERE {
+  ?process has_output: CHEBI:17234 .
+  ?process rdfs:label ?label .
+}

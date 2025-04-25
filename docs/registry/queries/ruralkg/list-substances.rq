@@ -1,0 +1,12 @@
+#+ summary: List 100 substances in RURAL-KG
+#+ tags:
+#+   - ruralkg
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sa: <http://sail.ua.edu/ruralkg/substanceabuse/>
+SELECT ?substance ?name
+WHERE {
+  ?substance rdf:type sa:Substance .
+  ?substance sa:name ?name .
+}
+LIMIT 100
