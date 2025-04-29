@@ -12,9 +12,9 @@ frink-options:
   lakefs-repo: scales-kg
   documentation-path: scales-kg
 contact:
-  email: apah@gsu.edu,danny.e.oneal@gmail.com  
+  email: danny.e.oneal@gmail.com  
   github: ""
-  label: "Adam Pah"
+  label: "Danny O'Neal"
 ---
 SCALES is an integrated justice platform to connect criminal justice data across data silos.
 
