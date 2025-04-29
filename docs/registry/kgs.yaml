@@ -45,23 +45,6 @@ kgs:
   title: GEOCONNEX
   tpf: https://frink.apps.renci.org/ldf/geoconnex
 - contact:
-    email: apah@gsu.edu
-    github: ''
-    label: Adam Pah
-  description: SCALES is an integrated justice platform to connect criminal justice
-    data across data silos.
-  frink-options:
-    documentation-path: scales-kg
-    lakefs-repo: scales-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
-  homepage: https://scales-okn.org/
-  shortname: scales
-  sparql: https://frink.apps.renci.org/scales/sparql
-  stats: https://frink.renci.org/kg-stats/scales-kg
-  template: overrides/kg.html
-  title: SCALES
-  tpf: https://frink.apps.renci.org/ldf/scales
-- contact:
     email: balhoff@renci.org
     github: balhoff
     label: Jim Balhoff
@@ -92,6 +75,23 @@ kgs:
   template: overrides/kg.html
   title: SOC-KG
   tpf: https://frink.apps.renci.org/ldf/sockg
+- contact:
+    email: danny.e.oneal@gmail.com
+    github: ''
+    label: Danny O'Neal
+  description: SCALES is an integrated justice platform to connect criminal justice
+    data across data silos.
+  frink-options:
+    documentation-path: scales-kg
+    lakefs-repo: scales-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
+  homepage: https://scales-okn.org/
+  shortname: scales
+  sparql: https://frink.apps.renci.org/scales/sparql
+  stats: https://frink.renci.org/kg-stats/scales-kg
+  template: overrides/kg.html
+  title: SCALES
+  tpf: https://frink.apps.renci.org/ldf/scales
 - contact:
     email: edragut@temple.edu
     github: ''
