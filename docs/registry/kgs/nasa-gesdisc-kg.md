@@ -11,6 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/nasa-gesdisc-kg
 frink-options:
   lakefs-repo: nasa-gesdisc
   documentation-path: nasa-gesdisc
+  neo4j-conversion-config-path: https://github.com/frink-okn/neo4j-json-to-ttl/blob/main/conf/nasa.yaml
 contact:
   email: lisa@renci.org  
   github: ""
