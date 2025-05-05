@@ -1,0 +1,13 @@
+base: 'https://wildlife.proto-okn.net/kg/'
+mappings:
+  name:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://www.w3.org/2000/01/rdf-schema#label'
+  multimedia:
+    type: 'IRI'
+    iri: 'https://schema.org/subjectOf'
+  dates:
+    type: 'http://www.w3.org/2001/XMLSchema#dateTime'
+    iri: 'http://purl.org/dc/terms/date'
+  observed_times:
+    type: 'http://www.w3.org/2001/XMLSchema#int'
