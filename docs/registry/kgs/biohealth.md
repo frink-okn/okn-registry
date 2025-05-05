@@ -11,7 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/biohealth
 frink-options:
   lakefs-repo: biohealth
   documentation-path: "biohealth"
-  neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/neo4j-json-to-ttl/refs/heads/main/conf/biohealth.yaml
+  neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/biohealth.yaml
 contact:
   email: aidong@virginia.edu
   label: "Aidong Zhang"
