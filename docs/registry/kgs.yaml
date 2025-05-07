@@ -198,6 +198,21 @@ kgs:
   title: NASA-GESDISC-KG
   tpf: https://frink.apps.renci.org/ldf/nasa-gesdisc-kg
 - contact:
+    email: mmorshed@scripps.edu
+    github: ''
+    label: Mahir Morshed
+  description: Mappings using standard RDF predicates between Wikidata entities and
+    external identifiers represented as RDF IRIs
+  frink-options:
+    documentation-path: identifier-mappings
+    lakefs-repo: identifier-mappings
+  homepage: https://www.wikidata.org/
+  shortname: identifier-mappings
+  sparql: https://frink.apps.renci.org/identifier-mappings/sparql
+  template: overrides/kg.html
+  title: ID Mappings
+  tpf: https://frink.apps.renci.org/ldf/identifier-mappings
+- contact:
     email: sergio.baranzini@ucsf.edu
     github: ''
     label: Sergio Baranzini
