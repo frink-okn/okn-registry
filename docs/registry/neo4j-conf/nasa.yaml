@@ -1,0 +1,62 @@
+base: 'https://nasa-gesdisc.proto-okn.net/kg/'
+mappings:
+  globalId:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  doi:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://purl.org/dc/terms/identifier'
+  shortName:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://www.w3.org/2000/01/rdf-schema#label'
+  longName:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://purl.org/dc/terms/subject'
+  abstract:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'https://schema.org/abstract'
+  cmrId:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  daac:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  temporalFrequency:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  temporalExtentStart:
+    type: 'http://www.w3.org/2001/XMLSchema#dateTime'
+    iri: 'http://purl.org/dc/terms/date'
+  temporalExtentEnd:
+    type: 'http://www.w3.org/2001/XMLSchema#dateTime'
+    iri: 'http://purl.org/dc/terms/date'
+  nwCorner_crs:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  nwCorner_latitude:
+    type: 'http://www.w3.org/2001/XMLSchema#decimal'
+  nwCorner_longitude:
+    type: 'http://www.w3.org/2001/XMLSchema#decimal'
+  seCorner_crs:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  seCorner_latitude:
+    type: 'http://www.w3.org/2001/XMLSchema#decimal'
+  seCorner_longitude:
+    type: 'http://www.w3.org/2001/XMLSchema#decimal'
+  landingPageUrl:
+    type: http://www.w3.org/2001/XMLSchema#anyURI
+  pagerank_publication_dataset:
+    type: 'http://www.w3.org/2001/XMLSchema#float'
+  DOI:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://purl.org/dc/terms/identifier'
+  title:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'https://schema.org/title'
+  authors:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  year:
+    type: 'http://www.w3.org/2001/XMLSchema#int'
+    iri: "http://www.w3.org/2006/time#year"
+  name:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://www.w3.org/2000/01/rdf-schema#label'
+  Type:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  url:
+    type: http://www.w3.org/2001/XMLSchema#anyURI

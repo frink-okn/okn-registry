@@ -1,0 +1,106 @@
+base: 'https://biohealthkg.proto-okn.net/kg/'
+identifier_properties:
+  - 'CUI'
+mappings:
+  CUI:
+    type: 'IRI'
+    base: 'http://linkedlifedata.com/resource/umls/id/'
+  Entity:
+    iri: 'https://w3id.org/biolink/vocab/Entity'
+  NAME: 
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://www.w3.org/2000/01/rdf-schema#label'
+  SEMTYPE:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/category'
+    base: 'https://biohealthkg.proto-okn.net/kg/semtype/'
+  DB:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://purl.org/dc/terms/source'
+  ADMINISTERED_TO:
+    type: 'IRI'
+  AFFECTS:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/affects'
+  ASSOCIATED_WITH:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/associated_with'
+  AUGMENTS:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/increases_amount_or_activity_of'
+  CAUSES:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/causes'
+  COEXISTS_WITH:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/coexists_with'
+  compared_with:
+    type: 'IRI'
+  COMPLICATES:
+    type: 'IRI'
+  DIAGNOSES:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/diagnoses'
+  DISRUPTS:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/disrupts'
+  INHIBITS:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/decreases_amount_or_activity_of'
+  INTERACTS_WITH:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/interacts_with'
+  ISA:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/subclass_of'
+  LOCATION_OF:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/location_of'
+  MANIFESTATION_OF:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/manifestation_of'
+  MEASURES:
+    type: 'IRI'
+  METHOD_OF:
+    type: 'IRI'
+  NEG_ADMINISTERED_TO:
+    type: 'IRI'
+  NEG_AFFECTS:
+    type: 'IRI'
+  NEG_AUGMENTS:
+    type: 'IRI'
+  NEG_CAUSES:
+    type: 'IRI'
+  NEG_COEXISTS_WITH:
+    type: 'IRI'
+  NEG_DIAGNOSES:
+    type: 'IRI'
+  NEG_INHIBITS:
+    type: 'IRI'
+  NEG_ISA:
+    type: 'IRI'
+  NEG_PREDISPOSES:
+    type: 'IRI'
+  NEG_PROCESS_OF:
+    type: 'IRI'
+  PART_OF:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/part_of'
+  PRECEDES:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/precedes'
+  PREDISPOSES:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/predisposes_to_condition'
+  PREVENTS:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/preventative_for_condition'
+  PROCESS_OF:
+    type: 'IRI'
+  STIMULATES:
+    type: 'IRI'
+  TREATS:
+    type: 'IRI'
+    iri: 'https://w3id.org/biolink/vocab/treats'
+  USES:
+    type: 'IRI'
