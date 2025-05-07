@@ -3,6 +3,9 @@ template: overrides/kg.html
 shortname: identifier-mappings
 title: ID Mappings
 description: Mappings using standard RDF predicates between Wikidata entities and external identifiers represented as RDF IRIs
+frink-options:
+  lakefs-repo: identifier-mappings
+  documentation-path: "identifier-mappings"
 #stats:
 homepage: https://www.wikidata.org/
 sparql: https://frink.apps.renci.org/identifier-mappings/sparql
