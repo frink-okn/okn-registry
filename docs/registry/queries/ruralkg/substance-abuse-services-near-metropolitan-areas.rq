@@ -1,0 +1,32 @@
+#+ summary: Find treatment providers that offer substance abuse, drug, or alcohol-related services in cities located in non-metropolitan counties that are adjacent to metropolitan areas (RUCC codes 4-6), showing the provider name, city name, county name, RUCC code, and service name.
+#+ tags:
+#+   - ruralkg
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:        <http://www.w3.org/2002/07/owl#>
+PREFIX dcterms:    <http://purl.org/dc/terms/>
+PREFIX adminArea:  <http://sail.ua.edu/ruralkg/administrativearea/>
+PREFIX settlement: <http://sail.ua.edu/ruralkg/settlementtype/>
+PREFIX mhs:        <http://sail.ua.edu/ruralkg/mentalhealthservice/>
+PREFIX treatment:  <http://sail.ua.edu/ruralkg/treatmentprovider/>
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>
+SELECT ?providerName ?cityName ?countyName ?ruccCode ?serviceName
+WHERE {
+  ?provider rdf:type treatment:TreatmentProvider ;
+            treatment:name ?providerName ;
+            treatment:inCity ?city ;
+            treatment:providesService ?service .
+  ?service mhs:name ?serviceName .
+  ?city adminArea:name ?cityName ;
+         adminArea:primaryCounty ?county .
+  ?county adminArea:name ?countyName .
+  ?countyStatus rdf:type settlement:CountyStatus ;
+                settlement:censusCounty ?county ;
+                settlement:hasRUCC ?rucc .
+  ?rucc settlement:code ?ruccCode .
+  VALUES ?ruccCode { "4" "5" "6" } # Non-metro counties adjacent to metro areas
+  FILTER(CONTAINS(LCASE(?serviceName), "substance") || 
+         CONTAINS(LCASE(?serviceName), "drug") || 
+         CONTAINS(LCASE(?serviceName), "alcohol"))
+}
+LIMIT 10

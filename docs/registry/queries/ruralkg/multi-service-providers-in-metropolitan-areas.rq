@@ -1,0 +1,38 @@
+#+ summary: Find treatment providers in metropolitan areas (RUCC codes 1-3) that offer at least 3 different services, showing the provider name, city name, state name, RUCC code, and the total number of services offered, ordered by the number of services in descending order.
+#+ tags:
+#+   - ruralkg
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:        <http://www.w3.org/2002/07/owl#>
+PREFIX dcterms:    <http://purl.org/dc/terms/>
+PREFIX adminArea:  <http://sail.ua.edu/ruralkg/administrativearea/>
+PREFIX settlement: <http://sail.ua.edu/ruralkg/settlementtype/>
+PREFIX mhs:        <http://sail.ua.edu/ruralkg/mentalhealthservice/>
+PREFIX treatment:  <http://sail.ua.edu/ruralkg/treatmentprovider/>
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>
+SELECT ?providerName ?cityName ?stateName ?ruccCode ?serviceCount
+WHERE {
+  ?provider rdf:type treatment:TreatmentProvider ;
+            treatment:name ?providerName ;
+            treatment:inCity ?city .
+  ?city adminArea:name ?cityName ;
+         adminArea:primaryCounty ?county .
+  ?county adminArea:name ?countyName .
+  ?state adminArea:containsPlace ?county ;
+          adminArea:name ?stateName .
+  ?countyStatus rdf:type settlement:CountyStatus ;
+                settlement:censusCounty ?county ;
+                settlement:hasRUCC ?rucc .
+  ?rucc settlement:code ?ruccCode .
+  {
+    SELECT ?provider (COUNT(?service) as ?serviceCount)
+    WHERE {
+      ?provider treatment:providesService ?service
+    }
+    GROUP BY ?provider
+  }
+  VALUES ?ruccCode { "1" "2" "3" } # Metropolitan counties
+  FILTER(?serviceCount >= 3)  # Providers offering at least 3 services
+}
+ORDER BY DESC(?serviceCount)
+LIMIT 10
