@@ -1,0 +1,27 @@
+#+ summary: Find treatment providers located in cities that are in non-metropolitan counties (RUCC codes 6-9), showing the provider name, city name, RUCC code, and its description.
+#+ tags:
+#+   - ruralkg
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:        <http://www.w3.org/2002/07/owl#>
+PREFIX dcterms:    <http://purl.org/dc/terms/>
+PREFIX adminArea:  <http://sail.ua.edu/ruralkg/administrativearea/>
+PREFIX settlement: <http://sail.ua.edu/ruralkg/settlementtype/>
+PREFIX mhs:        <http://sail.ua.edu/ruralkg/mentalhealthservice/>
+PREFIX treatment:  <http://sail.ua.edu/ruralkg/treatmentprovider/>
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>
+SELECT ?providerName ?cityName ?ruccCode ?ruccDescription
+WHERE {
+  ?provider rdf:type treatment:TreatmentProvider ;
+            treatment:name ?providerName ;
+            treatment:inCity ?city .
+  ?city adminArea:name ?cityName ;
+         adminArea:primaryCounty ?county .
+  ?countyStatus rdf:type settlement:CountyStatus ;
+                settlement:censusCounty ?county ;
+                settlement:hasRUCC ?rucc .
+  ?rucc settlement:code ?ruccCode ;
+         settlement:description ?ruccDescription .
+  VALUES ?ruccCode { "6" "7" "8" "9" } # Non-metro counties
+}
+LIMIT 10

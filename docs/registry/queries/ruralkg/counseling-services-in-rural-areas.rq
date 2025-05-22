@@ -1,0 +1,31 @@
+#+ summary: Find treatment providers that offer counseling services in states that have counties with high RUCC codes (7-9, indicating more rural areas), showing the provider name, service name, state name, and RUCC code.
+#+ tags:
+#+   - ruralkg
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:        <http://www.w3.org/2002/07/owl#>
+PREFIX dcterms:    <http://purl.org/dc/terms/>
+PREFIX adminArea:  <http://sail.ua.edu/ruralkg/administrativearea/>
+PREFIX settlement: <http://sail.ua.edu/ruralkg/settlementtype/>
+PREFIX mhs:        <http://sail.ua.edu/ruralkg/mentalhealthservice/>
+PREFIX treatment:  <http://sail.ua.edu/ruralkg/treatmentprovider/>
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>
+SELECT ?providerName ?serviceName ?stateName ?ruccCode
+WHERE {
+  ?provider rdf:type treatment:TreatmentProvider ;
+            treatment:name ?providerName ;
+            treatment:inCity ?city ;
+            treatment:providesService ?service .
+  ?service mhs:name ?serviceName .
+  ?city adminArea:primaryCounty ?county .
+  ?county adminArea:name ?countyName .
+  ?state adminArea:containsPlace ?county ;
+          adminArea:name ?stateName .
+  ?countyStatus rdf:type settlement:CountyStatus ;
+                settlement:censusCounty ?county ;
+                settlement:hasRUCC ?rucc .
+  ?rucc settlement:code ?ruccCode .
+  VALUES ?ruccCode { "7" "8" "9" } # Most rural counties
+  FILTER(CONTAINS(LCASE(?serviceName), "counseling"))
+}
+LIMIT 10
