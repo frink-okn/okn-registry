@@ -11,7 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/wildlifekg
 frink-options:
   lakefs-repo: wildlife-kg
   documentation-path: wildlife-kg
-  neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/neo4j-json-to-ttl/refs/heads/main/conf/wokn.yaml
+  neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
 contact:
   email: xzhang33@nd.edu
   github: ""
