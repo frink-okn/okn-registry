@@ -20,7 +20,7 @@ kgs:
   frink-options:
     documentation-path: biohealth
     lakefs-repo: biohealth
-    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/neo4j-json-to-ttl/refs/heads/main/conf/biohealth.yaml
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/biohealth.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
   shortname: biohealth
   sparql: https://frink.apps.renci.org/biohealth/sparql
@@ -188,7 +188,7 @@ kgs:
   frink-options:
     documentation-path: nasa-gesdisc
     lakefs-repo: nasa-gesdisc
-    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/neo4j-json-to-ttl/refs/heads/main/conf/nasa.yaml
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/nasa.yaml
   funding: null
   homepage: https://disc.gsfc.nasa.gov
   shortname: nasa-gesdisc-kg
@@ -335,7 +335,7 @@ kgs:
   frink-options:
     documentation-path: wildlife-kg
     lakefs-repo: wildlife-kg
-    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/neo4j-json-to-ttl/refs/heads/main/conf/wokn.yaml
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
   homepage: https://sites.nd.edu/kn-wildlife/
   shortname: wildlifekn
