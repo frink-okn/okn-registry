@@ -1,0 +1,10 @@
+#+ summary: List publications and the datasets they use
+#+ tags:
+#+   - nasa-gesdisc
+
+PREFIX schema: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
+SELECT *
+WHERE {
+	?Publication schema:USES_DATASET ?Dataset
+}
+LIMIT 25

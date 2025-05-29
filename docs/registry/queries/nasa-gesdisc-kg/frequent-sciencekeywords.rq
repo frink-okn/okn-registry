@@ -1,0 +1,13 @@
+#+ summary: Find science keywords most frequently cited by publications
+#+ tags:
+#+   - nasa-gesdisc
+
+SELECT ?ScienceKeyword (COUNT (DISTINCT ?Publication) AS ?PublicationCount)
+WHERE { 
+        ?Publication schema:USES_DATASET ?Dataset .
+        ?Dataset schema:HAS_SCIENCEKEYWORD ?Keyword .
+        ?Keyword rdfs:label ?ScienceKeyword
+}
+GROUP BY ?ScienceKeyword
+ORDER BY DESC(?PublicationCount)
+LIMIT 25
