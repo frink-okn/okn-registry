@@ -1,6 +1,6 @@
 #+ summary: List publications and the datasets they use
 #+ tags:
-#+   - nasa-gesdisc
+#+   - nasa-gesdisc-kg
 
 PREFIX schema: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
 SELECT *

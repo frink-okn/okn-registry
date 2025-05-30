@@ -1,6 +1,6 @@
 #+ summary: List datasets and their science keywords
 #+ tags:
-#+   - nasa-gesdisc
+#+   - nasa-gesdisc-kg
 
 PREFIX schema: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
