@@ -1,6 +1,6 @@
 #+ summary: List publications by year and title
 #+ tags:
-#+   - nasa
+#+   - nasa-gesdisc-kg
 
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX dcterms: <http://purl.org/dc/terms/>

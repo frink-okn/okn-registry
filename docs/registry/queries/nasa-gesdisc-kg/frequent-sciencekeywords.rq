@@ -1,7 +1,9 @@
 #+ summary: Find science keywords most frequently cited by publications
 #+ tags:
-#+   - nasa-gesdisc
+#+   - nasa-gesdisc-kg
 
+PREFIX schema: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?ScienceKeyword (COUNT (DISTINCT ?Publication) AS ?PublicationCount)
 WHERE { 
         ?Publication schema:USES_DATASET ?Dataset .

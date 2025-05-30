@@ -1,6 +1,6 @@
 #+ summary: Count how many publications use each dataset
 #+ tags:
-#+   - nasa-gesdisc
+#+   - nasa-gesdisc-kg
 
 PREFIX schema: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
 SELECT ?Dataset (COUNT (DISTINCT ?Publication) AS ?PublicationCount)
