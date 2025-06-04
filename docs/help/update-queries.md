@@ -46,9 +46,9 @@ The example queries displayed in the Frink UI are fetched from the [frink-okn/ok
 ## Important Notes on Caching
 
 * **Browser Caching:** The Frink UI caches requests to GitHub for **24 hours** in the browser's local storage. This means that newly added or updated queries might not appear immediately for all users.
-* **Invalidating Cache (for Maintainers):**
-    * To see changes immediately (primarily for maintainers verifying updates), a "invalidate cache" button is available on the settings page of the Frink UI.
-    * **Deployment Note:** This cache invalidation feature may not yet be deployed on the Sterling instance. To use it, you will need to test on the GitHub Pages deployment: [https://frink-okn.github.io/frink-query-ui](https://frink-okn.github.io/frink-query-ui).
+* **Invalidating Cache (coming soon...):**
+    * To see changes immediately (primarily for maintainers verifying updates), a "invalidate cache" button will be  available on the settings page of the Frink UI.
+    
 
 ## Summary of Process
 
