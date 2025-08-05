@@ -12,9 +12,9 @@ frink-options:
   lakefs-repo: climatepub4-kg
   documentation-path: climatepub4-kg
 contact:
-  email: edragut@temple.edu  
+  email: mustapha.adamu@temple.edu
   github: ""
-  label: "Eduard Dragut"
+  label: "Mustapha Adamu"
 ---
 Climate Models KG is a knowledge graph to support evaluation and development of climate models.
 
