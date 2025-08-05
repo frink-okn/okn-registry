@@ -94,22 +94,6 @@ kgs:
   title: SCALES
   tpf: https://frink.apps.renci.org/ldf/scales
 - contact:
-    email: edragut@temple.edu
-    github: ''
-    label: Eduard Dragut
-  description: Climate Models KG is a knowledge graph to support evaluation and development
-    of climate models.
-  frink-options:
-    documentation-path: climatepub4-kg
-    lakefs-repo: climatepub4-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
-  shortname: climatemodelskg
-  sparql: https://frink.apps.renci.org/climatepub4kg/sparql
-  stats: https://frink.renci.org/kg-stats/climate-kg
-  template: overrides/kg.html
-  title: Climate Models KG
-  tpf: https://frink.apps.renci.org/ldf/climatepub4kg
-- contact:
     email: farhad.ameri@asu.edu
     github: ''
     label: Farhad Ameri
@@ -212,6 +196,22 @@ kgs:
   template: overrides/kg.html
   title: ID Mappings
   tpf: https://frink.apps.renci.org/ldf/identifier-mappings
+- contact:
+    email: mustapha.adamu@temple.edu
+    github: ''
+    label: Mustapha Adamu
+  description: Climate Models KG is a knowledge graph to support evaluation and development
+    of climate models.
+  frink-options:
+    documentation-path: climatepub4-kg
+    lakefs-repo: climatepub4-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
+  shortname: climatemodelskg
+  sparql: https://frink.apps.renci.org/climatepub4kg/sparql
+  stats: https://frink.renci.org/kg-stats/climate-kg
+  template: overrides/kg.html
+  title: Climate Models KG
+  tpf: https://frink.apps.renci.org/ldf/climatepub4kg
 - contact:
     email: sergio.baranzini@ucsf.edu
     github: ''
