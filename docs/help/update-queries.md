@@ -50,7 +50,6 @@ The example queries displayed in the Frink UI are fetched from the [frink-okn/ok
     * To see changes immediately (primarily for maintainers verifying updates), a "invalidate cache" button is available on the settings page of the Frink UI.
     * **Deployment Note:** This cache invalidation feature may not yet be deployed on the Sterling instance. To use it, you will need to test on the GitHub Pages deployment: [https://frink-okn.github.io/frink-query-ui](https://frink-okn.github.io/frink-query-ui).
 
-
 ## Summary of Process
 
 1.  Go to `frink-okn/okn-registry` repository.
