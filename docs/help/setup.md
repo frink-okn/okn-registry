@@ -7,10 +7,15 @@ Theme 1 Teams, there are several ways to upload your graph to the FRINK Landing 
     Key**. You may request these either by direct messaging Yaphet Kebede through our PROTO-OKN Slack channel or by emailing Yaphet at kebedey at
     renci dot org. With your request please provide the name of your dataset, that will be used to create a repository to host your data on lakeFS.
 
-??? warning
+!!! warning "File Upload Size Requirements"
    
-    We are currently trying to resolve a problem with extremely large files (e.g., 100GB or more). If you run into a problem uploading your file and 
-    it is around or over 100GB, please contact Yaphet Kebede at kebedey at renci dot org.
+    Due to technical limits we have some requirements for upload size and tool usage. 
+    For files **less than 1G** clients can use **any of the tools** mentioned on this page to upload files. 
+    For file sizes **greater than 1G** we recommend using **s3 clients (such as rclone 
+    or aws-cli)** as they support chunking large files to small manageable sizes.
+    We also recommend using **no parallelization** (this will ensure that our server is  not overwhelmed).
+
+
 
 ## Repository Structure
 
