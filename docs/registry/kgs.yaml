@@ -207,7 +207,7 @@ kgs:
     lakefs-repo: climatepub4-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
   shortname: climatemodelskg
-  sparql: https://frink.apps.renci.org/climatepub4kg/sparql
+  sparql: https://frink.apps.renci.org/climatemodelskg/sparql
   stats: https://frink.renci.org/kg-stats/climate-kg
   template: overrides/kg.html
   title: Climate Models KG
