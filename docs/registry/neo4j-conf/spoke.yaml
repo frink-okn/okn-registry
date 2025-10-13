@@ -1,0 +1,268 @@
+base: 'https://purl.org/okn/frink/kg/spoke/'
+prefixes:
+  CHEBI:
+  CL: 'http://purl.obolibrary.org/obo/CL_'
+  DOID: 'http://purl.obolibrary.org/obo/DOID_'
+  UBERON: 'http://purl.obolibrary.org/obo/UBERON_'
+  biocyc: 'http://identifiers.org/biocyc/'
+  chembl.compound: 'http://identifiers.org/chembl.compound/'
+  drugbank: 'http://identifiers.org/drugbank/'
+  inchikey: 'http://rdf.ncbi.nlm.nih.gov/pubchem/inchikey/'
+  kegg.compound: 'http://identifiers.org/kegg.compound/'
+  kegg.drug: 'http://identifiers.org/kegg.drug/'
+  pdb.ligand: 'http://identifiers.org/pdb.ligand/'
+  pubchem.compound: 'http://identifiers.org/pubchem.compound/'
+identifier_properties:
+  - 'identifier'
+mappings:
+  abbr:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  act_sources:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  antimicrobial_resistance:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  biovar:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  city_fips:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  code:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  collection_date:
+    type: 'http://www.w3.org/2001/XMLSchema#date'
+  cooccur:
+    type: 'http://www.w3.org/2001/XMLSchema#integer'
+  county_fips:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  data_source:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  data_value:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  data_value_type:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  data_value_unit:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  # Values for 'date' in the KG are not ISO-formatted 
+  date:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  date_type:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  ddi_risk:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  description:
+    iri: 'http://www.w3.org/2000/01/rdf-schema#comment'
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  disease:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  domain:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  enrichment:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  ensembl:
+    type: IRI
+    base: 'http://identifiers.org/ensembl/'
+  fisher:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  genbank_accessions:
+    type: IRI
+    base: 'http://identifiers.org/insdc/'
+  genome_size:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  geolocation:
+    iri: 'http://www.opengis.net/ont/geosparql#asWKT'
+    type: 'http://www.opengis.net/ont/geosparql#wktLiteral'
+  ghe_code:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  # gram_stain could possibly be controlled vocabulary IRIs
+  gram_stain:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  # has_amr_phenotype could be boolean?
+  has_amr_phenotype:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  host_age:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  # host_gender could possibly be controlled vocabulary IRIs
+  host_gender:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  host_health:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  # host_is_human could be boolean?
+  host_is_human:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  host_name:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  identifier:
+    type: 'IRI'
+  # is_resistant could be boolean?
+  is_resistant:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  # is there a standard RDF namespace for these country codes?
+  iso3:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  isolation_country:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  isolation_source:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  laboratory_typing_method:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  laboratory_typing_platform:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  latitude:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  level:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  Linkout:
+    iri: 'http://www.w3.org/2000/01/rdf-schema#seeAlso'
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  location_name:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  longitude:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  lower:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  max_phase:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  measurement_sign:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  measurement_unit:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  measurement_value:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  media:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  mesh_ids:
+    type: 'IRI'
+    base: 'https://id.nlm.nih.gov/mesh/'
+  mesh_list:
+    type: 'IRI'
+    base: 'https://id.nlm.nih.gov/mesh/'
+  method:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  metric_name:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  metrics:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  mortality_per_100k:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  motility:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  name:
+    iri: 'http://www.w3.org/2000/01/rdf-schema#label'
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  odds:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  omim_list:
+    type: IRI
+    base: 'https://omim.org/entry/'
+  oxygen_requirement:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  pathovar:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  percent_of_place_area_in_zip:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  percent_of_zip_area_in_place:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  phase:
+    type: 'http://www.w3.org/2001/XMLSchema#integer'
+  population:
+    type: 'http://www.w3.org/2001/XMLSchema#integer'
+  resistant_phenotype:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  salinity:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  serovar:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  short_question_text:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  smiles:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  source:
+    iri: 'http://purl.org/dc/terms/source'
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  sources:
+    iri: 'http://purl.org/dc/terms/source'
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  sporulation:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  standardized_smiles:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  state:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  # probably has same range as 'state'; could be unified?
+  state_abbr:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  state_desc:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  state_fips:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  state_name:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  strain:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  synonyms:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  temperature_range:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  # contains decimals and NA
+  testing_standard_year:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  topic:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  # could be unified with 'population'
+  total_population:
+    type: 'http://www.w3.org/2001/XMLSchema#integer'
+  type:
+    iri: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    type: IRI
+  unit:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  upper:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  # boolean?
+  usa_isolation_country:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  usability:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  value:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  variable:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  vendor:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  xrefs:
+    iri: 'http://www.geneontology.org/formats/oboInOwl#hasDbXref'
+    type: IRI
+  year:
+    type: 'http://www.w3.org/2001/XMLSchema#gYear'
+  zipcode_type:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  City:
+    iri: 'https://schema.org/City'
+#  Compound:
+  Country:
+    iri: 'https://schema.org/Country'
+  County:
+    iri: 'http://www.wikidata.org/entity/Q28575'
+  Disease:
+    iri: 'https://w3id.org/biolink/vocab/Disease'
+  Division:
+    iri: 'http://www.wikidata.org/entity/Q5284423'
+  Environment:
+    iri: 'https://w3id.org/biolink/vocab/EnvironmentalFeature'
+    # values use local IDs instead of CURIEs, e.g. ENVO_01000405
+    base: 'http://purl.obolibrary.org/obo/'
+  Gene:
+    iri: 'https://w3id.org/biolink/vocab/Gene'
+    base: 'http://www.ncbi.nlm.nih.gov/gene/'
+  Location:
+    iri: 'https://schema.org/AdministrativeArea'
+    base: 'https://purl.org/okn/frink/kg/spoke/location/'
+  Organism:
+    iri: 'https://w3id.org/biolink/vocab/OrganismTaxon'
+    base: 'https://purl.org/okn/frink/kg/spoke/organism/'
+  SDoH:
+    base: 'https://purl.org/okn/frink/kg/spoke/sdoh/'
+  State:
+    iri: 'https://schema.org/State'
+#  SubDivision:
+  Zipcode:
+    iri: 'http://www.wikidata.org/entity/Q37447'
