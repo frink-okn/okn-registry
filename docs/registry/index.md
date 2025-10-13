@@ -5,7 +5,18 @@
 
 | Shortname | Title | Description |
 | :-------- | :---- | :---------- |
-| [biobricks-ice](kgs/biobricks-ice/) | BioBricks ICE | Biobricks ICE is an open knowledge graph for cheminformatics and chemical safety. |
+| [biobricks-aopwiki](kgs/biobricks-aopwiki/) | BioBricks AOP-Wiki | BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways from the AOP-Wiki.
+ |
+| [biobricks-ice](kgs/biobricks-ice/) | BioBricks ICE | BioBricks ICE (Integrated Chemical Environment) is an open knowledge graph for cheminformatics and chemical safety data from EPA's CompTox database.
+ |
+| [biobricks-mesh](kgs/biobricks-mesh/) | BioBricks MeSH | BioBricks MeSH is an open knowledge graph of Medical Subject Headings (MeSH) biomedical vocabulary.
+ |
+| [biobricks-pubchem-annotations](kgs/biobricks-pubchem-annotations/) | BioBricks PubChem Annotations | BioBricks PubChem Annotations is an open knowledge graph of chemical annotations from PubChem.
+ |
+| [biobricks-tox21](kgs/biobricks-tox21/) | BioBricks Tox21 | BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening data.
+ |
+| [biobricks-toxcast](kgs/biobricks-toxcast/) | BioBricks ToxCast | BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput screening data.
+ |
 | [biohealth](kgs/biohealth/) | Bio-Health KG | Bio-Health KG is a dynamically-updated open knowledge network for health, integrating biomedical insights with social determinants of health. |
 | [climatemodelskg](kgs/climatemodelskg/) | Climate Models KG | Climate Models KG is a knowledge graph to support evaluation and development of climate models. |
 | [dreamkg](kgs/dreamkg/) | DREAM-KG | Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness With Explainable AI |
