@@ -1,0 +1,128 @@
+base: 'https://purl.org/okn/frink/kg/spoke-genelab/'
+prefixes:
+  CL: 'http://purl.obolibrary.org/obo/CL_'
+  UBERON: 'http://purl.obolibrary.org/obo/UBERON_'
+  '1': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/1/'
+  '2': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/2/'
+  '3': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/3/'
+  '4': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/4/'
+  '5': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/5/'
+  '6': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/6/'
+  '7': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/7/'
+  '8': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/8/'
+  '9': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/9/'
+  '10': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/10/'
+  '11': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/11/'
+  '12': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/12/'
+  '13': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/13/'
+  '14': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/14/'
+  '15': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/15/'
+  '16': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/16/'
+  '17': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/17/'
+  '18': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/18/'
+  '19': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/19/'
+  'X': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/X/'
+  'Y': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/Y/'
+  'MT': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/MT/'
+  'GL456211.1': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/GL456211.1/'
+identifier_properties:
+  - 'identifier'
+mappings:
+  adj_p_value:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  chromosome:
+    type: IRI
+    base: 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/'
+  description:
+    iri: 'http://www.w3.org/2000/01/rdf-schema#comment'
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  dist_to_feature:
+    type: 'http://www.w3.org/2001/XMLSchema#integer'
+  end:
+    type: 'http://www.w3.org/2001/XMLSchema#integer'
+  end_date:
+    type: 'http://www.w3.org/2001/XMLSchema#date'
+  factor_space_1:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  factor_space_2:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  factors_1:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  factors_2:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  flight_program:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  from:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  identifier:
+    type: 'IRI'
+  in_exon:
+    type: 'http://www.w3.org/2001/XMLSchema#boolean'
+  in_intron:
+    type: 'http://www.w3.org/2001/XMLSchema#boolean'
+  in_promoter:
+    type: 'http://www.w3.org/2001/XMLSchema#boolean'
+  log2fc:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  material_1:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  material_2:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  material_id_1:
+    type: 'IRI'
+  material_id_2:
+    type: 'IRI'
+  material_name_1:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  material_name_2:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  measurement:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  name:
+    iri: 'http://www.w3.org/2000/01/rdf-schema#label'
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  methylation_diff:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  nodeName:
+    iri: 'http://www.w3.org/2000/01/rdf-schema#label'
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  organism:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  project_title:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  project_type:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  q_value:
+    type: 'http://www.w3.org/2001/XMLSchema#double'
+  relationshipName:
+    iri: 'http://www.w3.org/2000/01/rdf-schema#label'
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  start:
+    type: 'http://www.w3.org/2001/XMLSchema#integer'
+  start_date:
+    type: 'http://www.w3.org/2001/XMLSchema#date'
+  space_program:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  symbol:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  taxonomy:
+    base: 'http://purl.obolibrary.org/obo/NCBITaxon_'
+    type: IRI
+  technology:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  to:
+    type: 'http://www.w3.org/2001/XMLSchema#string'
+  Anatomy:
+    iri: 'https://w3id.org/biolink/vocab/AnatomicalEntity'
+  Assay:
+    iri: 'http://purl.obolibrary.org/obo/OBI_0000070'
+  CellType:
+    iri: 'https://w3id.org/biolink/vocab/Cell'
+  Gene:
+    iri: 'https://w3id.org/biolink/vocab/Gene'
+    base: 'http://www.ncbi.nlm.nih.gov/gene/'
+  MGene:
+    iri: 'https://w3id.org/biolink/vocab/Gene'
+    base: 'http://www.ncbi.nlm.nih.gov/gene/'
+  Study:
+    iri: 'https://w3id.org/biolink/vocab/Study'
