@@ -1,6 +1,6 @@
 base: 'https://purl.org/okn/frink/kg/spoke/'
 prefixes:
-  CHEBI:
+  CHEBI: 'http://purl.obolibrary.org/obo/CHEBI_'
   CL: 'http://purl.obolibrary.org/obo/CL_'
   DOID: 'http://purl.obolibrary.org/obo/DOID_'
   UBERON: 'http://purl.obolibrary.org/obo/UBERON_'
