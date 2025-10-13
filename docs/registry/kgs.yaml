@@ -267,19 +267,116 @@ kgs:
     email: tom@insilica.co
     github: ''
     label: Tom Luechtefeld
-  description: Biobricks ICE is an open knowledge graph for cheminformatics and chemical
-    safety.
+  description: 'BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome
+    Pathways from the AOP-Wiki.
+
+    '
+  frink-options:
+    documentation-path: biobricks-aopwiki-kg
+    lakefs-repo: biobricks-aopwiki-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/aopwikirdf-kg
+  shortname: biobricks-aopwiki
+  sparql: https://frink.apps.renci.org/biobricks-aopwiki/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-aopwiki-kg
+  template: overrides/kg.html
+  title: BioBricks AOP-Wiki
+  tpf: https://frink.apps.renci.org/ldf/biobricks-aopwiki
+- contact:
+    email: tom@insilica.co
+    github: ''
+    label: Tom Luechtefeld
+  description: 'BioBricks ICE (Integrated Chemical Environment) is an open knowledge
+    graph for cheminformatics and chemical safety data from EPA''s CompTox database.
+
+    '
   frink-options:
     documentation-path: biobricks-ice-kg
     lakefs-repo: biobricks-ice-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
-  homepage: https://github.com/biobricks-ai
+  homepage: https://github.com/biobricks-ai/biobricks-okg
   shortname: biobricks-ice
   sparql: https://frink.apps.renci.org/biobricks-ice/sparql
   stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
   template: overrides/kg.html
   title: BioBricks ICE
   tpf: https://frink.apps.renci.org/ldf/biobricks-ice
+- contact:
+    email: tom@insilica.co
+    github: ''
+    label: Tom Luechtefeld
+  description: 'BioBricks MeSH is an open knowledge graph of Medical Subject Headings
+    (MeSH) biomedical vocabulary.
+
+    '
+  frink-options:
+    documentation-path: biobricks-mesh-kg
+    lakefs-repo: biobricks-mesh-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/mesh-kg
+  shortname: biobricks-mesh
+  sparql: https://frink.apps.renci.org/biobricks-mesh/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-mesh-kg
+  template: overrides/kg.html
+  title: BioBricks MeSH
+  tpf: https://frink.apps.renci.org/ldf/biobricks-mesh
+- contact:
+    email: tom@insilica.co
+    github: ''
+    label: Tom Luechtefeld
+  description: 'BioBricks PubChem Annotations is an open knowledge graph of chemical
+    annotations from PubChem.
+
+    '
+  frink-options:
+    documentation-path: biobricks-pubchem-annotations-kg
+    lakefs-repo: biobricks-pubchem-annotations-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
+  shortname: biobricks-pubchem-annotations
+  sparql: https://frink.apps.renci.org/biobricks-pubchem-annotations/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-pubchem-annotations-kg
+  template: overrides/kg.html
+  title: BioBricks PubChem Annotations
+  tpf: https://frink.apps.renci.org/ldf/biobricks-pubchem-annotations
+- contact:
+    email: tom@insilica.co
+    github: ''
+    label: Tom Luechtefeld
+  description: 'BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening
+    data.
+
+    '
+  frink-options:
+    documentation-path: biobricks-tox21-kg
+    lakefs-repo: biobricks-tox21-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/biobricks-okg
+  shortname: biobricks-tox21
+  sparql: https://frink.apps.renci.org/biobricks-tox21/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-tox21-kg
+  template: overrides/kg.html
+  title: BioBricks Tox21
+  tpf: https://frink.apps.renci.org/ldf/biobricks-tox21
+- contact:
+    email: tom@insilica.co
+    github: ''
+    label: Tom Luechtefeld
+  description: 'BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput
+    screening data.
+
+    '
+  frink-options:
+    documentation-path: biobricks-toxcast-kg
+    lakefs-repo: biobricks-toxcast-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/biobricks-okg
+  shortname: biobricks-toxcast
+  sparql: https://frink.apps.renci.org/biobricks-toxcast/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-toxcast-kg
+  template: overrides/kg.html
+  title: BioBricks ToxCast
+  tpf: https://frink.apps.renci.org/ldf/biobricks-toxcast
 - contact:
     email: torsten.hahmann@maine.edu
     github: ''
