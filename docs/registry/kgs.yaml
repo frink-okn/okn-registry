@@ -207,11 +207,28 @@ kgs:
     lakefs-repo: climatepub4-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
   shortname: climatemodelskg
-  sparql: https://frink.apps.renci.org/climatepub4kg/sparql
+  sparql: https://frink.apps.renci.org/climatemodelskg/sparql
   stats: https://frink.renci.org/kg-stats/climate-kg
   template: overrides/kg.html
   title: Climate Models KG
   tpf: https://frink.apps.renci.org/ldf/climatepub4kg
+- contact:
+    email: sergio.baranzini@ucsf.edu
+    github: ''
+    label: Sergio Baranzini
+  description: Scalable Precision Medicine Open Knowledge Engine (SPOKE) integrates
+    data from NASA's GeneLab and social determinants of health data.
+  frink-options:
+    documentation-path: spoke-genelab
+    lakefs-repo: spoke-genelab-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
+  homepage: https://spoke.ucsf.edu
+  shortname: spoke-genelab
+  sparql: https://frink.apps.renci.org/spoke-genelab/sparql
+  stats: https://frink.renci.org/kg-stats/spoke-genelab
+  template: overrides/kg.html
+  title: SPOKE GeneLab
+  tpf: https://frink.apps.renci.org/ldf/spoke-genelab
 - contact:
     email: sergio.baranzini@ucsf.edu
     github: ''

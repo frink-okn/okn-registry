@@ -22,6 +22,7 @@
 | [semopenalex](kgs/semopenalex/) | SemOpenAlex | Comprehensive information on scientific publications and related entities. |
 | [sockg](kgs/sockg/) | SOC-KG | The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil carbon modeling, which is crucial for voluntary carbon markets. |
 | [spatialkg](kgs/spatialkg/) | SAWGraph Spatial KG | The SAWGraph Spatial KG is part of the SAWGraph project. |
+| [spoke-genelab](kgs/spoke-genelab/) | SPOKE GeneLab | Scalable Precision Medicine Open Knowledge Engine (SPOKE) integrates data from NASA's GeneLab and social determinants of health data. |
 | [spoke](kgs/spoke/) | SPOKE | Scalable Precision Medicine Open Knowledge Engine (SPOKE) integrates data from NASA's GeneLab and social determinants of health data. |
 | [sudokn](kgs/sudokn/) | SUDOKN | Supply and Demand Open Knowledge Network is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers. |
 | [ubergraph](kgs/ubergraph/) | Ubergraph | Integrated suite of OBO ontologies with precomputed inferred relationships |
