@@ -11,6 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/spoke-genelab
 frink-options:
   lakefs-repo: spoke-genelab-kg
   documentation-path: spoke-genelab
+  neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-genelab.yaml
 contact:
   email: sergio.baranzini@ucsf.edu
   github: ""
