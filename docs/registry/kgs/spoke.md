@@ -1,7 +1,7 @@
 ---
 template: overrides/kg.html
-shortname: spoke
-title: SPOKE
+shortname: spoke-okn
+title: SPOKE-OKN
 description: Scalable Precision Medicine Open Knowledge Engine (SPOKE) integrates data from NASA's GeneLab and social determinants of health data. 
 stats: https://frink.renci.org/kg-stats/spoke-kg
 homepage: https://spoke.ucsf.edu
