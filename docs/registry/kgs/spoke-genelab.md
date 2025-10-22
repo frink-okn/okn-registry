@@ -13,8 +13,7 @@ description: The spoke-genelab KG complements the spokeokn (SPOKE Open Knowledge
   organisms are systematically mapped to their human orthologs, which allows
   integration with SPOKE’s rich network of human biology, including pathways,
   phenotypes, and therapeutic targets. Cell and tissue types are mapped to the
-  Cell (CL) and Uber Anatomy Ontology (UBERON) ontology, respectively.and social
-  determinants of health data.
+  Cell (CL) and Uber Anatomy Ontology (UBERON) ontology, respectively.
 stats: https://frink.renci.org/kg-stats/spoke-genelab
 homepage: https://github.com/BaranziniLab/spoke_genelab
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
