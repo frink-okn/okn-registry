@@ -227,7 +227,7 @@ kgs:
     \ their human orthologs, which allows integration with SPOKE\u2019s rich network\
     \ of human biology, including pathways, phenotypes, and therapeutic targets. Cell\
     \ and tissue types are mapped to the Cell (CL) and Uber Anatomy Ontology (UBERON)\
-    \ ontology, respectively.and social determinants of health data."
+    \ ontology, respectively."
   frink-options:
     documentation-path: spoke-genelab
     lakefs-repo: spoke-genelab-kg
