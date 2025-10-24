@@ -237,7 +237,8 @@ mappings:
     type: 'http://www.w3.org/2001/XMLSchema#string'
   City:
     iri: 'https://schema.org/City'
-#  Compound:
+  Compound:
+    iri: 'https://w3id.org/biolink/vocab/ChemicalEntity'
   Country:
     iri: 'https://schema.org/Country'
   County:
