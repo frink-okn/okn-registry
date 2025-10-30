@@ -255,6 +255,7 @@ kgs:
   frink-options:
     documentation-path: spoke-kg
     lakefs-repo: spoke-kg
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://spoke.ucsf.edu
   shortname: spoke-okn
