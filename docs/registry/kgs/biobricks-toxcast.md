@@ -2,9 +2,7 @@
 template: overrides/kg.html
 shortname: biobricks-toxcast
 title: BioBricks ToxCast
-description: >
-  BioBricks ToxCast is an open knowledge graph for EPA ToxCast
-  high-throughput screening data.
+description: BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput screening data.
 stats: https://frink.renci.org/kg-stats/biobricks-toxcast-kg
 homepage: https://github.com/biobricks-ai/biobricks-okg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
