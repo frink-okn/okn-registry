@@ -255,7 +255,6 @@ kgs:
   frink-options:
     documentation-path: spoke-kg
     lakefs-repo: spoke-kg
-    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://spoke.ucsf.edu
   shortname: spoke-okn
@@ -285,10 +284,8 @@ kgs:
     email: tom@insilica.co
     github: ''
     label: Tom Luechtefeld
-  description: 'BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome
-    Pathways from the AOP-Wiki.
-
-    '
+  description: BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways
+    from the AOP-Wiki.
   frink-options:
     documentation-path: biobricks-aopwiki-kg
     lakefs-repo: biobricks-aopwiki-kg
@@ -304,10 +301,8 @@ kgs:
     email: tom@insilica.co
     github: ''
     label: Tom Luechtefeld
-  description: 'BioBricks ICE (Integrated Chemical Environment) is an open knowledge
-    graph for cheminformatics and chemical safety data from EPA''s CompTox database.
-
-    '
+  description: BioBricks ICE (Integrated Chemical Environment) is an open knowledge
+    graph for cheminformatics and chemical safety data from EPA's CompTox database.
   frink-options:
     documentation-path: biobricks-ice-kg
     lakefs-repo: biobricks-ice-kg
@@ -323,10 +318,8 @@ kgs:
     email: tom@insilica.co
     github: ''
     label: Tom Luechtefeld
-  description: 'BioBricks MeSH is an open knowledge graph of Medical Subject Headings
+  description: BioBricks MeSH is an open knowledge graph of Medical Subject Headings
     (MeSH) biomedical vocabulary.
-
-    '
   frink-options:
     documentation-path: biobricks-mesh-kg
     lakefs-repo: biobricks-mesh-kg
@@ -342,10 +335,8 @@ kgs:
     email: tom@insilica.co
     github: ''
     label: Tom Luechtefeld
-  description: 'BioBricks PubChem Annotations is an open knowledge graph of chemical
+  description: BioBricks PubChem Annotations is an open knowledge graph of chemical
     annotations from PubChem.
-
-    '
   frink-options:
     documentation-path: biobricks-pubchem-annotations-kg
     lakefs-repo: biobricks-pubchem-annotations-kg
@@ -361,10 +352,8 @@ kgs:
     email: tom@insilica.co
     github: ''
     label: Tom Luechtefeld
-  description: 'BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening
+  description: BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening
     data.
-
-    '
   frink-options:
     documentation-path: biobricks-tox21-kg
     lakefs-repo: biobricks-tox21-kg
@@ -380,10 +369,8 @@ kgs:
     email: tom@insilica.co
     github: ''
     label: Tom Luechtefeld
-  description: 'BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput
+  description: BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput
     screening data.
-
-    '
   frink-options:
     documentation-path: biobricks-toxcast-kg
     lakefs-repo: biobricks-toxcast-kg
