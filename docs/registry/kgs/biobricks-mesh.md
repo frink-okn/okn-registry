@@ -2,9 +2,7 @@
 template: overrides/kg.html
 shortname: biobricks-mesh
 title: BioBricks MeSH
-description: >
-  BioBricks MeSH is an open knowledge graph of Medical Subject Headings
-  (MeSH) biomedical vocabulary.
+description: BioBricks MeSH is an open knowledge graph of Medical Subject Headings (MeSH) biomedical vocabulary.
 stats: https://frink.renci.org/kg-stats/biobricks-mesh-kg
 homepage: https://github.com/biobricks-ai/mesh-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
