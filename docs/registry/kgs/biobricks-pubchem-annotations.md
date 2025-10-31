@@ -2,9 +2,7 @@
 template: overrides/kg.html
 shortname: biobricks-pubchem-annotations
 title: BioBricks PubChem Annotations
-description: >
-  BioBricks PubChem Annotations is an open knowledge graph of chemical
-  annotations from PubChem.
+description: BioBricks PubChem Annotations is an open knowledge graph of chemical annotations from PubChem.
 stats: https://frink.renci.org/kg-stats/biobricks-pubchem-annotations-kg
 homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728

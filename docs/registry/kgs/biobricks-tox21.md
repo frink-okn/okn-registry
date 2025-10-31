@@ -2,9 +2,7 @@
 template: overrides/kg.html
 shortname: biobricks-tox21
 title: BioBricks Tox21
-description: >
-  BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening
-  data.
+description: BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening data.
 stats: https://frink.renci.org/kg-stats/biobricks-tox21-kg
 homepage: https://github.com/biobricks-ai/biobricks-okg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728

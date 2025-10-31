@@ -2,9 +2,7 @@
 template: overrides/kg.html
 shortname: biobricks-ice
 title: BioBricks ICE
-description: >
-  BioBricks ICE (Integrated Chemical Environment) is an open knowledge graph
-  for cheminformatics and chemical safety data from EPA's CompTox database.
+description: BioBricks ICE (Integrated Chemical Environment) is an open knowledge graph for cheminformatics and chemical safety data from EPA's CompTox database.
 stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
 homepage: https://github.com/biobricks-ai/biobricks-okg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728

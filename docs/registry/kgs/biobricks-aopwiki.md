@@ -2,9 +2,7 @@
 template: overrides/kg.html
 shortname: biobricks-aopwiki
 title: BioBricks AOP-Wiki
-description: >
-  BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways
-  from the AOP-Wiki.
+description: BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways from the AOP-Wiki.
 stats: https://frink.renci.org/kg-stats/biobricks-aopwiki-kg
 homepage: https://github.com/biobricks-ai/aopwikirdf-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
