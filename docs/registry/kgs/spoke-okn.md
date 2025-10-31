@@ -11,6 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/spoke-okn
 frink-options:
   lakefs-repo: spoke-kg
   documentation-path: spoke-kg
+  neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke.yaml
 contact:
   email: sergio.baranzini@ucsf.edu
   github: ""
