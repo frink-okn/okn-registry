@@ -218,16 +218,7 @@ kgs:
     label: Sergio Baranzini
   description: "The spoke-genelab KG complements the spokeokn (SPOKE Open Knowledge\
     \ Network) KG and is designed to integrate omics data from NASA\u2019s Open Science\
-    \ Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments.\
-    \ The current release includes transcriptional profiling (RNA-Seq, DNA microarray)\
-    \ and epigenomic profiling (DNA methylation) data from model organisms flown in\
-    \ space or maintained as ground controls. Differential expression and methylation\
-    \ signatures are pre-computed to facilitate comparisons between spaceflight and\
-    \ control conditions. Genes from model organisms are systematically mapped to\
-    \ their human orthologs, which allows integration with SPOKE\u2019s rich network\
-    \ of human biology, including pathways, phenotypes, and therapeutic targets. Cell\
-    \ and tissue types are mapped to the Cell (CL) and Uber Anatomy Ontology (UBERON)\
-    \ ontology, respectively."
+    \ Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments."
   frink-options:
     documentation-path: spoke-genelab
     lakefs-repo: spoke-genelab-kg
@@ -246,16 +237,11 @@ kgs:
     label: Sergio Baranzini
   description: The spoke-okn (SPOKE Open Knowledge Network) KG is a comprehensive
     biomedical and environmental health knowledge graph that integrates diverse data
-    across genomics, environmental science, and public health. It encompasses multiple
-    primary entity types, including organisms, geographic locations (from countries
-    to ZIP codes), genes, diseases, chemical compounds, social determinants of health,
-    and environmental contexts. With detailed hierarchical coverage of geographic
-    information, spoke-okn supports spatial analyses of health outcomes, environmental
-    exposures, and socioeconomic factors across a range of geographic scales.
+    across genomics, environmental science, and public health.
   frink-options:
     documentation-path: spoke-kg
     lakefs-repo: spoke-kg
-    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke.yaml
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-okn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://spoke.ucsf.edu
   shortname: spoke-okn
