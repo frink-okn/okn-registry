@@ -1,0 +1,34 @@
+name: Update kg-stats
+on:
+  schedule:
+    - cron: "0 9 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: snakemake/snakemake:v8.27.1
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
+      - name: Update from graph-descriptions
+        run: |
+          git clone --depth 1 https://github.com/frink-okn/graph-descriptions
+          cd graph-descriptions
+          for dir in `ls -d */`; do
+            graph=${dir%%/}
+            sed "s/\](/\](https:\/\/github.com\/frink-okn\/graph-descriptions\/blob\/main\/"${graph}"\//" ${graph}/README.md >../docs/kg-stats/${graph}.md
+          done
+          cd ..
+          rm -rf graph-descriptions
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "🚀 Automatically updated kg-stats from graph-descriptions"
+          committer: "GitHub Action <action@github.com>"
+          title: 'Updated kg-stats from graph-descriptions'
+          body: |
+            Retrieved the latest READMEs for each graph from https://github.com/frink-okn/graph-descriptions
+          assignees: balhoff
