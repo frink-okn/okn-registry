@@ -11,10 +11,12 @@ tpf: https://frink.apps.renci.org/ldf/scales
 frink-options:
   lakefs-repo: scales-kg
   documentation-path: scales-kg
-contact:
-  email: danny.e.oneal@gmail.com / scottgdaniel@gmail.com
-  github: danny-oneal / scottgdaniel
-  label: "Danny O'Neal / Scott Daniel"
+contacts:
+  - email: "danny.e.oneal@gmail.com"
+    github: danny-oneal
+    label: "Danny O'Neal"
+  - email: "scottgdaniel@gmail.com"
+    github: scottgdaniel
+    label: "Scott Daniel"
 ---
 SCALES is an integrated justice platform to connect criminal justice data across data silos.
-
