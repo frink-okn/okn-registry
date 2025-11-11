@@ -1,4 +1,4 @@
-# securechainkg
+# ufokn
 
 
 
@@ -8,140 +8,6 @@
 
 ```mermaid
 erDiagram
-OwlAllDifferent {
-
-}
-OwlAllDisjointClasses {
-
-}
-OwlAllDisjointProperties {
-
-}
-OwlAnnotation {
-
-}
-OwlAnnotationProperty {
-
-}
-OwlAsymmetricProperty {
-
-}
-OwlAxiom {
-
-}
-OwlClass {
-
-}
-OwlDataRange {
-    uri rdfs_seeAlso  
-    string rdfs_label  
-    string rdfs_comment  
-}
-OwlDatatypeProperty {
-
-}
-OwlDeprecatedClass {
-
-}
-OwlDeprecatedProperty {
-
-}
-OwlFunctionalProperty {
-
-}
-OwlInverseFunctionalProperty {
-
-}
-OwlIrreflexiveProperty {
-
-}
-OwlNamedIndividual {
-
-}
-OwlNegativePropertyAssertion {
-
-}
-OwlNothing {
-
-}
-OwlObjectProperty {
-
-}
-OwlOntology {
-
-}
-OwlOntologyProperty {
-
-}
-OwlReflexiveProperty {
-
-}
-OwlRestriction {
-
-}
-OwlSymmetricProperty {
-
-}
-OwlThing {
-
-}
-OwlTransitiveProperty {
-
-}
-RdfAlt {
-
-}
-RdfBag {
-
-}
-RdfCompoundLiteral {
-
-}
-RdfList {
-    string rdfs_label  
-    string rdfs_comment  
-}
-RdfProperty {
-
-}
-RdfSeq {
-
-}
-RdfStatement {
-
-}
-RdfsClass {
-
-}
-RdfsContainer {
-
-}
-RdfsContainerMembershipProperty {
-
-}
-RdfsDatatype {
-    uri rdfs_seeAlso  
-    string rdfs_label  
-    string rdfs_comment  
-}
-RdfsLiteral {
-
-}
-RdfsResource {
-
-}
-SkosCollection {
-
-}
-SkosConcept {
-
-}
-SkosConceptScheme {
-
-}
-SkosOrderedCollection {
-
-}
 Sdos3DModel {
 
 }
@@ -3093,48 +2959,162 @@ SdosXPathType {
 SdosZoo {
 
 }
-SecurechainHardware {
-    string securechain_ecosystem  
-}
-SecurechainHardwareVersion {
-    string securechain_versionName  
-    string securechain_ecosystem  
-}
-SecurechainLicense {
+SkosCollection {
 
 }
-SecurechainSoftware {
-    string securechain_ecosystem  
-    uri sdos_contributor  
-}
-SecurechainSoftwareVersion {
-    string securechain_versionName  
-    string securechain_ecosystem  
-    uri sdos_contributor  
-}
-SecurechainVulnerability {
+SkosConcept {
 
 }
-SecurechainVulnerabilityType {
+SkosConceptScheme {
+
+}
+SkosOrderedCollection {
+
+}
+OwlAllDifferent {
+
+}
+OwlAllDisjointClasses {
+
+}
+OwlAllDisjointProperties {
+
+}
+OwlAnnotation {
+
+}
+OwlAnnotationProperty {
+
+}
+OwlAsymmetricProperty {
+
+}
+OwlAxiom {
+
+}
+OwlClass {
+
+}
+OwlDataRange {
+    uri rdfs_seeAlso  
+    string rdfs_label  
+    string rdfs_comment  
+}
+OwlDatatypeProperty {
+
+}
+OwlDeprecatedClass {
+
+}
+OwlDeprecatedProperty {
+
+}
+OwlFunctionalProperty {
+
+}
+OwlInverseFunctionalProperty {
+
+}
+OwlIrreflexiveProperty {
+
+}
+OwlNamedIndividual {
+
+}
+OwlNegativePropertyAssertion {
+
+}
+OwlNothing {
+
+}
+OwlObjectProperty {
+
+}
+OwlOntology {
+
+}
+OwlOntologyProperty {
+
+}
+OwlReflexiveProperty {
+
+}
+OwlRestriction {
+
+}
+OwlSymmetricProperty {
+
+}
+OwlThing {
+
+}
+OwlTransitiveProperty {
+
+}
+RdfAlt {
+
+}
+RdfBag {
+
+}
+RdfCompoundLiteral {
+
+}
+RdfList {
+    string rdfs_label  
+    string rdfs_comment  
+}
+RdfProperty {
+
+}
+RdfSeq {
+
+}
+RdfStatement {
+
+}
+RdfsClass {
+
+}
+RdfsContainer {
+
+}
+RdfsContainerMembershipProperty {
+
+}
+RdfsDatatype {
+    uri rdfs_seeAlso  
+    string rdfs_label  
+    string rdfs_comment  
+}
+RdfsLiteral {
+
+}
+RdfsResource {
+
+}
+GeoFeature {
+
+}
+GeoFeatureCollection {
+
+}
+GeoGeometry {
+
+}
+GeoGeometryCollection {
+
+}
+GeoSpatialObject {
+
+}
+GeoSpatialObjectCollection {
+
+}
+Kwgos#S2Cell {
 
 }
 
-OwlDataRange ||--|o OwlOntology : "rdfs_isDefinedBy"
-OwlDataRange ||--|o RdfsResource : "rdfs_isDefinedBy"
-OwlDataRange ||--|o RdfsClass : "rdfs_subClassOf"
-OwlDataRange ||--|o RdfsResource : "rdfs_seeAlso"
-OwlDataRange ||--|o RdfsLiteral : "rdfs_label"
-OwlDataRange ||--|o RdfsLiteral : "rdfs_comment"
-RdfList ||--|o RdfsLiteral : "rdfs_label"
-RdfList ||--|o RdfsLiteral : "rdfs_comment"
-RdfList ||--|o OwlOntology : "rdfs_isDefinedBy"
-RdfList ||--|o RdfsResource : "rdfs_isDefinedBy"
-RdfsDatatype ||--|o OwlOntology : "rdfs_isDefinedBy"
-RdfsDatatype ||--|o RdfsResource : "rdfs_isDefinedBy"
-RdfsDatatype ||--|o RdfsClass : "rdfs_subClassOf"
-RdfsDatatype ||--|o RdfsResource : "rdfs_seeAlso"
-RdfsDatatype ||--|o RdfsLiteral : "rdfs_label"
-RdfsDatatype ||--|o RdfsLiteral : "rdfs_comment"
 SdosActionStatusType ||--|o RdfsLiteral : "rdfs_comment"
 SdosActionStatusType ||--|o RdfsLiteral : "rdfs_label"
 SdosAdultOrientedEnumeration ||--|o RdfsLiteral : "rdfs_comment"
@@ -3437,64 +3417,31 @@ SdosWearableSizeSystemEnumeration ||--|o RdfsLiteral : "rdfs_comment"
 SdosWearableSizeSystemEnumeration ||--|o RdfsLiteral : "rdfs_label"
 SdosWearableSizeSystemEnumeration ||--|o SdosURL : "sdos_isPartOf"
 SdosWearableSizeSystemEnumeration ||--|o SdosCreativeWork : "sdos_isPartOf"
-SecurechainHardware ||--|o SecurechainSoftwareVersion : "securechain_hasSoftwareVersion"
-SecurechainHardware ||--|o SdosText : "securechain_ecosystem"
-SecurechainHardware ||--|o SdosText : "sdos_name"
-SecurechainHardware ||--|o SdosComputerLanguage : "sdos_programmingLanguage"
-SecurechainHardware ||--|o SdosText : "sdos_programmingLanguage"
-SecurechainHardware ||--|o SecurechainHardwareVersion : "securechain_hasHardwareVersion"
-SecurechainHardware ||--|o SdosOrganization : "sdos_manufacturer"
-SecurechainHardwareVersion ||--|o SecurechainVulnerability : "securechain_vulnerableTo"
-SecurechainHardwareVersion ||--|o SdosText : "securechain_versionName"
-SecurechainHardwareVersion ||--|o SecurechainSoftwareVersion : "securechain_hasSoftwareVersion"
-SecurechainHardwareVersion ||--|o SdosText : "securechain_ecosystem"
-SecurechainHardwareVersion ||--|o SdosText : "sdos_name"
-SecurechainHardwareVersion ||--|o SdosComputerLanguage : "sdos_programmingLanguage"
-SecurechainHardwareVersion ||--|o SdosText : "sdos_programmingLanguage"
-SecurechainHardwareVersion ||--|o SecurechainHardwareVersion : "securechain_hasHardwareVersion"
-SecurechainHardwareVersion ||--|o SdosOrganization : "sdos_manufacturer"
-SecurechainLicense ||--|o SdosText : "sdos_name"
-SecurechainLicense ||--|o SdosURL : "sdos_identifier"
-SecurechainLicense ||--|o SdosPropertyValue : "sdos_identifier"
-SecurechainLicense ||--|o SdosText : "sdos_identifier"
-SecurechainSoftware ||--|o SecurechainSoftwareVersion : "securechain_hasSoftwareVersion"
-SecurechainSoftware ||--|o SdosText : "securechain_ecosystem"
-SecurechainSoftware ||--|o SdosURL : "sdos_url"
-SecurechainSoftware ||--|o SdosOrganization : "sdos_contributor"
-SecurechainSoftware ||--|o SdosPerson : "sdos_contributor"
-SecurechainSoftware ||--|o SdosText : "sdos_name"
-SecurechainSoftware ||--|o SdosComputerLanguage : "sdos_programmingLanguage"
-SecurechainSoftware ||--|o SdosText : "sdos_programmingLanguage"
-SecurechainSoftware ||--|o SdosURL : "sdos_identifier"
-SecurechainSoftware ||--|o SdosPropertyValue : "sdos_identifier"
-SecurechainSoftware ||--|o SdosText : "sdos_identifier"
-SecurechainSoftware ||--|o SecurechainHardwareVersion : "securechain_hasHardwareVersion"
-SecurechainSoftware ||--|o SdosOrganization : "sdos_manufacturer"
-SecurechainSoftwareVersion ||--|o SdosText : "securechain_versionName"
-SecurechainSoftwareVersion ||--|o SdosURL : "sdos_url"
-SecurechainSoftwareVersion ||--|o SdosURL : "sdos_license"
-SecurechainSoftwareVersion ||--|o SdosCreativeWork : "sdos_license"
-SecurechainSoftwareVersion ||--|o SecurechainSoftwareVersion : "securechain_dependsOn"
-SecurechainSoftwareVersion ||--|o SecurechainVulnerability : "securechain_vulnerableTo"
-SecurechainSoftwareVersion ||--|o SecurechainSoftwareVersion : "securechain_hasSoftwareVersion"
-SecurechainSoftwareVersion ||--|o SdosText : "securechain_ecosystem"
-SecurechainSoftwareVersion ||--|o SdosOrganization : "sdos_contributor"
-SecurechainSoftwareVersion ||--|o SdosPerson : "sdos_contributor"
-SecurechainSoftwareVersion ||--|o SdosText : "sdos_name"
-SecurechainSoftwareVersion ||--|o SdosComputerLanguage : "sdos_programmingLanguage"
-SecurechainSoftwareVersion ||--|o SdosText : "sdos_programmingLanguage"
-SecurechainSoftwareVersion ||--|o SdosURL : "sdos_identifier"
-SecurechainSoftwareVersion ||--|o SdosPropertyValue : "sdos_identifier"
-SecurechainSoftwareVersion ||--|o SdosText : "sdos_identifier"
-SecurechainSoftwareVersion ||--|o SecurechainHardwareVersion : "securechain_hasHardwareVersion"
-SecurechainSoftwareVersion ||--|o SdosOrganization : "sdos_manufacturer"
-SecurechainVulnerability ||--|o SdosURL : "sdos_identifier"
-SecurechainVulnerability ||--|o SdosPropertyValue : "sdos_identifier"
-SecurechainVulnerability ||--|o SdosText : "sdos_identifier"
-SecurechainVulnerability ||--|o SecurechainVulnerabilityType : "securechain_vulnerabilityType"
-SecurechainVulnerabilityType ||--|o SdosURL : "sdos_identifier"
-SecurechainVulnerabilityType ||--|o SdosPropertyValue : "sdos_identifier"
-SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
+OwlDataRange ||--|o OwlOntology : "rdfs_isDefinedBy"
+OwlDataRange ||--|o RdfsResource : "rdfs_isDefinedBy"
+OwlDataRange ||--|o RdfsClass : "rdfs_subClassOf"
+OwlDataRange ||--|o RdfsResource : "rdfs_seeAlso"
+OwlDataRange ||--|o RdfsLiteral : "rdfs_label"
+OwlDataRange ||--|o RdfsLiteral : "rdfs_comment"
+RdfList ||--|o RdfsLiteral : "rdfs_label"
+RdfList ||--|o RdfsLiteral : "rdfs_comment"
+RdfList ||--|o OwlOntology : "rdfs_isDefinedBy"
+RdfList ||--|o RdfsResource : "rdfs_isDefinedBy"
+RdfsDatatype ||--|o OwlOntology : "rdfs_isDefinedBy"
+RdfsDatatype ||--|o RdfsResource : "rdfs_isDefinedBy"
+RdfsDatatype ||--|o RdfsClass : "rdfs_subClassOf"
+RdfsDatatype ||--|o RdfsResource : "rdfs_seeAlso"
+RdfsDatatype ||--|o RdfsLiteral : "rdfs_label"
+RdfsDatatype ||--|o RdfsLiteral : "rdfs_comment"
+Kwgos#S2Cell ||--|o SdosTextObject : "sdos_description"
+Kwgos#S2Cell ||--|o SdosText : "sdos_description"
+Kwgos#S2Cell ||--|o SdosText : "sdos_name"
+Kwgos#S2Cell ||--|o SdosURL : "sdos_additionalType"
+Kwgos#S2Cell ||--|o SdosText : "sdos_additionalType"
+Kwgos#S2Cell ||--|o SdosNumber : "sdos_value"
+Kwgos#S2Cell ||--|o SdosStructuredValue : "sdos_value"
+Kwgos#S2Cell ||--|o SdosBoolean : "sdos_value"
+Kwgos#S2Cell ||--|o SdosText : "sdos_value"
 
 ```
 
@@ -3503,9 +3450,9 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 ## Imports
 
 
+* okns:geo
 * okns:sdo
 * linkml:types
-* okns:extended_types
 
 
 
@@ -3513,36 +3460,10 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 
 | Class | Description | Occurrences |
 | --- | --- | --- |
-| [SdosThing](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosThing.md) | The most generic type of item.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosCreativeWork](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosCreativeWork.md) | The most generic kind of creative work, including books, movies, photographs, software programs, etc.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosSoftwareApplication](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosSoftwareApplication.md) | A software application.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainSoftware](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainSoftware.md) | None<br/>| 803769 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainSoftwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainSoftwareVersion.md) | None<br/>| 8593149 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainLicense](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainLicense.md) | None<br/>| 294 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosIntangible](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosIntangible.md) | A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainVulnerability](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainVulnerability.md) | None<br/>| 259806 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainVulnerabilityType](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainVulnerabilityType.md) | None<br/>| 445 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosProduct](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosProduct.md) | Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainHardware](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainHardware.md) | None<br/>| 53378 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainHardwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainHardwareVersion.md) | None<br/>| 57295 | 
+| [Kwgos#S2Cell](https://github.com/frink-okn/graph-descriptions/blob/main/ufokn-kg/classes/Kwgos#S2Cell.md) | None<br/>| 11717916 | 
 
 
 
-
-
-## Slots
-
-| Slot | Description | Occurrences |
-| --- | --- | --- |
-| [securechain_dependsOn](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_dependsOn.md) | <br/>| 29787726 |
-| [securechain_discover](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_discover.md) | <br/>|  |
-| [securechain_ecosystem](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_ecosystem.md) | <br/>| 803769 |
-| [securechain_hasHardwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_hasHardwareVersion.md) | <br/>| 57295 |
-| [securechain_hasSoftwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_hasSoftwareVersion.md) | <br/>| 8593149 |
-| [securechain_operatesOn](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_operatesOn.md) | <br/>|  |
-| [securechain_versionName](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_versionName.md) | <br/>| 8650443 |
-| [securechain_vulnerabilityType](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_vulnerabilityType.md) | <br/>| 177404 |
-| [securechain_vulnerableTo](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_vulnerableTo.md) | <br/>| 835140 |
 
 
 
@@ -3554,11 +3475,12 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 
 ## IRI prefixes
 
+* geo: http://www.opengis.net/ont/geosparql#
+* kwgos: https://stko-kwg.geog.ucsb.edu/lod/ontology
 * linkml: https://w3id.org/linkml/
 * okn: https://purl.org/okn/
 * okns: https://purl.org/okn/schema/
-* owl: http://www.w3.org/2002/07/owl#
-* rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-* rdfs: http://www.w3.org/2000/01/rdf-schema#
 * sdos: https://schema.org/
-* securechain: https://w3id.org/secure-chain/
+* xsd: http://www.w3.org/2001/XMLSchema#
+* shex: http://www.w3.org/ns/shex#
+* schema: http://schema.org/
