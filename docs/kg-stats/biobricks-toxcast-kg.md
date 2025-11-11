@@ -1,4 +1,4 @@
-# biobricks-ice
+# biobricks-toxcast
 
 
 
@@ -241,31 +241,15 @@ DctStandard {
 
 }
 Bao0000015 {
-    string niehs_throughMechanisticTarget  
-    string niehs_assay_tissue  
-    string niehs_mayInformOn  
     string rdfs_label  
-    string niehs_assay_species  
-    string niehs_assay_invitro_assay_format  
-    string niehs_assay_source  
+    string https___comptox.epa.gov_property_assayID  
 }
 Bao0000040 {
 
 }
 Bao0000179 {
-    string obo_ExO_0000055  
     string rdfs_label  
-    string semsci_000221  
     string semsci_000300  
-}
-Bao0003064 {
-
-}
-EdamData1027 {
-
-}
-EdamData1181 {
-
 }
 HttpsW3id.orgBiolinkVocabChemicalEntity {
     string rdfs_label  
@@ -307,13 +291,8 @@ DctAgentClass ||--|o RdfsLiteral : "rdfs_comment"
 DctAgentClass ||--|o RdfsLiteral : "dct_issued"
 DctAgentClass ||--|o OwlOntology : "rdfs_isDefinedBy"
 DctAgentClass ||--|o RdfsResource : "rdfs_isDefinedBy"
-Bao0000015 ||--|o EdamData1027 : "niehs_assay_entrez_gene_id"
-Bao0000015 ||--|o RdfsLiteral : "rdfs_label"
-Bao0000015 ||--|o Bao0003064 : "umls_C1708327"
-Bao0000015 ||--|o EdamData1181 : "umls_C1708327"
-Bao0000015 ||--|o Bao0003064 : "niehs_throughMechanisticTarget_NCIm"
-Bao0000015 ||--|o EdamData1181 : "niehs_throughMechanisticTarget_NCIm"
 Bao0000015 ||--|o Bao0000040 : "bao_0000209"
+Bao0000015 ||--|o RdfsLiteral : "rdfs_label"
 Bao0000040 ||--|o Bao0000179 : "obo_OBI_0000299"
 Bao0000040 ||--|o HttpsW3id.orgBiolinkVocabChemicalEntity : "obo_RO_0000057"
 Bao0000040 ||--|o OboCHEMINF000000 : "obo_RO_0000057"
@@ -322,12 +301,12 @@ Bao0000179 ||--|o HttpsW3id.orgBiolinkVocabChemicalEntity : "obo_IAO_0000136"
 Bao0000179 ||--|o OboCHEMINF000000 : "obo_IAO_0000136"
 HttpsW3id.orgBiolinkVocabChemicalEntity ||--|o OboCHEMINF000568 : "edam_has_identifier"
 HttpsW3id.orgBiolinkVocabChemicalEntity ||--|o OboCHEMINF000446 : "edam_has_identifier"
-HttpsW3id.orgBiolinkVocabChemicalEntity ||--|o Bao0000040 : "obo_RO_0000056"
 HttpsW3id.orgBiolinkVocabChemicalEntity ||--|o RdfsLiteral : "rdfs_label"
+HttpsW3id.orgBiolinkVocabChemicalEntity ||--|o Bao0000040 : "obo_RO_0000056"
 OboCHEMINF000000 ||--|o OboCHEMINF000568 : "edam_has_identifier"
 OboCHEMINF000000 ||--|o OboCHEMINF000446 : "edam_has_identifier"
-OboCHEMINF000000 ||--|o Bao0000040 : "obo_RO_0000056"
 OboCHEMINF000000 ||--|o RdfsLiteral : "rdfs_label"
+OboCHEMINF000000 ||--|o Bao0000040 : "obo_RO_0000056"
 OboCHEMINF000446 ||--|o RdfsLiteral : "rdfs_label"
 OboCHEMINF000568 ||--|o RdfsLiteral : "rdfs_label"
 
@@ -339,8 +318,8 @@ OboCHEMINF000568 ||--|o RdfsLiteral : "rdfs_label"
 
 
 * linkml:types
-* okns:dc
 * okns:extended_types
+* okns:dc
 * okns:owl-rdf-rdfs
 
 
@@ -349,16 +328,13 @@ OboCHEMINF000568 ||--|o RdfsLiteral : "rdfs_label"
 
 | Class | Description | Occurrences |
 | --- | --- | --- |
-| [Bao0000015](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/Bao0000015.md) | None<br/>| 2063 | 
-| [Bao0000040](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/Bao0000040.md) | None<br/>| 203755 | 
-| [Bao0000179](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/Bao0000179.md) | None<br/>| 3020705 | 
-| [Bao0003064](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/Bao0003064.md) | None<br/>| 59 | 
-| [EdamData1027](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/EdamData1027.md) | None<br/>| 526 | 
-| [EdamData1181](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/EdamData1181.md) | None<br/>| 59 | 
-| [HttpsW3id.orgBiolinkVocabChemicalEntity](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/HttpsW3id.orgBiolinkVocabChemicalEntity.md) | None<br/>| 206543 | 
-| [OboCHEMINF000000](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/OboCHEMINF000000.md) | None<br/>| 206543 | 
-| [OboCHEMINF000446](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/OboCHEMINF000446.md) | None<br/>| 538147 | 
-| [OboCHEMINF000568](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/classes/OboCHEMINF000568.md) | None<br/>| 538131 | 
+| [Bao0000015](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/classes/Bao0000015.md) | None<br/>| 2205 | 
+| [Bao0000040](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/classes/Bao0000040.md) | None<br/>| 3344010 | 
+| [Bao0000179](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/classes/Bao0000179.md) | None<br/>| 3344010 | 
+| [HttpsW3id.orgBiolinkVocabChemicalEntity](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/classes/HttpsW3id.orgBiolinkVocabChemicalEntity.md) | None<br/>| 9542 | 
+| [OboCHEMINF000000](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/classes/OboCHEMINF000000.md) | None<br/>| 9542 | 
+| [OboCHEMINF000446](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/classes/OboCHEMINF000446.md) | None<br/>| 9542 | 
+| [OboCHEMINF000568](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/classes/OboCHEMINF000568.md) | None<br/>| 9542 | 
 
 
 
@@ -368,24 +344,14 @@ OboCHEMINF000568 ||--|o RdfsLiteral : "rdfs_label"
 
 | Slot | Description | Occurrences |
 | --- | --- | --- |
-| [bao_0000209](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/bao_0000209.md) | <br/>| 9641 |
-| [edam_has_identifier](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/edam_has_identifier.md) | <br/>| 413086 |
-| [niehs_assay_entrez_gene_id](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/niehs_assay_entrez_gene_id.md) | <br/>| 1814 |
-| [niehs_assay_invitro_assay_format](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/niehs_assay_invitro_assay_format.md) | <br/>| 1814 |
-| [niehs_assay_source](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/niehs_assay_source.md) | <br/>| 1814 |
-| [niehs_assay_species](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/niehs_assay_species.md) | <br/>| 1814 |
-| [niehs_assay_tissue](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/niehs_assay_tissue.md) | <br/>| 1814 |
-| [niehs_mayInformOn](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/niehs_mayInformOn.md) | <br/>| 3570 |
-| [niehs_throughMechanisticTarget](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/niehs_throughMechanisticTarget.md) | <br/>| 2753 |
-| [niehs_throughMechanisticTarget_NCIm](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/niehs_throughMechanisticTarget_NCIm.md) | <br/>| 3015 |
-| [obo_ExO_0000055](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/obo_ExO_0000055.md) | <br/>| 135113 |
-| [obo_IAO_0000136](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/obo_IAO_0000136.md) | <br/>| 3020705 |
-| [obo_OBI_0000299](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/obo_OBI_0000299.md) | <br/>| 3021699 |
-| [obo_RO_0000056](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/obo_RO_0000056.md) | <br/>| 2306975 |
-| [obo_RO_0000057](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/obo_RO_0000057.md) | <br/>| 2306975 |
-| [semsci_000221](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/semsci_000221.md) | <br/>| 3020705 |
-| [semsci_000300](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/semsci_000300.md) | <br/>| 3021184 |
-| [umls_C1708327](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-ice-kg/slots/umls_C1708327.md) | <br/>| 3015 |
+| [bao_0000209](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/slots/bao_0000209.md) | <br/>| 3344010 |
+| [edam_has_identifier](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/slots/edam_has_identifier.md) | <br/>| 19084 |
+| [https___comptox.epa.gov_property_assayID](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/slots/https___comptox.epa.gov_property_assayID.md) | <br/>| 2205 |
+| [obo_IAO_0000136](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/slots/obo_IAO_0000136.md) | <br/>| 3344010 |
+| [obo_OBI_0000299](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/slots/obo_OBI_0000299.md) | <br/>| 3344010 |
+| [obo_RO_0000056](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/slots/obo_RO_0000056.md) | <br/>| 3344010 |
+| [obo_RO_0000057](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/slots/obo_RO_0000057.md) | <br/>| 3344010 |
+| [semsci_000300](https://github.com/frink-okn/graph-descriptions/blob/main/biobricks-toxcast-kg/slots/semsci_000300.md) | <br/>| 3380300 |
 
 
 
@@ -401,10 +367,8 @@ OboCHEMINF000568 ||--|o RdfsLiteral : "rdfs_label"
 * dc: http://purl.org/dc/elements/1.1/
 * edam: http://edamontology.org/
 * linkml: https://w3id.org/linkml/
-* niehs: https://ice.ntp.niehs.nih.gov/property/
 * obo: http://purl.obolibrary.org/obo/
 * okn: https://purl.org/okn/
 * okns: https://purl.org/okn/schema/
 * rdfs: http://www.w3.org/2000/01/rdf-schema#
 * semsci: http://semanticscience.org/resource/SIO_
-* umls: https://identifiers.org/umls:
