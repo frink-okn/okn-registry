@@ -1,4 +1,4 @@
-base: 'https://purl.org/okn/frink/kg/spoke/'
+base: 'https://purl.org/okn/frink/kg/spoke-okn/'
 prefixes:
   CHEBI: 'http://purl.obolibrary.org/obo/CHEBI_'
   CL: 'http://purl.obolibrary.org/obo/CL_'
@@ -256,12 +256,12 @@ mappings:
     base: 'http://www.ncbi.nlm.nih.gov/gene/'
   Location:
     iri: 'https://schema.org/AdministrativeArea'
-    base: 'https://purl.org/okn/frink/kg/spoke/location/'
+    base: 'https://purl.org/okn/frink/kg/spoke-okn/location/'
   Organism:
     iri: 'https://w3id.org/biolink/vocab/OrganismTaxon'
-    base: 'https://purl.org/okn/frink/kg/spoke/organism/'
+    base: 'https://purl.org/okn/frink/kg/spoke-okn/organism/'
   SDoH:
-    base: 'https://purl.org/okn/frink/kg/spoke/sdoh/'
+    base: 'https://purl.org/okn/frink/kg/spoke-okn/sdoh/'
   State:
     iri: 'https://schema.org/State'
 #  SubDivision:
