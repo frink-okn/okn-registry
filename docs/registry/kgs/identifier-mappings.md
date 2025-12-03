@@ -6,7 +6,7 @@ description: Mappings using standard RDF predicates between Wikidata entities an
 frink-options:
   lakefs-repo: identifier-mappings
   documentation-path: "identifier-mappings"
-#stats:
+stats: https://frink.renci.org/kg-stats/identifier-mappings
 homepage: https://www.wikidata.org/
 sparql: https://frink.apps.renci.org/identifier-mappings/sparql
 tpf: https://frink.apps.renci.org/ldf/identifier-mappings

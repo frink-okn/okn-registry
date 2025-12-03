@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: geoconnex
 title: GEOCONNEX
 description: Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic features to enable seamless water data discovery, access, and collaborative monitoring.
-# stats: 
+stats: https://frink.renci.org/kg-stats/geoconnex
 homepage: https://docs.geoconnex.us/about/intro
 funding: 
 sparql: https://frink.apps.renci.org/geoconnex/sparql
