@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: hydrologykg
 title: SAWGraph Hydrology KG
 description: The Hydrology KG is the part of the SAWGraph project that describes streams, waterbodies and wells and their locations.
-# stats:
+stats: https://frink.renci.org/kg-stats/hydrology-kg
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://frink.apps.renci.org/hydrologykg/sparql
@@ -12,7 +12,7 @@ frink-options:
   lakefs-repo: hydrology-kg
   documentation-path: hydrology-kg
 contact:
-  - email: email: david.kedrowski@maine.edu  
+  - email: david.kedrowski@maine.edu  
     github: "dkedrowski"
     label: "David Kedrowski"
   - email: "torsten.hahmann@maine.edu"

@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: fiokg
 title: SAWGraph FRS KG
 description: The FRS (Facility Registry Service) KG is the part of the SAWGraph project that stores data about facilities from EPA's Facility Registry service (FRS) together with their NAICS industry classification and the spatial location.
-# stats: 
+stats: https://frink.renci.org/kg-stats/fio-kg
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://frink.apps.renci.org/fiokg/sparql
