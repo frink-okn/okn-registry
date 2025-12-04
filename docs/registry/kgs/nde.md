@@ -12,7 +12,7 @@ frink-options:
   lakefs-repo: nde
   documentation-path: nde
 contacts:
-  email: asu@scripps.edu
+  - email: asu@scripps.edu
   github: ""
   label: "Andrew Su"
 ---
