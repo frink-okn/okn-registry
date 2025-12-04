@@ -11,7 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/nde
 frink-options:
   lakefs-repo: nde
   documentation-path: nde
-contact:
+contacts:
   email: asu@scripps.edu
   github: ""
   label: "Andrew Su"
