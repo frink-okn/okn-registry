@@ -12,9 +12,12 @@ frink-options:
   lakefs-repo: nde
   documentation-path: nde
 contacts:
-  - email: asu@scripps.edu
+- email: asu@scripps.edu
   github: ""
   label: "Andrew Su"
+- email: plwhetzel@gmail.com
+  github: "@twhetzel"
+  label: "Trish Whetzel" 
 ---
 
 The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated disease datasets. These include datasets from NIAID-funded repositories as well as globally-relevant infectious and immune-mediated disease (IID) repositories from NIH and beyond. The datasets include -omics data, clinical data, epidemiological data, pathogen-host interaction data, flow cytometry, and imaging.
