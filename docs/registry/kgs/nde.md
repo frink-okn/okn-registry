@@ -13,10 +13,10 @@ frink-options:
   documentation-path: nde
 contacts:
 - email: asu@scripps.edu
-  github: ""
+  github: "andrewsu"
   label: "Andrew Su"
 - email: plwhetzel@gmail.com
-  github: "@twhetzel"
+  github: "twhetzel"
   label: "Trish Whetzel" 
 ---
 
