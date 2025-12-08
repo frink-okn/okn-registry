@@ -77,22 +77,24 @@ kgs:
   title: SOC-KG
   tpf: https://frink.apps.renci.org/ldf/sockg
 - contact:
-    email: danny.e.oneal@gmail.com
-    github: ''
-    label: Danny O'Neal
-  description: SCALES is an integrated justice platform to connect criminal justice
-    data across data silos.
+    email: david.kedrowski@maine.edu
+    github: dkedrowski
+    label: David Kedrowski
+  description: The SAWGraph Spatial KG is part of the Safe Agricultural Products and
+    Water Graph (SAWGraph) project. It contains all the Level 13 grid cells from the
+    S2 grid as well as administrative regions of levels 1 to 3 (states, counties,
+    and county subdivisions) and the spatial relationships between them for the 48
+    contiguous states in the U.S.
   frink-options:
-    documentation-path: scales-kg
-    lakefs-repo: scales-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
-  homepage: https://scales-okn.org/
-  shortname: scales
-  sparql: https://frink.apps.renci.org/scales/sparql
-  stats: https://frink.renci.org/kg-stats/scales-kg
+    documentation-path: spatial-kg
+    lakefs-repo: spatial-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: spatialkg
+  sparql: https://frink.apps.renci.org/spatialkg/sparql
   template: overrides/kg.html
-  title: SCALES
-  tpf: https://frink.apps.renci.org/ldf/scales
+  title: SAWGraph Spatial KG
+  tpf: https://frink.apps.renci.org/ldf/spatialkg
 - contact:
     email: farhad.ameri@asu.edu
     github: ''
@@ -143,6 +145,25 @@ kgs:
   template: overrides/kg.html
   title: Neighborhood Information KG
   tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
+- contact:
+    email: katrina.schweikert@maine.edu
+    github: kschweikert
+    label: Katrina Schweikert
+  description: The Safe Agricultural Products and Water Graph (SAWGraph) PFAS graph
+    stores data on PFAS observations and releases, describing the samples, the geospatial
+    features they were taken from, the sampled environmental media, the specific chemical
+    substances and the measurement values observed.
+  frink-options:
+    documentation-path: sawgraph-kg
+    lakefs-repo: sawgraph-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: sawgraph
+  sparql: https://frink.apps.renci.org/sawgraph/sparql
+  stats: https://frink.renci.org/kg-stats/sawgraph
+  template: overrides/kg.html
+  title: SAWGraph PFAS graph
+  tpf: https://frink.apps.renci.org/ldf/sawgraph
 - contact:
     email: lew.lefton@gmail.com
     github: ''
@@ -373,24 +394,6 @@ kgs:
     email: torsten.hahmann@maine.edu
     github: ''
     label: Torsten Hahmann
-  description: Safe Agricultural Products and Water Graph (SAWGraph) is an open knowledge
-    network to monitor and trace PFAS and other contaminants in the nation's food
-    and water systems.
-  frink-options:
-    documentation-path: sawgraph-kg
-    lakefs-repo: sawgraph-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: sawgraph
-  sparql: https://frink.apps.renci.org/sawgraph/sparql
-  stats: https://frink.renci.org/kg-stats/sawgraph
-  template: overrides/kg.html
-  title: SAWGraph
-  tpf: https://frink.apps.renci.org/ldf/sawgraph
-- contact:
-    email: torsten.hahmann@maine.edu
-    github: ''
-    label: Torsten Hahmann
   description: The FIO KG is part of the SAWGraph project.
   frink-options:
     documentation-path: fio-kg
@@ -417,21 +420,6 @@ kgs:
   template: overrides/kg.html
   title: SAWGraph Hydrology KG
   tpf: https://frink.apps.renci.org/ldf/hydrologykg
-- contact:
-    email: torsten.hahmann@maine.edu
-    github: ''
-    label: Torsten Hahmann
-  description: The SAWGraph Spatial KG is part of the SAWGraph project.
-  frink-options:
-    documentation-path: spatial-kg
-    lakefs-repo: spatial-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: spatialkg
-  sparql: https://frink.apps.renci.org/spatialkg/sparql
-  template: overrides/kg.html
-  title: SAWGraph Spatial KG
-  tpf: https://frink.apps.renci.org/ldf/spatialkg
 - contact:
     email: xzhang33@nd.edu
     github: ''
@@ -484,3 +472,46 @@ kgs:
   template: overrides/kg.html
   title: DREAM-KG
   tpf: https://frink.apps.renci.org/ldf/dreamkg
+- contacts:
+  - email: asu@scripps.edu
+    github: andrewsu
+    label: Andrew Su
+  - email: plwhetzel@gmail.com
+    github: twhetzel
+    label: Trish Whetzel
+  description: The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated
+    disease datasets. These include datasets from NIAID-funded repositories as well
+    as globally-relevant infectious and immune-mediated disease (IID) repositories
+    from NIH and beyond. The datasets include -omics data, clinical data, epidemiological
+    data, pathogen-host interaction data, flow cytometry, and imaging.
+  frink-options:
+    documentation-path: nde
+    lakefs-repo: nde
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://data.niaid.nih.gov/
+  shortname: nde
+  sparql: https://frink.apps.renci.org/nde/sparql
+  stats: https://frink.renci.org/kg-stats/nde
+  template: overrides/kg.html
+  title: NIAID Data Ecosystem KG
+  tpf: https://frink.apps.renci.org/ldf/nde
+- contacts:
+  - email: danny.e.oneal@gmail.com
+    github: danny-oneal
+    label: Danny O'Neal
+  - email: scottgdaniel@gmail.com
+    github: scottgdaniel
+    label: Scott Daniel
+  description: SCALES is an integrated justice platform to connect criminal justice
+    data across data silos.
+  frink-options:
+    documentation-path: scales-kg
+    lakefs-repo: scales-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
+  homepage: https://scales-okn.org/
+  shortname: scales
+  sparql: https://frink.apps.renci.org/scales/sparql
+  stats: https://frink.renci.org/kg-stats/scales-kg
+  template: overrides/kg.html
+  title: SCALES
+  tpf: https://frink.apps.renci.org/ldf/scales
