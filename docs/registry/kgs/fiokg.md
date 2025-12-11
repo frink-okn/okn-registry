@@ -13,7 +13,7 @@ frink-options:
   documentation-path: fio-kg
 contact:
   email: torsten.hahmann@maine.edu
-  github: ""
+  github: "thahmann"
   label: "Torsten Hahmann"
 ---
 The FIO KG is part of the SAWGraph project.

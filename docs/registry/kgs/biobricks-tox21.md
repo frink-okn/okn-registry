@@ -13,7 +13,7 @@ frink-options:
   documentation-path: biobricks-tox21-kg
 contact:
   email: tom@insilica.co
-  github: ""
+  github: "tomlue"
   label: "Tom Luechtefeld"
 ---
 BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening data.
