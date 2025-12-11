@@ -13,7 +13,7 @@ frink-options:
   documentation-path: biobricks-aopwiki-kg
 contact:
   email: tom@insilica.co
-  github: ""
+  github: "tomlue"
   label: "Tom Luechtefeld"
 ---
 BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways from

@@ -8,8 +8,8 @@ homepage: https://www.wikidata.org/
 sparql: https://frink.apps.renci.org/wikidata/sparql
 tpf: https://frink.apps.renci.org/ldf/wikidata
 contact: 
-  email: ""
-  github: ""
-  label: ""
+  email: balhoff@renci.org
+  github: balhoff
+  label: Jim Balhoff
 ---
 Wikidata is a free and open knowledge base that can be read and edited by both humans and machines. This Proto-OKN copy of the [Wikidata](https://www.wikidata.org/) triplestore is provided by the NSF [FRINK](https://frink.renci.org) project.

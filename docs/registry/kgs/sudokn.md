@@ -13,7 +13,7 @@ frink-options:
   documentation-path: sudokn-kg
 contact:
   email: farhad.ameri@asu.edu
-  github: ""
+  github: "amerif"
   label: "Farhad Ameri"
 ---
 SUDOKN is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers.

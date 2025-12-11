@@ -13,7 +13,7 @@ frink-options:
   documentation-path: hydrology-kg
 contact:
   email: torsten.hahmann@maine.edu  
-  github: ""
+  github: "thahmann"
   label: "Torsten Hahmann"
 ---
 The Hydrology KG is part of the SAWGraph project.

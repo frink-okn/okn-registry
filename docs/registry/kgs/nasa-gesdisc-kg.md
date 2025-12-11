@@ -14,7 +14,7 @@ frink-options:
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/nasa.yaml
 contact:
   email: lisa@renci.org  
-  github: ""
+  github: "lstillwe"
   label: "Lisa Stillwell"
 ---
 The primary goal of the NASA Knowledge Graph is to bridge scientific publications with the datasets they reference, facilitating deeper insights and research opportunities within NASA's scientific and data ecosystem. By organizing these interconnections within a graph structure, this dataset enables advanced analyses, such as discovering influential datasets, understanding research trends, and exploring scientific collaborations. 

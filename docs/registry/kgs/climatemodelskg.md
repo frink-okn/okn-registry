@@ -12,9 +12,9 @@ frink-options:
   lakefs-repo: climatepub4-kg
   documentation-path: climatepub4-kg
 contact:
-  email: mustapha.adamu@temple.edu
-  github: ""
-  label: "Mustapha Adamu"
+  email: climatepub4kg@tuprd.onmicrosoft.com
+  github: "aayushacharya"
+  label: "Aayush Acharya"
 ---
 Climate Models KG is a knowledge graph to support evaluation and development of climate models.
 

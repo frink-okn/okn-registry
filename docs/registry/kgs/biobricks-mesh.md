@@ -13,7 +13,7 @@ frink-options:
   documentation-path: biobricks-mesh-kg
 contact:
   email: tom@insilica.co
-  github: ""
+  github: "tomlue"
   label: "Tom Luechtefeld"
 ---
 BioBricks MeSH is an open knowledge graph of Medical Subject Headings (MeSH)

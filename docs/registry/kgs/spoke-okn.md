@@ -14,7 +14,7 @@ frink-options:
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-okn.yaml
 contact:
   email: sergio.baranzini@ucsf.edu
-  github: ""
+  github: "baranzini-lab"
   label: "Sergio Baranzini"
 ---
 
