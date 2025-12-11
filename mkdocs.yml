@@ -28,6 +28,8 @@ plugins:
   - search
   - mermaid2:
       javascript: https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs
+      arguments:
+        maxTextSize: 500000
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -36,7 +38,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid_custom
+          format: !!python/name:mermaid2.fence_mermaid
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true     
