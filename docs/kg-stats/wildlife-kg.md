@@ -1,4 +1,4 @@
-# securechainkg
+# wildlifekn
 
 
 
@@ -3093,27 +3093,133 @@ SdosXPathType {
 SdosZoo {
 
 }
-SecurechainHardware {
+DcamVocabularyEncodingScheme {
+    date dct_issued  
+    string rdfs_label  
+    string rdfs_comment  
+    uri rdfs_seeAlso  
+}
+DcmitypeCollection {
 
 }
-SecurechainHardwareVersion {
-    string securechain_versionName  
-    string securechain_cpe23  
-}
-SecurechainLicense {
+DcmitypeDataset {
 
 }
-SecurechainSoftware {
+DcmitypeEvent {
 
 }
-SecurechainSoftwareVersion {
+DcmitypeImage {
 
 }
-SecurechainVulnerability {
+DcmitypeInteractiveResource {
 
 }
-SecurechainVulnerabilityType {
+DcmitypeMovingImage {
 
+}
+DcmitypePhysicalObject {
+
+}
+DcmitypeService {
+
+}
+DcmitypeSoftware {
+
+}
+DcmitypeSound {
+
+}
+DcmitypeStillImage {
+
+}
+DcmitypeText {
+
+}
+DctAgent {
+
+}
+DctAgentClass {
+    string rdfs_label  
+    string rdfs_comment  
+    date dct_issued  
+}
+DctBibliographicResource {
+
+}
+DctFileFormat {
+
+}
+DctFrequency {
+
+}
+DctJurisdiction {
+
+}
+DctLicenseDocument {
+
+}
+DctLinguisticSystem {
+
+}
+DctLocation {
+
+}
+DctLocationPeriodOrJurisdiction {
+
+}
+DctMediaType {
+
+}
+DctMediaTypeOrExtent {
+
+}
+DctMethodOfAccrual {
+
+}
+DctMethodOfInstruction {
+
+}
+DctPeriodOfTime {
+
+}
+DctPhysicalMedium {
+
+}
+DctPhysicalResource {
+
+}
+DctPolicy {
+
+}
+DctProvenanceStatement {
+
+}
+DctRightsStatement {
+
+}
+DctSizeOrDuration {
+
+}
+DctStandard {
+
+}
+HttpsWildlife.proto-okn.netKgAmphibianName {
+    string rdfs_label  
+}
+HttpsWildlife.proto-okn.netKgBirdName {
+    string rdfs_label  
+}
+HttpsWildlife.proto-okn.netKgLocation {
+    string rdfs_label  
+}
+HttpsWildlife.proto-okn.netKgSchemaAmphibianName {
+    string rdfs_label  
+}
+HttpsWildlife.proto-okn.netKgSchemaBirdName {
+    string rdfs_label  
+}
+HttpsWildlife.proto-okn.netKgSchemaLocation {
+    string rdfs_label  
 }
 
 OwlDataRange ||--|o OwlOntology : "rdfs_isDefinedBy"
@@ -3434,22 +3540,27 @@ SdosWearableSizeSystemEnumeration ||--|o RdfsLiteral : "rdfs_comment"
 SdosWearableSizeSystemEnumeration ||--|o RdfsLiteral : "rdfs_label"
 SdosWearableSizeSystemEnumeration ||--|o SdosURL : "sdos_isPartOf"
 SdosWearableSizeSystemEnumeration ||--|o SdosCreativeWork : "sdos_isPartOf"
-SecurechainHardware ||--|o SdosOrganization : "sdos_manufacturer"
-SecurechainHardware ||--|o SecurechainHardwareVersion : "securechain_hasHardwareVersion"
-SecurechainHardware ||--|o SdosText : "sdos_name"
-SecurechainHardwareVersion ||--|o SdosText : "securechain_versionName"
-SecurechainHardwareVersion ||--|o OwlThing : "owl_sameAs"
-SecurechainHardwareVersion ||--|o SecurechainVulnerability : "securechain_vulnerableTo"
-SecurechainHardwareVersion ||--|o SdosText : "sdos_name"
-SecurechainHardwareVersion ||--|o SdosOrganization : "sdos_manufacturer"
-SecurechainHardwareVersion ||--|o SecurechainHardwareVersion : "securechain_hasHardwareVersion"
-SecurechainVulnerability ||--|o SecurechainVulnerabilityType : "securechain_vulnerabilityType"
-SecurechainVulnerability ||--|o SdosURL : "sdos_identifier"
-SecurechainVulnerability ||--|o SdosPropertyValue : "sdos_identifier"
-SecurechainVulnerability ||--|o SdosText : "sdos_identifier"
-SecurechainVulnerabilityType ||--|o SdosURL : "sdos_identifier"
-SecurechainVulnerabilityType ||--|o SdosPropertyValue : "sdos_identifier"
-SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
+DcamVocabularyEncodingScheme ||--|o RdfsLiteral : "dct_issued"
+DcamVocabularyEncodingScheme ||--|o RdfsLiteral : "rdfs_label"
+DcamVocabularyEncodingScheme ||--|o RdfsLiteral : "rdfs_comment"
+DcamVocabularyEncodingScheme ||--|o RdfsResource : "rdfs_seeAlso"
+DcamVocabularyEncodingScheme ||--|o OwlOntology : "rdfs_isDefinedBy"
+DcamVocabularyEncodingScheme ||--|o RdfsResource : "rdfs_isDefinedBy"
+DctAgentClass ||--|o RdfsLiteral : "rdfs_label"
+DctAgentClass ||--|o RdfsLiteral : "rdfs_comment"
+DctAgentClass ||--|o RdfsLiteral : "dct_issued"
+DctAgentClass ||--|o OwlOntology : "rdfs_isDefinedBy"
+DctAgentClass ||--|o RdfsResource : "rdfs_isDefinedBy"
+HttpsWildlife.proto-okn.netKgAmphibianName ||--|o HttpsWildlife.proto-okn.netKgLocation : "https___wildlife.proto-okn.net_kg_OBSERVED_AT"
+HttpsWildlife.proto-okn.netKgAmphibianName ||--|o RdfsLiteral : "rdfs_label"
+HttpsWildlife.proto-okn.netKgBirdName ||--|o HttpsWildlife.proto-okn.netKgLocation : "https___wildlife.proto-okn.net_kg_OBSERVED_AT"
+HttpsWildlife.proto-okn.netKgBirdName ||--|o RdfsLiteral : "rdfs_label"
+HttpsWildlife.proto-okn.netKgLocation ||--|o RdfsLiteral : "rdfs_label"
+HttpsWildlife.proto-okn.netKgSchemaAmphibianName ||--|o HttpsWildlife.proto-okn.netKgSchemaLocation : "https___wildlife.proto-okn.net_kg_schema_OBSERVED_AT"
+HttpsWildlife.proto-okn.netKgSchemaAmphibianName ||--|o RdfsLiteral : "rdfs_label"
+HttpsWildlife.proto-okn.netKgSchemaBirdName ||--|o HttpsWildlife.proto-okn.netKgSchemaLocation : "https___wildlife.proto-okn.net_kg_schema_OBSERVED_AT"
+HttpsWildlife.proto-okn.netKgSchemaBirdName ||--|o RdfsLiteral : "rdfs_label"
+HttpsWildlife.proto-okn.netKgSchemaLocation ||--|o RdfsLiteral : "rdfs_label"
 
 ```
 
@@ -3458,10 +3569,11 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 ## Imports
 
 
+* okns:sdo
+* okns:extended_types
+* okns:dc
 * okns:owl-rdf-rdfs
 * linkml:types
-* okns:extended_types
-* okns:sdo
 
 
 
@@ -3469,18 +3581,12 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 
 | Class | Description | Occurrences |
 | --- | --- | --- |
-| [SdosThing](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosThing.md) | The most generic type of item.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosCreativeWork](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosCreativeWork.md) | The most generic kind of creative work, including books, movies, photographs, software programs, etc.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosSoftwareApplication](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosSoftwareApplication.md) | A software application.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainSoftware](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainSoftware.md) | None<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainSoftwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainSoftwareVersion.md) | None<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainLicense](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainLicense.md) | None<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosIntangible](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosIntangible.md) | A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainVulnerability](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainVulnerability.md) | None<br/>| 312386 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainVulnerabilityType](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainVulnerabilityType.md) | None<br/>| 740 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosProduct](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosProduct.md) | Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainHardware](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainHardware.md) | None<br/>| 55764 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainHardwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainHardwareVersion.md) | None<br/>| 59978 | 
+| [HttpsWildlife.proto-okn.netKgAmphibianName](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/classes/HttpsWildlife.proto-okn.netKgAmphibianName.md) | None<br/>| 97 | 
+| [HttpsWildlife.proto-okn.netKgBirdName](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/classes/HttpsWildlife.proto-okn.netKgBirdName.md) | None<br/>| 303 | 
+| [HttpsWildlife.proto-okn.netKgLocation](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/classes/HttpsWildlife.proto-okn.netKgLocation.md) | None<br/>| 657 | 
+| [HttpsWildlife.proto-okn.netKgSchemaAmphibianName](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/classes/HttpsWildlife.proto-okn.netKgSchemaAmphibianName.md) | None<br/>| 97 | 
+| [HttpsWildlife.proto-okn.netKgSchemaBirdName](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/classes/HttpsWildlife.proto-okn.netKgSchemaBirdName.md) | None<br/>| 303 | 
+| [HttpsWildlife.proto-okn.netKgSchemaLocation](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/classes/HttpsWildlife.proto-okn.netKgSchemaLocation.md) | None<br/>| 657 | 
 
 
 
@@ -3490,16 +3596,10 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 
 | Slot | Description | Occurrences |
 | --- | --- | --- |
-| [securechain_cpe23](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_cpe23.md) | <br/>| 61042 |
-| [securechain_dependsOn](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_dependsOn.md) | <br/>|  |
-| [securechain_discover](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_discover.md) | <br/>|  |
-| [securechain_ecosystem](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_ecosystem.md) | <br/>|  |
-| [securechain_hasHardwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_hasHardwareVersion.md) | <br/>| 59978 |
-| [securechain_hasSoftwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_hasSoftwareVersion.md) | <br/>|  |
-| [securechain_operatesOn](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_operatesOn.md) | <br/>|  |
-| [securechain_versionName](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_versionName.md) | <br/>| 59978 |
-| [securechain_vulnerabilityType](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_vulnerabilityType.md) | <br/>| 262828 |
-| [securechain_vulnerableTo](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_vulnerableTo.md) | <br/>| 46230 |
+| [https___wildlife.proto_okn.net_kg_OBSERVED_AT](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/slots/https___wildlife.proto_okn.net_kg_OBSERVED_AT.md) | <br/>| 5205 |
+| [https___wildlife.proto_okn.net_kg_observed_times](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/slots/https___wildlife.proto_okn.net_kg_observed_times.md) | <br/>| 5205 |
+| [https___wildlife.proto_okn.net_kg_schema_OBSERVED_AT](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/slots/https___wildlife.proto_okn.net_kg_schema_OBSERVED_AT.md) | <br/>| 5205 |
+| [https___wildlife.proto_okn.net_kg_schema_observed_times](https://github.com/frink-okn/graph-descriptions/blob/main/wildlife-kg/slots/https___wildlife.proto_okn.net_kg_schema_observed_times.md) | <br/>| 5205 |
 
 
 
@@ -3511,12 +3611,13 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 
 ## IRI prefixes
 
+* dct: http://purl.org/dc/terms/
 * linkml: https://w3id.org/linkml/
 * okn: https://purl.org/okn/
 * okns: https://purl.org/okn/schema/
-* owl: http://www.w3.org/2002/07/owl#
 * rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
 * rdfs: http://www.w3.org/2000/01/rdf-schema#
 * sdos: https://schema.org/
-* securechain: https://w3id.org/secure-chain/
-* sudokn: http://asu.edu/semantics/SUDOKN/
+* xsd: http://www.w3.org/2001/XMLSchema#
+* shex: http://www.w3.org/ns/shex#
+* schema: http://schema.org/

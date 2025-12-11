@@ -1,4 +1,4 @@
-# securechainkg
+# nde
 
 
 
@@ -3093,28 +3093,6 @@ SdosXPathType {
 SdosZoo {
 
 }
-SecurechainHardware {
-
-}
-SecurechainHardwareVersion {
-    string securechain_versionName  
-    string securechain_cpe23  
-}
-SecurechainLicense {
-
-}
-SecurechainSoftware {
-
-}
-SecurechainSoftwareVersion {
-
-}
-SecurechainVulnerability {
-
-}
-SecurechainVulnerabilityType {
-
-}
 
 OwlDataRange ||--|o OwlOntology : "rdfs_isDefinedBy"
 OwlDataRange ||--|o RdfsResource : "rdfs_isDefinedBy"
@@ -3434,22 +3412,6 @@ SdosWearableSizeSystemEnumeration ||--|o RdfsLiteral : "rdfs_comment"
 SdosWearableSizeSystemEnumeration ||--|o RdfsLiteral : "rdfs_label"
 SdosWearableSizeSystemEnumeration ||--|o SdosURL : "sdos_isPartOf"
 SdosWearableSizeSystemEnumeration ||--|o SdosCreativeWork : "sdos_isPartOf"
-SecurechainHardware ||--|o SdosOrganization : "sdos_manufacturer"
-SecurechainHardware ||--|o SecurechainHardwareVersion : "securechain_hasHardwareVersion"
-SecurechainHardware ||--|o SdosText : "sdos_name"
-SecurechainHardwareVersion ||--|o SdosText : "securechain_versionName"
-SecurechainHardwareVersion ||--|o OwlThing : "owl_sameAs"
-SecurechainHardwareVersion ||--|o SecurechainVulnerability : "securechain_vulnerableTo"
-SecurechainHardwareVersion ||--|o SdosText : "sdos_name"
-SecurechainHardwareVersion ||--|o SdosOrganization : "sdos_manufacturer"
-SecurechainHardwareVersion ||--|o SecurechainHardwareVersion : "securechain_hasHardwareVersion"
-SecurechainVulnerability ||--|o SecurechainVulnerabilityType : "securechain_vulnerabilityType"
-SecurechainVulnerability ||--|o SdosURL : "sdos_identifier"
-SecurechainVulnerability ||--|o SdosPropertyValue : "sdos_identifier"
-SecurechainVulnerability ||--|o SdosText : "sdos_identifier"
-SecurechainVulnerabilityType ||--|o SdosURL : "sdos_identifier"
-SecurechainVulnerabilityType ||--|o SdosPropertyValue : "sdos_identifier"
-SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 
 ```
 
@@ -3460,27 +3422,8 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 
 * okns:owl-rdf-rdfs
 * linkml:types
-* okns:extended_types
 * okns:sdo
-
-
-
-## Classes
-
-| Class | Description | Occurrences |
-| --- | --- | --- |
-| [SdosThing](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosThing.md) | The most generic type of item.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosCreativeWork](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosCreativeWork.md) | The most generic kind of creative work, including books, movies, photographs, software programs, etc.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosSoftwareApplication](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosSoftwareApplication.md) | A software application.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainSoftware](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainSoftware.md) | None<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainSoftwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainSoftwareVersion.md) | None<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainLicense](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainLicense.md) | None<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosIntangible](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosIntangible.md) | A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainVulnerability](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainVulnerability.md) | None<br/>| 312386 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainVulnerabilityType](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainVulnerabilityType.md) | None<br/>| 740 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SdosProduct](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SdosProduct.md) | Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainHardware](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainHardware.md) | None<br/>| 55764 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SecurechainHardwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/classes/SecurechainHardwareVersion.md) | None<br/>| 59978 | 
+* okns:extended_types
 
 
 
@@ -3490,16 +3433,9 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 
 | Slot | Description | Occurrences |
 | --- | --- | --- |
-| [securechain_cpe23](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_cpe23.md) | <br/>| 61042 |
-| [securechain_dependsOn](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_dependsOn.md) | <br/>|  |
-| [securechain_discover](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_discover.md) | <br/>|  |
-| [securechain_ecosystem](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_ecosystem.md) | <br/>|  |
-| [securechain_hasHardwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_hasHardwareVersion.md) | <br/>| 59978 |
-| [securechain_hasSoftwareVersion](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_hasSoftwareVersion.md) | <br/>|  |
-| [securechain_operatesOn](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_operatesOn.md) | <br/>|  |
-| [securechain_versionName](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_versionName.md) | <br/>| 59978 |
-| [securechain_vulnerabilityType](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_vulnerabilityType.md) | <br/>| 262828 |
-| [securechain_vulnerableTo](https://github.com/frink-okn/graph-descriptions/blob/main/secure-chain-kg/slots/securechain_vulnerableTo.md) | <br/>| 46230 |
+| [sdos_date](https://github.com/frink-okn/graph-descriptions/blob/main/nde/slots/sdos_date.md) | <br/>| 9810 |
+| [sdos_species](https://github.com/frink-okn/graph-descriptions/blob/main/nde/slots/sdos_species.md) | <br/>| 2842 |
+| [sdos_versionDate](https://github.com/frink-okn/graph-descriptions/blob/main/nde/slots/sdos_versionDate.md) | <br/>| 77 |
 
 
 
@@ -3512,11 +3448,10 @@ SecurechainVulnerabilityType ||--|o SdosText : "sdos_identifier"
 ## IRI prefixes
 
 * linkml: https://w3id.org/linkml/
+* obo: http://purl.obolibrary.org/obo/
 * okn: https://purl.org/okn/
 * okns: https://purl.org/okn/schema/
 * owl: http://www.w3.org/2002/07/owl#
-* rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
 * rdfs: http://www.w3.org/2000/01/rdf-schema#
 * sdos: https://schema.org/
-* securechain: https://w3id.org/secure-chain/
-* sudokn: http://asu.edu/semantics/SUDOKN/
+* xsd: http://www.w3.org/2001/XMLSchema#
