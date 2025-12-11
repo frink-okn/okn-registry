@@ -13,7 +13,7 @@ frink-options:
   documentation-path: ufokn-kg  
 contact: 
   email: "yeghialt@ucmail.uc.edu"
-  github: "organization/WENOKN"
+  github: ""
   label: "Lilit Yeghiazarian"
 ---
 UF-OKN is an informational infrastructure built using knowledge graphs aiming to extract structured content from the information scattered across open-source geospatial datasets and hydrologic models.
