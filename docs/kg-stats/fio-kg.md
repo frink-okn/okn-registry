@@ -1,6 +1,6 @@
 # fiokg
 
-The facility registry service ontology developed as part of the AIKnowsPFAS and SAWGraph projects.
+This ontology supports querying the SAWGraph Knowledge Graph and the KnowWhereGraph. It is an adaptation of the spatial ontology originally published by the KnowWhereGraph Project
 
 
 
@@ -8,156 +8,6 @@ The facility registry service ontology developed as part of the AIKnowsPFAS and 
 
 ```mermaid
 erDiagram
-ProvAccept {
-
-}
-ProvActivity {
-
-}
-ProvActivityInfluence {
-
-}
-ProvAgent {
-
-}
-ProvAgentInfluence {
-
-}
-ProvAssociation {
-
-}
-ProvAttribution {
-
-}
-ProvBundle {
-
-}
-ProvCollection {
-
-}
-ProvCommunication {
-
-}
-ProvContribute {
-
-}
-ProvContributor {
-
-}
-ProvCopyright {
-
-}
-ProvCreate {
-
-}
-ProvCreator {
-
-}
-ProvDelegation {
-
-}
-ProvDerivation {
-
-}
-ProvDictionary {
-
-}
-ProvDirectQueryService {
-
-}
-ProvEmptyCollection {
-
-}
-ProvEmptyDictionary {
-
-}
-ProvEnd {
-
-}
-ProvEntity {
-
-}
-ProvEntityInfluence {
-
-}
-ProvGeneration {
-
-}
-ProvInfluence {
-
-}
-ProvInsertion {
-
-}
-ProvInstantaneousEvent {
-
-}
-ProvInvalidation {
-
-}
-ProvKeyEntityPair {
-
-}
-ProvLocation {
-
-}
-ProvModify {
-
-}
-ProvOrganization {
-
-}
-ProvPerson {
-
-}
-ProvPlan {
-
-}
-ProvPrimarySource {
-
-}
-ProvPublish {
-
-}
-ProvPublisher {
-
-}
-ProvQuotation {
-
-}
-ProvRemoval {
-
-}
-ProvReplace {
-
-}
-ProvRevision {
-
-}
-ProvRightsAssignment {
-
-}
-ProvRightsHolder {
-
-}
-ProvRole {
-
-}
-ProvServiceDescription {
-
-}
-ProvSoftwareAgent {
-
-}
-ProvStart {
-
-}
-ProvSubmit {
-
-}
-ProvUsage {
-
-}
 TimeDateTimeDescription {
 
 }
@@ -235,370 +85,6 @@ XsdGYear {
 
 }
 XsdGYearMonth {
-
-}
-GeoFeature {
-
-}
-GeoFeatureCollection {
-
-}
-GeoGeometry {
-
-}
-GeoGeometryCollection {
-
-}
-GeoSpatialObject {
-
-}
-GeoSpatialObjectCollection {
-
-}
-DcamVocabularyEncodingScheme {
-    date dct_issued  
-    string rdfs_label  
-    string rdfs_comment  
-    uri rdfs_seeAlso  
-}
-DcmitypeCollection {
-
-}
-DcmitypeDataset {
-
-}
-DcmitypeEvent {
-
-}
-DcmitypeImage {
-
-}
-DcmitypeInteractiveResource {
-
-}
-DcmitypeMovingImage {
-
-}
-DcmitypePhysicalObject {
-
-}
-DcmitypeService {
-
-}
-DcmitypeSoftware {
-
-}
-DcmitypeSound {
-
-}
-DcmitypeStillImage {
-
-}
-DcmitypeText {
-
-}
-DctAgent {
-
-}
-DctAgentClass {
-    string rdfs_label  
-    string rdfs_comment  
-    date dct_issued  
-}
-DctBibliographicResource {
-
-}
-DctFileFormat {
-
-}
-DctFrequency {
-
-}
-DctJurisdiction {
-
-}
-DctLicenseDocument {
-
-}
-DctLinguisticSystem {
-
-}
-DctLocation {
-
-}
-DctLocationPeriodOrJurisdiction {
-
-}
-DctMediaType {
-
-}
-DctMediaTypeOrExtent {
-
-}
-DctMethodOfAccrual {
-
-}
-DctMethodOfInstruction {
-
-}
-DctPeriodOfTime {
-
-}
-DctPhysicalMedium {
-
-}
-DctPhysicalResource {
-
-}
-DctPolicy {
-
-}
-DctProvenanceStatement {
-
-}
-DctRightsStatement {
-
-}
-DctSizeOrDuration {
-
-}
-DctStandard {
-
-}
-OwlAllDifferent {
-
-}
-OwlAllDisjointClasses {
-
-}
-OwlAllDisjointProperties {
-
-}
-OwlAnnotation {
-
-}
-OwlAnnotationProperty {
-
-}
-OwlAsymmetricProperty {
-
-}
-OwlAxiom {
-
-}
-OwlClass {
-
-}
-OwlDataRange {
-    uri rdfs_seeAlso  
-    string rdfs_label  
-    string rdfs_comment  
-}
-OwlDatatypeProperty {
-
-}
-OwlDeprecatedClass {
-
-}
-OwlDeprecatedProperty {
-
-}
-OwlFunctionalProperty {
-
-}
-OwlInverseFunctionalProperty {
-
-}
-OwlIrreflexiveProperty {
-
-}
-OwlNamedIndividual {
-
-}
-OwlNegativePropertyAssertion {
-
-}
-OwlNothing {
-
-}
-OwlObjectProperty {
-
-}
-OwlOntology {
-
-}
-OwlOntologyProperty {
-
-}
-OwlReflexiveProperty {
-
-}
-OwlRestriction {
-
-}
-OwlSymmetricProperty {
-
-}
-OwlThing {
-
-}
-OwlTransitiveProperty {
-
-}
-RdfAlt {
-
-}
-RdfBag {
-
-}
-RdfCompoundLiteral {
-
-}
-RdfList {
-    string rdfs_label  
-    string rdfs_comment  
-}
-RdfProperty {
-
-}
-RdfSeq {
-
-}
-RdfStatement {
-
-}
-RdfsClass {
-
-}
-RdfsContainer {
-
-}
-RdfsContainerMembershipProperty {
-
-}
-RdfsDatatype {
-    uri rdfs_seeAlso  
-    string rdfs_label  
-    string rdfs_comment  
-}
-RdfsLiteral {
-
-}
-RdfsResource {
-
-}
-DtypeCodeList {
-
-}
-DtypeCompositeCodeList {
-
-}
-DtypeDerivedCodeList {
-
-}
-DtypeEnumeratedValue {
-
-}
-DtypeEnumeration {
-
-}
-DtypeSimpleCodeList {
-
-}
-DtypeValueReference {
-
-}
-XsdAnySimpleType {
-
-}
-SkosCollection {
-
-}
-SkosConcept {
-
-}
-SkosConceptScheme {
-
-}
-SkosOrderedCollection {
-
-}
-VaemAspect {
-
-}
-VaemDimension {
-
-}
-VaemDiscipline {
-
-}
-VaemDomain {
-
-}
-VaemGraphMetaData {
-    uri vaem_namespace  
-    string dct_title  
-    string vaem_withAttributionTo  
-    uri vaem_latestPublishedVersion  
-    uri vaem_usesNonImportedResource  
-    uri vaem_turtleFileURL  
-    string vaem_owner  
-    string vaem_revision  
-    uri vaem_rdfxmlFileURL  
-    string vaem_intent  
-    string vaem_namespacePrefix  
-    string rdfs_label  
-    string vaem_title  
-    string vaem_description  
-    uri vaem_previousPublishedVersion  
-    uri vaem_logo  
-    string vaem_name  
-    date dct_modified  
-}
-VaemGraphRole {
-    string rdfs_label  
-    string vaem_filePrefix  
-    string dct_description  
-}
-VaemParty {
-    string rdfs_label  
-    uri vaem_url  
-    string vaem_name  
-}
-VaemViewpoint {
-
-}
-FoafGroup {
-
-}
-FoafImage {
-
-}
-FoafLabelProperty {
-
-}
-FoafOnlineAccount {
-
-}
-FoafOnlineChatAccount {
-
-}
-FoafOnlineEcommerceAccount {
-
-}
-FoafOnlineGamingAccount {
-
-}
-FoafOrganization {
-
-}
-FoafPerson {
-
-}
-FoafPersonalProfileDocument {
-
-}
-FoafProject {
 
 }
 Sdos3DModel {
@@ -3552,6 +3038,502 @@ SdosXPathType {
 SdosZoo {
 
 }
+ProvAccept {
+
+}
+ProvActivity {
+
+}
+ProvActivityInfluence {
+
+}
+ProvAgent {
+
+}
+ProvAgentInfluence {
+
+}
+ProvAssociation {
+
+}
+ProvAttribution {
+
+}
+ProvBundle {
+
+}
+ProvCollection {
+
+}
+ProvCommunication {
+
+}
+ProvContribute {
+
+}
+ProvContributor {
+
+}
+ProvCopyright {
+
+}
+ProvCreate {
+
+}
+ProvCreator {
+
+}
+ProvDelegation {
+
+}
+ProvDerivation {
+
+}
+ProvDictionary {
+
+}
+ProvDirectQueryService {
+
+}
+ProvEmptyCollection {
+
+}
+ProvEmptyDictionary {
+
+}
+ProvEnd {
+
+}
+ProvEntity {
+
+}
+ProvEntityInfluence {
+
+}
+ProvGeneration {
+
+}
+ProvInfluence {
+
+}
+ProvInsertion {
+
+}
+ProvInstantaneousEvent {
+
+}
+ProvInvalidation {
+
+}
+ProvKeyEntityPair {
+
+}
+ProvLocation {
+
+}
+ProvModify {
+
+}
+ProvOrganization {
+
+}
+ProvPerson {
+
+}
+ProvPlan {
+
+}
+ProvPrimarySource {
+
+}
+ProvPublish {
+
+}
+ProvPublisher {
+
+}
+ProvQuotation {
+
+}
+ProvRemoval {
+
+}
+ProvReplace {
+
+}
+ProvRevision {
+
+}
+ProvRightsAssignment {
+
+}
+ProvRightsHolder {
+
+}
+ProvRole {
+
+}
+ProvServiceDescription {
+
+}
+ProvSoftwareAgent {
+
+}
+ProvStart {
+
+}
+ProvSubmit {
+
+}
+ProvUsage {
+
+}
+OwlAllDifferent {
+
+}
+OwlAllDisjointClasses {
+
+}
+OwlAllDisjointProperties {
+
+}
+OwlAnnotation {
+
+}
+OwlAnnotationProperty {
+
+}
+OwlAsymmetricProperty {
+
+}
+OwlAxiom {
+
+}
+OwlClass {
+
+}
+OwlDataRange {
+    uri rdfs_seeAlso  
+    string rdfs_label  
+    string rdfs_comment  
+}
+OwlDatatypeProperty {
+
+}
+OwlDeprecatedClass {
+
+}
+OwlDeprecatedProperty {
+
+}
+OwlFunctionalProperty {
+
+}
+OwlInverseFunctionalProperty {
+
+}
+OwlIrreflexiveProperty {
+
+}
+OwlNamedIndividual {
+
+}
+OwlNegativePropertyAssertion {
+
+}
+OwlNothing {
+
+}
+OwlObjectProperty {
+
+}
+OwlOntology {
+
+}
+OwlOntologyProperty {
+
+}
+OwlReflexiveProperty {
+
+}
+OwlRestriction {
+
+}
+OwlSymmetricProperty {
+
+}
+OwlThing {
+
+}
+OwlTransitiveProperty {
+
+}
+RdfAlt {
+
+}
+RdfBag {
+
+}
+RdfCompoundLiteral {
+
+}
+RdfList {
+    string rdfs_label  
+    string rdfs_comment  
+}
+RdfProperty {
+
+}
+RdfSeq {
+
+}
+RdfStatement {
+
+}
+RdfsClass {
+
+}
+RdfsContainer {
+
+}
+RdfsContainerMembershipProperty {
+
+}
+RdfsDatatype {
+    uri rdfs_seeAlso  
+    string rdfs_label  
+    string rdfs_comment  
+}
+RdfsLiteral {
+
+}
+RdfsResource {
+
+}
+DtypeCodeList {
+
+}
+DtypeCompositeCodeList {
+
+}
+DtypeDerivedCodeList {
+
+}
+DtypeEnumeratedValue {
+
+}
+DtypeEnumeration {
+
+}
+DtypeSimpleCodeList {
+
+}
+DtypeValueReference {
+
+}
+XsdAnySimpleType {
+
+}
+DcamVocabularyEncodingScheme {
+    date dct_issued  
+    string rdfs_label  
+    string rdfs_comment  
+    uri rdfs_seeAlso  
+}
+DcmitypeCollection {
+
+}
+DcmitypeDataset {
+
+}
+DcmitypeEvent {
+
+}
+DcmitypeImage {
+
+}
+DcmitypeInteractiveResource {
+
+}
+DcmitypeMovingImage {
+
+}
+DcmitypePhysicalObject {
+
+}
+DcmitypeService {
+
+}
+DcmitypeSoftware {
+
+}
+DcmitypeSound {
+
+}
+DcmitypeStillImage {
+
+}
+DcmitypeText {
+
+}
+DctAgent {
+
+}
+DctAgentClass {
+    string rdfs_label  
+    string rdfs_comment  
+    date dct_issued  
+}
+DctBibliographicResource {
+
+}
+DctFileFormat {
+
+}
+DctFrequency {
+
+}
+DctJurisdiction {
+
+}
+DctLicenseDocument {
+
+}
+DctLinguisticSystem {
+
+}
+DctLocation {
+
+}
+DctLocationPeriodOrJurisdiction {
+
+}
+DctMediaType {
+
+}
+DctMediaTypeOrExtent {
+
+}
+DctMethodOfAccrual {
+
+}
+DctMethodOfInstruction {
+
+}
+DctPeriodOfTime {
+
+}
+DctPhysicalMedium {
+
+}
+DctPhysicalResource {
+
+}
+DctPolicy {
+
+}
+DctProvenanceStatement {
+
+}
+DctRightsStatement {
+
+}
+DctSizeOrDuration {
+
+}
+DctStandard {
+
+}
+SkosCollection {
+
+}
+SkosConcept {
+
+}
+SkosConceptScheme {
+
+}
+SkosOrderedCollection {
+
+}
+VaemAspect {
+
+}
+VaemDimension {
+
+}
+VaemDiscipline {
+
+}
+VaemDomain {
+
+}
+VaemGraphMetaData {
+    uri vaem_namespace  
+    string dct_title  
+    string vaem_withAttributionTo  
+    uri vaem_latestPublishedVersion  
+    uri vaem_usesNonImportedResource  
+    uri vaem_turtleFileURL  
+    string vaem_owner  
+    string vaem_revision  
+    uri vaem_rdfxmlFileURL  
+    string vaem_intent  
+    string vaem_namespacePrefix  
+    string rdfs_label  
+    string vaem_title  
+    string vaem_description  
+    uri vaem_previousPublishedVersion  
+    uri vaem_logo  
+    string vaem_name  
+    date dct_modified  
+}
+VaemGraphRole {
+    string rdfs_label  
+    string vaem_filePrefix  
+    string dct_description  
+}
+VaemParty {
+    string rdfs_label  
+    uri vaem_url  
+    string vaem_name  
+}
+VaemViewpoint {
+
+}
+FoafGroup {
+
+}
+FoafImage {
+
+}
+FoafLabelProperty {
+
+}
+FoafOnlineAccount {
+
+}
+FoafOnlineChatAccount {
+
+}
+FoafOnlineEcommerceAccount {
+
+}
+FoafOnlineGamingAccount {
+
+}
+FoafOrganization {
+
+}
+FoafPerson {
+
+}
+FoafPersonalProfileDocument {
+
+}
+FoafProject {
+
+}
 FoafAgent {
 
 }
@@ -4528,6 +4510,24 @@ QudtVerifiable {
 XsdString {
 
 }
+GeoFeature {
+
+}
+GeoFeatureCollection {
+
+}
+GeoGeometry {
+
+}
+GeoGeometryCollection {
+
+}
+GeoSpatialObject {
+
+}
+GeoSpatialObjectCollection {
+
+}
 HttpPurl.orgVocabFrbrCoreEndeavour {
 
 }
@@ -5303,7 +5303,11 @@ SosaResult {
 SosaSensor {
 
 }
-B78889d67d06fc8a172807dd97a6eabac {
+Bd7175f49ca206d160fdb4fee4dad2747 {
+    string dct_description  
+    string rdfs_label  
+}
+Bf500d8a8b0381e9decef451f20ba1677 {
     string dct_description  
     string rdfs_label  
 }
@@ -5390,6 +5394,8 @@ Fio-epa-frsComplianceInterest {
     string rdfs_label  
 }
 Fio-epa-frsComplianceRecord {
+    uri fio_epa_frs_fromSystem  
+    uri fio_epa_frs_ofInterestType  
     string rdfs_label  
 }
 Fio-epa-frsComplianceSystem {
@@ -5401,10 +5407,10 @@ Fio-epa-frsDrinkingWaterProgram {
     string rdfs_label  
 }
 Fio-epa-frsEPA-PFAS-Facility {
-    string dct_title  
-    string rdfs_label  
     date dct_modified  
     string fio_epa_frs_hasFRSId  
+    uri fio_epa_frs_hasRecord  
+    string rdfs_label  
 }
 Fio-epa-frsEcologyOperation {
     string dct_description  
@@ -5415,8 +5421,12 @@ Fio-epa-frsElectronicPermitSystem {
     string rdfs_label  
 }
 Fio-epa-frsEnforcementActivity {
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    uri fio_epa_frs_ofInterestType  
     datetime prov_startedAtTime  
     string dct_description  
+    uri fio_epa_frs_hasRecord  
     string rdfs_label  
 }
 Fio-epa-frsEnforcementInterest {
@@ -5428,10 +5438,14 @@ Fio-epa-frsEnforcementSystem {
     string rdfs_label  
 }
 Fio-epa-frsEnforcementTrackingRecord {
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    datetime prov_endedAtTime  
+    uri fio_epa_frs_ofInterestType  
     datetime prov_startedAtTime  
     string dct_description  
+    uri fio_epa_frs_hasRecord  
     string rdfs_label  
-    datetime prov_endedAtTime  
 }
 Fio-epa-frsEnvironmentalInterestByProgram {
     string dct_description  
@@ -5444,13 +5458,16 @@ Fio-epa-frsEnvironmentalInterestType {
     string rdfs_label  
 }
 Fio-epa-frsFRS-Facility {
-    string dct_description  
-    datetime prov_endedAtTime  
-    string dct_title  
+    uri fio_epa_frs_fromSystem  
+    uri fio_epa_frs_ofInterestType  
     string rdfs_label  
-    date dct_modified  
     datetime prov_startedAtTime  
+    uri fio_epa_frs_hasSupplementalRecord  
     string fio_epa_frs_hasFRSId  
+    string dct_description  
+    uri fio_epa_frs_hasRecord  
+    date dct_modified  
+    datetime prov_endedAtTime  
 }
 Fio-epa-frsFacilitySiteIdentification {
     string dct_description  
@@ -5491,10 +5508,14 @@ Fio-epa-frsPermitInterest {
     string rdfs_label  
 }
 Fio-epa-frsPermitRecord {
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    datetime prov_endedAtTime  
+    uri fio_epa_frs_ofInterestType  
     datetime prov_startedAtTime  
     string dct_description  
+    uri fio_epa_frs_hasRecord  
     string rdfs_label  
-    datetime prov_endedAtTime  
 }
 Fio-epa-frsPermitSystem {
     string dct_description  
@@ -5509,10 +5530,12 @@ Fio-epa-frsProgramInformationSystem {
     string rdfs_label  
 }
 Fio-epa-frsProjectRecord {
+    uri fio_epa_frs_fromSystem  
+    datetime prov_endedAtTime  
+    uri fio_epa_frs_ofInterestType  
     datetime prov_startedAtTime  
     string dct_description  
     string rdfs_label  
-    datetime prov_endedAtTime  
 }
 Fio-epa-frsProjectSystem {
     string dct_description  
@@ -5523,11 +5546,19 @@ Fio-epa-frsRadiationProtectionProgram {
     string rdfs_label  
 }
 Fio-epa-frsRecord {
-
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    uri fio_epa_frs_ofInterestType  
+    uri fio_epa_frs_hasRecord  
+    string rdfs_label  
 }
 Fio-epa-frsRegistrationRecord {
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    uri fio_epa_frs_ofInterestType  
     datetime prov_startedAtTime  
     string dct_description  
+    uri fio_epa_frs_hasRecord  
     string rdfs_label  
 }
 Fio-epa-frsRegistryInterest {
@@ -5547,10 +5578,14 @@ Fio-epa-frsReportingInterest {
     string rdfs_label  
 }
 Fio-epa-frsReportingRecord {
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    datetime prov_endedAtTime  
+    uri fio_epa_frs_ofInterestType  
     datetime prov_startedAtTime  
     string dct_description  
+    uri fio_epa_frs_hasRecord  
     string rdfs_label  
-    datetime prov_endedAtTime  
 }
 Fio-epa-frsReportingSystem {
     string dct_description  
@@ -5561,7 +5596,12 @@ Fio-epa-frsRiskInterest {
     string rdfs_label  
 }
 Fio-epa-frsRiskPlanRecord {
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    uri fio_epa_frs_ofInterestType  
+    datetime prov_startedAtTime  
     string dct_description  
+    uri fio_epa_frs_hasRecord  
     string rdfs_label  
 }
 Fio-epa-frsSiteInterest {
@@ -5569,10 +5609,14 @@ Fio-epa-frsSiteInterest {
     string rdfs_label  
 }
 Fio-epa-frsSiteRecord {
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    datetime prov_endedAtTime  
+    uri fio_epa_frs_ofInterestType  
     datetime prov_startedAtTime  
     string dct_description  
+    uri fio_epa_frs_hasRecord  
     string rdfs_label  
-    datetime prov_endedAtTime  
 }
 Fio-epa-frsSiteSystem {
     string dct_description  
@@ -5587,22 +5631,34 @@ Fio-epa-frsStateSystem {
     string rdfs_label  
 }
 Fio-epa-frsStateTrackingRecord {
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    uri fio_epa_frs_ofInterestType  
+    datetime prov_startedAtTime  
+    string dct_description  
+    uri fio_epa_frs_hasRecord  
     string rdfs_label  
 }
 Fio-epa-frsStationSystem {
 
 }
 Fio-epa-frsSupplementalRecord {
+    uri fio_epa_frs_hasSupplementalRecord  
+    uri fio_epa_frs_fromSystem  
+    datetime prov_endedAtTime  
+    uri fio_epa_frs_ofInterestType  
     datetime prov_startedAtTime  
     string dct_description  
+    uri fio_epa_frs_hasRecord  
     string rdfs_label  
-    datetime prov_endedAtTime  
 }
 Fio-epa-frsTribalSystem {
     string dct_description  
     string rdfs_label  
 }
 Fio-epa-frsTribalTrackingRecord {
+    uri fio_epa_frs_fromSystem  
+    uri fio_epa_frs_ofInterestType  
     datetime prov_startedAtTime  
     string dct_description  
     string rdfs_label  
@@ -5631,72 +5687,31 @@ FioOrganization {
 KwgoS2CellLevel13 {
 
 }
+KwgoStatisticalArea {
+
+}
 NaicsNAICS-Industry {
 
 }
 NaicsNAICS-IndustryCode {
-    string rdfs_label  
     date fio_ofYear  
+    string rdfs_label  
 }
 NaicsNAICS-IndustryGroup {
-    string rdfs_label  
     date fio_ofYear  
+    string rdfs_label  
 }
 NaicsNAICS-IndustrySector {
-    string rdfs_label  
     date fio_ofYear  
+    string rdfs_label  
 }
 NaicsNAICS-IndustrySubsector {
-    string rdfs_label  
     date fio_ofYear  
+    string rdfs_label  
 }
 
 TimeDayOfWeek ||--|o RdfsLiteral : "rdfs_label"
 TimeTemporalUnit ||--|o RdfsLiteral : "rdfs_label"
-DcamVocabularyEncodingScheme ||--|o RdfsLiteral : "dct_issued"
-DcamVocabularyEncodingScheme ||--|o RdfsLiteral : "rdfs_label"
-DcamVocabularyEncodingScheme ||--|o RdfsLiteral : "rdfs_comment"
-DcamVocabularyEncodingScheme ||--|o RdfsResource : "rdfs_seeAlso"
-DcamVocabularyEncodingScheme ||--|o OwlOntology : "rdfs_isDefinedBy"
-DcamVocabularyEncodingScheme ||--|o RdfsResource : "rdfs_isDefinedBy"
-DctAgentClass ||--|o RdfsLiteral : "rdfs_label"
-DctAgentClass ||--|o RdfsLiteral : "rdfs_comment"
-DctAgentClass ||--|o RdfsLiteral : "dct_issued"
-DctAgentClass ||--|o OwlOntology : "rdfs_isDefinedBy"
-DctAgentClass ||--|o RdfsResource : "rdfs_isDefinedBy"
-OwlDataRange ||--|o OwlOntology : "rdfs_isDefinedBy"
-OwlDataRange ||--|o RdfsResource : "rdfs_isDefinedBy"
-OwlDataRange ||--|o RdfsClass : "rdfs_subClassOf"
-OwlDataRange ||--|o RdfsResource : "rdfs_seeAlso"
-OwlDataRange ||--|o RdfsLiteral : "rdfs_label"
-OwlDataRange ||--|o RdfsLiteral : "rdfs_comment"
-RdfList ||--|o RdfsLiteral : "rdfs_label"
-RdfList ||--|o RdfsLiteral : "rdfs_comment"
-RdfList ||--|o OwlOntology : "rdfs_isDefinedBy"
-RdfList ||--|o RdfsResource : "rdfs_isDefinedBy"
-RdfsDatatype ||--|o OwlOntology : "rdfs_isDefinedBy"
-RdfsDatatype ||--|o RdfsResource : "rdfs_isDefinedBy"
-RdfsDatatype ||--|o RdfsClass : "rdfs_subClassOf"
-RdfsDatatype ||--|o RdfsResource : "rdfs_seeAlso"
-RdfsDatatype ||--|o RdfsLiteral : "rdfs_label"
-RdfsDatatype ||--|o RdfsLiteral : "rdfs_comment"
-VaemGraphMetaData ||--|o VaemGraphRole : "vaem_hasGraphRole"
-VaemGraphMetaData ||--|o VaemParty : "vaem_hasOwner"
-VaemGraphMetaData ||--|o RdfsLiteral : "dct_title"
-VaemGraphMetaData ||--|o OwlAnnotationProperty : "vaem_usesNonImportedResource"
-VaemGraphMetaData ||--|o RdfsResource : "vaem_usesNonImportedResource"
-VaemGraphMetaData ||--|o RdfsLiteral : "dct_created"
-VaemGraphMetaData ||--|o VaemParty : "vaem_hasSteward"
-VaemGraphMetaData ||--|o RdfsLiteral : "rdfs_label"
-VaemGraphMetaData ||--|o OwlOntology : "rdfs_isDefinedBy"
-VaemGraphMetaData ||--|o RdfsResource : "rdfs_isDefinedBy"
-VaemGraphMetaData ||--|o RdfsLiteral : "dct_modified"
-VaemGraphRole ||--|o RdfsLiteral : "rdfs_label"
-VaemGraphRole ||--|o OwlOntology : "rdfs_isDefinedBy"
-VaemGraphRole ||--|o RdfsResource : "rdfs_isDefinedBy"
-VaemParty ||--|o RdfsLiteral : "rdfs_label"
-VaemParty ||--|o OwlOntology : "rdfs_isDefinedBy"
-VaemParty ||--|o RdfsResource : "rdfs_isDefinedBy"
 SdosActionStatusType ||--|o RdfsLiteral : "rdfs_comment"
 SdosActionStatusType ||--|o RdfsLiteral : "rdfs_label"
 SdosAdultOrientedEnumeration ||--|o RdfsLiteral : "rdfs_comment"
@@ -5999,6 +6014,50 @@ SdosWearableSizeSystemEnumeration ||--|o RdfsLiteral : "rdfs_comment"
 SdosWearableSizeSystemEnumeration ||--|o RdfsLiteral : "rdfs_label"
 SdosWearableSizeSystemEnumeration ||--|o SdosURL : "sdos_isPartOf"
 SdosWearableSizeSystemEnumeration ||--|o SdosCreativeWork : "sdos_isPartOf"
+OwlDataRange ||--|o OwlOntology : "rdfs_isDefinedBy"
+OwlDataRange ||--|o RdfsResource : "rdfs_isDefinedBy"
+OwlDataRange ||--|o RdfsClass : "rdfs_subClassOf"
+OwlDataRange ||--|o RdfsResource : "rdfs_seeAlso"
+OwlDataRange ||--|o RdfsLiteral : "rdfs_label"
+OwlDataRange ||--|o RdfsLiteral : "rdfs_comment"
+RdfList ||--|o RdfsLiteral : "rdfs_label"
+RdfList ||--|o RdfsLiteral : "rdfs_comment"
+RdfList ||--|o OwlOntology : "rdfs_isDefinedBy"
+RdfList ||--|o RdfsResource : "rdfs_isDefinedBy"
+RdfsDatatype ||--|o OwlOntology : "rdfs_isDefinedBy"
+RdfsDatatype ||--|o RdfsResource : "rdfs_isDefinedBy"
+RdfsDatatype ||--|o RdfsClass : "rdfs_subClassOf"
+RdfsDatatype ||--|o RdfsResource : "rdfs_seeAlso"
+RdfsDatatype ||--|o RdfsLiteral : "rdfs_label"
+RdfsDatatype ||--|o RdfsLiteral : "rdfs_comment"
+DcamVocabularyEncodingScheme ||--|o RdfsLiteral : "dct_issued"
+DcamVocabularyEncodingScheme ||--|o RdfsLiteral : "rdfs_label"
+DcamVocabularyEncodingScheme ||--|o RdfsLiteral : "rdfs_comment"
+DcamVocabularyEncodingScheme ||--|o RdfsResource : "rdfs_seeAlso"
+DcamVocabularyEncodingScheme ||--|o OwlOntology : "rdfs_isDefinedBy"
+DcamVocabularyEncodingScheme ||--|o RdfsResource : "rdfs_isDefinedBy"
+DctAgentClass ||--|o RdfsLiteral : "rdfs_label"
+DctAgentClass ||--|o RdfsLiteral : "rdfs_comment"
+DctAgentClass ||--|o RdfsLiteral : "dct_issued"
+DctAgentClass ||--|o OwlOntology : "rdfs_isDefinedBy"
+DctAgentClass ||--|o RdfsResource : "rdfs_isDefinedBy"
+VaemGraphMetaData ||--|o VaemGraphRole : "vaem_hasGraphRole"
+VaemGraphMetaData ||--|o VaemParty : "vaem_hasOwner"
+VaemGraphMetaData ||--|o RdfsLiteral : "dct_title"
+VaemGraphMetaData ||--|o OwlAnnotationProperty : "vaem_usesNonImportedResource"
+VaemGraphMetaData ||--|o RdfsResource : "vaem_usesNonImportedResource"
+VaemGraphMetaData ||--|o RdfsLiteral : "dct_created"
+VaemGraphMetaData ||--|o VaemParty : "vaem_hasSteward"
+VaemGraphMetaData ||--|o RdfsLiteral : "rdfs_label"
+VaemGraphMetaData ||--|o OwlOntology : "rdfs_isDefinedBy"
+VaemGraphMetaData ||--|o RdfsResource : "rdfs_isDefinedBy"
+VaemGraphMetaData ||--|o RdfsLiteral : "dct_modified"
+VaemGraphRole ||--|o RdfsLiteral : "rdfs_label"
+VaemGraphRole ||--|o OwlOntology : "rdfs_isDefinedBy"
+VaemGraphRole ||--|o RdfsResource : "rdfs_isDefinedBy"
+VaemParty ||--|o RdfsLiteral : "rdfs_label"
+VaemParty ||--|o OwlOntology : "rdfs_isDefinedBy"
+VaemParty ||--|o RdfsResource : "rdfs_isDefinedBy"
 AdmsSemanticAssetDistribution ||--|o SkosConcept : "adms_status"
 RdfDatatypeProperty ||--|o RdfsClass : "rdfs_domain"
 RdfDatatypeProperty ||--|o RdfsLiteral : "rdfs_comment"
@@ -6379,1653 +6438,1971 @@ KwgoSoilMapUnitObservableProperty ||--|o RdfsLiteral : "rdfs_label"
 KwgoStormTrackObservableProperty ||--|o RdfsLiteral : "rdfs_label"
 KwgoStormTrackletObservableProperty ||--|o RdfsLiteral : "rdfs_label"
 KwgoVulnerabilityObservableProperty ||--|o RdfsLiteral : "rdfs_label"
-B78889d67d06fc8a172807dd97a6eabac ||--|o OwlThing : "owl_sameAs"
-B78889d67d06fc8a172807dd97a6eabac ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency ||--|o OwlThing : "owl_sameAs"
+Bd7175f49ca206d160fdb4fee4dad2747 ||--|o RdfsLiteral : "rdfs_label"
+Bd7175f49ca206d160fdb4fee4dad2747 ||--|o OwlThing : "owl_sameAs"
+Bf500d8a8b0381e9decef451f20ba1677 ||--|o RdfsLiteral : "rdfs_label"
+Bf500d8a8b0381e9decef451f20ba1677 ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Agriculture ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Agriculture ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Commerce ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Agriculture ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Commerce ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Congress ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Commerce ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Congress ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Defense ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Congress ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Defense ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Energy ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Defense ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Energy ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.HealthandHumanServices ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Energy ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.HealthandHumanServices ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.HomelandSecurity ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.HealthandHumanServices ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.HomelandSecurity ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.HousingandUrbanDevelopment ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.HomelandSecurity ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.HousingandUrbanDevelopment ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Interior ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.HousingandUrbanDevelopment ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Interior ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Judicial ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Interior ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Judicial ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Justice ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Judicial ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Justice ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Labor ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Justice ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Labor ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.State ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Labor ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.State ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Transportation ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.State ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Transportation ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.Treasury ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Transportation ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.Treasury ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAgency.VeteransAffairs ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.Treasury ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAgency.VeteransAffairs ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAirProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAgency.VeteransAffairs ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAirProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAnimalOperation ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAirProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAnimalOperation ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsAssistanceSupportProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAnimalOperation ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsAssistanceSupportProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsChemicalReleaseProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsAssistanceSupportProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsChemicalReleaseProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsChemicalStorageProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsChemicalReleaseProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsChemicalStorageProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsCoastalOceanProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsChemicalStorageProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsCoastalOceanProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsComplianceInterest ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsCoastalOceanProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsComplianceInterest ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsComplianceRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsComplianceInterest ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsComplianceRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsComplianceRecord ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsComplianceRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsComplianceRecord ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsComplianceRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsComplianceRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsComplianceRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsComplianceRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsComplianceRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsComplianceRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsComplianceRecord ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsComplianceRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsComplianceRecord ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsComplianceRecord ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsComplianceRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsComplianceSystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsComplianceRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsComplianceRecord ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsComplianceRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsComplianceRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsComplianceRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsComplianceRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsComplianceSystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsDrinkingWaterProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsComplianceSystem ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsDrinkingWaterProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "dct_alternative"
+Fio-epa-frsDrinkingWaterProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsEPA-PFAS-Facility ||--|o GeoGeometry : "geo_hasGeometry"
 Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsEPA-PFAS-Facility ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsEPA-PFAS-Facility ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsEPA-PFAS-Facility ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsEPA-PFAS-Facility ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsEPA-PFAS-Facility ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsEPA-PFAS-Facility ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsEPA-PFAS-Facility ||--|o SdosPostalAddress : "sdos_address"
-Fio-epa-frsEPA-PFAS-Facility ||--|o SdosText : "sdos_address"
-Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "dct_date"
-Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "dct_title"
-Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "fio-epa-frs_ofFacilityType"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsFacilityType : "fio-epa-frs_ofFacilityType"
-Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "dct_created"
-Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "dct_modified"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
 Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
 Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
 Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
 Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
 Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
 Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEPA-PFAS-Facility ||--|o GeoGeometry : "geo_hasGeometry"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEPA-PFAS-Facility ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsEPA-PFAS-Facility ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsEPA-PFAS-Facility ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsEPA-PFAS-Facility ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsEPA-PFAS-Facility ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsEPA-PFAS-Facility ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEPA-PFAS-Facility : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoAdministrativeRegion3 : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoRegion : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsResource : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoAdministrativeRegion : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoS2CellLevel13 : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o GeoSpatialObject : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoAdministrativeRegion2 : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsFRS-Facility : "spatial_connectedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsFacilityType : "fio-epa-frs_ofFacilityType"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsResource : "fio-epa-frs_ofFacilityType"
+Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "fio-epa-frs_ofFacilityType"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "dct_created"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEPA-PFAS-Facility : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoAdministrativeRegion3 : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoRegion : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsResource : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoAdministrativeRegion : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoS2CellLevel13 : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o GeoSpatialObject : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o KwgoAdministrativeRegion2 : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsFRS-Facility : "spatial_spatiallyRelatedTo"
+Fio-epa-frsEPA-PFAS-Facility ||--|o SdosPostalAddress : "sdos_address"
+Fio-epa-frsEPA-PFAS-Facility ||--|o SdosText : "sdos_address"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Interior : "fio_ownedBy"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Transportation : "fio_ownedBy"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Agriculture : "fio_ownedBy"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsResource : "fio_ownedBy"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.HealthandHumanServices : "fio_ownedBy"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.HomelandSecurity : "fio_ownedBy"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Defense : "fio_ownedBy"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Justice : "fio_ownedBy"
+Fio-epa-frsEPA-PFAS-Facility ||--|o OwlNamedIndividual : "fio_ownedBy"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency : "fio_ownedBy"
 Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Commerce : "fio_ownedBy"
 Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Energy : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.HomelandSecurity : "fio_ownedBy"
 Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.VeteransAffairs : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Transportation : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Defense : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Interior : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o OwlNamedIndividual : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.HealthandHumanServices : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Agriculture : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsAgency.Justice : "fio_ownedBy"
-Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "fio-epa-frs_hasFRSId"
-Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsEcologyOperation ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsEPA-PFAS-Facility ||--|o RdfsLiteral : "dct_alternative"
 Fio-epa-frsEcologyOperation ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsElectronicPermitSystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsEcologyOperation ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsElectronicPermitSystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsElectronicPermitSystem ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementActivity ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsEnforcementActivity ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsEnforcementActivity ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsEnforcementActivity ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsEnforcementActivity ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementActivity ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementActivity ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementActivity ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsEnforcementActivity ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsEnforcementActivity ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsEnforcementActivity ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsEnforcementActivity ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsEnforcementActivity ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementInterest ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementActivity ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementActivity ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementActivity ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementActivity ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementActivity ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementActivity ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsEnforcementInterest ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsEnforcementSystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsEnforcementInterest ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsEnforcementSystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementSystem ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsLiteral : "dct_identifier"
 Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsResource : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsEnforcementTrackingRecord ||--|o FioIndustry : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsEnvironmentalInterestByProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsEnforcementTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsEnvironmentalInterestByProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsEnvironmentalInterestType ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsEnvironmentalInterestByProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsEnvironmentalInterestType ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_alternative"
-Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsFRS-Facility ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsFRS-Facility ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsFRS-Facility ||--|o SdosPostalAddress : "sdos_address"
-Fio-epa-frsFRS-Facility ||--|o SdosText : "sdos_address"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o FioIndustry : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_date"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsEnvironmentalInterestType ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_title"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_ofFacilityType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFacilityType : "fio-epa-frs_ofFacilityType"
-Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_created"
-Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsFRS-Facility ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsFRS-Facility ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsFRS-Facility ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_modified"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsFRS-Facility ||--|o GeoGeometry : "geo_hasGeometry"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFacilityType : "fio-epa-frs_ofFacilityType"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio-epa-frs_ofFacilityType"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_ofFacilityType"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEPA-PFAS-Facility : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoAdministrativeRegion3 : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoRegion : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoAdministrativeRegion : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoS2CellLevel13 : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o GeoSpatialObject : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoAdministrativeRegion2 : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFRS-Facility : "spatial_spatiallyRelatedTo"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Interior : "fio_ownedBy"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Transportation : "fio_ownedBy"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Agriculture : "fio_ownedBy"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio_ownedBy"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.HealthandHumanServices : "fio_ownedBy"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.HomelandSecurity : "fio_ownedBy"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Defense : "fio_ownedBy"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Justice : "fio_ownedBy"
+Fio-epa-frsFRS-Facility ||--|o OwlNamedIndividual : "fio_ownedBy"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency : "fio_ownedBy"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Commerce : "fio_ownedBy"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Energy : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.HomelandSecurity : "fio_ownedBy"
 Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.VeteransAffairs : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Transportation : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Defense : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Interior : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o OwlNamedIndividual : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.HealthandHumanServices : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Agriculture : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAgency.Justice : "fio_ownedBy"
-Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "fio-epa-frs_hasFRSId"
+Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_alternative"
+Fio-epa-frsFRS-Facility ||--|o GeoGeometry : "geo_hasGeometry"
+Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_identifier"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsFRS-Facility ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsFacilitySiteIdentification ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEPA-PFAS-Facility : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoAdministrativeRegion3 : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoRegion : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoAdministrativeRegion : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoS2CellLevel13 : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o GeoSpatialObject : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o KwgoAdministrativeRegion2 : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFRS-Facility : "spatial_connectedTo"
+Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_created"
+Fio-epa-frsFRS-Facility ||--|o SdosPostalAddress : "sdos_address"
+Fio-epa-frsFRS-Facility ||--|o SdosText : "sdos_address"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o FioIndustry : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsFRS-Facility ||--|o RdfsLiteral : "dct_modified"
+Fio-epa-frsFRS-Facility ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsFRS-Facility ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
 Fio-epa-frsFacilitySiteIdentification ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsFacilityType ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsFacilitySiteIdentification ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsFacilityType ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsGrantSystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsFacilityType ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsGrantSystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsGroundWaterProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsGrantSystem ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsGroundWaterProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsHazardousWasteProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsGroundWaterProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsHazardousWasteProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsHealthSafetyProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsHazardousWasteProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsHealthSafetyProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsLegacySystem ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_replacedBy"
-Fio-epa-frsLegacySystem ||--|o OwlThing : "fio-epa-frs_replacedBy"
-Fio-epa-frsLegacySystem ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_replacedBy"
-Fio-epa-frsLegacySystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_replacedBy"
-Fio-epa-frsLegacySystem ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsHealthSafetyProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsLegacySystem ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsLegalEnforcementActivities ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsLegacySystem ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_replacedBy"
+Fio-epa-frsLegacySystem ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_replacedBy"
+Fio-epa-frsLegacySystem ||--|o RdfsResource : "fio-epa-frs_replacedBy"
+Fio-epa-frsLegacySystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_replacedBy"
+Fio-epa-frsLegacySystem ||--|o OwlThing : "fio-epa-frs_replacedBy"
+Fio-epa-frsLegacySystem ||--|o RdfsLiteral : "rdfs_label"
 Fio-epa-frsLegalEnforcementActivities ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsPermitInterest ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsLegalEnforcementActivities ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsPermitInterest ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitInterest ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsPermitRecord ||--|o RdfsLiteral : "dct_identifier"
 Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsPermitRecord ||--|o RdfsResource : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsPermitRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsPermitRecord ||--|o FioIndustry : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsPermitRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsPermitRecord ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsPermitRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsPermitRecord ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsPermitRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsPermitRecord ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsPermitRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsPermitRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsPermitRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsPermitRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsPermitRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsPermitRecord ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsPermitRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsPermitRecord ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsPermitRecord ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsPermitRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsPermitRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsPermitSystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_partOf"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsPermitRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsPermitRecord ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsPermitRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsPermitRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsPermitRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsPermitRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsPermitSystem ||--|o RdfsResource : "fio-epa-frs_partOf"
 Fio-epa-frsPermitSystem ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_partOf"
-Fio-epa-frsPermitSystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsPermitSystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_partOf"
 Fio-epa-frsPermitSystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsPesticidesProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsPermitSystem ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsPesticidesProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsProgramInformationSystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsPesticidesProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsProgramInformationSystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsProjectRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsProgramInformationSystem ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsProjectRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsProjectRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsProjectRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsProjectRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsProjectRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsProjectRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsProjectRecord ||--|o RdfsLiteral : "rdfs_label"
 Fio-epa-frsProjectSystem ||--|o RdfsLiteral : "rdfs_label"
 Fio-epa-frsProjectSystem ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsRadiationProtectionProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsRadiationProtectionProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRadiationProtectionProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsRecord ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsRecord ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsRecord ||--|o RdfsResource : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsRecord ||--|o FioIndustry : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
+Fio-epa-frsRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsRecord ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsRecord ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsRecord ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsRecord ||--|o RdfsLiteral : "rdfs_label"
 Fio-epa-frsRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRecord ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRegistrationRecord ||--|o RdfsLiteral : "dct_identifier"
 Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o RdfsResource : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsRegistrationRecord ||--|o FioIndustry : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsRegistrationRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsRegistrationRecord ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsRegistrationRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsRegistrationRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRegistrationRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsRegistrationRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsRegistrationRecord ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsRegistrationRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsRegistrationRecord ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsRegistrationRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRegistryInterest ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsRegistrationRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsRegistrationRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsRegistryInterest ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsRegistrySystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsRegistryInterest ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsRegistrySystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsRemediationRedevelopmentProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsRegistrySystem ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsRemediationRedevelopmentProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsReportingInterest ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsRemediationRedevelopmentProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsReportingInterest ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingInterest ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsReportingRecord ||--|o RdfsLiteral : "dct_identifier"
 Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsReportingRecord ||--|o RdfsResource : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsReportingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsReportingRecord ||--|o FioIndustry : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsReportingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsReportingRecord ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsReportingRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsReportingRecord ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsReportingRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsReportingRecord ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsReportingRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsReportingRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsReportingRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsReportingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsReportingRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsReportingRecord ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsReportingRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsReportingRecord ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsReportingRecord ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsReportingRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsReportingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsReportingSystem ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_replacedBy"
-Fio-epa-frsReportingSystem ||--|o OwlThing : "fio-epa-frs_replacedBy"
-Fio-epa-frsReportingSystem ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_replacedBy"
-Fio-epa-frsReportingSystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_replacedBy"
-Fio-epa-frsReportingSystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsReportingSystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_partOf"
-Fio-epa-frsReportingSystem ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_partOf"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsReportingRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsReportingRecord ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsReportingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsReportingRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsReportingRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsReportingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsReportingSystem ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsRiskInterest ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsReportingSystem ||--|o RdfsResource : "fio-epa-frs_partOf"
+Fio-epa-frsReportingSystem ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_partOf"
+Fio-epa-frsReportingSystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_partOf"
+Fio-epa-frsReportingSystem ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_replacedBy"
+Fio-epa-frsReportingSystem ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_replacedBy"
+Fio-epa-frsReportingSystem ||--|o RdfsResource : "fio-epa-frs_replacedBy"
+Fio-epa-frsReportingSystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_replacedBy"
+Fio-epa-frsReportingSystem ||--|o OwlThing : "fio-epa-frs_replacedBy"
+Fio-epa-frsReportingSystem ||--|o RdfsLiteral : "rdfs_label"
 Fio-epa-frsRiskInterest ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsRiskPlanRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsRiskInterest ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsRiskPlanRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsRiskPlanRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRiskPlanRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsRiskPlanRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsRiskPlanRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsRiskPlanRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteInterest ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsRiskPlanRecord ||--|o RdfsLiteral : "rdfs_label"
 Fio-epa-frsSiteInterest ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteInterest ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSiteRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
 Fio-epa-frsSiteRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsSiteRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSiteRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsSiteRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSiteRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsSiteRecord ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsSiteRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsSiteRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsSiteRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsSiteRecord ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsSiteRecord ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsSiteRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsSiteRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSiteRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSiteSystem ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_replacedBy"
-Fio-epa-frsSiteSystem ||--|o OwlThing : "fio-epa-frs_replacedBy"
-Fio-epa-frsSiteSystem ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_replacedBy"
-Fio-epa-frsSiteSystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_replacedBy"
-Fio-epa-frsSiteSystem ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsSiteRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsSiteRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSiteRecord ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSiteRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSiteRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSiteRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSiteRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSiteRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSiteRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsSiteSystem ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsSolidWasteProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsSiteSystem ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_replacedBy"
+Fio-epa-frsSiteSystem ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_replacedBy"
+Fio-epa-frsSiteSystem ||--|o RdfsResource : "fio-epa-frs_replacedBy"
+Fio-epa-frsSiteSystem ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_replacedBy"
+Fio-epa-frsSiteSystem ||--|o OwlThing : "fio-epa-frs_replacedBy"
+Fio-epa-frsSiteSystem ||--|o RdfsLiteral : "rdfs_label"
 Fio-epa-frsSolidWasteProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsStateSystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsSolidWasteProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsStateSystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateSystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsLiteral : "dct_identifier"
 Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsResource : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsStateTrackingRecord ||--|o FioIndustry : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsStateTrackingRecord ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsStateTrackingRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsStateTrackingRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsStateTrackingRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o RdfsResource : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
+Fio-epa-frsSupplementalRecord ||--|o RdfsLiteral : "dct_identifier"
 Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o RdfsResource : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofSecondaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsSupplementalRecord ||--|o FioIndustry : "fio-epa-frs_ofSecondaryIndustry"
 Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_ofSecondaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasSupplementalRecord"
-Fio-epa-frsSupplementalRecord ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsSupplementalRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
-Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
-Fio-epa-frsSupplementalRecord ||--|o FioIndustry : "fio_ofIndustry"
-Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
-Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
-Fio-epa-frsSupplementalRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
-Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio_ofIndustry"
-Fio-epa-frsSupplementalRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSupplementalRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsSupplementalRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o RdfsResource : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_hasEnvironmentalInterest"
+Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryGroup : "fio_ofIndustry"
+Fio-epa-frsSupplementalRecord ||--|o RdfsResource : "fio_ofIndustry"
+Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustrySector : "fio_ofIndustry"
+Fio-epa-frsSupplementalRecord ||--|o OwlNamedIndividual : "fio_ofIndustry"
+Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryCode : "fio_ofIndustry"
+Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio_ofIndustry"
+Fio-epa-frsSupplementalRecord ||--|o FioIndustry : "fio_ofIndustry"
+Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustrySubsector : "fio_ofIndustry"
+Fio-epa-frsSupplementalRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalSystem ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsReportingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsStateTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsTribalTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o RdfsResource : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsPermitRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRegistrationRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSiteRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementActivity : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsProjectRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsComplianceRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsRiskPlanRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsEnforcementTrackingRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsSupplementalRecord : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o Fio-epa-frsFRS-Facility : "fio-epa-frs_hasRecord"
+Fio-epa-frsSupplementalRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryGroup : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o RdfsResource : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustrySector : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o OwlNamedIndividual : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustryCode : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o OwlThing : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o FioIndustry : "fio-epa-frs_ofPrimaryIndustry"
+Fio-epa-frsSupplementalRecord ||--|o NaicsNAICS-IndustrySubsector : "fio-epa-frs_ofPrimaryIndustry"
 Fio-epa-frsTribalSystem ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsTribalTrackingRecord ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsTribalSystem ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsTribalTrackingRecord ||--|o RdfsLiteral : "dct_identifier"
-Fio-epa-frsTribalTrackingRecord ||--|o OwlThing : "owl_sameAs"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsLegacySystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsPermitSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsComplianceSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsTribalTrackingRecord ||--|o RdfsResource : "fio-epa-frs_fromSystem"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsEnforcementSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsGrantSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsProjectSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsSiteSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRegistrySystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsReportingSystem : "fio-epa-frs_fromSystem"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsStateSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsProgramInformationSystem : "fio-epa-frs_fromSystem"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsTribalSystem : "fio-epa-frs_fromSystem"
 Fio-epa-frsTribalTrackingRecord ||--|o OwlThing : "fio-epa-frs_fromSystem"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsTribalTrackingRecord ||--|o Bd7175f49ca206d160fdb4fee4dad2747 : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsGroundWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o B78889d67d06fc8a172807dd97a6eabac : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsCoastalOceanProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsHazardousWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Bf500d8a8b0381e9decef451f20ba1677 : "fio-epa-frs_ofInterestType"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsReportingInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsAssistanceSupportProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsEnforcementInterest : "fio-epa-frs_ofInterestType"
-Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRadiationProtectionProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsAnimalOperation : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsSolidWasteProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsComplianceInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsHealthSafetyProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsSiteInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRemediationRedevelopmentProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsUndergroundStorageTankProgram : "fio-epa-frs_ofInterestType"
 Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsDrinkingWaterProgram : "fio-epa-frs_ofInterestType"
-Fio-epa-frsUndergroundStorageTankProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRegistryInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o OwlThing : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsWaterResourcesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsChemicalReleaseProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsPermitInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o RdfsResource : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsAirProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsWasteWaterProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsPesticidesProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsRiskInterest : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestByProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsLegalEnforcementActivities : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsElectronicPermitSystem : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsEnvironmentalInterestType : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsFacilitySiteIdentification : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o Fio-epa-frsChemicalStorageProgram : "fio-epa-frs_ofInterestType"
+Fio-epa-frsTribalTrackingRecord ||--|o RdfsLiteral : "rdfs_label"
 Fio-epa-frsUndergroundStorageTankProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsWasteWaterProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsUndergroundStorageTankProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsWasteWaterProgram ||--|o RdfsLiteral : "rdfs_label"
-Fio-epa-frsWaterResourcesProgram ||--|o OwlThing : "owl_sameAs"
+Fio-epa-frsWasteWaterProgram ||--|o OwlThing : "owl_sameAs"
 Fio-epa-frsWaterResourcesProgram ||--|o RdfsLiteral : "rdfs_label"
+Fio-epa-frsWaterResourcesProgram ||--|o OwlThing : "owl_sameAs"
 FioIndustry ||--|o OwlThing : "owl_sameAs"
 KwgoS2CellLevel13 ||--|o OwlThing : "owl_sameAs"
-NaicsNAICS-IndustryCode ||--|o NaicsNAICS-IndustryGroup : "fio_subcodeOf"
-NaicsNAICS-IndustryCode ||--|o NaicsNAICS-IndustryCode : "fio_subcodeOf"
-NaicsNAICS-IndustryCode ||--|o FioIndustry : "fio_subcodeOf"
-NaicsNAICS-IndustryCode ||--|o NaicsNAICS-IndustrySector : "fio_subcodeOf"
-NaicsNAICS-IndustryCode ||--|o NaicsNAICS-IndustrySubsector : "fio_subcodeOf"
-NaicsNAICS-IndustryCode ||--|o OwlNamedIndividual : "fio_subcodeOf"
-NaicsNAICS-IndustryCode ||--|o OwlThing : "fio_subcodeOf"
-NaicsNAICS-IndustryCode ||--|o RdfsLiteral : "rdfs_label"
+KwgoS2CellLevel13 ||--|o Fio-epa-frsEPA-PFAS-Facility : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o KwgoAdministrativeRegion3 : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o KwgoRegion : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o RdfsResource : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o KwgoAdministrativeRegion : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o KwgoS2CellLevel13 : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o GeoSpatialObject : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o OwlThing : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o KwgoAdministrativeRegion2 : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o Fio-epa-frsFRS-Facility : "spatial_connectedTo"
+KwgoS2CellLevel13 ||--|o Fio-epa-frsEPA-PFAS-Facility : "spatial_spatiallyRelatedTo"
+KwgoS2CellLevel13 ||--|o KwgoAdministrativeRegion3 : "spatial_spatiallyRelatedTo"
+KwgoS2CellLevel13 ||--|o KwgoRegion : "spatial_spatiallyRelatedTo"
+KwgoS2CellLevel13 ||--|o RdfsResource : "spatial_spatiallyRelatedTo"
+KwgoS2CellLevel13 ||--|o KwgoAdministrativeRegion : "spatial_spatiallyRelatedTo"
+KwgoS2CellLevel13 ||--|o KwgoS2CellLevel13 : "spatial_spatiallyRelatedTo"
+KwgoS2CellLevel13 ||--|o GeoSpatialObject : "spatial_spatiallyRelatedTo"
+KwgoS2CellLevel13 ||--|o OwlThing : "spatial_spatiallyRelatedTo"
+KwgoS2CellLevel13 ||--|o KwgoAdministrativeRegion2 : "spatial_spatiallyRelatedTo"
+KwgoS2CellLevel13 ||--|o Fio-epa-frsFRS-Facility : "spatial_spatiallyRelatedTo"
 NaicsNAICS-IndustryCode ||--|o RdfsLiteral : "dct_identifier"
-NaicsNAICS-IndustryCode ||--|o XsdGYear : "fio_ofYear"
 NaicsNAICS-IndustryCode ||--|o OwlThing : "owl_sameAs"
-NaicsNAICS-IndustryGroup ||--|o NaicsNAICS-IndustryGroup : "fio_subcodeOf"
-NaicsNAICS-IndustryGroup ||--|o NaicsNAICS-IndustryCode : "fio_subcodeOf"
-NaicsNAICS-IndustryGroup ||--|o FioIndustry : "fio_subcodeOf"
-NaicsNAICS-IndustryGroup ||--|o NaicsNAICS-IndustrySector : "fio_subcodeOf"
-NaicsNAICS-IndustryGroup ||--|o NaicsNAICS-IndustrySubsector : "fio_subcodeOf"
-NaicsNAICS-IndustryGroup ||--|o OwlNamedIndividual : "fio_subcodeOf"
-NaicsNAICS-IndustryGroup ||--|o OwlThing : "fio_subcodeOf"
-NaicsNAICS-IndustryGroup ||--|o RdfsLiteral : "rdfs_label"
+NaicsNAICS-IndustryCode ||--|o NaicsNAICS-IndustryGroup : "fio_subcodeOf"
+NaicsNAICS-IndustryCode ||--|o RdfsResource : "fio_subcodeOf"
+NaicsNAICS-IndustryCode ||--|o NaicsNAICS-IndustrySector : "fio_subcodeOf"
+NaicsNAICS-IndustryCode ||--|o OwlNamedIndividual : "fio_subcodeOf"
+NaicsNAICS-IndustryCode ||--|o NaicsNAICS-IndustryCode : "fio_subcodeOf"
+NaicsNAICS-IndustryCode ||--|o OwlThing : "fio_subcodeOf"
+NaicsNAICS-IndustryCode ||--|o FioIndustry : "fio_subcodeOf"
+NaicsNAICS-IndustryCode ||--|o NaicsNAICS-IndustrySubsector : "fio_subcodeOf"
+NaicsNAICS-IndustryCode ||--|o XsdGYear : "fio_ofYear"
+NaicsNAICS-IndustryCode ||--|o RdfsLiteral : "rdfs_label"
 NaicsNAICS-IndustryGroup ||--|o RdfsLiteral : "dct_identifier"
-NaicsNAICS-IndustryGroup ||--|o XsdGYear : "fio_ofYear"
 NaicsNAICS-IndustryGroup ||--|o OwlThing : "owl_sameAs"
-NaicsNAICS-IndustrySector ||--|o RdfsLiteral : "rdfs_label"
+NaicsNAICS-IndustryGroup ||--|o NaicsNAICS-IndustryGroup : "fio_subcodeOf"
+NaicsNAICS-IndustryGroup ||--|o RdfsResource : "fio_subcodeOf"
+NaicsNAICS-IndustryGroup ||--|o NaicsNAICS-IndustrySector : "fio_subcodeOf"
+NaicsNAICS-IndustryGroup ||--|o OwlNamedIndividual : "fio_subcodeOf"
+NaicsNAICS-IndustryGroup ||--|o NaicsNAICS-IndustryCode : "fio_subcodeOf"
+NaicsNAICS-IndustryGroup ||--|o OwlThing : "fio_subcodeOf"
+NaicsNAICS-IndustryGroup ||--|o FioIndustry : "fio_subcodeOf"
+NaicsNAICS-IndustryGroup ||--|o NaicsNAICS-IndustrySubsector : "fio_subcodeOf"
+NaicsNAICS-IndustryGroup ||--|o XsdGYear : "fio_ofYear"
+NaicsNAICS-IndustryGroup ||--|o RdfsLiteral : "rdfs_label"
 NaicsNAICS-IndustrySector ||--|o RdfsLiteral : "dct_identifier"
 NaicsNAICS-IndustrySector ||--|o XsdGYear : "fio_ofYear"
+NaicsNAICS-IndustrySector ||--|o RdfsLiteral : "rdfs_label"
 NaicsNAICS-IndustrySector ||--|o OwlThing : "owl_sameAs"
-NaicsNAICS-IndustrySubsector ||--|o NaicsNAICS-IndustryGroup : "fio_subcodeOf"
-NaicsNAICS-IndustrySubsector ||--|o NaicsNAICS-IndustryCode : "fio_subcodeOf"
-NaicsNAICS-IndustrySubsector ||--|o FioIndustry : "fio_subcodeOf"
-NaicsNAICS-IndustrySubsector ||--|o NaicsNAICS-IndustrySector : "fio_subcodeOf"
-NaicsNAICS-IndustrySubsector ||--|o NaicsNAICS-IndustrySubsector : "fio_subcodeOf"
-NaicsNAICS-IndustrySubsector ||--|o OwlNamedIndividual : "fio_subcodeOf"
-NaicsNAICS-IndustrySubsector ||--|o OwlThing : "fio_subcodeOf"
-NaicsNAICS-IndustrySubsector ||--|o RdfsLiteral : "rdfs_label"
 NaicsNAICS-IndustrySubsector ||--|o RdfsLiteral : "dct_identifier"
-NaicsNAICS-IndustrySubsector ||--|o XsdGYear : "fio_ofYear"
 NaicsNAICS-IndustrySubsector ||--|o OwlThing : "owl_sameAs"
+NaicsNAICS-IndustrySubsector ||--|o NaicsNAICS-IndustryGroup : "fio_subcodeOf"
+NaicsNAICS-IndustrySubsector ||--|o RdfsResource : "fio_subcodeOf"
+NaicsNAICS-IndustrySubsector ||--|o NaicsNAICS-IndustrySector : "fio_subcodeOf"
+NaicsNAICS-IndustrySubsector ||--|o OwlNamedIndividual : "fio_subcodeOf"
+NaicsNAICS-IndustrySubsector ||--|o NaicsNAICS-IndustryCode : "fio_subcodeOf"
+NaicsNAICS-IndustrySubsector ||--|o OwlThing : "fio_subcodeOf"
+NaicsNAICS-IndustrySubsector ||--|o FioIndustry : "fio_subcodeOf"
+NaicsNAICS-IndustrySubsector ||--|o NaicsNAICS-IndustrySubsector : "fio_subcodeOf"
+NaicsNAICS-IndustrySubsector ||--|o XsdGYear : "fio_ofYear"
+NaicsNAICS-IndustrySubsector ||--|o RdfsLiteral : "rdfs_label"
 
 ```
 
@@ -8034,15 +8411,15 @@ NaicsNAICS-IndustrySubsector ||--|o OwlThing : "owl_sameAs"
 ## Imports
 
 
-* okns:extended_types
-* okns:prov
 * okns:time
+* okns:sdo
+* okns:prov
+* okns:owl-rdf-rdfs
+* linkml:types
+* okns:extended_types
+* okns:kwg
 * okns:geo
 * okns:dc
-* okns:kwg
-* linkml:types
-* okns:sdo
-* okns:owl-rdf-rdfs
 
 
 
@@ -8050,9 +8427,9 @@ NaicsNAICS-IndustrySubsector ||--|o OwlThing : "owl_sameAs"
 
 | Class | Description | Occurrences |
 | --- | --- | --- |
-| [B78889d67d06fc8a172807dd97a6eabac](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/B78889d67d06fc8a172807dd97a6eabac.md) | None<br/>| 7 | 
-| [KwgoS2CellLevel13](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/KwgoS2CellLevel13.md) | None<br/>| 249509 | 
-| [OwlThing](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/OwlThing.md) | The class of OWL individuals.<br/>| 731236 | 
+| [Bd7175f49ca206d160fdb4fee4dad2747](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Bd7175f49ca206d160fdb4fee4dad2747.md) | None<br/>| 7 | 
+| [Bf500d8a8b0381e9decef451f20ba1677](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Bf500d8a8b0381e9decef451f20ba1677.md) | None<br/>| 7 | 
+| [OwlThing](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/OwlThing.md) | The class of OWL individuals.<br/>| 922366 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsAirProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsAirProgram.md) | ENVIRONMENTAL PROGRAMS THAT REGULATE OR MONITOR AIR EMISSIONS FROM AREA, STATIONARY, AND MOBILE SOURCES, AS REQUIRED BY THE CLEAN AIR ACT<br/>| 34 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsAnimalOperation](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsAnimalOperation.md) | ENVIRONMENTAL PROGRAMS RELATED TO ANIMAL OPERATIONS E.G LIVESTOCK WASTE CONTROL<br/>| 4 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsAssistanceSupportProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsAssistanceSupportProgram.md) | ENVIRONMENTAL PROGRAMS THAT PROVIDE ASSISTANCE TO THE REGULATED COMMUNITY AND THE GENERAL PUBLIC (E.G., ENVIRONMENTAL GRANTS, OUTREACH ACTIVITIES) OR ACTIVITIES THAT PROVIDE SUPPORT ACROSS ENVIRONMENTAL PROGRAMS.<br/>| 6 | 
@@ -8061,22 +8438,22 @@ NaicsNAICS-IndustrySubsector ||--|o OwlThing : "owl_sameAs"
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsChemicalstorageprograms](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsChemicalstorageprograms.md) | None<br/>|  | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsCoastalOceanProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsCoastalOceanProgram.md) | ENVIRONMENTAL PROGRAMS THAT IMPROVE THE QUALITY OF COASTAL AND MARINE ECOSYSTEMS AND PROTECT BEACHES, COAST, AND OCEAN RESOURCES FROM POLLUTION.<br/>| 2 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsComplianceInterest](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsComplianceInterest.md) | None<br/>| 2 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsComplianceRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsComplianceRecord.md) | None<br/>| 23765 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsComplianceRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsComplianceRecord.md) | None<br/>| 34710 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsComplianceSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsComplianceSystem.md) | None<br/>| 3 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsDrinkingWaterProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsDrinkingWaterProgram.md) | ENVIRONMENTAL PROGRAMS THAT PROTECT THE QUALITY OF DRINKING WATER IN THE UNITED STATES, AS REQUIRED BY THE SAFE DRINKING WATER ACT.<br/>| 5 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEcologyOperation](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEcologyOperation.md) | PROGRAMS THAT CONCENTRATE ON ECOLOGICAL SYSTEMS SUCH AS FOREST AND TREE EXPERTISE<br/>| 2 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsElectronicPermitSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsElectronicPermitSystem.md) | ELECTRONIC PERMIT SYSTEM<br/>| 8 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnforcementActivity](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnforcementActivity.md) | A record that tracks a specific legal, corrective or assistance action taken against a facility<br/>| 18113 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnforcementActivity](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnforcementActivity.md) | A record that tracks a specific legal, corrective or assistance action taken against a facility<br/>| 23487 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnforcementInterest](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnforcementInterest.md) | None<br/>| 5 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnforcementSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnforcementSystem.md) | None<br/>| 1 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnforcementTrackingRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnforcementTrackingRecord.md) | None<br/>| 86645 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnforcementTrackingRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnforcementTrackingRecord.md) | None<br/>| 102720 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnvironmentalInterestByProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnvironmentalInterestByProgram.md) | None<br/>| 7 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnvironmentalInterestByRecordType](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnvironmentalInterestByRecordType.md) | Interest classification based on the main subject of the record and what type of activity or entity it identifies.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnvironmentalInterestType](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnvironmentalInterestType.md) | The environmental permit or regulatory program type that applies to the facility site<br/>| 5 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEPA-PFAS-Facility](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEPA-PFAS-Facility.md) | Facility identified as potentially handling PFAS in EPA PFAS Analytic tools based on industry.<br/>| 23623 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEnvironmentalInterestType](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEnvironmentalInterestType.md) | The environmental permit or regulatory program type that applies to the facility site<br/>| 24 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsEPA-PFAS-Facility](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsEPA-PFAS-Facility.md) | Facility identified as potentially handling PFAS in EPA PFAS Analytic tools based on industry.<br/>| 31147 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsFacilitySiteIdentification](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsFacilitySiteIdentification.md) | INCLUDES SYSTEMS THAT MAINTAIN BASIC IDENTIFICATION INFORMATION ABOUT FACILITIES/SITES AND LINKAGES TO ENVIRONMENTAL PERMITS AND PROGRAMS AT THE STATE, TRIBAL AND NATIONAL LEVEL.<br/>| 3 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsFacilityType](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsFacilityType.md) | Type of Facility as defined by EPA FRS facility type controlled vocabulary<br/>| 14 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsFRS-Facility](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsFRS-Facility.md) | Facility from EPA Facility Registry Service<br/>| 802699 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsFacilityType](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsFacilityType.md) | Type of Facility as defined by EPA FRS facility type controlled vocabulary<br/>| 15 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsFRS-Facility](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsFRS-Facility.md) | Facility from EPA Facility Registry Service<br/>| 1299140 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsGrantSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsGrantSystem.md) | None<br/>| 1 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsGroundWaterProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsGroundWaterProgram.md) | ENVIRONMENTAL PROGRAMS DESIGNED TO PROTECT GROUND WATER (E.G., UNDERGROUND INJECTION CONTROL (UIC),  MINERAL EXPLORATION).<br/>| 4 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsHazardousWasteProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsHazardousWasteProgram.md) | ENVIRONMENTAL PROGRAMS THAT REGULATE HAZARDOUS WASTE, INCLUDING THE GENERATION, TRANSPORTATION, TREATMENT, STORAGE, AND DISPOSAL OF HAZARDOUS WASTE, AS REQUIRED BY THE RESOURCE CONSERVATION AND RECOVERY ACT (RCRA).<br/>| 23 | 
@@ -8085,38 +8462,40 @@ NaicsNAICS-IndustrySubsector ||--|o OwlThing : "owl_sameAs"
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsLegalEnforcementActivities](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsLegalEnforcementActivities.md) | LEGAL OR ENFORCEMENT ACTIVITIES IN SUPPORT OF OTHER ENVIRONMENTAL PROGRAMS.<br/>| 5 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsMonitoringRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsMonitoringRecord.md) | A record that monitors a facility on an ongoing basis<br/>|  | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsPermitInterest](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsPermitInterest.md) | Environmental Interests that create records that are permits or licenses<br/>| 16 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsPermitRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsPermitRecord.md) | A record that tracks a permit or license awarded to the facility<br/>| 222329 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsPermitRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsPermitRecord.md) | A record that tracks a permit or license awarded to the facility<br/>| 293732 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsPermitSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsPermitSystem.md) | None<br/>| 3 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsPesticidesProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsPesticidesProgram.md) | ENVIRONMENTAL PROGRAMS THAT MONITOR BUSINESSES, GOVERNMENT AGENCIES, AND INDIVIDUALS THAT HANDLE, STORE, SELL, AND/OR APPLY PESITICIDES.<br/>| 5 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsProgramInformationSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsProgramInformationSystem.md) | An Information System maintained for an environmental program<br/>| 10 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsProjectRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsProjectRecord.md) | None<br/>| 380 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsProjectRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsProjectRecord.md) | None<br/>| 562 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsProjectSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsProjectSystem.md) | None<br/>| 1 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRadiationProtectionProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRadiationProtectionProgram.md) | ENVIRONMENTAL PROGRAMS DESIGNED TO PROTECT PEOPLE AND THE ENVIRONMENT FROM HARMFUL EXPOSURE TO RADIATION<br/>| 7 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRecord.md) | None<br/>| 128 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRegistrationRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRegistrationRecord.md) | None<br/>| 32538 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRecord.md) | None<br/>| 282215 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRegistrationRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRegistrationRecord.md) | None<br/>| 42472 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRegistryInterest](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRegistryInterest.md) | None<br/>| 4 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRegistrySystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRegistrySystem.md) | None<br/>| 3 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRemediationRedevelopmentProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRemediationRedevelopmentProgram.md) | ENVIRONMENTAL PROGRAMS AIMED AT CLEANING UP AND/OR REDEVELOPING UNCONTROLLED OR ABANDONED PLACES WHERE HAZARDOUS WASTE MAY BE LOCATED POSSIBLY AFFECTING LOCAL ECOSYSTEMS OR PEOPLE.<br/>| 17 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsReportingInterest](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsReportingInterest.md) | None<br/>| 6 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsReportingRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsReportingRecord.md) | None<br/>| 344060 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsReportingRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsReportingRecord.md) | None<br/>| 487387 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsReportingSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsReportingSystem.md) | None<br/>| 21 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRiskInterest](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRiskInterest.md) | None<br/>| 4 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRiskPlanRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRiskPlanRecord.md) | None<br/>| 8847 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsRiskPlanRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsRiskPlanRecord.md) | None<br/>| 13687 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsSiteInterest](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsSiteInterest.md) | None<br/>| 16 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsSiteRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsSiteRecord.md) | A record that monitors a site, beyond specific ownership of one organization and their activities, e.g. superfund site, air monitoring site<br/>| 26897 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsSiteRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsSiteRecord.md) | A record that monitors a site, beyond specific ownership of one organization and their activities, e.g. superfund site, air monitoring site<br/>| 35428 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsSiteSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsSiteSystem.md) | None<br/>| 7 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsSolidWasteProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsSolidWasteProgram.md) | ENVIRONMENTAL PROGRAMS THAT REGULATE SOLID WASTES (E.G., COMPOST SITES, LANDFILLS, TRANSFER STATIONS).<br/>| 17 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsStateSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsStateSystem.md) | None<br/>| 48 | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsStateTrackingRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsStateTrackingRecord.md) | None<br/>| 368761 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsStateTrackingRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsStateTrackingRecord.md) | None<br/>| 461681 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsStationSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsStationSystem.md) | None<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsSupplementalRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsSupplementalRecord.md) | Supplemental Record that relates to a facility but primarily identifies something other than the facility itself (e.g. permit, license, incident, enforcement action records)<br/>| 147231 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsSupplementalRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsSupplementalRecord.md) | Supplemental Record that relates to a facility but primarily identifies something other than the facility itself (e.g. permit, license, incident, enforcement action records)<br/>| 211436 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsTribalSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsTribalSystem.md) | None<br/>| 6 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsTribalTrackingRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsTribalTrackingRecord.md) | None<br/>| 80 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsUndergroundStorageTankProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsUndergroundStorageTankProgram.md) | ENVIRONMENTAL PROGRAMS DESIGNED TO REDUCE THE CHANCE OF RELEASES FROM UNDERGROUND STORAGE TANKS (USTS), DETECT LEAKS AND SPILLS WHEN THEY DO OCCUR, AND SECURE PROMPT CLEANUP<br/>| 3 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsWasteWaterProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsWasteWaterProgram.md) | ENVIRONMENTAL PROGRAMS THAT REGULATE DISCHARGES OF POLLUTANTS TO WATERS OF THE UNITED STATES, AS REQUIRED BY THE CLEAN WATER ACT.<br/>| 29 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Fio-epa-frsWaterResourcesProgram](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/Fio-epa-frsWaterResourcesProgram.md) | ENVIRONMENTAL PROGRAMS THAT MANAGE WATER RESOURCES TO MEET THE NEEDS OF THE NATURAL ENVIRONMENT AND HUMAN COMMUNITIES, INCLUDING WATERSHED MANAGEMENT, STREAM FLOWS, WATER RIGHTS, WELL DRILLING, USE OF WATER SUPPLIES, AND DAM SAFETY.<br/>| 4 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FioFacility](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/FioFacility.md) | Any physical building, building complex or site (e.g. an airstrip, a mine, or superfund site) at which a commercial or institutional activity occurs.<br/>|  | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FioIndustry](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/FioIndustry.md) | A distinct group of productive or profit-making enterprises.<br/>| 736 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FioIndustry](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/FioIndustry.md) | A distinct group of productive or profit-making enterprises.<br/>| 1297 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[KwgoS2CellLevel13](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/KwgoS2CellLevel13.md) | None<br/>| 249509 | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[KwgoStatisticalArea](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/KwgoStatisticalArea.md) | None<br/>|  | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[NaicsNAICS-Industry](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/NaicsNAICS-Industry.md) | None<br/>|  | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[NaicsNAICS-IndustryCode](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/NaicsNAICS-IndustryCode.md) | None<br/>| 1701 | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[NaicsNAICS-IndustryGroup](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/classes/NaicsNAICS-IndustryGroup.md) | None<br/>| 308 | 
@@ -8152,25 +8531,30 @@ NaicsNAICS-IndustrySubsector ||--|o OwlThing : "owl_sameAs"
 | --- | --- | --- |
 | [dct_decription](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/dct_decription.md) | <br/>|  |
 | [dct_decscription](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/dct_decscription.md) | <br/>|  |
-| [fio_epa_frs_fromSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_fromSystem.md) | <br/>| 1231696 |
-| [fio_epa_frs_hasEnvironmentalInterest](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_hasEnvironmentalInterest.md) | <br/>| 1418297 |
-| [fio_epa_frs_hasFRSId](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_hasFRSId.md) | has Identifier in EPA Facility Registry Service<br/>| 529535 |
+| [fio_epa_frs_fromSystem](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_fromSystem.md) | <br/>| 2303313 |
+| [fio_epa_frs_hasEnvironmentalInterest](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_hasEnvironmentalInterest.md) | <br/>| 1785047 |
+| [fio_epa_frs_hasFRSId](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_hasFRSId.md) | has Identifier in EPA Facility Registry Service<br/>| 918005 |
 | [fio_epa_frs_hasMonitoringRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_hasMonitoringRecord.md) | <br/>|  |
-| [fio_epa_frs_hasRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_hasRecord.md) | <br/>| 1475331 |
-| [fio_epa_frs_hasSupplementalRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_hasSupplementalRecord.md) | <br/>| 244147 |
-| [fio_epa_frs_ofFacilityType](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_ofFacilityType.md) | <br/>| 1336346 |
-| [fio_epa_frs_ofInterestType](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_ofInterestType.md) | <br/>| 1321543 |
-| [fio_epa_frs_ofPrimaryIndustry](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_ofPrimaryIndustry.md) | <br/>| 248235 |
-| [fio_epa_frs_ofSecondaryIndustry](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_ofSecondaryIndustry.md) | <br/>| 24317 |
+| [fio_epa_frs_hasRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_hasRecord.md) | <br/>| 2635271 |
+| [fio_epa_frs_hasSupplementalRecord](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_hasSupplementalRecord.md) | <br/>| 720516 |
+| [fio_epa_frs_ofFacilityType](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_ofFacilityType.md) | <br/>| 2517791 |
+| [fio_epa_frs_ofInterestType](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_ofInterestType.md) | <br/>| 2027729 |
+| [fio_epa_frs_ofPrimaryIndustry](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_ofPrimaryIndustry.md) | <br/>| 270322 |
+| [fio_epa_frs_ofSecondaryIndustry](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_ofSecondaryIndustry.md) | <br/>| 20320 |
 | [fio_epa_frs_partOf](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_partOf.md) | <br/>| 3 |
 | [fio_epa_frs_replacedBy](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_epa_frs_replacedBy.md) | <br/>| 4 |
 | [fio_hasFacility](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_hasFacility.md) | <br/>|  |
-| [fio_ofIndustry](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_ofIndustry.md) | A relation between an entity and the industry it is classified under<br/>| 1815886 |
+| [fio_ofIndustry](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_ofIndustry.md) | A relation between an entity and the industry it is classified under<br/>| 2113938 |
 | [fio_ofYear](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_ofYear.md) | A relation between an industry code and the schema year it belongs to<br/>| 2129 |
-| [fio_ownedBy](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_ownedBy.md) | <br/>| 1477 |
+| [fio_ownedBy](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_ownedBy.md) | <br/>| 2018 |
 | [fio_sameCode](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_sameCode.md) | <br/>|  |
 | [fio_subcodeOf](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_subcodeOf.md) | A hierarchical relation between an industry and its parent industry<br/>| 7847 |
 | [fio_yearDeprecated](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/fio_yearDeprecated.md) | A relation between an industry code and the schema year it was deprecated and...<br/>|  |
+| [http___proton.semanticweb.org_protonsys#transitiveOver](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/http___proton.semanticweb.org_protonsys#transitiveOver.md) | <br/>|  |
+| [kwgo_administrativePartOf](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/kwgo_administrativePartOf.md) | <br/>|  |
+| [skos_description](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/skos_description.md) | <br/>|  |
+| [spatial_connectedTo](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/spatial_connectedTo.md) | <br/>| 4315928 |
+| [spatial_spatiallyRelatedTo](https://github.com/frink-okn/graph-descriptions/blob/main/fio-kg/slots/spatial_spatiallyRelatedTo.md) | <br/>| 4315928 |
 
 
 
@@ -8200,4 +8584,6 @@ NaicsNAICS-IndustrySubsector ||--|o OwlThing : "owl_sameAs"
 * rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
 * rdfs: http://www.w3.org/2000/01/rdf-schema#
 * sdos: https://schema.org/
+* skos: http://www.w3.org/2004/02/skos/core#
+* spatial: http://purl.org/spatialai/spatial/spatial-full#
 * xsd: http://www.w3.org/2001/XMLSchema#
