@@ -42,6 +42,7 @@ kgs:
   homepage: https://docs.geoconnex.us/about/intro
   shortname: geoconnex
   sparql: https://frink.apps.renci.org/geoconnex/sparql
+  stats: https://frink.renci.org/kg-stats/geoconnex
   template: overrides/kg.html
   title: GEOCONNEX
   tpf: https://frink.apps.renci.org/ldf/geoconnex
@@ -92,6 +93,7 @@ kgs:
   homepage: https://sawgraph.github.io/
   shortname: spatialkg
   sparql: https://frink.apps.renci.org/spatialkg/sparql
+  stats: https://frink.renci.org/kg-stats/spatial-kg
   template: overrides/kg.html
   title: SAWGraph Spatial KG
   tpf: https://frink.apps.renci.org/ldf/spatialkg
@@ -214,6 +216,7 @@ kgs:
   homepage: https://www.wikidata.org/
   shortname: identifier-mappings
   sparql: https://frink.apps.renci.org/identifier-mappings/sparql
+  stats: https://frink.renci.org/kg-stats/identifier-mappings
   template: overrides/kg.html
   title: ID Mappings
   tpf: https://frink.apps.renci.org/ldf/identifier-mappings
@@ -402,6 +405,7 @@ kgs:
   homepage: https://sawgraph.github.io/
   shortname: fiokg
   sparql: https://frink.apps.renci.org/fiokg/sparql
+  stats: https://frink.renci.org/kg-stats/fio-kg
   template: overrides/kg.html
   title: SAWGraph FIO KG
   tpf: https://frink.apps.renci.org/ldf/fiokg
@@ -417,6 +421,7 @@ kgs:
   homepage: https://sawgraph.github.io/
   shortname: hydrologykg
   sparql: https://frink.apps.renci.org/hydrologykg/sparql
+  stats: https://frink.renci.org/kg-stats/hydrology-kg
   template: overrides/kg.html
   title: SAWGraph Hydrology KG
   tpf: https://frink.apps.renci.org/ldf/hydrologykg
@@ -452,6 +457,7 @@ kgs:
   homepage: https://ufokn.com
   shortname: ufokn
   sparql: https://frink.apps.renci.org/ufokn/sparql
+  stats: https://frink.renci.org/kg-stats/wen-kg
   template: overrides/kg.html
   title: UF-OKN
   tpf: https://frink.apps.renci.org/ldf/ufokn
