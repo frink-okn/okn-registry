@@ -12,9 +12,12 @@ frink-options:
   lakefs-repo: spatial-kg
   documentation-path: spatial-kg
 contact:
-  email: david.kedrowski@maine.edu 
-  github: "dkedrowski"
-  label: "David Kedrowski"
+  - email: david.kedrowski@maine.edu 
+    github: "dkedrowski"
+    label: "David Kedrowski"
+  - email: "torsten.hahmann@maine.edu"
+    github: "thahmann"
+    label: "Torsten Hahmann"
 ---
 The SAWGraph Spatial KG is part of the Safe Agricultural Products and Water Graph (SAWGraph) project. It contains all the Level 13 grid cells from the S2 grid as well as administrative regions of levels 1 to 3 (states, counties, and county subdivisions) and the spatial relationships between them. The graph covers all of the 48 contiguous states in the U.S. and is used to spatially integrate other SAWGraph and Proto-OKN repositories. 
 
