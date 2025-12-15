@@ -13,7 +13,7 @@ frink-options:
   documentation-path: biobricks-pubchem-annotations-kg
 contact:
   email: tom@insilica.co
-  github: ""
+  github: "tomlue"
   label: "Tom Luechtefeld"
 ---
 BioBricks PubChem Annotations is an open knowledge graph of chemical

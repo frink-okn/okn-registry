@@ -13,7 +13,7 @@ frink-options:
   documentation-path: biobricks-toxcast-kg
 contact:
   email: tom@insilica.co
-  github: ""
+  github: "tomlue"
   label: "Tom Luechtefeld"
 ---
 BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput
