@@ -1,0 +1,17 @@
+#+ summary: "Count the number of datasets by infectious agent in NDE."
+#+ tags:
+#+   - nde 
+
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?agent ?agentName (COUNT(?dataset) AS ?datasetCount) (GROUP_CONCAT(DISTINCT ?catalogShort; separator=", ") AS ?catalogs)
+WHERE {
+    ?dataset rdf:type schema:Dataset ;
+             schema:infectiousAgent ?agent ;
+             schema:includedInDataCatalog ?catalog .
+    ?agent schema:name ?agentName .
+    BIND(REPLACE(STR(?catalog), "^https://okn\\.wobd\\.org/catalog/", "") AS ?catalogShort)
+}
+GROUP BY ?agent ?agentName
+ORDER BY DESC(?datasetCount)

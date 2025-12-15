@@ -1,0 +1,21 @@
+#+ summary: "Find all influenza related studies in NDE."
+#+ tags:
+#+   - nde
+
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?dataset ?datasetName ?diseaseName ?doi
+WHERE {
+    ?dataset rdf:type schema:Dataset ;
+             schema:name ?datasetName ;
+             schema:healthCondition ?disease ;
+  			 schema:sameAs ?doi .
+    ?disease schema:name ?diseaseName .
+    FILTER(
+        ?disease = <http://purl.obolibrary.org/obo/MONDO_0005812> ||
+        CONTAINS(LCASE(?diseaseName), "influenza")
+    )
+   FILTER(REGEX(STR(?doi), "^https://doi\\.org/"))
+}
+ORDER BY ?diseaseName ?datasetName

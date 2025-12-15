@@ -1,0 +1,33 @@
+#+ summary: "Find all diseases in NDE and the Mondo disease parent terms."
+#+ tags:
+#+   - ubergraph
+#+   - nde 
+
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT
+  ?disease
+  (GROUP_CONCAT(
+     DISTINCT REPLACE(STR(?parent),
+       "^http://purl\\.obolibrary\\.org/obo/MONDO_", "MONDO:");
+     separator=" | "
+   ) AS ?directMondoParents)
+WHERE {
+  {
+    SELECT DISTINCT ?disease
+    WHERE {
+      ?dataset a schema:Dataset ;
+               schema:healthCondition ?disease .
+      FILTER(STRSTARTS(STR(?disease), "http://purl.obolibrary.org/obo/MONDO_"))
+    }
+    LIMIT 200
+  }
+
+  OPTIONAL {
+    ?disease rdfs:subClassOf ?parent .
+    FILTER(STRSTARTS(STR(?parent), "http://purl.obolibrary.org/obo/MONDO_"))
+  }
+}
+GROUP BY ?disease
+LIMIT 1000
