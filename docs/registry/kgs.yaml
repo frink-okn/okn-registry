@@ -1,17 +1,5 @@
 kgs:
 - contact:
-    email: ''
-    github: ''
-    label: ''
-  description: Wikidata is a free and open knowledge base that can be read and edited
-    by both humans and machines
-  homepage: https://www.wikidata.org/
-  shortname: wikidata
-  sparql: https://frink.apps.renci.org/wikidata/sparql
-  template: overrides/kg.html
-  title: Wikidata
-  tpf: https://frink.apps.renci.org/ldf/wikidata
-- contact:
     email: aidong@virginia.edu
     github: ''
     label: Aidong Zhang
@@ -30,7 +18,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/biohealth
 - contact:
     email: apadilla@lincolninst.edu
-    github: ''
+    github: adplincinst
     label: Andrew Padilla
   description: Geoconnex is an open, community-driven knowledge graph linking U.S.
     hydrologic features to enable seamless water data discovery, access, and collaborative
@@ -61,8 +49,20 @@ kgs:
   title: Ubergraph
   tpf: https://frink.apps.renci.org/ldf/ubergraph
 - contact:
+    email: balhoff@renci.org
+    github: balhoff
+    label: Jim Balhoff
+  description: Wikidata is a free and open knowledge base that can be read and edited
+    by both humans and machines
+  homepage: https://www.wikidata.org/
+  shortname: wikidata
+  sparql: https://frink.apps.renci.org/wikidata/sparql
+  template: overrides/kg.html
+  title: Wikidata
+  tpf: https://frink.apps.renci.org/ldf/wikidata
+- contact:
     email: cli@uta.edu
-    github: ''
+    github: idirlab
     label: Chengkai Li
   description: The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil
     carbon modeling, which is crucial for voluntary carbon markets.
@@ -77,6 +77,22 @@ kgs:
   template: overrides/kg.html
   title: SOC-KG
   tpf: https://frink.apps.renci.org/ldf/sockg
+- contact:
+    email: climatepub4kg@tuprd.onmicrosoft.com
+    github: aayushacharya
+    label: Aayush Acharya
+  description: Climate Models KG is a knowledge graph to support evaluation and development
+    of climate models.
+  frink-options:
+    documentation-path: climatepub4-kg
+    lakefs-repo: climatepub4-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
+  shortname: climatemodelskg
+  sparql: https://frink.apps.renci.org/climatemodelskg/sparql
+  stats: https://frink.renci.org/kg-stats/climate-kg
+  template: overrides/kg.html
+  title: Climate Models KG
+  tpf: https://frink.apps.renci.org/ldf/climatepub4kg
 - contact:
     email: david.kedrowski@maine.edu
     github: dkedrowski
@@ -99,7 +115,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/spatialkg
 - contact:
     email: farhad.ameri@asu.edu
-    github: ''
+    github: amerif
     label: Farhad Ameri
   description: Supply and Demand Open Knowledge Network is an interconnected network
     of publicly available manufacturing capability data focused on Small and Medium-Sized
@@ -117,7 +133,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/sudokn
 - contact:
     email: jiaqi.gong@ua.edu
-    github: ''
+    github: SAIL-UA
     label: Jiaqi Gong
   description: Rural Resilience KG is a cross-domain knowledge graph to integrate
     health and justice for rural resilience.
@@ -182,7 +198,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/semopenalex
 - contact:
     email: lisa@renci.org
-    github: ''
+    github: lstillwe
     label: Lisa Stillwell
   description: The NASA Knowledge Graph Dataset is an expansive graph-based dataset
     designed to integrate and interconnect information about satellite datasets, scientific
@@ -205,8 +221,8 @@ kgs:
   title: NASA-GESDISC-KG
   tpf: https://frink.apps.renci.org/ldf/nasa-gesdisc-kg
 - contact:
-    email: mmorshed@scripps.edu
-    github: ''
+    email: morshedm@renci.org
+    github: mahir256
     label: Mahir Morshed
   description: Mappings using standard RDF predicates between Wikidata entities and
     external identifiers represented as RDF IRIs
@@ -221,24 +237,8 @@ kgs:
   title: ID Mappings
   tpf: https://frink.apps.renci.org/ldf/identifier-mappings
 - contact:
-    email: mustapha.adamu@temple.edu
-    github: ''
-    label: Mustapha Adamu
-  description: Climate Models KG is a knowledge graph to support evaluation and development
-    of climate models.
-  frink-options:
-    documentation-path: climatepub4-kg
-    lakefs-repo: climatepub4-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
-  shortname: climatemodelskg
-  sparql: https://frink.apps.renci.org/climatemodelskg/sparql
-  stats: https://frink.renci.org/kg-stats/climate-kg
-  template: overrides/kg.html
-  title: Climate Models KG
-  tpf: https://frink.apps.renci.org/ldf/climatepub4kg
-- contact:
     email: sergio.baranzini@ucsf.edu
-    github: ''
+    github: baranzini-lab
     label: Sergio Baranzini
   description: "The spoke-genelab KG complements the spokeokn (SPOKE Open Knowledge\
     \ Network) KG and is designed to integrate omics data from NASA\u2019s Open Science\
@@ -257,7 +257,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/spoke-genelab
 - contact:
     email: sergio.baranzini@ucsf.edu
-    github: ''
+    github: baranzini-lab
     label: Sergio Baranzini
   description: The spoke-okn (SPOKE Open Knowledge Network) KG is a comprehensive
     biomedical and environmental health knowledge graph that integrates diverse data
@@ -276,7 +276,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/spoke-okn
 - contact:
     email: tianyi@purdue.edu
-    github: ''
+    github: tianyi-zhang
     label: Tianyi Zhang
   description: SecureChain is a knowledge graph for resilient, trustworthy, and secure
     software supply chains.
@@ -293,7 +293,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/securechainkg
 - contact:
     email: tom@insilica.co
-    github: ''
+    github: tomlue
     label: Tom Luechtefeld
   description: BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways
     from the AOP-Wiki.
@@ -310,7 +310,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/biobricks-aopwiki
 - contact:
     email: tom@insilica.co
-    github: ''
+    github: tomlue
     label: Tom Luechtefeld
   description: BioBricks ICE (Integrated Chemical Environment) is an open knowledge
     graph for cheminformatics and chemical safety data from EPA's CompTox database.
@@ -327,7 +327,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/biobricks-ice
 - contact:
     email: tom@insilica.co
-    github: ''
+    github: tomlue
     label: Tom Luechtefeld
   description: BioBricks MeSH is an open knowledge graph of Medical Subject Headings
     (MeSH) biomedical vocabulary.
@@ -344,7 +344,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/biobricks-mesh
 - contact:
     email: tom@insilica.co
-    github: ''
+    github: tomlue
     label: Tom Luechtefeld
   description: BioBricks PubChem Annotations is an open knowledge graph of chemical
     annotations from PubChem.
@@ -361,7 +361,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/biobricks-pubchem-annotations
 - contact:
     email: tom@insilica.co
-    github: ''
+    github: tomlue
     label: Tom Luechtefeld
   description: BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening
     data.
@@ -378,7 +378,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/biobricks-tox21
 - contact:
     email: tom@insilica.co
-    github: ''
+    github: tomlue
     label: Tom Luechtefeld
   description: BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput
     screening data.
@@ -395,7 +395,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/biobricks-toxcast
 - contact:
     email: torsten.hahmann@maine.edu
-    github: ''
+    github: thahmann
     label: Torsten Hahmann
   description: The FIO KG is part of the SAWGraph project.
   frink-options:
@@ -411,7 +411,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/fiokg
 - contact:
     email: torsten.hahmann@maine.edu
-    github: ''
+    github: thahmann
     label: Torsten Hahmann
   description: The Hydrology KG is part of the SAWGraph project.
   frink-options:
@@ -463,7 +463,7 @@ kgs:
   tpf: https://frink.apps.renci.org/ldf/ufokn
 - contact:
     email: yuzhou.chen@temple.edu
-    github: ''
+    github: yuzhouguangc
     label: Yuzhou Chen
   description: Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs
     to Address Homelessness With Explainable AI
