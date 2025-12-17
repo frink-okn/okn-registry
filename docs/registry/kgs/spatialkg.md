@@ -11,7 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/spatialkg
 frink-options:
   lakefs-repo: spatial-kg
   documentation-path: spatial-kg
-contact:
+contacts:
   - email: david.kedrowski@maine.edu 
     github: "dkedrowski"
     label: "David Kedrowski"
