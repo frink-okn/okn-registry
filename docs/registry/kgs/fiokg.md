@@ -11,7 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/fiokg
 frink-options:
   lakefs-repo: fio-kg
   documentation-path: fio-kg
-contact:
+contacts:
   - email: katrina.schweikert@maine.edu	  
     github: "kschweikert"
     label: "Katrina Schweikert"
