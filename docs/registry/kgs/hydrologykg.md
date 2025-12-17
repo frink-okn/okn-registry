@@ -11,7 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/hydrologykg
 frink-options:
   lakefs-repo: hydrology-kg
   documentation-path: hydrology-kg
-contact:
+contacts:
   - email: david.kedrowski@maine.edu  
     github: "dkedrowski"
     label: "David Kedrowski"
