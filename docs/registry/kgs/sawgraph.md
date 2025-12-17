@@ -11,7 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/sawgraph
 frink-options:
   lakefs-repo: sawgraph-kg
   documentation-path: sawgraph-kg
-contact:
+contacts:
   - email: katrina.schweikert@maine.edu	  
     github: "kschweikert"
     label: "Katrina Schweikert"
