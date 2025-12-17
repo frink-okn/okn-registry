@@ -13,7 +13,7 @@ frink-options:
   documentation-path: geoconnex
 contact:
   email: "apadilla@lincolninst.edu"
-  github: ""
+  github: "adplincinst"
   label: "Andrew Padilla"
 ---
 Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic features to enable seamless water data discovery, access, and collaborative monitoring.

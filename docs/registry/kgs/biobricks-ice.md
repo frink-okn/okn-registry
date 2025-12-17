@@ -13,7 +13,7 @@ frink-options:
   documentation-path: biobricks-ice-kg
 contact:
   email: tom@insilica.co
-  github: ""
+  github: "tomlue"
   label: "Tom Luechtefeld"
 ---
 BioBricks ICE (Integrated Chemical Environment) is an open knowledge graph for

@@ -17,7 +17,7 @@ frink-options:
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-genelab.yaml
 contact:
   email: sergio.baranzini@ucsf.edu
-  github: ""
+  github: "baranzini-lab"
   label: "Sergio Baranzini"
 ---
 The spoke-genelab KG complements the spoke-okn (SPOKE Open Knowledge Network) KG and is designed to integrate omics data from NASA’s Open Science Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments. 
