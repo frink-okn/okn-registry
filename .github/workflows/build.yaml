@@ -31,4 +31,4 @@ jobs:
           title: 'Update KG registry metadata'
           body: |
             Recreates all KG registry metadata.
-          assignees: balhoff
+          assignees: balhoff,mahir256
