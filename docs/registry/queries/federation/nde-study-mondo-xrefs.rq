@@ -1,0 +1,26 @@
+#+ summary: "Find a study related to influenza and links to other disease sources."
+#+ tags:
+#+   - ubergraph
+#+   - nde
+
+PREFIX schema:   <http://schema.org/>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT ?dataset ?datasetName (GROUP_CONCAT(DISTINCT STR(?xref); separator=" | ") AS ?xrefList)
+WHERE {
+  {
+    SELECT ?dataset ?datasetName
+    WHERE {
+      ?dataset rdf:type schema:Dataset ;
+               schema:name ?datasetName ;
+               schema:healthCondition <http://purl.obolibrary.org/obo/MONDO_0005812> .
+    }
+    LIMIT 1
+  }
+
+  OPTIONAL {
+    <http://purl.obolibrary.org/obo/MONDO_0005812> oboInOwl:hasDbXref ?xref .
+  }
+}
+GROUP BY ?dataset ?datasetName

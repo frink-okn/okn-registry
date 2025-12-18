@@ -1,0 +1,14 @@
+#+ summary: "List all resources in NDE and count the number of studies in each resource."
+#+ tags:
+#+   - nde
+
+PREFIX schema: <http://schema.org/>
+
+SELECT ?catalog (COUNT(?dataset) AS ?datasetCount)
+WHERE {
+  ?dataset a schema:Dataset ;
+           schema:includedInDataCatalog ?catalog .
+}
+GROUP BY ?catalog
+ORDER BY DESC(?datasetCount)
+
