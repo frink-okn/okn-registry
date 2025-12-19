@@ -12,8 +12,11 @@ frink-options:
   lakefs-repo: secure-chain-kg
   documentation-path: secure-chain-kg
 contact:
-  email: tianyi@purdue.edu
-  github: "tianyi-zhang"
-  label: "Tianyi Zhang"
+  - email: tianyi@purdue.edu
+    github: "tianyi-zhang"
+    label: "Tianyi Zhang"
+  - email: "di5@purdue.edu"
+    github: "NecoraNyaru"
+    label: "Yifeng Di"
 ---
 SecureChain KG is a knowledge graph for resilient, trustworthy, and secure software supply chains.
