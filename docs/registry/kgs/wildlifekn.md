@@ -14,7 +14,7 @@ frink-options:
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
 contact:
   email: xzhang33@nd.edu
-  github: ""
+  github: "XiangqiWang77"
   label: "Xiangliang Zhang"
 ---
 This project seeks to create a comprehensive, integrative knowledge network for the management of wildlife in the context of climate change
