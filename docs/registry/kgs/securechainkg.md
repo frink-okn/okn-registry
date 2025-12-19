@@ -11,7 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/securechainkg
 frink-options:
   lakefs-repo: secure-chain-kg
   documentation-path: secure-chain-kg
-contact:
+contacts:
   - email: tianyi@purdue.edu
     github: "tianyi-zhang"
     label: "Tianyi Zhang"
