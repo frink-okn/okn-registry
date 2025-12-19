@@ -94,26 +94,6 @@ kgs:
   title: Climate Models KG
   tpf: https://frink.apps.renci.org/ldf/climatepub4kg
 - contact:
-    email: david.kedrowski@maine.edu
-    github: dkedrowski
-    label: David Kedrowski
-  description: The SAWGraph Spatial KG is part of the Safe Agricultural Products and
-    Water Graph (SAWGraph) project. It contains all the Level 13 grid cells from the
-    S2 grid as well as administrative regions of levels 1 to 3 (states, counties,
-    and county subdivisions) and the spatial relationships between them for the 48
-    contiguous states in the U.S.
-  frink-options:
-    documentation-path: spatial-kg
-    lakefs-repo: spatial-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: spatialkg
-  sparql: https://frink.apps.renci.org/spatialkg/sparql
-  stats: https://frink.renci.org/kg-stats/spatial-kg
-  template: overrides/kg.html
-  title: SAWGraph Spatial KG
-  tpf: https://frink.apps.renci.org/ldf/spatialkg
-- contact:
     email: farhad.ameri@asu.edu
     github: amerif
     label: Farhad Ameri
@@ -163,25 +143,6 @@ kgs:
   template: overrides/kg.html
   title: Neighborhood Information KG
   tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
-- contact:
-    email: katrina.schweikert@maine.edu
-    github: kschweikert
-    label: Katrina Schweikert
-  description: The Safe Agricultural Products and Water Graph (SAWGraph) PFAS graph
-    stores data on PFAS observations and releases, describing the samples, the geospatial
-    features they were taken from, the sampled environmental media, the specific chemical
-    substances and the measurement values observed.
-  frink-options:
-    documentation-path: sawgraph-kg
-    lakefs-repo: sawgraph-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: sawgraph
-  sparql: https://frink.apps.renci.org/sawgraph/sparql
-  stats: https://frink.renci.org/kg-stats/sawgraph
-  template: overrides/kg.html
-  title: SAWGraph PFAS graph
-  tpf: https://frink.apps.renci.org/ldf/sawgraph
 - contact:
     email: lew.lefton@gmail.com
     github: ''
@@ -274,23 +235,6 @@ kgs:
   template: overrides/kg.html
   title: SPOKE-OKN
   tpf: https://frink.apps.renci.org/ldf/spoke-okn
-- contact:
-    email: tianyi@purdue.edu
-    github: tianyi-zhang
-    label: Tianyi Zhang
-  description: SecureChain is a knowledge graph for resilient, trustworthy, and secure
-    software supply chains.
-  frink-options:
-    documentation-path: secure-chain-kg
-    lakefs-repo: secure-chain-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
-  homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
-  shortname: securechainkg
-  sparql: https://frink.apps.renci.org/securechainkg/sparql
-  stats: https://frink.renci.org/kg-stats/secure-chain-kg
-  template: overrides/kg.html
-  title: SecureChain KG
-  tpf: https://frink.apps.renci.org/ldf/securechainkg
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -394,40 +338,8 @@ kgs:
   title: BioBricks ToxCast
   tpf: https://frink.apps.renci.org/ldf/biobricks-toxcast
 - contact:
-    email: torsten.hahmann@maine.edu
-    github: thahmann
-    label: Torsten Hahmann
-  description: The FIO KG is part of the SAWGraph project.
-  frink-options:
-    documentation-path: fio-kg
-    lakefs-repo: fio-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: fiokg
-  sparql: https://frink.apps.renci.org/fiokg/sparql
-  stats: https://frink.renci.org/kg-stats/fio-kg
-  template: overrides/kg.html
-  title: SAWGraph FIO KG
-  tpf: https://frink.apps.renci.org/ldf/fiokg
-- contact:
-    email: torsten.hahmann@maine.edu
-    github: thahmann
-    label: Torsten Hahmann
-  description: The Hydrology KG is part of the SAWGraph project.
-  frink-options:
-    documentation-path: hydrology-kg
-    lakefs-repo: hydrology-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-  homepage: https://sawgraph.github.io/
-  shortname: hydrologykg
-  sparql: https://frink.apps.renci.org/hydrologykg/sparql
-  stats: https://frink.renci.org/kg-stats/hydrology-kg
-  template: overrides/kg.html
-  title: SAWGraph Hydrology KG
-  tpf: https://frink.apps.renci.org/ldf/hydrologykg
-- contact:
     email: xzhang33@nd.edu
-    github: ''
+    github: XiangqiWang77
     label: Xiangliang Zhang
   description: This project seeks to create a comprehensive, integrative knowledge
     network for the management of wildlife in the context of climate change
@@ -521,3 +433,109 @@ kgs:
   template: overrides/kg.html
   title: SCALES
   tpf: https://frink.apps.renci.org/ldf/scales
+- contacts:
+  - email: david.kedrowski@maine.edu
+    github: dkedrowski
+    label: David Kedrowski
+  - email: torsten.hahmann@maine.edu
+    github: thahmann
+    label: Torsten Hahmann
+  description: The Hydrology KG is the part of the SAWGraph project that describes
+    streams, waterbodies and wells and their locations.
+  frink-options:
+    documentation-path: hydrology-kg
+    lakefs-repo: hydrology-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: hydrologykg
+  sparql: https://frink.apps.renci.org/hydrologykg/sparql
+  stats: https://frink.renci.org/kg-stats/hydrology-kg
+  template: overrides/kg.html
+  title: SAWGraph Hydrology KG
+  tpf: https://frink.apps.renci.org/ldf/hydrologykg
+- contacts:
+  - email: david.kedrowski@maine.edu
+    github: dkedrowski
+    label: David Kedrowski
+  - email: torsten.hahmann@maine.edu
+    github: thahmann
+    label: Torsten Hahmann
+  description: The SAWGraph Spatial KG is part of the Safe Agricultural Products and
+    Water Graph (SAWGraph) project. It contains all the Level 13 grid cells from the
+    S2 grid as well as administrative regions of levels 1 to 3 (states, counties,
+    and county subdivisions) and the spatial relationships between them for the 48
+    contiguous states in the U.S.
+  frink-options:
+    documentation-path: spatial-kg
+    lakefs-repo: spatial-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: spatialkg
+  sparql: https://frink.apps.renci.org/spatialkg/sparql
+  stats: https://frink.renci.org/kg-stats/spatial-kg
+  template: overrides/kg.html
+  title: SAWGraph Spatial KG
+  tpf: https://frink.apps.renci.org/ldf/spatialkg
+- contacts:
+  - email: katrina.schweikert@maine.edu
+    github: kschweikert
+    label: Katrina Schweikert
+  - email: torsten.hahmann@maine.edu
+    github: thahmann
+    label: Torsten Hahmann
+  description: The FRS (Facility Registry Service) KG is the part of the SAWGraph
+    project that stores data about facilities from EPA's Facility Registry service
+    (FRS) together with their NAICS industry classification and the spatial location.
+  frink-options:
+    documentation-path: fio-kg
+    lakefs-repo: fio-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: fiokg
+  sparql: https://frink.apps.renci.org/fiokg/sparql
+  stats: https://frink.renci.org/kg-stats/fio-kg
+  template: overrides/kg.html
+  title: SAWGraph FRS KG
+  tpf: https://frink.apps.renci.org/ldf/fiokg
+- contacts:
+  - email: katrina.schweikert@maine.edu
+    github: kschweikert
+    label: Katrina Schweikert
+  - email: torsten.hahmann@maine.edu
+    github: thahmann
+    label: Torsten Hahmann
+  description: The Safe Agricultural Products and Water Graph (SAWGraph) PFAS KG stores
+    data on PFAS observations and releases, describing the samples, the geospatial
+    features they were taken from, the sampled environmental media, the specific chemical
+    substances and the measurement values observed.
+  frink-options:
+    documentation-path: sawgraph-kg
+    lakefs-repo: sawgraph-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: sawgraph
+  sparql: https://frink.apps.renci.org/sawgraph/sparql
+  stats: https://frink.renci.org/kg-stats/sawgraph
+  template: overrides/kg.html
+  title: SAWGraph PFAS KG
+  tpf: https://frink.apps.renci.org/ldf/sawgraph
+- contacts:
+  - email: tianyi@purdue.edu
+    github: tianyi-zhang
+    label: Tianyi Zhang
+  - email: di5@purdue.edu
+    github: NecoraNyaru
+    label: Yifeng Di
+  description: SecureChain is a knowledge graph for resilient, trustworthy, and secure
+    software supply chains.
+  frink-options:
+    documentation-path: secure-chain-kg
+    lakefs-repo: secure-chain-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
+  homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
+  shortname: securechainkg
+  sparql: https://frink.apps.renci.org/securechainkg/sparql
+  stats: https://frink.renci.org/kg-stats/secure-chain-kg
+  template: overrides/kg.html
+  title: SecureChain KG
+  tpf: https://frink.apps.renci.org/ldf/securechainkg
