@@ -1,0 +1,32 @@
+#+ summary: Find genes associated with Alzheimer's disease
+#+ tags:
+#+   - prokn    
+
+PREFIX ns: <https://research.bioinformatics.udel.edu/ProKN/rdf/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX upcore: <http://purl.uniprot.org/core/>
+PREFIX efo: <http://www.ebi.ac.uk/efo/EFO_>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT
+(?gene AS ?GeneURI)
+(?geneLabel AS ?GeneName)
+(?gSAB AS ?GeneSource)
+(?disease AS ?DiseaseURI)
+(?diseaseLabel AS ?DiseaseName)
+(?dSAB AS ?DiseaseSource)
+WHERE {
+  # Find the Alzheimer's disease by its label
+        ?disease a ?diseaseType ;
+    rdfs:label ?diseaseLabel ;
+    dc:source ?dSAB.
+        FILTER((?diseaseType = upcore:Disease || ?diseaseType = efo:0000651) && CONTAINS(LCASE(?diseaseLabel), "alzheimer"))
+
+  # Find genes associated with this disease
+        ?gene ns:GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE ?disease ;
+    a ns:Gene;
+    rdfs:label ?geneLabel ;
+    dc:source ?gSAB.
+}
+ORDER BY ?geneLabel
