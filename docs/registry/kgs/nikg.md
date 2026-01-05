@@ -11,7 +11,7 @@ tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
 frink-options:
   lakefs-repo: neighborhood-information-kg
   documentation-path: neighborhood-kg
-contact:
+contacts:
   - label: "Wentao Chen"
     email: wenc056@ucsd.edu
     github: "John-Steve-C"
