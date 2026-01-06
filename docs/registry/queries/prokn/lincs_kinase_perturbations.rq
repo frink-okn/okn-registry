@@ -1,0 +1,59 @@
+#+ summary: Find LINCS 1000 compounds that positively or negatively regulates at least one kinase gene, and is also perturbed in LINCS P100
+#+ tags:
+#+   - prokn    
+
+PREFIX upcore: <http://purl.uniprot.org/core/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX edam: <http://edamontology.org/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?kinase ?accession ?ecNumber WHERE {
+    ?kinase a upcore:Protein ;
+            dc:source "UniProtKB" ;
+            obo:NCIT_C25402 ?accession ;
+            edam:data_1011 ?ecNumber .
+    FILTER regex(?ecNumber, "(^|;)2\.7[^;]*")
+}PREFIX ns: <https://research.bioinformatics.udel.edu/ProKN/rdf/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bao: <http://www.bioassayontology.org/bao#BAO_>
+PREFIX ncit: <http://purl.obolibrary.org/obo/NCIT_>
+PREFIX upcore: <http://purl.uniprot.org/core/>
+PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
+PREFIX sio: <http://semanticscience.org/resource/SIO_>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX edam: <http://edamontology.org/>
+
+SELECT DISTINCT ?compLabel ?pubchemURI
+WHERE {
+  # Perturbagen
+  ?pert rdf:type bao:0003059 ;
+            dc:source "LINCS_P100" ;
+            obo:has_dbxref ?pubchemURI.
+
+  # Compound
+  ?comp rdf:type ncit:C43366 ;
+            dc:source "LINCS" ;
+            rdfs:seeAlso ?pubchemURI ;
+            ns:label ?compLabel.
+
+  # Relationship: Compound -> Gene
+  { ?comp ro:0002213 ?kgene. } # POSITIVELY_REGULATES
+  UNION
+  { ?comp ro:0002212 ?kgene. } # NEGATIVELY_REGULATES
+
+  # Gene
+  ?kgene rdf:type upcore:Gene.
+
+  # Relationship: Gene -> Protein(IS_PROTEIN)
+  ?kgene sio:010078 ?pr.
+
+  # Protein
+  ?pr rdf:type upcore:Protein ;
+    edam:data_1011 ?ecNumber.
+  
+  #FILTER regex(?ecNumber, "2.7.*")
+  FILTER regex(?ecNumber, "(^|;)2\\.7[^;]*")
+}
+ORDER BY ?compLabel ?pubchemURI

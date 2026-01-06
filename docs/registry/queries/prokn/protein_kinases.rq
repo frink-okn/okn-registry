@@ -1,0 +1,16 @@
+#+ summary: "Find protein kinases in ProKN."
+#+ tags:
+#+   - prokn
+
+PREFIX upcore: <http://purl.uniprot.org/core/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX edam: <http://edamontology.org/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?kinase ?accession ?ecNumber WHERE {
+    ?kinase a upcore:Protein ;
+            dc:source "UniProtKB" ;
+            obo:NCIT_C25402 ?accession ;
+            edam:data_1011 ?ecNumber .
+    FILTER regex(?ecNumber, "(^|;)2\\.7[^;]*")
+}
