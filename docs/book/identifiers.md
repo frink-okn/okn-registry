@@ -6,7 +6,7 @@ These guidelines have been informed by a combination of the following:
 * the ontologies used in the Common Fund Data Ecosystem's [Crosscut Metadata Model](https://data.cfde.cloud/documentation/C2M2); and
 * the prefixes preferred for identifiers in the Biolink Model (specifically those listed for [AnatomicalEntities](https://biolink.github.io/biolink-model/AnatomicalEntity/#valid-id-prefixes), [ChemicalEntities](https://biolink.github.io/biolink-model/ChemicalEntity/#valid-id-prefixes), [MolecularEntities](https://biolink.github.io/biolink-model/MolecularEntity/#valid-id-prefixes), and [NucleicAcidEntities](https://biolink.github.io/biolink-model/NucleicAcidEntity/#valid-id-prefixes)).
 
-Each ID listed below is followed by RDF predicates that would be used to link an entity to its identifier string.
+Each ID listed below is followed by a IRI format that references to entities through that ID should use (that is, by substituting "$1" with the ID in question) as well as RDF predicates that would be used to link an entity to its identifier string.
 
 (These guidelines are currently written with the ARCH graphs in mind, but may be expanded as needed to handle other domains.)
 
@@ -31,7 +31,7 @@ These are identifiers that can refer to a wide variety of classes. While their u
 
 ## Anatomical entities
 
-Prefer [UBERON IDs](https://obophenotype.github.io/uberon/) ([wdt:P1554](http://www.wikidata.org/prop/direct/P1554))
+Prefer [UBERON IDs](https://obophenotype.github.io/uberon/) (http://purl.obolibrary.org/obo/UBERON_$1) ([wdt:P1554](http://www.wikidata.org/prop/direct/P1554))
 
 * Disclaimer: some Fabric team members have been part of UBERON's development
 * ~6000k IDs (out of at least 16k) mapped to Wikidata; no harm in adding remainder to Wikidata if not already present
@@ -39,7 +39,7 @@ Prefer [UBERON IDs](https://obophenotype.github.io/uberon/) ([wdt:P1554](http://
 
 ## Chemical entities (compounds, substances)
 
-Prefer [PubChem CIDs](https://pubchem.ncbi.nlm.nih.gov/) ([wdt:P662](http://www.wikidata.org/prop/direct/P662))
+Prefer [PubChem CIDs](https://pubchem.ncbi.nlm.nih.gov/) (http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID$1) ([wdt:P662](http://www.wikidata.org/prop/direct/P662))
 
 * CAS registry numbers are imprecise (per [Tom Luechtefeld](mailto:tom@insilica.co))
   * BioBricks/SPOKE standardizing on PubChem CIDs already
@@ -54,7 +54,7 @@ Prefer [EDAM IDs](https://edamontology.org/page)
 
 ## Diseases
 
-Prefer [Monarch Disease Ontology IDs](https://github.com/monarch-initiative/mondo) ([wdt:P5270](http://www.wikidata.org/prop/direct/P5270))
+Prefer [Monarch Disease Ontology IDs](https://github.com/monarch-initiative/mondo) (http://purl.obolibrary.org/obo/MONDO_$1) ([wdt:P5270](http://www.wikidata.org/prop/direct/P5270))
 
 * Disclaimer: some Fabric team members have been part of MONDO's development
 * 19k IDs (out of at least 26k) mapped to Wikidata; no harm in adding remainder to Wikidata if not already present
@@ -62,30 +62,30 @@ Prefer [Monarch Disease Ontology IDs](https://github.com/monarch-initiative/mond
 
 ## Genes
 
-Prefer [Entrez gene IDs](https://www.ncbi.nlm.nih.gov/gene/) ([wdt:P351](http://www.wikidata.org/prop/direct/P351))
+Prefer [Entrez gene IDs](https://www.ncbi.nlm.nih.gov/gene/) (http://purl.uniprot.org/geneid/$1) ([wdt:P351](http://www.wikidata.org/prop/direct/P351))
 
 * 794k IDs mapped to Wikidata; we may need to federate with other external sources
 
 ## Phenotypes
 
-Prefer [HPO IDs](https://hpo.jax.org/) ([wdt:P3841](http://www.wikidata.org/prop/direct/P3841))
+Prefer [HPO IDs](https://hpo.jax.org/) (http://purl.obolibrary.org/obo/HP_$1) ([wdt:P3841](http://www.wikidata.org/prop/direct/P3841))
 
 * ~2k IDs (out of 20k+) mapped to Wikidata; no harm in adding remainder to Wikidata if not already present
 
 ## Proteins
 
-Prefer [UniProt protein IDs](https://www.uniprot.org/uniprotkb/) ([wdt:P352](http://www.wikidata.org/prop/direct/P352))
+Prefer [UniProt protein IDs](https://www.uniprot.org/uniprotkb/) (http://purl.uniprot.org/uniprot/$1) ([wdt:P352](http://www.wikidata.org/prop/direct/P352))
 
 * 627 IDs (out of at least 8.2m) mapped to Wikidata; we may need to federate with other external sources
 
 ## Publications (references)
 
-Prefer [DOIs](https://doi.org) ([wdt:P356](http://www.wikidata.org/prop/direct/P356)) if present
+Prefer [DOIs](https://doi.org) (http://dx.doi.org/$1) ([wdt:P356](http://www.wikidata.org/prop/direct/P356)) if present
 
 * [PubMed IDs](https://pubmed.ncbi.nlm.nih.gov) ([wdt:P698](http://www.wikidata.org/prop/direct/P698)) and [PMCIDs](https://www.ncbi.nlm.nih.gov/pmc/) ([wdt:P932](http://www.wikidata.org/prop/direct/P932)) may be allowed if no DOI exists
 
 ## Taxa
 
-Prefer [NCBI taxa IDs](https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon) ([wdt:P685](http://www.wikidata.org/prop/direct/P685))
+Prefer [NCBI taxa IDs](https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon) (http://purl.obolibrary.org/obo/NCBITaxon_$1) ([wdt:P685](http://www.wikidata.org/prop/direct/P685))
 
 * 600k IDs (out of 2.7m) mapped to Wikidata; [Mahir](mailto:morshedm@renci.org) could try to map the remainder automatically (is already planning this with elurikkus.ee)
