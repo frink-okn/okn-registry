@@ -2,7 +2,7 @@
 template: overrides/kg.html
 shortname: rdkg
 title: Rare Disease Knowledge Graph
-description: RDKG is an open knowledge graph for rare diseases that integrates standardized disease identifiers and cross-references (e.g., MONDO, Orphanet, OMIM, UMLS, ICD) to support discovery and evidence synthesis.
+description: RDKG is an open knowledge graph for rare diseases that integrates standardized disease identifiers and cross-references to support discovery and evidence synthesis.
 homepage: https:// 
 contact:
   email: jinlian.wang@uth.tmc.edu
