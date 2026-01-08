@@ -1,0 +1,23 @@
+---
+template: overrides/kg.html
+shortname: gxa
+title: Gene Expression Atlas
+description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
+stats: https://frink.renci.org/kg-stats/gxa
+homepage: https://www.ebi.ac.uk/gxa/home
+funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+sparql: https://frink.apps.renci.org/gxa/sparql
+tpf: https://frink.apps.renci.org/ldf/gxa
+frink-options:
+  lakefs-repo: gxa
+  documentation-path: gxa
+contacts:
+- email: asu@scripps.edu
+  github: "andrewsu"
+  label: "Andrew Su"
+- email: plwhetzel@gmail.com
+  github: "twhetzel"
+  label: "Trish Whetzel" 
+---
+
+Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
