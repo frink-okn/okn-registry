@@ -9,7 +9,7 @@ funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
 sparql: https://frink.apps.renci.org/gxa/sparql
 tpf: https://frink.apps.renci.org/ldf/gxa
 frink-options:
-  lakefs-repo: gxa
+  lakefs-repo: gene-expression-atlas-okn
   documentation-path: gxa
 contacts:
 - email: asu@scripps.edu
