@@ -1,6 +1,6 @@
 ---
 template: overrides/kg.html
-shortname: gxa
+shortname: gene-expression-atlas-okn
 title: Gene Expression Atlas
 description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
 stats: https://frink.renci.org/kg-stats/gxa
