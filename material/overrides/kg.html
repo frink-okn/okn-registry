@@ -12,15 +12,16 @@
           <dt>Project homepage</dt>
           <dd><a href="{{ page.meta.homepage }}">{{ page.meta.homepage }}</a></dd>
           {% endif %}
-          {% set contact = None %}
+          {% set contacts = None %}
             {# Prefer new list format if available #}
           {% if page.meta.contacts and page.meta.contacts | length > 0 %}
-              {% set contact = page.meta.contacts[0] %}
+              {% set contacts = page.meta.contacts %}
           {% elif page.meta.contact %}
-              {% set contact = page.meta.contact %}
+              {% set contacts = [page.meta.contact] %}
           {% endif %}
-          {% if contact and contact.email %}
           <dt>Contact</dt>
+          {% for contact in contacts %}
+          {% if contact and contact.email %}
           <dd>
              <a href="mailto:{{ contact.email }}">
                {% if contact.label %}
@@ -35,6 +36,7 @@
             {% endif %}
           </dd>
           {% endif %}
+          {% endfor %}
 
           {% if page.meta.funding %}
           <dt>Funding</dt>
