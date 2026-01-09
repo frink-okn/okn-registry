@@ -61,6 +61,27 @@ kgs:
   title: Wikidata
   tpf: https://frink.apps.renci.org/ldf/wikidata
 - contact:
+    email: chenc@udel.edu
+    github: chenchuming
+    label: Chuming Chen
+  description: The Protein Knowledge Network (ProKN) integrates protein-centric data
+    with the genomic-centric datasets of the Common Fund Data Ecosystem (CFDE), spanning
+    heterogeneous biological data types across multiple domains to foster CFDE re-use
+    and collaboration through enhanced connectivity and data integration, enabling
+    new capabilities for functional genomics and systems-level understanding of disease
+    mechanisms.
+  frink-options:
+    documentation-path: prokn
+    lakefs-repo: prokn
+  funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  homepage: https://research.bioinformatics.udel.edu/ProKN/
+  shortname: prokn
+  sparql: https://frink.apps.renci.org/prokn/sparql
+  stats: https://frink.renci.org/kg-stats/prokn
+  template: overrides/kg.html
+  title: Protein Knowledge Network
+  tpf: https://frink.apps.renci.org/ldf/prokn
+- contact:
     email: cli@uta.edu
     github: idirlab
     label: Chengkai Li
@@ -127,22 +148,6 @@ kgs:
   template: overrides/kg.html
   title: Rural Resilience KG
   tpf: https://frink.apps.renci.org/ldf/ruralkg
-- contact:
-    email: jinggao@purdue.edu
-    github: ''
-    label: Jing Gao
-  description: Neighborhood Information KG (NIKG) is a knowledge graph warehouse for
-    neighborhood information.
-  frink-options:
-    documentation-path: neighborhood-kg
-    lakefs-repo: neighborhood-information-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
-  shortname: nikg
-  sparql: https://frink.apps.renci.org/neighborhood-information-kg/sparql
-  stats: https://frink.renci.org/kg-stats/nikg
-  template: overrides/kg.html
-  title: Neighborhood Information KG
-  tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
 - contact:
     email: lew.lefton@gmail.com
     github: ''
@@ -397,6 +402,25 @@ kgs:
   - email: plwhetzel@gmail.com
     github: twhetzel
     label: Trish Whetzel
+  description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
+  frink-options:
+    documentation-path: gene-expression-atlas-okn
+    lakefs-repo: gene-expression-atlas-okn
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://www.ebi.ac.uk/gxa/home
+  shortname: gene-expression-atlas-okn
+  sparql: https://frink.apps.renci.org/gene-expression-atlas-okn/sparql
+  stats: https://frink.renci.org/kg-stats/gene-expression-atlas-okn
+  template: overrides/kg.html
+  title: Gene Expression Atlas
+  tpf: https://frink.apps.renci.org/ldf/gene-expression-atlas-okn
+- contacts:
+  - email: asu@scripps.edu
+    github: andrewsu
+    label: Andrew Su
+  - email: plwhetzel@gmail.com
+    github: twhetzel
+    label: Trish Whetzel
   description: The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated
     disease datasets. These include datasets from NIAID-funded repositories as well
     as globally-relevant infectious and immune-mediated disease (IID) repositories
@@ -539,3 +563,22 @@ kgs:
   template: overrides/kg.html
   title: SecureChain KG
   tpf: https://frink.apps.renci.org/ldf/securechainkg
+- contacts:
+  - email: wenc056@ucsd.edu
+    github: John-Steve-C
+    label: Wentao Chen
+  - email: jshang@ucsd.edu
+    github: shangjingbo1226
+    label: Jingbo Shang
+  description: Neighborhood Information KG (NIKG) is a knowledge graph warehouse for
+    neighborhood information.
+  frink-options:
+    documentation-path: neighborhood-kg
+    lakefs-repo: neighborhood-information-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
+  shortname: nikg
+  sparql: https://frink.apps.renci.org/neighborhood-information-kg/sparql
+  stats: https://frink.renci.org/kg-stats/nikg
+  template: overrides/kg.html
+  title: Neighborhood Information KG
+  tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
