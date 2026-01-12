@@ -28,7 +28,7 @@ Then you can construct a query in SPARQL using the **SPARQL Query** pane and run
 
 <img src="../../assets/images/SPARQLQueryPane.png" width="400">
 
-Note—currently, selecting multiple sources uses the Comunica package to perform a federated query against Triple Pattern Fragment endpoints for those sources. The practical result of this is that the query execution happens locally, in your browser. This can be quite a bit slower than running a SPARQL query within the database server. An alternative approach is detailed below.
+Note: Currently, selecting multiple sources uses the Comunica package to perform a federated query against Triple Pattern Fragment endpoints for those sources. The practical result of this is that the query execution happens locally, in your browser. This can be quite a bit slower than running a SPARQL query within the database server. An alternative approach is detailed below.
 
 #### Using named graphs in the FRINK Federated SPARQL endpoint
 
