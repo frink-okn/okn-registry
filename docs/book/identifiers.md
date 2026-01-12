@@ -1,91 +1,37 @@
-# Identifier choice guidelines
+# Identifiers
 
-These guidelines have been informed by a combination of the following:
+An external identifier (hereinafter referred to as an 'identifier') is a string that represents a particular concept within a particular vocabulary or ontology.
 
-* the [availability of such identifiers](https://prop-explorer.toolforge.org/) on Wikidata;
-* the ontologies used in the Common Fund Data Ecosystem's [Crosscut Metadata Model](https://data.cfde.cloud/documentation/C2M2); and
-* the prefixes preferred for identifiers in the Biolink Model (specifically those listed for [AnatomicalEntities](https://biolink.github.io/biolink-model/AnatomicalEntity/#valid-id-prefixes), [ChemicalEntities](https://biolink.github.io/biolink-model/ChemicalEntity/#valid-id-prefixes), [MolecularEntities](https://biolink.github.io/biolink-model/MolecularEntity/#valid-id-prefixes), and [NucleicAcidEntities](https://biolink.github.io/biolink-model/NucleicAcidEntity/#valid-id-prefixes)).
+Identifiers are designed to be unambiguous with respect to the vocabulary in which they are defined, and are preferably detached from any natural language name for the concept they represent.
+For instance, in the KnowWhereGraph, the concept of "Lancaster County, Pennsylvania" is represented with the string "administrativeRegion.USA.42071"--that is, none of the words 'Lancaster', 'County', or 'Pennsylvania' are in that string.
 
-Each ID listed below is followed by a IRI format that references to entities through that ID should use (that is, by substituting "$1" with the ID in question) as well as RDF predicates that would be used to link an entity to its identifier string.
+## Using identifiers in RDF
 
-(These guidelines are currently written with the ARCH graphs in mind, but may be expanded as needed to handle other domains.)
+Identifiers for an entity in RDF *can* be represented in two ways: through their inclusion in an Internationalized Resource Identifier (IRI) for that entity, or in a separate string linked to the entity by a dedicated predicate.
 
-## Converting to preferred identifiers
+Most external vocabularies have an IRI scheme within which an identifier may be provided to yield a canonical reference for a particular entity.
+For instance, in the KnowWhereGraph, if an identifier is prefixed with the string "http://stko-kwg.geog.ucsb.edu/lod/resource/", the result is a standard reference to the concept with that identifier.
+This reference may then be used as the subject of other RDF triples to define relationships involving that concept.
 
-For data within the biomedical realm, RENCI provides a [node normalizer](https://nodenormalization-sri.renci.org/docs#/) that may be used to convert data using non-preferred identifiers to preferred ones if they exist.
+Some external vocabularies may instead refer to identifiers in other external vocabularies or ontologies through the use of dedicated predicates.
+If a vocabulary like the National Cancer Institute Thesaurus (NCIt) wanted to provide a reference on its 'Drosophila' entity to that genus's NCBI taxon database entry, it might use a triple like the following (where the subject, predicate, and object are separated by '⸻' for clarity):
+- <http://purl.obolibrary.org/obo/NCIT_C14202> ⸻ <http://purl.obolibrary.org/obo/NCIT_P331> ⸻ "7215"
 
-For data outside the biomedical realm, you may be able to make a mapping happen through identifiers present on Wikidata; get in touch with [Mahir](mailto:morshedm@renci.org) for help with this.
+Here the predicate used indicates that the object of the triple is an NCBI taxon ID.
 
-## Identifiers with broad scopes
+Because different vocabularies may end up defining the same concepts for whatever reason, it is helpful to have correspondences, however indirect, between IRIs.
+One way to do this is to use a [SKOS mapping property](https://www.w3.org/TR/skos-reference/#mapping) to link the two IRIs together:
+- <http://purl.obolibrary.org/obo/NCIT_C14202> ⸻ <http://www.w3.org/2004/02/skos/core#exactMatch> ⸻ <http://purl.uniprot.org/taxonomy/7215>
+- <http://purl.uniprot.org/taxonomy/7215> ⸻ <http://www.w3.org/2004/02/skos/core#exactMatch> ⸻ <http://www.wikidata.org/entity/Q312154>
 
-These are identifiers that can refer to a wide variety of classes. While their use is dispreferred for those entity classes listed underneath this section, their use may still be tolerated for entity types falling outside of those classes.
+## Identifiers in the Proto-OKN
 
-* Wikidata item IDs (Qids, e.g. http://www.wikidata.org/entity/Q42)
-* [UMLS CUIs](https://evsexplore.semantics.cancer.gov/evsexplore/welcome?terminology=ncim) ([wdt:P2892](http://www.wikidata.org/prop/direct/P2892)) (e.g. https://identifiers.org/umls:C0037379)
-  * ~740k IDs mapped to Wikidata
-* [NCIt IDs](https://www.ebi.ac.uk/ols4/ontologies/ncit) ([wdt:P1748](http://www.wikidata.org/prop/direct/P1748)) (e.g. http://purl.obolibrary.org/obo/NCIT_C20047)
-  * ~12k IDs (out of 200k) mapped to Wikidata
-* [MeSH concepts](https://id.nlm.nih.gov/mesh/) ([wdt:P6694](http://www.wikidata.org/prop/direct/P6694)) (e.g. http://id.nlm.nih.gov/mesh/M0000115)
-  * ~1.2k IDs (out of ~450k) mapped to Wikidata
-  * cf. [MeSH tree codes](https://meshb-prev.nlm.nih.gov/treeView) ([wdt:P672](http://www.wikidata.org/prop/direct/P672)) of which ~65k IDs have been mapped to Wikidata
+It is preferred throughout the Proto-OKN that entities be referred to using IRIs that encode different identifiers (that is, the first representation described in the previous section).
+Thus the city of Lancaster, Pennsylvania should be referred to with the IRI <http://stko-kwg.geog.ucsb.edu/lod/resource/statisticalArea.29540>, rather than using some other arbitrary IRI that is merely connected to the string "statisticalArea.29540".
 
-## Anatomical entities
+The Proto-OKN Fabric provides as a starting point for linkages Wikidata's data and the Ubergraph, which contain definitions for different concepts using different identifiers in their IRIs:
+- The entity in the NCIt (provided in the Ubergraph) for that same county is referred to with <http://purl.obolibrary.org/obo/NCIT_C109967>, where "C109967" is the NCIt ID for that county.
+- The Wikidata entity for Lancaster County, Pennsylvania is referred to with <http://www.wikidata.org/entity/Q142369>, where "Q142369" is the Wikidata item ID for that county.
+  - The 'Identifier Mappings' component graph provides SKOS exact match pairings between different identifier IRIs and Wikidata items, allowing for conversion between some identifier schemes through Wikidata.
 
-Prefer [UBERON IDs](https://obophenotype.github.io/uberon/) (http://purl.obolibrary.org/obo/UBERON_$1) ([wdt:P1554](http://www.wikidata.org/prop/direct/P1554))
-
-* Disclaimer: some Fabric team members have been part of UBERON's development
-* ~6000k IDs (out of at least 16k) mapped to Wikidata; no harm in adding remainder to Wikidata if not already present
-* cf. [FMA IDs](https://www.ebi.ac.uk/ols4/ontologies/fma) where ~79k (out of around 104k) have been mapped to Wikidata
-
-## Chemical entities (compounds, substances)
-
-Prefer [PubChem CIDs](https://pubchem.ncbi.nlm.nih.gov/) (http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID$1) ([wdt:P662](http://www.wikidata.org/prop/direct/P662))
-
-* CAS registry numbers are imprecise (per [Tom Luechtefeld](mailto:tom@insilica.co))
-  * BioBricks/SPOKE standardizing on PubChem CIDs already
-* 1.3m IDs (out of ~111m) mapped to Wikidata; we may need to federate with other external sources
-
-## Data types/file formats
-
-Prefer [EDAM IDs](https://edamontology.org/page)
-
-* (No Wikidata identifier property for this; must map from Wikidata item to RDF URL using [identifier mappings](https://frink.apps.renci.org/ldf/identifier-mappings))
-* Only 44 IDs mapped to Wikidata; no harm in adding remainder to Wikidata if not already present
-
-## Diseases
-
-Prefer [Monarch Disease Ontology IDs](https://github.com/monarch-initiative/mondo) (http://purl.obolibrary.org/obo/MONDO_$1) ([wdt:P5270](http://www.wikidata.org/prop/direct/P5270))
-
-* Disclaimer: some Fabric team members have been part of MONDO's development
-* 19k IDs (out of at least 26k) mapped to Wikidata; no harm in adding remainder to Wikidata if not already present
-* cf. [DOID IDs](https://www.ebi.ac.uk/ols4/ontologies/doid) where all(?) IDs have been mapped to Wikidata
-
-## Genes
-
-Prefer [Entrez gene IDs](https://www.ncbi.nlm.nih.gov/gene/) (http://purl.uniprot.org/geneid/$1) ([wdt:P351](http://www.wikidata.org/prop/direct/P351))
-
-* 794k IDs mapped to Wikidata; we may need to federate with other external sources
-
-## Phenotypes
-
-Prefer [HPO IDs](https://hpo.jax.org/) (http://purl.obolibrary.org/obo/HP_$1) ([wdt:P3841](http://www.wikidata.org/prop/direct/P3841))
-
-* ~2k IDs (out of 20k+) mapped to Wikidata; no harm in adding remainder to Wikidata if not already present
-
-## Proteins
-
-Prefer [UniProt protein IDs](https://www.uniprot.org/uniprotkb/) (http://purl.uniprot.org/uniprot/$1) ([wdt:P352](http://www.wikidata.org/prop/direct/P352))
-
-* 627 IDs (out of at least 8.2m) mapped to Wikidata; we may need to federate with other external sources
-
-## Publications (references)
-
-Prefer [DOIs](https://doi.org) (http://dx.doi.org/$1) ([wdt:P356](http://www.wikidata.org/prop/direct/P356)) if present
-
-* [PubMed IDs](https://pubmed.ncbi.nlm.nih.gov) ([wdt:P698](http://www.wikidata.org/prop/direct/P698)) and [PMCIDs](https://www.ncbi.nlm.nih.gov/pmc/) ([wdt:P932](http://www.wikidata.org/prop/direct/P932)) may be allowed if no DOI exists
-
-## Taxa
-
-Prefer [NCBI taxa IDs](https://www.ebi.ac.uk/ols4/ontologies/ncbitaxon) (http://purl.obolibrary.org/obo/NCBITaxon_$1) ([wdt:P685](http://www.wikidata.org/prop/direct/P685))
-
-* 600k IDs (out of 2.7m) mapped to Wikidata; [Mahir](mailto:morshedm@renci.org) could try to map the remainder automatically (is already planning this with elurikkus.ee)
+Different preferences for identifiers in different domains are listed in separate pages of this book.
