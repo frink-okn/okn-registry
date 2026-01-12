@@ -72,7 +72,7 @@ The FRINK API endpoints can be used progammatically (see below), or else accesse
 
 ### Theme 1 Specific Endpoints
 
-See the OKN Registry entries to view the graphs currently available within FRINK. The service endpoints for SPARQL and TPF are listed in each graph's entry. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the FRINK query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide [a browser UI](https://frink.apps.renci.org/ldf/).
+See the [OKN Registry entries](../registry/) to view the graphs currently available within FRINK. The service endpoints for SPARQL and TPF are listed in each graph's entry. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the FRINK query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide [a browser UI](https://frink.apps.renci.org/ldf/).
 
 ### Cross-OKN query endpoint
 
