@@ -11,9 +11,12 @@ tpf: https://frink.apps.renci.org/ldf/oard-kg
 frink-options:
   lakefs-repo: oard-kg
   documentation-path: oard-kg
-contact:
-  email: ct2865@cumc.columbia.edu  
+contacts:
+- email: ct2865@cumc.columbia.edu  
   github: CaseyTa
   label: Casey Ta
+- email: cw2384@cumc.columbia.edu  
+  github: ChunhuaWeng
+  label: Chunhua Weng
 ---
 [OARD-KG](https://github.com/WengLab-InformaticsResearch/oard-react) is an RDF triplestore which provides a SPARQL query endpoint for clinical associations between rare diseases and phenotypes derived from electronic health records.
