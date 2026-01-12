@@ -4,12 +4,21 @@
 
 FRINK offers a query page that enables anyone to query specific Theme 1 graphs or query across graphs (i.e., a federated query). The FRINK Query Page is located at [https://frink.apps.renci.org](https://frink.apps.renci.org).
 
+### Query Across Graphs
+
+If you wish to query over all available data sources, select **FRINK Federated SPARQL** from the Sources drop down. Be sure to deselect all other sources. This will submit the query to a server-side endpoint federating all sources.
+
+<img src="../../assets/images/Federated.png" width="400">
+
 ### Query Specific Graphs
-The query page allows selection of a single knowledge graph or multiple knowledge graphs to query. 
+
+#### Using Comunica query federation
+
+The query page allows selection of a single knowledge graph or multiple knowledge graphs to query.
 
 From the **Sources** drop-down menu (shown below)
 
-<img src="../../assets/images/Sources-DropDown-Empty.png" width="400"> 
+<img src="../../assets/images/Sources-DropDown-Empty.png" width="400">
 
 You can select one or many of the graphs comprising FRINK.
 
@@ -19,16 +28,27 @@ Then you can construct a query in SPARQL using the **SPARQL Query** pane and run
 
 <img src="../../assets/images/SPARQLQueryPane.png" width="400">
 
+Note: Currently, selecting multiple sources uses the Comunica package to perform a federated query against Triple Pattern Fragment endpoints for those sources. The practical result of this is that the query execution happens locally, in your browser. This can be quite a bit slower than running a SPARQL query within the database server. An alternative approach is detailed below.
+
+#### Using named graphs in the FRINK Federated SPARQL endpoint
+
+Instead of selecting individual graphs in the **Sources** drop-down, deselect them all and choose **FRINK Federated SPARQL**. This graph is not truly federated, but instead is a large triplestore containing all the OKN knowledge graphs. By default, a query will include all graphs. To select a specific set of graphs to query over, use `FROM` clauses to list the desired graphs, e.g.:
+
+```
+SELECT *
+FROM <https://purl.org/okn/frink/kg/ubergraph>
+FROM <https://purl.org/okn/frink/kg/wikidata>
+WHERE { ?s ?p ?o }
+LIMIT 10
+```
+
+Replace the last part of the graph IRI with the **shortname** of the desired graph in the [OKN Registry](../registry/).
+
 ### Query Using Examples
-In the **EXAMPLES** pane, you can select a pre-formulated SPARQL query from the list. The **EXAMPLES** pane includes queries from distinct Theme 1 graphs as well as from other graphs that are used in the OKN (e.g., Ubergraph), with each example query clearly labeled. 
+
+In the **EXAMPLES** pane, you can select a pre-formulated SPARQL query from the list. The **EXAMPLES** pane includes queries from distinct Theme 1 graphs as well as from other graphs that are used in the OKN (e.g., Ubergraph), with each example query clearly labeled.
 
 <img src="../../assets/images/ExamplesPane.png" width="400">
-
-### Query Across Graphs
-
-If the you wish to query over all available data sources, select FRINK Federated SPARQL from the Sources drop down. Be sure to deselect all other sources. This will submit the query to a server-side endpoint federating all sources.
-
-<img src="../../assets/images/Federated.png" width="400">
 
 ### Saving Queries and Downloading Output
 
@@ -52,56 +72,8 @@ The FRINK API endpoints can be used progammatically (see below), or else accesse
 
 ### Theme 1 Specific Endpoints
 
-The following knowledge graphs are currently available within FRINK. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the FRINK query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide a browser UI.
+See the OKN Registry entries to view the graphs currently available within FRINK. The service endpoints for SPARQL and TPF are listed in each graph's entry. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the FRINK query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide [a browser UI](https://frink.apps.renci.org/ldf/).
 
-- climatepub4-kg
-    - SPARQL: `https://frink.apps.renci.org/climatepub4kg/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/climatepub4kg`
-- DREAM-KG
-    - SPARQL: `https://frink.apps.renci.org/dreamkg/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/dreamkg`
-- FIO-KG
-    - SPARQL: `https://frink.apps.renci.org/fiokg/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/fiokg`
-- Geoconnex
-    - SPARQL: `https://frink.apps.renci.org/geoconnex/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/geoconnex`
-- Hydrology KG
-    - SPARQL: `https://frink.apps.renci.org/hydrologykg/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/hydrologykg`
-- SCALES
-    - SPARQL: `https://frink.apps.renci.org/scales/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/scales`
-- Secure Chain KG
-    - SPARQL: `https://frink.apps.renci.org/securechainkg/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/securechainkg`
-- SemOpenAlex (via CollabNext)
-    - SPARQL: `https://frink.apps.renci.org/semopenalex/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/semopenalex`
-- SOC-KG
-    - SPARQL: `https://frink.apps.renci.org/sockg/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/sockg`
-- Spatial KG
-    - SPARQL: `https://frink.apps.renci.org/spatialkg/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/spatialkg`
-- SPOKE-KG
-    - SPARQL: `https://frink.apps.renci.org/spoke/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/spoke`
-- SUD-OKN
-    - SPARQL: `https://frink.apps.renci.org/sudokn/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/sudokn`
-- UF-OKN
-    - SPARQL: `https://frink.apps.renci.org/ufokn/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/ufokn`
-- Ubergraph
-    - SPARQL: `https://frink.apps.renci.org/ubergraph/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/ubergraph`
-- Wildlife-KG
-    - SPARQL: `https://frink.apps.renci.org/wildlifekg/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/wildlifekg`
-- Wikidata
-    - SPARQL: `https://frink.apps.renci.org/wikidata/sparql`
-    - TPF: `https://frink.apps.renci.org/ldf/wikidata`
+### Cross-OKN query endpoint
 
-### Federated query endpoint
 - SPARQL: `https://frink.apps.renci.org/federation/sparql`
