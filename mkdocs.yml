@@ -53,7 +53,8 @@ nav:
   - The OKN Book:
     - book/index.md
     - Graph Construction Best Practices: book/best-practices.md
-    - Identifier Choices: book/identifiers.md
+    - About External Identifiers: book/identifiers.md
+    - Biomedical Identifier Choices: book/biomedical-identifiers.md
     - Ingesting Identifier Sources: book/new-id-sources.md
   - The OKN Registry:
     - registry/index.md

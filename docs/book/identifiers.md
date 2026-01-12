@@ -15,12 +15,14 @@ This reference may then be used as the subject of other RDF triples to define re
 
 Some external vocabularies may instead refer to identifiers in other external vocabularies or ontologies through the use of dedicated predicates.
 If a vocabulary like the National Cancer Institute Thesaurus (NCIt) wanted to provide a reference on its 'Drosophila' entity to that genus's NCBI taxon database entry, it might use a triple like the following (where the subject, predicate, and object are separated by '⸻' for clarity):
+
 - <http://purl.obolibrary.org/obo/NCIT_C14202> ⸻ <http://purl.obolibrary.org/obo/NCIT_P331> ⸻ "7215"
 
 Here the predicate used indicates that the object of the triple is an NCBI taxon ID.
 
 Because different vocabularies may end up defining the same concepts for whatever reason, it is helpful to have correspondences, however indirect, between IRIs.
 One way to do this is to use a [SKOS mapping property](https://www.w3.org/TR/skos-reference/#mapping) to link the two IRIs together:
+
 - <http://purl.obolibrary.org/obo/NCIT_C14202> ⸻ <http://www.w3.org/2004/02/skos/core#exactMatch> ⸻ <http://purl.uniprot.org/taxonomy/7215>
 - <http://purl.uniprot.org/taxonomy/7215> ⸻ <http://www.w3.org/2004/02/skos/core#exactMatch> ⸻ <http://www.wikidata.org/entity/Q312154>
 
@@ -30,6 +32,7 @@ It is preferred throughout the Proto-OKN that entities be referred to using IRIs
 Thus the city of Lancaster, Pennsylvania should be referred to with the IRI <http://stko-kwg.geog.ucsb.edu/lod/resource/statisticalArea.29540>, rather than using some other arbitrary IRI that is merely connected to the string "statisticalArea.29540".
 
 The Proto-OKN Fabric provides as a starting point for linkages Wikidata's data and the Ubergraph, which contain definitions for different concepts using different identifiers in their IRIs:
+
 - The entity in the NCIt (provided in the Ubergraph) for that same county is referred to with <http://purl.obolibrary.org/obo/NCIT_C109967>, where "C109967" is the NCIt ID for that county.
 - The Wikidata entity for Lancaster County, Pennsylvania is referred to with <http://www.wikidata.org/entity/Q142369>, where "Q142369" is the Wikidata item ID for that county.
   - The 'Identifier Mappings' component graph provides SKOS exact match pairings between different identifier IRIs and Wikidata items, allowing for conversion between some identifier schemes through Wikidata.
