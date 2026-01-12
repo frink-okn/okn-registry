@@ -6,7 +6,7 @@ FRINK offers a query page that enables anyone to query specific Theme 1 graphs o
 
 ### Query Across Graphs
 
-If the you wish to query over all available data sources, select **FRINK Federated SPARQL** from the Sources drop down. Be sure to deselect all other sources. This will submit the query to a server-side endpoint federating all sources.
+If you wish to query over all available data sources, select **FRINK Federated SPARQL** from the Sources drop down. Be sure to deselect all other sources. This will submit the query to a server-side endpoint federating all sources.
 
 <img src="../../assets/images/Federated.png" width="400">
 
