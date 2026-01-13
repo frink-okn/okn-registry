@@ -50,8 +50,12 @@ nav:
     - Update Your Graph in FRINK: help/update.md
     - Query knowledge graphs in FRINK: help/query-page.md
     - Update Example Queries on FRINK UI: help/update-queries.md
-  - Best Practices:
-    - guidance/index.md
+  - The OKN Book:
+    - book/index.md
+    - Graph Construction Best Practices: book/best-practices.md
+    - About External Identifiers: book/identifiers.md
+    - Biomedical Identifier Choices: book/biomedical-identifiers.md
+    - Ingesting Identifier Sources: book/new-id-sources.md
   - The OKN Registry:
     - registry/index.md
     - Query FRINK: https://frink.apps.renci.org
