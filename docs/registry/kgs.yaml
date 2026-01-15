@@ -89,7 +89,7 @@ kgs:
     documentation-path: soc-kg
     lakefs-repo: soc-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
-  homepage: https://idir.uta.edu/sockg/
+  homepage: https://idir.sockg.org/
   shortname: sockg
   sparql: https://frink.apps.renci.org/sockg/sparql
   stats: https://frink.renci.org/kg-stats/soc-kg
