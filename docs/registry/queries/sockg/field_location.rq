@@ -1,0 +1,25 @@
+#+ summary:  Where is each field in the United States located (country, state)
+#+ tags:
+#+   - sockg
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX dc: <https://datacommons.org/browser/geoId>
+
+SELECT DISTINCT ?country ?state (GROUP_CONCAT(DISTINCT ?fieldId; SEPARATOR=", ") AS ?fieldIDs) WHERE {
+    ?ar a kwg-ont:AdministrativeRegion_0 ;
+		rdfs:label ?country ;
+    	kwg-ont:sfContains ?contained_regions .
+    
+    ?contained_regions a kwg-ont:AdministrativeRegion_1 .
+    BIND(?contained_regions AS ?sp)
+    FILTER(STRSTARTS(STR(?sp), STR(dc:)))
+   
+    ?sp kwg-ont:sfContains ?field ;
+    	rdfs:label ?state .
+    
+    ?field a sockg:Location ;
+    	dcterms:identifier ?fieldId .
+}
+GROUP BY ?country ?state

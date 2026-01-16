@@ -1,0 +1,32 @@
+#+ summary: Get all Water Data Samples and their corresponding attributes (date, expUnit, treatmentId, Runoff, growth stage, etc.)
+#+ tags:
+#+   - sockg
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+
+SELECT DISTINCT ?expUnit ?treatment ?date ?SurfOrLeach ?LossOrDep ?label ?Value ?Unit WHERE {
+    ?b a sockg:WaterQualityArea ;
+    	sockg:hasMeasurement ?m ;
+	    sockg:fromUnit ?e ;
+		sockg:usesTreatment ?t ;
+    	sockg:hasSurfaceOrLeaching ?sl ;
+		sockg:hasLossesOrDeposition ?ld ;
+    	dcterms:date ?date .
+    
+    ?e dcterms:identifier ?expUnit .
+    ?sl rdfs:label ?SurfOrLeach .
+    ?ld rdfs:label ?LossOrDep .
+    ?c rdfs:label ?crop .
+    ?t dcterms:identifier ?treatment .
+
+    
+    ?m sockg:of ?param ;
+        qudt:quantityValue ?v .
+    ?param a sockg:Parameter ;
+            rdfs:label ?label .
+    ?v qudt:numericValue ?Value ;
+        qudt:hasUnit ?Unit .
+}
+ORDER BY ?expUnit ?date ?label

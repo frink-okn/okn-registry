@@ -1,0 +1,107 @@
+#+ summary: What is the average SOC stock (kg C ha-1) for 0-30 cm? a. For each field replicate sampled during the experiment (date) calculate SOC stock. * SOC stock (kg ha-1)= Organic C (g C/kg soil) * Bulk Density(g/cm3) * Soil depth(cm) * 100. 1ha=10,000m2   b. For each field replicate, sum kg ha-1 for all depth layers (0-5cm, 5-10cm, 10-30cm). If multiple soil increments measured between 0-30 cm, equation is the summation of calculation above for each increment.  c. Average the SOC stock (0-30cm) for the treatments of interest.  
+#+ tags:
+#+   - sockg
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX ind: <https://idir.uta.edu/sockg-ontology/individuals/>
+PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX ofn: <http://www.ontotext.com/sparql/functions/>
+
+
+SELECT DISTINCT ?fieldId ?treatmentMethod (MIN(?date) AS ?Date) ?depthRange (ROUND(AVG(?SUMsocKgHa) * 100) / 100 AS ?AVGsocKgHa) ?SOCStockUnit
+WHERE {    
+    {    
+
+
+        SELECT ?fieldId ?treatmentMethod ?date ?bucket ?minDepth ?maxDepth (SUM(DISTINCT ?SOCstock) AS ?SUMsocKgHa) (MIN(?upperDepth) AS ?highestDepth) (MAX(?lowerDepth) AS ?lowestDepth) ?depthUnit
+        WHERE {     
+            BIND("15"^^xsd:double AS ?maxDepth)   
+            BIND("0"^^xsd:double AS ?minDepth)   
+
+
+            ?expUnit a sockg:ExperimentalUnit ;
+                     dcterms:identifier ?expUnitId ;
+                     kwg-ont:sfWithin ?spatial_data .
+            FILTER(STRSTARTS(STR(?spatial_data), STR(ind:Location))) # Make sure it is a field, not site ID
+            ?spatial_data dcterms:identifier ?fieldId .        
+
+
+            # Gather CHEM samples
+            ?soilChem a sockg:SoilChemicalSample ;
+                      sockg:usesTreatment ?treatment ;
+                      sockg:lowerDepth ?LDepth ;
+                      sockg:upperDepth ?UDepth ;
+                      sockg:hasMeasurement ?meas ;
+                      sockg:fromUnit ?expUnit ;
+                      dcterms:date ?date .
+            ?treatment dcterms:identifier ?treatmentId ;
+# Update what treatment method you want to group based off
+                    <https://idir.uta.edu/sockg-ontology#irrigation> ?treatmentMethod .
+            ?LDepth qudt:numericValue ?lowerDepth .
+            ?UDepth qudt:numericValue ?upperDepth ;
+                    qudt:hasUnit ?depthUnit .
+            ?meas sockg:of ind:Parameter.MeasSoilChem.17 ; # IRI of osc_gc_kg
+                  qudt:quantityValue ?result .
+            ?result qudt:numericValue ?soc ;
+                    qudt:hasUnit ?socUnit .
+            FILTER (?soc != 0)
+            FILTER (
+                (?upperDepth >= ?minDepth && ?lowerDepth <= ?maxDepth) || # Entire layer is within the defined range
+                (?upperDepth < ?minDepth && ?lowerDepth > ?minDepth) || # Partially above the range
+                (?upperDepth < ?maxDepth && ?lowerDepth > ?maxDepth) # Partially below the range
+                # Implicitly implied: user defined range within the layer
+            )
+
+
+            # ===================
+            # Gather PHYS samples
+            ?physSample a sockg:SoilPhysicalSample ;
+                        sockg:fromUnit ?expUnit ;
+                        sockg:usesTreatment ?treatment ;
+                        sockg:lowerDepth ?physLDepth ;
+                        sockg:hasMeasurement ?physMeasurement ;
+                        dcterms:date ?date .
+            # To keep it simple, assume phys and chem samples have same layer depths
+            ?physLDepth qudt:numericValue ?physLowerDepth .
+            FILTER (?physLowerDepth = ?lowerDepth)
+            ?physMeasurement sockg:of ind:Parameter.MeasSoilPhys.12 ; # IRI of bulk_density_g_cm3
+                             qudt:quantityValue ?physResult .
+            ?physResult qudt:numericValue ?bulkDensity ;
+                        qudt:hasUnit ?bulkDensityUnit .
+
+
+            BIND(IF(?upperDepth >= ?minDepth && ?lowerDepth <= ?maxDepth,        # Standard Case   
+                    ?soc * ?bulkDensity * (?lowerDepth - ?upperDepth) * 100,         
+                    IF(?upperDepth < ?minDepth && ?lowerDepth > ?minDepth,          # Layer is partially above specified area   
+                        (?soc * ?bulkDensity * (?lowerDepth - ?minDepth) * 100) ,   
+                        IF(?upperDepth < ?maxDepth && ?lowerDepth > ?maxDepth,        # Layer is partially below specified area   
+                            (?soc * ?bulkDensity * (?maxDepth - ?upperDepth) * 100) ,   
+                            (?soc * ?bulkDensity * (?maxDepth - ?minDepth) * 100)        # Specified region is contained within a layer   
+                        )   
+                    )   
+                ) AS ?SOCstock   
+            )   
+                        
+            # To group samples with similar dates
+            BIND(xsd:dateTime(CONCAT(STR(?date), "T00:00:00")) AS ?dt)
+            BIND(?dt - "2000-01-01T00:00:00"^^xsd:dateTime AS ?duration)
+            BIND(ofn:asDays(?duration) AS ?days)
+            BIND(FLOOR(?days / 30) AS ?bucket)
+
+
+        } 
+        # fieldId should NEVER anywhere but last so its grouping is insignificant 
+        GROUP BY ?expUnitId ?bucket ?treatmentMethod ?depthUnit ?minDepth ?maxDepth ?fieldId ?date
+    }    
+    FILTER(?maxDepth <= ?lowestDepth && ?minDepth >= ?highestDepth)
+    BIND(SUBSTR(str(?depthUnit), 28) AS ?parsedDepthUnit)
+    BIND(CONCAT(str(?minDepth), "-", str(?maxDepth), ?parsedDepthUnit) AS ?depthRange)
+    BIND(unit:KiloGM-Per-Ha AS ?SOCStockUnit)
+}    
+# fieldId should NEVER anywhere but last so its grouping is insignificant 
+GROUP BY ?treatmentMethod ?bucket ?depthRange ?fieldId ?SOCStockUnit 
+ORDER BY ?treatmentMethod ?fieldId ?date

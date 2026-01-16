@@ -1,0 +1,33 @@
+#+ summary: Get all Harvest Fraction Samples and their corresponding attributes (date, expUnit, treatmentId, crop, growth stage, etc.)
+#+ tags:
+#+   - sockg
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+
+SELECT DISTINCT ?expUnit ?treatment ?date ?crop ?plantFraction ?growthStage ?label ?Value ?Unit WHERE {
+    ?b a sockg:HarvestFraction ;
+    	sockg:hasMeasurement ?m ;
+	    sockg:fromUnit ?e ;
+    	sockg:hasPlantFraction ?pf ;
+    	sockg:hasGrowthStage ?gs ;
+    	sockg:hasCrop ?c ;
+		sockg:usesTreatment ?t ;
+    	dcterms:date ?date .
+    
+    ?e dcterms:identifier ?expUnit .
+    ?pf rdfs:label ?plantFraction .
+    ?gs rdfs:label ?growthStage .
+    ?c rdfs:label ?crop .
+    ?t dcterms:identifier ?treatment .
+
+    
+    ?m sockg:of ?param ;
+        qudt:quantityValue ?v .
+    ?param a sockg:Parameter ;
+            rdfs:label ?label .
+    ?v qudt:numericValue ?Value ;
+        qudt:hasUnit ?Unit .
+}
+ORDER BY ?expUnit ?date ?label  

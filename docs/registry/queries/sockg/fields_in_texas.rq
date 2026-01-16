@@ -1,11 +1,12 @@
 #+ summary: Which fields and their associated sites are located in Texas, and in which city are these fields found? Return the Field ID, Site ID, and Location with the struct (city, state abbreviation).
 #+ tags:
 #+   - sockg
-PREFIX sockg: <https://idir.uta.edu/sockg-ontology/docs#>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
 PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX ind: <https://idir.uta.edu/sockg-ontology/individuals#>
+PREFIX ind: <https://idir.uta.edu/sockg-ontology/individuals/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+
 
 SELECT DISTINCT ?fieldId ?site ?stateAbbr 
 WHERE {

@@ -1,0 +1,36 @@
+#+ summary: Get all non-NAN values from the class BiomassCarbohydrate and their associated metadata (ExpUnit, date, crop, etc.)
+#+ tags:
+#+   - sockg
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ind: <https://idir.uta.edu/sockg-ontology/individuals/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+
+SELECT DISTINCT ?expUnit ?date (SAMPLE(?crop) AS ?Crop) ?plantFraction (SAMPLE(?growthStage) AS ?GrowthStage) ?label (SAMPLE(?value) AS ?Value) (SAMPLE(?unit) AS ?Unit) WHERE {
+    ?f a sockg:BiomassCarbohydrate ;
+    	sockg:fromUnit ?e ;
+    	sockg:hasPlantFraction ?pf ;
+    	sockg:hasGrowthStage ?gs ;
+    	sockg:hasCrop ?c ;
+    	dcterms:date ?date ;
+    	sockg:hasMeasurement ?m .
+    
+    # Get literals
+    ?e dcterms:identifier ?expUnit .
+    ?pf rdfs:label ?plantFraction .
+    ?gs rdfs:label ?growthStage .
+    ?c rdfs:label ?crop .
+    
+    ?m sockg:of ?param ;
+    	qudt:quantityValue ?v .
+    
+    ?param a sockg:Parameter ;
+    	rdfs:label ?label .
+    
+    ?v qudt:numericValue ?value ;
+    	qudt:hasUnit ?unit .
+}
+GROUP BY ?expUnit ?date ?plantFraction ?label 
+ORDER BY ?expUnit ?date ?plantFraction 

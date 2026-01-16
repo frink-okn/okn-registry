@@ -2,10 +2,10 @@
 #+ tags:
 #+   - sockg
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
-PREFIX sockg: <https://idir.uta.edu/sockg-ontology/docs#>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
-PREFIX ind: <https://idir.uta.edu/sockg-ontology/individuals#>
+PREFIX ind: <https://idir.uta.edu/sockg-ontology/individuals/>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
 SELECT ?expUnitId ?treatmentId ?date (xsd:integer(?upperDepth) AS ?UpperDepth) (xsd:integer(?lowerDepth) AS ?LowerDepth) (xsd:decimal(?soc) AS ?SOC) (xsd:decimal(?bulkDensity) AS ?BulkDensity) (xsd:decimal(?deltaDepth) AS ?DeltaDepth) ?SOCstock     
 WHERE {     
@@ -22,6 +22,9 @@ WHERE {
     FILTER(STRSTARTS(STR(?spatial_data), STR(ind:Location))) 
     ?spatial_data dcterms:identifier ?fieldId .        
 
+
+
+
     # Gather CHEM samples
     ?soilChem a sockg:SoilChemicalSample ;
         sockg:usesTreatment ?treatment ;
@@ -32,6 +35,7 @@ WHERE {
         dcterms:date ?date .
     ?treatment dcterms:identifier ?treatmentId .
 
+
     ?LDepth qudt:numericValue ?lowerDepth .
     ?UDepth qudt:numericValue ?upperDepth ;
         qudt:hasUnit ?depthUnit .
@@ -40,6 +44,9 @@ WHERE {
     ?result qudt:numericValue ?soc ;
         qudt:hasUnit ?socUnit .
     FILTER (?soc != 0)
+
+
+
 
     # ===================
     # Gather PHYS samples
@@ -57,7 +64,12 @@ WHERE {
     ?physResult qudt:numericValue ?bulkDensity ;
         qudt:hasUnit ?bulkDensityUnit .
 
+
+
+
     BIND(?soc * ?bulkDensity * (?lowerDepth - ?upperDepth) * 100 AS ?SOCstock) 
     BIND((?lowerDepth - ?upperDepth) AS ?deltaDepth)
+
+
 }
 ORDER BY ?LowerDepth
