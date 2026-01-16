@@ -1,0 +1,22 @@
+#+ summary: Get 10 locations from the knowledge graph, their assoicated super locations, sub locations, and s2 cells
+#+ tags:
+#+   - sockg
+PREFIX kwgr: <http://stko-kwg.geog.ucsb.edu/lod/resource/>
+PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+
+SELECT DISTINCT ?loc (GROUP_CONCAT(DISTINCT ?superLoc; SEPARATOR=", ") AS ?superLocs) (GROUP_CONCAT(DISTINCT ?subLoc) AS ?subLocs) (GROUP_CONCAT(DISTINCT ?s2) AS ?s2cells) WHERE {
+    ?f a sockg:Location ;
+    	dcterms:identifier ?loc;
+    	kwg-ont:sfContains ?subLoc ;
+    	kwg-ont:sfWithin ?superLoc ;
+    	spatial:connectedTo ?s2 .
+    
+    FILTER(STRSTARTS(STR(?s2), STR(kwgr:s2)))
+}
+GROUP BY ?loc 
+ORDER BY ?loc
+LIMIT 10
