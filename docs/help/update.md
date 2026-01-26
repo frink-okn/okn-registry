@@ -65,7 +65,7 @@ Tags provide a crucial mechanism for keeping track of stable dataset releases. T
 To achieve automated deployment, two key events can be monitored:
 
 #### Event 1: Merge from Develop to Main
-- **Trigger**: Merging raw data from the `develop` branch to the `main` branch triggers ETL pipelines.
+- **Trigger**: Merging raw data from the `develop` branch to the `main` branch triggers ETL pipelines. Click on the Compare icon to merge the branches.
 - **ETL Output**: Once the ETL process is complete, the system pushes the new dataset onto a `stable` branch.
 
 #### Event 2: Tag Creation
