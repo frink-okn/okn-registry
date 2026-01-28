@@ -131,6 +131,22 @@ kgs:
   title: SUDOKN
   tpf: https://frink.apps.renci.org/ldf/sudokn
 - contact:
+    email: jeetvora@gwu.edu
+    github: jeet-vora
+    label: Jeet Vora
+  description: The BiomarkerKB knowledge graph is a structured network that connects
+    biomarkers to diseases, drugs, biological entities, and evidence from the scientific
+    literature.
+  frink-options:
+    documentation-path: biomarkerkg
+    lakefs-repo: biomarkerkg
+  funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
+  homepage: https://biomarkerkb.org/home/
+  shortname: biomarkerkg
+  stats: https://frink.renci.org/kg-stats/biomarkerkg
+  template: overrides/kg.html
+  title: BiomarkerKB KG
+- contact:
     email: jiaqi.gong@ua.edu
     github: SAIL-UA
     label: Jiaqi Gong
@@ -436,6 +452,23 @@ kgs:
   title: NIAID Data Ecosystem KG
   tpf: https://frink.apps.renci.org/ldf/nde
 - contacts:
+  - email: ct2865@cumc.columbia.edu
+    github: CaseyTa
+    label: Casey Ta
+  - email: cw2384@cumc.columbia.edu
+    github: ChunhuaWeng
+    label: Chunhua Weng
+  description: Clinical associations between rare diseases and phenotypes derived
+    from electronic health records
+  frink-options:
+    documentation-path: oard-kg
+    lakefs-repo: oard-kg
+  funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  homepage: https://github.com/WengLab-InformaticsResearch/oard-react
+  shortname: oard-kg
+  template: overrides/kg.html
+  title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
+- contacts:
   - email: danny.e.oneal@gmail.com
     github: danny-oneal
     label: Danny O'Neal
@@ -498,6 +531,18 @@ kgs:
   template: overrides/kg.html
   title: SAWGraph Spatial KG
   tpf: https://frink.apps.renci.org/ldf/spatialkg
+- contacts:
+  - email: jinlian.wang@uth.tmc.edu
+    github: wnagjl99
+    label: Jinlian Wang
+  description: RDKG is an open knowledge graph for rare diseases that integrates standardized
+    disease identifiers and cross-references to support discovery and evidence synthesis.
+  frink-options:
+    documentation-path: rdkg
+    lakefs-repo: rdkg
+  shortname: rdkg
+  template: overrides/kg.html
+  title: Rare Disease Knowledge Graph
 - contacts:
   - email: katrina.schweikert@maine.edu
     github: kschweikert
