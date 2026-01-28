@@ -6,7 +6,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
 
-SELECT DISTINCT ?expUnit ?date ?upperDepth ?lowerDepth ?label ?Value ?Unit WHERE {
+SELECT DISTINCT ?expUnit ?date ?upperDepth ?lowerDepth ?label WHERE {
     ?b a sockg:SoilBiologicalSample ;
         sockg:fromUnit ?e ;
         sockg:lowerDepth ?ld ;
@@ -16,13 +16,6 @@ SELECT DISTINCT ?expUnit ?date ?upperDepth ?lowerDepth ?label ?Value ?Unit WHERE
     ?e dcterms:identifier ?expUnit .
     ?ld qudt:numericValue ?lowerDepth .
     ?ud qudt:numericValue ?upperDepth .
-
-    ?m sockg:of ?param ;
-        qudt:quantityValue ?v .
-    ?param a sockg:Parameter ;
-            rdfs:label ?label .
-    ?v qudt:numericValue ?Value ;
-        qudt:hasUnit ?Unit .
 }
 ORDER BY ?expUnit ?date ?label
 LIMIT 5
