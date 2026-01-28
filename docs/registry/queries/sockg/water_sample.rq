@@ -18,7 +18,6 @@ SELECT DISTINCT ?expUnit ?treatment ?date ?SurfOrLeach ?LossOrDep ?label ?Value 
     ?e dcterms:identifier ?expUnit .
     ?sl rdfs:label ?SurfOrLeach .
     ?ld rdfs:label ?LossOrDep .
-    ?c rdfs:label ?crop .
     ?t dcterms:identifier ?treatment .
 
     
