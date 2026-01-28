@@ -3,7 +3,10 @@ template: overrides/kg.html
 shortname: rdkg
 title: Rare Disease Knowledge Graph
 description: RDKG is an open knowledge graph for rare diseases that integrates standardized disease identifiers and cross-references to support discovery and evidence synthesis.
-homepage: https:// 
+#homepage: https:// 
+frink-options:
+  lakefs-repo: rdkg
+  documentation-path: rdkg
 contact:
   email: jinlian.wang@uth.tmc.edu
   github: wnagjl99
