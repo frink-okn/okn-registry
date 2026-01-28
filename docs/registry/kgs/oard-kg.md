@@ -3,11 +3,11 @@ template: overrides/kg.html
 shortname: oard-kg
 title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
 description: Clinical associations between rare diseases and phenotypes derived from electronic health records
-stats: https://frink.renci.org/kg-stats/oard-kg
+#stats: https://frink.renci.org/kg-stats/oard-kg
 homepage: https://github.com/WengLab-InformaticsResearch/oard-react
 funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
-sparql: https://frink.apps.renci.org/oard-kg/sparql
-tpf: https://frink.apps.renci.org/ldf/oard-kg
+#sparql: https://frink.apps.renci.org/oard-kg/sparql
+#tpf: https://frink.apps.renci.org/ldf/oard-kg
 frink-options:
   lakefs-repo: oard-kg
   documentation-path: oard-kg
