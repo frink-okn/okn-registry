@@ -1,0 +1,23 @@
+#+ summary: # Get all sites and what field they are contained in along with their postal codes.
+#+ tags:
+#+   - sockg
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX schema: <https://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+
+SELECT DISTINCT ?site ?fieldId  (xsd:integer(?tmp) AS ?PostalCode)  WHERE {
+    ?f a sockg:Site ;
+    	dcterms:identifier ?site ;
+    	schema:postalCode ?postalCode ;
+    	kwg-ont:sfWithin ?within .
+    
+    ?within a sockg:Location ;
+    	dcterms:identifier ?fieldId .
+    
+    # cant directly convert to int
+    BIND(xsd:float(?postalCode) AS ?tmp)
+    
+}

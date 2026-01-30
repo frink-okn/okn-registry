@@ -1,0 +1,35 @@
+#+ summary: Which samples have a carbon concentration greater than or equal to 475 gC/kg?  What additional information about these samples might help explain why their carbon concentration is so high?         Include Unique ID, Treatment ID, Crop(s) used at Field, Plant Fraction use, Carbon Concentration value in your response.
+#+ tags:
+#+   - sockg
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ind: <https://idir.uta.edu/sockg-ontology/individuals/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+
+PREFIX ns1: <http://qudt.org/schema/qudt/>
+SELECT DISTINCT ?treatmentId ?date ?crop ?plantFraction ?carbon_concentration ?Unit 
+WHERE {
+    ?b a sockg:BiomassMineral ;
+        dcterms:date ?date ;
+        sockg:usesTreatment ?t ;
+        sockg:hasMeasurement ?meas ;
+        sockg:hasPlantFraction ?pf ;
+        sockg:hasCrop ?c .
+    
+    # get human readable labels
+    ?t dcterms:identifier ?treatmentId .
+        ?pf rdfs:label ?plantFraction .
+    ?c rdfs:label ?crop .
+    
+    # get carbon concentration vals and unit
+    ?meas sockg:of ind:Parameter.MeasBiomassMinAn.9 ;
+        ns1:quantityValue ?vals .
+    ?vals ns1:numericValue ?carbon_concentration ;
+        ns1:hasUnit ?Unit
+    
+    FILTER(?carbon_concentration >= 475.0)
+       
+}
+ORDER BY ?date
