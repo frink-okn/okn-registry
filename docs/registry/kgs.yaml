@@ -369,10 +369,10 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
   homepage: https://sites.nd.edu/kn-wildlife/
   shortname: wildlifekn
-  sparql: https://frink.apps.renci.org/wildlifekg/sparql
+  sparql: https://frink.apps.renci.org/wildlifekn/sparql
   template: overrides/kg.html
   title: Wildlife-KN
-  tpf: https://frink.apps.renci.org/ldf/wildlifekg
+  tpf: https://frink.apps.renci.org/ldf/wildlifekn
 - contact:
     email: yeghialt@ucmail.uc.edu
     github: ''
