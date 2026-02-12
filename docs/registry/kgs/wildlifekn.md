@@ -6,8 +6,8 @@ description: This project seeks to create a comprehensive, integrative knowledge
 # stats: 
 homepage: https://sites.nd.edu/kn-wildlife/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
-sparql: https://frink.apps.renci.org/wildlifekg/sparql
-tpf: https://frink.apps.renci.org/ldf/wildlifekg
+sparql: https://frink.apps.renci.org/wildlifekn/sparql
+tpf: https://frink.apps.renci.org/ldf/wildlifekn
 frink-options:
   lakefs-repo: wildlife-kg
   documentation-path: wildlife-kg
