@@ -111,7 +111,7 @@ kgs:
   stats: https://frink.renci.org/kg-stats/climate-kg
   template: overrides/kg.html
   title: Climate Models KG
-  tpf: https://frink.apps.renci.org/ldf/climatepub4kg
+  tpf: https://frink.apps.renci.org/ldf/climatemodelskg
 - contact:
     email: farhad.ameri@asu.edu
     github: fameri
