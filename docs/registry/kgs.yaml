@@ -76,9 +76,11 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://research.bioinformatics.udel.edu/ProKN/
   shortname: prokn
+  sparql: https://frink.apps.renci.org/prokn/sparql
   stats: https://frink.renci.org/kg-stats/prokn
   template: overrides/kg.html
   title: Protein Knowledge Network
+  tpf: https://frink.apps.renci.org/ldf/prokn
 - contact:
     email: cli@uta.edu
     github: idirlab
