@@ -6,8 +6,8 @@ description: The Protein Knowledge Network (ProKN) integrates protein-centric da
 stats: https://frink.renci.org/kg-stats/prokn
 homepage: https://research.bioinformatics.udel.edu/ProKN/
 funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
-#sparql: https://frink.apps.renci.org/prokn/sparql
-#tpf: https://frink.apps.renci.org/ldf/prokn
+sparql: https://frink.apps.renci.org/prokn/sparql
+tpf: https://frink.apps.renci.org/ldf/prokn
 frink-options:
   lakefs-repo: prokn
   documentation-path: prokn
