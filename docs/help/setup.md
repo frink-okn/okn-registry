@@ -63,91 +63,57 @@ Every dataset hosted in FRINK will have its own lakeFS repository. Data submissi
 ### Upload Using s5cmd
 
 !!! info inline end ""
+    s5cmd is a fast S3-compatible command line tool that works seamlessly with lakeFS. More details about s5cmd be found in [this guide](https://github.com/peak/s5cmd).
 
-```
-s5cmd is a fast S3-compatible command line tool that works seamlessly with lakeFS.  
+1. **Install or run s5cmd.**
+    You can either install the binary locally or run it using Docker.
+   
+    - **Option A – Install locally:** Download the latest release from: [https://github.com/peak/s5cmd](https://github.com/peak/s5cmd). Extract the binary and ensure it is available in your system PATH:
+        ```bash
+             s5cmd version
+        ```
+    - **Option B – Run with Docker (no local install required):**
+         ```bash
+              docker run --rm peakcom/s5cmd version
+         ```
 
-<br>
+2. **Configure credentials and lakeFS endpoint.**
 
-More details about S3-compatible clients can be found at <a href="https://docs.lakefs.io/howto/copying.html">Copying Data to/from lakeFS</a>.
-```
+    s5cmd uses standard AWS environment variables for authentication.
+    - Export your **Access Key ID**, **Secret Access Key**, and the required lakeFS endpoint:
+        ```bash
+            export AWS_ACCESS_KEY_ID=<your-access-key-id>
+            export AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
+            export LAKEFS_ENDPOINT=https://frink-lakefs.apps.renci.org
+   
+        ```
 
-1. Install or run s5cmd.
+3. **Upload files to the repository.**
+    - **If installed locally:**
+        ```bash
+            s5cmd --endpoint-url $LAKEFS_ENDPOINT cp my-local-dataset.hdt s3://my-repo/develop/my-local-graph.hdt
+        ```
 
-   You can either install the binary locally or run it using Docker.
+    - **If running with Docker:**
+        ```bash
+            docker run --rm \
+            -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
+            -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
+            -v $(pwd):/data \
+            peakcom/s5cmd \
+            --endpoint-url $LAKEFS_ENDPOINT \
+            cp /data/my-local-dataset.hdt s3://my-repo/develop/my-local-graph.hdt
+        ```
 
-   * **Option A – Install locally:**
-     Download the latest release from:
-     [https://github.com/peak/s5cmd](https://github.com/peak/s5cmd)
+    This example copies the `my-local-dataset.hdt` file to a repo called `my-repo` on the `develop` branch, renamed as `my-local-graph.hdt`. The `--endpoint-url` option ensures the command targets your lakeFS instance.
 
-     Extract the binary and ensure it is available in your system PATH:
 
-   ```
-
-   s5cmd version
-
-   ```
-
-   * **Option B – Run with Docker (no local install required):**
-
-   ```
-
-   docker run --rm peakcom/s5cmd version
-
-   ```
-
-2. Configure credentials and lakeFS endpoint.
-
-   s5cmd uses standard AWS environment variables for authentication.
-
-   * Export your **Access Key ID**, **Secret Access Key**, and the required lakeFS endpoint:
-
-   ```
-
-   export AWS_ACCESS_KEY_ID=<your-access-key-id>
-   export AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
-   export LAKEFS_ENDPOINT=https://frink-lakefs.apps.renci.org
-
-   ```
-
-3. Upload files to the repository.
-
-   * **If installed locally:**
-
-   ```
-
-   s5cmd --endpoint-url $LAKEFS_ENDPOINT cp my-local-dataset.hdt s3://my-repo/develop/my-local-graph.hdt
-
-   ```
-
-   * **If running with Docker:**
-
-   ```
-
-   docker run --rm \
-     -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
-     -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
-     -v $(pwd):/data \
-     peakcom/s5cmd \
-     --endpoint-url $LAKEFS_ENDPOINT \
-     cp /data/my-local-dataset.hdt s3://my-repo/develop/my-local-graph.hdt
-
-   ```
-
-   This example copies the `my-local-dataset.hdt` file to a repo called `my-repo` on the `develop` branch, renamed as `my-local-graph.hdt`. The `--endpoint-url` option ensures the command targets your lakeFS instance.
-
-4. Commit the upload.
-
-   * Back in the web browser, go to your repository.
-
-   * Navigate to the **Uncommitted Changes** tab. Click the **Commit Changes** button.
-
-     <img src="../../assets/images/5uncommitted-changes-tab.png">  
-
-   * The **Commit Changes** pop-up window will appear. Please enter an appropriate **Commit Message**.
-
-     <img src="../../assets/images/7commit-changes-popup.png" width="400">  
-
+4. **Commit the upload.**
+    - Back in the web browser, go to your repository.
+    - Navigate to the **Uncommitted Changes** tab. Click the **Commit Changes** button.
+    - The **Commit Changes** pop-up window will appear. Please enter an appropriate **Commit Message**.
+    
+    <img src="../../assets/images/7commit-changes-popup.png" width="400">
 
 ### Upload from other Storage providers (Azure, S3 etc...)
 
