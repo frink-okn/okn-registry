@@ -38,6 +38,20 @@ kgs:
     email: balhoff@renci.org
     github: balhoff
     label: Jim Balhoff
+  description: Collected VoID (Vocabulary of Interlinked Datasets) metadata for all
+    OKN graphs
+  frink-options:
+    documentation-path: okn-void
+    lakefs-repo: okn-void
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://frink.renci.org/registry/
+  shortname: okn-void
+  template: overrides/kg.html
+  title: OKN VoID graph descriptions
+- contact:
+    email: balhoff@renci.org
+    github: balhoff
+    label: Jim Balhoff
   description: Integrated suite of OBO ontologies with precomputed inferred relationships
   frink-options:
     documentation-path: ubergraph
