@@ -16,14 +16,14 @@ jobs:
     container: snakemake/snakemake:v8.27.1
     permissions: write-all
     steps:
-      - name: Install uv
-        uses: astral-sh/setup-uv@v7
-        with:
-          version: "0.10.4"
       - uses: actions/checkout@v4
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.10.4"
       - name: Create local changes
         run: |
           touch docs/registry/kgs/*.md; snakemake -c2 --show-failed-logs --use-conda docs/registry/kgs.yaml docs/registry/index.md
