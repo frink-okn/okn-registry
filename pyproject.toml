@@ -1,0 +1,9 @@
+[project]
+name = "okn-registry-build"
+version = "0.1.0"
+description = "Build dependencies for OKN registry Snakemake targets"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "pyyaml",
+  "python-frontmatter",
+]
