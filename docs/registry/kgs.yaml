@@ -482,8 +482,10 @@ kgs:
   funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://github.com/WengLab-InformaticsResearch/oard-react
   shortname: oard-kg
+  sparql: https://frink.apps.renci.org/oard-kg/sparql
   template: overrides/kg.html
   title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
+  tpf: https://frink.apps.renci.org/ldf/oard-kg
 - contacts:
   - email: danny.e.oneal@gmail.com
     github: danny-oneal
