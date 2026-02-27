@@ -7,7 +7,7 @@ stats: https://frink.renci.org/kg-stats/biomarkerkg
 homepage: https://biomarkerkb.org/home/
 funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
 sparql: https://frink.apps.renci.org/biomarkerkg/sparql
-tpf: https://frink.apps.renci.org/ldf/prokn
+tpf: https://frink.apps.renci.org/ldf/biomarkerkg
 frink-options:
   lakefs-repo: biomarkerkg
   documentation-path: biomarkerkg
