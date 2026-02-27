@@ -159,9 +159,11 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
   homepage: https://biomarkerkb.org/home/
   shortname: biomarkerkg
+  sparql: https://frink.apps.renci.org/biomarkerkg/sparql
   stats: https://frink.renci.org/kg-stats/biomarkerkg
   template: overrides/kg.html
   title: BiomarkerKB KG
+  tpf: https://frink.apps.renci.org/ldf/prokn
 - contact:
     email: jiaqi.gong@ua.edu
     github: SAIL-UA
