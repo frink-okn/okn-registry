@@ -1,0 +1,31 @@
+#+ summary: Get disease-phenotype associations in OARD in concordance with Ubergraph (disease)-[disease has feature]-(phenotypic feature)
+#+ tags:
+#+   - oard-kg
+
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mondo: <http://purl.obolibrary.org/obo/MONDO_>
+PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
+
+SELECT DISTINCT ?phenotype ?phenotype_label ?log_odds ?ci1 ?ci2 ?confirming_edge
+WHERE {
+    VALUES ?disease {mondo:0015691}
+    VALUES ?confirming_edge {ro:0004029} # Define the confirming relationship
+
+    # Find OARD associated phenotypes
+    ?assoc biolink:subject ?disease ;
+           biolink:object ?phenotype .
+    ?phenotype biolink:category biolink:PhenotypicFeature ;
+               rdfs:label ?phenotype_label .
+
+    # Confirm with Ubergraph relationship (condition for inclusion)
+    ?disease ?confirming_edge ?phenotype .
+
+    # Navigate to Log Odds Analysis Result
+    ?assoc biolink:has_supporting_studies/biolink:has_study_results ?stats_result .
+    ?stats_result biolink:category biolink:LogOddsAnalysisResult ;
+                  biolink:log_odds_ratio ?log_odds .    
+    ?stats_result biolink:log_odds_ratio_95_ci ?ci1 , ?ci2 .
+}
+ORDER BY DESC(?log_odds)
+LIMIT 100
