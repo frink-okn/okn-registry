@@ -8,6 +8,7 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX upcore: <http://purl.uniprot.org/core/>
 PREFIX efo: <http://www.ebi.ac.uk/efo/EFO_>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX biolink: <https://biolink.github.io/biolink-model/>
 
 SELECT DISTINCT
 (?gene AS ?GeneURI)
@@ -24,8 +25,8 @@ WHERE {
         FILTER((?diseaseType = upcore:Disease || ?diseaseType = efo:0000651) && CONTAINS(LCASE(?diseaseLabel), "alzheimer"))
 
   # Find genes associated with this disease
-        ?gene ns:GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE ?disease ;
-    a ns:Gene;
+        ?gene biolink:associated_with ?disease ;
+    a upcore:Gene;
     rdfs:label ?geneLabel ;
     dc:source ?gSAB.
 }
