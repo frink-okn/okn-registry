@@ -2,6 +2,10 @@
 #+ tags:
 #+   - prokn    
 
+PREFIX fma: <http://sig.uw.edu/fma#>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX bao: <http://www.bioassayontology.org/bao#BAO_>
+PREFIX allotrope: <http://purl.allotrope.org/ontologies/result#>
 PREFIX biolink: <https://biolink.github.io/biolink-model/>
 PREFIX so: <http://purl.obolibrary.org/obo/SO_>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
@@ -13,6 +17,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX upcore: <http://purl.uniprot.org/core/>
 PREFIX schema: <http://schema.org/>
+PREFIX reproduceme: <https://w3id.org/reproduceme#>
 
 SELECT DISTINCT (?pert as ?Perturbagen)(?pertLabel as ?PerturbagenLabel)(?oph as ?Phosphorylation)(?ophLabel as ?PhosphorylationLabel)
 WHERE {
@@ -30,23 +35,23 @@ WHERE {
         ## ================================================
 
         ## 1. Identify the perturbagen entity
-                ?pert a ns:Perturbagen;                # Instance of Perturbagen class
+                ?pert a bao:0003059;                # Instance of Perturbagen class
                 rdfs:label ?pertLabel.           # With matching label
 
         ## 2. Link perturbagen to experiment via ECO: 9000000(perturbagen used in)
                 ?r rdf:subject ?pert ;
             rdf:predicate eco:9000000;          # "perturbagen used in" relation
             rdf:object ?e.
-        ?e a ns:Experiment.                    # Experiment entity
+        ?e a reproduceme:Experiment.                    # Experiment entity
 
         ## 3. Retrieve LINCS phosphosite perturbation effects
                 ?r1 rdf:subject ?lincs ;
-            rdf:predicate obo:PRIDE_0000700;   # "is result of" relation
+            rdf:predicate biolink:affected_by;   # "is result of" relation
             rdf:object ?e ;
             ns:log2Ratio ?diff_val.            # Experimental log2 fold - change
 
-                ?lincs a ns:Phosphosite;               # LINCS phosphosite
-            ns:p100Phosphosite ?lincs_site_id.  # Site identifier
+            #    ?lincs a so:0001811;               # LINCS phosphosite
+            #ns:p100Phosphosite ?lincs_site_id.  # Site identifier
 
             FILTER(xsd:decimal(?diff_val) <= -1.0)  # Filter for downregulation(≤ -1 log2 fold - change)
 
@@ -54,12 +59,12 @@ WHERE {
             { ?r2 rdf:subject ?lincs ; rdf:object ?lincssub. }    # Site → Protein
             UNION
             { ?r2 rdf:subject ?lincssub ; rdf:object ?lincs. }    # Protein → Site
-                ?lincssub a ns:Protein.                # Protein entity
+                ?lincssub a upcore:Protein.                # Protein entity
 
         ## 5. Map to iPTMnet phosphorylation annotation
-                ?iptm a upcore:Modified_Residue_Annotation;  # iPTMnet modification annotation
+                ?iptm a upcore:PTM_Annotation;  # iPTMnet modification annotation
             dc:source "iPTMnet";                   # From iPTMnet database
-            rdf:type "PHOSPHORYLATION";            # Specifically phosphorylation
+            dc:type "PHOSPHORYLATION";            # Specifically phosphorylation
             upcore:Site_Annotation ?lincs_site_id. # Matches LINCS site ID
 
         ## Bidirectional connection between protein and PTM annotation
@@ -68,7 +73,7 @@ WHERE {
             { ?r5 rdf:subject ?iptm ; rdf:object ?lincssub. }
 
         ## 6. Identify kinase catalyzing this phosphorylation
-                ?k a ns:Protein;                        # Kinase protein
+                ?k a upcore:Protein;                        # Kinase protein
             dc:source ?k_sab.                    # Source database
             FILTER(STR(?k_sab) IN("UniProtKB", "iPTMnet"))  # From trusted sources
 
@@ -83,10 +88,10 @@ WHERE {
                 rdf:predicate biolink:catalyzes;  # Catalyzes relation
                 rdf:object ?oph.                  # Other phosphorylation site
 
-                    ?oph a upcore:Modified_Residue_Annotation;  # Another iPTMnet annotation
+                    ?oph a upcore:PTM_Annotation;  # Another iPTMnet annotation
                 dc:source "iPTMnet";
-                ns:label ?ophLabel ;                    # Site label / identifier
-                rdf:type "PHOSPHORYLATION".
+                rdfs:label ?ophLabel ;                    # Site label / identifier
+                dc:type "PHOSPHORYLATION".
         }
     }
 
@@ -101,21 +106,21 @@ WHERE {
         SELECT DISTINCT ?pert ?pertLabel ?drug ?protein ?ptm ?oph ?ophLabel
         WHERE {
         ## Perturbagen with PubChem cross - reference
-            ?pert a ns:Perturbagen;
-                ns:label ?pertLabel ;
+            ?pert a bao:0003059;
+                rdfs:label ?pertLabel ;
                 obo:has_dbxref ?pubchemCid.     # Cross - reference to PubChem
         ## Drug entity sharing same PubChem CID
             ?drug a schema:Drug;
                 rdfs:seeAlso ?pubchemCid.       # Links to same PubChem ID
 
         ## Drug - protein inhibition mechanism(bidirectional)
-            { ?drug ns:HAS_MECHANISM ?protein }    # Drug → Protein mechanism
+            { ?drug obo:RO_0002436 ?protein }    # Drug → Protein mechanism
             UNION
-            { ?protein ns:HAS_MECHANISM ?drug } .  # Protein → Drug mechanism
+            { ?protein obo:RO_0002436 ?drug } .  # Protein → Drug mechanism
 
             ?mechRel rdf:subject ?drug ;
                 rdf:object ?protein ;
-                ns:actionType "INHIBITOR".   # Specifically inhibition action
+                allotrope:AFR_0003142 "INHIBITOR".   # Specifically inhibition action
 
                     ?protein a upcore:Protein.            # Target protein(likely a kinase)
 
@@ -124,8 +129,8 @@ WHERE {
             UNION
             { ?ptm biolink:catalyzes ?protein } .  # PTM → Protein catalysis
 
-            ?ptm a ns:PTM;                        # PTM entity
-            rdf:type "PHOSPHORYLATION".      # Specifically phosphorylation
+            ?ptm a upcore:PTM_Annotation;                        # PTM entity
+            dc:type "PHOSPHORYLATION".      # Specifically phosphorylation
 
         ## OPTIONAL: Find downstream iPTMnet phosphorylations catalyzed by same protein
         OPTIONAL {
@@ -135,10 +140,10 @@ WHERE {
 
                 ?oph a ns:PTM;
                 dc:source "iPTMnet";           # From iPTMnet database
-                ns:label ?ophLabel ;            # Site label / identifier
-                rdf:type "PHOSPHORYLATION".
+                rdfs:label ?ophLabel ;            # Site label / identifier
+                dc:type "PHOSPHORYLATION".
             }
         }
     }
 }
-LIMIT 500  # Return at most 500 resultsPREFIX upcore: <http://purl.uniprot.org/core/>
+LIMIT 500  # Return at most 500 results
