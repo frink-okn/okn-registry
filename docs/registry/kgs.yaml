@@ -273,6 +273,21 @@ kgs:
   title: SPOKE-OKN
   tpf: https://frink.apps.renci.org/ldf/spoke-okn
 - contact:
+    email: support@ndexbio.org
+    github: ''
+    label: Cytoscape and NDEx Team
+  description: The NCI-PID 2.0 Knowledge Graph converts NCI Pathway Interaction Database
+    version 2.0 networks into RDF, capturing protein interactions, signaling pathways,
+    and post-translational modifications enriched with INDRA evidence metadata.
+  frink-options:
+    documentation-path: ncipidkg
+    lakefs-repo: ncipidkg
+  homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
+  shortname: ncipidkg
+  stats: https://frink.renci.org/kg-stats/ncipidkg
+  template: overrides/kg.html
+  title: NCI-PID 2.0 KG
+- contact:
     email: tom@insilica.co
     github: tomlue
     label: Tom Luechtefeld
