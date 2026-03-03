@@ -7,25 +7,35 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX mondo: <http://purl.obolibrary.org/obo/MONDO_>
 PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
 
-SELECT DISTINCT ?phenotype ?phenotype_label ?log_odds ?ci1 ?ci2 ?confirming_edge
+SELECT DISTINCT ?phenotype ?phenotype_label ?oard_predicate ?data_set ?log_odds ?ci1 ?ci2 ?confirming_edge
 WHERE {
     VALUES ?disease {mondo:0015691}
     VALUES ?confirming_edge {ro:0004029} # Define the confirming relationship
 
     # Find OARD associated phenotypes
     ?assoc biolink:subject ?disease ;
+           biolink:predicate ?oard_predicate ;
            biolink:object ?phenotype .
     ?phenotype biolink:category biolink:PhenotypicFeature ;
                rdfs:label ?phenotype_label .
+    # OARD and Ubergraph each have labels for the phenotype. This filter helps select 1 label
+  	FILTER(lang(?phenotype_label) = "en")
 
     # Confirm with Ubergraph relationship (condition for inclusion)
     ?disease ?confirming_edge ?phenotype .
 
-    # Navigate to Log Odds Analysis Result
-    ?assoc biolink:has_supporting_studies/biolink:has_study_results ?stats_result .
-    ?stats_result biolink:category biolink:LogOddsAnalysisResult ;
+    # Pull out OARD association data
+    ?assoc biolink:has_supporting_studies ?study .
+    # Counts Results
+    ?study biolink:has_study_results ?results_counts .
+    ?results_counts biolink:category biolink:ConceptCountAnalysisResult ;
+                    biolink:supporting_data_set ?data_set .
+    # Log-Odds Results
+    ?study biolink:has_study_results ?results_log_odds .
+    ?results_log_odds biolink:category biolink:LogOddsAnalysisResult ;
                   biolink:log_odds_ratio ?log_odds .    
-    ?stats_result biolink:log_odds_ratio_95_ci ?ci1 , ?ci2 .
+    ?results_log_odds biolink:log_odds_ratio_95_ci ?ci1 , ?ci2 .
+    FILTER(?ci1 < ?ci2) 
 }
 ORDER BY DESC(?log_odds)
 LIMIT 100
