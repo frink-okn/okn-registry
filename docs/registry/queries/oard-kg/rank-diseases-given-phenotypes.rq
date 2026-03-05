@@ -1,0 +1,47 @@
+#+ summary: Get diseases most strongly associated with a list of phenotypes
+#+ tags:
+#+   - oard-kg
+
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX hp: <http://purl.obolibrary.org/obo/HP_>
+
+SELECT ?disease ?disease_label 
+       (SUM(?best_pair_score) AS ?total_score)
+       (GROUP_CONCAT(DISTINCT ?pheno_id; SEPARATOR=", ") AS ?matched_pheno_ids)
+       (GROUP_CONCAT(DISTINCT ?pheno_label; SEPARATOR="|") AS ?matched_pheno_labels)
+WHERE {
+  {
+    # INNER QUERY: Find the strongest result per Disease-Phenotype pair
+    SELECT ?disease ?phenotype (STR(?phenotype) AS ?pheno_id) ?pheno_label (MAX(?log_odds) AS ?best_pair_score)
+    WHERE {
+      # Input: Your list of Phenotypes
+      VALUES ?phenotype { hp:0012771 hp:0001166 hp:0001657 }
+
+      # Match Association path
+      ?assoc biolink:object ?phenotype ;
+             biolink:subject ?disease .
+      
+      ?disease biolink:category biolink:Disease .
+      
+      # Get Phenotype labels here to pass them up
+      OPTIONAL { 
+        ?phenotype rdfs:label ?pheno_label . 
+      }
+      
+      # Navigate to stats
+      ?assoc biolink:has_supporting_studies/biolink:has_study_results ?stats .
+      ?stats biolink:category biolink:LogOddsAnalysisResult ;
+             biolink:log_odds_ratio ?log_odds .
+    }
+    GROUP BY ?disease ?phenotype ?pheno_label
+  }
+
+  # Pull the disease label for the final output
+  OPTIONAL {
+    ?disease rdfs:label ?disease_label .
+  }
+}
+GROUP BY ?disease ?disease_label
+ORDER BY DESC(?total_score)
+LIMIT 100
