@@ -622,6 +622,16 @@ kgs:
   title: SAWGraph PFAS KG
   tpf: https://frink.apps.renci.org/ldf/sawgraph
 - contacts:
+  - email: prabh120220@gmail.com
+    github: Prabhadeus
+    label: Prabhjot Singh
+  description: Knowledge graph constructed from FDA MAUDE adverse event reports using
+    standardized FDA product codes.
+  homepage: https://github.com/Prabhadeus/Proto-OKN
+  shortname: maudekg
+  template: overrides/kg.html
+  title: FDA MAUDE Adverse Event Knowledge Graph
+- contacts:
   - email: tianyi@purdue.edu
     github: tianyi-zhang
     label: Tianyi Zhang
