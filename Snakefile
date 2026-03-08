@@ -2,6 +2,16 @@ import glob
 
 all_kg_files = glob.glob("docs/registry/kgs/*.md")
 
+rule fetch_void_stats:
+    input:
+        registry="docs/registry/kgs.yaml",
+        script="scripts/fetch_void_stats.py",
+        uv_project="pyproject.toml"
+    output:
+        directory("docs/registry/void")
+    shell:
+        """uv run {input.script} {input.registry} {output}"""
+
 rule compile_registry:
     input:
         files=all_kg_files,

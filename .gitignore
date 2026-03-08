@@ -2,3 +2,5 @@
 **/.DS_Store
 .snakemake
 /pyenv
+/site
+__pycache__
