@@ -1,0 +1,41 @@
+#+ summary: Get diseases most strongly associated with a phenotype (Increased total monocyte count)
+#+ tags:
+#+   - oard-kg
+
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX hp: <http://purl.obolibrary.org/obo/HP_>
+
+SELECT ?disease ?label ?data_set ?pair_count ?log_odds ?lower_ci ?upper_ci 
+WHERE {
+  VALUES ?phenotype {hp:0012311}  # Increased total monocyte count
+  
+    # Find associated phenotypes
+    ?assoc biolink:subject ?disease ;
+           biolink:object ?phenotype .
+    ?disease biolink:category biolink:Disease ;
+               rdfs:label ?label .
+
+    # Get study
+    ?assoc biolink:has_supporting_studies ?study .
+  
+    # Get Data Set (currently buried in Count Result. TODO: move to Study node)
+    ?study biolink:has_study_results ?results_counts .
+    ?results_counts biolink:category biolink:ConceptCountAnalysisResult ;
+                    biolink:supporting_data_set ?data_set .
+  
+    # Get Log Odds Analysis Result
+    ?study biolink:has_study_results ?results_log_odds .
+    ?results_log_odds biolink:category biolink:LogOddsAnalysisResult ;
+              biolink:log_odds_ratio ?log_odds ;
+                      biolink:total_sample_size ?pair_count .
+  
+    # Log odds confidence interval is represented as two unordered values
+    ?results_log_odds  biolink:log_odds_ratio_95_ci ?lower_ci , ?upper_ci .
+    FILTER(?lower_ci < ?upper_ci) 
+
+    # Use the lower bound of the CI (value closest to 0) as an indication of association strength with high confidence
+    BIND(IF(ABS(?lower_ci) < ABS(?upper_ci), ABS(?lower_ci), ABS(?upper_ci)) AS ?dist_to_zero)
+}
+ORDER BY DESC(?dist_to_zero)
+LIMIT 100
