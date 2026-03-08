@@ -5,11 +5,17 @@ particularly the KG page template at material/overrides/kg.html.
 """
 
 import glob
-import html
 import re
 from pathlib import Path
 
 import yaml
+from markupsafe import Markup
+from pygments import highlight as pygments_highlight
+from pygments.formatters import HtmlFormatter
+from pygments.lexers import SparqlLexer
+
+_sparql_lexer = SparqlLexer()
+_html_formatter = HtmlFormatter(nowrap=True)
 
 
 def _parse_query_summary(rq_path: str) -> str:
@@ -43,8 +49,11 @@ def _human_number(value):
     return str(n)
 
 
-def _read_query_text(rq_path: str) -> str:
-    """Read the SPARQL query text from a .rq file, stripping the #+ header."""
+def _read_query_text(rq_path: str) -> Markup:
+    """Read the SPARQL query text from a .rq file, stripping the #+ header.
+
+    Returns Pygments-highlighted HTML wrapped in Markup so Jinja2 won't escape it.
+    """
     try:
         with open(rq_path) as f:
             lines = []
@@ -54,9 +63,10 @@ def _read_query_text(rq_path: str) -> str:
                     continue
                 past_header = True
                 lines.append(line)
-            return html.escape("".join(lines).strip())
+            code = "".join(lines).strip()
+            return Markup(pygments_highlight(code, _sparql_lexer, _html_formatter))
     except OSError:
-        return ""
+        return Markup("")
 
 
 def on_env(env, config, files, **kwargs):
