@@ -8,7 +8,9 @@ jobs:
   update-void:
     runs-on: ubuntu-latest
     container: snakemake/snakemake:v8.27.1
-    permissions: write-all
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with:

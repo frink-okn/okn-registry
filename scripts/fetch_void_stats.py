@@ -10,7 +10,7 @@ and writes a YAML file per KG into <output_dir>/<shortname>.yaml.
 import sys
 import json
 import os
-from datetime import date, timezone, datetime
+from datetime import date
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
@@ -118,49 +118,59 @@ def fetch_summary_stats(shortnames: list[str]) -> dict[str, dict]:
     return results
 
 
-def fetch_class_partitions(shortname: str) -> list[dict]:
-    """Fetch class partition data for a single KG."""
+def fetch_all_class_partitions(shortnames: list[str]) -> dict[str, list[dict]]:
+    """Fetch class partition data for all KGs in a single query."""
+    values = " ".join(f"<{DATASET_BASE}{s}>" for s in shortnames)
     query = f"""
     PREFIX void: <http://rdfs.org/ns/void#>
-    SELECT ?class ?entityCount WHERE {{
-      <{DATASET_BASE}{shortname}> void:classPartition ?cp .
+    SELECT ?dataset ?class ?entityCount WHERE {{
+      VALUES ?dataset {{ {values} }}
+      ?dataset void:classPartition ?cp .
       ?cp void:class ?class .
       OPTIONAL {{ ?cp void:entities ?entityCount }}
-    }} ORDER BY DESC(?entityCount)
+    }} ORDER BY ?dataset DESC(?entityCount)
     """
     bindings = sparql_query(query)
-    results = []
+    results: dict[str, list[dict]] = {}
     for b in bindings:
+        ds = get_value(b, "dataset")
         uri = get_value(b, "class")
-        if uri:
-            results.append({
-                "uri": uri,
-                "label": compact_uri(uri),
-                "count": get_value(b, "entityCount", as_int=True),
-            })
+        if not ds or not uri:
+            continue
+        shortname = ds.rsplit("/", 1)[1]
+        results.setdefault(shortname, []).append({
+            "uri": uri,
+            "label": compact_uri(uri),
+            "count": get_value(b, "entityCount", as_int=True),
+        })
     return results
 
 
-def fetch_property_partitions(shortname: str) -> list[dict]:
-    """Fetch property partition data for a single KG."""
+def fetch_all_property_partitions(shortnames: list[str]) -> dict[str, list[dict]]:
+    """Fetch property partition data for all KGs in a single query."""
+    values = " ".join(f"<{DATASET_BASE}{s}>" for s in shortnames)
     query = f"""
     PREFIX void: <http://rdfs.org/ns/void#>
-    SELECT ?property ?tripleCount WHERE {{
-      <{DATASET_BASE}{shortname}> void:propertyPartition ?pp .
+    SELECT ?dataset ?property ?tripleCount WHERE {{
+      VALUES ?dataset {{ {values} }}
+      ?dataset void:propertyPartition ?pp .
       ?pp void:property ?property .
       OPTIONAL {{ ?pp void:triples ?tripleCount }}
-    }} ORDER BY DESC(?tripleCount)
+    }} ORDER BY ?dataset DESC(?tripleCount)
     """
     bindings = sparql_query(query)
-    results = []
+    results: dict[str, list[dict]] = {}
     for b in bindings:
+        ds = get_value(b, "dataset")
         uri = get_value(b, "property")
-        if uri:
-            results.append({
-                "uri": uri,
-                "label": compact_uri(uri),
-                "count": get_value(b, "tripleCount", as_int=True),
-            })
+        if not ds or not uri:
+            continue
+        shortname = ds.rsplit("/", 1)[1]
+        results.setdefault(shortname, []).append({
+            "uri": uri,
+            "label": compact_uri(uri),
+            "count": get_value(b, "tripleCount", as_int=True),
+        })
     return results
 
 
@@ -188,8 +198,10 @@ def main() -> int:
     shortnames = load_shortnames(registry_yaml)
     print(f"Fetching VoID stats for {len(shortnames)} KGs...")
 
-    # Batch fetch summary stats
+    # Batch fetch all stats
     summary = fetch_summary_stats(shortnames)
+    all_classes = fetch_all_class_partitions(shortnames)
+    all_properties = fetch_all_property_partitions(shortnames)
     today = date.today().isoformat()
 
     for shortname in shortnames:
@@ -200,9 +212,8 @@ def main() -> int:
 
         print(f"  {shortname}: {stats.get('triples', '?')} triples")
 
-        # Fetch partitions for this KG
-        classes = fetch_class_partitions(shortname)
-        properties = fetch_property_partitions(shortname)
+        classes = all_classes.get(shortname, [])
+        properties = all_properties.get(shortname, [])
 
         stats["classes"] = len(classes)
         stats["last_checked"] = today
