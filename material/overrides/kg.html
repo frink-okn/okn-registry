@@ -1,68 +1,202 @@
 {% extends "main.html" %}
 
 {% block content %}
-<h1>{{ page.meta.title }}</h1>
-<h3>{{ page.meta.description }}</h3>
-<main>
-    <aside style="float: right; width: 30%; margin-left: 1em; margin-right: 1em;">
-      <dl>
-          <dt>Shortname</dt>
-          <dd>{{ page.meta.shortname }}</dd>
-          {% if page.meta.homepage %}
-          <dt>Project homepage</dt>
-          <dd><a href="{{ page.meta.homepage }}">{{ page.meta.homepage }}</a></dd>
-          {% endif %}
-          {% set contacts = None %}
-            {# Prefer new list format if available #}
-          {% if page.meta.contacts and page.meta.contacts | length > 0 %}
-              {% set contacts = page.meta.contacts %}
-          {% elif page.meta.contact %}
-              {% set contacts = [page.meta.contact] %}
-          {% endif %}
-          <dt>Contact</dt>
-          {% for contact in contacts %}
-          {% if contact and contact.email %}
-          <dd>
-             <a href="mailto:{{ contact.email }}">
-               {% if contact.label %}
-                  {{ contact.label }}
-               {% else %}
-                  {{ contact.email }}
-               {% endif %}
-             </a>
-            {% if contact.github %}
-            <br>
-            <a href="https://github.com/{{ contact.github }}">@{{ contact.github }}</a>
-            {% endif %}
-          </dd>
-          {% endif %}
+{% set vs = void_stats.get(page.meta.shortname, {}) %}
+{% set queries = kg_queries.get(page.meta.shortname, []) %}
+{% set contacts = [] %}
+{% if page.meta.contacts and page.meta.contacts | length > 0 %}
+  {% set contacts = page.meta.contacts %}
+{% elif page.meta.contact %}
+  {% set contacts = [page.meta.contact] %}
+{% endif %}
+
+<div class="kg-page-layout">
+
+{# ── Main column ── #}
+<div class="kg-main">
+
+{# ── Header ── #}
+<div class="kg-header">
+  <div class="kg-shortname">{{ page.meta.shortname }}</div>
+  <h1 class="kg-title">{{ page.meta.title }}</h1>
+  <p class="kg-description">{{ page.meta.description }}</p>
+</div>
+
+{# ── Stats badges ── #}
+{% if vs %}
+<div class="kg-stats">
+  {% if vs.triples is not none %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.triples | human_number }}</span>
+    <span class="kg-stat-label">triples</span>
+  </div>
+  {% endif %}
+  {% if vs.classes is not none %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.classes }}</span>
+    <span class="kg-stat-label">classes</span>
+  </div>
+  {% endif %}
+  {% if vs.properties is not none %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.properties }}</span>
+    <span class="kg-stat-label">properties</span>
+  </div>
+  {% endif %}
+  {% if vs.distinct_subjects is not none %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.distinct_subjects | human_number }}</span>
+    <span class="kg-stat-label">subjects</span>
+  </div>
+  {% endif %}
+  {% if vs.issued %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.issued }}</span>
+    <span class="kg-stat-label">released</span>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+{# ── Tabs ── #}
+<div class="kg-tabs">
+  <input type="radio" name="kg-tab" id="tab-overview" checked>
+  <label for="tab-overview">Overview</label>
+
+  {% if queries %}
+  <input type="radio" name="kg-tab" id="tab-queries">
+  <label for="tab-queries">Example Queries</label>
+  {% endif %}
+
+  <input type="radio" name="kg-tab" id="tab-endpoints">
+  <label for="tab-endpoints">Endpoints</label>
+
+  {% if vs.class_partitions %}
+  <input type="radio" name="kg-tab" id="tab-classes">
+  <label for="tab-classes">Schema</label>
+  {% endif %}
+
+  {# ── Tab: Overview ── #}
+  <div class="kg-tab-panel" id="panel-overview">
+    {{ page.content }}
+  </div>
+
+  {# ── Tab: Example Queries ── #}
+  {% if queries %}
+  <div class="kg-tab-panel" id="panel-queries">
+    {% for q in queries %}
+    <details class="kg-query-item"{{ " open" if loop.first }}>
+      <summary>
+        <strong>{{ q.summary if q.summary else q.name }}</strong>
+      </summary>
+      <pre><code class="language-sparql">{{ q.text }}</code></pre>
+    </details>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {# ── Tab: Query Endpoints ── #}
+  <div class="kg-tab-panel" id="panel-endpoints">
+    <table class="kg-endpoints-table">
+      {% if page.meta.sparql %}
+      <tr>
+        <th>SPARQL Endpoint</th>
+        <td><code>{{ page.meta.sparql }}</code></td>
+      </tr>
+      {% endif %}
+      {% if page.meta.tpf %}
+      <tr>
+        <th>Triple Pattern Fragments</th>
+        <td><a href="{{ page.meta.tpf }}"><code>{{ page.meta.tpf }}</code></a></td>
+      </tr>
+      {% endif %}
+    </table>
+
+    {% if page.meta.sparql %}
+    <div style="margin-top: 1.5em;">
+      <a class="kg-button" href="https://frink.apps.renci.org?sources=[&quot;{{ page.meta.shortname }}&quot;]&amp;query=SELECT%20*%0AWHERE%20%7B%0A%20%20%3Fs%20%3Fp%20%3Fo%0A%7D%0ALIMIT%2010" target="_blank">
+        Open in FRINK Query UI
+      </a>
+    </div>
+    {% endif %}
+  </div>
+
+  {# ── Tab: Schema ── #}
+  {% if vs.class_partitions %}
+  <div class="kg-tab-panel" id="panel-classes">
+    <div class="kg-schema-tabs">
+      <input type="radio" name="schema-tab" id="schema-tab-classes" checked>
+      <label for="schema-tab-classes">Classes ({{ vs.classes }})</label>
+      {% if vs.property_partitions %}
+      <input type="radio" name="schema-tab" id="schema-tab-props">
+      <label for="schema-tab-props">Properties ({{ vs.properties }})</label>
+      {% endif %}
+
+      <div class="kg-schema-panel" id="schema-panel-classes">
+        <table class="kg-partition-table">
+          <thead><tr><th>Class</th><th>Entities</th></tr></thead>
+          <tbody>
+          {% for c in vs.class_partitions %}
+          <tr>
+            <td title="{{ c.uri }}">{{ c.label }}</td>
+            <td>{{ c.count | human_number if c.count is not none else '?' }}</td>
+          </tr>
           {% endfor %}
-
-          {% if page.meta.funding %}
-          <dt>Funding</dt>
-          <dd><a href="{{ page.meta.funding }}">{{ page.meta.funding }}</a></dd>
-          {% endif %}
-          {% if page.meta.stats %}
-          <dt>FRINK graph summary</dt>
-          <dd><a href="{{ page.meta.stats }}">{{ page.meta.stats }}</a></dd>
-          {% endif %}
-      </dl>
-    </aside>
-    <div class="card" style="margin-bottom: 1.5em;">
-        <div class="card-body">
-            <p>{{ page.content }}</p>
-        </div>
-    </div>
-    <div class="card" style="margin-bottom: 1.5em;">
-      <div class="card-header">
-        <b>Work with the KG</b>
+          </tbody>
+        </table>
       </div>
-      <div class="card-body">
-          <ul>
-            <li>SPARQL: <code>{{ page.meta.sparql }}</code></li>
-            <li>TPF: <a href="{{ page.meta.tpf }}"><code>{{ page.meta.tpf }}</code></a></li>
+      {% if vs.property_partitions %}
+      <div class="kg-schema-panel" id="schema-panel-props">
+        <table class="kg-partition-table">
+          <thead><tr><th>Property</th><th>Triples</th></tr></thead>
+          <tbody>
+          {% for p in vs.property_partitions %}
+          <tr>
+            <td title="{{ p.uri }}">{{ p.label }}</td>
+            <td>{{ p.count | human_number if p.count is not none else '?' }}</td>
+          </tr>
+          {% endfor %}
+          </tbody>
+        </table>
       </div>
+      {% endif %}
     </div>
-</main>
+  </div>
+  {% endif %}
 
-{% endblock %} }}
+</div>
+</div>{# ── end .kg-main ── #}
+
+{# ── Sidebar ── #}
+<aside class="kg-sidebar">
+  <dl>
+    <dt>Shortname</dt>
+    <dd><code>{{ page.meta.shortname }}</code></dd>
+    {% if page.meta.homepage %}
+    <dt>Homepage</dt>
+    <dd><a href="{{ page.meta.homepage }}">{{ page.meta.homepage }}</a></dd>
+    {% endif %}
+    {% if contacts %}
+    <dt>Contact{{ 's' if contacts | length > 1 }}</dt>
+    {% for contact in contacts %}
+    {% if contact and contact.email %}
+    <dd>
+      <a href="mailto:{{ contact.email }}">
+        {{ contact.label if contact.label else contact.email }}
+      </a>
+      {% if contact.github %}
+      <br><a href="https://github.com/{{ contact.github }}">@{{ contact.github }}</a>
+      {% endif %}
+    </dd>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% if page.meta.funding %}
+    <dt>Funding</dt>
+    <dd><a href="{{ page.meta.funding }}">{{ page.meta.funding }}</a></dd>
+    {% endif %}
+  </dl>
+</aside>
+
+</div>{# ── end .kg-page-layout ── #}
+{% endblock %}

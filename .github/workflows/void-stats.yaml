@@ -1,0 +1,33 @@
+name: Update VoID stats
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 9 * * *"
+
+jobs:
+  update-void:
+    runs-on: ubuntu-latest
+    container: snakemake/snakemake:v8.27.1
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.10.4"
+      - name: Fetch VoID stats
+        run: |
+          snakemake -c1 --show-failed-logs docs/registry/void
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "Automatically updated VoID stats"
+          committer: "GitHub Action <action@github.com>"
+          title: "Update VoID stats from okn-void endpoint"
+          body: |
+            Fetched the latest VoID statistics for all registered KGs
+            from the okn-void SPARQL endpoint.
+          assignees: balhoff

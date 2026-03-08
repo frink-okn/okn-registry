@@ -24,6 +24,13 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
   - javascripts/mermaid.mjs
+hooks:
+  - hooks/void_stats.py
+watch:
+  - docs/registry/void
+  - docs/registry/queries
+  - hooks
+  - material
 plugins:
   - search
   - mermaid2:
