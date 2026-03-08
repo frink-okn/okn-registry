@@ -71,7 +71,7 @@
   <input type="radio" name="kg-tab" id="tab-endpoints">
   <label for="tab-endpoints">Endpoints</label>
 
-  {% if vs.class_partitions %}
+  {% if vs.class_partitions or vs.property_partitions %}
   <input type="radio" name="kg-tab" id="tab-classes">
   <label for="tab-classes">Schema</label>
   {% endif %}
@@ -122,16 +122,19 @@
   </div>
 
   {# ── Tab: Schema ── #}
-  {% if vs.class_partitions %}
+  {% if vs.class_partitions or vs.property_partitions %}
   <div class="kg-tab-panel" id="panel-classes">
     <div class="kg-schema-tabs">
+      {% if vs.class_partitions %}
       <input type="radio" name="schema-tab" id="schema-tab-classes" checked>
       <label for="schema-tab-classes">Classes ({{ vs.classes }})</label>
+      {% endif %}
       {% if vs.property_partitions %}
-      <input type="radio" name="schema-tab" id="schema-tab-props">
+      <input type="radio" name="schema-tab" id="schema-tab-props"{{ " checked" if not vs.class_partitions }}>
       <label for="schema-tab-props">Properties ({{ vs.properties }})</label>
       {% endif %}
 
+      {% if vs.class_partitions %}
       <div class="kg-schema-panel" id="schema-panel-classes">
         <table class="kg-partition-table">
           <thead><tr><th>Class</th><th>Entities</th></tr></thead>
@@ -145,6 +148,7 @@
           </tbody>
         </table>
       </div>
+      {% endif %}
       {% if vs.property_partitions %}
       <div class="kg-schema-panel" id="schema-panel-props">
         <table class="kg-partition-table">
