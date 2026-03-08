@@ -123,6 +123,12 @@
 
   {# ── Tab: Schema ── #}
   {% if vs.class_partitions or vs.property_partitions %}
+  <script type="application/json" id="schema-data">
+  {
+    "classes": {{ vs.class_partitions | default([], true) | tojson }},
+    "properties": {{ vs.property_partitions | default([], true) | tojson }}
+  }
+  </script>
   <div class="kg-tab-panel" id="panel-classes">
     <div class="kg-schema-tabs">
       {% if vs.class_partitions %}
@@ -138,34 +144,87 @@
       <div class="kg-schema-panel" id="schema-panel-classes">
         <table class="kg-partition-table">
           <thead><tr><th>Class</th><th>Entities</th></tr></thead>
-          <tbody>
-          {% for c in vs.class_partitions %}
-          <tr>
-            <td title="{{ c.uri }}">{{ c.label }}</td>
-            <td>{{ c.count | human_number if c.count is not none else '?' }}</td>
-          </tr>
-          {% endfor %}
-          </tbody>
+          <tbody id="schema-tbody-classes"></tbody>
         </table>
+        <div class="kg-pager" id="pager-classes"></div>
       </div>
       {% endif %}
       {% if vs.property_partitions %}
       <div class="kg-schema-panel" id="schema-panel-props">
         <table class="kg-partition-table">
           <thead><tr><th>Property</th><th>Triples</th></tr></thead>
-          <tbody>
-          {% for p in vs.property_partitions %}
-          <tr>
-            <td title="{{ p.uri }}">{{ p.label }}</td>
-            <td>{{ p.count | human_number if p.count is not none else '?' }}</td>
-          </tr>
-          {% endfor %}
-          </tbody>
+          <tbody id="schema-tbody-props"></tbody>
         </table>
+        <div class="kg-pager" id="pager-props"></div>
       </div>
       {% endif %}
     </div>
   </div>
+  <script>
+  (function() {
+    var PAGE_SIZE = 100;
+    var data = JSON.parse(document.getElementById("schema-data").textContent);
+
+    function humanNumber(n) {
+      if (n == null) return "?";
+      if (n >= 1e9) return (n / 1e9).toFixed(1) + "B";
+      if (n >= 1e6) return (n / 1e6).toFixed(1) + "M";
+      if (n >= 1e3) return (n / 1e3).toFixed(1) + "K";
+      return String(n);
+    }
+
+    function escapeHtml(s) {
+      var d = document.createElement("span");
+      d.textContent = s;
+      return d.innerHTML;
+    }
+
+    function renderPage(items, tbody, page) {
+      var start = page * PAGE_SIZE;
+      var rows = [];
+      for (var i = start; i < start + PAGE_SIZE && i < items.length; i++) {
+        var it = items[i];
+        rows.push('<tr><td title="' + escapeHtml(it.uri) + '">' +
+          escapeHtml(it.label) + '</td><td>' +
+          humanNumber(it.count) + '</td></tr>');
+      }
+      tbody.innerHTML = rows.join("");
+    }
+
+    function setupPager(items, tbodyId, pagerId) {
+      var tbody = document.getElementById(tbodyId);
+      var pager = document.getElementById(pagerId);
+      if (!tbody || !pager || items.length === 0) return;
+
+      var totalPages = Math.ceil(items.length / PAGE_SIZE);
+      var currentPage = 0;
+
+      function update() {
+        renderPage(items, tbody, currentPage);
+        if (totalPages <= 1) { pager.innerHTML = ""; return; }
+        pager.innerHTML =
+          '<button class="kg-pager-btn"' + (currentPage === 0 ? ' disabled' : '') + ' data-dir="-1">&laquo; Prev</button>' +
+          '<span class="kg-pager-info">' + (currentPage * PAGE_SIZE + 1) + '–' +
+            Math.min((currentPage + 1) * PAGE_SIZE, items.length) +
+            ' of ' + items.length.toLocaleString() + '</span>' +
+          '<button class="kg-pager-btn"' + (currentPage >= totalPages - 1 ? ' disabled' : '') + ' data-dir="1">Next &raquo;</button>';
+      }
+
+      pager.addEventListener("click", function(e) {
+        if (e.target.tagName === "BUTTON" && !e.target.disabled) {
+          currentPage += parseInt(e.target.getAttribute("data-dir"));
+          update();
+          tbody.closest("table").scrollIntoView({behavior: "smooth", block: "nearest"});
+        }
+      });
+
+      update();
+    }
+
+    setupPager(data.classes, "schema-tbody-classes", "pager-classes");
+    setupPager(data.properties, "schema-tbody-props", "pager-props");
+  })();
+  </script>
   {% endif %}
 
 </div>

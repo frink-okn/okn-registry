@@ -638,3 +638,31 @@ dd { margin-left: 0 !important; padding: 0 0 0.5em 0; }
   text-align: right;
   white-space: nowrap;
 }
+
+/* Pagination */
+.kg-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 0.75em;
+  font-size: 0.85rem;
+}
+.kg-pager-btn {
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  background: var(--bs-gray-100);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.kg-pager-btn:hover:not(:disabled) {
+  background: var(--bs-gray-200);
+}
+.kg-pager-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.kg-pager-info {
+  color: var(--bs-gray-600);
+}
