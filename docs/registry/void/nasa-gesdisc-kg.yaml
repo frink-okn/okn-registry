@@ -3,7 +3,7 @@ distinct_subjects: 552193
 distinct_objects: 1027765
 properties: 37
 classes: 8
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
@@ -58,10 +58,10 @@ property_partitions:
   label: dct:identifier
   count: 142173
 - uri: https://schema.org/abstract
-  label: sdo:abstract
+  label: schema:abstract
   count: 141471
 - uri: https://schema.org/title
-  label: sdo:title
+  label: schema:title
   count: 135462
 - uri: http://www.w3.org/2006/time#year
   label: time:year

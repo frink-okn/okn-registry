@@ -3,19 +3,19 @@ distinct_subjects: 159834403
 distinct_objects: 223321308
 properties: 100
 classes: 77
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: https://schema.org/PropertyValue
-  label: sdo:PropertyValue
+  label: schema:PropertyValue
   count: 31044022
 - uri: https://schema.org/GovernmentOrganization
-  label: sdo:GovernmentOrganization
+  label: schema:GovernmentOrganization
   count: 31009676
 - uri: https://schema.org/DataDownload
-  label: sdo:DataDownload
+  label: schema:DataDownload
   count: 30190403
 - uri: https://schema.org/Dataset
-  label: sdo:Dataset
+  label: schema:Dataset
   count: 30183328
 - uri: http://www.opengeospatial.org/standards/waterml2/hy_features/HY_HydroLocation
   label: hyf-old:HY_HydroLocation
@@ -33,19 +33,19 @@ class_partitions:
   label: schema:GeoCoordinates
   count: 860284
 - uri: https://schema.org/GeoCoordinates
-  label: sdo:GeoCoordinates
+  label: schema:GeoCoordinates
   count: 289683
 - uri: https://schema.org/Place
-  label: sdo:Place
+  label: schema:Place
   count: 242878
 - uri: https://schema.org/GeoShape
-  label: sdo:GeoShape
+  label: schema:GeoShape
   count: 115661
 - uri: http://www.opengis.net/ont/sf#MultiPolygon
   label: sf:MultiPolygon
   count: 106094
 - uri: https://schema.org/governmentAgency
-  label: sdo:governmentAgency
+  label: schema:governmentAgency
   count: 35584
 - uri: http://www.opengis.net/ont/sf#LineString
   label: sf:LineString
@@ -69,7 +69,7 @@ class_partitions:
   label: sf:Polygon
   count: 1267
 - uri: https://schema.org/Organization
-  label: sdo:Organization
+  label: schema:Organization
   count: 1258
 - uri: locType:Atmosphere
   label: locType:Atmosphere
@@ -153,10 +153,10 @@ class_partitions:
   label: locType:Ocean
   count: 5
 - uri: http://schema.org/ImageObject
-  label: schema:ImageObject
+  label: ImageObject
   count: 4
 - uri: http://schema.org/WebPage
-  label: schema:WebPage
+  label: WebPage
   count: 4
 - uri: http://www.w3.org/2002/07/owl#SymmetricProperty
   label: owl:SymmetricProperty
@@ -165,10 +165,10 @@ class_partitions:
   label: owl:TransitiveProperty
   count: 4
 - uri: http://schema.org/BreadcrumbList
-  label: schema:BreadcrumbList
+  label: BreadcrumbList
   count: 3
 - uri: http://schema.org/ListItem
-  label: schema:ListItem
+  label: ListItem
   count: 3
 - uri: http://www.w3.org/2000/01/rdf-schema#Class
   label: rdfs:Class
@@ -180,7 +180,7 @@ class_partitions:
   label: locType:Subsurface
   count: 3
 - uri: http://schema.org/Organization
-  label: schema:Organization
+  label: Organization
   count: 2
 - uri: http://www.opengis.net/ont/sf#GeometryCollection
   label: sf:GeometryCollection
@@ -192,19 +192,19 @@ class_partitions:
   label: locType:Outfall
   count: 2
 - uri: http://schema.org/EntryPoint
-  label: schema:EntryPoint
+  label: EntryPoint
   count: 1
 - uri: http://schema.org/NewsArticle
-  label: schema:NewsArticle
+  label: NewsArticle
   count: 1
 - uri: http://schema.org/Person
-  label: schema:Person
+  label: Person
   count: 1
 - uri: http://schema.org/SearchAction
-  label: schema:SearchAction
+  label: SearchAction
   count: 1
 - uri: http://schema.org/WebSite
-  label: schema:WebSite
+  label: WebSite
   count: 1
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#List
   label: rdf:List
@@ -238,55 +238,55 @@ class_partitions:
   count: 1
 property_partitions:
 - uri: https://schema.org/name
-  label: sdo:name
+  label: schema:name
   count: 153071610
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 129074717
 - uri: https://schema.org/url
-  label: sdo:url
+  label: schema:url
   count: 75454083
 - uri: https://schema.org/description
-  label: sdo:description
+  label: schema:description
   count: 60659582
 - uri: https://schema.org/provider
-  label: sdo:provider
+  label: schema:provider
   count: 31330951
 - uri: https://schema.org/propertyID
-  label: sdo:propertyID
+  label: schema:propertyID
   count: 31044149
 - uri: https://schema.org/subjectOf
-  label: sdo:subjectOf
+  label: schema:subjectOf
   count: 30259255
 - uri: https://schema.org/encodingFormat
-  label: sdo:encodingFormat
+  label: schema:encodingFormat
   count: 30190890
 - uri: https://schema.org/contentUrl
-  label: sdo:contentUrl
+  label: schema:contentUrl
   count: 30190733
 - uri: http://purl.org/dc/terms/conformsTo
   label: dct:conformsTo
   count: 30190577
 - uri: https://schema.org/distribution
-  label: sdo:distribution
+  label: schema:distribution
   count: 30190121
 - uri: https://schema.org/variableMeasured
-  label: sdo:variableMeasured
+  label: schema:variableMeasured
   count: 30184759
 - uri: https://schema.org/measurementTechnique
-  label: sdo:measurementTechnique
+  label: schema:measurementTechnique
   count: 30184253
 - uri: https://schema.org/publisher
-  label: sdo:publisher
+  label: schema:publisher
   count: 30184056
 - uri: https://schema.org/unitText
-  label: sdo:unitText
+  label: schema:unitText
   count: 30184054
 - uri: https://schema.org/measurementMethod
-  label: sdo:measurementMethod
+  label: schema:measurementMethod
   count: 30183259
 - uri: https://schema.org/temporalCoverage
-  label: sdo:temporalCoverage
+  label: schema:temporalCoverage
   count: 30153840
 - uri: http://www.opengis.net/ont/geosparql#sfWithin
   label: geo:sfWithin
@@ -301,16 +301,16 @@ property_partitions:
   label: geo:asWKT
   count: 1291775
 - uri: https://schema.org/geo
-  label: sdo:geo
+  label: schema:geo
   count: 1266207
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/containingCatchment
   label: hyf:containingCatchment
   count: 921141
 - uri: https://schema.org/value
-  label: sdo:value
+  label: schema:value
   count: 891947
 - uri: https://schema.org/identifier
-  label: sdo:identifier
+  label: schema:identifier
   count: 860330
 - uri: schema:latitude
   label: schema:latitude
@@ -334,10 +334,10 @@ property_partitions:
   label: hyf:linearElement
   count: 616925
 - uri: https://schema.org/longitude
-  label: sdo:longitude
+  label: schema:longitude
   count: 289683
 - uri: https://schema.org/latitude
-  label: sdo:latitude
+  label: schema:latitude
   count: 289683
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_HydroLocationType
   label: hyf:HY_HydroLocationType
@@ -361,28 +361,28 @@ property_partitions:
   label: hyf:encompassingCatchment
   count: 87693
 - uri: https://schema.org/polygon
-  label: sdo:polygon
+  label: schema:polygon
   count: 81551
 - uri: https://www.wikidata.org/wiki/Property:P885
-  label: wikidata:Property:P885
+  label: Property:P885
   count: 62920
 - uri: https://www.wikidata.org/wiki/Property:P403
-  label: wikidata:Property:P403
+  label: Property:P403
   count: 62918
 - uri: https://schema.org/geoWithin
-  label: sdo:geoWithin
+  label: schema:geoWithin
   count: 57920
 - uri: https://schema.org/geoIntersects
-  label: sdo:geoIntersects
+  label: schema:geoIntersects
   count: 45532
 - uri: https://schema.org/isBasedOn
-  label: sdo:isBasedOn
+  label: schema:isBasedOn
   count: 45516
 - uri: https://www.wikidata.org/wiki/Property:P2043
-  label: wikidata:Property:P2043
+  label: Property:P2043
   count: 34077
 - uri: https://schema.org/line
-  label: sdo:line
+  label: schema:line
   count: 34063
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/downstreamWaterbody
   label: hyf:downstreamWaterbody
@@ -391,7 +391,7 @@ property_partitions:
   label: ssn-system:frequency
   count: 31697
 - uri: https://schema.org/unitCode
-  label: sdo:unitCode
+  label: schema:unitCode
   count: 31656
 - uri: http://qudt.org/schema/qudt/hasUnit
   label: qudt:hasUnit
@@ -403,31 +403,31 @@ property_partitions:
   label: hyf-old:flowpath
   count: 2517
 - uri: https://schema.org/about
-  label: sdo:about
+  label: schema:about
   count: 2517
 - uri: https://schema.org/coordinates
-  label: sdo:coordinates
+  label: schema:coordinates
   count: 2192
 - uri: https://schema.org/creator
-  label: sdo:creator
+  label: schema:creator
   count: 1096
 - uri: https://schema.org/geoJSON
-  label: sdo:geoJSON
+  label: schema:geoJSON
   count: 1096
 - uri: https://schema.org/type
-  label: sdo:type
+  label: schema:type
   count: 1096
 - uri: https://schema.org/elevation
-  label: sdo:elevation
+  label: schema:elevation
   count: 1094
 - uri: https://schema.org/isAccessibleForFree
-  label: sdo:isAccessibleForFree
+  label: schema:isAccessibleForFree
   count: 556
 - uri: https://schema.org/supersededBy
-  label: sdo:supersededBy
+  label: schema:supersededBy
   count: 232
 - uri: https://schema.org/sameAs
-  label: sdo:sameAs
+  label: schema:sameAs
   count: 118
 - uri: http://www.w3.org/2000/01/rdf-schema#subPropertyOf
   label: rdfs:subPropertyOf
@@ -436,16 +436,16 @@ property_partitions:
   label: hyf2:networkStation
   count: 15
 - uri: http://schema.org/name
-  label: schema:name
+  label: name
   count: 12
 - uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
   label: rdfs:subClassOf
   count: 9
 - uri: http://schema.org/url
-  label: schema:url
+  label: url
   count: 9
 - uri: http://schema.org/description
-  label: schema:description
+  label: description
   count: 8
 - uri: http://www.w3.org/2000/01/rdf-schema#range
   label: rdfs:range
@@ -457,83 +457,83 @@ property_partitions:
   label: transitiveOver
   count: 5
 - uri: http://schema.org/itemListElement
-  label: schema:itemListElement
+  label: itemListElement
   count: 5
 - uri: http://schema.org/datePublished
-  label: schema:datePublished
+  label: datePublished
   count: 4
 - uri: http://schema.org/dateModified
-  label: schema:dateModified
+  label: dateModified
   count: 4
 - uri: http://schema.org/image
-  label: schema:image
+  label: image
   count: 4
 - uri: http://www.w3.org/2002/07/owl#inverseOf
   label: owl:inverseOf
   count: 4
 - uri: http://schema.org/inLanguage
-  label: schema:inLanguage
+  label: inLanguage
   count: 4
 - uri: http://schema.org/logo
-  label: schema:logo
+  label: logo
   count: 4
 - uri: http://schema.org/position
-  label: schema:position
+  label: position
   count: 3
 - uri: http://schema.org/sameAs
-  label: schema:sameAs
+  label: sameAs
   count: 3
 - uri: https://www.opengis.net/def/appschema/hy_features/hyf/catchmentRealization
   label: hyf2:catchmentRealization
   count: 3
 - uri: http://schema.org/breadcrumb
-  label: schema:breadcrumb
+  label: breadcrumb
   count: 3
 - uri: http://schema.org/height
-  label: schema:height
+  label: height
   count: 3
 - uri: http://schema.org/isPartOf
-  label: schema:isPartOf
+  label: isPartOf
   count: 3
 - uri: http://schema.org/caption
-  label: schema:caption
+  label: caption
   count: 3
 - uri: http://schema.org/width
-  label: schema:width
+  label: width
   count: 3
 - uri: http://schema.org/previousItem
-  label: schema:previousItem
+  label: previousItem
   count: 2
 - uri: http://schema.org/nextItem
-  label: schema:nextItem
+  label: nextItem
   count: 2
 - uri: http://schema.org/publisher
-  label: schema:publisher
+  label: publisher
   count: 2
 - uri: http://schema.org/item
-  label: schema:item
+  label: item
   count: 1
 - uri: http://schema.org/potentialAction
-  label: schema:potentialAction
+  label: potentialAction
   count: 1
 - uri: http://schema.org/headline
-  label: schema:headline
+  label: headline
   count: 1
 - uri: http://schema.org/author
-  label: schema:author
+  label: author
   count: 1
 - uri: http://schema.org/query-input
-  label: schema:query-input
+  label: query-input
   count: 1
 - uri: http://schema.org/target
-  label: schema:target
+  label: target
   count: 1
 - uri: http://schema.org/mainEntityOfPage
-  label: schema:mainEntityOfPage
+  label: mainEntityOfPage
   count: 1
 - uri: https://www.opengis.net/def/appschema/hy_features/hyf/realizedCatchment
   label: hyf2:realizedCatchment
   count: 1
 - uri: http://schema.org/urlTemplate
-  label: schema:urlTemplate
+  label: urlTemplate
   count: 1

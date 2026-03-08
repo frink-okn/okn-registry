@@ -3,7 +3,7 @@ distinct_subjects: 7117289
 distinct_objects: 7520059
 properties: 107
 classes: 90
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: http://qudt.org/schema/qudt/QuantityValue
   label: qudt:QuantityValue
@@ -93,7 +93,7 @@ class_partitions:
   label: sockg:Cultivar
   count: 308
 - uri: https://schema.org/Person
-  label: sdo:Person
+  label: schema:Person
   count: 158
 - uri: https://idir.uta.edu/sockg-ontology#Parameter
   label: sockg:Parameter
@@ -153,7 +153,7 @@ class_partitions:
   label: sockg:PlantFraction
   count: 29
 - uri: https://schema.org/Organization
-  label: sdo:Organization
+  label: schema:Organization
   count: 28
 - uri: https://idir.uta.edu/sockg-ontology#ProjectScenario
   label: sockg:ProjectScenario
@@ -162,7 +162,7 @@ class_partitions:
   label: sockg:TillageEvent
   count: 18
 - uri: https://schema.org/Occupation
-  label: sdo:Occupation
+  label: schema:Occupation
   count: 18
 - uri: https://idir.uta.edu/sockg-ontology#CuttingHeight
   label: sockg:CuttingHeight
@@ -505,19 +505,19 @@ property_partitions:
   label: dct:creator
   count: 173
 - uri: https://schema.org/familyName
-  label: sdo:familyName
+  label: schema:familyName
   count: 158
 - uri: https://schema.org/givenName
-  label: sdo:givenName
+  label: schema:givenName
   count: 158
 - uri: https://schema.org/workLocation
-  label: sdo:workLocation
+  label: schema:workLocation
   count: 158
 - uri: https://schema.org/hasOccupation
-  label: sdo:hasOccupation
+  label: schema:hasOccupation
   count: 153
 - uri: https://schema.org/role
-  label: sdo:role
+  label: schema:role
   count: 151
 - uri: https://idir.uta.edu/sockg-ontology#hasLossesOrDeposition
   label: sockg:hasLossesOrDeposition
@@ -526,22 +526,22 @@ property_partitions:
   label: dct:title
   count: 148
 - uri: https://schema.org/affiliation
-  label: sdo:affiliation
+  label: schema:affiliation
   count: 147
 - uri: https://schema.org/email
-  label: sdo:email
+  label: schema:email
   count: 143
 - uri: https://schema.org/isPrimaryContact
-  label: sdo:isPrimaryContact
+  label: schema:isPrimaryContact
   count: 140
 - uri: https://idir.uta.edu/sockg-ontology#correspondingAuthor
   label: sockg:correspondingAuthor
   count: 136
 - uri: https://schema.org/telephone
-  label: sdo:telephone
+  label: schema:telephone
   count: 136
 - uri: https://schema.org/additionalName
-  label: sdo:additionalName
+  label: schema:additionalName
   count: 100
 - uri: http://w3id.org/coso/v1/contaminoso#casNumber
   label: contaminoso:casNumber
@@ -556,10 +556,10 @@ property_partitions:
   label: rdfs:subClassOf
   count: 66
 - uri: https://schema.org/postalCode
-  label: sdo:postalCode
+  label: schema:postalCode
   count: 59
 - uri: https://schema.org/honorificSuffix
-  label: sdo:honorificSuffix
+  label: schema:honorificSuffix
   count: 58
 - uri: https://idir.uta.edu/sockg-ontology#fundedBy
   label: sockg:fundedBy

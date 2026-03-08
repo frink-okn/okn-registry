@@ -3,7 +3,7 @@ distinct_subjects: 10275601
 distinct_objects: 11882852
 properties: 50
 classes: 898
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: https://w3id.org/secure-chain/SoftwareVersion
   label: secure-chain:SoftwareVersion
@@ -24,10 +24,10 @@ class_partitions:
   label: secure-chain:Hardware
   count: 58092
 - uri: http://schema.org/Person
-  label: schema:Person
+  label: Person
   count: 27009
 - uri: http://schema.org/Organization
-  label: schema:Organization
+  label: Organization
   count: 22926
 - uri: http://asu.edu/semantics/SUDOKN/WebAddress
   label: SUDOKN:WebAddress
@@ -2713,25 +2713,25 @@ property_partitions:
   label: secure-chain:hasSoftwareVersion
   count: 8593149
 - uri: http://schema.org/url
-  label: schema:url
+  label: url
   count: 7734800
 - uri: http://schema.org/license
-  label: schema:license
+  label: license
   count: 5018025
 - uri: http://schema.org/name
-  label: schema:name
+  label: name
   count: 1028355
 - uri: https://w3id.org/secure-chain/vulnerableTo
   label: secure-chain:vulnerableTo
   count: 870457
 - uri: http://schema.org/programmingLanguage
-  label: schema:programmingLanguage
+  label: programmingLanguage
   count: 803769
 - uri: https://w3id.org/secure-chain/ecosystem
   label: secure-chain:ecosystem
   count: 803769
 - uri: http://schema.org/identifier
-  label: schema:identifier
+  label: identifier
   count: 314310
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
@@ -2755,13 +2755,13 @@ property_partitions:
   label: secure-chain:cpe23
   count: 61042
 - uri: http://schema.org/manufacturer
-  label: schema:manufacturer
+  label: manufacturer
   count: 59162
 - uri: http://asu.edu/semantics/SUDOKN/suppliesToIndustry
   label: SUDOKN:suppliesToIndustry
   count: 50571
 - uri: http://schema.org/contributor
-  label: schema:contributor
+  label: contributor
   count: 32408
 - uri: http://www.w3.org/2002/07/owl#sameAs
   label: owl:sameAs

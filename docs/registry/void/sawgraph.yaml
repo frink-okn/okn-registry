@@ -3,7 +3,7 @@ distinct_subjects: 2401139
 distinct_objects: 2723203
 properties: 181
 classes: 448
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -1735,13 +1735,13 @@ property_partitions:
   label: obo:IAO_0000112
   count: 11
 - uri: http://schema.org/domainIncludes
-  label: schema:domainIncludes
+  label: domainIncludes
   count: 11
 - uri: http://qudt.org/schema/qudt/informativeReference
   label: qudt:informativeReference
   count: 11
 - uri: http://schema.org/rangeIncludes
-  label: schema:rangeIncludes
+  label: rangeIncludes
   count: 11
 - uri: http://w3id.org/sawgraph/v1/us-wqp#organizationId
   label: sawgraph-wqp:organizationId
@@ -1783,7 +1783,7 @@ property_partitions:
   label: qudt:hasDimensionVector
   count: 6
 - uri: http://schema.org/image
-  label: schema:image
+  label: image
   count: 5
 - uri: http://purl.obolibrary.org/obo/IAO_0000600
   label: obo:IAO_0000600
