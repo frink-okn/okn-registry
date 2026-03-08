@@ -44,10 +44,12 @@ kgs:
     documentation-path: okn-void
     lakefs-repo: okn-void
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
-  homepage: https://frink.renci.org/registry/
+  homepage: https://frink.renci.org/registry/kgs/okn-void/
   shortname: okn-void
+  sparql: https://frink.apps.renci.org/okn-void/sparql
   template: overrides/kg.html
   title: OKN VoID graph descriptions
+  tpf: https://frink.apps.renci.org/ldf/okn-void
 - contact:
     email: balhoff@renci.org
     github: balhoff
