@@ -3,7 +3,7 @@ distinct_subjects: 4534650
 distinct_objects: 11839438
 properties: 64
 classes: 115
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -409,7 +409,7 @@ property_partitions:
   label: fio-epa:hasFRSId
   count: 918005
 - uri: http://schema.org/dateModified
-  label: schema:dateModified
+  label: dateModified
   count: 762617
 - uri: http://www.opengis.net/ont/geosparql#asWKT
   label: geo:asWKT
@@ -424,7 +424,7 @@ property_partitions:
   label: fio-epa:hasSupplementalRecord
   count: 720516
 - uri: http://schema.org/address
-  label: schema:address
+  label: address
   count: 693695
 - uri: http://purl.org/dc/terms/modified
   label: dct:modified

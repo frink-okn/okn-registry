@@ -3,7 +3,7 @@ distinct_subjects: 14204277
 distinct_objects: 17308286
 properties: 1194
 classes: 86
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Axiom
   label: owl:Axiom
@@ -87,7 +87,7 @@ class_partitions:
   label: owl:Thing
   count: 22
 - uri: http://schema.org/Dataset
-  label: schema:Dataset
+  label: Dataset
   count: 19
 - uri: http://www.w3.org/2002/07/owl#DatatypeProperty
   label: owl:DatatypeProperty
@@ -2536,7 +2536,7 @@ property_partitions:
   label: obo:NCIT_P362
   count: 215
 - uri: http://schema.org/image
-  label: schema:image
+  label: image
   count: 213
 - uri: http://purl.obolibrary.org/obo/IAO_0000221
   label: obo:IAO_0000221
@@ -3097,16 +3097,16 @@ property_partitions:
   label: oboInOwl:exceptions
   count: 20
 - uri: http://schema.org/position
-  label: schema:position
+  label: position
   count: 19
 - uri: http://schema.org/includedInDataCatalog
-  label: schema:includedInDataCatalog
+  label: includedInDataCatalog
   count: 19
 - uri: http://schema.org/archivedAt
-  label: schema:archivedAt
+  label: archivedAt
   count: 19
 - uri: http://schema.org/discussionUrl
-  label: schema:discussionUrl
+  label: discussionUrl
   count: 19
 - uri: http://purl.obolibrary.org/obo/UBPROP_0000107
   label: obo:UBPROP_0000107
@@ -3115,7 +3115,7 @@ property_partitions:
   label: obo:RO_0000079
   count: 19
 - uri: http://schema.org/assesses
-  label: schema:assesses
+  label: assesses
   count: 19
 - uri: http://www.geneontology.org/formats/oboInOwl#date
   label: oboInOwl:date
@@ -3184,7 +3184,7 @@ property_partitions:
   label: obo:mi#PSI-MI-short
   count: 14
 - uri: http://schema.org/headline
-  label: schema:headline
+  label: headline
   count: 14
 - uri: http://www.geneontology.org/formats/oboInOwl#is_asserted
   label: oboInOwl:is_asserted

@@ -3,7 +3,7 @@ distinct_subjects: 11271279
 distinct_objects: 13758144
 properties: 84
 classes: 69
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -301,7 +301,7 @@ property_partitions:
   label: qudt:unit
   count: 265368
 - uri: https://schema.org/name
-  label: sdo:name
+  label: schema:name
   count: 224286
 - uri: http://purl.org/dc/terms/title
   label: dct:title
@@ -451,13 +451,13 @@ property_partitions:
   label: owl:unionOf
   count: 1
 - uri: https://schema.org/rangeIncludes
-  label: sdo:rangeIncludes
+  label: schema:rangeIncludes
   count: 1
 - uri: http://purl.org/dc/terms/publisher
   label: dct:publisher
   count: 1
 - uri: https://schema.org/domainIncludes
-  label: sdo:domainIncludes
+  label: schema:domainIncludes
   count: 1
 - uri: http://qudt.org/schema/qudt/hasQuantityKind
   label: qudt:hasQuantityKind

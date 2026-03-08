@@ -3,7 +3,7 @@ distinct_subjects: 1688986
 distinct_objects: 1976330
 properties: 48
 classes: 17
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: https://w3id.org/biolink/vocab/Gene
   label: biolink:Gene

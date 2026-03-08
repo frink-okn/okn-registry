@@ -3,107 +3,107 @@ distinct_subjects: 591543
 distinct_objects: 1799216
 properties: 30
 classes: 7
-last_checked: '2026-03-07'
+last_checked: '2026-03-08'
 class_partitions:
 - uri: http://schema.org/Person
-  label: schema:Person
+  label: Person
   count: 270285
 - uri: http://schema.org/Dataset
-  label: schema:Dataset
+  label: Dataset
   count: 256367
 - uri: http://schema.org/MonetaryGrant
-  label: schema:MonetaryGrant
+  label: MonetaryGrant
   count: 55862
 - uri: http://schema.org/DefinedTerm
-  label: schema:DefinedTerm
+  label: DefinedTerm
   count: 8554
 - uri: http://schema.org/Organization
-  label: schema:Organization
+  label: Organization
   count: 436
 - uri: http://www.w3.org/2000/01/rdf-schema#Class
   label: rdfs:Class
   count: 9
 - uri: http://schema.org/DataCatalog
-  label: schema:DataCatalog
+  label: DataCatalog
   count: 8
 property_partitions:
 - uri: http://schema.org/author
-  label: schema:author
+  label: author
   count: 1031644
 - uri: http://schema.org/funding
-  label: schema:funding
+  label: funding
   count: 844672
 - uri: http://schema.org/name
-  label: schema:name
+  label: name
   count: 595021
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 591521
 - uri: http://schema.org/identifier
-  label: schema:identifier
+  label: identifier
   count: 314939
 - uri: http://schema.org/url
-  label: schema:url
+  label: url
   count: 312327
 - uri: http://schema.org/species
-  label: schema:species
+  label: species
   count: 264209
 - uri: http://schema.org/includedInDataCatalog
-  label: schema:includedInDataCatalog
+  label: includedInDataCatalog
   count: 257145
 - uri: http://schema.org/archivedAt
-  label: schema:archivedAt
+  label: archivedAt
   count: 257145
 - uri: http://schema.org/date
-  label: schema:date
+  label: date
   count: 256314
 - uri: http://schema.org/dateModified
-  label: schema:dateModified
+  label: dateModified
   count: 255715
 - uri: http://schema.org/datePublished
-  label: schema:datePublished
+  label: datePublished
   count: 254994
 - uri: http://schema.org/description
-  label: schema:description
+  label: description
   count: 254630
 - uri: http://schema.org/healthCondition
-  label: schema:healthCondition
+  label: healthCondition
   count: 250611
 - uri: http://schema.org/funder
-  label: schema:funder
+  label: funder
   count: 57153
 - uri: http://schema.org/startDate
-  label: schema:startDate
+  label: startDate
   count: 54344
 - uri: http://schema.org/endDate
-  label: schema:endDate
+  label: endDate
   count: 54158
 - uri: http://schema.org/infectiousAgent
-  label: schema:infectiousAgent
+  label: infectiousAgent
   count: 34080
 - uri: http://schema.org/sameAs
-  label: schema:sameAs
+  label: sameAs
   count: 19502
 - uri: http://www.w3.org/2002/07/owl#sameAs
   label: owl:sameAs
   count: 9741
 - uri: http://schema.org/dateCreated
-  label: schema:dateCreated
+  label: dateCreated
   count: 8451
 - uri: http://schema.org/abstract
-  label: schema:abstract
+  label: abstract
   count: 1320
 - uri: http://schema.org/affiliation
-  label: schema:affiliation
+  label: affiliation
   count: 665
 - uri: http://schema.org/alternateName
-  label: schema:alternateName
+  label: alternateName
   count: 140
 - uri: http://schema.org/versionDate
-  label: schema:versionDate
+  label: versionDate
   count: 80
 - uri: http://schema.org/parentOrganization
-  label: schema:parentOrganization
+  label: parentOrganization
   count: 33
 - uri: http://www.w3.org/2000/01/rdf-schema#domain
   label: rdfs:domain
@@ -112,8 +112,8 @@ property_partitions:
   label: rdfs:range
   count: 22
 - uri: http://schema.org/givenName
-  label: schema:givenName
+  label: givenName
   count: 21
 - uri: http://schema.org/familyName
-  label: schema:familyName
+  label: familyName
   count: 21
