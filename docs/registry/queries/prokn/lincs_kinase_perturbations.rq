@@ -2,18 +2,7 @@
 #+ tags:
 #+   - prokn    
 
-PREFIX upcore: <http://purl.uniprot.org/core/>
-PREFIX dc: <http://purl.org/dc/terms/>
-PREFIX edam: <http://edamontology.org/>
-PREFIX obo: <http://purl.obolibrary.org/obo/>
-
-SELECT ?kinase ?accession ?ecNumber WHERE {
-    ?kinase a upcore:Protein ;
-            dc:source "UniProtKB" ;
-            obo:NCIT_C25402 ?accession ;
-            edam:data_1011 ?ecNumber .
-    FILTER regex(?ecNumber, "(^|;)2\.7[^;]*")
-}PREFIX ns: <https://research.bioinformatics.udel.edu/ProKN/rdf/>
+PREFIX ns: <https://research.bioinformatics.udel.edu/ProKN/rdf/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX bao: <http://www.bioassayontology.org/bao#BAO_>
@@ -25,7 +14,7 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX edam: <http://edamontology.org/>
 
-SELECT DISTINCT ?compLabel ?pubchemURI
+SELECT DISTINCT ?compoundLabel ?pubchemURI
 WHERE {
   # Perturbagen
   ?pert rdf:type bao:0003059 ;
@@ -35,8 +24,10 @@ WHERE {
   # Compound
   ?comp rdf:type ncit:C43366 ;
             dc:source "LINCS" ;
-            rdfs:seeAlso ?pubchemURI ;
-            ns:label ?compLabel.
+            rdfs:label ?compoundLabel.
+   optional {
+  		?comp rdfs:seeAlso ?pubchemURI .
+  }
 
   # Relationship: Compound -> Gene
   { ?comp ro:0002213 ?kgene. } # POSITIVELY_REGULATES
@@ -52,8 +43,8 @@ WHERE {
   # Protein
   ?pr rdf:type upcore:Protein ;
     edam:data_1011 ?ecNumber.
-  
-  #FILTER regex(?ecNumber, "2.7.*")
+
   FILTER regex(?ecNumber, "(^|;)2\\.7[^;]*")
 }
-ORDER BY ?compLabel ?pubchemURI
+ORDER BY ?compoundLabel ?pubchemURI
+    
