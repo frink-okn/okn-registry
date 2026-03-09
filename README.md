@@ -21,3 +21,5 @@ Example queries for each KG can be placed in the appropriate folder (matching th
 ## Site development
 
 You must have [snakemake](https://snakemake.readthedocs.io/en/stable/) and [uv](https://docs.astral.sh/uv/) locally installed to run the build scripts.
+
+This site makes use of the SPARQL-to-Mermaid diagram renderer developed by [SIB](https://www.sib.swiss) at https://github.com/sib-swiss/sparql-examples-utils.
