@@ -3,7 +3,7 @@ distinct_subjects: 7117289
 distinct_objects: 7520059
 properties: 107
 classes: 90
-last_checked: '2026-03-08'
+last_checked: '2026-03-09'
 class_partitions:
 - uri: http://qudt.org/schema/qudt/QuantityValue
   label: qudt:QuantityValue
@@ -72,7 +72,7 @@ class_partitions:
   label: sockg:BiomassCarbohydrate
   count: 1367
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell_Level13
-  label: kwg:S2Cell_Level13
+  label: kwg-ont:S2Cell_Level13
   count: 1069
 - uri: https://idir.uta.edu/sockg-ontology#SoilCover
   label: sockg:SoilCover
@@ -114,7 +114,7 @@ class_partitions:
   label: sockg:Rotation
   count: 66
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_2
-  label: kwg:AdministrativeRegion_2
+  label: kwg-ont:AdministrativeRegion_2
   count: 62
 - uri: http://www.w3.org/2002/07/owl#ObjectProperty
   label: owl:ObjectProperty
@@ -141,7 +141,7 @@ class_partitions:
   label: sockg:PesticideTarget
   count: 38
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_1
-  label: kwg:AdministrativeRegion_1
+  label: kwg-ont:AdministrativeRegion_1
   count: 36
 - uri: https://idir.uta.edu/sockg-ontology#WindErosionArea
   label: sockg:WindErosionArea
@@ -246,7 +246,7 @@ class_partitions:
   label: bibo:Book
   count: 2
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_0
-  label: kwg:AdministrativeRegion_0
+  label: kwg-ont:AdministrativeRegion_0
   count: 2
 - uri: https://idir.uta.edu/sockg-ontology#BookChapter
   label: sockg:BookChapter
@@ -385,10 +385,10 @@ property_partitions:
   label: sockg:withPesticidePlacement
   count: 9498
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
-  label: kwg:sfWithin
+  label: kwg-ont:sfWithin
   count: 9259
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfContains
-  label: kwg:sfContains
+  label: kwg-ont:sfContains
   count: 9148
 - uri: https://idir.uta.edu/sockg-ontology#hasBroadleafOrGrass
   label: sockg:hasBroadleafOrGrass

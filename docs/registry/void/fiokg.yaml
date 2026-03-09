@@ -3,7 +3,7 @@ distinct_subjects: 4534650
 distinct_objects: 11839438
 properties: 64
 classes: 115
-last_checked: '2026-03-08'
+last_checked: '2026-03-09'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -39,19 +39,19 @@ class_partitions:
   label: fio-epa:PermitRecord
   count: 293732
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Region
-  label: kwg:Region
+  label: kwg-ont:Region
   count: 251854
 - uri: http://www.opengis.net/ont/geosparql#Feature
   label: geo:Feature
   count: 251854
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Cell
-  label: kwg:Cell
+  label: kwg-ont:Cell
   count: 249509
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell
-  label: kwg:S2Cell
+  label: kwg-ont:S2Cell
   count: 249509
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell_Level13
-  label: kwg:S2Cell_Level13
+  label: kwg-ont:S2Cell_Level13
   count: 249509
 - uri: http://w3id.org/fio/v1/epa-frs#EnforcementActivity
   label: fio-epa:EnforcementActivity
@@ -78,13 +78,13 @@ class_partitions:
   label: fio:Industry
   count: 3426
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion
-  label: kwg:AdministrativeRegion
+  label: kwg-ont:AdministrativeRegion
   count: 2345
 - uri: http://www.w3.org/2002/07/owl#NamedIndividual
   label: owl:NamedIndividual
   count: 2308
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_3
-  label: kwg:AdministrativeRegion_3
+  label: kwg-ont:AdministrativeRegion_3
   count: 2225
 - uri: http://w3id.org/fio/v1/naics#NAICS-Industry
   label: fio-naics:NAICS-Industry
@@ -123,7 +123,7 @@ class_partitions:
   label: rdf:Property
   count: 137
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_2
-  label: kwg:AdministrativeRegion_2
+  label: kwg-ont:AdministrativeRegion_2
   count: 118
 - uri: http://w3id.org/fio/v1/epa-frs#ProgramInformationSystem
   label: fio-epa:ProgramInformationSystem
@@ -312,7 +312,7 @@ class_partitions:
   label: fio-epa:UndergroundStorageTankProgram
   count: 3
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_1
-  label: kwg:AdministrativeRegion_1
+  label: kwg-ont:AdministrativeRegion_1
   count: 2
 - uri: http://w3id.org/fio/v1/epa-frs#Agency.HousingandUrbanDevelopment
   label: fio-epa:Agency.HousingandUrbanDevelopment
@@ -355,7 +355,7 @@ property_partitions:
   label: rdf:type
   count: 20735902
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/spatialRelation
-  label: kwg:spatialRelation
+  label: kwg-ont:spatialRelation
   count: 4315928
 - uri: http://purl.org/spatialai/spatial/spatial-full#spatiallyRelatedTo
   label: spatial-full:spatiallyRelatedTo
@@ -379,10 +379,10 @@ property_partitions:
   label: fio-epa:ofFacilityType
   count: 2517791
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
-  label: kwg:sfWithin
+  label: kwg-ont:sfWithin
   count: 2362785
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfContains
-  label: kwg:sfContains
+  label: kwg-ont:sfContains
   count: 2362785
 - uri: http://w3id.org/fio/v1/epa-frs#fromSystem
   label: fio-epa:fromSystem
@@ -451,7 +451,7 @@ property_partitions:
   label: rdfs:subClassOf
   count: 832
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfTouches
-  label: kwg:sfTouches
+  label: kwg-ont:sfTouches
   count: 402
 - uri: http://www.w3.org/2000/01/rdf-schema#domain
   label: rdfs:domain

@@ -3,7 +3,7 @@ distinct_subjects: 11271279
 distinct_objects: 13758144
 properties: 84
 classes: 69
-last_checked: '2026-03-08'
+last_checked: '2026-03-09'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -15,16 +15,16 @@ class_partitions:
   label: geo:Feature
   count: 8488759
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Region
-  label: kwg:Region
+  label: kwg-ont:Region
   count: 7442806
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Cell
-  label: kwg:Cell
+  label: kwg-ont:Cell
   count: 7404184
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell
-  label: kwg:S2Cell
+  label: kwg-ont:S2Cell
   count: 7404184
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell_Level13
-  label: kwg:S2Cell_Level13
+  label: kwg-ont:S2Cell_Level13
   count: 7404184
 - uri: http://purl.org/spatialai/stad/v2/core/SingleData
   label: stad:SingleData
@@ -78,10 +78,10 @@ class_partitions:
   label: hyf:HY_Lake
   count: 60083
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion
-  label: kwg:AdministrativeRegion
+  label: kwg-ont:AdministrativeRegion
   count: 38622
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_3
-  label: kwg:AdministrativeRegion_3
+  label: kwg-ont:AdministrativeRegion_3
   count: 35458
 - uri: http://www.opengis.net/ont/sf#Polygon
   label: sf:Polygon
@@ -105,7 +105,7 @@ class_partitions:
   label: PublicWaterSystem-TNCWS
   count: 4771
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_2
-  label: kwg:AdministrativeRegion_2
+  label: kwg-ont:AdministrativeRegion_2
   count: 3114
 - uri: http://gwml2.org/def/gwml2#GW_AquiferSystem
   label: gwml2:GW_AquiferSystem
@@ -129,7 +129,7 @@ class_partitions:
   label: owl:Class
   count: 64
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_1
-  label: kwg:AdministrativeRegion_1
+  label: kwg-ont:AdministrativeRegion_1
   count: 50
 - uri: http://www.w3.org/2002/07/owl#ObjectProperty
   label: owl:ObjectProperty
@@ -223,7 +223,7 @@ property_partitions:
   label: owl:sameAs
   count: 11271279
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/spatialRelation
-  label: kwg:spatialRelation
+  label: kwg-ont:spatialRelation
   count: 4665700
 - uri: http://purl.org/spatialai/spatial/spatial-full#spatiallyRelatedTo
   label: spatial-full:spatiallyRelatedTo
@@ -232,7 +232,7 @@ property_partitions:
   label: spatial-full:connectedTo
   count: 4665700
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfCrosses
-  label: kwg:sfCrosses
+  label: kwg-ont:sfCrosses
   count: 2793976
 - uri: http://qudt.org/schema/qudt/numericValue
   label: qudt:numericValue
@@ -244,7 +244,7 @@ property_partitions:
   label: geo:hasGeometry
   count: 980710
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfOverlaps
-  label: kwg:sfOverlaps
+  label: kwg-ont:sfOverlaps
   count: 962554
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/upstreamWaterBody
   label: hyf:upstreamWaterBody
@@ -271,10 +271,10 @@ property_partitions:
   label: nhdplusv2:hasFCODE
   count: 507486
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
-  label: kwg:sfWithin
+  label: kwg-ont:sfWithin
   count: 434877
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfContains
-  label: kwg:sfContains
+  label: kwg-ont:sfContains
   count: 434877
 - uri: http://nhdplusv2.spatialai.org/v1/nhdplusv2#hasFlowPathLength
   label: nhdplusv2:hasFlowPathLength
@@ -325,7 +325,7 @@ property_partitions:
   label: geo:hasDefaultGeometry
   count: 83346
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfTouches
-  label: kwg:sfTouches
+  label: kwg-ont:sfTouches
   count: 41376
 - uri: http://sawgraph.spatialai.org/v1/saw_water#aquiferType
   label: saw-water:aquiferType

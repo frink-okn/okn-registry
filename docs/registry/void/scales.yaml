@@ -3,7 +3,7 @@ distinct_subjects: 96522267
 distinct_objects: 140064817
 properties: 5931
 classes: 28
-last_checked: '2026-03-08'
+last_checked: '2026-03-09'
 class_partitions:
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#RegisterAction
   label: jxdm:RegisterAction
@@ -1492,7 +1492,7 @@ property_partitions:
   label: rdf:_385
   count: 3046
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_2
-  label: kwg:AdministrativeRegion_2
+  label: kwg-ont:AdministrativeRegion_2
   count: 3041
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#_386
   label: rdf:_386

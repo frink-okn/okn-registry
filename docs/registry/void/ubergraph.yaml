@@ -3,7 +3,7 @@ distinct_subjects: 14204277
 distinct_objects: 17308286
 properties: 1194
 classes: 86
-last_checked: '2026-03-08'
+last_checked: '2026-03-09'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Axiom
   label: owl:Axiom
@@ -36,13 +36,13 @@ class_partitions:
   label: obo:NCBITaxon_9606
   count: 526
 - uri: http://www.w3.org/2003/11/swrl#AtomList
-  label: AtomList
+  label: swrl:AtomList
   count: 283
 - uri: https://w3id.org/linkml/ClassDefinition
   label: linkml:ClassDefinition
   count: 270
 - uri: http://www.w3.org/2003/11/swrl#IndividualPropertyAtom
-  label: IndividualPropertyAtom
+  label: swrl:IndividualPropertyAtom
   count: 238
 - uri: https://w3id.org/linkml/Annotation
   label: linkml:Annotation
@@ -57,7 +57,7 @@ class_partitions:
   label: owl:TransitiveProperty
   count: 90
 - uri: http://www.w3.org/2003/11/swrl#Imp
-  label: Imp
+  label: swrl:Imp
   count: 83
 - uri: http://www.w3.org/2002/07/owl#Ontology
   label: owl:Ontology
@@ -66,7 +66,7 @@ class_partitions:
   label: linkml:Example
   count: 50
 - uri: http://www.w3.org/2003/11/swrl#ClassAtom
-  label: ClassAtom
+  label: swrl:ClassAtom
   count: 45
 - uri: http://purl.obolibrary.org/obo/OBI_0000835
   label: obo:OBI_0000835
@@ -75,7 +75,7 @@ class_partitions:
   label: obo:ENVO_01001570
   count: 37
 - uri: http://www.w3.org/2003/11/swrl#Variable
-  label: Variable
+  label: swrl:Variable
   count: 28
 - uri: https://w3id.org/linkml/TypeDefinition
   label: linkml:TypeDefinition
@@ -2431,7 +2431,7 @@ property_partitions:
   label: obo:BSPO_0001101
   count: 289
 - uri: http://www.w3.org/2003/11/swrl#argument1
-  label: argument1
+  label: swrl:argument1
   count: 283
 - uri: http://purl.obolibrary.org/obo/RO_0002242
   label: obo:RO_0002242
@@ -2485,13 +2485,13 @@ property_partitions:
   label: obo:GOREL_0012006
   count: 240
 - uri: http://www.w3.org/2003/11/swrl#argument2
-  label: argument2
+  label: swrl:argument2
   count: 238
 - uri: http://purl.obolibrary.org/obo/fbcv#conditionality
   label: obo:fbcv#conditionality
   count: 238
 - uri: http://www.w3.org/2003/11/swrl#propertyPredicate
-  label: propertyPredicate
+  label: swrl:propertyPredicate
   count: 238
 - uri: http://purl.obolibrary.org/obo/NCIT_P215
   label: obo:NCIT_P215
@@ -2803,10 +2803,10 @@ property_partitions:
   label: obo:OBI_0000124
   count: 84
 - uri: http://www.w3.org/2003/11/swrl#body
-  label: body
+  label: swrl:body
   count: 83
 - uri: http://www.w3.org/2003/11/swrl#head
-  label: head
+  label: swrl:head
   count: 83
 - uri: http://purl.obolibrary.org/obo/IAO_0006011
   label: obo:IAO_0006011
@@ -2926,7 +2926,7 @@ property_partitions:
   label: obo:RO_0001900
   count: 46
 - uri: http://www.w3.org/2003/11/swrl#classPredicate
-  label: classPredicate
+  label: swrl:classPredicate
   count: 45
 - uri: http://www.geneontology.org/formats/oboInOwl#editor
   label: oboInOwl:editor
