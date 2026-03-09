@@ -3,7 +3,7 @@ distinct_subjects: 2401139
 distinct_objects: 2723203
 properties: 181
 classes: 448
-last_checked: '2026-03-08'
+last_checked: '2026-03-09'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -84,16 +84,16 @@ class_partitions:
   label: geo:Feature
   count: 111639
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Region
-  label: kwg:Region
+  label: kwg-ont:Region
   count: 86890
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Cell
-  label: kwg:Cell
+  label: kwg-ont:Cell
   count: 86344
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell
-  label: kwg:S2Cell
+  label: kwg-ont:S2Cell
   count: 86344
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell_Level13
-  label: kwg:S2Cell_Level13
+  label: kwg-ont:S2Cell_Level13
   count: 86344
 - uri: http://w3id.org/coso/v1/contaminoso#QuantitationLimit
   label: contaminoso:QuantitationLimit
@@ -270,10 +270,10 @@ class_partitions:
   label: owl:Restriction
   count: 613
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion
-  label: kwg:AdministrativeRegion
+  label: kwg-ont:AdministrativeRegion
   count: 546
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_3
-  label: kwg:AdministrativeRegion_3
+  label: kwg-ont:AdministrativeRegion_3
   count: 529
 - uri: http://w3id.org/sawgraph/v1/us-wqp#DefWQPSurfaceWaterSample
   label: sawgraph-wqp:DefWQPSurfaceWaterSample
@@ -342,7 +342,7 @@ class_partitions:
   label: contaminoso:AnimalBloodSample
   count: 88
 - uri: http://w3id.org/DSSTox/v1/ChemicalEntity
-  label: DSSToX:ChemicalEntity
+  label: dsstox:ChemicalEntity
   count: 86
 - uri: http://w3id.org/coso/v1/contaminoso#AnimalOrganSample
   label: contaminoso:AnimalOrganSample
@@ -507,7 +507,7 @@ class_partitions:
   label: sawgraph-wqp:DefWQPSedimentSample
   count: 17
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_2
-  label: kwg:AdministrativeRegion_2
+  label: kwg-ont:AdministrativeRegion_2
   count: 16
 - uri: http://w3id.org/coso/v1/contaminoso#PlantUndergroundSample
   label: contaminoso:PlantUndergroundSample
@@ -1326,7 +1326,7 @@ class_partitions:
   label: qudt:EnumeratedValue
   count: 1
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_1
-  label: kwg:AdministrativeRegion_1
+  label: kwg-ont:AdministrativeRegion_1
   count: 1
 - uri: http://w3id.org/coso/v1/contaminoso#ObservationAnnotation
   label: contaminoso:ObservationAnnotation
@@ -1468,7 +1468,7 @@ property_partitions:
   label: dct:identifier
   count: 40194
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/spatialRelation
-  label: kwg:spatialRelation
+  label: kwg-ont:spatialRelation
   count: 34072
 - uri: http://purl.org/spatialai/spatial/spatial-full#spatiallyRelatedTo
   label: spatial-full:spatiallyRelatedTo
@@ -1498,10 +1498,10 @@ property_partitions:
   label: sawgraph-me:sampleCollectionMethod
   count: 22690
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
-  label: kwg:sfWithin
+  label: kwg-ont:sfWithin
   count: 17036
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfContains
-  label: kwg:sfContains
+  label: kwg-ont:sfContains
   count: 17036
 - uri: http://w3id.org/sawgraph/v1/me-egad#samplePointType
   label: sawgraph-me:samplePointType
@@ -1633,7 +1633,7 @@ property_partitions:
   label: oboInOwl:hasNarrowSynonym
   count: 132
 - uri: http://w3id.org/DSSTox/v1/sameAsDSSToxSubstance
-  label: DSSToX:sameAsDSSToxSubstance
+  label: dsstox:sameAsDSSToxSubstance
   count: 122
 - uri: http://sawgraph.spatialai.org/v1/us-sdwis#hasPWSID
   label: hasPWSID
@@ -1687,7 +1687,7 @@ property_partitions:
   label: owl:allValuesFrom
   count: 45
 - uri: http://w3id.org/DSSTox/v1/hasInChiKey
-  label: DSSToX:hasInChiKey
+  label: dsstox:hasInChiKey
   count: 45
 - uri: http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
   label: oboInOwl:hasBroadSynonym
