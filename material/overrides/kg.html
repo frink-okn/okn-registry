@@ -90,12 +90,6 @@
         <strong>{{ q.summary if q.summary else q.name }}</strong>
       </summary>
       <div class="kg-query-views">
-        <input type="radio" name="q-view-{{ loop.index }}" id="q-{{ loop.index }}-code" class="qv-code" checked>
-        <label for="q-{{ loop.index }}-code">Code</label>
-        {% if q.mermaid %}
-        <input type="radio" name="q-view-{{ loop.index }}" id="q-{{ loop.index }}-diagram" class="qv-diagram">
-        <label for="q-{{ loop.index }}-diagram">Diagram</label>
-        {% endif %}
         <div class="kg-query-code">
           <div class="highlight"><pre><code>{{ q.text }}</code></pre></div>
         </div>
