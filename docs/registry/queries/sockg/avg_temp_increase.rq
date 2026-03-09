@@ -1,0 +1,60 @@
+#+ summary: What is the average increase in temperature from the first sample of an experimental unit for ghg flux samples.
+#+ tags:
+#+   - sockg
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+
+SELECT DISTINCT ?expUnit ?treatment ?crop ?ChambPlacement ?label (ROUND(AVG(?DiffTemp) * 1000) / 1000 AS ?AvgTempDiff) 
+				(SAMPLE(?Unit) AS ?unit) (COUNT(*) AS ?NumOfSamples) 
+WHERE {
+    BIND("air_temp_degc" AS ?label)
+
+	?b a sockg:GHGFlux ;
+    	sockg:hasMeasurement ?m ;
+	    sockg:fromUnit ?e ;
+		sockg:usesTreatment ?t ;
+    	sockg:hasChamberPlacement ?cp ;
+		sockg:hasCrop ?c ;
+    	dcterms:date ?date .
+    
+    ?e dcterms:identifier ?expUnit .
+    ?cp rdfs:label ?ChambPlacement .
+    ?c rdfs:label ?crop .
+    ?t dcterms:identifier ?treatment .
+
+    
+    ?m sockg:of ?param ;
+        qudt:quantityValue ?v .
+    ?param a sockg:Parameter ;
+            rdfs:label ?label .
+    ?v qudt:numericValue ?Value ;
+        qudt:hasUnit ?Unit .
+    
+    {
+        SELECT ?expUnit (MIN(?date) AS ?baselineDate) (SAMPLE(?baseValue) AS ?baselineValue)
+        WHERE {
+            ?b a sockg:GHGFlux ;
+                sockg:hasMeasurement ?m ;
+                sockg:fromUnit ?e ;
+                dcterms:date ?date .
+            
+            ?e dcterms:identifier ?expUnit .
+            
+            ?m sockg:of ?param ;
+                qudt:quantityValue ?v .
+            ?param a sockg:Parameter ;
+                    rdfs:label ?label .
+            ?v qudt:numericValue ?baseValue ;
+                qudt:hasUnit ?Unit .
+        }
+        GROUP BY ?expUnit
+    }
+    
+    FILTER(?date != ?baselineDate)
+    
+    BIND(?Value - ?baselineValue AS ?DiffTemp)
+}
+GROUP BY ?expUnit ?treatment ?crop ?ChambPlacement ?label
+ORDER BY DESC(?AvgTempDiff)

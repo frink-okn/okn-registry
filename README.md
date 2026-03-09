@@ -1,6 +1,7 @@
 # OKN KG registry
 
 ## KG registry entries
+
 Source files for registry entries can be found here:
 
 https://github.com/frink-okn/okn-registry/tree/main/docs/registry/kgs
@@ -10,9 +11,13 @@ The Markdown file for each KG is the source of truth; these are automatically co
 Each Markdown file contains a YAML metadata section at the top, which should use standardized properties (a schema is forthcoming for use in QC).
 The remaining Markdown content can be used to provide a narrative overview of the KG.
 
-If you are a Proto-OKN KG maintainer, please propose edits to your registry file in a 
+If you are a Proto-OKN KG maintainer, please propose edits to your registry file in a
 [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Example queries
 
 Example queries for each KG can be placed in the appropriate folder (matching the KG shortname) in https://github.com/frink-okn/okn-registry/tree/main/docs/registry/queries. Please look at existing queries for header syntax documenting a query summary and suggested target KG(s).
+
+## Site development
+
+You must have [snakemake](https://snakemake.readthedocs.io/en/stable/) and [uv](https://docs.astral.sh/uv/) locally installed to run the build scripts.

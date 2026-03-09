@@ -4,7 +4,7 @@ shortname: sockg
 title: SOC-KG
 description: The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil carbon modeling, which is crucial for voluntary carbon markets. 
 stats: https://frink.renci.org/kg-stats/soc-kg
-homepage: https://idir.uta.edu/sockg/
+homepage: https://idir.sockg.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
 sparql: https://frink.apps.renci.org/sockg/sparql
 tpf: https://frink.apps.renci.org/ldf/sockg

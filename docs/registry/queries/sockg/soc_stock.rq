@@ -1,0 +1,75 @@
+#+ summary: What is the Soil Organic Carbon (SOC) stock for each layer in experimental unit NDMAH3_T on 2008-04-04? Include Experimental Unit ID, Treatment ID, Date of Values, number the values used to calculate SOC stock, and the SOC stock value.
+#+ tags:
+#+   - sockg
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX ind: <https://idir.uta.edu/sockg-ontology/individuals/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+SELECT ?expUnitId ?treatmentId ?date (xsd:integer(?upperDepth) AS ?UpperDepth) (xsd:integer(?lowerDepth) AS ?LowerDepth) (xsd:decimal(?soc) AS ?SOC) (xsd:decimal(?bulkDensity) AS ?BulkDensity) (xsd:decimal(?deltaDepth) AS ?DeltaDepth) ?SOCstock     
+WHERE {     
+    BIND("1998-04-20"^^xsd:date AS ?date)  
+    BIND("GAJPCSR1_F1H2" AS ?treatmentId)  
+
+
+    ?expUnit a sockg:ExperimentalUnit ;
+        dcterms:identifier ?expUnitId ;
+        kwg-ont:sfWithin ?spatial_data .
+
+
+    # Make sure it is a field, not site ID
+    FILTER(STRSTARTS(STR(?spatial_data), STR(ind:Location))) 
+    ?spatial_data dcterms:identifier ?fieldId .        
+
+
+
+
+    # Gather CHEM samples
+    ?soilChem a sockg:SoilChemicalSample ;
+        sockg:usesTreatment ?treatment ;
+        sockg:lowerDepth ?LDepth ;
+        sockg:upperDepth ?UDepth ;
+        sockg:hasMeasurement ?meas ;
+        sockg:fromUnit ?expUnit ;
+        dcterms:date ?date .
+    ?treatment dcterms:identifier ?treatmentId .
+
+
+    ?LDepth qudt:numericValue ?lowerDepth .
+    ?UDepth qudt:numericValue ?upperDepth ;
+        qudt:hasUnit ?depthUnit .
+    ?meas sockg:of ind:Parameter.MeasSoilChem.17 ; # IRI of osc_gc_kg
+        qudt:quantityValue ?result .
+    ?result qudt:numericValue ?soc ;
+        qudt:hasUnit ?socUnit .
+    FILTER (?soc != 0)
+
+
+
+
+    # ===================
+    # Gather PHYS samples
+    ?physSample a sockg:SoilPhysicalSample ;
+        sockg:fromUnit ?expUnit ;
+        sockg:usesTreatment ?treatment ;
+        sockg:lowerDepth ?physLDepth ;
+        sockg:hasMeasurement ?physMeasurement ;
+        dcterms:date ?date .
+    # To keep it simple, assume phys and chem samples have same layer depths
+    ?physLDepth qudt:numericValue ?physLowerDepth .
+    FILTER (?physLowerDepth = ?lowerDepth)
+    ?physMeasurement sockg:of ind:Parameter.MeasSoilPhys.12 ; # IRI of bulk_density_g_cm3
+        qudt:quantityValue ?physResult .
+    ?physResult qudt:numericValue ?bulkDensity ;
+        qudt:hasUnit ?bulkDensityUnit .
+
+
+
+
+    BIND(?soc * ?bulkDensity * (?lowerDepth - ?upperDepth) * 100 AS ?SOCstock) 
+    BIND((?lowerDepth - ?upperDepth) AS ?deltaDepth)
+
+
+}
+ORDER BY ?LowerDepth

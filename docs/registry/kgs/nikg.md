@@ -11,10 +11,14 @@ tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
 frink-options:
   lakefs-repo: neighborhood-information-kg
   documentation-path: neighborhood-kg
-contact:
-  email: jinggao@purdue.edu
-  github: ""
-  label: "Jing Gao"
+contacts:
+  - label: "Wentao Chen"
+    email: wenc056@ucsd.edu
+    github: "John-Steve-C"
+  - label: "Jingbo Shang"
+    email: jshang@ucsd.edu
+    github: "shangjingbo1226"
+
 ---
 Neighborhood Information KG (NIKG) is a knowledge graph warehouse for neighborhood information.
 

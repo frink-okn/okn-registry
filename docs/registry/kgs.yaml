@@ -38,6 +38,22 @@ kgs:
     email: balhoff@renci.org
     github: balhoff
     label: Jim Balhoff
+  description: Collected VoID (Vocabulary of Interlinked Datasets) metadata for all
+    OKN graphs
+  frink-options:
+    documentation-path: okn-void
+    lakefs-repo: okn-void
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://frink.renci.org/registry/kgs/okn-void/
+  shortname: okn-void
+  sparql: https://frink.apps.renci.org/okn-void/sparql
+  template: overrides/kg.html
+  title: OKN VoID graph descriptions
+  tpf: https://frink.apps.renci.org/ldf/okn-void
+- contact:
+    email: balhoff@renci.org
+    github: balhoff
+    label: Jim Balhoff
   description: Integrated suite of OBO ontologies with precomputed inferred relationships
   frink-options:
     documentation-path: ubergraph
@@ -61,6 +77,27 @@ kgs:
   title: Wikidata
   tpf: https://frink.apps.renci.org/ldf/wikidata
 - contact:
+    email: chenc@udel.edu
+    github: chenchuming
+    label: Chuming Chen
+  description: The Protein Knowledge Network (ProKN) integrates protein-centric data
+    with the genomic-centric datasets of the Common Fund Data Ecosystem (CFDE), spanning
+    heterogeneous biological data types across multiple domains to foster CFDE re-use
+    and collaboration through enhanced connectivity and data integration, enabling
+    new capabilities for functional genomics and systems-level understanding of disease
+    mechanisms.
+  frink-options:
+    documentation-path: prokn
+    lakefs-repo: prokn
+  funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  homepage: https://research.bioinformatics.udel.edu/ProKN/
+  shortname: prokn
+  sparql: https://frink.apps.renci.org/prokn/sparql
+  stats: https://frink.renci.org/kg-stats/prokn
+  template: overrides/kg.html
+  title: Protein Knowledge Network
+  tpf: https://frink.apps.renci.org/ldf/prokn
+- contact:
     email: cli@uta.edu
     github: idirlab
     label: Chengkai Li
@@ -70,7 +107,7 @@ kgs:
     documentation-path: soc-kg
     lakefs-repo: soc-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
-  homepage: https://idir.uta.edu/sockg/
+  homepage: https://idir.sockg.org/
   shortname: sockg
   sparql: https://frink.apps.renci.org/sockg/sparql
   stats: https://frink.renci.org/kg-stats/soc-kg
@@ -92,10 +129,10 @@ kgs:
   stats: https://frink.renci.org/kg-stats/climate-kg
   template: overrides/kg.html
   title: Climate Models KG
-  tpf: https://frink.apps.renci.org/ldf/climatepub4kg
+  tpf: https://frink.apps.renci.org/ldf/climatemodelskg
 - contact:
     email: farhad.ameri@asu.edu
-    github: amerif
+    github: fameri
     label: Farhad Ameri
   description: Supply and Demand Open Knowledge Network is an interconnected network
     of publicly available manufacturing capability data focused on Small and Medium-Sized
@@ -112,6 +149,24 @@ kgs:
   title: SUDOKN
   tpf: https://frink.apps.renci.org/ldf/sudokn
 - contact:
+    email: jeetvora@gwu.edu
+    github: jeet-vora
+    label: Jeet Vora
+  description: The BiomarkerKB knowledge graph is a structured network that connects
+    biomarkers to diseases, drugs, biological entities, and evidence from the scientific
+    literature.
+  frink-options:
+    documentation-path: biomarkerkg
+    lakefs-repo: biomarkerkg
+  funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
+  homepage: https://biomarkerkb.org/home/
+  shortname: biomarkerkg
+  sparql: https://frink.apps.renci.org/biomarkerkg/sparql
+  stats: https://frink.renci.org/kg-stats/biomarkerkg
+  template: overrides/kg.html
+  title: BiomarkerKB KG
+  tpf: https://frink.apps.renci.org/ldf/biomarkerkg
+- contact:
     email: jiaqi.gong@ua.edu
     github: SAIL-UA
     label: Jiaqi Gong
@@ -127,22 +182,6 @@ kgs:
   template: overrides/kg.html
   title: Rural Resilience KG
   tpf: https://frink.apps.renci.org/ldf/ruralkg
-- contact:
-    email: jinggao@purdue.edu
-    github: ''
-    label: Jing Gao
-  description: Neighborhood Information KG (NIKG) is a knowledge graph warehouse for
-    neighborhood information.
-  frink-options:
-    documentation-path: neighborhood-kg
-    lakefs-repo: neighborhood-information-kg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
-  shortname: nikg
-  sparql: https://frink.apps.renci.org/neighborhood-information-kg/sparql
-  stats: https://frink.renci.org/kg-stats/nikg
-  template: overrides/kg.html
-  title: Neighborhood Information KG
-  tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
 - contact:
     email: lew.lefton@gmail.com
     github: ''
@@ -235,6 +274,21 @@ kgs:
   template: overrides/kg.html
   title: SPOKE-OKN
   tpf: https://frink.apps.renci.org/ldf/spoke-okn
+- contact:
+    email: support@ndexbio.org
+    github: ''
+    label: Cytoscape and NDEx Team
+  description: The NCI-PID 2.0 Knowledge Graph converts NCI Pathway Interaction Database
+    version 2.0 networks into RDF, capturing protein interactions, signaling pathways,
+    and post-translational modifications enriched with INDRA evidence metadata.
+  frink-options:
+    documentation-path: ncipidkg
+    lakefs-repo: ncipidkg
+  homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
+  shortname: ncipidkg
+  stats: https://frink.renci.org/kg-stats/ncipidkg
+  template: overrides/kg.html
+  title: NCI-PID 2.0 KG
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -350,10 +404,10 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
   homepage: https://sites.nd.edu/kn-wildlife/
   shortname: wildlifekn
-  sparql: https://frink.apps.renci.org/wildlifekg/sparql
+  sparql: https://frink.apps.renci.org/wildlifekn/sparql
   template: overrides/kg.html
   title: Wildlife-KN
-  tpf: https://frink.apps.renci.org/ldf/wildlifekg
+  tpf: https://frink.apps.renci.org/ldf/wildlifekn
 - contact:
     email: yeghialt@ucmail.uc.edu
     github: ''
@@ -397,6 +451,25 @@ kgs:
   - email: plwhetzel@gmail.com
     github: twhetzel
     label: Trish Whetzel
+  description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
+  frink-options:
+    documentation-path: gene-expression-atlas-okn
+    lakefs-repo: gene-expression-atlas-okn
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://www.ebi.ac.uk/gxa/home
+  shortname: gene-expression-atlas-okn
+  sparql: https://frink.apps.renci.org/gene-expression-atlas-okn/sparql
+  stats: https://frink.renci.org/kg-stats/gene-expression-atlas-okn
+  template: overrides/kg.html
+  title: Gene Expression Atlas
+  tpf: https://frink.apps.renci.org/ldf/gene-expression-atlas-okn
+- contacts:
+  - email: asu@scripps.edu
+    github: andrewsu
+    label: Andrew Su
+  - email: plwhetzel@gmail.com
+    github: twhetzel
+    label: Trish Whetzel
   description: The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated
     disease datasets. These include datasets from NIAID-funded repositories as well
     as globally-relevant infectious and immune-mediated disease (IID) repositories
@@ -413,6 +486,25 @@ kgs:
   template: overrides/kg.html
   title: NIAID Data Ecosystem KG
   tpf: https://frink.apps.renci.org/ldf/nde
+- contacts:
+  - email: ct2865@cumc.columbia.edu
+    github: CaseyTa
+    label: Casey Ta
+  - email: cw2384@cumc.columbia.edu
+    github: ChunhuaWeng
+    label: Chunhua Weng
+  description: Clinical associations between rare diseases and phenotypes derived
+    from electronic health records
+  frink-options:
+    documentation-path: oard-kg
+    lakefs-repo: oard-kg
+  funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  homepage: https://github.com/WengLab-InformaticsResearch/oard-react
+  shortname: oard-kg
+  sparql: https://frink.apps.renci.org/oard-kg/sparql
+  template: overrides/kg.html
+  title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
+  tpf: https://frink.apps.renci.org/ldf/oard-kg
 - contacts:
   - email: danny.e.oneal@gmail.com
     github: danny-oneal
@@ -477,6 +569,18 @@ kgs:
   title: SAWGraph Spatial KG
   tpf: https://frink.apps.renci.org/ldf/spatialkg
 - contacts:
+  - email: jinlian.wang@uth.tmc.edu
+    github: wnagjl99
+    label: Jinlian Wang
+  description: RDKG is an open knowledge graph for rare diseases that integrates standardized
+    disease identifiers and cross-references to support discovery and evidence synthesis.
+  frink-options:
+    documentation-path: rdkg
+    lakefs-repo: rdkg
+  shortname: rdkg
+  template: overrides/kg.html
+  title: Rare Disease Knowledge Graph
+- contacts:
   - email: katrina.schweikert@maine.edu
     github: kschweikert
     label: Katrina Schweikert
@@ -520,6 +624,16 @@ kgs:
   title: SAWGraph PFAS KG
   tpf: https://frink.apps.renci.org/ldf/sawgraph
 - contacts:
+  - email: prabh120220@gmail.com
+    github: Prabhadeus
+    label: Prabhjot Singh
+  description: Knowledge graph constructed from FDA MAUDE adverse event reports using
+    standardized FDA product codes.
+  homepage: https://github.com/Prabhadeus/Proto-OKN
+  shortname: maudekg
+  template: overrides/kg.html
+  title: FDA MAUDE Adverse Event Knowledge Graph
+- contacts:
   - email: tianyi@purdue.edu
     github: tianyi-zhang
     label: Tianyi Zhang
@@ -539,3 +653,22 @@ kgs:
   template: overrides/kg.html
   title: SecureChain KG
   tpf: https://frink.apps.renci.org/ldf/securechainkg
+- contacts:
+  - email: wenc056@ucsd.edu
+    github: John-Steve-C
+    label: Wentao Chen
+  - email: jshang@ucsd.edu
+    github: shangjingbo1226
+    label: Jingbo Shang
+  description: Neighborhood Information KG (NIKG) is a knowledge graph warehouse for
+    neighborhood information.
+  frink-options:
+    documentation-path: neighborhood-kg
+    lakefs-repo: neighborhood-information-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
+  shortname: nikg
+  sparql: https://frink.apps.renci.org/neighborhood-information-kg/sparql
+  stats: https://frink.renci.org/kg-stats/nikg
+  template: overrides/kg.html
+  title: Neighborhood Information KG
+  tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg

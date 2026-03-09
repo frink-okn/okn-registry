@@ -1,0 +1,80 @@
+triples: 294466999
+distinct_subjects: 58956893
+distinct_objects: 97899656
+properties: 18
+classes: 6
+last_checked: '2026-03-08'
+class_partitions:
+- uri: https://schema.org/PropertyValue
+  label: schema:PropertyValue
+  count: 41080766
+- uri: https://stko-kwg.geog.ucsb.edu/lod/ontology#S2Cell
+  label: kwg2:S2Cell
+  count: 11717916
+- uri: https://schema.org/GeoCoordinates
+  label: schema:GeoCoordinates
+  count: 5927018
+- uri: https://schema.org/GeoShape
+  label: schema:GeoShape
+  count: 5927018
+- uri: https://schema.org/Place
+  label: schema:Place
+  count: 5839329
+- uri: https://schema.org/Observation
+  label: schema:Observation
+  count: 67760
+property_partitions:
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
+  count: 70559807
+- uri: https://schema.org/name
+  label: schema:name
+  count: 47103427
+- uri: https://schema.org/value
+  label: schema:value
+  count: 41148526
+- uri: https://schema.org/identifier
+  label: schema:identifier
+  count: 35269320
+- uri: https://schema.org/description
+  label: schema:description
+  count: 23491031
+- uri: https://schema.org/additionalType
+  label: schema:additionalType
+  count: 17557248
+- uri: https://schema.org/geo
+  label: schema:geo
+  count: 11854036
+- uri: https://schema.org/longitude
+  label: schema:longitude
+  count: 5927018
+- uri: https://schema.org/propertyID
+  label: schema:propertyID
+  count: 5927018
+- uri: https://schema.org/latitude
+  label: schema:latitude
+  count: 5927018
+- uri: https://schema.org/unitCode
+  label: schema:unitCode
+  count: 5927018
+- uri: https://schema.org/variableMeasured
+  label: schema:variableMeasured
+  count: 5927018
+- uri: http://www.opengis.net/ont/geosparql#asWKT
+  label: geo:asWKT
+  count: 5927018
+- uri: https://schema.org/elevation
+  label: schema:elevation
+  count: 5858958
+- uri: https://schema.org/unitText
+  label: schema:unitText
+  count: 5858958
+- uri: https://schema.org/measuredProperty
+  label: schema:measuredProperty
+  count: 68060
+- uri: https://schema.org/observationAbout
+  label: schema:observationAbout
+  count: 67760
+- uri: https://schema.org/observationDate
+  label: schema:observationDate
+  count: 67760

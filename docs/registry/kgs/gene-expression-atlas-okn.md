@@ -1,0 +1,23 @@
+---
+template: overrides/kg.html
+shortname: gene-expression-atlas-okn
+title: Gene Expression Atlas
+description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
+stats: https://frink.renci.org/kg-stats/gene-expression-atlas-okn
+homepage: https://www.ebi.ac.uk/gxa/home
+funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+sparql: https://frink.apps.renci.org/gene-expression-atlas-okn/sparql
+tpf: https://frink.apps.renci.org/ldf/gene-expression-atlas-okn
+frink-options:
+  lakefs-repo: gene-expression-atlas-okn
+  documentation-path: gene-expression-atlas-okn
+contacts:
+- email: asu@scripps.edu
+  github: "andrewsu"
+  label: "Andrew Su"
+- email: plwhetzel@gmail.com
+  github: "twhetzel"
+  label: "Trish Whetzel" 
+---
+
+Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
