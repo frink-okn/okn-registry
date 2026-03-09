@@ -29,6 +29,7 @@ hooks:
 watch:
   - docs/registry/void
   - docs/registry/queries
+  - build/query-diagrams
   - hooks
   - material
 plugins:

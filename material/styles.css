@@ -539,9 +539,65 @@ dd { margin-left: 0 !important; padding: 0 0 0.5em 0; }
   border-bottom: 1px solid var(--bs-border-color);
   border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
 }
-.kg-query-item > pre {
+
+/* Query view toggle (Code | Diagram) */
+.kg-query-views {
+  padding: 0.5em 1em 1em;
+}
+.kg-query-views > input[type="radio"] {
+  display: none;
+}
+.kg-query-views > label {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--bs-gray-600);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  margin-right: 0.3em;
+  margin-bottom: 0.5em;
+  transition: color 0.15s, background 0.15s;
+}
+.kg-query-views > label:hover {
+  color: var(--md-primary-fg-color);
+}
+.kg-query-views > input[type="radio"]:checked + label {
+  color: var(--md-primary-fg-color);
+  background: rgba(70, 130, 180, 0.08);
+  border-color: var(--md-primary-fg-color);
+}
+.kg-query-code,
+.kg-query-diagram {
+  display: none;
+}
+.kg-query-views > input.qv-code:checked ~ .kg-query-code {
+  display: block;
+}
+.kg-query-views > input.qv-diagram:checked ~ .kg-query-diagram {
+  display: block;
+}
+.kg-query-code .highlight {
   margin: 0;
-  border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
+}
+.kg-query-code pre {
+  margin: 0;
+  border-radius: var(--bs-border-radius);
+}
+.kg-query-diagram pre.mermaid {
+  background: var(--bs-gray-100);
+  border-radius: var(--bs-border-radius);
+  padding: 1em;
+  text-align: center;
+}
+.kg-query-actions {
+  margin-top: 0.75em;
+  padding-top: 0.5em;
+}
+.kg-button-sm {
+  padding: 0.35em 0.9em;
+  font-size: 0.8rem;
 }
 
 /* Endpoints table */
