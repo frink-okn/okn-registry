@@ -13,6 +13,7 @@ shacl: "http://www.w3.org/ns/shacl#"
 time: "http://www.w3.org/2006/time#"
 sosa: "http://www.w3.org/ns/sosa/"
 ssn-system: "http://www.w3.org/ns/ssn/systems/"
+swrl: "http://www.w3.org/2003/11/swrl#"
 
 # ── Dublin Core ──
 dct: "http://purl.org/dc/terms/"
