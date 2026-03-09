@@ -89,7 +89,30 @@
       <summary>
         <strong>{{ q.summary if q.summary else q.name }}</strong>
       </summary>
-      <div class="highlight"><pre><code>{{ q.text }}</code></pre></div>
+      <div class="kg-query-views">
+        <input type="radio" name="q-view-{{ loop.index }}" id="q-{{ loop.index }}-code" class="qv-code" checked>
+        <label for="q-{{ loop.index }}-code">Code</label>
+        {% if q.mermaid %}
+        <input type="radio" name="q-view-{{ loop.index }}" id="q-{{ loop.index }}-diagram" class="qv-diagram">
+        <label for="q-{{ loop.index }}-diagram">Diagram</label>
+        {% endif %}
+        <div class="kg-query-code">
+          <div class="highlight"><pre><code>{{ q.text }}</code></pre></div>
+        </div>
+        {% if q.mermaid %}
+        <div class="kg-query-diagram">
+          <pre class="mermaid">{{ q.mermaid }}</pre>
+        </div>
+        {% endif %}
+        <div class="kg-query-actions">
+          {% set sources = q.tags if q.tags else [page.meta.shortname] %}
+          <a class="kg-button kg-button-sm"
+             href="https://frink.apps.renci.org?sources={{ sources | tojson | urlencode }}&amp;query={{ q.raw_text | urlencode }}"
+             target="_blank">
+            Run in FRINK
+          </a>
+        </div>
+      </div>
     </details>
     {% endfor %}
   </div>
