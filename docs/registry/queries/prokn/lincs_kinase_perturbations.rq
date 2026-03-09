@@ -47,4 +47,3 @@ WHERE {
   FILTER regex(?ecNumber, "(^|;)2\\.7[^;]*")
 }
 ORDER BY ?compoundLabel ?pubchemURI
-    
