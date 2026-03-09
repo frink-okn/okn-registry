@@ -1,0 +1,29 @@
+triples: 87425612
+distinct_subjects: 21436186
+distinct_objects: 36897927
+properties: 6
+classes: 1
+last_checked: '2026-03-09'
+class_partitions:
+- uri: http://www.w3.org/ns/oa#Annotation
+  label: Annotation
+  count: 10718093
+property_partitions:
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+  label: rdf:value
+  count: 20170535
+- uri: http://www.w3.org/ns/oa#hasTarget
+  label: hasTarget
+  count: 17550399
+- uri: http://purl.org/dc/elements/1.1/subject
+  label: dc:subject
+  count: 17550399
+- uri: http://purl.org/dc/elements/1.1/format
+  label: dc:format
+  count: 10718093
+- uri: http://www.w3.org/ns/oa#hasBody
+  label: hasBody
+  count: 10718093
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
+  count: 10718093

@@ -1,0 +1,35 @@
+triples: 555363
+distinct_subjects: 185317
+distinct_objects: 135053
+properties: 9
+classes: 0
+last_checked: '2026-03-09'
+class_partitions: []
+property_partitions:
+- uri: http://purl.obolibrary.org/obo/OBCI_1000011
+  label: obo:OBCI_1000011
+  count: 185477
+- uri: http://purl.obolibrary.org/obo/OBCI_1000008
+  label: obo:OBCI_1000008
+  count: 182160
+- uri: http://purl.obolibrary.org/obo/OBCI_1000016
+  label: obo:OBCI_1000016
+  count: 180536
+- uri: http://purl.obolibrary.org/obo/OBCI_1000018
+  label: obo:OBCI_1000018
+  count: 3147
+- uri: http://purl.obolibrary.org/obo/OBCI_1000002
+  label: obo:OBCI_1000002
+  count: 2496
+- uri: http://purl.obolibrary.org/obo/OBCI_1000006
+  label: obo:OBCI_1000006
+  count: 701
+- uri: http://purl.obolibrary.org/obo/OBCI_1000009
+  label: obo:OBCI_1000009
+  count: 633
+- uri: http://purl.obolibrary.org/obo/OBCI_1000015
+  label: obo:OBCI_1000015
+  count: 121
+- uri: http://purl.obolibrary.org/obo/OBCI_1000003
+  label: obo:OBCI_1000003
+  count: 92
