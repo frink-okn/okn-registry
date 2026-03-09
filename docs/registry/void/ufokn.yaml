@@ -3,7 +3,7 @@ distinct_subjects: 58956893
 distinct_objects: 97899656
 properties: 18
 classes: 6
-last_checked: '2026-03-08'
+last_checked: '2026-03-09'
 class_partitions:
 - uri: https://schema.org/PropertyValue
   label: schema:PropertyValue

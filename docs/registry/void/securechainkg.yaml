@@ -3,7 +3,7 @@ distinct_subjects: 10275601
 distinct_objects: 11882852
 properties: 50
 classes: 898
-last_checked: '2026-03-08'
+last_checked: '2026-03-09'
 class_partitions:
 - uri: https://w3id.org/secure-chain/SoftwareVersion
   label: secure-chain:SoftwareVersion
