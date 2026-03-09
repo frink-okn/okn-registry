@@ -25,7 +25,7 @@ extra_javascript:
   - javascripts/tablesort.js
   - javascripts/mermaid.mjs
 hooks:
-  - hooks/void_stats.py
+  - hooks/kg_page_data.py
 watch:
   - docs/registry/void
   - docs/registry/queries

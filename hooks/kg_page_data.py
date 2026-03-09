@@ -1,6 +1,6 @@
-"""MkDocs hook to load VoID stats and query listings into the Jinja2 template environment.
+"""MkDocs hook that populates the Jinja2 environment for KG pages.
 
-This makes `void_stats` and `kg_queries` available as globals in all templates,
+Injects `void_stats`, `kg_queries`, and custom filters into all templates,
 particularly the KG page template at material/overrides/kg.html.
 """
 
