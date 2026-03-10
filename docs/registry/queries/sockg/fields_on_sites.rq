@@ -1,4 +1,4 @@
-#+ summary: # Get all sites and what field they are contained in along with their postal codes.
+#+ summary: Get all sites and what field they are contained in along with their postal codes.
 #+ tags:
 #+   - sockg
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
