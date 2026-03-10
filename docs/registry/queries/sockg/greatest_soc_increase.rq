@@ -1,6 +1,7 @@
-#+ summary:Which management treatment (N rate, crop rotation, tillage, residue management) results in the greatest increase of SOC stocks (0-30cm, or o-100cm) after 15 years in rainfed sites? In irrigated treatments? This asks to rank the delta SOC stock calculations above. 
+#+ summary: Which management treatment (N rate, crop rotation, tillage, residue management) results in the greatest increase of SOC stocks (0-30cm, or o-100cm) after 15 years in rainfed sites? In irrigated treatments? This asks to rank the delta SOC stock calculations above. 
 #+ tags:
 #+   - sockg
+
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -10,9 +11,6 @@ PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
 PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
 PREFIX unit: <http://qudt.org/vocab/unit/>
 PREFIX ofn: <http://www.ontotext.com/sparql/functions/>
-
-
-
 
 SELECT ?treatmentMethod (SAMPLE(?depthRange) AS ?DepthRange) (AVG(?AVGLiteralChange) AS ?AllAvgLiteralChange) (AVG(?AVGPctChange) AS ?AllAvgPctChange) (SAMPLE(?SOCStockUnit) AS ?SOCSUnit)
 WHERE {
