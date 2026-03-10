@@ -1,0 +1,26 @@
+#+ summary: Retrieve all chemical manufacturing facilities (NAICS code 325), their 6-digit industry code and their locations.
+#+ tags:
+#+   - fiokg
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fio: <http://w3id.org/fio/v1/fio#>
+PREFIX naics: <http://w3id.org/fio/v1/naics#> 
+PREFIX epa-frs: <http://w3id.org/fio/v1/epa-frs#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+
+SELECT ?fac ?faclabel ?code ?codelabel ?fac_s2 ?fac_wkt WHERE {
+  VALUES ?subsector {naics:NAICS-325}
+  ?fac rdf:type fio:Facility ;
+       fio:ofIndustry ?code ;
+       kwg-ont:sfWithin ?fac_s2.
+  ?code rdf:type naics:NAICS-IndustryCode; 
+    fio:subcodeOf ?subsector.
+  ?fac_s2 a kwg-ont:S2Cell_Level13.
+  ?fac_s2 geo:hasGeometry/geo:asWKT ?fac_wkt .
+
+  # also retrieve any labels associated with the facility and industry 
+  OPTIONAL { ?fac rdfs:label ?faclabel . }
+  OPTIONAL { ?code rdfs:label ?codelabel . }
+}
