@@ -60,24 +60,24 @@ WHERE {
         ?lincssub a upcore:Protein.                # Protein entity
 
         ## 5. Map to iPTMnet phosphorylation annotation
+        ## Bidirectional connection between protein and PTM annotation
+        { ?r5 rdf:subject ?lincssub ; rdf:object ?iptm. }
+        UNION
+        { ?r5 rdf:subject ?iptm ; rdf:object ?lincssub. }
+        
         ?iptm a upcore:PTM_Annotation;             # iPTMnet modification annotation
                dc:source "iPTMnet";                 # From iPTMnet database
                dc:type "PHOSPHORYLATION";           # Specifically phosphorylation
                upcore:Site_Annotation ?lincs_site_id. # Matches LINCS site ID
 
-        ## Bidirectional connection between protein and PTM annotation
-        { ?r5 rdf:subject ?lincssub ; rdf:object ?iptm. }
-        UNION
-        { ?r5 rdf:subject ?iptm ; rdf:object ?lincssub. }
-
         ## 6. Identify kinase catalyzing this phosphorylation
-        ?k a upcore:Protein;                        # Kinase protein
-           dc:source ?k_sab.                         # Source database
-        FILTER(STR(?k_sab) IN ("UniProtKB", "iPTMnet"))  # From trusted sources
-
         ?r6 rdf:subject ?k ;
             rdf:predicate biolink:catalyzes;        # Kinase catalyzes the PTM
             rdf:object ?iptm.
+
+        ?k a upcore:Protein;                        # Kinase protein
+           dc:source ?k_sab.                         # Source database
+        FILTER(STR(?k_sab) IN ("UniProtKB", "iPTMnet"))  # From trusted sources
 
         ## 7. Expand to other phosphorylation targets of the same kinase
         ## (optional - find additional sites that might be affected)
