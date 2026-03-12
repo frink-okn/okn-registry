@@ -54,11 +54,23 @@ classDiagram
     void:triples : xsd:integer
   }
 
+  class DatatypePartition {
+    voidext:datatype : IRI
+    void:triples : xsd:integer
+  }
+
+  class LanguagePartition {
+    voidext:language : xsd:string
+    void:triples : xsd:integer
+  }
+
   Dataset "1" --> "0..*" DatasetPropertyPartition : void#58;propertyPartition
   Dataset "1" --> "0..*" ClassPartition : void#58;classPartition
   ClassPartition "1" --> "0..*" ClassPropertyPartition : void#58;propertyPartition
   ClassPropertyPartition "1" --> "0..*" ObjectClassPartition : voidext#58;objectClassPartition
   ClassPropertyPartition "1" --> "0..*" UntypedObjectPartition : voidext#58;objectClassPartition
+  ClassPropertyPartition "1" --> "0..*" DatatypePartition : voidext#58;datatypePartition
+  DatatypePartition "1" --> "0..*" LanguagePartition : voidext#58;languagePartition
 
   note for Dataset "rdf:type void:Dataset"
   note for DatasetPropertyPartition "rdf:type void:Dataset"
@@ -66,4 +78,6 @@ classDiagram
   note for ClassPropertyPartition "rdf:type void:Dataset"
   note for ObjectClassPartition "rdf:type void:Dataset"
   note for UntypedObjectPartition "rdf:type void:Dataset"
+  note for DatatypePartition "rdf:type void:Dataset"
+  note for LanguagePartition "rdf:type void:Dataset"
 ```
