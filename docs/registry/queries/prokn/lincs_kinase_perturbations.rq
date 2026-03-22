@@ -23,7 +23,7 @@ WHERE {
 
   # Compound
   ?comp rdf:type ncit:C43366 ;
-            dc:source "LINCS" ;
+            dc:source "DDKG_LINCS" ;
             rdfs:label ?compoundLabel.
    optional {
   		?comp rdfs:seeAlso ?pubchemURI .
@@ -47,4 +47,4 @@ WHERE {
   FILTER regex(?ecNumber, "(^|;)2\\.7[^;]*")
 }
 ORDER BY ?compoundLabel ?pubchemURI
-    
+LIMIT 100
