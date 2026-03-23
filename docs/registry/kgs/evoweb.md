@@ -13,8 +13,8 @@ contacts:
 - email: Erik.Wright@bcm.edu
   github: "WrightLabScience"
   label: "Erik Wright"
-# sparql: https://frink.apps.renci.org/evoweb/sparql
-# tpf: https://frink.apps.renci.org/ldf/evoweb
+sparql: https://frink.apps.renci.org/evoweb/sparql
+tpf: https://frink.apps.renci.org/ldf/evoweb
 ---
 
 This project is a continuation of work done in the EvoWeaver project (https://www.nature.com/articles/s41467-025-59175-6) going beyond individual protein pairs.
