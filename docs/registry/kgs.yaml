@@ -459,9 +459,11 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://data.niaid.nih.gov/
   shortname: evoweb
+  sparql: https://frink.apps.renci.org/evoweb/sparql
   stats: https://frink.renci.org/kg-stats/evoweb
   template: overrides/kg.html
   title: EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)
+  tpf: https://frink.apps.renci.org/ldf/evoweb
 - contacts:
   - email: asu@scripps.edu
     github: andrewsu
@@ -603,9 +605,11 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://pankbase.org/
   shortname: pankgraph
+  sparql: https://frink.apps.renci.org/pankgraph/sparql
   stats: https://frink.renci.org/kg-stats/pankbase-kg
   template: overrides/kg.html
   title: PanKbase Knowledge Graph (NIDDK)
+  tpf: https://frink.apps.renci.org/ldf/pankgraph
 - contacts:
   - email: jinlian.wang@uth.tmc.edu
     github: wnagjl99
