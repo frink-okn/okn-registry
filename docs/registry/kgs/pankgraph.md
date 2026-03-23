@@ -1,6 +1,6 @@
 ---
 template: overrides/kg.html
-shortname: pankbase
+shortname: pankgraph
 title: PanKbase Knowledge Graph (NIDDK)
 description: PanKgraph is a state-of-the-art Knowledge Graph developed for the study of the human pancreas. By leveraging large language models (LLMs) and diverse data types, PanKgraph enables users to uncover biological connections and insights into diabetes pathogenesis. Previously disjointed entities such as genes, single nucleotide polymorphisms (SNPs), and pancreatic expression quantitative trait loci (eQTLs) can now be explored and connected in innovative ways.
 stats: https://frink.renci.org/kg-stats/pankbase-kg
@@ -13,8 +13,8 @@ contacts:
 - email: drjieliu@umich.edu
   github: "jieliu6"
   label: "Jie Liu"
-# sparql: https://frink.apps.renci.org/pankbase/sparql
-# tpf: https://frink.apps.renci.org/ldf/pankbase
+# sparql: https://frink.apps.renci.org/pankgraph/sparql
+# tpf: https://frink.apps.renci.org/ldf/pankgraph
 ---
 
 PanKbase is a comprehensive, centralized resource for the study of the human pancreas and diabetes. The PanKbase collective aims to integrate diverse type 1 diabetes (T1D) datasets with expert-curated knowledge in a centralized, open-source data hub. Since users will ultimately be able to contribute their own data, this will be a repository for reproducible, collaborative research within the pancreas and T1D realms.
