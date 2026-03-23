@@ -14,8 +14,8 @@ contacts:
 - email: drjieliu@umich.edu
   github: "jieliu6"
   label: "Jie Liu"
-# sparql: https://frink.apps.renci.org/pankgraph/sparql
-# tpf: https://frink.apps.renci.org/ldf/pankgraph
+sparql: https://frink.apps.renci.org/pankgraph/sparql
+tpf: https://frink.apps.renci.org/ldf/pankgraph
 ---
 
 PanKbase is a comprehensive, centralized resource for the study of the human pancreas and diabetes. The PanKbase collective aims to integrate diverse type 1 diabetes (T1D) datasets with expert-curated knowledge in a centralized, open-source data hub. Since users will ultimately be able to contribute their own data, this will be a repository for reproducible, collaborative research within the pancreas and T1D realms.
