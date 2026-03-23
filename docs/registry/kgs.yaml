@@ -599,6 +599,7 @@ kgs:
   frink-options:
     documentation-path: pankbase-kg
     lakefs-repo: pankbase-kg
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/pankgraph.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://pankbase.org/
   shortname: pankgraph
