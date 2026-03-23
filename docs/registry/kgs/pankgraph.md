@@ -9,6 +9,7 @@ funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
 frink-options:
   lakefs-repo: pankbase-kg
   documentation-path: pankbase-kg
+  neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/pankgraph.yaml
 contacts:
 - email: drjieliu@umich.edu
   github: "jieliu6"
