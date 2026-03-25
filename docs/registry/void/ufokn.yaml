@@ -3,7 +3,7 @@ distinct_subjects: 58956893
 distinct_objects: 97899656
 properties: 18
 classes: 6
-last_checked: '2026-03-09'
+last_checked: '2026-03-25'
 class_partitions:
 - uri: https://schema.org/PropertyValue
   label: schema:PropertyValue
@@ -45,23 +45,23 @@ property_partitions:
 - uri: https://schema.org/geo
   label: schema:geo
   count: 11854036
-- uri: https://schema.org/longitude
-  label: schema:longitude
-  count: 5927018
-- uri: https://schema.org/propertyID
-  label: schema:propertyID
-  count: 5927018
-- uri: https://schema.org/latitude
-  label: schema:latitude
-  count: 5927018
-- uri: https://schema.org/unitCode
-  label: schema:unitCode
-  count: 5927018
 - uri: https://schema.org/variableMeasured
   label: schema:variableMeasured
   count: 5927018
 - uri: http://www.opengis.net/ont/geosparql#asWKT
   label: geo:asWKT
+  count: 5927018
+- uri: https://schema.org/unitCode
+  label: schema:unitCode
+  count: 5927018
+- uri: https://schema.org/propertyID
+  label: schema:propertyID
+  count: 5927018
+- uri: https://schema.org/longitude
+  label: schema:longitude
+  count: 5927018
+- uri: https://schema.org/latitude
+  label: schema:latitude
   count: 5927018
 - uri: https://schema.org/elevation
   label: schema:elevation
@@ -72,9 +72,9 @@ property_partitions:
 - uri: https://schema.org/measuredProperty
   label: schema:measuredProperty
   count: 68060
-- uri: https://schema.org/observationAbout
-  label: schema:observationAbout
-  count: 67760
 - uri: https://schema.org/observationDate
   label: schema:observationDate
+  count: 67760
+- uri: https://schema.org/observationAbout
+  label: schema:observationAbout
   count: 67760

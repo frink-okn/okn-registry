@@ -3,7 +3,7 @@ distinct_subjects: 159834403
 distinct_objects: 223321308
 properties: 100
 classes: 77
-last_checked: '2026-03-09'
+last_checked: '2026-03-25'
 class_partitions:
 - uri: https://schema.org/PropertyValue
   label: schema:PropertyValue
@@ -23,11 +23,11 @@ class_partitions:
 - uri: http://www.opengis.net/ont/sf#Point
   label: sf:Point
   count: 1150866
-- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_HydroLocation
-  label: hyf:HY_HydroLocation
-  count: 1050050
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_HydrometricFeature
   label: hyf:HY_HydrometricFeature
+  count: 1050050
+- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_HydroLocation
+  label: hyf:HY_HydroLocation
   count: 1050050
 - uri: schema:GeoCoordinates
   label: schema:GeoCoordinates
@@ -77,11 +77,11 @@ class_partitions:
 - uri: locType:Lake
   label: locType:Lake
   count: 894
-- uri: locType:Impoundment
-  label: locType:Impoundment
-  count: 893
 - uri: locType:Reservoir
   label: locType:Reservoir
+  count: 893
+- uri: locType:Impoundment
+  label: locType:Impoundment
   count: 893
 - uri: locType:Canal
   label: locType:Canal
@@ -113,17 +113,17 @@ class_partitions:
 - uri: locType:Wetland
   label: locType:Wetland
   count: 37
+- uri: locType:orNursery
+  label: locType:orNursery
+  count: 34
 - uri: locType:Field
   label: locType:Field
-  count: 34
-- uri: locType:Orchard
-  label: locType:Orchard
   count: 34
 - uri: locType:Pasture
   label: locType:Pasture
   count: 34
-- uri: locType:orNursery
-  label: locType:orNursery
+- uri: locType:Orchard
+  label: locType:Orchard
   count: 34
 - uri: locType:Coastal
   label: locType:Coastal
@@ -137,104 +137,104 @@ class_partitions:
 - uri: https://www.opengis.net/def/appschema/hy_features/hyf/HY_HydrometricFeature
   label: hyf2:HY_HydrometricFeature
   count: 15
-- uri: locType:Land
-  label: locType:Land
-  count: 8
 - uri: locType:Testholenotcompletedasawell
   label: locType:Testholenotcompletedasawell
   count: 8
-- uri: locType:CollectororRanneytypewell
-  label: locType:CollectororRanneytypewell
-  count: 7
+- uri: locType:Land
+  label: locType:Land
+  count: 8
 - uri: locType:Soilhole
   label: locType:Soilhole
+  count: 7
+- uri: locType:CollectororRanneytypewell
+  label: locType:CollectororRanneytypewell
   count: 7
 - uri: locType:Ocean
   label: locType:Ocean
   count: 5
-- uri: http://schema.org/ImageObject
-  label: ImageObject
-  count: 4
 - uri: http://schema.org/WebPage
   label: WebPage
-  count: 4
-- uri: http://www.w3.org/2002/07/owl#SymmetricProperty
-  label: owl:SymmetricProperty
   count: 4
 - uri: http://www.w3.org/2002/07/owl#TransitiveProperty
   label: owl:TransitiveProperty
   count: 4
-- uri: http://schema.org/BreadcrumbList
-  label: BreadcrumbList
-  count: 3
-- uri: http://schema.org/ListItem
-  label: ListItem
-  count: 3
-- uri: http://www.w3.org/2000/01/rdf-schema#Class
-  label: rdfs:Class
+- uri: http://schema.org/ImageObject
+  label: ImageObject
+  count: 4
+- uri: http://www.w3.org/2002/07/owl#SymmetricProperty
+  label: owl:SymmetricProperty
+  count: 4
+- uri: locType:Subsurface
+  label: locType:Subsurface
   count: 3
 - uri: http://www.w3.org/2000/01/rdf-schema#Datatype
   label: rdfs:Datatype
   count: 3
-- uri: locType:Subsurface
-  label: locType:Subsurface
+- uri: http://www.w3.org/2000/01/rdf-schema#Class
+  label: rdfs:Class
   count: 3
-- uri: http://schema.org/Organization
-  label: Organization
-  count: 2
+- uri: http://schema.org/ListItem
+  label: ListItem
+  count: 3
+- uri: http://schema.org/BreadcrumbList
+  label: BreadcrumbList
+  count: 3
 - uri: http://www.opengis.net/ont/sf#GeometryCollection
   label: sf:GeometryCollection
   count: 2
-- uri: locType:Laboratoryorsample-preparationarea
-  label: locType:Laboratoryorsample-preparationarea
+- uri: http://schema.org/Organization
+  label: Organization
   count: 2
 - uri: locType:Outfall
   label: locType:Outfall
   count: 2
-- uri: http://schema.org/EntryPoint
-  label: EntryPoint
-  count: 1
-- uri: http://schema.org/NewsArticle
-  label: NewsArticle
-  count: 1
-- uri: http://schema.org/Person
-  label: Person
-  count: 1
+- uri: locType:Laboratoryorsample-preparationarea
+  label: locType:Laboratoryorsample-preparationarea
+  count: 2
 - uri: http://schema.org/SearchAction
   label: SearchAction
-  count: 1
-- uri: http://schema.org/WebSite
-  label: WebSite
-  count: 1
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#List
-  label: rdf:List
   count: 1
 - uri: http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
   label: rdfs:ContainerMembershipProperty
   count: 1
-- uri: https://www.opengis.net/def/appschema/hy_features/hyf/HY_Catchment
-  label: hyf2:HY_Catchment
+- uri: locType:Water-distributionsystem
+  label: locType:Water-distributionsystem
   count: 1
-- uri: https://www.opengis.net/def/appschema/hy_features/hyf/HY_CatchmentDivide
-  label: hyf2:HY_CatchmentDivide
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+  label: rdf:List
   count: 1
-- uri: https://www.opengis.net/def/appschema/hy_features/hyf/HY_HydrographicNetwork
-  label: hyf2:HY_HydrographicNetwork
-  count: 1
-- uri: https://www.opengis.net/def/appschema/hy_features/hyf/HY_HydrometricNetwork
-  label: hyf2:HY_HydrometricNetwork
-  count: 1
-- uri: locType:Shore
-  label: locType:Shore
+- uri: http://schema.org/Person
+  label: Person
   count: 1
 - uri: locType:Sinkhole
   label: locType:Sinkhole
   count: 1
+- uri: https://www.opengis.net/def/appschema/hy_features/hyf/HY_Catchment
+  label: hyf2:HY_Catchment
+  count: 1
+- uri: https://www.opengis.net/def/appschema/hy_features/hyf/HY_HydrometricNetwork
+  label: hyf2:HY_HydrometricNetwork
+  count: 1
+- uri: http://schema.org/WebSite
+  label: WebSite
+  count: 1
+- uri: http://schema.org/NewsArticle
+  label: NewsArticle
+  count: 1
+- uri: https://www.opengis.net/def/appschema/hy_features/hyf/HY_HydrographicNetwork
+  label: hyf2:HY_HydrographicNetwork
+  count: 1
+- uri: http://schema.org/EntryPoint
+  label: EntryPoint
+  count: 1
+- uri: locType:Shore
+  label: locType:Shore
+  count: 1
 - uri: locType:Wastewater-treatmentplant
   label: locType:Wastewater-treatmentplant
   count: 1
-- uri: locType:Water-distributionsystem
-  label: locType:Water-distributionsystem
+- uri: https://www.opengis.net/def/appschema/hy_features/hyf/HY_CatchmentDivide
+  label: hyf2:HY_CatchmentDivide
   count: 1
 property_partitions:
 - uri: https://schema.org/name
@@ -333,18 +333,15 @@ property_partitions:
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/linearElement
   label: hyf:linearElement
   count: 616925
-- uri: https://schema.org/longitude
-  label: schema:longitude
-  count: 289683
 - uri: https://schema.org/latitude
   label: schema:latitude
+  count: 289683
+- uri: https://schema.org/longitude
+  label: schema:longitude
   count: 289683
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_HydroLocationType
   label: hyf:HY_HydroLocationType
   count: 190111
-- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_DistanceDescription
-  label: hyf:HY_DistanceDescription
-  count: 148449
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_DistanceFromReferent
   label: hyf:HY_DistanceFromReferent
   count: 148449
@@ -353,6 +350,9 @@ property_partitions:
   count: 148449
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/interpolative
   label: hyf:interpolative
+  count: 148449
+- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_DistanceDescription
+  label: hyf:HY_DistanceDescription
   count: 148449
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/distanceExpression
   label: hyf:distanceExpression
@@ -408,14 +408,14 @@ property_partitions:
 - uri: https://schema.org/coordinates
   label: schema:coordinates
   count: 2192
-- uri: https://schema.org/creator
-  label: schema:creator
-  count: 1096
 - uri: https://schema.org/geoJSON
   label: schema:geoJSON
   count: 1096
 - uri: https://schema.org/type
   label: schema:type
+  count: 1096
+- uri: https://schema.org/creator
+  label: schema:creator
   count: 1096
 - uri: https://schema.org/elevation
   label: schema:elevation
@@ -453,20 +453,14 @@ property_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#domain
   label: rdfs:domain
   count: 6
-- uri: http://proton.semanticweb.org/protonsys#transitiveOver
-  label: transitiveOver
-  count: 5
 - uri: http://schema.org/itemListElement
   label: itemListElement
   count: 5
-- uri: http://schema.org/datePublished
-  label: datePublished
-  count: 4
+- uri: http://proton.semanticweb.org/protonsys#transitiveOver
+  label: transitiveOver
+  count: 5
 - uri: http://schema.org/dateModified
   label: dateModified
-  count: 4
-- uri: http://schema.org/image
-  label: image
   count: 4
 - uri: http://www.w3.org/2002/07/owl#inverseOf
   label: owl:inverseOf
@@ -474,47 +468,65 @@ property_partitions:
 - uri: http://schema.org/inLanguage
   label: inLanguage
   count: 4
+- uri: http://schema.org/image
+  label: image
+  count: 4
+- uri: http://schema.org/datePublished
+  label: datePublished
+  count: 4
 - uri: http://schema.org/logo
   label: logo
   count: 4
-- uri: http://schema.org/position
-  label: position
-  count: 3
 - uri: http://schema.org/sameAs
   label: sameAs
   count: 3
 - uri: https://www.opengis.net/def/appschema/hy_features/hyf/catchmentRealization
   label: hyf2:catchmentRealization
   count: 3
-- uri: http://schema.org/breadcrumb
-  label: breadcrumb
-  count: 3
-- uri: http://schema.org/height
-  label: height
+- uri: http://schema.org/caption
+  label: caption
   count: 3
 - uri: http://schema.org/isPartOf
   label: isPartOf
   count: 3
-- uri: http://schema.org/caption
-  label: caption
-  count: 3
 - uri: http://schema.org/width
   label: width
   count: 3
-- uri: http://schema.org/previousItem
-  label: previousItem
+- uri: http://schema.org/height
+  label: height
+  count: 3
+- uri: http://schema.org/position
+  label: position
+  count: 3
+- uri: http://schema.org/breadcrumb
+  label: breadcrumb
+  count: 3
+- uri: http://schema.org/publisher
+  label: publisher
   count: 2
 - uri: http://schema.org/nextItem
   label: nextItem
   count: 2
-- uri: http://schema.org/publisher
-  label: publisher
+- uri: http://schema.org/previousItem
+  label: previousItem
   count: 2
+- uri: http://schema.org/potentialAction
+  label: potentialAction
+  count: 1
+- uri: http://schema.org/urlTemplate
+  label: urlTemplate
+  count: 1
 - uri: http://schema.org/item
   label: item
   count: 1
-- uri: http://schema.org/potentialAction
-  label: potentialAction
+- uri: http://schema.org/query-input
+  label: query-input
+  count: 1
+- uri: https://www.opengis.net/def/appschema/hy_features/hyf/realizedCatchment
+  label: hyf2:realizedCatchment
+  count: 1
+- uri: http://schema.org/mainEntityOfPage
+  label: mainEntityOfPage
   count: 1
 - uri: http://schema.org/headline
   label: headline
@@ -522,18 +534,6 @@ property_partitions:
 - uri: http://schema.org/author
   label: author
   count: 1
-- uri: http://schema.org/query-input
-  label: query-input
-  count: 1
 - uri: http://schema.org/target
   label: target
-  count: 1
-- uri: http://schema.org/mainEntityOfPage
-  label: mainEntityOfPage
-  count: 1
-- uri: https://www.opengis.net/def/appschema/hy_features/hyf/realizedCatchment
-  label: hyf2:realizedCatchment
-  count: 1
-- uri: http://schema.org/urlTemplate
-  label: urlTemplate
   count: 1

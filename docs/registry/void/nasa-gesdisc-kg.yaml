@@ -1,13 +1,10 @@
-triples: 3850383
-distinct_subjects: 552193
-distinct_objects: 1027765
-properties: 37
-classes: 8
-last_checked: '2026-03-09'
+triples: 2189878
+distinct_subjects: 145678
+distinct_objects: 905035
+properties: 28
+classes: 7
+last_checked: '2026-03-25'
 class_partitions:
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
-  label: rdf:Statement
-  count: 406515
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/Publication
   label: nasa-gesdisc:Publication
   count: 135352
@@ -33,39 +30,30 @@ property_partitions:
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/authors
   label: nasa-gesdisc:authors
   count: 730099
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-  label: rdf:type
-  count: 552193
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
-  label: rdf:predicate
-  count: 406515
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
-  label: rdf:subject
-  count: 406515
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
-  label: rdf:object
-  count: 406515
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/CITES
   label: nasa-gesdisc:CITES
   count: 208429
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/globalId
   label: nasa-gesdisc:globalId
   count: 145678
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/pagerank_publication_dataset
-  label: nasa-gesdisc:pagerank_publication_dataset
-  count: 142173
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
+  count: 145678
 - uri: http://purl.org/dc/terms/identifier
   label: dct:identifier
+  count: 142173
+- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/pagerank_publication_dataset
+  label: nasa-gesdisc:pagerank_publication_dataset
   count: 142173
 - uri: https://schema.org/abstract
   label: schema:abstract
   count: 141471
-- uri: https://schema.org/title
-  label: schema:title
-  count: 135462
 - uri: http://www.w3.org/2006/time#year
   label: time:year
   count: 135348
+- uri: https://schema.org/title
+  label: schema:title
+  count: 135343
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/HAS_APPLIEDRESEARCHAREA
   label: nasa-gesdisc:HAS_APPLIEDRESEARCHAREA
   count: 119695
@@ -90,41 +78,23 @@ property_partitions:
 - uri: http://purl.org/dc/terms/subject
   label: dct:subject
   count: 8521
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/temporalFrequency
-  label: nasa-gesdisc:temporalFrequency
-  count: 6821
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/daac
   label: nasa-gesdisc:daac
   count: 6821
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/cmrId
   label: nasa-gesdisc:cmrId
   count: 6821
+- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/temporalFrequency
+  label: nasa-gesdisc:temporalFrequency
+  count: 6821
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/OF_PROJECT
   label: nasa-gesdisc:OF_PROJECT
   count: 6378
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/seCorner_crs
-  label: nasa-gesdisc:seCorner_crs
-  count: 5721
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/seCorner
   label: nasa-gesdisc:seCorner
   count: 5721
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/seCorner_latitude
-  label: nasa-gesdisc:seCorner_latitude
-  count: 5721
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/nwCorner_crs
-  label: nasa-gesdisc:nwCorner_crs
-  count: 5721
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/nwCorner_longitude
-  label: nasa-gesdisc:nwCorner_longitude
-  count: 5721
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/seCorner_longitude
-  label: nasa-gesdisc:seCorner_longitude
-  count: 5721
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/nwCorner
   label: nasa-gesdisc:nwCorner
-  count: 5721
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/nwCorner_latitude
-  label: nasa-gesdisc:nwCorner_latitude
   count: 5721
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/landingPageUrl
   label: nasa-gesdisc:landingPageUrl
