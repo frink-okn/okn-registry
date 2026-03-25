@@ -1,37 +1,43 @@
-triples: 32460
-distinct_subjects: 1764
-distinct_objects: 3207
-properties: 34
-classes: 14
-last_checked: '2026-03-09'
+triples: 82576
+distinct_subjects: 14175
+distinct_objects: 19101
+properties: 40
+classes: 16
+last_checked: '2026-03-25'
 class_partitions:
+- uri: http://schema.org/Review
+  label: Review
+  count: 3762
+- uri: http://schema.org/Rating
+  label: Rating
+  count: 3762
 - uri: http://www.w3.org/ns/prov#Entity
   label: prov:Entity
   count: 1586
+- uri: http://schema.org/ServiceChannel
+  label: ServiceChannel
+  count: 1324
+- uri: http://schema.org/Service
+  label: Service
+  count: 662
+- uri: http://schema.org/TextObject
+  label: TextObject
+  count: 662
+- uri: http://schema.org/ContactPoint
+  label: ContactPoint
+  count: 662
+- uri: http://schema.org/Place
+  label: Place
+  count: 662
+- uri: http://schema.org/Organization
+  label: Organization
+  count: 662
 - uri: http://schema.org/OpeningHoursSpecification
   label: OpeningHoursSpecification
   count: 609
-- uri: http://schema.org/ServiceChannel
-  label: ServiceChannel
-  count: 174
 - uri: http://schema.org/CategoryCode
   label: CategoryCode
-  count: 157
-- uri: http://schema.org/ContactPoint
-  label: ContactPoint
-  count: 87
-- uri: http://schema.org/Organization
-  label: Organization
-  count: 87
-- uri: http://schema.org/Place
-  label: Place
-  count: 87
-- uri: http://schema.org/Service
-  label: Service
-  count: 87
-- uri: http://schema.org/TextObject
-  label: TextObject
-  count: 87
+  count: 444
 - uri: http://schema.org/WebPage
   label: WebPage
   count: 87
@@ -48,30 +54,99 @@ class_partitions:
   label: prov:Activity
   count: 1
 property_partitions:
-- uri: http://www.w3.org/ns/prov#influenced
-  label: prov:influenced
-  count: 7839
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
+  count: 15007
+- uri: http://schema.org/category
+  label: category
+  count: 10344
 - uri: http://www.w3.org/ns/prov#wasInfluencedBy
   label: prov:wasInfluencedBy
   count: 7839
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-  label: rdf:type
-  count: 3171
+- uri: http://www.w3.org/ns/prov#influenced
+  label: prov:influenced
+  count: 7839
+- uri: https://www.w3.org/TR/xmlschema11-2#time
+  label: time
+  count: 4268
+- uri: http://schema.org/ratingValue
+  label: ratingValue
+  count: 3882
+- uri: http://schema.org/reviewRating
+  label: reviewRating
+  count: 3762
 - uri: http://www.w3.org/ns/prov#wasDerivedFrom
   label: prov:wasDerivedFrom
   count: 2990
+- uri: http://schema.org/reviewBody
+  label: reviewBody
+  count: 2312
 - uri: http://www.w3.org/ns/prov#wasGeneratedBy
   label: prov:wasGeneratedBy
   count: 1495
 - uri: http://www.w3.org/ns/prov#generated
   label: prov:generated
   count: 1495
-- uri: http://schema.org/category
-  label: category
-  count: 1345
+- uri: http://schema.org/serviceUrl
+  label: serviceUrl
+  count: 1474
+- uri: http://schema.org/name
+  label: name
+  count: 1329
+- uri: http://schema.org/disambiguatingDescription
+  label: disambiguatingDescription
+  count: 1324
+- uri: http://schema.org/availableChannel
+  label: availableChannel
+  count: 1324
 - uri: http://www.w3.org/ns/prov#hadMember
   label: prov:hadMember
   count: 1305
+- uri: http://schema.org/url
+  label: url
+  count: 869
+- uri: http://schema.org/longitude
+  label: longitude
+  count: 764
+- uri: http://schema.org/telephone
+  label: telephone
+  count: 701
+- uri: http://schema.org/identifier
+  label: identifier
+  count: 701
+- uri: http://schema.org/latitude
+  label: latitude
+  count: 689
+- uri: http://schema.org/address
+  label: address
+  count: 689
+- uri: http://schema.org/containedInPlace
+  label: containedInPlace
+  count: 685
+- uri: http://schema.org/hasMap
+  label: hasMap
+  count: 677
+- uri: http://schema.org/text
+  label: text
+  count: 671
+- uri: http://schema.org/conditionsOfAccess
+  label: conditionsOfAccess
+  count: 664
+- uri: http://schema.org/servicePhone
+  label: servicePhone
+  count: 662
+- uri: http://schema.org/description
+  label: description
+  count: 662
+- uri: http://schema.org/areaServed
+  label: areaServed
+  count: 662
+- uri: http://schema.org/serviceLocation
+  label: serviceLocation
+  count: 662
+- uri: http://schema.org/provider
+  label: provider
+  count: 662
 - uri: http://schema.org/opens
   label: opens
   count: 631
@@ -84,69 +159,18 @@ property_partitions:
 - uri: http://schema.org/hoursAvailable
   label: hoursAvailable
   count: 609
-- uri: http://schema.org/serviceUrl
-  label: serviceUrl
-  count: 188
-- uri: http://schema.org/name
-  label: name
-  count: 177
-- uri: http://schema.org/availableChannel
-  label: availableChannel
-  count: 174
-- uri: http://schema.org/disambiguatingDescription
-  label: disambiguatingDescription
-  count: 174
+- uri: http://schema.org/postalCode
+  label: postalCode
+  count: 597
 - uri: http://schema.org/codeValue
   label: codeValue
-  count: 158
+  count: 446
 - uri: http://schema.org/inCodeSet
   label: inCodeSet
-  count: 157
+  count: 444
 - uri: http://schema.org/sameAs
   label: sameAs
   count: 127
-- uri: http://schema.org/identifier
-  label: identifier
-  count: 126
-- uri: http://schema.org/address
-  label: address
-  count: 93
-- uri: http://schema.org/text
-  label: text
-  count: 90
-- uri: http://schema.org/latitude
-  label: latitude
-  count: 89
-- uri: http://schema.org/longitude
-  label: longitude
-  count: 89
-- uri: http://schema.org/conditionsOfAccess
-  label: conditionsOfAccess
-  count: 88
-- uri: http://schema.org/hasMap
-  label: hasMap
-  count: 88
-- uri: http://schema.org/containedInPlace
-  label: containedInPlace
-  count: 88
-- uri: http://schema.org/telephone
-  label: telephone
-  count: 87
-- uri: http://schema.org/provider
-  label: provider
-  count: 87
-- uri: http://schema.org/serviceLocation
-  label: serviceLocation
-  count: 87
-- uri: http://schema.org/servicePhone
-  label: servicePhone
-  count: 87
-- uri: http://schema.org/areaServed
-  label: areaServed
-  count: 87
-- uri: http://schema.org/description
-  label: description
-  count: 87
 - uri: http://schema.org/audienceType
   label: audienceType
   count: 81

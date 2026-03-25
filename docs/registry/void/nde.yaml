@@ -3,7 +3,7 @@ distinct_subjects: 591543
 distinct_objects: 1799216
 properties: 30
 classes: 7
-last_checked: '2026-03-09'
+last_checked: '2026-03-25'
 class_partitions:
 - uri: http://schema.org/Person
   label: Person
@@ -111,9 +111,9 @@ property_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#range
   label: rdfs:range
   count: 22
-- uri: http://schema.org/givenName
-  label: givenName
-  count: 21
 - uri: http://schema.org/familyName
   label: familyName
+  count: 21
+- uri: http://schema.org/givenName
+  label: givenName
   count: 21

@@ -1,9 +1,9 @@
-triples: 44007713
+triples: 42860270
 distinct_subjects: 4761110
-distinct_objects: 2641268
+distinct_objects: 2641259
 properties: 128
 classes: 8
-last_checked: '2026-03-09'
+last_checked: '2026-03-25'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
@@ -17,8 +17,8 @@ class_partitions:
 - uri: https://w3id.org/biolink/vocab/Gene
   label: biolink:Gene
   count: 16346
-- uri: https://purl.org/okn/frink/kg/spoke/schema/SDoH
-  label: spoke:SDoH
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/SDoH
+  label: SDoH
   count: 1426
 - uri: https://w3id.org/biolink/vocab/ChemicalEntity
   label: biolink:ChemicalEntity
@@ -36,381 +36,381 @@ property_partitions:
 - uri: http://purl.org/dc/terms/source
   label: dct:source
   count: 4749751
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
-  label: rdf:predicate
-  count: 4307034
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
   label: rdf:subject
   count: 4307034
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
   label: rdf:object
   count: 4307034
-- uri: https://purl.org/okn/frink/kg/spoke/schema/value
-  label: spoke:value
-  count: 3616333
-- uri: https://purl.org/okn/frink/kg/spoke/schema/year
-  label: spoke:year
-  count: 3605219
-- uri: https://purl.org/okn/frink/kg/spoke/schema/PREVALENCEIN_SpL
-  label: spoke:PREVALENCEIN_SpL
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
+  label: rdf:predicate
+  count: 4307034
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/value
+  label: value
+  count: 3608526
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/year
+  label: year
+  count: 3536771
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/PREVALENCEIN_SpL
+  label: PREVALENCEIN_SpL
   count: 2999117
-- uri: https://purl.org/okn/frink/kg/spoke/schema/metrics
-  label: spoke:metrics
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/metrics
+  label: metrics
   count: 577614
-- uri: https://purl.org/okn/frink/kg/spoke/schema/unit
-  label: spoke:unit
-  count: 577614
-- uri: https://purl.org/okn/frink/kg/spoke/schema/media
-  label: spoke:media
-  count: 565955
-- uri: https://purl.org/okn/frink/kg/spoke/schema/date_type
-  label: spoke:date_type
-  count: 565695
-- uri: https://purl.org/okn/frink/kg/spoke/schema/date
-  label: spoke:date
-  count: 565695
-- uri: https://purl.org/okn/frink/kg/spoke/schema/FOUNDIN_CfL
-  label: spoke:FOUNDIN_CfL
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/FOUNDIN_CfL
+  label: FOUNDIN_CfL
   count: 563803
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/media
+  label: media
+  count: 562495
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/unit
+  label: unit
+  count: 547660
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
-  count: 454072
-- uri: https://purl.org/okn/frink/kg/spoke/schema/level
-  label: spoke:level
+  count: 454071
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/level
+  label: level
   count: 321442
-- uri: https://purl.org/okn/frink/kg/spoke/schema/isolation_country
-  label: spoke:isolation_country
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ISOLATEDIN_OiL
+  label: ISOLATEDIN_OiL
   count: 321442
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ISOLATEDIN_OiL
-  label: spoke:ISOLATEDIN_OiL
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/isolation_country
+  label: isolation_country
   count: 321442
-- uri: https://purl.org/okn/frink/kg/spoke/schema/strain
-  label: spoke:strain
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/strain
+  label: strain
   count: 320856
-- uri: https://purl.org/okn/frink/kg/spoke/schema/genome_size
-  label: spoke:genome_size
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/genome_size
+  label: genome_size
   count: 320406
-- uri: https://purl.org/okn/frink/kg/spoke/schema/host_name
-  label: spoke:host_name
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/host_name
+  label: host_name
   count: 297421
-- uri: https://purl.org/okn/frink/kg/spoke/schema/PREVALENCE_DpL
-  label: spoke:PREVALENCE_DpL
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/PREVALENCE_DpL
+  label: PREVALENCE_DpL
   count: 275085
-- uri: https://purl.org/okn/frink/kg/spoke/schema/collection_date
-  label: spoke:collection_date
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/collection_date
+  label: collection_date
   count: 266296
-- uri: https://purl.org/okn/frink/kg/spoke/schema/genbank_accessions
-  label: spoke:genbank_accessions
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/genbank_accessions
+  label: genbank_accessions
   count: 259042
-- uri: https://purl.org/okn/frink/kg/spoke/schema/data_value_unit
-  label: spoke:data_value_unit
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/short_question_text
+  label: short_question_text
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke/schema/data_value
-  label: spoke:data_value
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/state_desc
+  label: state_desc
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke/schema/state_desc
-  label: spoke:state_desc
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_value_type
+  label: data_value_type
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke/schema/location_name
-  label: spoke:location_name
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/state_abbr
+  label: state_abbr
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke/schema/state_abbr
-  label: spoke:state_abbr
-  count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke/schema/data_value_type
-  label: spoke:data_value_type
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_value_unit
+  label: data_value_unit
   count: 246285
 - uri: http://www.opengis.net/ont/geosparql#asWKT
   label: geo:asWKT
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke/schema/total_population
-  label: spoke:total_population
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/total_population
+  label: total_population
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke/schema/short_question_text
-  label: spoke:short_question_text
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/location_name
+  label: location_name
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke/schema/variable
-  label: spoke:variable
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/variable
+  label: variable
   count: 242418
-- uri: https://purl.org/okn/frink/kg/spoke/schema/method
-  label: spoke:method
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/method
+  label: method
   count: 242418
-- uri: https://purl.org/okn/frink/kg/spoke/schema/isolation_source
-  label: spoke:isolation_source
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_value
+  label: data_value
+  count: 237087
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/isolation_source
+  label: isolation_source
   count: 223036
-- uri: https://purl.org/okn/frink/kg/spoke/schema/host_is_human
-  label: spoke:host_is_human
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/host_is_human
+  label: host_is_human
   count: 204101
-- uri: https://purl.org/okn/frink/kg/spoke/schema/PARTOF_LpL
-  label: spoke:PARTOF_LpL
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/PARTOF_LpL
+  label: PARTOF_LpL
   count: 119810
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   label: 'rdf:'
   count: 113882
-- uri: https://purl.org/okn/frink/kg/spoke/schema/antimicrobial_resistance
-  label: spoke:antimicrobial_resistance
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/antimicrobial_resistance
+  label: antimicrobial_resistance
   count: 107802
-- uri: https://purl.org/okn/frink/kg/spoke/schema/percent_of_zip_area_in_place
-  label: spoke:percent_of_zip_area_in_place
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/percent_of_place_area_in_zip
+  label: percent_of_place_area_in_zip
   count: 79221
-- uri: https://purl.org/okn/frink/kg/spoke/schema/percent_of_place_area_in_zip
-  label: spoke:percent_of_place_area_in_zip
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/percent_of_zip_area_in_place
+  label: percent_of_zip_area_in_place
   count: 79221
-- uri: https://purl.org/okn/frink/kg/spoke/schema/usa_isolation_country
-  label: spoke:usa_isolation_country
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/usa_isolation_country
+  label: usa_isolation_country
   count: 79043
-- uri: https://purl.org/okn/frink/kg/spoke/schema/has_amr_phenotype
-  label: spoke:has_amr_phenotype
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/has_amr_phenotype
+  label: has_amr_phenotype
   count: 77216
-- uri: https://purl.org/okn/frink/kg/spoke/schema/host_health
-  label: spoke:host_health
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/host_health
+  label: host_health
   count: 73241
-- uri: https://purl.org/okn/frink/kg/spoke/schema/is_resistant
-  label: spoke:is_resistant
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/is_resistant
+  label: is_resistant
   count: 71377
-- uri: https://purl.org/okn/frink/kg/spoke/schema/state_fips
-  label: spoke:state_fips
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/date_type
+  label: date_type
+  count: 68760
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/date
+  label: date
+  count: 68760
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/state_fips
+  label: state_fips
   count: 61637
-- uri: https://purl.org/okn/frink/kg/spoke/schema/state_name
-  label: spoke:state_name
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/state_name
+  label: state_name
   count: 61637
-- uri: https://purl.org/okn/frink/kg/spoke/schema/city_fips
-  label: spoke:city_fips
-  count: 58441
 - uri: http://www.w3.org/2000/01/rdf-schema#seeAlso
   label: rdfs:seeAlso
   count: 42904
-- uri: https://purl.org/okn/frink/kg/spoke/schema/zipcode_type
-  label: spoke:zipcode_type
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/zipcode_type
+  label: zipcode_type
   count: 42724
-- uri: https://purl.org/okn/frink/kg/spoke/schema/state
-  label: spoke:state
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/state
+  label: state
   count: 42724
-- uri: https://purl.org/okn/frink/kg/spoke/schema/longitude
-  label: spoke:longitude
-  count: 42724
-- uri: https://purl.org/okn/frink/kg/spoke/schema/latitude
-  label: spoke:latitude
-  count: 42724
-- uri: https://purl.org/okn/frink/kg/spoke/schema/serovar
-  label: spoke:serovar
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/longitude
+  label: longitude
+  count: 41928
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/latitude
+  label: latitude
+  count: 41928
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/serovar
+  label: serovar
   count: 39181
-- uri: https://purl.org/okn/frink/kg/spoke/schema/upper
-  label: spoke:upper
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/city_fips
+  label: city_fips
+  count: 29509
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/metric_name
+  label: metric_name
   count: 28800
-- uri: https://purl.org/okn/frink/kg/spoke/schema/lower
-  label: spoke:lower
-  count: 28800
-- uri: https://purl.org/okn/frink/kg/spoke/schema/metric_name
-  label: spoke:metric_name
-  count: 28800
-- uri: https://purl.org/okn/frink/kg/spoke/schema/host_gender
-  label: spoke:host_gender
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/host_gender
+  label: host_gender
   count: 27847
-- uri: https://purl.org/okn/frink/kg/spoke/schema/host_age
-  label: spoke:host_age
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/upper
+  label: upper
+  count: 26749
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/lower
+  label: lower
+  count: 26693
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/host_age
+  label: host_age
   count: 26394
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ASSOCIATES_DaG
-  label: spoke:ASSOCIATES_DaG
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ASSOCIATES_DaG
+  label: ASSOCIATES_DaG
   count: 21801
 - uri: http://www.w3.org/2000/01/rdf-schema#comment
   label: rdfs:comment
   count: 17711
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ensembl
-  label: spoke:ensembl
-  count: 16342
-- uri: https://purl.org/okn/frink/kg/spoke/schema/disease
-  label: spoke:disease
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ensembl
+  label: ensembl
+  count: 16324
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/disease
+  label: disease
   count: 14656
-- uri: https://purl.org/okn/frink/kg/spoke/schema/synonyms
-  label: spoke:synonyms
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/synonyms
+  label: synonyms
   count: 11503
-- uri: https://purl.org/okn/frink/kg/spoke/schema/FOUNDIN_EfL
-  label: spoke:FOUNDIN_EfL
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/FOUNDIN_EfL
+  label: FOUNDIN_EfL
   count: 11367
-- uri: https://purl.org/okn/frink/kg/spoke/schema/MORTALITY_DmL
-  label: spoke:MORTALITY_DmL
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/population
+  label: population
   count: 10802
-- uri: https://purl.org/okn/frink/kg/spoke/schema/mortality_per_100k
-  label: spoke:mortality_per_100k
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/MORTALITY_DmL
+  label: MORTALITY_DmL
   count: 10802
-- uri: https://purl.org/okn/frink/kg/spoke/schema/population
-  label: spoke:population
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/mortality_per_100k
+  label: mortality_per_100k
   count: 10802
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ghe_code
-  label: spoke:ghe_code
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ghe_code
+  label: ghe_code
   count: 10802
-- uri: https://purl.org/okn/frink/kg/spoke/schema/usability
-  label: spoke:usability
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/usability
+  label: usability
   count: 10802
-- uri: https://purl.org/okn/frink/kg/spoke/schema/gram_stain
-  label: spoke:gram_stain
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/gram_stain
+  label: gram_stain
   count: 9436
-- uri: https://purl.org/okn/frink/kg/spoke/schema/code
-  label: spoke:code
-  count: 9218
-- uri: https://purl.org/okn/frink/kg/spoke/schema/MARKER_NEG_GmnD
-  label: spoke:MARKER_NEG_GmnD
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/code
+  label: code
+  count: 9217
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/MARKER_NEG_GmnD
+  label: MARKER_NEG_GmnD
   count: 8203
-- uri: https://purl.org/okn/frink/kg/spoke/schema/oxygen_requirement
-  label: spoke:oxygen_requirement
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/oxygen_requirement
+  label: oxygen_requirement
   count: 7966
-- uri: https://purl.org/okn/frink/kg/spoke/schema/motility
-  label: spoke:motility
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/motility
+  label: motility
   count: 6173
-- uri: https://purl.org/okn/frink/kg/spoke/schema/MARKER_POS_GmpD
-  label: spoke:MARKER_POS_GmpD
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/MARKER_POS_GmpD
+  label: MARKER_POS_GmpD
   count: 6050
-- uri: https://purl.org/okn/frink/kg/spoke/schema/laboratory_typing_platform
-  label: spoke:laboratory_typing_platform
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/vendor
+  label: vendor
   count: 5179
-- uri: https://purl.org/okn/frink/kg/spoke/schema/vendor
-  label: spoke:vendor
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/laboratory_typing_platform
+  label: laboratory_typing_platform
   count: 5179
-- uri: https://purl.org/okn/frink/kg/spoke/schema/measurement_value
-  label: spoke:measurement_value
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/measurement_value
+  label: measurement_value
   count: 5177
-- uri: https://purl.org/okn/frink/kg/spoke/schema/measurement_sign
-  label: spoke:measurement_sign
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/measurement_sign
+  label: measurement_sign
   count: 5154
-- uri: https://purl.org/okn/frink/kg/spoke/schema/resistant_phenotype
-  label: spoke:resistant_phenotype
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/resistant_phenotype
+  label: resistant_phenotype
   count: 5151
-- uri: https://purl.org/okn/frink/kg/spoke/schema/laboratory_typing_method
-  label: spoke:laboratory_typing_method
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/laboratory_typing_method
+  label: laboratory_typing_method
   count: 5147
-- uri: https://purl.org/okn/frink/kg/spoke/schema/measurement_unit
-  label: spoke:measurement_unit
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/measurement_unit
+  label: measurement_unit
   count: 5147
-- uri: https://purl.org/okn/frink/kg/spoke/schema/RESPONDS_TO_OrC
-  label: spoke:RESPONDS_TO_OrC
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/testing_standard_year
+  label: testing_standard_year
   count: 5138
-- uri: https://purl.org/okn/frink/kg/spoke/schema/testing_standard_year
-  label: spoke:testing_standard_year
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/RESPONDS_TO_OrC
+  label: RESPONDS_TO_OrC
   count: 5138
-- uri: https://purl.org/okn/frink/kg/spoke/schema/temperature_range
-  label: spoke:temperature_range
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/temperature_range
+  label: temperature_range
   count: 4950
 - uri: http://www.geneontology.org/formats/oboInOwl#hasDbXref
   label: oboInOwl:hasDbXref
   count: 3825
-- uri: https://purl.org/okn/frink/kg/spoke/schema/EXPRESSEDIN_GeiD
-  label: spoke:EXPRESSEDIN_GeiD
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/EXPRESSEDIN_GeiD
+  label: EXPRESSEDIN_GeiD
   count: 3544
-- uri: https://purl.org/okn/frink/kg/spoke/schema/sporulation
-  label: spoke:sporulation
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/sporulation
+  label: sporulation
   count: 3393
-- uri: https://purl.org/okn/frink/kg/spoke/schema/pathovar
-  label: spoke:pathovar
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/pathovar
+  label: pathovar
   count: 3211
-- uri: https://purl.org/okn/frink/kg/spoke/schema/county_fips
-  label: spoke:county_fips
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/county_fips
+  label: county_fips
   count: 3196
-- uri: https://purl.org/okn/frink/kg/spoke/schema/DOWNREGULATES_CdG
-  label: spoke:DOWNREGULATES_CdG
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/DOWNREGULATES_CdG
+  label: DOWNREGULATES_CdG
   count: 2161
-- uri: https://purl.org/okn/frink/kg/spoke/schema/UPREGULATES_CuG
-  label: spoke:UPREGULATES_CuG
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/UPREGULATES_CuG
+  label: UPREGULATES_CuG
   count: 2117
-- uri: https://purl.org/okn/frink/kg/spoke/schema/biovar
-  label: spoke:biovar
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/biovar
+  label: biovar
   count: 1112
-- uri: https://purl.org/okn/frink/kg/spoke/schema/data_source
-  label: spoke:data_source
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/topic
+  label: topic
   count: 1061
-- uri: https://purl.org/okn/frink/kg/spoke/schema/topic
-  label: spoke:topic
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/domain
+  label: domain
   count: 1061
-- uri: https://purl.org/okn/frink/kg/spoke/schema/domain
-  label: spoke:domain
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_source
+  label: data_source
   count: 1061
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ISA_SiS
-  label: spoke:ISA_SiS
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ISA_SiS
+  label: ISA_SiS
   count: 999
-- uri: https://purl.org/okn/frink/kg/spoke/schema/smiles
-  label: spoke:smiles
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/smiles
+  label: smiles
   count: 762
-- uri: https://purl.org/okn/frink/kg/spoke/schema/salinity
-  label: spoke:salinity
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/salinity
+  label: salinity
   count: 716
-- uri: https://purl.org/okn/frink/kg/spoke/schema/standardized_smiles
-  label: spoke:standardized_smiles
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/standardized_smiles
+  label: standardized_smiles
   count: 650
-- uri: https://purl.org/okn/frink/kg/spoke/schema/iso3
-  label: spoke:iso3
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/iso3
+  label: iso3
   count: 252
-- uri: https://purl.org/okn/frink/kg/spoke/schema/mesh_list
-  label: spoke:mesh_list
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/mesh_list
+  label: mesh_list
   count: 164
-- uri: https://purl.org/okn/frink/kg/spoke/schema/TREATS_CtD
-  label: spoke:TREATS_CtD
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/TREATS_CtD
+  label: TREATS_CtD
   count: 163
-- uri: https://purl.org/okn/frink/kg/spoke/schema/phase
-  label: spoke:phase
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/phase
+  label: phase
   count: 154
-- uri: https://purl.org/okn/frink/kg/spoke/schema/omim_list
-  label: spoke:omim_list
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/omim_list
+  label: omim_list
   count: 117
-- uri: https://purl.org/okn/frink/kg/spoke/schema/enrichment
-  label: spoke:enrichment
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/cooccur
+  label: cooccur
   count: 106
-- uri: https://purl.org/okn/frink/kg/spoke/schema/odds
-  label: spoke:odds
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/odds
+  label: odds
   count: 106
-- uri: https://purl.org/okn/frink/kg/spoke/schema/fisher
-  label: spoke:fisher
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/enrichment
+  label: enrichment
   count: 106
-- uri: https://purl.org/okn/frink/kg/spoke/schema/cooccur
-  label: spoke:cooccur
-  count: 106
-- uri: https://purl.org/okn/frink/kg/spoke/schema/max_phase
-  label: spoke:max_phase
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/fisher
+  label: fisher
+  count: 102
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/max_phase
+  label: max_phase
   count: 97
-- uri: https://purl.org/okn/frink/kg/spoke/schema/act_sources
-  label: spoke:act_sources
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/act_sources
+  label: act_sources
   count: 87
-- uri: https://purl.org/okn/frink/kg/spoke/schema/RESEMBLES_DrD
-  label: spoke:RESEMBLES_DrD
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/RESEMBLES_DrD
+  label: RESEMBLES_DrD
   count: 67
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ISA_CiC
-  label: spoke:ISA_CiC
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ISA_CiC
+  label: ISA_CiC
   count: 56
-- uri: https://purl.org/okn/frink/kg/spoke/schema/abbr
-  label: spoke:abbr
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/abbr
+  label: abbr
   count: 52
-- uri: https://purl.org/okn/frink/kg/spoke/schema/CONTRAINDICATES_CcD
-  label: spoke:CONTRAINDICATES_CcD
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/CONTRAINDICATES_CcD
+  label: CONTRAINDICATES_CcD
   count: 51
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ISA_DiD
-  label: spoke:ISA_DiD
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ISA_DiD
+  label: ISA_DiD
   count: 41
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ASSOCIATES_SaD
-  label: spoke:ASSOCIATES_SaD
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ASSOCIATES_SaD
+  label: ASSOCIATES_SaD
   count: 39
-- uri: https://purl.org/okn/frink/kg/spoke/schema/HASROLE_ChC
-  label: spoke:HASROLE_ChC
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/HASROLE_ChC
+  label: HASROLE_ChC
   count: 34
-- uri: https://purl.org/okn/frink/kg/spoke/schema/PARTOF_CpC
-  label: spoke:PARTOF_CpC
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/PARTOF_CpC
+  label: PARTOF_CpC
   count: 18
-- uri: https://purl.org/okn/frink/kg/spoke/schema/mesh_ids
-  label: spoke:mesh_ids
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/RESPONSE_TO_mGrC
+  label: RESPONSE_TO_mGrC
   count: 10
-- uri: https://purl.org/okn/frink/kg/spoke/schema/RESPONSE_TO_mGrC
-  label: spoke:RESPONSE_TO_mGrC
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/mesh_ids
+  label: mesh_ids
   count: 10
-- uri: https://purl.org/okn/frink/kg/spoke/schema/RESISTANT_TO_mGrC
-  label: spoke:RESISTANT_TO_mGrC
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/RESISTANT_TO_mGrC
+  label: RESISTANT_TO_mGrC
   count: 8
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ADVRESPONSE_TO_mGarC
-  label: spoke:ADVRESPONSE_TO_mGarC
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ddi_risk
+  label: ddi_risk
   count: 1
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ISA_EiE
-  label: spoke:ISA_EiE
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ADVRESPONSE_TO_mGarC
+  label: ADVRESPONSE_TO_mGarC
   count: 1
-- uri: https://purl.org/okn/frink/kg/spoke/schema/INTERACTS_CiC
-  label: spoke:INTERACTS_CiC
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/INTERACTS_CiC
+  label: INTERACTS_CiC
   count: 1
-- uri: https://purl.org/okn/frink/kg/spoke/schema/ddi_risk
-  label: spoke:ddi_risk
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ISA_EiE
+  label: ISA_EiE
   count: 1
