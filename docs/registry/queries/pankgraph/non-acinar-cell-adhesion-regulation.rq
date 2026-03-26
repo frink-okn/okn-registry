@@ -1,18 +1,17 @@
-#+ summary: Find genes not expressed in pancreas acinar cells but regulating cell-matrix adhesion
+#+ summary: Find genes expressed in pancreas acinar cells and regulating cell-matrix adhesion
 #+ tags:
 #+   - pankgraph
 #+   - ubergraph
 
-prefix cl: <http://purl.obolibrary.org/obo/CL_>
-prefix go: <http://purl.obolibrary.org/obo/GO_>
-prefix ro: <http://purl.obolibrary.org/obo/RO_>
+PREFIX cl: <http://purl.obolibrary.org/obo/CL_>
+PREFIX go: <http://purl.obolibrary.org/obo/GO_>
+PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix biolink: <https://w3id.org/biolink/vocab/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
 
-select distinct ?gene ?function {
-  ?stmt1 rdf:subject ?gene ; rdf:predicate biolink:functional_association ; rdf:object ?function .
-  ?stmt2 rdf:subject ?gene ; rdf:predicate biolink:expressed_in ; rdf:object ?cell_type .
-  minus { ?stmt3 rdf:subject ?gene ; rdf:predicate biolink:expressed_in ; rdf:object cl:0002064 . }
-  ?function ro:0002211 go:0007160 .
+SELECT DISTINCT ?gene ?function {
+    ?stmt1 rdf:subject ?gene ; rdf:predicate biolink:functional_association ; rdf:object ?function .
+    ?stmt2 rdf:subject ?gene ; rdf:predicate biolink:expressed_in ; rdf:object cl:0002064 .
+    ?function ro:0002211 go:0007160 .
 }
