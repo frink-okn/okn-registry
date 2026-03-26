@@ -448,11 +448,7 @@ kgs:
   - email: Erik.Wright@bcm.edu
     github: WrightLabScience
     label: Erik Wright
-  description: EvoWeb is a weighted network of protein-protein functional relations,
-    reconstructed from prior knowledge available from genomic sequences, allowing
-    users to find hypothetical proteins involved in protein complexes or separate
-    steps of a biochemical pathway, as well as 12 signals of coevolution to quantify
-    the degree of shared evolution between genes.
+  description: EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)
   frink-options:
     documentation-path: evoweb
     lakefs-repo: evoweb
@@ -462,7 +458,7 @@ kgs:
   sparql: https://frink.apps.renci.org/evoweb/sparql
   stats: https://frink.renci.org/kg-stats/evoweb
   template: overrides/kg.html
-  title: EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)
+  title: EvoWeb
   tpf: https://frink.apps.renci.org/ldf/evoweb
 - contacts:
   - email: asu@scripps.edu
@@ -592,12 +588,7 @@ kgs:
   - email: drjieliu@umich.edu
     github: jieliu6
     label: Jie Liu
-  description: PanKgraph is a state-of-the-art Knowledge Graph developed for the study
-    of the human pancreas. By leveraging large language models (LLMs) and diverse
-    data types, PanKgraph enables users to uncover biological connections and insights
-    into diabetes pathogenesis. Previously disjointed entities such as genes, single
-    nucleotide polymorphisms (SNPs), and pancreatic expression quantitative trait
-    loci (eQTLs) can now be explored and connected in innovative ways.
+  description: "PanKgraph \u2014 PanKbase Knowledge Graph (NIDDK)"
   frink-options:
     documentation-path: pankbase-kg
     lakefs-repo: pankbase-kg
@@ -608,7 +599,7 @@ kgs:
   sparql: https://frink.apps.renci.org/pankgraph/sparql
   stats: https://frink.renci.org/kg-stats/pankbase-kg
   template: overrides/kg.html
-  title: PanKbase Knowledge Graph (NIDDK)
+  title: PanKgraph
   tpf: https://frink.apps.renci.org/ldf/pankgraph
 - contacts:
   - email: jinlian.wang@uth.tmc.edu
