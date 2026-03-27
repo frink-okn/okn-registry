@@ -3,7 +3,7 @@ distinct_subjects: 4509929
 distinct_objects: 4845730
 properties: 21
 classes: 10
-last_checked: '2026-03-25'
+last_checked: '2026-03-27'
 class_partitions:
 - uri: http://www.bioassayontology.org/bao#BAO_0000179
   label: BAO_0000179
