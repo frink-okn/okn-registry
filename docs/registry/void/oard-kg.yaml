@@ -3,7 +3,7 @@ distinct_subjects: 10126552
 distinct_objects: 10702397
 properties: 15
 classes: 0
-last_checked: '2026-03-27'
+last_checked: '2026-03-29'
 class_partitions: []
 property_partitions:
 - uri: https://w3id.org/biolink/vocab/category

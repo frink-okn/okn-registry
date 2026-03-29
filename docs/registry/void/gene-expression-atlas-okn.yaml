@@ -3,7 +3,7 @@ distinct_subjects: 9985697
 distinct_objects: 9460861
 properties: 28
 classes: 16
-last_checked: '2026-03-27'
+last_checked: '2026-03-29'
 class_partitions:
 - uri: https://w3id.org/biolink/vocab/GeneExpressionMixin
   label: biolink:GeneExpressionMixin
