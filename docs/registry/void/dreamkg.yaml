@@ -3,7 +3,7 @@ distinct_subjects: 14175
 distinct_objects: 19101
 properties: 40
 classes: 16
-last_checked: '2026-03-27'
+last_checked: '2026-03-29'
 class_partitions:
 - uri: http://schema.org/Review
   label: Review
