@@ -29,6 +29,7 @@
 | [oard-kg](kgs/oard-kg/) | Open Annotations for Rare Diseases (OARD) Knowledge Graph | Clinical associations between rare diseases and phenotypes derived from electronic health records |
 | [okn-void](kgs/okn-void/) | OKN VoID graph descriptions | Collected VoID (Vocabulary of Interlinked Datasets) metadata for all OKN graphs |
 | [pankgraph](kgs/pankgraph/) | PanKgraph | PanKgraph — PanKbase Knowledge Graph (NIDDK) |
+| [phaseskg](kgs/phaseskg/) | PHASES KG | Knowledge graph Promoting Healthy Aging through Semantic Enrichment |
 | [prokn](kgs/prokn/) | Protein Knowledge Network | The Protein Knowledge Network (ProKN) integrates protein-centric data with the genomic-centric datasets of the Common Fund Data Ecosystem (CFDE), spanning heterogeneous biological data types across multiple domains to foster CFDE re-use and collaboration through enhanced connectivity and data integration, enabling new capabilities for functional genomics and systems-level understanding of disease mechanisms. |
 | [rdkg](kgs/rdkg/) | Rare Disease Knowledge Graph | RDKG is an open knowledge graph for rare diseases that integrates standardized disease identifiers and cross-references to support discovery and evidence synthesis. |
 | [ruralkg](kgs/ruralkg/) | Rural Resilience KG | Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience. |
