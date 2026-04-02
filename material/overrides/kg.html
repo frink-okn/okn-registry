@@ -1,66 +1,282 @@
 {% extends "main.html" %}
 
 {% block content %}
-<h1>{{ page.meta.title }}</h1>
-<h3>{{ page.meta.description }}</h3>
-<main>
-    <aside style="float: right; width: 30%; margin-left: 1em; margin-right: 1em;">
-      <dl>
-          <dt>Shortname</dt>
-          <dd>{{ page.meta.shortname }}</dd>
-          {% if page.meta.homepage %}
-          <dt>Project homepage</dt>
-          <dd><a href="{{ page.meta.homepage }}">{{ page.meta.homepage }}</a></dd>
-          {% endif %}
-          {% set contact = None %}
-            {# Prefer new list format if available #}
-          {% if page.meta.contacts and page.meta.contacts | length > 0 %}
-              {% set contact = page.meta.contacts[0] %}
-          {% elif page.meta.contact %}
-              {% set contact = page.meta.contact %}
-          {% endif %}
-          {% if contact and contact.email %}
-          <dt>Contact</dt>
-          <dd>
-             <a href="mailto:{{ contact.email }}">
-               {% if contact.label %}
-                  {{ contact.label }}
-               {% else %}
-                  {{ contact.email }}
-               {% endif %}
-             </a>
-            {% if contact.github %}
-            <br>
-            <a href="https://github.com/{{ contact.github }}">@{{ contact.github }}</a>
-            {% endif %}
-          </dd>
-          {% endif %}
+{% set vs = void_stats.get(page.meta.shortname, {}) %}
+{% set queries = kg_queries.get(page.meta.shortname, []) %}
+{% set contacts = [] %}
+{% if page.meta.contacts and page.meta.contacts | length > 0 %}
+  {% set contacts = page.meta.contacts %}
+{% elif page.meta.contact %}
+  {% set contacts = [page.meta.contact] %}
+{% endif %}
 
-          {% if page.meta.funding %}
-          <dt>Funding</dt>
-          <dd><a href="{{ page.meta.funding }}">{{ page.meta.funding }}</a></dd>
-          {% endif %}
-          {% if page.meta.stats %}
-          <dt>FRINK graph summary</dt>
-          <dd><a href="{{ page.meta.stats }}">{{ page.meta.stats }}</a></dd>
-          {% endif %}
-      </dl>
-    </aside>
-    <div class="card" style="margin-bottom: 1.5em;">
-        <div class="card-body">
-            <p>{{ page.content }}</p>
+<div class="kg-page-layout">
+
+{# ── Main column ── #}
+<div class="kg-main">
+
+{# ── Header ── #}
+<div class="kg-header">
+  <div class="kg-shortname">{{ page.meta.shortname }}</div>
+  <h1 class="kg-title">{{ page.meta.title }}</h1>
+  <p class="kg-description">{{ page.meta.description }}</p>
+</div>
+
+{# ── Stats badges ── #}
+{% if vs %}
+<div class="kg-stats">
+  {% if vs.triples is not none %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.triples | human_number }}</span>
+    <span class="kg-stat-label">triples</span>
+  </div>
+  {% endif %}
+  {% if vs.classes is not none %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.classes }}</span>
+    <span class="kg-stat-label">classes</span>
+  </div>
+  {% endif %}
+  {% if vs.properties is not none %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.properties }}</span>
+    <span class="kg-stat-label">properties</span>
+  </div>
+  {% endif %}
+  {% if vs.distinct_subjects is not none %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.distinct_subjects | human_number }}</span>
+    <span class="kg-stat-label">subjects</span>
+  </div>
+  {% endif %}
+  {% if vs.issued %}
+  <div class="kg-stat">
+    <span class="kg-stat-value">{{ vs.issued }}</span>
+    <span class="kg-stat-label">released</span>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+{# ── Tabs ── #}
+<div class="kg-tabs">
+  <input type="radio" name="kg-tab" id="tab-overview" checked>
+  <label for="tab-overview">Overview</label>
+
+  {% if queries %}
+  <input type="radio" name="kg-tab" id="tab-queries">
+  <label for="tab-queries">Example Queries</label>
+  {% endif %}
+
+  <input type="radio" name="kg-tab" id="tab-endpoints">
+  <label for="tab-endpoints">Endpoints</label>
+
+  {% if vs.class_partitions or vs.property_partitions %}
+  <input type="radio" name="kg-tab" id="tab-classes">
+  <label for="tab-classes">Schema</label>
+  {% endif %}
+
+  {# ── Tab: Overview ── #}
+  <div class="kg-tab-panel" id="panel-overview">
+    {{ page.content }}
+  </div>
+
+  {# ── Tab: Example Queries ── #}
+  {% if queries %}
+  <div class="kg-tab-panel" id="panel-queries">
+    {% for q in queries %}
+    <details class="kg-query-item"{{ " open" if loop.first }}>
+      <summary>
+        <strong>{{ q.summary if q.summary else q.name }}</strong>
+      </summary>
+      <div class="kg-query-views">
+        <div class="kg-query-code">
+          <div class="highlight"><pre><code>{{ q.text }}</code></pre></div>
         </div>
-    </div>
-    <div class="card" style="margin-bottom: 1.5em;">
-      <div class="card-header">
-        <b>Work with the KG</b>
+        {% if q.mermaid %}
+        <div class="kg-query-diagram">
+          <pre class="mermaid">{{ q.mermaid }}</pre>
+        </div>
+        {% endif %}
+        <div class="kg-query-actions">
+          {% set sources = q.tags if q.tags else [page.meta.shortname] %}
+          <a class="kg-button kg-button-sm"
+             href="https://frink.apps.renci.org?sources={{ sources | tojson | urlencode }}&amp;query={{ q.raw_text | urlencode }}"
+             target="_blank">
+            Run in FRINK
+          </a>
+        </div>
       </div>
-      <div class="card-body">
-          <ul>
-            <li>SPARQL: <code>{{ page.meta.sparql }}</code></li>
-            <li>TPF: <a href="{{ page.meta.tpf }}"><code>{{ page.meta.tpf }}</code></a></li>
-      </div>
-    </div>
-</main>
+    </details>
+    {% endfor %}
+  </div>
+  {% endif %}
 
-{% endblock %} }}
+  {# ── Tab: Query Endpoints ── #}
+  <div class="kg-tab-panel" id="panel-endpoints">
+    <table class="kg-endpoints-table">
+      {% if page.meta.sparql %}
+      <tr>
+        <th>SPARQL Endpoint</th>
+        <td><code>{{ page.meta.sparql }}</code></td>
+      </tr>
+      {% endif %}
+      {% if page.meta.tpf %}
+      <tr>
+        <th>Triple Pattern Fragments</th>
+        <td><a href="{{ page.meta.tpf }}"><code>{{ page.meta.tpf }}</code></a></td>
+      </tr>
+      {% endif %}
+    </table>
+
+    {% if page.meta.sparql %}
+    <div style="margin-top: 1.5em;">
+      <a class="kg-button" href="https://frink.apps.renci.org?sources=[&quot;{{ page.meta.shortname }}&quot;]&amp;query=SELECT%20*%0AWHERE%20%7B%0A%20%20%3Fs%20%3Fp%20%3Fo%0A%7D%0ALIMIT%2010" target="_blank">
+        Open in FRINK Query UI
+      </a>
+    </div>
+    {% endif %}
+  </div>
+
+  {# ── Tab: Schema ── #}
+  {% if vs.class_partitions or vs.property_partitions %}
+  <script type="application/json" id="schema-data">
+  {
+    "classes": {{ vs.class_partitions | default([], true) | tojson }},
+    "properties": {{ vs.property_partitions | default([], true) | tojson }}
+  }
+  </script>
+  <div class="kg-tab-panel" id="panel-classes">
+    <div class="kg-schema-tabs">
+      {% if vs.class_partitions %}
+      <input type="radio" name="schema-tab" id="schema-tab-classes" checked>
+      <label for="schema-tab-classes">Classes ({{ vs.classes }})</label>
+      {% endif %}
+      {% if vs.property_partitions %}
+      <input type="radio" name="schema-tab" id="schema-tab-props"{{ " checked" if not vs.class_partitions }}>
+      <label for="schema-tab-props">Properties ({{ vs.properties }})</label>
+      {% endif %}
+
+      {% if vs.class_partitions %}
+      <div class="kg-schema-panel" id="schema-panel-classes">
+        <table class="kg-partition-table">
+          <thead><tr><th>Class</th><th>Entities</th></tr></thead>
+          <tbody id="schema-tbody-classes"></tbody>
+        </table>
+        <div class="kg-pager" id="pager-classes"></div>
+      </div>
+      {% endif %}
+      {% if vs.property_partitions %}
+      <div class="kg-schema-panel" id="schema-panel-props">
+        <table class="kg-partition-table">
+          <thead><tr><th>Property</th><th>Triples</th></tr></thead>
+          <tbody id="schema-tbody-props"></tbody>
+        </table>
+        <div class="kg-pager" id="pager-props"></div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <script>
+  (function() {
+    var PAGE_SIZE = 100;
+    var data = JSON.parse(document.getElementById("schema-data").textContent);
+
+    function humanNumber(n) {
+      if (n == null) return "?";
+      if (n >= 1e9) return (n / 1e9).toFixed(1) + "B";
+      if (n >= 1e6) return (n / 1e6).toFixed(1) + "M";
+      if (n >= 1e3) return (n / 1e3).toFixed(1) + "K";
+      return String(n);
+    }
+
+    function escapeHtml(s) {
+      var d = document.createElement("span");
+      d.textContent = s;
+      return d.innerHTML;
+    }
+
+    function renderPage(items, tbody, page) {
+      var start = page * PAGE_SIZE;
+      var rows = [];
+      for (var i = start; i < start + PAGE_SIZE && i < items.length; i++) {
+        var it = items[i];
+        rows.push('<tr><td title="' + escapeHtml(it.uri) + '">' +
+          escapeHtml(it.label) + '</td><td>' +
+          humanNumber(it.count) + '</td></tr>');
+      }
+      tbody.innerHTML = rows.join("");
+    }
+
+    function setupPager(items, tbodyId, pagerId) {
+      var tbody = document.getElementById(tbodyId);
+      var pager = document.getElementById(pagerId);
+      if (!tbody || !pager || items.length === 0) return;
+
+      var totalPages = Math.ceil(items.length / PAGE_SIZE);
+      var currentPage = 0;
+
+      function update() {
+        renderPage(items, tbody, currentPage);
+        if (totalPages <= 1) { pager.innerHTML = ""; return; }
+        pager.innerHTML =
+          '<button class="kg-pager-btn"' + (currentPage === 0 ? ' disabled' : '') + ' data-dir="-1">&laquo; Prev</button>' +
+          '<span class="kg-pager-info">' + (currentPage * PAGE_SIZE + 1) + '–' +
+            Math.min((currentPage + 1) * PAGE_SIZE, items.length) +
+            ' of ' + items.length.toLocaleString() + '</span>' +
+          '<button class="kg-pager-btn"' + (currentPage >= totalPages - 1 ? ' disabled' : '') + ' data-dir="1">Next &raquo;</button>';
+      }
+
+      pager.addEventListener("click", function(e) {
+        if (e.target.tagName === "BUTTON" && !e.target.disabled) {
+          currentPage += parseInt(e.target.getAttribute("data-dir"));
+          update();
+          tbody.closest("table").scrollIntoView({behavior: "smooth", block: "nearest"});
+        }
+      });
+
+      update();
+    }
+
+    setupPager(data.classes, "schema-tbody-classes", "pager-classes");
+    setupPager(data.properties, "schema-tbody-props", "pager-props");
+  })();
+  </script>
+  {% endif %}
+
+</div>
+</div>{# ── end .kg-main ── #}
+
+{# ── Sidebar ── #}
+<aside class="kg-sidebar">
+  <dl>
+    <dt>Shortname</dt>
+    <dd><code>{{ page.meta.shortname }}</code></dd>
+    {% if page.meta.homepage %}
+    <dt>Homepage</dt>
+    <dd><a href="{{ page.meta.homepage }}">{{ page.meta.homepage }}</a></dd>
+    {% endif %}
+    {% if contacts %}
+    <dt>Contact{{ 's' if contacts | length > 1 }}</dt>
+    {% for contact in contacts %}
+    {% if contact and contact.email %}
+    <dd>
+      <a href="mailto:{{ contact.email }}">
+        {{ contact.label if contact.label else contact.email }}
+      </a>
+      {% if contact.github %}
+      <br><a href="https://github.com/{{ contact.github }}">@{{ contact.github }}</a>
+      {% endif %}
+    </dd>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% if page.meta.funding %}
+    <dt>Funding</dt>
+    <dd><a href="{{ page.meta.funding }}">{{ page.meta.funding }}</a></dd>
+    {% endif %}
+  </dl>
+</aside>
+
+</div>{# ── end .kg-page-layout ── #}
+{% endblock %}

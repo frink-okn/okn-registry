@@ -404,3 +404,287 @@ body {
 
 dt { font-weight: bold; }
 dd { margin-left: 0 !important; padding: 0 0 0.5em 0; }
+
+/* ── KG page styles ── */
+
+.kg-header {
+  margin-bottom: 1.5em;
+}
+.kg-shortname {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25em;
+}
+.kg-title {
+  margin: 0 0 0.25em 0;
+  font-size: 1.8rem;
+}
+.kg-description {
+  color: var(--bs-gray-600);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Stats badges */
+.kg-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  margin-bottom: 1.5em;
+}
+.kg-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bs-gray-100);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  padding: 0.6em 1.2em;
+  min-width: 5em;
+}
+.kg-stat-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  line-height: 1.2;
+}
+.kg-stat-label {
+  font-size: 0.75rem;
+  color: var(--bs-gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Tabs */
+.kg-tabs {
+  position: relative;
+}
+.kg-tabs > input[type="radio"] {
+  display: none;
+}
+.kg-tabs > label {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--bs-gray-600);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.kg-tabs > label:hover {
+  color: var(--md-primary-fg-color);
+}
+.kg-tabs > input[type="radio"]:checked + label {
+  color: var(--md-primary-fg-color);
+  border-bottom-color: var(--md-primary-fg-color);
+}
+.kg-tab-panel {
+  display: none;
+  padding: 1.5em 0;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+/* Show the correct panel based on which radio is checked */
+#tab-overview:checked ~ #panel-overview,
+#tab-queries:checked ~ #panel-queries,
+#tab-endpoints:checked ~ #panel-endpoints,
+#tab-classes:checked ~ #panel-classes {
+  display: block;
+}
+
+/* Page-level two-column layout */
+.kg-page-layout {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 2em;
+  align-items: start;
+}
+.kg-main {
+  min-width: 0;
+}
+.kg-sidebar {
+  background: var(--bs-gray-100);
+  border-radius: var(--bs-border-radius);
+  padding: 1em 1.2em;
+  font-size: 0.9rem;
+  align-self: start;
+}
+.kg-sidebar a {
+  word-break: break-all;
+}
+@media (max-width: 768px) {
+  .kg-page-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Query items */
+.kg-query-item {
+  margin-bottom: 1em;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+}
+.kg-query-item > summary {
+  padding: 0.7em 1em;
+  cursor: pointer;
+  background: var(--bs-gray-100);
+  border-radius: var(--bs-border-radius);
+}
+.kg-query-item[open] > summary {
+  border-bottom: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
+}
+
+/* Query view (Code + Diagram) */
+.kg-query-views {
+  padding: 0.5em 1em 1em;
+}
+.kg-query-code .highlight {
+  margin: 0;
+}
+.kg-query-code pre {
+  margin: 0;
+  border-radius: var(--bs-border-radius);
+}
+.kg-query-diagram pre.mermaid {
+  background: var(--bs-gray-100);
+  border-radius: var(--bs-border-radius);
+  padding: 1em;
+  text-align: center;
+}
+.kg-query-actions {
+  margin-top: 0.75em;
+  padding-top: 0.5em;
+}
+.kg-button-sm {
+  padding: 0.35em 0.9em;
+  font-size: 0.8rem;
+}
+
+/* Endpoints table */
+.kg-endpoints-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.kg-endpoints-table th,
+.kg-endpoints-table td {
+  padding: 0.6em 1em;
+  border-bottom: 1px solid var(--bs-border-color);
+  text-align: left;
+}
+.kg-endpoints-table th {
+  width: 200px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.kg-endpoints-table td code {
+  word-break: break-all;
+}
+
+/* Button */
+.kg-button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  background: var(--md-primary-fg-color);
+  color: #fff !important;
+  border-radius: var(--bs-border-radius);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: opacity 0.15s;
+}
+.kg-button:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+/* Schema sub-tabs */
+.kg-schema-tabs > input[type="radio"] {
+  display: none;
+}
+.kg-schema-tabs > label {
+  display: inline-block;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--bs-gray-600);
+  border-bottom: 2px solid transparent;
+  margin-bottom: 0.5em;
+}
+.kg-schema-tabs > label:hover {
+  color: var(--md-primary-fg-color);
+}
+.kg-schema-tabs > input[type="radio"]:checked + label {
+  color: var(--md-primary-fg-color);
+  border-bottom-color: var(--md-primary-fg-color);
+}
+.kg-schema-panel {
+  display: none;
+}
+#schema-tab-classes:checked ~ #schema-panel-classes,
+#schema-tab-props:checked ~ #schema-panel-props {
+  display: block;
+}
+.kg-partitions-layout h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+.kg-partition-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  table-layout: fixed;
+}
+.kg-partition-table td:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.kg-partition-table th,
+.kg-partition-table td {
+  padding: 0.35em 0.7em;
+  border-bottom: 1px solid var(--bs-border-color);
+  text-align: left;
+}
+.kg-partition-table th {
+  font-weight: 600;
+  background: var(--bs-gray-100);
+}
+.kg-partition-table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Pagination */
+.kg-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 0.75em;
+  font-size: 0.85rem;
+}
+.kg-pager-btn {
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  background: var(--bs-gray-100);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.kg-pager-btn:hover:not(:disabled) {
+  background: var(--bs-gray-200);
+}
+.kg-pager-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.kg-pager-info {
+  color: var(--bs-gray-600);
+}

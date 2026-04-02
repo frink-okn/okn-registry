@@ -1,0 +1,26 @@
+#+ summary: Who worked on the agcros dataset, what was their role, and what field did they work on?
+#+ tags:
+#+   - sockg
+PREFIX schema: <https://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+
+SELECT DISTINCT ?name ?role (GROUP_CONCAT(?ename; SEPARATOR=", ") AS ?fieldName)
+WHERE {
+    ?e a schema:Person ;
+       schema:givenName ?fname ;
+       schema:additionalName ?mname ;
+       schema:familyName ?lname ;
+       schema:workLocation ?l ;
+       schema:role ?role .
+
+
+    ?l dcterms:identifier ?ename .
+    
+    BIND(IF(CONTAINS(STR(?mname), "."),
+            CONCAT(STR(?fname), " ", STR(?mname), " ", STR(?lname)), 
+            CONCAT(STR(?fname), " ", STR(?mname), ". ", STR(?lname)) 
+        ) AS ?name)
+}
+GROUP BY ?name ?role
+ORDER BY ?name

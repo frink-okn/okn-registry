@@ -1,0 +1,61 @@
+#+ summary: What is the average SOC Stock of available states
+#+ tags:
+#+   - sockg
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX ind: <https://idir.uta.edu/sockg-ontology/individuals/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sockg: <https://idir.uta.edu/sockg-ontology#>
+
+SELECT ?state (ROUND(AVG(?SOCStockExpUnit) * 100) / 100 AS ?AvgSocStock)
+WHERE {
+    {
+        SELECT DISTINCT ?e ?date (SUM(?SOCStock) AS ?SOCStockExpUnit)
+        WHERE {
+            ?sc a sockg:SoilChemicalSample ;
+                sockg:lowerDepth ?ld ;
+                sockg:upperDepth ?ud ;
+                sockg:hasMeasurement ?scm ;
+                sockg:fromUnit ?e ;
+                dcterms:date ?date .
+
+            ?ld qudt:numericValue ?lowerDepth .
+            ?ud qudt:numericValue ?upperDepth .
+
+            ?scm sockg:of ind:Parameter.MeasSoilChem.17 ; # IRI of osc_gc_kg
+	            qudt:quantityValue ?scv .
+            ?scv qudt:numericValue ?soc .
+
+            FILTER (?soc != 0)
+
+            ?sp a sockg:SoilPhysicalSample ;
+                sockg:lowerDepth ?ldp ;
+                sockg:fromUnit ?e ;
+                sockg:hasMeasurement ?spm ;
+                dcterms:date ?date .
+
+            ?ldp qudt:numericValue ?physLowerDepth .
+
+            FILTER(?lowerDepth = ?physLowerDepth)
+
+            ?spm sockg:of ind:Parameter.MeasSoilPhys.12 ; # IRI of bulk_density_g_cm3
+            	qudt:quantityValue ?spv .
+            ?spv qudt:numericValue ?bulkDensity ;
+
+            BIND(?soc * ?bulkDensity * (?lowerDepth - ?upperDepth) * 100 AS ?SOCStock)
+        }
+        GROUP BY ?e ?date 
+    }
+
+    ?e a sockg:ExperimentalUnit ;
+		kwg-ont:sfWithin ?w . # site
+    
+    ?w kwg-ont:sfWithin ?f . # field
+    ?f kwg-ont:sfWithin ?s . #state
+    
+	?s rdfs:label ?state .
+    
+    FILTER (?state != "United States")
+}
+GROUP BY ?state
