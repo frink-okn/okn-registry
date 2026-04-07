@@ -3,7 +3,7 @@ distinct_subjects: 4509929
 distinct_objects: 4845730
 properties: 21
 classes: 10
-last_checked: '2026-03-27'
+last_checked: '2026-04-07'
 class_partitions:
 - uri: http://www.bioassayontology.org/bao#BAO_0000179
   label: BAO_0000179
@@ -29,11 +29,11 @@ class_partitions:
 - uri: http://edamontology.org/data_1027
   label: data_1027
   count: 526
-- uri: http://www.bioassayontology.org/bao#BAO_0003064
-  label: BAO_0003064
-  count: 59
 - uri: http://edamontology.org/data_1181
   label: data_1181
+  count: 59
+- uri: http://www.bioassayontology.org/bao#BAO_0003064
+  label: BAO_0003064
   count: 59
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
@@ -48,11 +48,11 @@ property_partitions:
 - uri: http://semanticscience.org/resource/SIO_000300
   label: SIO_000300
   count: 3021184
-- uri: http://semanticscience.org/resource/SIO_000221
-  label: SIO_000221
-  count: 3020705
 - uri: http://purl.obolibrary.org/obo/IAO_0000136
   label: obo:IAO_0000136
+  count: 3020705
+- uri: http://semanticscience.org/resource/SIO_000221
+  label: SIO_000221
   count: 3020705
 - uri: http://purl.obolibrary.org/obo/RO_0000056
   label: obo:RO_0000056
@@ -84,12 +84,6 @@ property_partitions:
 - uri: https://ice.ntp.niehs.nih.gov/property/throughMechanisticTarget
   label: throughMechanisticTarget
   count: 2753
-- uri: https://ice.ntp.niehs.nih.gov/property/assay_invitro_assay_format
-  label: assay_invitro_assay_format
-  count: 1814
-- uri: https://ice.ntp.niehs.nih.gov/property/assay_source
-  label: assay_source
-  count: 1814
 - uri: https://ice.ntp.niehs.nih.gov/property/assay_entrez_gene_id
   label: assay_entrez_gene_id
   count: 1814
@@ -98,4 +92,10 @@ property_partitions:
   count: 1814
 - uri: https://ice.ntp.niehs.nih.gov/property/assay_tissue
   label: assay_tissue
+  count: 1814
+- uri: https://ice.ntp.niehs.nih.gov/property/assay_source
+  label: assay_source
+  count: 1814
+- uri: https://ice.ntp.niehs.nih.gov/property/assay_invitro_assay_format
+  label: assay_invitro_assay_format
   count: 1814

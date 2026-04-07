@@ -3,7 +3,7 @@ distinct_subjects: 18603155
 distinct_objects: 502901
 properties: 71
 classes: 2
-last_checked: '2026-03-27'
+last_checked: '2026-04-07'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
@@ -15,17 +15,17 @@ property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 18603155
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
-  label: rdf:object
-  count: 18352179
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
-  label: rdf:subject
-  count: 18352179
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
   label: rdf:predicate
   count: 18352179
 - uri: http://purl.org/dc/terms/source
   label: dct:source
+  count: 18352179
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
+  label: rdf:object
+  count: 18352179
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+  label: rdf:subject
   count: 18352179
 - uri: https://w3id.org/biolink/vocab/location_of
   label: biolink:location_of
@@ -84,11 +84,11 @@ property_partitions:
 - uri: https://biohealthkg.proto-okn.net/kg/schema/PRODUCES
   label: biohealth:PRODUCES
   count: 258025
-- uri: http://www.w3.org/2000/01/rdf-schema#label
-  label: rdfs:label
-  count: 250976
 - uri: https://w3id.org/biolink/vocab/category
   label: biolink:category
+  count: 250976
+- uri: http://www.w3.org/2000/01/rdf-schema#label
+  label: rdfs:label
   count: 250976
 - uri: https://biohealthkg.proto-okn.net/kg/schema/ADMINISTERED_TO
   label: biohealth:ADMINISTERED_TO

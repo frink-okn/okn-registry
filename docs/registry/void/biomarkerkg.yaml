@@ -3,7 +3,7 @@ distinct_subjects: 185317
 distinct_objects: 135053
 properties: 9
 classes: 0
-last_checked: '2026-03-27'
+last_checked: '2026-04-07'
 class_partitions: []
 property_partitions:
 - uri: http://purl.obolibrary.org/obo/OBCI_1000011

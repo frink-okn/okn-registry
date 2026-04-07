@@ -3,7 +3,7 @@ distinct_subjects: 33958
 distinct_objects: 18079
 properties: 11
 classes: 5
-last_checked: '2026-03-27'
+last_checked: '2026-04-07'
 class_partitions:
 - uri: https://metadata.phila.gov/Incident
   label: Incident
@@ -24,33 +24,33 @@ property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 33958
-- uri: https://metadata.phila.gov/OffenderInjured
-  label: OffenderInjured
-  count: 15328
-- uri: https://metadata.phila.gov/happened_at
-  label: happened_at
-  count: 15328
-- uri: https://metadata.phila.gov/OfficerInvolved
-  label: OfficerInvolved
-  count: 15328
-- uri: https://metadata.phila.gov/OffenderRace
-  label: OffenderRace
-  count: 15328
 - uri: https://metadata.phila.gov/OffenderDeceased
   label: OffenderDeceased
   count: 15328
 - uri: https://metadata.phila.gov/is_fatal
   label: is_fatal
   count: 15328
+- uri: https://metadata.phila.gov/OffenderRace
+  label: OffenderRace
+  count: 15328
 - uri: https://metadata.phila.gov/OffenderSex
   label: OffenderSex
+  count: 15328
+- uri: https://metadata.phila.gov/OfficerInvolved
+  label: OfficerInvolved
+  count: 15328
+- uri: https://metadata.phila.gov/OffenderInjured
+  label: OffenderInjured
+  count: 15328
+- uri: https://metadata.phila.gov/happened_at
+  label: happened_at
   count: 15328
 - uri: https://metadata.phila.gov/age_of
   label: age_of
   count: 15093
-- uri: http://www.opengis.net/ont/geosparql#hasGeometry
-  label: geo:hasGeometry
-  count: 9133
 - uri: http://www.opengis.net/ont/geosparql#asWKT
   label: geo:asWKT
+  count: 9133
+- uri: http://www.opengis.net/ont/geosparql#hasGeometry
+  label: geo:hasGeometry
   count: 9133

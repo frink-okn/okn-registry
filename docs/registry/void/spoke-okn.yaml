@@ -3,7 +3,7 @@ distinct_subjects: 4761110
 distinct_objects: 2641259
 properties: 128
 classes: 8
-last_checked: '2026-03-27'
+last_checked: '2026-04-07'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
@@ -36,11 +36,11 @@ property_partitions:
 - uri: http://purl.org/dc/terms/source
   label: dct:source
   count: 4749751
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
-  label: rdf:subject
-  count: 4307034
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
   label: rdf:object
+  count: 4307034
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+  label: rdf:subject
   count: 4307034
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
   label: rdf:predicate
@@ -96,35 +96,35 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/genbank_accessions
   label: genbank_accessions
   count: 259042
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/short_question_text
-  label: short_question_text
-  count: 246285
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/state_desc
   label: state_desc
-  count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_value_type
-  label: data_value_type
   count: 246285
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/state_abbr
   label: state_abbr
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_value_unit
-  label: data_value_unit
-  count: 246285
 - uri: http://www.opengis.net/ont/geosparql#asWKT
   label: geo:asWKT
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/total_population
-  label: total_population
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_value_unit
+  label: data_value_unit
   count: 246285
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/location_name
   label: location_name
   count: 246285
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/variable
-  label: variable
-  count: 242418
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/short_question_text
+  label: short_question_text
+  count: 246285
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_value_type
+  label: data_value_type
+  count: 246285
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/total_population
+  label: total_population
+  count: 246285
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/method
   label: method
+  count: 242418
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/variable
+  label: variable
   count: 242418
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_value
   label: data_value
@@ -162,11 +162,11 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/is_resistant
   label: is_resistant
   count: 71377
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/date_type
-  label: date_type
-  count: 68760
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/date
   label: date
+  count: 68760
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/date_type
+  label: date_type
   count: 68760
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/state_fips
   label: state_fips
@@ -177,11 +177,11 @@ property_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#seeAlso
   label: rdfs:seeAlso
   count: 42904
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/zipcode_type
-  label: zipcode_type
-  count: 42724
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/state
   label: state
+  count: 42724
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/zipcode_type
+  label: zipcode_type
   count: 42724
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/longitude
   label: longitude
@@ -228,20 +228,20 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/FOUNDIN_EfL
   label: FOUNDIN_EfL
   count: 11367
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/population
-  label: population
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/mortality_per_100k
+  label: mortality_per_100k
   count: 10802
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/MORTALITY_DmL
   label: MORTALITY_DmL
   count: 10802
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/mortality_per_100k
-  label: mortality_per_100k
-  count: 10802
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ghe_code
-  label: ghe_code
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/population
+  label: population
   count: 10802
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/usability
   label: usability
+  count: 10802
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ghe_code
+  label: ghe_code
   count: 10802
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/gram_stain
   label: gram_stain
@@ -276,11 +276,11 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/resistant_phenotype
   label: resistant_phenotype
   count: 5151
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/laboratory_typing_method
-  label: laboratory_typing_method
-  count: 5147
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/measurement_unit
   label: measurement_unit
+  count: 5147
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/laboratory_typing_method
+  label: laboratory_typing_method
   count: 5147
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/testing_standard_year
   label: testing_standard_year
@@ -318,11 +318,11 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/topic
   label: topic
   count: 1061
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/domain
-  label: domain
-  count: 1061
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/data_source
   label: data_source
+  count: 1061
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/domain
+  label: domain
   count: 1061
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ISA_SiS
   label: ISA_SiS
@@ -351,11 +351,11 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/omim_list
   label: omim_list
   count: 117
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/cooccur
-  label: cooccur
-  count: 106
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/odds
   label: odds
+  count: 106
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/cooccur
+  label: cooccur
   count: 106
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/enrichment
   label: enrichment
@@ -402,8 +402,8 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/RESISTANT_TO_mGrC
   label: RESISTANT_TO_mGrC
   count: 8
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ddi_risk
-  label: ddi_risk
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ISA_EiE
+  label: ISA_EiE
   count: 1
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ADVRESPONSE_TO_mGarC
   label: ADVRESPONSE_TO_mGarC
@@ -411,6 +411,6 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-okn/schema/INTERACTS_CiC
   label: INTERACTS_CiC
   count: 1
-- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ISA_EiE
-  label: ISA_EiE
+- uri: https://purl.org/okn/frink/kg/spoke-okn/schema/ddi_risk
+  label: ddi_risk
   count: 1

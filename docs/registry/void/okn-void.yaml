@@ -1,23 +1,23 @@
-triples: 4792155
-distinct_subjects: 1247140
-distinct_objects: 1340649
+triples: 4800215
+distinct_subjects: 1249249
+distinct_objects: 1343032
 properties: 18
 classes: 2
-last_checked: '2026-03-27'
+last_checked: '2026-04-07'
 class_partitions:
 - uri: http://rdfs.org/ns/void#Dataset
   label: void:Dataset
-  count: 1247138
+  count: 1249248
 - uri: http://rdfs.org/ns/void#Dataset
   label: void:Dataset
   count: 1240406
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 1247138
+  count: 1249248
 - uri: http://rdfs.org/ns/void#triples
   label: void:triples
-  count: 1247138
+  count: 1249248
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 1240406
@@ -26,76 +26,76 @@ property_partitions:
   count: 1240406
 - uri: http://ldf.fi/void-ext#objectClassPartition
   label: void-ext:objectClassPartition
-  count: 740562
+  count: 741282
 - uri: http://ldf.fi/void-ext#objectClassPartition
   label: void-ext:objectClassPartition
   count: 739195
 - uri: http://rdfs.org/ns/void#class
   label: void:class
-  count: 544029
+  count: 544360
 - uri: http://rdfs.org/ns/void#class
   label: void:class
   count: 542662
-- uri: http://rdfs.org/ns/void#propertyPartition
-  label: void:propertyPartition
-  count: 496916
 - uri: http://rdfs.org/ns/void#property
   label: void:property
-  count: 496916
+  count: 497726
 - uri: http://rdfs.org/ns/void#propertyPartition
   label: void:propertyPartition
-  count: 496485
+  count: 497726
 - uri: http://rdfs.org/ns/void#property
   label: void:property
   count: 496485
-- uri: http://rdfs.org/ns/void#classPartition
-  label: void:classPartition
-  count: 4736
-- uri: http://rdfs.org/ns/void#entities
-  label: void:entities
-  count: 4736
-- uri: http://rdfs.org/ns/void#entities
-  label: void:entities
-  count: 4694
-- uri: http://rdfs.org/ns/void#classPartition
-  label: void:classPartition
-  count: 4694
+- uri: http://rdfs.org/ns/void#propertyPartition
+  label: void:propertyPartition
+  count: 496485
 - uri: http://ldf.fi/void-ext#datatypePartition
   label: void-ext:datatypePartition
-  count: 4688
+  count: 5083
 - uri: http://ldf.fi/void-ext#datatype
   label: void-ext:datatype
-  count: 4688
-- uri: http://ldf.fi/void-ext#language
-  label: void-ext:language
-  count: 202
+  count: 5083
+- uri: http://rdfs.org/ns/void#classPartition
+  label: void:classPartition
+  count: 4778
+- uri: http://rdfs.org/ns/void#entities
+  label: void:entities
+  count: 4778
+- uri: http://rdfs.org/ns/void#entities
+  label: void:entities
+  count: 4694
+- uri: http://rdfs.org/ns/void#classPartition
+  label: void:classPartition
+  count: 4694
 - uri: http://ldf.fi/void-ext#languagePartition
   label: void-ext:languagePartition
-  count: 202
+  count: 342
+- uri: http://ldf.fi/void-ext#language
+  label: void-ext:language
+  count: 342
 - uri: http://rdfs.org/ns/void#distinctSubjects
   label: void:distinctSubjects
-  count: 34
-- uri: http://rdfs.org/ns/void#properties
-  label: void:properties
-  count: 34
-- uri: http://purl.org/pav/lastUpdatedOn
-  label: pav:lastUpdatedOn
-  count: 34
+  count: 37
 - uri: http://rdfs.org/ns/void#distinctObjects
   label: void:distinctObjects
-  count: 34
-- uri: http://purl.org/dc/terms/modified
-  label: dct:modified
-  count: 34
+  count: 37
+- uri: http://rdfs.org/ns/void#properties
+  label: void:properties
+  count: 37
 - uri: http://purl.org/pav/version
   label: pav:version
-  count: 34
+  count: 36
+- uri: http://purl.org/dc/terms/modified
+  label: dct:modified
+  count: 36
+- uri: http://purl.org/pav/lastUpdatedOn
+  label: pav:lastUpdatedOn
+  count: 36
+- uri: http://rdfs.org/ns/void#properties
+  label: void:properties
+  count: 32
 - uri: http://rdfs.org/ns/void#distinctObjects
   label: void:distinctObjects
   count: 32
 - uri: http://rdfs.org/ns/void#distinctSubjects
   label: void:distinctSubjects
-  count: 32
-- uri: http://rdfs.org/ns/void#properties
-  label: void:properties
   count: 32
