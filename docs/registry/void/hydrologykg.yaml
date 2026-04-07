@@ -3,7 +3,7 @@ distinct_subjects: 11297648
 distinct_objects: 13799049
 properties: 146
 classes: 127
-last_checked: '2026-03-27'
+last_checked: '2026-04-07'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -194,8 +194,8 @@ class_partitions:
 - uri: http://purl.org/spatialai/stad/v2/core/DataTransformation
   label: stad:DataTransformation
   count: 8
-- uri: http://www.semanticweb.org/efive/QuantitativeE5Summary
-  label: QuantitativeE5Summary
+- uri: http://www.semanticweb.org/efive/P40
+  label: P40
   count: 8
 - uri: http://www.semanticweb.org/efive/AggregateNominalVariable
   label: AggregateNominalVariable
@@ -218,11 +218,11 @@ class_partitions:
 - uri: http://www.semanticweb.org/efive/LowerHinge
   label: LowerHinge
   count: 8
-- uri: http://www.semanticweb.org/efive/P40
-  label: P40
-  count: 8
 - uri: http://www.semanticweb.org/efive/LowerFence
   label: LowerFence
+  count: 8
+- uri: http://www.semanticweb.org/efive/QuantitativeE5Summary
+  label: QuantitativeE5Summary
   count: 8
 - uri: http://www.semanticweb.org/efive/QuintileSet
   label: QuintileSet
@@ -245,11 +245,14 @@ class_partitions:
 - uri: http://www.semanticweb.org/efive/P25
   label: P25
   count: 8
-- uri: http://www.semanticweb.org/efive/AggregateRatioVariable
-  label: AggregateRatioVariable
-  count: 8
 - uri: http://www.semanticweb.org/efive/P95
   label: P95
+  count: 8
+- uri: http://www.semanticweb.org/efive/P50
+  label: P50
+  count: 8
+- uri: http://www.semanticweb.org/efive/AggregateRatioVariable
+  label: AggregateRatioVariable
   count: 8
 - uri: http://www.semanticweb.org/efive/P60
   label: P60
@@ -259,9 +262,6 @@ class_partitions:
   count: 8
 - uri: http://sawgraph.spatialai.org/v1/me-mgs#WellType
   label: WellType
-  count: 8
-- uri: http://www.semanticweb.org/efive/P50
-  label: P50
   count: 8
 - uri: http://purl.org/spatialai/stad/v2/core/DatasetDescription
   label: stad:DatasetDescription
@@ -326,11 +326,11 @@ class_partitions:
 - uri: http://sawgraph.spatialai.org/v1/us-sdwis#PWS-SourceWaterType
   label: PWS-SourceWaterType
   count: 5
-- uri: http://www.w3.org/2000/01/rdf-schema#Resource
-  label: rdfs:Resource
-  count: 4
 - uri: http://www.semanticweb.org/efive/MeasurementScale
   label: MeasurementScale
+  count: 4
+- uri: http://www.w3.org/2000/01/rdf-schema#Resource
+  label: rdfs:Resource
   count: 4
 - uri: http://www.w3.org/2003/11/swrl#AtomList
   label: swrl:AtomList
@@ -356,8 +356,8 @@ class_partitions:
 - uri: http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom
   label: swrl:DatavaluedPropertyAtom
   count: 2
-- uri: http://qudt.org/schema/qudt/QuantityKind
-  label: qudt:QuantityKind
+- uri: http://www.w3.org/2002/07/owl#ReflexiveProperty
+  label: owl:ReflexiveProperty
   count: 1
 - uri: http://www.w3.org/2002/07/owl#objectProperty
   label: owl:objectProperty
@@ -383,8 +383,8 @@ class_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
   label: rdfs:ContainerMembershipProperty
   count: 1
-- uri: http://www.w3.org/2002/07/owl#ReflexiveProperty
-  label: owl:ReflexiveProperty
+- uri: http://qudt.org/schema/qudt/QuantityKind
+  label: qudt:QuantityKind
   count: 1
 property_partitions:
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/downstreamFlowPathTC
@@ -396,11 +396,11 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#sameAs
   label: owl:sameAs
   count: 11297648
-- uri: http://purl.org/spatialai/spatial/spatial-full#connectedTo
-  label: spatial-full:connectedTo
-  count: 6223650
 - uri: http://purl.org/spatialai/spatial/spatial-full#spatiallyRelatedTo
   label: spatial-full:spatiallyRelatedTo
+  count: 6223650
+- uri: http://purl.org/spatialai/spatial/spatial-full#connectedTo
+  label: spatial-full:connectedTo
   count: 6223650
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/spatialRelation
   label: kwg-ont:spatialRelation
@@ -444,20 +444,20 @@ property_partitions:
 - uri: http://nhdplusv2.spatialai.org/v1/nhdplusv2#hasFCODE
   label: nhdplusv2:hasFCODE
   count: 507486
-- uri: http://nhdplusv2.spatialai.org/v1/nhdplusv2#hasFTYPE
-  label: nhdplusv2:hasFTYPE
-  count: 507486
 - uri: http://nhdplusv2.spatialai.org/v1/nhdplusv2#hasCOMID
   label: nhdplusv2:hasCOMID
   count: 507486
-- uri: http://nhdplusv2.spatialai.org/v1/nhdplusv2#hasFlowPathLength
-  label: nhdplusv2:hasFlowPathLength
-  count: 434501
+- uri: http://nhdplusv2.spatialai.org/v1/nhdplusv2#hasFTYPE
+  label: nhdplusv2:hasFTYPE
+  count: 507486
 - uri: http://qudt.org/schema/qudt/hasUnit
   label: qudt:hasUnit
   count: 434501
 - uri: http://qudt.org/schema/qudt/quantityValue
   label: qudt:quantityValue
+  count: 434501
+- uri: http://nhdplusv2.spatialai.org/v1/nhdplusv2#hasFlowPathLength
+  label: nhdplusv2:hasFlowPathLength
   count: 434501
 - uri: http://sawgraph.spatialai.org/v1/il-isgs#wellPurpose
   label: wellPurpose
@@ -504,23 +504,23 @@ property_partitions:
 - uri: http://sawgraph.spatialai.org/v1/saw_water#aquiferType
   label: saw-water:aquiferType
   count: 8441
-- uri: http://gwml2.org/def/gwml2#gwAquiferSystemPart
-  label: gwml2:gwAquiferSystemPart
-  count: 8339
 - uri: http://gwml2.org/def/gwml2#gwAquiferSystem
   label: gwml2:gwAquiferSystem
   count: 8339
-- uri: http://sawgraph.spatialai.org/v1/us-sdwis#firstReport
-  label: firstReport
-  count: 6402
+- uri: http://gwml2.org/def/gwml2#gwAquiferSystemPart
+  label: gwml2:gwAquiferSystemPart
+  count: 8339
 - uri: http://sawgraph.spatialai.org/v1/us-sdwis#populationServed
   label: populationServed
   count: 6402
-- uri: http://sawgraph.spatialai.org/v1/us-sdwis#hasActivity
-  label: hasActivity
-  count: 6402
 - uri: http://sawgraph.spatialai.org/v1/us-sdwis#serviceConnections
   label: serviceConnections
+  count: 6402
+- uri: http://sawgraph.spatialai.org/v1/us-sdwis#firstReport
+  label: firstReport
+  count: 6402
+- uri: http://sawgraph.spatialai.org/v1/us-sdwis#hasActivity
+  label: hasActivity
   count: 6402
 - uri: http://sawgraph.spatialai.org/v1/us-sdwis#lastReport
   label: lastReport
@@ -579,20 +579,20 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#equivalentClass
   label: owl:equivalentClass
   count: 231
-- uri: http://purl.org/spatialai/stad/v2/core/hasTransformationKind
-  label: stad:hasTransformationKind
-  count: 208
 - uri: http://purl.org/spatialai/stad/v2/core/generatedBy
   label: stad:generatedBy
+  count: 208
+- uri: http://purl.org/spatialai/stad/v2/core/hasTransformationKind
+  label: stad:hasTransformationKind
   count: 208
 - uri: http://purl.org/spatialai/stad/v2/core/hasBaseDataset
   label: stad:hasBaseDataset
   count: 200
-- uri: http://purl.org/spatialai/stad/v2/core/hasQualityKind
-  label: stad:hasQualityKind
-  count: 192
 - uri: http://purl.org/spatialai/stad/v2/core/hasQuantitativeValue
   label: stad:hasQuantitativeValue
+  count: 192
+- uri: http://purl.org/spatialai/stad/v2/core/hasQualityKind
+  label: stad:hasQualityKind
   count: 192
 - uri: http://www.semanticweb.org/efive/n
   label: n
@@ -618,14 +618,14 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#disjointWith
   label: owl:disjointWith
   count: 40
-- uri: http://www.semanticweb.org/efive/hasScale
-  label: hasScale
+- uri: http://www.semanticweb.org/efive/summaryScale
+  label: summaryScale
   count: 32
 - uri: http://www.semanticweb.org/efive/hasPositionSet
   label: hasPositionSet
   count: 32
-- uri: http://www.semanticweb.org/efive/summaryScale
-  label: summaryScale
+- uri: http://www.semanticweb.org/efive/hasScale
+  label: hasScale
   count: 32
 - uri: http://www.w3.org/2002/07/owl#onClass
   label: owl:onClass
@@ -636,20 +636,20 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#hasValue
   label: owl:hasValue
   count: 20
-- uri: http://www.semanticweb.org/efive/hingeHasPercentile
-  label: hingeHasPercentile
-  count: 16
-- uri: http://www.semanticweb.org/efive/hasLowerHingePercentile
-  label: hasLowerHingePercentile
-  count: 16
-- uri: http://www.w3.org/2002/07/owl#intersectionOf
-  label: owl:intersectionOf
-  count: 16
 - uri: http://www.semanticweb.org/efive/hasUpperHingePercentile
   label: hasUpperHingePercentile
   count: 16
 - uri: http://www.semanticweb.org/efive/dateOfSummary
   label: dateOfSummary
+  count: 16
+- uri: http://www.semanticweb.org/efive/hingeHasPercentile
+  label: hingeHasPercentile
+  count: 16
+- uri: http://www.w3.org/2002/07/owl#intersectionOf
+  label: owl:intersectionOf
+  count: 16
+- uri: http://www.semanticweb.org/efive/hasLowerHingePercentile
+  label: hasLowerHingePercentile
   count: 16
 - uri: http://www.w3.org/2002/07/owl#qualifiedCardinality
   label: owl:qualifiedCardinality
@@ -657,65 +657,71 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#maxQualifiedCardinality
   label: owl:maxQualifiedCardinality
   count: 12
-- uri: http://www.semanticweb.org/efive/hasGIQR
-  label: hasGIQR
+- uri: http://www.semanticweb.org/efive/datasetRepresentation
+  label: datasetRepresentation
   count: 8
-- uri: http://purl.org/spatialai/stad/v2/core/hasDatasetDescription
-  label: stad:hasDatasetDescription
-  count: 8
-- uri: http://www.semanticweb.org/efive/hasHingesType
-  label: hasHingesType
-  count: 8
-- uri: http://www.semanticweb.org/efive/aggregateVariable
-  label: aggregateVariable
+- uri: http://www.semanticweb.org/efive/hasMedian
+  label: hasMedian
   count: 8
 - uri: http://www.semanticweb.org/efive/hasMax
   label: hasMax
   count: 8
-- uri: http://www.semanticweb.org/efive/aggregateClass
-  label: aggregateClass
-  count: 8
-- uri: http://www.semanticweb.org/efive/aggregateFilter
-  label: aggregateFilter
-  count: 8
-- uri: http://purl.org/spatialai/stad/v2/mls/realizes
-  label: realizes
-  count: 8
-- uri: http://www.w3.org/2004/02/skos/core#mappingRelation
-  label: skos:mappingRelation
-  count: 8
-- uri: http://www.semanticweb.org/efive/datasetRepresentation
-  label: datasetRepresentation
+- uri: http://www.semanticweb.org/efive/aggregateVariable
+  label: aggregateVariable
   count: 8
 - uri: http://www.semanticweb.org/efive/hasLowerHinge
   label: hasLowerHinge
   count: 8
-- uri: http://www.semanticweb.org/efive/hasVariablename
-  label: hasVariablename
-  count: 8
-- uri: http://www.semanticweb.org/efive/hasUpperHinge
-  label: hasUpperHinge
-  count: 8
-- uri: http://www.semanticweb.org/efive/hasSummaryDescription
-  label: hasSummaryDescription
-  count: 8
-- uri: http://www.semanticweb.org/efive/hasLowerFence
-  label: hasLowerFence
-  count: 8
-- uri: http://www.semanticweb.org/efive/hasUpperFence
-  label: hasUpperFence
+- uri: http://www.semanticweb.org/efive/sizeOfDataset
+  label: sizeOfDataset
   count: 8
 - uri: http://www.semanticweb.org/efive/hasVariableName
   label: hasVariableName
   count: 8
+- uri: http://www.semanticweb.org/efive/aggregateFilter
+  label: aggregateFilter
+  count: 8
+- uri: http://www.w3.org/2004/02/skos/core#mappingRelation
+  label: skos:mappingRelation
+  count: 8
+- uri: http://www.semanticweb.org/efive/hasGIQR
+  label: hasGIQR
+  count: 8
+- uri: http://www.semanticweb.org/efive/hasUpperHinge
+  label: hasUpperHinge
+  count: 8
+- uri: http://purl.org/spatialai/stad/v2/core/hasDatasetDescription
+  label: stad:hasDatasetDescription
+  count: 8
+- uri: http://www.semanticweb.org/efive/hasSummaryDescription
+  label: hasSummaryDescription
+  count: 8
+- uri: http://www.semanticweb.org/efive/hasHingesType
+  label: hasHingesType
+  count: 8
+- uri: http://www.semanticweb.org/efive/hasUpperFence
+  label: hasUpperFence
+  count: 8
+- uri: http://www.w3.org/2002/07/owl#inverseOf
+  label: owl:inverseOf
+  count: 8
 - uri: http://www.semanticweb.org/efive/hasMin
   label: hasMin
   count: 8
-- uri: http://www.semanticweb.org/efive/sizeOfDataset
-  label: sizeOfDataset
+- uri: http://www.semanticweb.org/efive/hasLowerFence
+  label: hasLowerFence
   count: 8
-- uri: http://www.semanticweb.org/efive/hasMedian
-  label: hasMedian
+- uri: http://purl.org/spatialai/stad/v2/mls/implements
+  label: implements
+  count: 8
+- uri: http://www.semanticweb.org/efive/hasVariablename
+  label: hasVariablename
+  count: 8
+- uri: http://www.semanticweb.org/efive/aggFilterOnObjectProp
+  label: aggFilterOnObjectProp
+  count: 8
+- uri: http://www.semanticweb.org/efive/aggregateClass
+  label: aggregateClass
   count: 8
 - uri: http://www.w3.org/2004/02/skos/core#closeMatch
   label: skos:closeMatch
@@ -723,14 +729,8 @@ property_partitions:
 - uri: http://purl.org/spatialai/stad/v2/mls/executes
   label: executes
   count: 8
-- uri: http://www.semanticweb.org/efive/aggFilterOnObjectProp
-  label: aggFilterOnObjectProp
-  count: 8
-- uri: http://purl.org/spatialai/stad/v2/mls/implements
-  label: implements
-  count: 8
-- uri: http://www.w3.org/2002/07/owl#inverseOf
-  label: owl:inverseOf
+- uri: http://purl.org/spatialai/stad/v2/mls/realizes
+  label: realizes
   count: 8
 - uri: http://www.w3.org/2000/01/rdf-schema#seeAlso
   label: rdfs:seeAlso
@@ -741,38 +741,35 @@ property_partitions:
 - uri: http://purl.org/dc/terms/contributor
   label: dct:contributor
   count: 5
-- uri: http://purl.org/dc/terms/description
-  label: dct:description
+- uri: http://www.w3.org/2003/11/swrl#propertyPredicate
+  label: swrl:propertyPredicate
   count: 4
 - uri: http://www.w3.org/2003/11/swrl#argument2
   label: swrl:argument2
   count: 4
-- uri: http://www.w3.org/2003/11/swrl#propertyPredicate
-  label: swrl:propertyPredicate
-  count: 4
-- uri: http://www.w3.org/2003/11/swrl#argument1
-  label: swrl:argument1
+- uri: http://purl.org/dc/terms/description
+  label: dct:description
   count: 4
 - uri: http://www.w3.org/2002/07/owl#unionOf
   label: owl:unionOf
   count: 4
+- uri: http://www.w3.org/2003/11/swrl#argument1
+  label: swrl:argument1
+  count: 4
+- uri: http://www.w3.org/2002/07/owl#propertyChainAxiom
+  label: owl:propertyChainAxiom
+  count: 3
+- uri: http://www.w3.org/2002/07/owl#cardinality
+  label: owl:cardinality
+  count: 3
 - uri: http://purl.org/dc/terms/created
   label: dct:created
   count: 3
 - uri: http://www.w3.org/2002/07/owl#someValuesFrom
   label: owl:someValuesFrom
   count: 3
-- uri: http://www.w3.org/2002/07/owl#cardinality
-  label: owl:cardinality
-  count: 3
-- uri: http://www.w3.org/2002/07/owl#propertyChainAxiom
-  label: owl:propertyChainAxiom
-  count: 3
 - uri: http://www.w3.org/2002/07/owl#PropertyChainAxiom
   label: owl:PropertyChainAxiom
-  count: 2
-- uri: http://www.w3.org/2002/07/owl#versionInfo
-  label: owl:versionInfo
   count: 2
 - uri: http://purl.org/dc/terms/creator
   label: dct:creator
@@ -780,32 +777,17 @@ property_partitions:
 - uri: http://purl.org/dc/terms/modified
   label: dct:modified
   count: 2
-- uri: http://www.w3.org/2002/07/owl#subPropertyOf
-  label: owl:subPropertyOf
-  count: 1
-- uri: http://www.w3.org/2003/11/swrl#head
-  label: swrl:head
-  count: 1
-- uri: http://www.w3.org/2002/07/owl#members
-  label: owl:members
-  count: 1
-- uri: http://www.w3.org/2001/XMLSchema#maxInclusive
-  label: xsd:maxInclusive
-  count: 1
+- uri: http://www.w3.org/2002/07/owl#versionInfo
+  label: owl:versionInfo
+  count: 2
 - uri: http://www.w3.org/2003/11/swrl#body
   label: swrl:body
   count: 1
-- uri: https://schema.org/rangeIncludes
-  label: schema:rangeIncludes
-  count: 1
-- uri: http://www.w3.org/2001/XMLSchema#minInclusive
-  label: xsd:minInclusive
-  count: 1
-- uri: http://purl.org/dc/terms/publisher
-  label: dct:publisher
-  count: 1
 - uri: http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
   label: isRuleEnabled
+  count: 1
+- uri: http://purl.org/dc/elements/1.1/source
+  label: dc:source
   count: 1
 - uri: https://schema.org/domainIncludes
   label: schema:domainIncludes
@@ -813,8 +795,23 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#withRestrictions
   label: owl:withRestrictions
   count: 1
-- uri: http://www.w3.org/2002/07/owl#onDatatype
-  label: owl:onDatatype
+- uri: http://purl.org/dc/terms/publisher
+  label: dct:publisher
+  count: 1
+- uri: http://www.w3.org/2001/XMLSchema#minInclusive
+  label: xsd:minInclusive
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#subPropertyOf
+  label: owl:subPropertyOf
+  count: 1
+- uri: https://schema.org/rangeIncludes
+  label: schema:rangeIncludes
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#members
+  label: owl:members
+  count: 1
+- uri: http://www.w3.org/2001/XMLSchema#maxInclusive
+  label: xsd:maxInclusive
   count: 1
 - uri: http://qudt.org/schema/qudt/hasQuantityKind
   label: qudt:hasQuantityKind
@@ -822,6 +819,9 @@ property_partitions:
 - uri: http://www.w3.org/2004/02/skos/core#definition
   label: skos:definition
   count: 1
-- uri: http://purl.org/dc/elements/1.1/source
-  label: dc:source
+- uri: http://www.w3.org/2003/11/swrl#head
+  label: swrl:head
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#onDatatype
+  label: owl:onDatatype
   count: 1

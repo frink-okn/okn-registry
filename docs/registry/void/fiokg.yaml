@@ -3,7 +3,7 @@ distinct_subjects: 18379636
 distinct_objects: 45801705
 properties: 68
 classes: 109
-last_checked: '2026-03-27'
+last_checked: '2026-04-07'
 class_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#Resource
   label: rdfs:Resource
@@ -92,11 +92,11 @@ class_partitions:
 - uri: http://w3id.org/fio/v1/epa-frs#EnvironmentalInterestByProgram
   label: fio-epa:EnvironmentalInterestByProgram
   count: 194
-- uri: http://www.w3.org/ns/prov#Agent
-  label: prov:Agent
-  count: 180
 - uri: http://w3id.org/fio/v1/fio#Organization
   label: fio:Organization
+  count: 180
+- uri: http://www.w3.org/ns/prov#Agent
+  label: prov:Agent
   count: 180
 - uri: http://w3id.org/fio/v1/epa-frs#Agency
   label: fio-epa:Agency
@@ -161,20 +161,20 @@ class_partitions:
 - uri: http://w3id.org/fio/v1/epa-frs#Agency.Defense
   label: fio-epa:Agency.Defense
   count: 19
-- uri: http://w3id.org/fio/v1/epa-frs#RemediationRedevelopmentProgram
-  label: fio-epa:RemediationRedevelopmentProgram
-  count: 17
 - uri: http://w3id.org/fio/v1/epa-frs#SolidWasteProgram
   label: fio-epa:SolidWasteProgram
+  count: 17
+- uri: http://w3id.org/fio/v1/epa-frs#RemediationRedevelopmentProgram
+  label: fio-epa:RemediationRedevelopmentProgram
   count: 17
 - uri: http://w3id.org/fio/v1/epa-frs#SiteInterest
   label: fio-epa:SiteInterest
   count: 16
-- uri: http://w3id.org/fio/v1/epa-frs#FacilityType
-  label: fio-epa:FacilityType
-  count: 16
 - uri: http://w3id.org/fio/v1/epa-frs#PermitInterest
   label: fio-epa:PermitInterest
+  count: 16
+- uri: http://w3id.org/fio/v1/epa-frs#FacilityType
+  label: fio-epa:FacilityType
   count: 16
 - uri: http://w3id.org/fio/v1/epa-frs#Agency.HomelandSecurity
   label: fio-epa:Agency.HomelandSecurity
@@ -182,11 +182,11 @@ class_partitions:
 - uri: http://w3id.org/fio/v1/epa-frs#Agency.Interior
   label: fio-epa:Agency.Interior
   count: 10
-- uri: http://w3id.org/fio/v1/epa-frs#Agency.Agriculture
-  label: fio-epa:Agency.Agriculture
-  count: 10
 - uri: http://w3id.org/fio/v1/epa-frs#Agency.Transportation
   label: fio-epa:Agency.Transportation
+  count: 10
+- uri: http://w3id.org/fio/v1/epa-frs#Agency.Agriculture
+  label: fio-epa:Agency.Agriculture
   count: 10
 - uri: http://www.w3.org/2002/07/owl#Ontology
   label: owl:Ontology
@@ -200,20 +200,20 @@ class_partitions:
 - uri: http://w3id.org/fio/v1/epa-frs#RadiationProtectionProgram
   label: fio-epa:RadiationProtectionProgram
   count: 7
-- uri: http://w3id.org/fio/v1/epa-frs#TribalSystem
-  label: fio-epa:TribalSystem
-  count: 6
-- uri: http://w3id.org/fio/v1/epa-frs#AssistanceSupportProgram
-  label: fio-epa:AssistanceSupportProgram
+- uri: http://w3id.org/fio/v1/epa-frs#Agency.HealthandHumanServices
+  label: fio-epa:Agency.HealthandHumanServices
   count: 6
 - uri: http://w3id.org/fio/v1/epa-frs#ReportingInterest
   label: fio-epa:ReportingInterest
   count: 6
-- uri: http://w3id.org/fio/v1/epa-frs#Agency.HealthandHumanServices
-  label: fio-epa:Agency.HealthandHumanServices
+- uri: http://w3id.org/fio/v1/epa-frs#TribalSystem
+  label: fio-epa:TribalSystem
   count: 6
 - uri: http://www.w3.org/2002/07/owl#SymmetricProperty
   label: owl:SymmetricProperty
+  count: 6
+- uri: http://w3id.org/fio/v1/epa-frs#AssistanceSupportProgram
+  label: fio-epa:AssistanceSupportProgram
   count: 6
 - uri: http://w3id.org/fio/v1/epa-frs#Agency.Justice
   label: fio-epa:Agency.Justice
@@ -221,50 +221,59 @@ class_partitions:
 - uri: http://w3id.org/fio/v1/epa-frs#Agency.Commerce
   label: fio-epa:Agency.Commerce
   count: 6
-- uri: http://w3id.org/fio/v1/epa-frs#PesticidesProgram
-  label: fio-epa:PesticidesProgram
-  count: 5
 - uri: http://www.w3.org/2002/07/owl#TransitiveProperty
   label: owl:TransitiveProperty
   count: 5
-- uri: http://w3id.org/fio/v1/epa-frs#DrinkingWaterProgram
-  label: fio-epa:DrinkingWaterProgram
-  count: 5
-- uri: http://w3id.org/fio/v1/epa-frs#EnforcementInterest
-  label: fio-epa:EnforcementInterest
-  count: 5
-- uri: http://www.w3.org/2002/07/owl#OntologyProperty
-  label: owl:OntologyProperty
+- uri: http://w3id.org/fio/v1/epa-frs#PesticidesProgram
+  label: fio-epa:PesticidesProgram
   count: 5
 - uri: http://w3id.org/fio/v1/epa-frs#ChemicalStorageProgram
   label: fio-epa:ChemicalStorageProgram
   count: 5
+- uri: http://w3id.org/fio/v1/epa-frs#EnforcementInterest
+  label: fio-epa:EnforcementInterest
+  count: 5
 - uri: http://w3id.org/fio/v1/epa-frs#LegalEnforcementActivities
   label: fio-epa:LegalEnforcementActivities
   count: 5
+- uri: http://w3id.org/fio/v1/epa-frs#DrinkingWaterProgram
+  label: fio-epa:DrinkingWaterProgram
+  count: 5
+- uri: http://www.w3.org/2002/07/owl#OntologyProperty
+  label: owl:OntologyProperty
+  count: 5
+- uri: http://w3id.org/fio/v1/epa-frs#Agency.Treasury
+  label: fio-epa:Agency.Treasury
+  count: 4
 - uri: http://w3id.org/fio/v1/epa-frs#Agency.Labor
   label: fio-epa:Agency.Labor
-  count: 4
-- uri: http://w3id.org/fio/v1/epa-frs#AnimalOperation
-  label: fio-epa:AnimalOperation
-  count: 4
-- uri: http://w3id.org/fio/v1/epa-frs#RegistryInterest
-  label: fio-epa:RegistryInterest
-  count: 4
-- uri: http://w3id.org/fio/v1/epa-frs#WaterResourcesProgram
-  label: fio-epa:WaterResourcesProgram
   count: 4
 - uri: http://w3id.org/fio/v1/epa-frs#RiskInterest
   label: fio-epa:RiskInterest
   count: 4
+- uri: http://w3id.org/fio/v1/epa-frs#WaterResourcesProgram
+  label: fio-epa:WaterResourcesProgram
+  count: 4
+- uri: http://w3id.org/fio/v1/epa-frs#RegistryInterest
+  label: fio-epa:RegistryInterest
+  count: 4
 - uri: http://w3id.org/fio/v1/epa-frs#GroundWaterProgram
   label: fio-epa:GroundWaterProgram
   count: 4
-- uri: http://w3id.org/fio/v1/epa-frs#Agency.Treasury
-  label: fio-epa:Agency.Treasury
+- uri: http://w3id.org/fio/v1/epa-frs#AnimalOperation
+  label: fio-epa:AnimalOperation
   count: 4
-- uri: http://w3id.org/fio/v1/epa-frs#Agency.Congress
-  label: fio-epa:Agency.Congress
+- uri: http://w3id.org/fio/v1/epa-frs#FacilitySiteIdentification
+  label: fio-epa:FacilitySiteIdentification
+  count: 3
+- uri: http://w3id.org/fio/v1/epa-frs#LegacySystem
+  label: fio-epa:LegacySystem
+  count: 3
+- uri: http://w3id.org/fio/v1/epa-frs#RegistrySystem
+  label: fio-epa:RegistrySystem
+  count: 3
+- uri: http://w3id.org/fio/v1/epa-frs#PermitSystem
+  label: fio-epa:PermitSystem
   count: 3
 - uri: http://w3id.org/fio/v1/epa-frs#ComplianceSystem
   label: fio-epa:ComplianceSystem
@@ -272,75 +281,66 @@ class_partitions:
 - uri: http://w3id.org/fio/v1/epa-frs#UndergroundStorageTankProgram
   label: fio-epa:UndergroundStorageTankProgram
   count: 3
-- uri: http://w3id.org/fio/v1/epa-frs#LegacySystem
-  label: fio-epa:LegacySystem
-  count: 3
-- uri: http://w3id.org/fio/v1/epa-frs#Agency.VeteransAffairs
-  label: fio-epa:Agency.VeteransAffairs
-  count: 3
-- uri: http://w3id.org/fio/v1/epa-frs#FacilitySiteIdentification
-  label: fio-epa:FacilitySiteIdentification
-  count: 3
-- uri: http://w3id.org/fio/v1/epa-frs#RegistrySystem
-  label: fio-epa:RegistrySystem
-  count: 3
 - uri: http://w3id.org/fio/v1/epa-frs#ChemicalReleaseProgram
   label: fio-epa:ChemicalReleaseProgram
   count: 3
 - uri: http://w3id.org/fio/v1/epa-frs#Agency.State
   label: fio-epa:Agency.State
   count: 3
-- uri: http://w3id.org/fio/v1/epa-frs#PermitSystem
-  label: fio-epa:PermitSystem
+- uri: http://w3id.org/fio/v1/epa-frs#Agency.VeteransAffairs
+  label: fio-epa:Agency.VeteransAffairs
   count: 3
-- uri: http://w3id.org/fio/v1/epa-frs#EcologyOperation
-  label: fio-epa:EcologyOperation
-  count: 2
-- uri: http://w3id.org/fio/v1/epa-frs#Agency.HousingandUrbanDevelopment
-  label: fio-epa:Agency.HousingandUrbanDevelopment
-  count: 2
+- uri: http://w3id.org/fio/v1/epa-frs#Agency.Congress
+  label: fio-epa:Agency.Congress
+  count: 3
 - uri: http://w3id.org/fio/v1/epa-frs#CoastalOceanProgram
   label: fio-epa:CoastalOceanProgram
+  count: 2
+- uri: http://w3id.org/fio/v1/epa-frs#EcologyOperation
+  label: fio-epa:EcologyOperation
   count: 2
 - uri: http://w3id.org/fio/v1/epa-frs#ComplianceInterest
   label: fio-epa:ComplianceInterest
   count: 2
-- uri: http://w3id.org/fio/v1/epa-frs#EnforcementSystem
-  label: fio-epa:EnforcementSystem
-  count: 1
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty
-  label: rdf:ObjectProperty
-  count: 1
-- uri: http://w3id.org/fio/v1/epa-frs#Agency.Judicial
-  label: fio-epa:Agency.Judicial
+- uri: http://w3id.org/fio/v1/epa-frs#Agency.HousingandUrbanDevelopment
+  label: fio-epa:Agency.HousingandUrbanDevelopment
+  count: 2
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_1
+  label: kwg-ont:AdministrativeRegion_1
   count: 1
 - uri: http://w3id.org/fio/v1/epa-frs#HealthSafetyProgram
   label: fio-epa:HealthSafetyProgram
   count: 1
-- uri: http://w3id.org/fio/v1/epa-frs#GrantSystem
-  label: fio-epa:GrantSystem
+- uri: http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
+  label: rdfs:ContainerMembershipProperty
   count: 1
 - uri: http://w3id.org/fio/v1/epa-frs#ProjectSystem
   label: fio-epa:ProjectSystem
   count: 1
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_1
-  label: kwg-ont:AdministrativeRegion_1
-  count: 1
-- uri: http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
-  label: rdfs:ContainerMembershipProperty
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty
+  label: rdf:ObjectProperty
   count: 1
 - uri: http://www.w3.org/2002/07/owl#ReflexiveProperty
   label: owl:ReflexiveProperty
+  count: 1
+- uri: http://w3id.org/fio/v1/epa-frs#Agency.Judicial
+  label: fio-epa:Agency.Judicial
+  count: 1
+- uri: http://w3id.org/fio/v1/epa-frs#GrantSystem
+  label: fio-epa:GrantSystem
+  count: 1
+- uri: http://w3id.org/fio/v1/epa-frs#EnforcementSystem
+  label: fio-epa:EnforcementSystem
   count: 1
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 90063301
-- uri: http://purl.org/spatialai/spatial/spatial-full#spatiallyRelatedTo
-  label: spatial-full:spatiallyRelatedTo
-  count: 19326546
 - uri: http://purl.org/spatialai/spatial/spatial-full#connectedTo
   label: spatial-full:connectedTo
+  count: 19326546
+- uri: http://purl.org/spatialai/spatial/spatial-full#spatiallyRelatedTo
+  label: spatial-full:spatiallyRelatedTo
   count: 19326546
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/spatialRelation
   label: kwg-ont:spatialRelation
@@ -456,11 +456,11 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#equivalentProperty
   label: owl:equivalentProperty
   count: 42
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
-  label: rdf:rest
-  count: 36
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
   label: rdf:first
+  count: 36
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+  label: rdf:rest
   count: 36
 - uri: http://www.w3.org/2002/07/owl#onProperty
   label: owl:onProperty
@@ -492,48 +492,48 @@ property_partitions:
 - uri: http://purl.org/dc/terms/contributor
   label: dct:contributor
   count: 5
+- uri: http://purl.org/dc/terms/title
+  label: dct:title
+  count: 4
 - uri: http://www.w3.org/2002/07/owl#versionInfo
   label: owl:versionInfo
-  count: 4
-- uri: http://w3id.org/fio/v1/epa-frs#replacedBy
-  label: fio-epa:replacedBy
   count: 4
 - uri: http://www.w3.org/2002/07/owl#hasValue
   label: owl:hasValue
   count: 4
-- uri: http://purl.org/dc/terms/title
-  label: dct:title
+- uri: http://w3id.org/fio/v1/epa-frs#replacedBy
+  label: fio-epa:replacedBy
   count: 4
+- uri: http://purl.org/dc/terms/publisher
+  label: dct:publisher
+  count: 3
+- uri: http://purl.org/dc/terms/source
+  label: dct:source
+  count: 3
 - uri: http://www.w3.org/2002/07/owl#versionIRI
   label: owl:versionIRI
   count: 3
 - uri: http://w3id.org/fio/v1/epa-frs#partOf
   label: fio-epa:partOf
   count: 3
-- uri: http://purl.org/dc/terms/source
-  label: dct:source
-  count: 3
-- uri: http://purl.org/dc/terms/publisher
-  label: dct:publisher
-  count: 3
-- uri: http://purl.org/dc/terms/issued
-  label: dct:issued
-  count: 2
 - uri: http://www.w3.org/2002/07/owl#disjointWith
   label: owl:disjointWith
+  count: 2
+- uri: http://purl.org/dc/terms/issued
+  label: dct:issued
   count: 2
 - uri: http://www.w3.org/2000/01/rdf-schema#subclassOf
   label: rdfs:subclassOf
   count: 2
-- uri: http://purl.org/dc/elements/1.1/source
-  label: dc:source
-  count: 1
 - uri: http://www.w3.org/2002/07/owl#allValuesFrom
   label: owl:allValuesFrom
+  count: 1
+- uri: http://purl.org/dc/terms/decription
+  label: dct:decription
   count: 1
 - uri: http://www.w3.org/2002/07/owl#imports
   label: owl:imports
   count: 1
-- uri: http://purl.org/dc/terms/decription
-  label: dct:decription
+- uri: http://purl.org/dc/elements/1.1/source
+  label: dc:source
   count: 1
