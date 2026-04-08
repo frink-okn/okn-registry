@@ -42,8 +42,7 @@ WHERE {
   FILTER(xsd:decimal(?log2Ratio) <= -1.0)
 
   # 5. Verify the target is a Phosphorylation PTM
-  ?ptmSite a upcore:PTM_Annotation ;
-           dc:type 'PHOSPHORYLATION' ;
+  ?ptmSite dc:type 'PHOSPHORYLATION' ;
            rdfs:label ?ptmLabel .
 }
 ORDER BY ?log2Ratio
