@@ -295,7 +295,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "mkdocs" },
+    { name = "mkdocs", specifier = "<2.0" },
     { name = "mkdocs-material" },
     { name = "mkdocs-mermaid2-plugin" },
     { name = "python-frontmatter" },
