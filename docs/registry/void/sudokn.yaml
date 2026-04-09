@@ -3,7 +3,7 @@ distinct_subjects: 1808749
 distinct_objects: 2994517
 properties: 57
 classes: 818
-last_checked: '2026-04-07'
+last_checked: '2026-04-09'
 class_partitions:
 - uri: https://spec.industrialontologies.org/ontology/core/Core/MaterialProduct
   label: iof-core:MaterialProduct

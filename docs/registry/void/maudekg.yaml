@@ -3,7 +3,7 @@ distinct_subjects: 19383
 distinct_objects: 15452
 properties: 7
 classes: 2
-last_checked: '2026-04-07'
+last_checked: '2026-04-09'
 class_partitions:
 - uri: http://medicaldevice.com/ontology/MAUDEReport
   label: MAUDEReport
