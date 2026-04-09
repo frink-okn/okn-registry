@@ -3,7 +3,7 @@ distinct_subjects: 33958
 distinct_objects: 18079
 properties: 11
 classes: 5
-last_checked: '2026-04-07'
+last_checked: '2026-04-09'
 class_partitions:
 - uri: https://metadata.phila.gov/Incident
   label: Incident
