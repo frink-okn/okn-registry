@@ -1,0 +1,13 @@
+#+ summary: List all proteins with labels
+#+ tags:
+#+   - ncipidkg
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX SIO: <http://semanticscience.org/resource/SIO_>
+
+SELECT ?protein ?label
+WHERE {
+  ?protein a SIO:010043 ;
+           rdfs:label ?label .
+}
+ORDER BY ?label
