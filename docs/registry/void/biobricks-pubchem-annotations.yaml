@@ -3,7 +3,7 @@ distinct_subjects: 21436186
 distinct_objects: 36897927
 properties: 6
 classes: 1
-last_checked: '2026-04-09'
+last_checked: '2026-04-12'
 class_partitions:
 - uri: http://www.w3.org/ns/oa#Annotation
   label: Annotation
