@@ -1,0 +1,15 @@
+#+ summary: List neighbors of HDAC1 protein
+#+ tags:
+#+   - ncipidkg
+
+PREFIX uniprot: <http://identifiers.org/uniprot/>
+PREFIX RO: <http://purl.obolibrary.org/obo/RO_>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?relation ?neighbor ?neighborLabel
+WHERE {
+  uniprot:Q13547 ?relation ?neighbor .
+  FILTER(STRSTARTS(STR(?relation), STR(RO:)))
+
+  OPTIONAL { ?neighbor rdfs:label ?neighborLabel }
+}
