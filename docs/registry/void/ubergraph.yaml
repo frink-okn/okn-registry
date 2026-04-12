@@ -3,7 +3,7 @@ distinct_subjects: 14204277
 distinct_objects: 17308286
 properties: 1194
 classes: 86
-last_checked: '2026-04-09'
+last_checked: '2026-04-12'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Axiom
   label: owl:Axiom
