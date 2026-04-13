@@ -3,7 +3,7 @@ distinct_subjects: 67191
 distinct_objects: 158319
 properties: 55
 classes: 16
-last_checked: '2026-03-27'
+last_checked: '2026-04-13'
 class_partitions:
 - uri: http://sail.ua.edu/ruralkg/administrativearea/City
   label: ruralkg-area:City
@@ -69,20 +69,20 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/administrativearea/latitude
   label: ruralkg-area:latitude
   count: 31120
-- uri: http://sail.ua.edu/ruralkg/administrativearea/primaryCounty
-  label: ruralkg-area:primaryCounty
-  count: 31120
 - uri: http://sail.ua.edu/ruralkg/administrativearea/longitude
   label: ruralkg-area:longitude
   count: 31120
-- uri: http://sail.ua.edu/ruralkg/variable/hasAnswer
-  label: ruralkg-var:hasAnswer
-  count: 17181
+- uri: http://sail.ua.edu/ruralkg/administrativearea/primaryCounty
+  label: ruralkg-area:primaryCounty
+  count: 31120
 - uri: http://sail.ua.edu/ruralkg/variable/answerContent
   label: ruralkg-var:answerContent
   count: 17181
 - uri: http://sail.ua.edu/ruralkg/variable/answerCode
   label: ruralkg-var:answerCode
+  count: 17181
+- uri: http://sail.ua.edu/ruralkg/variable/hasAnswer
+  label: ruralkg-var:hasAnswer
   count: 17181
 - uri: http://sail.ua.edu/ruralkg/treatment/name
   label: ruralkg-treatment:name
@@ -90,17 +90,17 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/treatment/alias
   label: ruralkg-treatment:alias
   count: 9037
-- uri: http://sail.ua.edu/ruralkg/treatment/phone
-  label: ruralkg-treatment:phone
-  count: 9037
 - uri: http://sail.ua.edu/ruralkg/treatment/zipcode
   label: ruralkg-treatment:zipcode
   count: 9037
-- uri: http://sail.ua.edu/ruralkg/treatment/inCity
-  label: ruralkg-treatment:inCity
+- uri: http://sail.ua.edu/ruralkg/treatment/phone
+  label: ruralkg-treatment:phone
   count: 9037
 - uri: http://sail.ua.edu/ruralkg/treatment/address
   label: ruralkg-treatment:address
+  count: 9037
+- uri: http://sail.ua.edu/ruralkg/treatment/inCity
+  label: ruralkg-treatment:inCity
   count: 9037
 - uri: http://sail.ua.edu/ruralkg/administrativearea/fips
   label: ruralkg-area:fips
@@ -111,20 +111,20 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/settlementtype/year
   label: ruralkg-settlement:year
   count: 3244
-- uri: http://sail.ua.edu/ruralkg/settlementtype/censusCounty
-  label: ruralkg-settlement:censusCounty
-  count: 3234
 - uri: http://sail.ua.edu/ruralkg/settlementtype/population
   label: ruralkg-settlement:population
+  count: 3234
+- uri: http://sail.ua.edu/ruralkg/settlementtype/censusCounty
+  label: ruralkg-settlement:censusCounty
   count: 3234
 - uri: http://sail.ua.edu/ruralkg/settlementtype/hasRUCC
   label: ruralkg-settlement:hasRUCC
   count: 3234
-- uri: http://sail.ua.edu/ruralkg/variable/generatedDescription
-  label: ruralkg-var:generatedDescription
-  count: 2934
 - uri: http://sail.ua.edu/ruralkg/variable/content
   label: ruralkg-var:content
+  count: 2934
+- uri: http://sail.ua.edu/ruralkg/variable/generatedDescription
+  label: ruralkg-var:generatedDescription
   count: 2934
 - uri: http://sail.ua.edu/ruralkg/variable/fromDataset
   label: ruralkg-var:fromDataset
@@ -144,17 +144,17 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/justice/hasVariable
   label: ruralkg-justice:hasVariable
   count: 309
-- uri: http://sail.ua.edu/ruralkg/treatment/year
-  label: ruralkg-treatment:year
-  count: 197
 - uri: http://sail.ua.edu/ruralkg/treatment/code
   label: ruralkg-treatment:code
   count: 197
-- uri: http://sail.ua.edu/ruralkg/treatment/description
-  label: ruralkg-treatment:description
-  count: 176
+- uri: http://sail.ua.edu/ruralkg/treatment/year
+  label: ruralkg-treatment:year
+  count: 197
 - uri: http://sail.ua.edu/ruralkg/treatment/containsService
   label: ruralkg-treatment:containsService
+  count: 176
+- uri: http://sail.ua.edu/ruralkg/treatment/description
+  label: ruralkg-treatment:description
   count: 176
 - uri: http://www.w3.org/2000/01/rdf-schema#comment
   label: rdfs:comment
@@ -180,35 +180,32 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/conceptType
   label: ruralkg-sa:conceptType
   count: 39
-- uri: http://sail.ua.edu/ruralkg/substanceabuse/domainCategory
-  label: ruralkg-sa:domainCategory
-  count: 39
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/hierarchyLevel
   label: ruralkg-sa:hierarchyLevel
   count: 39
-- uri: http://sail.ua.edu/ruralkg/substanceabuse/description
-  label: ruralkg-sa:description
-  count: 23
+- uri: http://sail.ua.edu/ruralkg/substanceabuse/domainCategory
+  label: ruralkg-sa:domainCategory
+  count: 39
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/code
   label: ruralkg-sa:code
   count: 23
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/identifier
   label: ruralkg-sa:identifier
   count: 23
-- uri: http://sail.ua.edu/ruralkg/settlementtype/description
-  label: ruralkg-settlement:description
-  count: 10
+- uri: http://sail.ua.edu/ruralkg/substanceabuse/description
+  label: ruralkg-sa:description
+  count: 23
 - uri: http://sail.ua.edu/ruralkg/settlementtype/code
   label: ruralkg-settlement:code
+  count: 10
+- uri: http://sail.ua.edu/ruralkg/settlementtype/description
+  label: ruralkg-settlement:description
   count: 10
 - uri: http://www.w3.org/2000/01/rdf-schema#isDefinedBy
   label: rdfs:isDefinedBy
   count: 6
 - uri: http://purl.org/dc/terms/description
   label: dct:description
-  count: 1
-- uri: http://purl.org/dc/terms/creator
-  label: dct:creator
   count: 1
 - uri: http://purl.org/dc/terms/hasVersion
   label: dct:hasVersion
@@ -218,4 +215,7 @@ property_partitions:
   count: 1
 - uri: http://purl.org/dc/terms/created
   label: dct:created
+  count: 1
+- uri: http://purl.org/dc/terms/creator
+  label: dct:creator
   count: 1

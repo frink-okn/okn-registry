@@ -3,7 +3,7 @@ distinct_subjects: 14204277
 distinct_objects: 17308286
 properties: 1194
 classes: 86
-last_checked: '2026-03-27'
+last_checked: '2026-04-13'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Axiom
   label: owl:Axiom
@@ -113,38 +113,38 @@ class_partitions:
 - uri: http://www.w3.org/2002/07/owl#FunctionalProperty
   label: owl:FunctionalProperty
   count: 11
+- uri: http://purl.obolibrary.org/obo/OBI_0002232
+  label: obo:OBI_0002232
+  count: 10
 - uri: http://purl.obolibrary.org/obo/OBI_0000713
   label: obo:OBI_0000713
   count: 10
 - uri: http://purl.obolibrary.org/obo/IAO_0000098
   label: obo:IAO_0000098
   count: 10
-- uri: http://purl.obolibrary.org/obo/OBI_0002232
-  label: obo:OBI_0002232
-  count: 10
 - uri: http://purl.obolibrary.org/obo/IAO_0000078
   label: obo:IAO_0000078
   count: 9
-- uri: http://www.w3.org/2002/07/owl#AllDifferent
-  label: owl:AllDifferent
-  count: 8
-- uri: http://purl.obolibrary.org/obo/OBI_0002270
-  label: obo:OBI_0002270
-  count: 8
 - uri: http://purl.obolibrary.org/obo/PCL_0010002
   label: obo:PCL_0010002
   count: 8
 - uri: http://www.w3.org/2002/07/owl#IrreflexiveProperty
   label: owl:IrreflexiveProperty
   count: 8
-- uri: http://purl.obolibrary.org/obo/OBI_0002290
-  label: obo:OBI_0002290
+- uri: http://purl.obolibrary.org/obo/OBI_0002270
+  label: obo:OBI_0002270
+  count: 8
+- uri: http://www.w3.org/2002/07/owl#AllDifferent
+  label: owl:AllDifferent
+  count: 8
+- uri: http://purl.obolibrary.org/obo/OBI_0002224
+  label: obo:OBI_0002224
   count: 7
 - uri: http://purl.obolibrary.org/obo/OBI_0002298
   label: obo:OBI_0002298
   count: 7
-- uri: http://purl.obolibrary.org/obo/OBI_0002224
-  label: obo:OBI_0002224
+- uri: http://purl.obolibrary.org/obo/OBI_0002290
+  label: obo:OBI_0002290
   count: 7
 - uri: http://purl.obolibrary.org/obo/IAO_0000225
   label: obo:IAO_0000225
@@ -152,26 +152,29 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/OBI_0002357
   label: obo:OBI_0002357
   count: 5
-- uri: http://purl.obolibrary.org/obo/OBI_0002219
-  label: obo:OBI_0002219
+- uri: http://purl.obolibrary.org/obo/OBI_0002279
+  label: obo:OBI_0002279
   count: 4
 - uri: https://w3id.org/linkml/SubsetDefinition
   label: linkml:SubsetDefinition
   count: 4
-- uri: http://purl.obolibrary.org/obo/OBI_0002205
-  label: obo:OBI_0002205
-  count: 4
-- uri: http://purl.obolibrary.org/obo/OBI_0002363
-  label: obo:OBI_0002363
+- uri: http://purl.obolibrary.org/obo/OBI_0002219
+  label: obo:OBI_0002219
   count: 4
 - uri: http://purl.obolibrary.org/obo/OBI_0002210
   label: obo:OBI_0002210
   count: 4
-- uri: http://purl.obolibrary.org/obo/OBI_0002279
-  label: obo:OBI_0002279
+- uri: http://purl.obolibrary.org/obo/OBI_0002363
+  label: obo:OBI_0002363
   count: 4
-- uri: http://purl.obolibrary.org/obo/IAO_0000409
-  label: obo:IAO_0000409
+- uri: http://purl.obolibrary.org/obo/OBI_0002205
+  label: obo:OBI_0002205
+  count: 4
+- uri: http://purl.obolibrary.org/obo/OBI_0002310
+  label: obo:OBI_0002310
+  count: 3
+- uri: http://www.w3.org/2002/07/owl#InverseFunctionalProperty
+  label: owl:InverseFunctionalProperty
   count: 3
 - uri: http://purl.obolibrary.org/obo/OBI_0000963
   label: obo:OBI_0000963
@@ -179,12 +182,12 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/OBI_0002306
   label: obo:OBI_0002306
   count: 3
-- uri: http://www.w3.org/2002/07/owl#InverseFunctionalProperty
-  label: owl:InverseFunctionalProperty
+- uri: http://purl.obolibrary.org/obo/IAO_0000409
+  label: obo:IAO_0000409
   count: 3
-- uri: http://purl.obolibrary.org/obo/OBI_0002310
-  label: obo:OBI_0002310
-  count: 3
+- uri: https://w3id.org/linkml/AltDescription
+  label: linkml:AltDescription
+  count: 2
 - uri: http://purl.obolibrary.org/obo/OBI_0002284
   label: obo:OBI_0002284
   count: 2
@@ -197,47 +200,35 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/OBI_0002287
   label: obo:OBI_0002287
   count: 2
-- uri: http://purl.obolibrary.org/obo/OBI_0200190
-  label: obo:OBI_0200190
-  count: 2
 - uri: http://www.w3.org/2002/07/owl#AsymmetricProperty
   label: owl:AsymmetricProperty
   count: 2
-- uri: https://w3id.org/linkml/AltDescription
-  label: linkml:AltDescription
+- uri: http://purl.obolibrary.org/obo/OBI_0200190
+  label: obo:OBI_0200190
   count: 2
+- uri: http://purl.obolibrary.org/obo/OBI_0200041
+  label: obo:OBI_0200041
+  count: 1
 - uri: http://purl.obolibrary.org/obo/ENVO_01001780
   label: obo:ENVO_01001780
   count: 1
-- uri: http://purl.obolibrary.org/obo/OBI_0000245
-  label: obo:OBI_0000245
+- uri: http://purl.obolibrary.org/obo/OBI_0000727
+  label: obo:OBI_0000727
   count: 1
-- uri: http://purl.obolibrary.org/obo/OBI_0200041
-  label: obo:OBI_0200041
+- uri: http://purl.obolibrary.org/obo/ENVO_01000958
+  label: obo:ENVO_01000958
   count: 1
 - uri: http://purl.obolibrary.org/obo/OBI_0000726
   label: obo:OBI_0000726
   count: 1
-- uri: http://purl.obolibrary.org/obo/OBI_0002989
-  label: obo:OBI_0002989
+- uri: http://purl.obolibrary.org/obo/OBI_0000450
+  label: obo:OBI_0000450
   count: 1
 - uri: http://purl.obolibrary.org/obo/OBI_0200051
   label: obo:OBI_0200051
   count: 1
-- uri: http://purl.obolibrary.org/obo/OBI_0001000
-  label: obo:OBI_0001000
-  count: 1
-- uri: http://purl.obolibrary.org/obo/OBI_0000700
-  label: obo:OBI_0000700
-  count: 1
-- uri: https://w3id.org/linkml/SchemaDefinition
-  label: linkml:SchemaDefinition
-  count: 1
-- uri: http://purl.obolibrary.org/obo/OBI_0000450
-  label: obo:OBI_0000450
-  count: 1
-- uri: http://purl.obolibrary.org/obo/OBI_0000727
-  label: obo:OBI_0000727
+- uri: http://purl.obolibrary.org/obo/ENVO_00000015
+  label: obo:ENVO_00000015
   count: 1
 - uri: http://purl.obolibrary.org/obo/ENVO_01000801
   label: obo:ENVO_01000801
@@ -245,23 +236,32 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/OBI_0200033
   label: obo:OBI_0200033
   count: 1
-- uri: http://purl.obolibrary.org/obo/ENVO_01001211
-  label: obo:ENVO_01001211
+- uri: https://w3id.org/linkml/SchemaDefinition
+  label: linkml:SchemaDefinition
   count: 1
 - uri: http://purl.obolibrary.org/obo/OBI_0000749
   label: obo:OBI_0000749
   count: 1
-- uri: http://purl.obolibrary.org/obo/OBI_0200042
-  label: obo:OBI_0200042
+- uri: http://purl.obolibrary.org/obo/OBI_0001000
+  label: obo:OBI_0001000
+  count: 1
+- uri: http://purl.obolibrary.org/obo/OBI_0000700
+  label: obo:OBI_0000700
+  count: 1
+- uri: http://purl.obolibrary.org/obo/OBI_0002989
+  label: obo:OBI_0002989
+  count: 1
+- uri: http://purl.obolibrary.org/obo/ENVO_01001211
+  label: obo:ENVO_01001211
   count: 1
 - uri: http://purl.obolibrary.org/obo/ENVO_01000216
   label: obo:ENVO_01000216
   count: 1
-- uri: http://purl.obolibrary.org/obo/ENVO_00000015
-  label: obo:ENVO_00000015
+- uri: http://purl.obolibrary.org/obo/OBI_0200042
+  label: obo:OBI_0200042
   count: 1
-- uri: http://purl.obolibrary.org/obo/ENVO_01000958
-  label: obo:ENVO_01000958
+- uri: http://purl.obolibrary.org/obo/OBI_0000245
+  label: obo:OBI_0000245
   count: 1
 property_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
@@ -315,11 +315,11 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#annotatedProperty
   label: owl:annotatedProperty
   count: 6385414
-- uri: http://www.w3.org/2002/07/owl#annotatedTarget
-  label: owl:annotatedTarget
-  count: 6385414
 - uri: http://www.w3.org/2002/07/owl#annotatedSource
   label: owl:annotatedSource
+  count: 6385414
+- uri: http://www.w3.org/2002/07/owl#annotatedTarget
+  label: owl:annotatedTarget
   count: 6385414
 - uri: http://purl.obolibrary.org/obo/BFO_0000050
   label: obo:BFO_0000050
@@ -339,11 +339,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002254
   label: obo:RO_0002254
   count: 3705170
-- uri: http://reasoner.renci.org/vocab/normalizedInformationContent
-  label: normalizedInformationContent
-  count: 3657237
 - uri: http://reasoner.renci.org/vocab/referenceCount
   label: referenceCount
+  count: 3657237
+- uri: http://reasoner.renci.org/vocab/normalizedInformationContent
+  label: normalizedInformationContent
   count: 3657237
 - uri: http://purl.obolibrary.org/obo/RO_0002202
   label: obo:RO_0002202
@@ -387,11 +387,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002487
   label: obo:RO_0002487
   count: 1683563
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
-  label: rdf:rest
-  count: 1585759
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
   label: rdf:first
+  count: 1585759
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+  label: rdf:rest
   count: 1585759
 - uri: http://purl.obolibrary.org/obo/NCIT_P383
   label: obo:NCIT_P383
@@ -420,11 +420,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/so#member_of
   label: obo:so#member_of
   count: 1007255
-- uri: http://purl.obolibrary.org/obo/RO_0013002
-  label: obo:RO_0013002
-  count: 970940
 - uri: http://purl.obolibrary.org/obo/RO_0002110
   label: obo:RO_0002110
+  count: 970940
+- uri: http://purl.obolibrary.org/obo/RO_0013002
+  label: obo:RO_0013002
   count: 970940
 - uri: http://purl.obolibrary.org/obo/RO_0000057
   label: obo:RO_0000057
@@ -609,11 +609,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_R37
   label: obo:NCIT_R37
   count: 149914
-- uri: http://purl.obolibrary.org/obo/chebi/inchikey
-  label: obo:chebi/inchikey
-  count: 143615
 - uri: http://purl.obolibrary.org/obo/chebi/inchi
   label: obo:chebi/inchi
+  count: 143615
+- uri: http://purl.obolibrary.org/obo/chebi/inchikey
+  label: obo:chebi/inchikey
   count: 143615
 - uri: http://purl.obolibrary.org/obo/mondo#disease_has_major_feature
   label: obo:mondo#disease_has_major_feature
@@ -621,11 +621,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_P322
   label: obo:NCIT_P322
   count: 136793
-- uri: http://purl.obolibrary.org/obo/RO_0002360
-  label: obo:RO_0002360
-  count: 134130
 - uri: http://purl.obolibrary.org/obo/RO_0013007
   label: obo:RO_0013007
+  count: 134130
+- uri: http://purl.obolibrary.org/obo/RO_0002360
+  label: obo:RO_0002360
   count: 134130
 - uri: http://purl.obolibrary.org/obo/RO_0004009
   label: obo:RO_0004009
@@ -726,11 +726,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0004030
   label: obo:RO_0004030
   count: 64958
-- uri: http://purl.obolibrary.org/obo/RO_0002213
-  label: obo:RO_0002213
-  count: 64769
 - uri: http://purl.obolibrary.org/obo/RO_0002304
   label: obo:RO_0002304
+  count: 64769
+- uri: http://purl.obolibrary.org/obo/RO_0002213
+  label: obo:RO_0002213
   count: 64769
 - uri: http://purl.obolibrary.org/obo/RO_0004047
   label: obo:RO_0004047
@@ -738,14 +738,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002002
   label: obo:RO_0002002
   count: 64246
+- uri: http://purl.obolibrary.org/obo/RO_0004046
+  label: obo:RO_0004046
+  count: 64173
 - uri: http://purl.obolibrary.org/obo/RO_0002305
   label: obo:RO_0002305
   count: 64173
 - uri: http://purl.obolibrary.org/obo/RO_0002212
   label: obo:RO_0002212
-  count: 64173
-- uri: http://purl.obolibrary.org/obo/RO_0004046
-  label: obo:RO_0004046
   count: 64173
 - uri: http://purl.obolibrary.org/obo/RO_0002476
   label: obo:RO_0002476
@@ -777,20 +777,20 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/COB_0000087
   label: obo:COB_0000087
   count: 55274
-- uri: http://purl.obolibrary.org/obo/RO_0002120
-  label: obo:RO_0002120
-  count: 53571
 - uri: http://purl.obolibrary.org/obo/RO_0002486
   label: obo:RO_0002486
+  count: 53571
+- uri: http://purl.obolibrary.org/obo/RO_0002120
+  label: obo:RO_0002120
   count: 53571
 - uri: http://www.w3.org/2002/07/owl#deprecated
   label: owl:deprecated
   count: 53283
-- uri: http://purl.obolibrary.org/obo/RO_0002163
-  label: obo:RO_0002163
-  count: 53068
 - uri: http://purl.obolibrary.org/obo/RO_0002220
   label: obo:RO_0002220
+  count: 53068
+- uri: http://purl.obolibrary.org/obo/RO_0002163
+  label: obo:RO_0002163
   count: 53068
 - uri: http://purl.obolibrary.org/obo/RO_0004027
   label: obo:RO_0004027
@@ -798,14 +798,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0013009
   label: obo:RO_0013009
   count: 52346
-- uri: http://purl.obolibrary.org/obo/NCIT_P393
-  label: obo:NCIT_P393
-  count: 51984
 - uri: http://purl.obolibrary.org/obo/NCIT_P396
   label: obo:NCIT_P396
   count: 51984
 - uri: http://purl.obolibrary.org/obo/NCIT_P394
   label: obo:NCIT_P394
+  count: 51984
+- uri: http://purl.obolibrary.org/obo/NCIT_P393
+  label: obo:NCIT_P393
   count: 51984
 - uri: http://purl.obolibrary.org/obo/NCIT_P395
   label: obo:NCIT_P395
@@ -834,11 +834,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/COB_0000081
   label: obo:COB_0000081
   count: 43270
-- uri: http://purl.obolibrary.org/obo/BFO_0000066
-  label: obo:BFO_0000066
-  count: 42684
 - uri: http://purl.obolibrary.org/obo/COB_0000071
   label: obo:COB_0000071
+  count: 42684
+- uri: http://purl.obolibrary.org/obo/BFO_0000066
+  label: obo:BFO_0000066
   count: 42684
 - uri: http://purl.obolibrary.org/obo/RO_0004020
   label: obo:RO_0004020
@@ -975,17 +975,17 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/OBI_0000417
   label: obo:OBI_0000417
   count: 22221
-- uri: http://purl.obolibrary.org/obo/MRO_source
-  label: obo:MRO_source
-  count: 22175
 - uri: http://purl.obolibrary.org/obo/MRO_resource-name
   label: obo:MRO_resource-name
+  count: 22175
+- uri: http://purl.obolibrary.org/obo/MRO_accession
+  label: obo:MRO_accession
   count: 22175
 - uri: http://purl.obolibrary.org/obo/MRO_sequence
   label: obo:MRO_sequence
   count: 22175
-- uri: http://purl.obolibrary.org/obo/MRO_accession
-  label: obo:MRO_accession
+- uri: http://purl.obolibrary.org/obo/MRO_source
+  label: obo:MRO_source
   count: 22175
 - uri: http://purl.obolibrary.org/obo/RO_0002225
   label: obo:RO_0002225
@@ -1080,32 +1080,32 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_R124
   label: obo:NCIT_R124
   count: 16226
-- uri: http://purl.obolibrary.org/obo/RO_HOM0000007
-  label: obo:RO_HOM0000007
-  count: 15980
 - uri: http://purl.obolibrary.org/obo/RO_HOM0000001
   label: obo:RO_HOM0000001
+  count: 15980
+- uri: http://purl.obolibrary.org/obo/RO_HOM0000007
+  label: obo:RO_HOM0000007
   count: 15980
 - uri: http://purl.obolibrary.org/obo/RO_HOM0000000
   label: obo:RO_HOM0000000
   count: 15980
+- uri: http://purl.obolibrary.org/obo/RO_0004022
+  label: obo:RO_0004022
+  count: 15365
 - uri: http://purl.obolibrary.org/obo/RO_0002200
   label: obo:RO_0002200
   count: 15365
 - uri: http://purl.obolibrary.org/obo/RO_0016001
   label: obo:RO_0016001
   count: 15365
-- uri: http://purl.obolibrary.org/obo/RO_0004022
-  label: obo:RO_0004022
-  count: 15365
 - uri: http://purl.obolibrary.org/obo/RO_0002176
   label: obo:RO_0002176
   count: 15197
-- uri: http://purl.obolibrary.org/obo/RO_0002264
-  label: obo:RO_0002264
-  count: 14918
 - uri: http://purl.obolibrary.org/obo/RO_0002431
   label: obo:RO_0002431
+  count: 14918
+- uri: http://purl.obolibrary.org/obo/RO_0002264
+  label: obo:RO_0002264
   count: 14918
 - uri: http://purl.obolibrary.org/obo/RO_0002331
   label: obo:RO_0002331
@@ -1140,17 +1140,17 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_R125
   label: obo:NCIT_R125
   count: 12815
-- uri: http://purl.obolibrary.org/obo/NCIT_P389
-  label: obo:NCIT_P389
+- uri: http://purl.obolibrary.org/obo/NCIT_P391
+  label: obo:NCIT_P391
   count: 12700
 - uri: http://purl.obolibrary.org/obo/NCIT_P390
   label: obo:NCIT_P390
   count: 12700
-- uri: http://purl.obolibrary.org/obo/NCIT_P391
-  label: obo:NCIT_P391
-  count: 12700
 - uri: http://purl.obolibrary.org/obo/NCIT_P387
   label: obo:NCIT_P387
+  count: 12700
+- uri: http://purl.obolibrary.org/obo/NCIT_P389
+  label: obo:NCIT_P389
   count: 12700
 - uri: http://purl.obolibrary.org/obo/RO_0019000
   label: obo:RO_0019000
@@ -1365,14 +1365,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002596
   label: obo:RO_0002596
   count: 5656
-- uri: http://purl.obolibrary.org/obo/RO_0002563
-  label: obo:RO_0002563
+- uri: http://purl.obolibrary.org/obo/RO_0002464
+  label: obo:RO_0002464
   count: 5452
 - uri: http://purl.obolibrary.org/obo/RO_0002564
   label: obo:RO_0002564
   count: 5452
-- uri: http://purl.obolibrary.org/obo/RO_0002464
-  label: obo:RO_0002464
+- uri: http://purl.obolibrary.org/obo/RO_0002563
+  label: obo:RO_0002563
   count: 5452
 - uri: http://purl.obolibrary.org/obo/RO_0002388
   label: obo:RO_0002388
@@ -1587,11 +1587,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002175
   label: obo:RO_0002175
   count: 2674
-- uri: http://www.w3.org/2002/07/owl#onClass
-  label: owl:onClass
-  count: 2647
 - uri: http://purl.obolibrary.org/obo/RO_0012003
   label: obo:RO_0012003
+  count: 2647
+- uri: http://www.w3.org/2002/07/owl#onClass
+  label: owl:onClass
   count: 2647
 - uri: http://purl.obolibrary.org/obo/BSPO_0000099
   label: obo:BSPO_0000099
@@ -1599,11 +1599,11 @@ property_partitions:
 - uri: http://www.geneontology.org/formats/oboInOwl#is_inferred
   label: oboInOwl:is_inferred
   count: 2606
-- uri: http://purl.obolibrary.org/obo/RO_0002507
-  label: obo:RO_0002507
-  count: 2599
 - uri: http://purl.obolibrary.org/obo/RO_0002559
   label: obo:RO_0002559
+  count: 2599
+- uri: http://purl.obolibrary.org/obo/RO_0002507
+  label: obo:RO_0002507
   count: 2599
 - uri: http://purl.obolibrary.org/obo/NCIT_R51
   label: obo:NCIT_R51
@@ -1665,11 +1665,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_R30
   label: obo:NCIT_R30
   count: 2236
-- uri: http://purl.obolibrary.org/obo/MAXO_0000864
-  label: obo:MAXO_0000864
-  count: 2231
 - uri: http://purl.obolibrary.org/obo/RO_0002551
   label: obo:RO_0002551
+  count: 2231
+- uri: http://purl.obolibrary.org/obo/MAXO_0000864
+  label: obo:MAXO_0000864
   count: 2231
 - uri: http://purl.obolibrary.org/obo/NCIT_P331
   label: obo:NCIT_P331
@@ -1713,11 +1713,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/BSPO_0000120
   label: obo:BSPO_0000120
   count: 1921
-- uri: http://purl.obolibrary.org/obo/BFO_0000054
-  label: obo:BFO_0000054
-  count: 1909
 - uri: http://purl.obolibrary.org/obo/COB_0000029
   label: obo:COB_0000029
+  count: 1909
+- uri: http://purl.obolibrary.org/obo/BFO_0000054
+  label: obo:BFO_0000054
   count: 1909
 - uri: http://purl.obolibrary.org/obo/NCIT_A6
   label: obo:NCIT_A6
@@ -1740,14 +1740,14 @@ property_partitions:
 - uri: http://www.w3.org/2004/02/skos/core#prefLabel
   label: skos:prefLabel
   count: 1802
+- uri: http://n2o.neo/custom/cell_set_label
+  label: cell_set_label
+  count: 1780
 - uri: http://n2o.neo/custom/node_metadata
   label: node_metadata
   count: 1780
 - uri: http://purl.obolibrary.org/obo/PCL_0010059
   label: obo:PCL_0010059
-  count: 1780
-- uri: http://n2o.neo/custom/cell_set_label
-  label: cell_set_label
   count: 1780
 - uri: http://purl.obolibrary.org/obo/ENVO_01001307
   label: obo:ENVO_01001307
@@ -1950,11 +1950,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002356
   label: obo:RO_0002356
   count: 1098
-- uri: http://purl.obolibrary.org/obo/NCIT_A40
-  label: obo:NCIT_A40
-  count: 1059
 - uri: http://purl.obolibrary.org/obo/RO_0002629
   label: obo:RO_0002629
+  count: 1059
+- uri: http://purl.obolibrary.org/obo/NCIT_A40
+  label: obo:NCIT_A40
   count: 1059
 - uri: https://w3id.org/linkml/definition_uri
   label: linkml:definition_uri
@@ -2013,11 +2013,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002226
   label: obo:RO_0002226
   count: 882
-- uri: http://purl.obolibrary.org/obo/RO_0002428
-  label: obo:RO_0002428
-  count: 880
 - uri: http://purl.obolibrary.org/obo/RO_0002263
   label: obo:RO_0002263
+  count: 880
+- uri: http://purl.obolibrary.org/obo/RO_0002428
+  label: obo:RO_0002428
   count: 880
 - uri: http://purl.obolibrary.org/obo/RO_0002003
   label: obo:RO_0002003
@@ -2100,11 +2100,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/BSPO_0000108
   label: obo:BSPO_0000108
   count: 701
-- uri: http://purl.obolibrary.org/obo/so#homologous_to
-  label: obo:so#homologous_to
-  count: 693
 - uri: http://purl.obolibrary.org/obo/so#non_functional_homolog_of
   label: obo:so#non_functional_homolog_of
+  count: 693
+- uri: http://purl.obolibrary.org/obo/so#homologous_to
+  label: obo:so#homologous_to
   count: 693
 - uri: http://purl.obolibrary.org/obo/so#similar_to
   label: obo:so#similar_to
@@ -2223,11 +2223,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0019002
   label: obo:RO_0019002
   count: 472
-- uri: http://purl.obolibrary.org/obo/RO_0002573
-  label: obo:RO_0002573
-  count: 469
 - uri: http://purl.obolibrary.org/obo/PCL_0010062
   label: obo:PCL_0010062
+  count: 469
+- uri: http://purl.obolibrary.org/obo/RO_0002573
+  label: obo:RO_0002573
   count: 469
 - uri: http://www.w3.org/2002/07/owl#inverseOf
   label: owl:inverseOf
@@ -2322,20 +2322,20 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/so#has_origin
   label: obo:so#has_origin
   count: 397
-- uri: http://purl.obolibrary.org/obo/uberon/core#sexually_homologous_to
-  label: obo:uberon/core#sexually_homologous_to
-  count: 395
 - uri: http://purl.obolibrary.org/obo/RO_0002427
   label: obo:RO_0002427
   count: 395
+- uri: http://purl.obolibrary.org/obo/uberon/core#sexually_homologous_to
+  label: obo:uberon/core#sexually_homologous_to
+  count: 395
+- uri: https://w3id.org/sssom/mapping_justification
+  label: sssom:mapping_justification
+  count: 394
 - uri: https://w3id.org/sssom/object_label
   label: sssom:object_label
   count: 394
 - uri: https://w3id.org/sssom/subject_label
   label: sssom:subject_label
-  count: 394
-- uri: https://w3id.org/sssom/mapping_justification
-  label: sssom:mapping_justification
   count: 394
 - uri: http://purl.obolibrary.org/obo/nbo#in_response_to
   label: obo:nbo#in_response_to
@@ -2442,29 +2442,29 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/so#transcribed_to
   label: obo:so#transcribed_to
   count: 273
-- uri: https://w3id.org/linkml/classes
-  label: linkml:classes
-  count: 270
 - uri: https://w3id.org/linkml/class_uri
   label: linkml:class_uri
+  count: 270
+- uri: https://w3id.org/linkml/classes
+  label: linkml:classes
   count: 270
 - uri: https://w3id.org/linkml/slot_usage
   label: linkml:slot_usage
   count: 270
-- uri: http://www.jcvi.org/framework/nsf2_full_mtg#neuron_type
-  label: neuron_type
-  count: 269
 - uri: http://purl.obolibrary.org/obo/RO_0002503
   label: obo:RO_0002503
   count: 269
-- uri: http://www.w3.org/ns/shacl#namespace
-  label: shacl:namespace
-  count: 257
+- uri: http://www.jcvi.org/framework/nsf2_full_mtg#neuron_type
+  label: neuron_type
+  count: 269
 - uri: http://www.w3.org/ns/shacl#declare
   label: shacl:declare
   count: 257
 - uri: http://www.w3.org/ns/shacl#prefix
   label: shacl:prefix
+  count: 257
+- uri: http://www.w3.org/ns/shacl#namespace
+  label: shacl:namespace
   count: 257
 - uri: https://w3id.org/linkml/annotations
   label: linkml:annotations
@@ -2472,11 +2472,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002082
   label: obo:RO_0002082
   count: 241
-- uri: http://purl.obolibrary.org/obo/RO_0002081
-  label: obo:RO_0002081
-  count: 241
 - uri: https://w3id.org/linkml/tag
   label: linkml:tag
+  count: 241
+- uri: http://purl.obolibrary.org/obo/RO_0002081
+  label: obo:RO_0002081
   count: 241
 - uri: http://purl.obolibrary.org/obo/BSPO_0001100
   label: obo:BSPO_0001100
@@ -2484,14 +2484,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/GOREL_0012006
   label: obo:GOREL_0012006
   count: 240
-- uri: http://www.w3.org/2003/11/swrl#propertyPredicate
-  label: swrl:propertyPredicate
-  count: 238
 - uri: http://www.w3.org/2003/11/swrl#argument2
   label: swrl:argument2
   count: 238
 - uri: http://purl.obolibrary.org/obo/fbcv#conditionality
   label: obo:fbcv#conditionality
+  count: 238
+- uri: http://www.w3.org/2003/11/swrl#propertyPredicate
+  label: swrl:propertyPredicate
   count: 238
 - uri: http://purl.obolibrary.org/obo/NCIT_P215
   label: obo:NCIT_P215
@@ -2577,32 +2577,32 @@ property_partitions:
 - uri: https://w3id.org/linkml/required
   label: linkml:required
   count: 187
-- uri: http://purl.obolibrary.org/obo/GOREL_0000040
-  label: obo:GOREL_0000040
-  count: 185
 - uri: http://purl.obolibrary.org/obo/BSPO_0001106
   label: obo:BSPO_0001106
+  count: 185
+- uri: http://purl.obolibrary.org/obo/GOREL_0000040
+  label: obo:GOREL_0000040
   count: 185
 - uri: https://w3id.org/linkml/local_names
   label: linkml:local_names
   count: 184
+- uri: http://purl.obolibrary.org/obo/RO_0002591
+  label: obo:RO_0002591
+  count: 182
 - uri: http://purl.obolibrary.org/obo/RO_0002610
   label: obo:RO_0002610
   count: 182
 - uri: http://purl.obolibrary.org/obo/NCIT_A27
   label: obo:NCIT_A27
   count: 182
-- uri: http://purl.obolibrary.org/obo/RO_0002591
-  label: obo:RO_0002591
-  count: 182
 - uri: http://purl.obolibrary.org/obo/NCIT_R29
   label: obo:NCIT_R29
   count: 181
-- uri: http://purl.obolibrary.org/obo/NCIT_P367
-  label: obo:NCIT_P367
-  count: 180
 - uri: http://purl.obolibrary.org/obo/uberon/core#layer_part_of
   label: obo:uberon/core#layer_part_of
+  count: 180
+- uri: http://purl.obolibrary.org/obo/NCIT_P367
+  label: obo:NCIT_P367
   count: 180
 - uri: http://purl.obolibrary.org/obo/OBI_0001688
   label: obo:OBI_0001688
@@ -2637,11 +2637,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/UBPROP_0000011
   label: obo:UBPROP_0000011
   count: 158
-- uri: http://www.w3.org/2004/02/skos/core#relatedMatch
-  label: skos:relatedMatch
-  count: 157
 - uri: https://w3id.org/linkml/inlined
   label: linkml:inlined
+  count: 157
+- uri: http://www.w3.org/2004/02/skos/core#relatedMatch
+  label: skos:relatedMatch
   count: 157
 - uri: http://purl.obolibrary.org/obo/BSPO_0015008
   label: obo:BSPO_0015008
@@ -2664,11 +2664,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_R36
   label: obo:NCIT_R36
   count: 141
-- uri: http://purl.obolibrary.org/obo/ENVO_2000036
-  label: obo:ENVO_2000036
-  count: 140
 - uri: http://purl.obolibrary.org/obo/RO_0002334
   label: obo:RO_0002334
+  count: 140
+- uri: http://purl.obolibrary.org/obo/ENVO_2000036
+  label: obo:ENVO_2000036
   count: 140
 - uri: http://www.w3.org/2002/07/owl#minQualifiedCardinality
   label: owl:minQualifiedCardinality
@@ -2697,14 +2697,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/PPO_0000010
   label: obo:PPO_0000010
   count: 128
-- uri: https://w3id.org/linkml/prefixes
-  label: linkml:prefixes
-  count: 125
 - uri: https://w3id.org/linkml/prefix_prefix
   label: linkml:prefix_prefix
   count: 125
 - uri: https://w3id.org/linkml/prefix_reference
   label: linkml:prefix_reference
+  count: 125
+- uri: https://w3id.org/linkml/prefixes
+  label: linkml:prefixes
   count: 125
 - uri: http://purl.org/dc/terms/rightsHolder
   label: dct:rightsHolder
@@ -2715,11 +2715,11 @@ property_partitions:
 - uri: https://w3id.org/linkml/permissible_values
   label: linkml:permissible_values
   count: 121
-- uri: http://purl.obolibrary.org/obo/uberon/core#in_innermost_side_of
-  label: obo:uberon/core#in_innermost_side_of
-  count: 120
 - uri: http://purl.obolibrary.org/obo/uberon/core#in_outermost_side_of
   label: obo:uberon/core#in_outermost_side_of
+  count: 120
+- uri: http://purl.obolibrary.org/obo/uberon/core#in_innermost_side_of
+  label: obo:uberon/core#in_innermost_side_of
   count: 120
 - uri: http://purl.obolibrary.org/obo/OBO_REL_0000004
   label: obo:OBO_REL_0000004
@@ -2754,17 +2754,17 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/GOREL_0000501
   label: obo:GOREL_0000501
   count: 99
-- uri: http://purl.obolibrary.org/obo/uberon/core#anastomoses_with
-  label: obo:uberon/core#anastomoses_with
-  count: 97
-- uri: http://purl.obolibrary.org/obo/NCIT_A1
-  label: obo:NCIT_A1
-  count: 97
 - uri: http://purl.obolibrary.org/obo/NCIT_A2
   label: obo:NCIT_A2
   count: 97
+- uri: http://purl.obolibrary.org/obo/uberon/core#anastomoses_with
+  label: obo:uberon/core#anastomoses_with
+  count: 97
 - uri: http://purl.obolibrary.org/obo/RO_0016004
   label: obo:RO_0016004
+  count: 97
+- uri: http://purl.obolibrary.org/obo/NCIT_A1
+  label: obo:NCIT_A1
   count: 97
 - uri: http://purl.obolibrary.org/obo/NCIT_R66
   label: obo:NCIT_R66
@@ -2781,35 +2781,35 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/BSPO_0015006
   label: obo:BSPO_0015006
   count: 90
-- uri: http://www.w3.org/2002/07/owl#onDatatype
-  label: owl:onDatatype
+- uri: http://www.w3.org/2001/XMLSchema#minInclusive
+  label: xsd:minInclusive
   count: 89
 - uri: http://www.w3.org/2002/07/owl#withRestrictions
   label: owl:withRestrictions
   count: 89
-- uri: http://www.w3.org/2001/XMLSchema#minInclusive
-  label: xsd:minInclusive
+- uri: http://www.w3.org/2002/07/owl#onDatatype
+  label: owl:onDatatype
   count: 89
 - uri: http://purl.obolibrary.org/obo/UBPROP_0000006
   label: obo:UBPROP_0000006
   count: 88
+- uri: http://www.geneontology.org/formats/oboInOwl#url
+  label: oboInOwl:url
+  count: 84
 - uri: http://purl.obolibrary.org/obo/MRO_0036980
   label: obo:MRO_0036980
   count: 84
 - uri: http://purl.obolibrary.org/obo/OBI_0000124
   label: obo:OBI_0000124
   count: 84
-- uri: http://www.geneontology.org/formats/oboInOwl#url
-  label: oboInOwl:url
-  count: 84
-- uri: http://purl.obolibrary.org/obo/IAO_0006011
-  label: obo:IAO_0006011
-  count: 83
 - uri: http://www.w3.org/2003/11/swrl#body
   label: swrl:body
   count: 83
 - uri: http://www.w3.org/2003/11/swrl#head
   label: swrl:head
+  count: 83
+- uri: http://purl.obolibrary.org/obo/IAO_0006011
+  label: obo:IAO_0006011
   count: 83
 - uri: http://purl.obolibrary.org/obo/BSPO_0015005
   label: obo:BSPO_0015005
@@ -2817,14 +2817,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/mmusdv#start_wpb
   label: obo:mmusdv#start_wpb
   count: 79
-- uri: http://purl.obolibrary.org/obo/BSPO_0015003
-  label: obo:BSPO_0015003
+- uri: http://purl.obolibrary.org/obo/IAO_0000039
+  label: obo:IAO_0000039
   count: 78
 - uri: http://purl.obolibrary.org/obo/BSPO_0000113
   label: obo:BSPO_0000113
   count: 78
-- uri: http://purl.obolibrary.org/obo/IAO_0000039
-  label: obo:IAO_0000039
+- uri: http://purl.obolibrary.org/obo/BSPO_0015003
+  label: obo:BSPO_0015003
   count: 78
 - uri: http://purl.obolibrary.org/obo/RO_0001001
   label: obo:RO_0001001
@@ -2841,11 +2841,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/IAO_0000600
   label: obo:IAO_0000600
   count: 69
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000013
-  label: obo:UBPROP_0000013
-  count: 68
 - uri: http://www.geneontology.org/formats/oboInOwl#taxon
   label: oboInOwl:taxon
+  count: 68
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000013
+  label: obo:UBPROP_0000013
   count: 68
 - uri: http://purl.obolibrary.org/obo/mondo#has_onset_during_or_after
   label: obo:mondo#has_onset_during_or_after
@@ -2853,11 +2853,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_R23
   label: obo:NCIT_R23
   count: 65
-- uri: http://purl.obolibrary.org/obo/COB_based_on
-  label: obo:COB_based_on
-  count: 64
 - uri: http://purl.obolibrary.org/obo/mondo#part_of_progression_of_disease
   label: obo:mondo#part_of_progression_of_disease
+  count: 64
+- uri: http://purl.obolibrary.org/obo/COB_based_on
+  label: obo:COB_based_on
   count: 64
 - uri: http://purl.obolibrary.org/obo/IAO_0000219
   label: obo:IAO_0000219
@@ -2880,11 +2880,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_P358
   label: obo:NCIT_P358
   count: 55
-- uri: http://purl.obolibrary.org/obo/uberon/core#posteriorly_connected_to
-  label: obo:uberon/core#posteriorly_connected_to
-  count: 54
 - uri: http://www.w3.org/2002/07/owl#versionIRI
   label: owl:versionIRI
+  count: 54
+- uri: http://purl.obolibrary.org/obo/uberon/core#posteriorly_connected_to
+  label: obo:uberon/core#posteriorly_connected_to
   count: 54
 - uri: http://purl.obolibrary.org/obo/NCIT_R111
   label: obo:NCIT_R111
@@ -2892,14 +2892,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/BSPO_0015002
   label: obo:BSPO_0015002
   count: 52
+- uri: https://w3id.org/linkml/examples
+  label: linkml:examples
+  count: 50
 - uri: http://purl.obolibrary.org/obo/mmusdv#end_dpb
   label: obo:mmusdv#end_dpb
   count: 50
 - uri: http://purl.obolibrary.org/obo/mmusdv#start_dpb
   label: obo:mmusdv#start_dpb
-  count: 50
-- uri: https://w3id.org/linkml/examples
-  label: linkml:examples
   count: 50
 - uri: http://www.w3.org/2002/07/owl#oneOf
   label: owl:oneOf
@@ -2907,23 +2907,23 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/MRO_0001985
   label: obo:MRO_0001985
   count: 49
-- uri: http://purl.obolibrary.org/obo/emapa#develops_from
-  label: obo:emapa#develops_from
-  count: 48
 - uri: http://www.w3.org/2004/02/skos/core#editorialNote
   label: skos:editorialNote
+  count: 48
+- uri: http://purl.obolibrary.org/obo/emapa#develops_from
+  label: obo:emapa#develops_from
   count: 48
 - uri: http://purl.obolibrary.org/obo/mondo#has_onset_before
   label: obo:mondo#has_onset_before
   count: 47
-- uri: http://purl.obolibrary.org/obo/RO_0002088
-  label: obo:RO_0002088
+- uri: http://purl.obolibrary.org/obo/RO_0001900
+  label: obo:RO_0001900
   count: 46
 - uri: http://purl.obolibrary.org/obo/IAO_0000700
   label: obo:IAO_0000700
   count: 46
-- uri: http://purl.obolibrary.org/obo/RO_0001900
-  label: obo:RO_0001900
+- uri: http://purl.obolibrary.org/obo/RO_0002088
+  label: obo:RO_0002088
   count: 46
 - uri: http://www.w3.org/2003/11/swrl#classPredicate
   label: swrl:classPredicate
@@ -2934,38 +2934,38 @@ property_partitions:
 - uri: http://purl.org/spar/cito/citesAsAuthority
   label: cito:citesAsAuthority
   count: 43
+- uri: http://purl.obolibrary.org/obo/RO_0002174
+  label: obo:RO_0002174
+  count: 43
 - uri: http://purl.obolibrary.org/obo/UBPROP_0000202
   label: obo:UBPROP_0000202
   count: 43
 - uri: http://purl.obolibrary.org/obo/NCIT_P351
   label: obo:NCIT_P351
   count: 43
-- uri: http://purl.obolibrary.org/obo/RO_0002174
-  label: obo:RO_0002174
-  count: 43
 - uri: http://purl.obolibrary.org/obo/BSPO_0001102
   label: obo:BSPO_0001102
   count: 42
-- uri: http://purl.obolibrary.org/obo/mmusdv#start_mpb
-  label: obo:mmusdv#start_mpb
+- uri: https://w3id.org/linkml/values_from
+  label: linkml:values_from
   count: 40
 - uri: http://www.geneontology.org/formats/oboInOwl#creation_dat
   label: oboInOwl:creation_dat
   count: 40
-- uri: https://w3id.org/linkml/values_from
-  label: linkml:values_from
+- uri: http://purl.obolibrary.org/obo/mmusdv#start_mpb
+  label: obo:mmusdv#start_mpb
   count: 40
-- uri: http://purl.obolibrary.org/obo/BSPO_0015009
-  label: obo:BSPO_0015009
-  count: 39
 - uri: http://purl.obolibrary.org/obo/uberon/core#indirectly_supplies
   label: obo:uberon/core#indirectly_supplies
   count: 39
-- uri: http://purl.obolibrary.org/obo/BSPO_0015012
-  label: obo:BSPO_0015012
-  count: 39
 - uri: http://purl.obolibrary.org/obo/OBI_0001886
   label: obo:OBI_0001886
+  count: 39
+- uri: http://purl.obolibrary.org/obo/BSPO_0015009
+  label: obo:BSPO_0015009
+  count: 39
+- uri: http://purl.obolibrary.org/obo/BSPO_0015012
+  label: obo:BSPO_0015012
   count: 39
 - uri: https://w3id.org/linkml/symmetric
   label: linkml:symmetric
@@ -2973,17 +2973,17 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#versionInfo
   label: owl:versionInfo
   count: 38
-- uri: http://purl.obolibrary.org/obo/BFO_0000179
-  label: obo:BFO_0000179
-  count: 35
-- uri: http://purl.obolibrary.org/obo/BFO_0000180
-  label: obo:BFO_0000180
-  count: 35
 - uri: http://translator.renci.org/ubergraph-axioms.ofn#increasedAmountRole
   label: increasedAmountRole
   count: 35
 - uri: http://purl.obolibrary.org/obo/mmusdv#end_mpb
   label: obo:mmusdv#end_mpb
+  count: 35
+- uri: http://purl.obolibrary.org/obo/BFO_0000180
+  label: obo:BFO_0000180
+  count: 35
+- uri: http://purl.obolibrary.org/obo/BFO_0000179
+  label: obo:BFO_0000179
   count: 35
 - uri: https://w3id.org/linkml/translator
   label: linkml:translator
@@ -2997,263 +2997,248 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_P359
   label: obo:NCIT_P359
   count: 32
-- uri: http://purl.obolibrary.org/obo/go#creation_date
-  label: obo:go#creation_date
-  count: 32
 - uri: http://purl.obolibrary.org/obo/mmusdv#start_dpc
   label: obo:mmusdv#start_dpc
   count: 32
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000108
-  label: obo:UBPROP_0000108
-  count: 30
+- uri: http://purl.obolibrary.org/obo/go#creation_date
+  label: obo:go#creation_date
+  count: 32
 - uri: http://www.geneontology.org/formats/oboInOwl#default-namespace
   label: oboInOwl:default-namespace
   count: 30
-- uri: https://w3id.org/linkml/uri
-  label: linkml:uri
-  count: 28
-- uri: https://w3id.org/linkml/base
-  label: linkml:base
-  count: 28
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000108
+  label: obo:UBPROP_0000108
+  count: 30
 - uri: http://purl.obolibrary.org/obo/NCIT_A9
   label: obo:NCIT_A9
   count: 28
 - uri: https://w3id.org/linkml/types
   label: linkml:types
   count: 28
-- uri: http://purl.obolibrary.org/obo/NCIT_P352
-  label: obo:NCIT_P352
-  count: 27
+- uri: https://w3id.org/linkml/uri
+  label: linkml:uri
+  count: 28
+- uri: https://w3id.org/linkml/base
+  label: linkml:base
+  count: 28
 - uri: http://purl.org/dc/elements/1.1/type
   label: dc:type
+  count: 27
+- uri: http://purl.obolibrary.org/obo/NCIT_P352
+  label: obo:NCIT_P352
   count: 27
 - uri: http://purl.obolibrary.org/obo/RO_0009003
   label: obo:RO_0009003
   count: 27
-- uri: http://www.geneontology.org/formats/oboInOwl#status
-  label: oboInOwl:status
-  count: 26
 - uri: http://purl.obolibrary.org/obo/PO_0040001
   label: obo:PO_0040001
+  count: 26
+- uri: http://www.geneontology.org/formats/oboInOwl#status
+  label: oboInOwl:status
   count: 26
 - uri: http://www.w3.org/2002/07/owl#members
   label: owl:members
   count: 25
+- uri: http://purl.obolibrary.org/obo/OArCS#_gives_rise
+  label: obo:OArCS#_gives_rise
+  count: 24
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000104
+  label: obo:UBPROP_0000104
+  count: 24
 - uri: http://purl.obolibrary.org/obo/mondo#has_onset
   label: obo:mondo#has_onset
   count: 24
 - uri: http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-reverse-genus-differentia
   label: oboInOwl:treat-xrefs-as-reverse-genus-differentia
   count: 24
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000104
-  label: obo:UBPROP_0000104
-  count: 24
-- uri: http://purl.obolibrary.org/obo/OArCS#_gives_rise
-  label: obo:OArCS#_gives_rise
-  count: 24
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000005
-  label: obo:UBPROP_0000005
+- uri: http://www.w3.org/2002/07/owl#equivalentProperty
+  label: owl:equivalentProperty
   count: 23
 - uri: http://purl.obolibrary.org/obo/IAO_0000424
   label: obo:IAO_0000424
   count: 23
-- uri: http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion
-  label: oboInOwl:hasOBOFormatVersion
-  count: 23
-- uri: http://www.w3.org/2002/07/owl#equivalentProperty
-  label: owl:equivalentProperty
-  count: 23
-- uri: http://purl.obolibrary.org/obo/RO_0002229
-  label: obo:RO_0002229
-  count: 23
 - uri: http://purl.obolibrary.org/obo/COB_0000078
   label: obo:COB_0000078
+  count: 23
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000005
+  label: obo:UBPROP_0000005
   count: 23
 - uri: http://purl.obolibrary.org/obo/NCIT_P360
   label: obo:NCIT_P360
   count: 23
-- uri: http://purl.obolibrary.org/obo/GOREL_0000032
-  label: obo:GOREL_0000032
-  count: 22
-- uri: http://purl.obolibrary.org/obo/mondo#disease_triggers
-  label: obo:mondo#disease_triggers
+- uri: http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion
+  label: oboInOwl:hasOBOFormatVersion
+  count: 23
+- uri: http://purl.obolibrary.org/obo/RO_0002229
+  label: obo:RO_0002229
+  count: 23
+- uri: https://w3id.org/linkml/abstract
+  label: linkml:abstract
   count: 22
 - uri: http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty
   label: oboInOwl:SynonymTypeProperty
   count: 22
-- uri: https://w3id.org/linkml/abstract
-  label: linkml:abstract
+- uri: http://purl.obolibrary.org/obo/GOREL_0000032
+  label: obo:GOREL_0000032
   count: 22
 - uri: http://purl.obolibrary.org/obo/IAO_0000601
   label: obo:IAO_0000601
   count: 22
-- uri: http://purl.obolibrary.org/obo/RO_0000058
-  label: obo:RO_0000058
-  count: 21
+- uri: http://purl.obolibrary.org/obo/mondo#disease_triggers
+  label: obo:mondo#disease_triggers
+  count: 22
 - uri: http://purl.obolibrary.org/obo/mmusdv#has_stage_marker
   label: obo:mmusdv#has_stage_marker
+  count: 21
+- uri: http://purl.obolibrary.org/obo/RO_0000058
+  label: obo:RO_0000058
   count: 21
 - uri: http://www.geneontology.org/formats/oboInOwl#exceptions
   label: oboInOwl:exceptions
   count: 20
+- uri: http://schema.org/archivedAt
+  label: archivedAt
+  count: 19
+- uri: http://schema.org/discussionUrl
+  label: discussionUrl
+  count: 19
+- uri: http://schema.org/assesses
+  label: assesses
+  count: 19
+- uri: http://schema.org/position
+  label: position
+  count: 19
 - uri: http://purl.obolibrary.org/obo/UBPROP_0000107
   label: obo:UBPROP_0000107
   count: 19
 - uri: http://purl.obolibrary.org/obo/RO_0000079
   label: obo:RO_0000079
   count: 19
-- uri: http://schema.org/archivedAt
-  label: archivedAt
-  count: 19
-- uri: http://schema.org/assesses
-  label: assesses
+- uri: http://www.geneontology.org/formats/oboInOwl#date
+  label: oboInOwl:date
   count: 19
 - uri: http://schema.org/includedInDataCatalog
   label: includedInDataCatalog
   count: 19
-- uri: http://schema.org/position
-  label: position
-  count: 19
-- uri: http://www.geneontology.org/formats/oboInOwl#date
-  label: oboInOwl:date
-  count: 19
-- uri: http://schema.org/discussionUrl
-  label: discussionUrl
-  count: 19
+- uri: http://purl.obolibrary.org/obo/RO_0004001
+  label: obo:RO_0004001
+  count: 17
+- uri: https://w3id.org/linkml/enums
+  label: linkml:enums
+  count: 17
+- uri: http://purl.obolibrary.org/obo/COB_0000512
+  label: obo:COB_0000512
+  count: 17
 - uri: http://purl.obolibrary.org/obo/OBI_0000846
   label: obo:OBI_0000846
   count: 17
 - uri: http://www.w3.org/2004/02/skos/core#note
   label: skos:note
   count: 17
-- uri: https://w3id.org/linkml/enums
-  label: linkml:enums
-  count: 17
 - uri: http://purl.obolibrary.org/obo/CLAO_0001292
   label: obo:CLAO_0001292
   count: 17
-- uri: http://purl.obolibrary.org/obo/COB_0000512
-  label: obo:COB_0000512
-  count: 17
-- uri: http://purl.obolibrary.org/obo/RO_0004001
-  label: obo:RO_0004001
-  count: 17
-- uri: http://www.w3.org/2002/07/owl#cardinality
-  label: owl:cardinality
-  count: 16
 - uri: http://www.w3.org/2002/07/owl#minCardinality
   label: owl:minCardinality
-  count: 16
-- uri: http://purl.obolibrary.org/obo/fypo#usage
-  label: obo:fypo#usage
   count: 16
 - uri: http://purl.obolibrary.org/obo/CLAO_0001544
   label: obo:CLAO_0001544
   count: 16
-- uri: http://www.geneontology.org/formats/oboInOwl#order
-  label: oboInOwl:order
+- uri: http://purl.obolibrary.org/obo/fypo#usage
+  label: obo:fypo#usage
   count: 16
 - uri: http://purl.obolibrary.org/obo/PPO_0000015
   label: obo:PPO_0000015
   count: 16
-- uri: http://purl.obolibrary.org/obo/BSPO_0015202
-  label: obo:BSPO_0015202
-  count: 16
 - uri: http://purl.obolibrary.org/obo/MRO_0001986
   label: obo:MRO_0001986
   count: 16
-- uri: http://purl.org/dc/terms/title
-  label: dct:title
+- uri: http://www.w3.org/2002/07/owl#cardinality
+  label: owl:cardinality
+  count: 16
+- uri: http://purl.obolibrary.org/obo/BSPO_0015202
+  label: obo:BSPO_0015202
+  count: 16
+- uri: http://www.geneontology.org/formats/oboInOwl#order
+  label: oboInOwl:order
+  count: 16
+- uri: https://w3id.org/linkml/imported_from
+  label: linkml:imported_from
   count: 15
 - uri: http://www.geneontology.org/formats/oboInOwl#inconsistent_with
   label: oboInOwl:inconsistent_with
   count: 15
-- uri: http://purl.obolibrary.org/obo/CLAO_0001460
-  label: obo:CLAO_0001460
-  count: 15
-- uri: https://w3id.org/linkml/imported_from
-  label: linkml:imported_from
-  count: 15
 - uri: http://www.geneontology.org/formats/oboInOwl#saved-by
   label: oboInOwl:saved-by
   count: 15
+- uri: http://purl.obolibrary.org/obo/CLAO_0001460
+  label: obo:CLAO_0001460
+  count: 15
+- uri: http://purl.org/dc/terms/title
+  label: dct:title
+  count: 15
+- uri: https://w3id.org/linkml/repr
+  label: linkml:repr
+  count: 14
+- uri: http://purl.obolibrary.org/obo/mi#PSI-MI-short
+  label: obo:mi#PSI-MI-short
+  count: 14
+- uri: http://schema.org/headline
+  label: headline
+  count: 14
+- uri: http://www.geneontology.org/formats/oboInOwl#is_asserted
+  label: oboInOwl:is_asserted
+  count: 14
 - uri: http://purl.obolibrary.org/obo/RO_0002430
   label: obo:RO_0002430
   count: 14
 - uri: http://purl.obolibrary.org/obo/UBPROP_0000014
   label: obo:UBPROP_0000014
   count: 14
-- uri: https://w3id.org/linkml/repr
-  label: linkml:repr
-  count: 14
-- uri: http://www.geneontology.org/formats/oboInOwl#is_asserted
-  label: oboInOwl:is_asserted
-  count: 14
-- uri: http://purl.obolibrary.org/obo/mi#PSI-MI-short
-  label: obo:mi#PSI-MI-short
-  count: 14
 - uri: http://purl.obolibrary.org/obo/ENVO_02500020
   label: obo:ENVO_02500020
   count: 14
-- uri: http://schema.org/headline
-  label: headline
-  count: 14
-- uri: http://purl.obolibrary.org/obo/RO_0012012
-  label: obo:RO_0012012
-  count: 13
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000015
-  label: obo:UBPROP_0000015
+- uri: http://www.w3.org/2002/07/owl#propertyDisjointWith
+  label: owl:propertyDisjointWith
   count: 13
 - uri: http://purl.obolibrary.org/obo/RO_0002409
   label: obo:RO_0002409
   count: 13
-- uri: http://purl.obolibrary.org/obo/BSPO_0000110
-  label: obo:BSPO_0000110
-  count: 13
-- uri: http://purl.obolibrary.org/obo/RO_0002582
-  label: obo:RO_0002582
-  count: 13
-- uri: http://purl.obolibrary.org/obo/RO_0012011
-  label: obo:RO_0012011
-  count: 13
 - uri: http://purl.obolibrary.org/obo/RO_0002223
   label: obo:RO_0002223
+  count: 13
+- uri: http://purl.obolibrary.org/obo/BSPO_0000110
+  label: obo:BSPO_0000110
   count: 13
 - uri: http://purl.obolibrary.org/obo/so#transcribed_from
   label: obo:so#transcribed_from
   count: 13
+- uri: http://purl.obolibrary.org/obo/RO_0012011
+  label: obo:RO_0012011
+  count: 13
 - uri: http://purl.obolibrary.org/obo/NCIT_required
   label: obo:NCIT_required
   count: 13
-- uri: http://www.w3.org/2002/07/owl#propertyDisjointWith
-  label: owl:propertyDisjointWith
+- uri: http://purl.obolibrary.org/obo/RO_0012012
+  label: obo:RO_0012012
   count: 13
 - uri: http://purl.obolibrary.org/obo/PCL_0010061
   label: obo:PCL_0010061
   count: 13
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000015
+  label: obo:UBPROP_0000015
+  count: 13
+- uri: http://purl.obolibrary.org/obo/RO_0002582
+  label: obo:RO_0002582
+  count: 13
 - uri: http://purl.obolibrary.org/obo/BSPO_0000104
   label: obo:BSPO_0000104
   count: 13
-- uri: http://purl.obolibrary.org/obo/PATO_0001918
-  label: obo:PATO_0001918
-  count: 12
-- uri: http://www.geneontology.org/formats/oboInOwl#note
-  label: oboInOwl:note
-  count: 12
-- uri: http://purl.obolibrary.org/obo/OBI_0001847
-  label: obo:OBI_0001847
-  count: 12
-- uri: http://purl.obolibrary.org/obo/ENVO_02500016
-  label: obo:ENVO_02500016
-  count: 12
-- uri: http://www.w3.org/2002/07/owl#maxQualifiedCardinality
-  label: owl:maxQualifiedCardinality
+- uri: http://purl.obolibrary.org/obo/PATO_0001916
+  label: obo:PATO_0001916
   count: 12
 - uri: https://w3id.org/linkml/typeof
   label: linkml:typeof
-  count: 12
-- uri: http://purl.obolibrary.org/obo/PATO_0001916
-  label: obo:PATO_0001916
   count: 12
 - uri: http://purl.obolibrary.org/obo/UBPROP_0000106
   label: obo:UBPROP_0000106
@@ -3261,23 +3246,32 @@ property_partitions:
 - uri: http://www.geneontology.org/formats/oboInOwl#is_class_level
   label: oboInOwl:is_class_level
   count: 12
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000112
-  label: obo:UBPROP_0000112
-  count: 11
-- uri: http://purl.obolibrary.org/obo/RO_0000081
-  label: obo:RO_0000081
+- uri: http://purl.obolibrary.org/obo/OBI_0001847
+  label: obo:OBI_0001847
+  count: 12
+- uri: http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+  label: owl:maxQualifiedCardinality
+  count: 12
+- uri: http://purl.obolibrary.org/obo/PATO_0001918
+  label: obo:PATO_0001918
+  count: 12
+- uri: http://purl.obolibrary.org/obo/ENVO_02500016
+  label: obo:ENVO_02500016
+  count: 12
+- uri: http://www.geneontology.org/formats/oboInOwl#note
+  label: oboInOwl:note
+  count: 12
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000201
+  label: obo:UBPROP_0000201
   count: 11
 - uri: http://www.geneontology.org/formats/oboInOwl#auto-generated-by
   label: oboInOwl:auto-generated-by
   count: 11
-- uri: http://www.w3.org/2002/07/owl#hasSelf
-  label: owl:hasSelf
+- uri: http://purl.obolibrary.org/obo/NCIT_P356
+  label: obo:NCIT_P356
   count: 11
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000201
-  label: obo:UBPROP_0000201
-  count: 11
-- uri: http://translator.renci.org/ubergraph-axioms.ofn#decreasedAmountRole
-  label: decreasedAmountRole
+- uri: http://purl.obolibrary.org/obo/mi#isDefinedBy
+  label: obo:mi#isDefinedBy
   count: 11
 - uri: http://purl.obolibrary.org/obo/NCIT_A3
   label: obo:NCIT_A3
@@ -3285,24 +3279,18 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/CLAO_0001466
   label: obo:CLAO_0001466
   count: 11
-- uri: http://purl.obolibrary.org/obo/mi#isDefinedBy
-  label: obo:mi#isDefinedBy
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000112
+  label: obo:UBPROP_0000112
   count: 11
-- uri: http://purl.obolibrary.org/obo/NCIT_P356
-  label: obo:NCIT_P356
+- uri: http://purl.obolibrary.org/obo/RO_0000081
+  label: obo:RO_0000081
   count: 11
-- uri: https://w3id.org/linkml/role
-  label: linkml:role
-  count: 10
-- uri: http://www.geneontology.org/formats/oboInOwl#is_cyclic
-  label: oboInOwl:is_cyclic
-  count: 10
-- uri: http://purl.obolibrary.org/obo/OBI_0001927
-  label: obo:OBI_0001927
-  count: 10
-- uri: http://www.geneontology.org/formats/oboInOwl#reference
-  label: oboInOwl:reference
-  count: 10
+- uri: http://translator.renci.org/ubergraph-axioms.ofn#decreasedAmountRole
+  label: decreasedAmountRole
+  count: 11
+- uri: http://www.w3.org/2002/07/owl#hasSelf
+  label: owl:hasSelf
+  count: 11
 - uri: http://purl.obolibrary.org/obo/IAO_0000581
   label: obo:IAO_0000581
   count: 10
@@ -3312,68 +3300,65 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/UBPROP_0000101
   label: obo:UBPROP_0000101
   count: 10
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000100
-  label: obo:UBPROP_0000100
+- uri: http://www.geneontology.org/formats/oboInOwl#is_cyclic
+  label: oboInOwl:is_cyclic
   count: 10
 - uri: http://www.geneontology.org/formats/oboInOwl#contributor
   label: oboInOwl:contributor
   count: 10
+- uri: http://www.geneontology.org/formats/oboInOwl#reference
+  label: oboInOwl:reference
+  count: 10
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000100
+  label: obo:UBPROP_0000100
+  count: 10
+- uri: http://purl.obolibrary.org/obo/OBI_0001927
+  label: obo:OBI_0001927
+  count: 10
+- uri: https://w3id.org/linkml/role
+  label: linkml:role
+  count: 10
 - uri: http://purl.obolibrary.org/obo/HANCESTRO_0308
   label: obo:HANCESTRO_0308
   count: 10
-- uri: http://purl.obolibrary.org/obo/IAO_0000413
-  label: obo:IAO_0000413
-  count: 9
-- uri: http://purl.obolibrary.org/obo/RO_0040042
-  label: obo:RO_0040042
-  count: 9
-- uri: http://purl.obolibrary.org/obo/COB_0000028
-  label: obo:COB_0000028
-  count: 9
 - uri: http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-equivalent
   label: oboInOwl:treat-xrefs-as-equivalent
   count: 9
 - uri: http://purl.obolibrary.org/obo/CLAO_0001298
   label: obo:CLAO_0001298
   count: 9
-- uri: http://purl.obolibrary.org/obo/NCIT_R156
-  label: obo:NCIT_R156
-  count: 9
 - uri: http://purl.obolibrary.org/obo/COB_0000024
   label: obo:COB_0000024
   count: 9
+- uri: http://purl.obolibrary.org/obo/COB_0000028
+  label: obo:COB_0000028
+  count: 9
+- uri: http://purl.obolibrary.org/obo/RO_0040042
+  label: obo:RO_0040042
+  count: 9
+- uri: http://purl.obolibrary.org/obo/NCIT_R156
+  label: obo:NCIT_R156
+  count: 9
+- uri: http://purl.obolibrary.org/obo/IAO_0000413
+  label: obo:IAO_0000413
+  count: 9
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000103
+  label: obo:UBPROP_0000103
+  count: 8
 - uri: http://purl.obolibrary.org/obo/PCL_0010057
   label: obo:PCL_0010057
   count: 8
 - uri: http://purl.obolibrary.org/obo/CLAO_0001542
   label: obo:CLAO_0001542
   count: 8
-- uri: http://purl.obolibrary.org/obo/IAO_0000583
-  label: obo:IAO_0000583
-  count: 8
-- uri: http://purl.obolibrary.org/obo/RO_0004050
-  label: obo:RO_0004050
-  count: 8
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000103
-  label: obo:UBPROP_0000103
-  count: 8
-- uri: http://purl.obolibrary.org/obo/mondo#excluded_synonym
-  label: obo:mondo#excluded_synonym
-  count: 8
 - uri: http://www.geneontology.org/formats/oboInOwl#is_transitive
   label: oboInOwl:is_transitive
-  count: 8
-- uri: http://www.geneontology.org/formats/oboInOwl#is_redundant
-  label: oboInOwl:is_redundant
-  count: 8
-- uri: http://www.w3.org/2002/07/owl#distinctMembers
-  label: owl:distinctMembers
   count: 8
 - uri: https://w3id.org/linkml/identifier
   label: linkml:identifier
   count: 8
-- uri: http://purl.obolibrary.org/obo/CLAO_0001543
-  label: obo:CLAO_0001543
+- uri: http://www.w3.org/2002/07/owl#distinctMembers
+  label: owl:distinctMembers
   count: 8
 - uri: http://purl.obolibrary.org/obo/CLAO_0001545
   label: obo:CLAO_0001545
@@ -3384,23 +3369,65 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_R160
   label: obo:NCIT_R160
   count: 8
-- uri: http://purl.obolibrary.org/obo/RO_0002575
-  label: obo:RO_0002575
+- uri: http://purl.obolibrary.org/obo/mondo#excluded_synonym
+  label: obo:mondo#excluded_synonym
+  count: 8
+- uri: http://purl.obolibrary.org/obo/RO_0004050
+  label: obo:RO_0004050
+  count: 8
+- uri: http://www.geneontology.org/formats/oboInOwl#is_redundant
+  label: oboInOwl:is_redundant
   count: 8
 - uri: http://purl.obolibrary.org/obo/RO_0002581
   label: obo:RO_0002581
   count: 8
-- uri: http://purl.obolibrary.org/obo/NCIT_P205
-  label: obo:NCIT_P205
-  count: 7
+- uri: http://purl.obolibrary.org/obo/IAO_0000583
+  label: obo:IAO_0000583
+  count: 8
+- uri: http://purl.obolibrary.org/obo/RO_0002575
+  label: obo:RO_0002575
+  count: 8
+- uri: http://purl.obolibrary.org/obo/CLAO_0001543
+  label: obo:CLAO_0001543
+  count: 8
 - uri: http://purl.obolibrary.org/obo/RO_0004049
   label: obo:RO_0004049
+  count: 7
+- uri: http://purl.obolibrary.org/obo/NCIT_P205
+  label: obo:NCIT_P205
   count: 7
 - uri: https://w3id.org/linkml/emit_prefixes
   label: linkml:emit_prefixes
   count: 7
+- uri: http://www.geneontology.org/formats/oboInOwl#is_entailed
+  label: oboInOwl:is_entailed
+  count: 6
+- uri: http://purl.obolibrary.org/obo/IAO_0000425
+  label: obo:IAO_0000425
+  count: 6
+- uri: http://purl.obolibrary.org/obo/RO_0002522
+  label: obo:RO_0002522
+  count: 6
 - uri: http://purl.obolibrary.org/obo/RO_0002524
   label: obo:RO_0002524
+  count: 6
+- uri: http://purl.obolibrary.org/obo/OBI_0000646
+  label: obo:OBI_0000646
+  count: 6
+- uri: http://www.w3.org/2001/XMLSchema#maxExclusive
+  label: xsd:maxExclusive
+  count: 6
+- uri: http://purl.obolibrary.org/obo/NCIT_P357
+  label: obo:NCIT_P357
+  count: 6
+- uri: http://purl.obolibrary.org/obo/NCIT_P167
+  label: obo:NCIT_P167
+  count: 6
+- uri: http://purl.obolibrary.org/obo/PCL_0010060
+  label: obo:PCL_0010060
+  count: 6
+- uri: http://www.geneontology.org/formats/oboInOwl#exception
+  label: oboInOwl:exception
   count: 6
 - uri: http://www.geneontology.org/formats/oboInOwl#is_about
   label: oboInOwl:is_about
@@ -3408,95 +3435,38 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002514
   label: obo:RO_0002514
   count: 6
-- uri: http://www.w3.org/2001/XMLSchema#maxExclusive
-  label: xsd:maxExclusive
-  count: 6
-- uri: http://purl.obolibrary.org/obo/PCL_0010060
-  label: obo:PCL_0010060
-  count: 6
-- uri: http://www.geneontology.org/formats/oboInOwl#is_entailed
-  label: oboInOwl:is_entailed
-  count: 6
-- uri: http://purl.obolibrary.org/obo/IAO_0000425
-  label: obo:IAO_0000425
+- uri: http://purl.obolibrary.org/obo/RO_0002526
+  label: obo:RO_0002526
   count: 6
 - uri: http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
   label: isRuleEnabled
   count: 6
-- uri: http://purl.obolibrary.org/obo/OBI_0000646
-  label: obo:OBI_0000646
-  count: 6
-- uri: http://purl.obolibrary.org/obo/NCIT_P167
-  label: obo:NCIT_P167
-  count: 6
-- uri: http://purl.obolibrary.org/obo/RO_0002522
-  label: obo:RO_0002522
-  count: 6
-- uri: http://purl.obolibrary.org/obo/NCIT_P357
-  label: obo:NCIT_P357
-  count: 6
-- uri: http://purl.obolibrary.org/obo/RO_0002526
-  label: obo:RO_0002526
-  count: 6
-- uri: http://www.geneontology.org/formats/oboInOwl#exception
-  label: oboInOwl:exception
-  count: 6
 - uri: http://www.geneontology.org/formats/oboInOwl#conflicts_with
   label: oboInOwl:conflicts_with
   count: 6
+- uri: http://purl.obolibrary.org/obo/RO_0000059
+  label: obo:RO_0000059
+  count: 5
 - uri: http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-genus-differentia
   label: oboInOwl:treat-xrefs-as-genus-differentia
   count: 5
 - uri: http://purl.obolibrary.org/obo/pato#seeAlso
   label: obo:pato#seeAlso
   count: 5
-- uri: http://purl.obolibrary.org/obo/RO_0000059
-  label: obo:RO_0000059
+- uri: http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-has-subclass
+  label: oboInOwl:treat-xrefs-as-has-subclass
   count: 5
 - uri: https://w3id.org/linkml/extensions
   label: linkml:extensions
   count: 5
-- uri: http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-has-subclass
-  label: oboInOwl:treat-xrefs-as-has-subclass
-  count: 5
-- uri: http://www.geneontology.org/formats/oboInOwl#contradicted_by
-  label: oboInOwl:contradicted_by
-  count: 4
-- uri: http://www.geneontology.org/formats/oboInOwl#src
-  label: oboInOwl:src
-  count: 4
-- uri: http://xmlns.com/foaf/0.1/homepage
-  label: foaf:homepage
-  count: 4
-- uri: http://www.geneontology.org/formats/oboInOwl#cases
-  label: oboInOwl:cases
-  count: 4
-- uri: http://purl.org/dc/terms/conformsTo
-  label: dct:conformsTo
-  count: 4
-- uri: http://purl.obolibrary.org/obo/NCIT_P379
-  label: obo:NCIT_P379
-  count: 4
-- uri: https://w3id.org/linkml/default_curi_maps
-  label: linkml:default_curi_maps
-  count: 4
-- uri: http://purl.obolibrary.org/obo/RO_0002173
-  label: obo:RO_0002173
-  count: 4
 - uri: http://www.geneontology.org/formats/oboInOwl#conflicts
   label: oboInOwl:conflicts
   count: 4
-- uri: https://w3id.org/linkml/subsets
-  label: linkml:subsets
+- uri: http://www.geneontology.org/formats/oboInOwl#contradicted_by
+  label: oboInOwl:contradicted_by
   count: 4
 - uri: http://www.geneontology.org/formats/oboInOwl#consistent_with
   label: oboInOwl:consistent_with
-  count: 4
-- uri: http://purl.obolibrary.org/obo/NCIT_P380
-  label: obo:NCIT_P380
-  count: 4
-- uri: http://purl.obolibrary.org/obo/RO_0004004
-  label: obo:RO_0004004
   count: 4
 - uri: http://www.geneontology.org/formats/oboInOwl#version
   label: oboInOwl:version
@@ -3504,32 +3474,59 @@ property_partitions:
 - uri: http://www.geneontology.org/formats/oboInOwl#min_cardinality
   label: oboInOwl:min_cardinality
   count: 4
-- uri: http://purl.obolibrary.org/obo/IAO_0000426
-  label: obo:IAO_0000426
+- uri: http://purl.obolibrary.org/obo/NCIT_P380
+  label: obo:NCIT_P380
+  count: 4
+- uri: https://w3id.org/linkml/default_curi_maps
+  label: linkml:default_curi_maps
+  count: 4
+- uri: http://purl.org/dc/terms/conformsTo
+  label: dct:conformsTo
+  count: 4
+- uri: http://www.geneontology.org/formats/oboInOwl#cases
+  label: oboInOwl:cases
   count: 4
 - uri: http://www.geneontology.org/formats/oboInOwl#inferred_by
   label: oboInOwl:inferred_by
   count: 4
+- uri: http://purl.obolibrary.org/obo/IAO_0000426
+  label: obo:IAO_0000426
+  count: 4
+- uri: http://xmlns.com/foaf/0.1/homepage
+  label: foaf:homepage
+  count: 4
+- uri: http://purl.obolibrary.org/obo/RO_0002173
+  label: obo:RO_0002173
+  count: 4
+- uri: http://www.geneontology.org/formats/oboInOwl#src
+  label: oboInOwl:src
+  count: 4
+- uri: http://purl.obolibrary.org/obo/RO_0004004
+  label: obo:RO_0004004
+  count: 4
+- uri: http://purl.obolibrary.org/obo/NCIT_P379
+  label: obo:NCIT_P379
+  count: 4
+- uri: https://w3id.org/linkml/subsets
+  label: linkml:subsets
+  count: 4
 - uri: http://www.geneontology.org/formats/oboInOwl#modified_from
   label: oboInOwl:modified_from
   count: 4
-- uri: http://purl.obolibrary.org/obo/NCIT_R165
-  label: obo:NCIT_R165
+- uri: http://purl.obolibrary.org/obo/PCL_0010052
+  label: obo:PCL_0010052
   count: 3
-- uri: http://purl.obolibrary.org/obo/IAO_created_by
-  label: obo:IAO_created_by
+- uri: http://purl.obolibrary.org/obo/RO_0004036
+  label: obo:RO_0004036
   count: 3
-- uri: http://purl.obolibrary.org/obo/PCL_0010056
-  label: obo:PCL_0010056
-  count: 3
-- uri: http://purl.obolibrary.org/obo/OMO_0002000
-  label: obo:OMO_0002000
+- uri: http://purl.org/dc/terms/provenance
+  label: dct:provenance
   count: 3
 - uri: http://purl.obolibrary.org/obo/NCIT_P320
   label: obo:NCIT_P320
   count: 3
-- uri: http://purl.obolibrary.org/obo/RO_0004036
-  label: obo:RO_0004036
+- uri: http://purl.obolibrary.org/obo/PCL_0010056
+  label: obo:PCL_0010056
   count: 3
 - uri: http://purl.obolibrary.org/obo/PCL_0010055
   label: obo:PCL_0010055
@@ -3537,164 +3534,164 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/PCL_0010054
   label: obo:PCL_0010054
   count: 3
+- uri: http://purl.obolibrary.org/obo/OMO_0002000
+  label: obo:OMO_0002000
+  count: 3
 - uri: http://protege.stanford.edu/plugins/owl/protege#defaultLanguage
   label: defaultLanguage
   count: 3
-- uri: http://purl.org/dc/terms/provenance
-  label: dct:provenance
+- uri: http://purl.obolibrary.org/obo/IAO_created_by
+  label: obo:IAO_created_by
   count: 3
-- uri: https://w3id.org/linkml/designates_type
-  label: linkml:designates_type
-  count: 3
-- uri: http://purl.obolibrary.org/obo/PCL_0010053
-  label: obo:PCL_0010053
-  count: 3
-- uri: http://purl.obolibrary.org/obo/PCL_0010052
-  label: obo:PCL_0010052
-  count: 3
-- uri: https://w3id.org/linkml/opposite_of
-  label: linkml:opposite_of
+- uri: http://purl.obolibrary.org/obo/NCIT_R165
+  label: obo:NCIT_R165
   count: 3
 - uri: http://purl.obolibrary.org/obo/IAO_creation_date
   label: obo:IAO_creation_date
   count: 3
+- uri: http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule
+  label: oboInOwl:NamespaceIdRule
+  count: 3
+- uri: https://w3id.org/linkml/designates_type
+  label: linkml:designates_type
+  count: 3
 - uri: http://purl.org/dc/terms/subject
   label: dct:subject
   count: 3
-- uri: http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule
-  label: oboInOwl:NamespaceIdRule
+- uri: http://purl.obolibrary.org/obo/PCL_0010053
+  label: obo:PCL_0010053
   count: 3
 - uri: https://w3id.org/linkml/is_class_field
   label: linkml:is_class_field
   count: 3
-- uri: https://w3id.org/linkml/canonical_predicate
-  label: linkml:canonical_predicate
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#exactly
-  label: oboInOwl:exactly
-  count: 2
+- uri: https://w3id.org/linkml/opposite_of
+  label: linkml:opposite_of
+  count: 3
 - uri: http://www.geneontology.org/formats/oboInOwl#composition
   label: oboInOwl:composition
-  count: 2
-- uri: https://w3id.org/linkml/alt_descriptions
-  label: linkml:alt_descriptions
-  count: 2
-- uri: http://purl.org/dc/elements/1.1/subject
-  label: dc:subject
-  count: 2
-- uri: http://usefulinc.com/ns/doap#GitRepository
-  label: doap:GitRepository
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#is_check
-  label: oboInOwl:is_check
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#connected_by
-  label: oboInOwl:connected_by
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#stage
-  label: oboInOwl:stage
   count: 2
 - uri: https://w3id.org/linkml/meaning
   label: linkml:meaning
   count: 2
-- uri: http://www.w3.org/2002/07/owl#maxCardinality
-  label: owl:maxCardinality
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#cardonality
-  label: oboInOwl:cardonality
-  count: 2
-- uri: http://purl.org/dc/elements/1.1/relation
-  label: dc:relation
-  count: 2
-- uri: http://purl.obolibrary.org/obo/RO_0002475
-  label: obo:RO_0002475
+- uri: http://www.geneontology.org/formats/oboInOwl#connected_by
+  label: oboInOwl:connected_by
   count: 2
 - uri: http://purl.obolibrary.org/obo/RO_0002579
   label: obo:RO_0002579
   count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#quote
-  label: oboInOwl:quote
+- uri: http://www.geneontology.org/formats/oboInOwl#cardonality
+  label: oboInOwl:cardonality
   count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#possible_exception
-  label: oboInOwl:possible_exception
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#isAbout
-  label: oboInOwl:isAbout
-  count: 2
-- uri: http://www.w3.org/2001/XMLSchema#maxInclusive
-  label: xsd:maxInclusive
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#proportion
-  label: oboInOwl:proportion
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#laterality
-  label: oboInOwl:laterality
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#specialization_within
-  label: oboInOwl:specialization_within
-  count: 2
-- uri: http://purl.obolibrary.org/obo/envo#disconnected_from
-  label: obo:envo#disconnected_from
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#gene
-  label: oboInOwl:gene
+- uri: http://www.w3.org/2002/07/owl#maxCardinality
+  label: owl:maxCardinality
   count: 2
 - uri: http://www.geneontology.org/formats/oboInOwl#submitter
   label: oboInOwl:submitter
   count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor
-  label: oboInOwl:http://purl.org/dc/terms/contributor
-  count: 2
-- uri: http://purl.obolibrary.org/obo/NCIT_P371
-  label: obo:NCIT_P371
-  count: 2
-- uri: http://usefulinc.com/ns/doap#bug-database
-  label: doap:bug-database
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-is_a
-  label: oboInOwl:treat-xrefs-as-is_a
-  count: 2
-- uri: http://purl.obolibrary.org/obo/go#seeAlso
-  label: obo:go#seeAlso
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#is_indirect
-  label: oboInOwl:is_indirect
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#different_relation_from
-  label: oboInOwl:different_relation_from
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#ontology_class
-  label: oboInOwl:ontology_class
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#region
-  label: oboInOwl:region
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#component
-  label: oboInOwl:component
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#min_count
-  label: oboInOwl:min_count
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#exceptions_url
-  label: oboInOwl:exceptions_url
-  count: 2
-- uri: http://purl.org/dc/elements/1.1/publisher
-  label: dc:publisher
-  count: 2
-- uri: http://purl.obolibrary.org/obo/mmusdv#start_dpf
-  label: obo:mmusdv#start_dpf
-  count: 2
-- uri: http://protege.stanford.edu/plugins/owl/protege#readOnly
-  label: readOnly
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#not_supported_by
-  label: oboInOwl:not_supported_by
+- uri: https://w3id.org/linkml/alt_descriptions
+  label: linkml:alt_descriptions
   count: 2
 - uri: http://www.geneontology.org/formats/oboInOwl#external_class_label
   label: oboInOwl:external_class_label
   count: 2
+- uri: http://purl.obolibrary.org/obo/envo#disconnected_from
+  label: obo:envo#disconnected_from
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-is_a
+  label: oboInOwl:treat-xrefs-as-is_a
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#region
+  label: oboInOwl:region
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#ontology_class
+  label: oboInOwl:ontology_class
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#component
+  label: oboInOwl:component
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#possible_exception
+  label: oboInOwl:possible_exception
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#different_relation_from
+  label: oboInOwl:different_relation_from
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#missing_from
+  label: oboInOwl:missing_from
+  count: 2
+- uri: http://usefulinc.com/ns/doap#bug-database
+  label: doap:bug-database
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#is_indirect
+  label: oboInOwl:is_indirect
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#exceptions_url
+  label: oboInOwl:exceptions_url
+  count: 2
+- uri: https://w3id.org/linkml/union_of
+  label: linkml:union_of
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#gene
+  label: oboInOwl:gene
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#specialization_within
+  label: oboInOwl:specialization_within
+  count: 2
+- uri: http://purl.obolibrary.org/obo/mmusdv#start_dpf
+  label: obo:mmusdv#start_dpf
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#exactly
+  label: oboInOwl:exactly
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#is_check
+  label: oboInOwl:is_check
+  count: 2
+- uri: http://protege.stanford.edu/plugins/owl/protege#readOnly
+  label: readOnly
+  count: 2
 - uri: http://www.geneontology.org/formats/oboInOwl#todo
   label: oboInOwl:todo
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#count
+  label: oboInOwl:count
+  count: 2
+- uri: http://purl.org/dc/elements/1.1/subject
+  label: dc:subject
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#stage
+  label: oboInOwl:stage
+  count: 2
+- uri: http://purl.org/dc/elements/1.1/relation
+  label: dc:relation
+  count: 2
+- uri: http://purl.obolibrary.org/obo/go#seeAlso
+  label: obo:go#seeAlso
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#proportion
+  label: oboInOwl:proportion
+  count: 2
+- uri: http://purl.obolibrary.org/obo/RO_0002475
+  label: obo:RO_0002475
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#laterality
+  label: oboInOwl:laterality
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor
+  label: oboInOwl:http://purl.org/dc/terms/contributor
+  count: 2
+- uri: http://purl.org/dc/elements/1.1/publisher
+  label: dc:publisher
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCIT_P371
+  label: obo:NCIT_P371
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#quote
+  label: oboInOwl:quote
+  count: 2
+- uri: http://www.w3.org/2001/XMLSchema#maxInclusive
+  label: xsd:maxInclusive
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#isAbout
+  label: oboInOwl:isAbout
   count: 2
 - uri: https://w3id.org/linkml/source
   label: linkml:source
@@ -3702,128 +3699,104 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/mi#PSI-MI_slim
   label: obo:mi#PSI-MI_slim
   count: 2
-- uri: https://w3id.org/linkml/union_of
-  label: linkml:union_of
+- uri: https://w3id.org/linkml/canonical_predicate
+  label: linkml:canonical_predicate
   count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#missing_from
-  label: oboInOwl:missing_from
+- uri: http://usefulinc.com/ns/doap#GitRepository
+  label: doap:GitRepository
   count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#count
-  label: oboInOwl:count
+- uri: http://www.geneontology.org/formats/oboInOwl#not_supported_by
+  label: oboInOwl:not_supported_by
   count: 2
-- uri: http://purl.org/dc/elements/1.1/rights
-  label: dc:rights
-  count: 1
-- uri: http://www.geneontology.org/formats/oboInOwl#logical-definition-view-relation
-  label: oboInOwl:logical-definition-view-relation
-  count: 1
-- uri: https://w3id.org/linkml/pattern
-  label: linkml:pattern
-  count: 1
-- uri: http://purl.obolibrary.org/obo/fbbt#attributionURL
-  label: obo:fbbt#attributionURL
-  count: 1
-- uri: https://w3id.org/linkml/imports
-  label: linkml:imports
-  count: 1
-- uri: http://purl.obolibrary.org/obo/UBPROP_0000105
-  label: obo:UBPROP_0000105
-  count: 1
-- uri: http://www.geneontology.org/formats/oboInOwl#seeAlso
-  label: oboInOwl:seeAlso
-  count: 1
-- uri: http://purl.obolibrary.org/obo/fbcv#attributionURL
-  label: obo:fbcv#attributionURL
-  count: 1
-- uri: http://www.w3.org/2002/07/owl#disjointUnionOf
-  label: owl:disjointUnionOf
-  count: 1
-- uri: https://w3id.org/linkml/deprecated_element_has_exact_replacement
-  label: linkml:deprecated_element_has_exact_replacement
-  count: 1
-- uri: http://purl.obolibrary.org/obo/CLAO_0001602
-  label: obo:CLAO_0001602
-  count: 1
-- uri: http://purl.org/dc/terms/relation
-  label: dct:relation
-  count: 1
-- uri: https://w3id.org/linkml/source_file
-  label: linkml:source_file
-  count: 1
-- uri: https://w3id.org/linkml/source_ontology
-  label: linkml:source_ontology
-  count: 1
-- uri: https://w3id.org/linkml/reachable_from
-  label: linkml:reachable_from
-  count: 1
-- uri: http://purl.org/dc/elements/1.1/language
-  label: dc:language
-  count: 1
-- uri: https://w3id.org/linkml/id
-  label: linkml:id
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCIT_P316
-  label: obo:NCIT_P316
-  count: 1
-- uri: http://creativecommons.org/ns#attributionURL
-  label: cc:attributionURL
+- uri: http://www.geneontology.org/formats/oboInOwl#min_count
+  label: oboInOwl:min_count
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCIT_A4
+  label: obo:NCIT_A4
   count: 1
 - uri: http://purl.org/library.org/dc/elements/1.1/contributor
   label: contributor
   count: 1
-- uri: http://xmlns.com/foaf/0.1/page
-  label: foaf:page
+- uri: http://www.geneontology.org/formats/oboInOwl#seeAlso
+  label: oboInOwl:seeAlso
   count: 1
-- uri: http://purl.obolibrary.org/obo/RO_0002423
-  label: obo:RO_0002423
-  count: 1
-- uri: https://w3id.org/linkml/default_range
-  label: linkml:default_range
-  count: 1
-- uri: http://usefulinc.com/ns/doap#mailing-list
-  label: doap:mailing-list
-  count: 1
-- uri: http://purl.obolibrary.org/obo/go#isDefinedBy
-  label: obo:go#isDefinedBy
-  count: 1
-- uri: http://purl.org/dc/elements/1.1/modified
-  label: dc:modified
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCIT_A4
-  label: obo:NCIT_A4
-  count: 1
-- uri: https://w3id.org/linkml/relationship_types
-  label: linkml:relationship_types
-  count: 1
-- uri: http://purl.org/dc/terms/bibliographicCitation
-  label: dct:bibliographicCitation
-  count: 1
-- uri: https://w3id.org/linkml/source_file_date
-  label: linkml:source_file_date
-  count: 1
-- uri: https://w3id.org/linkml/default_prefix
-  label: linkml:default_prefix
-  count: 1
-- uri: http://purl.org/dc/elements/1.1/format
-  label: dc:format
-  count: 1
-- uri: https://w3id.org/linkml/source_file_size
-  label: linkml:source_file_size
-  count: 1
-- uri: https://w3id.org/sssom/mapping_set_id
-  label: sssom:mapping_set_id
+- uri: https://w3id.org/linkml/source_nodes
+  label: linkml:source_nodes
   count: 1
 - uri: http://purl.obolibrary.org/obo/fypo#seeAlso
   label: obo:fypo#seeAlso
   count: 1
-- uri: http://purl.obolibrary.org/obo/mmusdv#end_ypb
-  label: obo:mmusdv#end_ypb
+- uri: http://purl.obolibrary.org/obo/RO_0002423
+  label: obo:RO_0002423
   count: 1
-- uri: http://usefulinc.com/ns/doap#SVNRepository
-  label: doap:SVNRepository
+- uri: http://xmlns.com/foaf/0.1/page
+  label: foaf:page
   count: 1
-- uri: http://purl.org/dc/terms/isVersionOf
-  label: dct:isVersionOf
+- uri: https://w3id.org/linkml/imports
+  label: linkml:imports
+  count: 1
+- uri: http://creativecommons.org/ns#attributionURL
+  label: cc:attributionURL
+  count: 1
+- uri: https://w3id.org/linkml/source_ontology
+  label: linkml:source_ontology
+  count: 1
+- uri: http://purl.obolibrary.org/obo/go#isDefinedBy
+  label: obo:go#isDefinedBy
+  count: 1
+- uri: http://purl.obolibrary.org/obo/fbbt#attributionURL
+  label: obo:fbbt#attributionURL
+  count: 1
+- uri: http://purl.org/dc/elements/1.1/language
+  label: dc:language
+  count: 1
+- uri: https://w3id.org/linkml/deprecated_element_has_exact_replacement
+  label: linkml:deprecated_element_has_exact_replacement
+  count: 1
+- uri: https://w3id.org/linkml/source_file_size
+  label: linkml:source_file_size
+  count: 1
+- uri: http://purl.org/dc/elements/1.1/rights
+  label: dc:rights
+  count: 1
+- uri: http://purl.org/dc/elements/1.1/identifier
+  label: dc:identifier
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCIT_P316
+  label: obo:NCIT_P316
+  count: 1
+- uri: https://w3id.org/sssom/mapping_set_id
+  label: sssom:mapping_set_id
+  count: 1
+- uri: http://purl.obolibrary.org/obo/fbcv#attributionURL
+  label: obo:fbcv#attributionURL
+  count: 1
+- uri: http://purl.org/dc/elements/1.1/format
+  label: dc:format
+  count: 1
+- uri: https://w3id.org/linkml/relationship_types
+  label: linkml:relationship_types
+  count: 1
+- uri: http://purl.obolibrary.org/obo/CLAO_0001602
+  label: obo:CLAO_0001602
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#disjointUnionOf
+  label: owl:disjointUnionOf
+  count: 1
+- uri: https://w3id.org/linkml/reachable_from
+  label: linkml:reachable_from
+  count: 1
+- uri: http://purl.org/dc/terms/relation
+  label: dct:relation
+  count: 1
+- uri: https://w3id.org/linkml/pattern
+  label: linkml:pattern
+  count: 1
+- uri: http://www.geneontology.org/formats/oboInOwl#logical-definition-view-relation
+  label: oboInOwl:logical-definition-view-relation
+  count: 1
+- uri: https://w3id.org/linkml/source_file
+  label: linkml:source_file
   count: 1
 - uri: http://purl.org/pav/version
   label: pav:version
@@ -3831,18 +3804,45 @@ property_partitions:
 - uri: https://w3id.org/linkml/generation_date
   label: linkml:generation_date
   count: 1
-- uri: https://w3id.org/linkml/source_nodes
-  label: linkml:source_nodes
-  count: 1
-- uri: http://purl.org/dc/elements/1.1/identifier
-  label: dc:identifier
-  count: 1
 - uri: http://purl.obolibrary.org/obo/mmusdv#end_dpc
   label: obo:mmusdv#end_dpc
+  count: 1
+- uri: https://w3id.org/linkml/id
+  label: linkml:id
+  count: 1
+- uri: http://purl.obolibrary.org/obo/UBPROP_0000105
+  label: obo:UBPROP_0000105
+  count: 1
+- uri: http://purl.org/dc/terms/created
+  label: dct:created
+  count: 1
+- uri: https://w3id.org/linkml/default_prefix
+  label: linkml:default_prefix
   count: 1
 - uri: https://w3id.org/linkml/metamodel_version
   label: linkml:metamodel_version
   count: 1
-- uri: http://purl.org/dc/terms/created
-  label: dct:created
+- uri: http://purl.org/dc/terms/bibliographicCitation
+  label: dct:bibliographicCitation
+  count: 1
+- uri: http://purl.obolibrary.org/obo/mmusdv#end_ypb
+  label: obo:mmusdv#end_ypb
+  count: 1
+- uri: http://purl.org/dc/elements/1.1/modified
+  label: dc:modified
+  count: 1
+- uri: http://purl.org/dc/terms/isVersionOf
+  label: dct:isVersionOf
+  count: 1
+- uri: http://usefulinc.com/ns/doap#SVNRepository
+  label: doap:SVNRepository
+  count: 1
+- uri: https://w3id.org/linkml/default_range
+  label: linkml:default_range
+  count: 1
+- uri: http://usefulinc.com/ns/doap#mailing-list
+  label: doap:mailing-list
+  count: 1
+- uri: https://w3id.org/linkml/source_file_date
+  label: linkml:source_file_date
   count: 1

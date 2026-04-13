@@ -3,18 +3,18 @@ distinct_subjects: 6262
 distinct_objects: 10802
 properties: 9
 classes: 4
-last_checked: '2026-03-27'
+last_checked: '2026-04-13'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
   count: 5205
-- uri: https://wildlife.proto-okn.net/kg/schema/Location
+- uri: https://wildlife.proto-okn.net/kg/Location
   label: Location
   count: 657
-- uri: https://wildlife.proto-okn.net/kg/schema/Bird_name
+- uri: https://wildlife.proto-okn.net/kg/Bird_name
   label: Bird_name
   count: 303
-- uri: https://wildlife.proto-okn.net/kg/schema/Amphibian_name
+- uri: https://wildlife.proto-okn.net/kg/Amphibian_name
   label: Amphibian_name
   count: 97
 property_partitions:
@@ -24,20 +24,20 @@ property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
   label: rdf:predicate
   count: 5205
-- uri: https://wildlife.proto-okn.net/kg/schema/observed_times
-  label: observed_times
-  count: 5205
 - uri: http://purl.org/dc/terms/date
   label: dct:date
   count: 5205
 - uri: https://schema.org/subjectOf
   label: schema:subjectOf
   count: 5205
+- uri: https://wildlife.proto-okn.net/kg/OBSERVED_AT
+  label: OBSERVED_AT
+  count: 5205
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
   label: rdf:subject
   count: 5205
-- uri: https://wildlife.proto-okn.net/kg/schema/OBSERVED_AT
-  label: OBSERVED_AT
+- uri: https://wildlife.proto-okn.net/kg/observed_times
+  label: observed_times
   count: 5205
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
   label: rdf:object

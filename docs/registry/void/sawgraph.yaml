@@ -3,7 +3,7 @@ distinct_subjects: 2401139
 distinct_objects: 2723203
 properties: 181
 classes: 448
-last_checked: '2026-03-27'
+last_checked: '2026-04-13'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -20,32 +20,32 @@ class_partitions:
 - uri: http://qudt.org/schema/qudt/Quantity
   label: qudt:Quantity
   count: 834243
-- uri: http://purl.org/spatialai/stad/v2/core/DataValue
-  label: stad:DataValue
-  count: 705437
-- uri: http://www.w3.org/ns/sosa/Result
-  label: sosa:Result
-  count: 705437
-- uri: http://w3id.org/coso/v1/contaminoso#ContaminantMeasurement
-  label: contaminoso:ContaminantMeasurement
-  count: 705437
-- uri: http://purl.org/spatialai/stad/v2/core/Quantity
-  label: stad:Quantity
-  count: 705437
-- uri: http://qudt.org/schema/qudt/QuantityValue
-  label: qudt:QuantityValue
-  count: 705437
 - uri: http://w3id.org/coso/v1/contaminoso#ContaminantObservation
   label: contaminoso:ContaminantObservation
+  count: 705437
+- uri: http://w3id.org/coso/v1/contaminoso#ContaminantRelativeMeasurement
+  label: contaminoso:ContaminantRelativeMeasurement
   count: 705437
 - uri: http://w3id.org/coso/v1/contaminoso#ContaminantSampleObservation
   label: contaminoso:ContaminantSampleObservation
   count: 705437
+- uri: http://purl.org/spatialai/stad/v2/core/DataValue
+  label: stad:DataValue
+  count: 705437
+- uri: http://qudt.org/schema/qudt/QuantityValue
+  label: qudt:QuantityValue
+  count: 705437
 - uri: http://www.w3.org/ns/sosa/Observation
   label: sosa:Observation
   count: 705437
-- uri: http://w3id.org/coso/v1/contaminoso#ContaminantRelativeMeasurement
-  label: contaminoso:ContaminantRelativeMeasurement
+- uri: http://purl.org/spatialai/stad/v2/core/Quantity
+  label: stad:Quantity
+  count: 705437
+- uri: http://w3id.org/coso/v1/contaminoso#ContaminantMeasurement
+  label: contaminoso:ContaminantMeasurement
+  count: 705437
+- uri: http://www.w3.org/ns/sosa/Result
+  label: sosa:Result
   count: 705437
 - uri: http://w3id.org/coso/v1/contaminoso#SingleContaminantMeasurement
   label: contaminoso:SingleContaminantMeasurement
@@ -89,11 +89,11 @@ class_partitions:
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell_Level13
   label: kwg-ont:S2Cell_Level13
   count: 86344
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Cell
-  label: kwg-ont:Cell
-  count: 86344
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell
   label: kwg-ont:S2Cell
+  count: 86344
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Cell
+  label: kwg-ont:Cell
   count: 86344
 - uri: http://w3id.org/coso/v1/contaminoso#QuantitationLimit
   label: contaminoso:QuantitationLimit
@@ -110,11 +110,11 @@ class_partitions:
 - uri: http://purl.org/spatialai/stad/v2/core/StatisticalAggregateData
   label: stad:StatisticalAggregateData
   count: 37677
-- uri: http://w3id.org/coso/v1/contaminoso#AggregateContaminantMeasurement
-  label: contaminoso:AggregateContaminantMeasurement
-  count: 37677
 - uri: http://w3id.org/sawgraph/v1/me-egad#EGAD-AggregatePFAS-Concentration
   label: sawgraph-me:EGAD-AggregatePFAS-Concentration
+  count: 37677
+- uri: http://w3id.org/coso/v1/contaminoso#AggregateContaminantMeasurement
+  label: contaminoso:AggregateContaminantMeasurement
   count: 37677
 - uri: http://w3id.org/sawgraph/v1/us-wqp#LowerReportingLimit
   label: sawgraph-wqp:LowerReportingLimit
@@ -122,11 +122,11 @@ class_partitions:
 - uri: http://w3id.org/sawgraph/v1/us-wqp#LaboratoryReportingLevel
   label: sawgraph-wqp:LaboratoryReportingLevel
   count: 29824
-- uri: http://www.w3.org/ns/sosa/Sample
-  label: sosa:Sample
-  count: 28134
 - uri: http://w3id.org/coso/v1/contaminoso#MaterialSample
   label: contaminoso:MaterialSample
+  count: 28134
+- uri: http://www.w3.org/ns/sosa/Sample
+  label: sosa:Sample
   count: 28134
 - uri: http://w3id.org/sawgraph/v1/me-egad#EGAD-Sample
   label: sawgraph-me:EGAD-Sample
@@ -152,11 +152,11 @@ class_partitions:
 - uri: http://w3id.org/coso/v1/contaminoso#SampledFeature
   label: contaminoso:SampledFeature
   count: 10889
-- uri: http://w3id.org/coso/v1/contaminoso#Point
-  label: contaminoso:Point
-  count: 10843
 - uri: http://w3id.org/coso/v1/contaminoso#SamplePoint
   label: contaminoso:SamplePoint
+  count: 10843
+- uri: http://w3id.org/coso/v1/contaminoso#Point
+  label: contaminoso:Point
   count: 10843
 - uri: http://www.opengis.net/ont/geosparql#Geometry
   label: geo:Geometry
@@ -398,14 +398,14 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/FOODON_03411297
   label: obo:FOODON_03411297
   count: 36
-- uri: http://www.w3.org/2002/07/owl#DatatypeProperty
-  label: owl:DatatypeProperty
-  count: 32
 - uri: http://w3id.org/sawgraph/v1/us-wqp#Organization
   label: sawgraph-wqp:Organization
   count: 32
 - uri: http://w3id.org/sawgraph/v1/me-egad#EGAD-SampleMaterialTypeQualifier
   label: sawgraph-me:EGAD-SampleMaterialTypeQualifier
+  count: 32
+- uri: http://www.w3.org/2002/07/owl#DatatypeProperty
+  label: owl:DatatypeProperty
   count: 32
 - uri: http://www.w3.org/2002/07/owl#Ontology
   label: owl:Ontology
@@ -416,12 +416,6 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_2759
   label: obo:NCBITaxon_2759
   count: 30
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_33213
-  label: obo:NCBITaxon_33213
-  count: 29
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_6072
-  label: obo:NCBITaxon_6072
-  count: 29
 - uri: http://www.w3.org/ns/sosa/Procedure
   label: sosa:Procedure
   count: 29
@@ -431,15 +425,18 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_33208
   label: obo:NCBITaxon_33208
   count: 29
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_33213
+  label: obo:NCBITaxon_33213
+  count: 29
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_6072
+  label: obo:NCBITaxon_6072
+  count: 29
 - uri: http://w3id.org/sawgraph/v1/us-wqp#DefWQPAirSample
   label: sawgraph-wqp:DefWQPAirSample
   count: 28
 - uri: http://w3id.org/coso/v1/contaminoso#AirSample
   label: contaminoso:AirSample
   count: 28
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_7776
-  label: obo:NCBITaxon_7776
-  count: 27
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_7711
   label: obo:NCBITaxon_7711
   count: 27
@@ -449,11 +446,14 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_7898
   label: obo:NCBITaxon_7898
   count: 27
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_33511
-  label: obo:NCBITaxon_33511
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_7776
+  label: obo:NCBITaxon_7776
   count: 27
 - uri: http://w3id.org/sawgraph/v1/me-egad-data#DefEGADSolidWasteSample
   label: DefEGADSolidWasteSample
+  count: 27
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_33511
+  label: obo:NCBITaxon_33511
   count: 27
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_32443
   label: obo:NCBITaxon_32443
@@ -500,11 +500,11 @@ class_partitions:
 - uri: http://w3id.org/sawgraph/v1/us-wqp#DefWQPSoilSample
   label: sawgraph-wqp:DefWQPSoilSample
   count: 18
-- uri: http://purl.obolibrary.org/obo/FOODON_03420116
-  label: obo:FOODON_03420116
-  count: 17
 - uri: http://w3id.org/sawgraph/v1/us-wqp#DefWQPSedimentSample
   label: sawgraph-wqp:DefWQPSedimentSample
+  count: 17
+- uri: http://purl.obolibrary.org/obo/FOODON_03420116
+  label: obo:FOODON_03420116
   count: 17
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_2
   label: kwg-ont:AdministrativeRegion_2
@@ -539,11 +539,11 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_123369
   label: obo:NCBITaxon_123369
   count: 12
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_123368
-  label: obo:NCBITaxon_123368
-  count: 12
 - uri: http://purl.obolibrary.org/obo/FOODON_03411581
   label: obo:FOODON_03411581
+  count: 12
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_123368
+  label: obo:NCBITaxon_123368
   count: 12
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_1489872
   label: obo:NCBITaxon_1489872
@@ -560,11 +560,11 @@ class_partitions:
 - uri: http://purl.org/spatialai/stad/v2/core/QualityKind
   label: stad:QualityKind
   count: 11
-- uri: http://w3id.org/sawgraph/v1/me-egad-data#DefEGADSolidMaterials
-  label: DefEGADSolidMaterials
-  count: 10
 - uri: http://purl.obolibrary.org/obo/FOODON_03411134
   label: obo:FOODON_03411134
+  count: 10
+- uri: http://w3id.org/sawgraph/v1/me-egad-data#DefEGADSolidMaterials
+  label: DefEGADSolidMaterials
   count: 10
 - uri: http://purl.obolibrary.org/obo/FOODON_00004332
   label: obo:FOODON_00004332
@@ -575,14 +575,14 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/FOODON_00004242
   label: obo:FOODON_00004242
   count: 8
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_41705
-  label: obo:NCBITaxon_41705
-  count: 8
 - uri: http://w3id.org/sawgraph/v1/us-wqp#SampleMedia
   label: sawgraph-wqp:SampleMedia
   count: 8
 - uri: http://qudt.org/schema/qudt/Unit
   label: qudt:Unit
+  count: 8
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_41705
+  label: obo:NCBITaxon_41705
   count: 8
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_32519
   label: obo:NCBITaxon_32519
@@ -596,38 +596,35 @@ class_partitions:
 - uri: http://w3id.org/coso/v1/contaminoso#ContaminationProperty
   label: contaminoso:ContaminationProperty
   count: 7
-- uri: http://www.w3.org/ns/sosa/Property
-  label: sosa:Property
-  count: 7
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_186626
   label: obo:NCBITaxon_186626
-  count: 7
-- uri: http://purl.obolibrary.org/obo/FOODON_03411818
-  label: obo:FOODON_03411818
-  count: 7
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_1489940
-  label: obo:NCBITaxon_1489940
   count: 7
 - uri: http://purl.obolibrary.org/obo/PO_0000003
   label: obo:PO_0000003
   count: 7
+- uri: http://www.w3.org/ns/sosa/Property
+  label: sosa:Property
+  count: 7
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_1545897
   label: obo:NCBITaxon_1545897
   count: 7
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_1489940
+  label: obo:NCBITaxon_1489940
+  count: 7
+- uri: http://purl.obolibrary.org/obo/FOODON_03411818
+  label: obo:FOODON_03411818
+  count: 7
+- uri: http://purl.obolibrary.org/obo/FOODON_00001092
+  label: obo:FOODON_00001092
+  count: 6
 - uri: http://w3id.org/sawgraph/v1/me-egad#EGAD-ValidationLevel
   label: sawgraph-me:EGAD-ValidationLevel
   count: 6
 - uri: http://purl.obolibrary.org/obo/FOODON_03414381
   label: obo:FOODON_03414381
   count: 6
-- uri: http://purl.obolibrary.org/obo/FOODON_00001092
-  label: obo:FOODON_00001092
-  count: 6
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_186628
   label: obo:NCBITaxon_186628
-  count: 5
-- uri: http://w3id.org/coso/v1/contaminoso#SubstanceCollection
-  label: contaminoso:SubstanceCollection
   count: 5
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_1489793
   label: obo:NCBITaxon_1489793
@@ -635,35 +632,50 @@ class_partitions:
 - uri: http://w3id.org/sawgraph/v1/us-wqp#StateGovernmentUS_Organization
   label: sawgraph-wqp:StateGovernmentUS_Organization
   count: 5
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_8006
-  label: obo:NCBITaxon_8006
-  count: 5
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_8015
-  label: obo:NCBITaxon_8015
-  count: 5
 - uri: http://www.w3.org/2002/07/owl#OntologyProperty
   label: owl:OntologyProperty
-  count: 5
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_504568
-  label: obo:NCBITaxon_504568
-  count: 5
-- uri: http://purl.obolibrary.org/obo/FOODON_03412426
-  label: obo:FOODON_03412426
   count: 5
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_27705
   label: obo:NCBITaxon_27705
   count: 5
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_7996
-  label: obo:NCBITaxon_7996
+- uri: http://purl.obolibrary.org/obo/FOODON_03412426
+  label: obo:FOODON_03412426
   count: 5
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_7995
-  label: obo:NCBITaxon_7995
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_504568
+  label: obo:NCBITaxon_504568
+  count: 5
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_8015
+  label: obo:NCBITaxon_8015
   count: 5
 - uri: http://purl.obolibrary.org/obo/FOODON_03412665
   label: obo:FOODON_03412665
   count: 5
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_8006
+  label: obo:NCBITaxon_8006
+  count: 5
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_7995
+  label: obo:NCBITaxon_7995
+  count: 5
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_7996
+  label: obo:NCBITaxon_7996
+  count: 5
+- uri: http://w3id.org/coso/v1/contaminoso#SubstanceCollection
+  label: contaminoso:SubstanceCollection
+  count: 5
+- uri: http://purl.obolibrary.org/obo/FOODON_03413360
+  label: obo:FOODON_03413360
+  count: 4
+- uri: http://purl.obolibrary.org/obo/FOODON_03411598
+  label: obo:FOODON_03411598
+  count: 4
 - uri: http://w3id.org/coso/v1/contaminoso#ContaminantRelativeQuantityKind
   label: contaminoso:ContaminantRelativeQuantityKind
+  count: 4
+- uri: http://purl.obolibrary.org/obo/FOODON_03411592
+  label: obo:FOODON_03411592
+  count: 4
+- uri: http://purl.obolibrary.org/obo/FOODON_03411129
+  label: obo:FOODON_03411129
   count: 4
 - uri: http://purl.obolibrary.org/obo/FOODON_03413448
   label: obo:FOODON_03413448
@@ -671,71 +683,53 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/FOODON_03413807
   label: obo:FOODON_03413807
   count: 4
-- uri: http://purl.obolibrary.org/obo/FOODON_03411129
-  label: obo:FOODON_03411129
+- uri: http://purl.obolibrary.org/obo/FOODON_03413358
+  label: obo:FOODON_03413358
   count: 4
 - uri: http://purl.obolibrary.org/obo/FOODON_03411040
   label: obo:FOODON_03411040
   count: 4
-- uri: http://purl.obolibrary.org/obo/FOODON_03413358
-  label: obo:FOODON_03413358
-  count: 4
-- uri: http://purl.obolibrary.org/obo/FOODON_03411598
-  label: obo:FOODON_03411598
-  count: 4
-- uri: http://purl.obolibrary.org/obo/FOODON_03411592
-  label: obo:FOODON_03411592
-  count: 4
 - uri: http://w3id.org/coso/v1/contaminoso#ContaminantConcentrationQuantityKind
   label: contaminoso:ContaminantConcentrationQuantityKind
   count: 4
-- uri: http://purl.obolibrary.org/obo/FOODON_03413360
-  label: obo:FOODON_03413360
-  count: 4
-- uri: http://purl.obolibrary.org/obo/FOODON_02010032
-  label: obo:FOODON_02010032
-  count: 3
-- uri: http://purl.obolibrary.org/obo/FOODON_03414051
-  label: obo:FOODON_03414051
-  count: 3
 - uri: http://purl.obolibrary.org/obo/FOODON_03414374
   label: obo:FOODON_03414374
   count: 3
-- uri: http://purl.obolibrary.org/obo/FOODON_03411579
-  label: obo:FOODON_03411579
-  count: 3
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_8008
-  label: obo:NCBITaxon_8008
-  count: 3
-- uri: http://purl.obolibrary.org/obo/FOODON_03411293
-  label: obo:FOODON_03411293
-  count: 3
-- uri: http://purl.obolibrary.org/obo/FOODON_03309997
-  label: obo:FOODON_03309997
-  count: 3
-- uri: http://purl.obolibrary.org/obo/FOODON_00001015
-  label: obo:FOODON_00001015
+- uri: http://purl.obolibrary.org/obo/FOODON_00002147
+  label: obo:FOODON_00002147
   count: 3
 - uri: http://purl.obolibrary.org/obo/FOODON_03411057
   label: obo:FOODON_03411057
   count: 3
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_8033
+  label: obo:NCBITaxon_8033
+  count: 3
+- uri: http://purl.obolibrary.org/obo/FOODON_03414051
+  label: obo:FOODON_03414051
+  count: 3
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_8007
   label: obo:NCBITaxon_8007
   count: 3
-- uri: http://w3id.org/sawgraph/v1/us-wqp#DefWQPGroundWaterFeatureType
-  label: sawgraph-wqp:DefWQPGroundWaterFeatureType
-  count: 3
-- uri: http://purl.obolibrary.org/obo/FOODON_03411183
-  label: obo:FOODON_03411183
-  count: 3
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_8009
-  label: obo:NCBITaxon_8009
+- uri: http://purl.obolibrary.org/obo/FOODON_03411579
+  label: obo:FOODON_03411579
   count: 3
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_8038
   label: obo:NCBITaxon_8038
   count: 3
-- uri: http://purl.obolibrary.org/obo/FOODON_00002147
-  label: obo:FOODON_00002147
+- uri: http://purl.obolibrary.org/obo/FOODON_03411293
+  label: obo:FOODON_03411293
+  count: 3
+- uri: http://w3id.org/sawgraph/v1/us-wqp#DefWQPGroundWaterFeatureType
+  label: sawgraph-wqp:DefWQPGroundWaterFeatureType
+  count: 3
+- uri: http://purl.obolibrary.org/obo/FOODON_00004436
+  label: obo:FOODON_00004436
+  count: 3
+- uri: http://purl.obolibrary.org/obo/FOODON_02010032
+  label: obo:FOODON_02010032
+  count: 3
+- uri: http://purl.obolibrary.org/obo/FOODON_03309997
+  label: obo:FOODON_03309997
   count: 3
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_1489923
   label: obo:NCBITaxon_1489923
@@ -743,107 +737,131 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/FOODON_03413808
   label: obo:FOODON_03413808
   count: 3
-- uri: http://purl.obolibrary.org/obo/FOODON_00004436
-  label: obo:FOODON_00004436
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_8008
+  label: obo:NCBITaxon_8008
   count: 3
-- uri: http://purl.obolibrary.org/obo/FOODON_03411826
-  label: obo:FOODON_03411826
+- uri: http://purl.obolibrary.org/obo/FOODON_03411183
+  label: obo:FOODON_03411183
   count: 3
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_8033
-  label: obo:NCBITaxon_8033
-  count: 3
-- uri: http://w3id.org/sawgraph/v1/us-wqp#DefWQPWasteWaterFeatureType
-  label: sawgraph-wqp:DefWQPWasteWaterFeatureType
-  count: 3
-- uri: http://w3id.org/sawgraph/v1/us-wqp#Federal_USGovernment_Organization
-  label: sawgraph-wqp:Federal_USGovernment_Organization
+- uri: http://purl.obolibrary.org/obo/FOODON_00001015
+  label: obo:FOODON_00001015
   count: 3
 - uri: http://www.w3.org/2002/07/owl#Axiom
   label: owl:Axiom
   count: 3
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_8009
+  label: obo:NCBITaxon_8009
+  count: 3
 - uri: http://purl.obolibrary.org/obo/FOODON_00004331
   label: obo:FOODON_00004331
   count: 3
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_8112
-  label: obo:NCBITaxon_8112
-  count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_8111
-  label: obo:NCBITaxon_8111
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_00002452
-  label: obo:FOODON_00002452
-  count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_42148
-  label: obo:NCBITaxon_42148
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_00002616
-  label: obo:FOODON_00002616
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_02020892
-  label: obo:FOODON_02020892
-  count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_7952
-  label: obo:NCBITaxon_7952
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_03412007
-  label: obo:FOODON_03412007
-  count: 2
-- uri: http://w3id.org/sawgraph/v1/us-wqp#State_USGovernment_Organization
-  label: sawgraph-wqp:State_USGovernment_Organization
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_03411433
-  label: obo:FOODON_03411433
-  count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_6447
-  label: obo:NCBITaxon_6447
-  count: 2
-- uri: http://w3id.org/coso/v1/contaminoso#ContaminantAbsoluteQuantityKind
-  label: contaminoso:ContaminantAbsoluteQuantityKind
-  count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_7968
-  label: obo:NCBITaxon_7968
-  count: 2
-- uri: http://www.w3.org/2002/07/owl#SymmetricProperty
-  label: owl:SymmetricProperty
+- uri: http://w3id.org/sawgraph/v1/us-wqp#DefWQPWasteWaterFeatureType
+  label: sawgraph-wqp:DefWQPWasteWaterFeatureType
+  count: 3
+- uri: http://purl.obolibrary.org/obo/FOODON_03411826
+  label: obo:FOODON_03411826
+  count: 3
+- uri: http://w3id.org/sawgraph/v1/us-wqp#Federal_USGovernment_Organization
+  label: sawgraph-wqp:Federal_USGovernment_Organization
+  count: 3
+- uri: http://purl.obolibrary.org/obo/FOODON_02010001
+  label: obo:FOODON_02010001
   count: 2
 - uri: http://purl.obolibrary.org/obo/FOODON_03413378
   label: obo:FOODON_03413378
   count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_33317
-  label: obo:NCBITaxon_33317
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_7968
+  label: obo:NCBITaxon_7968
   count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_03411047
-  label: obo:FOODON_03411047
+- uri: http://purl.obolibrary.org/obo/FOODON_00002616
+  label: obo:FOODON_00002616
   count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_03412113
-  label: obo:FOODON_03412113
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_00004172
-  label: obo:FOODON_00004172
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_00001176
-  label: obo:FOODON_00001176
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_00001006
-  label: obo:FOODON_00001006
-  count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_6544
-  label: obo:NCBITaxon_6544
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_8111
+  label: obo:NCBITaxon_8111
   count: 2
 - uri: http://www.w3.org/2002/07/owl#TransitiveProperty
   label: owl:TransitiveProperty
   count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_03411324
-  label: obo:FOODON_03411324
+- uri: http://purl.obolibrary.org/obo/FOODON_00002452
+  label: obo:FOODON_00002452
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_50384
+  label: obo:NCBITaxon_50384
+  count: 2
+- uri: http://w3id.org/coso/v1/contaminoso#ContaminantAbsoluteQuantityKind
+  label: contaminoso:ContaminantAbsoluteQuantityKind
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_42148
+  label: obo:NCBITaxon_42148
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_02020892
+  label: obo:FOODON_02020892
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_03411047
+  label: obo:FOODON_03411047
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_6544
+  label: obo:NCBITaxon_6544
+  count: 2
+- uri: http://w3id.org/sawgraph/v1/us-wqp#State_USGovernment_Organization
+  label: sawgraph-wqp:State_USGovernment_Organization
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_00001006
+  label: obo:FOODON_00001006
+  count: 2
+- uri: http://www.w3.org/2002/07/owl#SymmetricProperty
+  label: owl:SymmetricProperty
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_00004172
+  label: obo:FOODON_00004172
   count: 2
 - uri: http://w3id.org/coso/v1/contaminoso#ContaminantVolumeQuantityKind
   label: contaminoso:ContaminantVolumeQuantityKind
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_00001176
+  label: obo:FOODON_00001176
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_00001046
+  label: obo:FOODON_00001046
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_03412007
+  label: obo:FOODON_03412007
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_03411433
+  label: obo:FOODON_03411433
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_03412112
+  label: obo:FOODON_03412112
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_03411184
+  label: obo:FOODON_03411184
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_34815
+  label: obo:NCBITaxon_34815
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_03411324
+  label: obo:FOODON_03411324
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_6447
+  label: obo:NCBITaxon_6447
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_33317
+  label: obo:NCBITaxon_33317
+  count: 2
+- uri: http://purl.obolibrary.org/obo/FOODON_03412113
+  label: obo:FOODON_03412113
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_7997
+  label: obo:NCBITaxon_7997
   count: 2
 - uri: http://purl.obolibrary.org/obo/FOODON_03420148
   label: obo:FOODON_03420148
   count: 2
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_2785011
   label: obo:NCBITaxon_2785011
+  count: 2
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_147949
+  label: obo:NCBITaxon_147949
   count: 2
 - uri: http://www.w3.org/2002/07/owl#AllDisjointClasses
   label: owl:AllDisjointClasses
@@ -854,17 +872,14 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/FOODON_00002581
   label: obo:FOODON_00002581
   count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_147949
-  label: obo:NCBITaxon_147949
+- uri: http://purl.obolibrary.org/obo/FOODON_03412004
+  label: obo:FOODON_03412004
   count: 2
 - uri: http://purl.obolibrary.org/obo/FOODON_00004333
   label: obo:FOODON_00004333
   count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_03412004
-  label: obo:FOODON_03412004
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_00001046
-  label: obo:FOODON_00001046
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_7952
+  label: obo:NCBITaxon_7952
   count: 2
 - uri: http://purl.obolibrary.org/obo/FOODON_00001293
   label: obo:FOODON_00001293
@@ -872,83 +887,80 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_27706
   label: obo:NCBITaxon_27706
   count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_02010001
-  label: obo:FOODON_02010001
-  count: 2
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_8165
   label: obo:NCBITaxon_8165
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_03412112
-  label: obo:FOODON_03412112
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_03411184
-  label: obo:FOODON_03411184
-  count: 2
-- uri: http://w3id.org/sawgraph/v1/me-egad#EGAD-SampleTreatmentStatus
-  label: sawgraph-me:EGAD-SampleTreatmentStatus
   count: 2
 - uri: http://purl.org/spatialai/stad/v2/core/StatisticalQuantityKind
   label: stad:StatisticalQuantityKind
   count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_50384
-  label: obo:NCBITaxon_50384
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_8112
+  label: obo:NCBITaxon_8112
   count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_34815
-  label: obo:NCBITaxon_34815
+- uri: http://w3id.org/sawgraph/v1/me-egad#EGAD-SampleTreatmentStatus
+  label: sawgraph-me:EGAD-SampleTreatmentStatus
   count: 2
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_7997
-  label: obo:NCBITaxon_7997
-  count: 2
-- uri: http://purl.obolibrary.org/obo/FOODON_03411156
-  label: obo:FOODON_03411156
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_147369
-  label: obo:NCBITaxon_147369
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_03411563
-  label: obo:FOODON_03411563
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_03411319
-  label: obo:FOODON_03411319
+- uri: http://purl.obolibrary.org/obo/FOODON_00003425
+  label: obo:FOODON_00003425
   count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_03414066
   label: obo:FOODON_03414066
   count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_00001257
-  label: obo:FOODON_00001257
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_8182
-  label: obo:NCBITaxon_8182
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_02010107
-  label: obo:FOODON_02010107
-  count: 1
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_1
-  label: kwg-ont:AdministrativeRegion_1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_147369
+  label: obo:NCBITaxon_147369
   count: 1
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_8028
   label: obo:NCBITaxon_8028
   count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_02010107
+  label: obo:FOODON_02010107
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_8182
+  label: obo:NCBITaxon_8182
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_00001257
+  label: obo:FOODON_00001257
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_03411156
+  label: obo:FOODON_03411156
+  count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_02010031
   label: obo:FOODON_02010031
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_02021802
-  label: obo:FOODON_02021802
   count: 1
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_13106
   label: obo:NCBITaxon_13106
   count: 1
-- uri: http://w3id.org/coso/v1/contaminoso#ObservationAnnotation
-  label: contaminoso:ObservationAnnotation
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_1
+  label: kwg-ont:AdministrativeRegion_1
   count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_225060
-  label: obo:NCBITaxon_225060
+- uri: http://purl.obolibrary.org/obo/FOODON_03411319
+  label: obo:FOODON_03411319
   count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_301959
-  label: obo:NCBITaxon_301959
+- uri: http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
+  label: rdfs:ContainerMembershipProperty
   count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_75288
-  label: obo:NCBITaxon_75288
+- uri: http://purl.obolibrary.org/obo/FOODON_03420150
+  label: obo:FOODON_03420150
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_2785015
+  label: obo:NCBITaxon_2785015
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_00001261
+  label: obo:FOODON_00001261
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_6545
+  label: obo:NCBITaxon_6545
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_00001251
+  label: obo:FOODON_00001251
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_03420127
+  label: obo:FOODON_03420127
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_03411583
+  label: obo:FOODON_03411583
+  count: 1
+- uri: http://qudt.org/schema/qudt/EnumeratedValue
+  label: qudt:EnumeratedValue
   count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_03411457
   label: obo:FOODON_03411457
@@ -956,26 +968,29 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/FOODON_02010012
   label: obo:FOODON_02010012
   count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_225060
+  label: obo:NCBITaxon_225060
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_27778
+  label: obo:NCBITaxon_27778
+  count: 1
+- uri: http://w3id.org/coso/v1/contaminoso#ObservationAnnotation
+  label: contaminoso:ObservationAnnotation
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_301959
+  label: obo:NCBITaxon_301959
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_75288
+  label: obo:NCBITaxon_75288
+  count: 1
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_2908833
   label: obo:NCBITaxon_2908833
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_03411583
-  label: obo:FOODON_03411583
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_00001251
-  label: obo:FOODON_00001251
   count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_00001041
   label: obo:FOODON_00001041
   count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_03420127
-  label: obo:FOODON_03420127
-  count: 1
-- uri: http://qudt.org/schema/qudt/EnumeratedValue
-  label: qudt:EnumeratedValue
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_27778
-  label: obo:NCBITaxon_27778
+- uri: http://purl.obolibrary.org/obo/FOODON_02021802
+  label: obo:FOODON_02021802
   count: 1
 - uri: http://w3id.org/sawgraph/v1/us-wqp#AnalyticalMethod
   label: sawgraph-wqp:AnalyticalMethod
@@ -986,9 +1001,6 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_4479
   label: obo:NCBITaxon_4479
   count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_6545
-  label: obo:NCBITaxon_6545
-  count: 1
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_6548
   label: obo:NCBITaxon_6548
   count: 1
@@ -997,18 +1009,6 @@ class_partitions:
   count: 1
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_225389
   label: obo:NCBITaxon_225389
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_00001261
-  label: obo:FOODON_00001261
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_2785015
-  label: obo:NCBITaxon_2785015
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_03420150
-  label: obo:FOODON_03420150
-  count: 1
-- uri: http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
-  label: rdfs:ContainerMembershipProperty
   count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_00001093
   label: obo:FOODON_00001093
@@ -1100,8 +1100,8 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/FOODON_03411223
   label: obo:FOODON_03411223
   count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_1437197
-  label: obo:NCBITaxon_1437197
+- uri: http://purl.obolibrary.org/obo/FOODON_03411594
+  label: obo:FOODON_03411594
   count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_00001256
   label: obo:FOODON_00001256
@@ -1133,20 +1133,17 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_6550
   label: obo:NCBITaxon_6550
   count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_00003425
-  label: obo:FOODON_00003425
-  count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_00002150
   label: obo:FOODON_00002150
   count: 1
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_66912
   label: obo:NCBITaxon_66912
   count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_1437197
+  label: obo:NCBITaxon_1437197
+  count: 1
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_147429
   label: obo:NCBITaxon_147429
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_03411594
-  label: obo:FOODON_03411594
   count: 1
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_46259
   label: obo:NCBITaxon_46259
@@ -1168,6 +1165,9 @@ class_partitions:
   count: 1
 - uri: http://purl.obolibrary.org/obo/NCBITaxon_154810
   label: obo:NCBITaxon_154810
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_03411563
+  label: obo:FOODON_03411563
   count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_02021651
   label: obo:FOODON_02021651
@@ -1310,44 +1310,44 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/FOODON_00001040
   label: obo:FOODON_00001040
   count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_7969
-  label: obo:NCBITaxon_7969
-  count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_00002165
   label: obo:FOODON_00002165
   count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_147370
-  label: obo:NCBITaxon_147370
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_7971
-  label: obo:NCBITaxon_7971
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_381124
-  label: obo:NCBITaxon_381124
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_75287
-  label: obo:NCBITaxon_75287
-  count: 1
-- uri: http://purl.obolibrary.org/obo/NCBITaxon_126735
-  label: obo:NCBITaxon_126735
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_03411136
-  label: obo:FOODON_03411136
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_00001678
-  label: obo:FOODON_00001678
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_00001173
-  label: obo:FOODON_00001173
-  count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_03411236
-  label: obo:FOODON_03411236
+- uri: http://purl.obolibrary.org/obo/FOODON_03317076
+  label: obo:FOODON_03317076
   count: 1
 - uri: http://purl.obolibrary.org/obo/FOODON_03420173
   label: obo:FOODON_03420173
   count: 1
-- uri: http://purl.obolibrary.org/obo/FOODON_03317076
-  label: obo:FOODON_03317076
+- uri: http://purl.obolibrary.org/obo/FOODON_03411236
+  label: obo:FOODON_03411236
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_00001173
+  label: obo:FOODON_00001173
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_00001678
+  label: obo:FOODON_00001678
+  count: 1
+- uri: http://purl.obolibrary.org/obo/FOODON_03411136
+  label: obo:FOODON_03411136
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_126735
+  label: obo:NCBITaxon_126735
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_75287
+  label: obo:NCBITaxon_75287
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_381124
+  label: obo:NCBITaxon_381124
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_7971
+  label: obo:NCBITaxon_7971
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_147370
+  label: obo:NCBITaxon_147370
+  count: 1
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_7969
+  label: obo:NCBITaxon_7969
   count: 1
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
@@ -1371,11 +1371,11 @@ property_partitions:
 - uri: http://www.w3.org/ns/prov#wasAttributedTo
   label: prov:wasAttributedTo
   count: 723461
-- uri: http://w3id.org/coso/v1/contaminoso#observedAtPoint
-  label: contaminoso:observedAtPoint
-  count: 705788
 - uri: http://w3id.org/coso/v1/contaminoso#observedAtSamplePoint
   label: contaminoso:observedAtSamplePoint
+  count: 705788
+- uri: http://w3id.org/coso/v1/contaminoso#observedAtPoint
+  label: contaminoso:observedAtPoint
   count: 705788
 - uri: http://w3id.org/coso/v1/contaminoso#hasFeatureOfInterest
   label: contaminoso:hasFeatureOfInterest
@@ -1383,29 +1383,29 @@ property_partitions:
 - uri: http://w3id.org/coso/v1/contaminoso#observedTime
   label: contaminoso:observedTime
   count: 705473
-- uri: http://w3id.org/coso/v1/contaminoso#analyzedSample
-  label: contaminoso:analyzedSample
-  count: 705437
 - uri: http://w3id.org/coso/v1/contaminoso#ofDatasetSubstance
   label: contaminoso:ofDatasetSubstance
   count: 705437
-- uri: http://www.w3.org/ns/sosa/hasResult
-  label: sosa:hasResult
-  count: 705437
 - uri: http://w3id.org/coso/v1/contaminoso#observedProperty
   label: contaminoso:observedProperty
-  count: 705437
-- uri: http://w3id.org/coso/v1/contaminoso#hasResult
-  label: contaminoso:hasResult
-  count: 705437
-- uri: http://qudt.org/schema/qudt/quantityValue
-  label: qudt:quantityValue
   count: 705437
 - uri: http://www.w3.org/ns/sosa/observedProperty
   label: sosa:observedProperty
   count: 705437
 - uri: http://qudt.org/schema/qudt/valueQuantity
   label: qudt:valueQuantity
+  count: 705437
+- uri: http://w3id.org/coso/v1/contaminoso#analyzedSample
+  label: contaminoso:analyzedSample
+  count: 705437
+- uri: http://www.w3.org/ns/sosa/hasResult
+  label: sosa:hasResult
+  count: 705437
+- uri: http://w3id.org/coso/v1/contaminoso#hasResult
+  label: contaminoso:hasResult
+  count: 705437
+- uri: http://qudt.org/schema/qudt/quantityValue
+  label: qudt:quantityValue
   count: 705437
 - uri: http://www.w3.org/ns/sosa/resultTime
   label: sosa:resultTime
@@ -1431,11 +1431,11 @@ property_partitions:
 - uri: http://purl.org/spatialai/stad/v2/core/hasQualityKind
   label: stad:hasQualityKind
   count: 576776
-- uri: http://w3id.org/coso/v1/contaminoso#observationAnnotation
-  label: contaminoso:observationAnnotation
-  count: 576763
 - uri: http://w3id.org/sawgraph/v1/me-egad#resultType
   label: sawgraph-me:resultType
+  count: 576763
+- uri: http://w3id.org/coso/v1/contaminoso#observationAnnotation
+  label: contaminoso:observationAnnotation
   count: 576763
 - uri: http://w3id.org/sawgraph/v1/me-egad#validationLevel
   label: sawgraph-me:validationLevel
@@ -1467,26 +1467,26 @@ property_partitions:
 - uri: http://purl.org/dc/terms/identifier
   label: dct:identifier
   count: 40194
-- uri: http://purl.org/spatialai/spatial/spatial-full#spatiallyRelatedTo
-  label: spatial-full:spatiallyRelatedTo
-  count: 34072
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/spatialRelation
   label: kwg-ont:spatialRelation
   count: 34072
 - uri: http://purl.org/spatialai/spatial/spatial-full#connectedTo
   label: spatial-full:connectedTo
   count: 34072
+- uri: http://purl.org/spatialai/spatial/spatial-full#spatiallyRelatedTo
+  label: spatial-full:spatiallyRelatedTo
+  count: 34072
 - uri: http://w3id.org/coso/v1/contaminoso#sampleOfMaterialType
   label: contaminoso:sampleOfMaterialType
   count: 32205
+- uri: http://w3id.org/coso/v1/contaminoso#fromSamplePoint
+  label: contaminoso:fromSamplePoint
+  count: 28146
 - uri: http://www.w3.org/ns/sosa/isSampleOf
   label: sosa:isSampleOf
   count: 28146
 - uri: http://w3id.org/coso/v1/contaminoso#isSampleOf
   label: contaminoso:isSampleOf
-  count: 28146
-- uri: http://w3id.org/coso/v1/contaminoso#fromSamplePoint
-  label: contaminoso:fromSamplePoint
   count: 28146
 - uri: http://w3id.org/coso/v1/contaminoso#sampleFeatureType
   label: contaminoso:sampleFeatureType
@@ -1497,11 +1497,11 @@ property_partitions:
 - uri: http://w3id.org/sawgraph/v1/me-egad#sampleCollectionMethod
   label: sawgraph-me:sampleCollectionMethod
   count: 22690
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
-  label: kwg-ont:sfWithin
-  count: 17036
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfContains
   label: kwg-ont:sfContains
+  count: 17036
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
+  label: kwg-ont:sfWithin
   count: 17036
 - uri: http://w3id.org/sawgraph/v1/me-egad#samplePointType
   label: sawgraph-me:samplePointType
@@ -1530,11 +1530,11 @@ property_partitions:
 - uri: http://www.w3.org/2004/02/skos/core#altLabel
   label: skos:altLabel
   count: 8453
-- uri: http://w3id.org/sawgraph/v1/me-egad#samplePointNumber
-  label: sawgraph-me:samplePointNumber
-  count: 8324
 - uri: http://w3id.org/sawgraph/v1/me-egad#samplePointWebName
   label: sawgraph-me:samplePointWebName
+  count: 8324
+- uri: http://w3id.org/sawgraph/v1/me-egad#samplePointNumber
+  label: sawgraph-me:samplePointNumber
   count: 8324
 - uri: http://w3id.org/sawgraph/v1/me-egad#sampledFeatureType
   label: sawgraph-me:sampledFeatureType
@@ -1554,14 +1554,14 @@ property_partitions:
 - uri: http://purl.org/dc/terms/title
   label: dct:title
   count: 2532
+- uri: http://w3id.org/sawgraph/v1/us-wqp#siteName
+  label: sawgraph-wqp:siteName
+  count: 2519
 - uri: http://w3id.org/sawgraph/v1/us-wqp#locationType
   label: sawgraph-wqp:locationType
   count: 2519
 - uri: http://w3id.org/sawgraph/v1/us-wqp#siteId
   label: sawgraph-wqp:siteId
-  count: 2519
-- uri: http://w3id.org/sawgraph/v1/us-wqp#siteName
-  label: sawgraph-wqp:siteName
   count: 2519
 - uri: http://www.w3.org/2002/07/owl#equivalentClass
   label: owl:equivalentClass
@@ -1683,11 +1683,11 @@ property_partitions:
 - uri: http://w3id.org/sawgraph/v1/us-wqp#srsID
   label: sawgraph-wqp:srsID
   count: 47
-- uri: http://w3id.org/DSSTox/v1/hasInChiKey
-  label: dsstox:hasInChiKey
-  count: 45
 - uri: http://www.w3.org/2002/07/owl#allValuesFrom
   label: owl:allValuesFrom
+  count: 45
+- uri: http://w3id.org/DSSTox/v1/hasInChiKey
+  label: dsstox:hasInChiKey
   count: 45
 - uri: http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
   label: oboInOwl:hasBroadSynonym
@@ -1725,11 +1725,11 @@ property_partitions:
 - uri: http://purl.org/dc/terms/created
   label: dct:created
   count: 13
-- uri: http://www.w3.org/2002/07/owl#versionInfo
-  label: owl:versionInfo
-  count: 12
 - uri: http://qudt.org/schema/qudt/ucumCode
   label: qudt:ucumCode
+  count: 12
+- uri: http://www.w3.org/2002/07/owl#versionInfo
+  label: owl:versionInfo
   count: 12
 - uri: http://schema.org/domainIncludes
   label: domainIncludes
@@ -1737,11 +1737,11 @@ property_partitions:
 - uri: http://schema.org/rangeIncludes
   label: rangeIncludes
   count: 11
-- uri: http://qudt.org/schema/qudt/informativeReference
-  label: qudt:informativeReference
-  count: 11
 - uri: http://w3id.org/sawgraph/v1/us-wqp#organizationId
   label: sawgraph-wqp:organizationId
+  count: 11
+- uri: http://qudt.org/schema/qudt/informativeReference
+  label: qudt:informativeReference
   count: 11
 - uri: http://purl.obolibrary.org/obo/IAO_0000112
   label: obo:IAO_0000112
@@ -1761,9 +1761,6 @@ property_partitions:
 - uri: http://qudt.org/schema/qudt/symbol
   label: qudt:symbol
   count: 7
-- uri: http://www.w3.org/2002/07/owl#inverseOf
-  label: owl:inverseOf
-  count: 6
 - uri: http://qudt.org/schema/qudt/conversionMultiplierSN
   label: qudt:conversionMultiplierSN
   count: 6
@@ -1773,11 +1770,14 @@ property_partitions:
 - uri: http://qudt.org/schema/qudt/conversionMultiplier
   label: qudt:conversionMultiplier
   count: 6
+- uri: http://purl.org/dc/terms/source
+  label: dct:source
+  count: 6
 - uri: http://www.geneontology.org/formats/oboInOwl#id
   label: oboInOwl:id
   count: 6
-- uri: http://purl.org/dc/terms/source
-  label: dct:source
+- uri: http://www.w3.org/2002/07/owl#inverseOf
+  label: owl:inverseOf
   count: 6
 - uri: http://purl.org/dc/terms/issued
   label: dct:issued
@@ -1788,77 +1788,74 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/IAO_0000600
   label: obo:IAO_0000600
   count: 5
+- uri: http://qudt.org/schema/qudt/uneceCommonCode
+  label: qudt:uneceCommonCode
+  count: 4
 - uri: http://qudt.org/schema/qudt/iec61360Code
   label: qudt:iec61360Code
   count: 4
 - uri: http://w3id.org/sawgraph/v1/me-egad#dep_chemicalID
   label: sawgraph-me:dep_chemicalID
   count: 4
-- uri: http://qudt.org/schema/qudt/uneceCommonCode
-  label: qudt:uneceCommonCode
-  count: 4
+- uri: http://purl.org/vocab/vann/preferredNamespaceUri
+  label: vann:preferredNamespaceUri
+  count: 3
+- uri: http://qudt.org/schema/qudt/dbpediaMatch
+  label: qudt:dbpediaMatch
+  count: 3
+- uri: http://purl.org/dc/terms/abstract
+  label: dct:abstract
+  count: 3
 - uri: http://www.w3.org/2002/07/owl#complementOf
   label: owl:complementOf
   count: 3
 - uri: http://www.w3.org/2002/07/owl#annotatedSource
   label: owl:annotatedSource
   count: 3
-- uri: http://qudt.org/schema/qudt/dbpediaMatch
-  label: qudt:dbpediaMatch
-  count: 3
-- uri: http://www.linkedmodel.org/schema/vaem#hasGraphMetadata
-  label: vaem:hasGraphMetadata
-  count: 3
-- uri: http://www.w3.org/2002/07/owl#annotatedTarget
-  label: owl:annotatedTarget
+- uri: http://www.w3.org/2002/07/owl#annotatedProperty
+  label: owl:annotatedProperty
   count: 3
 - uri: http://qudt.org/schema/qudt/plainTextDescription
   label: qudt:plainTextDescription
   count: 3
-- uri: http://www.w3.org/2002/07/owl#annotatedProperty
-  label: owl:annotatedProperty
-  count: 3
-- uri: http://purl.org/dc/terms/abstract
-  label: dct:abstract
-  count: 3
 - uri: http://purl.org/vocab/vann/preferredNamespacePrefix
   label: vann:preferredNamespacePrefix
   count: 3
-- uri: http://purl.org/vocab/vann/preferredNamespaceUri
-  label: vann:preferredNamespaceUri
+- uri: http://www.linkedmodel.org/schema/vaem#hasGraphMetadata
+  label: vaem:hasGraphMetadata
   count: 3
 - uri: http://www.geneontology.org/formats/oboInOwl#inSubset
   label: oboInOwl:inSubset
   count: 3
-- uri: http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
-  label: oboInOwl:hasRelatedSynonym
-  count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#creation_date
-  label: oboInOwl:creation_date
-  count: 2
-- uri: http://purl.obolibrary.org/obo/RO_0001900
-  label: obo:RO_0001900
-  count: 2
-- uri: http://www.w3.org/2002/07/owl#members
-  label: owl:members
-  count: 2
+- uri: http://www.w3.org/2002/07/owl#annotatedTarget
+  label: owl:annotatedTarget
+  count: 3
 - uri: http://purl.obolibrary.org/obo/RO_0002162
   label: obo:RO_0002162
-  count: 2
-- uri: http://www.w3.org/2000/01/rdf-schema#subclassOf
-  label: rdfs:subclassOf
-  count: 2
-- uri: http://purl.org/dc/terms/license
-  label: dct:license
   count: 2
 - uri: http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
   label: oboInOwl:hasOBONamespace
   count: 2
-- uri: http://qudt.org/schema/qudt/scalingOf
-  label: qudt:scalingOf
-  count: 1
-- uri: http://purl.org/dc/terms/rights
-  label: dct:rights
+- uri: http://www.geneontology.org/formats/oboInOwl#creation_date
+  label: oboInOwl:creation_date
+  count: 2
+- uri: http://purl.org/dc/terms/license
+  label: dct:license
+  count: 2
+- uri: http://purl.obolibrary.org/obo/RO_0001900
+  label: obo:RO_0001900
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+  label: oboInOwl:hasRelatedSynonym
+  count: 2
+- uri: http://www.w3.org/2000/01/rdf-schema#subclassOf
+  label: rdfs:subclassOf
+  count: 2
+- uri: http://www.w3.org/2002/07/owl#members
+  label: owl:members
+  count: 2
+- uri: http://purl.org/dc/terms/isReplacedBy
+  label: dct:isReplacedBy
   count: 1
 - uri: http://qudt.org/schema/qudt/wikidataMatch
   label: qudt:wikidataMatch
@@ -1869,17 +1866,17 @@ property_partitions:
 - uri: http://qudt.org/schema/qudt/qkdvNumerator
   label: qudt:qkdvNumerator
   count: 1
+- uri: http://qudt.org/schema/qudt/deprecated
+  label: qudt:deprecated
+  count: 1
+- uri: http://w3id.org/sawgraph/v1/us-wqp#Sample
+  label: sawgraph-wqp:Sample
+  count: 1
 - uri: http://purl.org/dc/elements/1.1/source
   label: dc:source
   count: 1
-- uri: http://purl.org/dc/terms/isReplacedBy
-  label: dct:isReplacedBy
-  count: 1
-- uri: http://www.geneontology.org/formats/oboInOwl#created_by
-  label: oboInOwl:created_by
-  count: 1
-- uri: http://qudt.org/schema/qudt/udunitsCode
-  label: qudt:udunitsCode
+- uri: http://qudt.org/schema/qudt/scalingOf
+  label: qudt:scalingOf
   count: 1
 - uri: http://qudt.org/schema/qudt/omUnit
   label: qudt:omUnit
@@ -1887,9 +1884,12 @@ property_partitions:
 - uri: http://qudt.org/schema/qudt/abbreviation
   label: qudt:abbreviation
   count: 1
-- uri: http://qudt.org/schema/qudt/deprecated
-  label: qudt:deprecated
+- uri: http://www.geneontology.org/formats/oboInOwl#created_by
+  label: oboInOwl:created_by
   count: 1
-- uri: http://w3id.org/sawgraph/v1/us-wqp#Sample
-  label: sawgraph-wqp:Sample
+- uri: http://qudt.org/schema/qudt/udunitsCode
+  label: qudt:udunitsCode
+  count: 1
+- uri: http://purl.org/dc/terms/rights
+  label: dct:rights
   count: 1

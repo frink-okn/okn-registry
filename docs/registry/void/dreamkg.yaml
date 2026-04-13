@@ -3,7 +3,7 @@ distinct_subjects: 14175
 distinct_objects: 19101
 properties: 40
 classes: 16
-last_checked: '2026-03-27'
+last_checked: '2026-04-13'
 class_partitions:
 - uri: http://schema.org/Review
   label: Review
@@ -17,20 +17,20 @@ class_partitions:
 - uri: http://schema.org/ServiceChannel
   label: ServiceChannel
   count: 1324
+- uri: http://schema.org/Organization
+  label: Organization
+  count: 662
+- uri: http://schema.org/Place
+  label: Place
+  count: 662
+- uri: http://schema.org/ContactPoint
+  label: ContactPoint
+  count: 662
 - uri: http://schema.org/Service
   label: Service
   count: 662
 - uri: http://schema.org/TextObject
   label: TextObject
-  count: 662
-- uri: http://schema.org/ContactPoint
-  label: ContactPoint
-  count: 662
-- uri: http://schema.org/Place
-  label: Place
-  count: 662
-- uri: http://schema.org/Organization
-  label: Organization
   count: 662
 - uri: http://schema.org/OpeningHoursSpecification
   label: OpeningHoursSpecification
@@ -108,11 +108,11 @@ property_partitions:
 - uri: http://schema.org/longitude
   label: longitude
   count: 764
-- uri: http://schema.org/telephone
-  label: telephone
-  count: 701
 - uri: http://schema.org/identifier
   label: identifier
+  count: 701
+- uri: http://schema.org/telephone
+  label: telephone
   count: 701
 - uri: http://schema.org/latitude
   label: latitude
@@ -132,20 +132,20 @@ property_partitions:
 - uri: http://schema.org/conditionsOfAccess
   label: conditionsOfAccess
   count: 664
-- uri: http://schema.org/servicePhone
-  label: servicePhone
-  count: 662
 - uri: http://schema.org/description
   label: description
   count: 662
-- uri: http://schema.org/areaServed
-  label: areaServed
+- uri: http://schema.org/provider
+  label: provider
   count: 662
 - uri: http://schema.org/serviceLocation
   label: serviceLocation
   count: 662
-- uri: http://schema.org/provider
-  label: provider
+- uri: http://schema.org/areaServed
+  label: areaServed
+  count: 662
+- uri: http://schema.org/servicePhone
+  label: servicePhone
   count: 662
 - uri: http://schema.org/opens
   label: opens

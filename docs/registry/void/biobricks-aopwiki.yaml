@@ -3,7 +3,7 @@ distinct_subjects: 22494
 distinct_objects: 85068
 properties: 68
 classes: 26
-last_checked: '2026-03-27'
+last_checked: '2026-04-13'
 class_partitions:
 - uri: http://edamontology.org/data_1025
   label: data_1025
@@ -50,11 +50,11 @@ class_partitions:
 - uri: http://semanticscience.org/resource/CHEMINF_000567
   label: CHEMINF_000567
   count: 402
-- uri: http://semanticscience.org/resource/CHEMINF_000000
-  label: CHEMINF_000000
-  count: 391
 - uri: http://semanticscience.org/resource/CHEMINF_000446
   label: CHEMINF_000446
+  count: 391
+- uri: http://semanticscience.org/resource/CHEMINF_000000
+  label: CHEMINF_000000
   count: 391
 - uri: http://semanticscience.org/resource/CHEMINF_000412
   label: CHEMINF_000412
@@ -132,11 +132,11 @@ property_partitions:
 - uri: http://aopkb.org/aop_ontology#has_key_event_relationship
   label: has_key_event_relationship
   count: 2778
-- uri: http://aopkb.org/aop_ontology#has_upstream_key_event
-  label: has_upstream_key_event
-  count: 2060
 - uri: http://aopkb.org/aop_ontology#has_downstream_key_event
   label: has_downstream_key_event
+  count: 2060
+- uri: http://aopkb.org/aop_ontology#has_upstream_key_event
+  label: has_upstream_key_event
   count: 2060
 - uri: http://purl.org/dc/elements/1.1/description
   label: dc:description
@@ -273,18 +273,18 @@ property_partitions:
 - uri: http://purl.org/pav/createdWith
   label: pav:createdWith
   count: 4
+- uri: http://purl.org/pav/createdOn
+  label: pav:createdOn
+  count: 2
+- uri: http://purl.org/pav/createdBy
+  label: pav:createdBy
+  count: 2
 - uri: http://purl.org/pav/importedOn
   label: pav:importedOn
   count: 2
 - uri: http://purl.org/dc/terms/accuralPeriodicity
   label: dct:accuralPeriodicity
   count: 2
-- uri: http://purl.org/pav/createdBy
-  label: pav:createdBy
-  count: 2
 - uri: http://xmlns.com/foaf/0.1/homepage
   label: foaf:homepage
-  count: 2
-- uri: http://purl.org/pav/createdOn
-  label: pav:createdOn
   count: 2
