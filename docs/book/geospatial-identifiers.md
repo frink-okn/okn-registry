@@ -10,6 +10,7 @@ Each recommendation consists of at minimum an IRI format (in which the substring
 Many of the entries below refer to KnowWhereGraph, which the Proto-OKN is in the process of incorporating sufficient geospatial components of.
 
 Some of the entries below also refer to the Google Data Commons, but some general warnings about this data source:
+
 * Do not use it for an entity that is also defined in KnowWhereGraph.
     * Example: use http://stko-kwg.geog.ucsb.edu/lod/resource/administrativeRegion.USA.23 to refer to Maine instead of https://datacommons.org/browser/geoId/23
 * Do not use it if the IRI for it contains "wikidataId": use http://www.wikidata.org/entity/ as the prefix to the Wikidata ID used in that IRI instead.
@@ -20,29 +21,34 @@ Some of the entries below also refer to the Google Data Commons, but some genera
 ### U.S. states
 
 (KnowWhereGraph)
+
 * IRI format: http://stko-kwg.geog.ucsb.edu/lod/resource/administrativeRegion.USA.$1
 * Example: California = http://stko-kwg.geog.ucsb.edu/lod/resource/administrativeRegion.USA.06
 
 ### U.S. cities
 
 (KnowWhereGraph/GNIS-LD)
+
 * IRI format: http://gnis-ld.org/lod/gnis/feature/$1
 * Example: Fontana = http://gnis-ld.org/lod/gnis/feature/2410517
 
 ### U.S. ZIP code regions
 
 (KnowWhereGraph)
+
 * IRI format: http://stko-kwg.geog.ucsb.edu/lod/resource/zipCodeArea.$1
 * Example: 04419 = http://stko-kwg.geog.ucsb.edu/lod/resource/zipCodeArea.04419
 
 ### U.S. census tracts
 
 (Data Commons)
+
 * IRI format: https://datacommons.org/browser/geoId/$1
 * Example: Census Tract 110, Penobscot County, Maine = https://datacommons.org/browser/geoId/23019011000
 
 ### U.S. census track block groups
 
 (Data Commons)
+
 * IRI format: https://datacommons.org/browser/geoId/$1
 * Example: Block Group 1, Census Tract 110, Penobscot County, Maine = https://datacommons.org/browser/geoId/230190110001

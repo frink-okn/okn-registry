@@ -14,6 +14,7 @@ The Proto-OKN will seek to ensure a correspondence between entity types and rela
 ### U.S. judicial circuits
 
 (KnowWhereGraph)
+
 * IRI format: http://stko-kwg.geog.ucsb.edu/lod/resource/circuit.$1
 * Example: Ninth Circuit = http://stko-kwg.geog.ucsb.edu/lod/resource/circuit.9
 
@@ -22,6 +23,7 @@ See also the page on geospatial identifiers.
 ### U.S. judicial districts
 
 (KnowWhereGraph)
+
 * IRI format: http://stko-kwg.geog.ucsb.edu/lod/resource/federalJudicialDistrict.$1
 * Example: Northern District of Iowa = http://stko-kwg.geog.ucsb.edu/lod/resource/federalJudicialDistrict.89
 
