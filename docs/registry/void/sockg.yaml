@@ -3,7 +3,7 @@ distinct_subjects: 7117289
 distinct_objects: 7520059
 properties: 107
 classes: 90
-last_checked: '2026-04-09'
+last_checked: '2026-04-13'
 class_partitions:
 - uri: http://qudt.org/schema/qudt/QuantityValue
   label: qudt:QuantityValue
