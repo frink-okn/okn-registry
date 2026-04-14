@@ -3,7 +3,7 @@ distinct_subjects: 2437717
 distinct_objects: 5583396
 properties: 80
 classes: 24
-last_checked: '2026-04-13'
+last_checked: '2026-04-14'
 class_partitions:
 - uri: http://id.nlm.nih.gov/mesh/vocab#Term
   label: meshv:Term
