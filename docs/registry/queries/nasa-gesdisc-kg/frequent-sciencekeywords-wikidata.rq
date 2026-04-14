@@ -1,0 +1,15 @@
+#+ summary: Find science keywords most frequently cited by publications, matching labels against GCMD identifiers on Wikidata
+#+ tags:
+#+   - federation
+
+PREFIX schema: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?ScienceKeyword (COUNT (DISTINCT ?Publication) AS ?PublicationCount)
+WHERE {
+        ?Publication schema:USES_DATASET ?Dataset .
+        ?Dataset schema:HAS_SCIENCEKEYWORD ?Keyword .
+        ?Keyword rdfs:label ?ScienceKeyword
+}
+GROUP BY ?ScienceKeyword
+ORDER BY DESC(?PublicationCount)
+LIMIT 25
