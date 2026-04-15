@@ -1,0 +1,16 @@
+#+ summary: List all labeled interactions
+#+ tags:
+#+   - ncipidkg
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX RO: <http://purl.obolibrary.org/obo/RO_>
+
+SELECT ?sourceLabel ?relation ?targetLabel
+WHERE {
+  ?source ?relation ?target .
+  FILTER(STRSTARTS(STR(?relation), STR(RO:)))
+
+  OPTIONAL { ?source rdfs:label ?sourceLabel }
+  OPTIONAL { ?target rdfs:label ?targetLabel }
+}
