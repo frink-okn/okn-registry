@@ -8,7 +8,7 @@ theme:
     primary: custom
   font:
     text: Open Sans
-  features: 
+  features:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
@@ -24,8 +24,7 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/header-button.js
   - javascripts/tablesort.js
-  - path: javascripts/mermaid.mjs
-    defer: true
+  - javascripts/mermaid.mjs
 hooks:
   - hooks/kg_page_data.py
 watch:
@@ -50,23 +49,23 @@ markdown_extensions:
           format: !!python/name:mermaid2.fence_mermaid
   - def_list
   - pymdownx.tasklist:
-      custom_checkbox: true     
+      custom_checkbox: true
 nav:
-  - Explore: 
+  - Explore:
     - registry/index.md
     - KG Statistics: okn/kgstatus.md
     - Knowledge Map: okn/learn/index.md
   - Query:
     - Query Tool: query/query-page.md
     - Sample Query Library: query/sample-query-library.md
-  - Contribute: 
+  - Contribute:
     - The OKN Book:
       - Overview: book/index.md
       - Graph Construction Best Practices: book/best-practices.md
       - About External Identifiers: book/identifiers.md
       - Biomedical Identifier Choices: book/biomedical-identifiers.md
       - Ingesting Identifier Sources: book/new-id-sources.md
-    - Quick Start Guide: 
+    - Quick Start Guide:
       - help/index.md
       - Setup Your FRINK Repo in the Landing Zone: help/setup.md
       - Update Query Tool: help/update.md
