@@ -3,7 +3,7 @@ distinct_subjects: 2437717
 distinct_objects: 5583396
 properties: 80
 classes: 24
-last_checked: '2026-03-09'
+last_checked: '2026-04-14'
 class_partitions:
 - uri: http://id.nlm.nih.gov/mesh/vocab#Term
   label: meshv:Term
@@ -59,23 +59,23 @@ class_partitions:
 - uri: http://id.nlm.nih.gov/mesh/vocab#CheckTag
   label: meshv:CheckTag
   count: 2
-- uri: http://rdfs.org/ns/void#Dataset
-  label: void:Dataset
-  count: 1
-- uri: http://rdfs.org/ns/void#DatasetDescription
-  label: void:DatasetDescription
-  count: 1
 - uri: http://www.w3.org/2002/07/owl#AnnotationProperty
   label: owl:AnnotationProperty
+  count: 1
+- uri: http://www.w3.org/ns/sparql-service-description#Service
+  label: Service
   count: 1
 - uri: http://www.w3.org/2002/07/owl#Ontology
   label: owl:Ontology
   count: 1
+- uri: http://rdfs.org/ns/void#Dataset
+  label: void:Dataset
+  count: 1
 - uri: http://www.w3.org/2002/07/owl#TransitiveProperty
   label: owl:TransitiveProperty
   count: 1
-- uri: http://www.w3.org/ns/sparql-service-description#Service
-  label: Service
+- uri: http://rdfs.org/ns/void#DatasetDescription
+  label: void:DatasetDescription
   count: 1
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
@@ -96,11 +96,11 @@ property_partitions:
 - uri: http://id.nlm.nih.gov/mesh/vocab#thesaurusID
   label: meshv:thesaurusID
   count: 909053
-- uri: http://id.nlm.nih.gov/mesh/vocab#prefLabel
-  label: meshv:prefLabel
-  count: 862579
 - uri: http://id.nlm.nih.gov/mesh/vocab#lexicalTag
   label: meshv:lexicalTag
+  count: 862579
+- uri: http://id.nlm.nih.gov/mesh/vocab#prefLabel
+  label: meshv:prefLabel
   count: 862579
 - uri: http://id.nlm.nih.gov/mesh/vocab#preferredTerm
   label: meshv:preferredTerm
@@ -222,11 +222,11 @@ property_partitions:
 - uri: http://id.nlm.nih.gov/mesh/vocab#broaderQualifier
   label: meshv:broaderQualifier
   count: 76
-- uri: http://id.nlm.nih.gov/mesh/vocab#considerAlso
-  label: meshv:considerAlso
-  count: 66
 - uri: http://purl.org/dc/terms/description
   label: dct:description
+  count: 66
+- uri: http://id.nlm.nih.gov/mesh/vocab#considerAlso
+  label: meshv:considerAlso
   count: 66
 - uri: http://www.w3.org/2000/01/rdf-schema#comment
   label: rdfs:comment
@@ -258,23 +258,26 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#versionInfo
   label: owl:versionInfo
   count: 2
-- uri: http://www.w3.org/ns/sparql-service-description#feature
-  label: feature
-  count: 2
 - uri: http://purl.org/dc/terms/title
   label: dct:title
   count: 2
 - uri: http://purl.org/dc/terms/creator
   label: dct:creator
   count: 2
-- uri: http://www.w3.org/ns/sparql-service-description#supportedLanguage
-  label: supportedLanguage
+- uri: http://www.w3.org/ns/sparql-service-description#feature
+  label: feature
+  count: 2
+- uri: http://purl.org/dc/terms/created
+  label: dct:created
   count: 1
 - uri: http://xmlns.com/foaf/0.1/homepage
   label: foaf:homepage
   count: 1
-- uri: http://www.w3.org/ns/sparql-service-description#url
-  label: url
+- uri: http://rdfs.org/ns/void#exampleResource
+  label: void:exampleResource
+  count: 1
+- uri: http://www.w3.org/ns/sparql-service-description#supportedLanguage
+  label: supportedLanguage
   count: 1
 - uri: http://www.w3.org/2002/07/owl#propertyDisjointWith
   label: owl:propertyDisjointWith
@@ -300,6 +303,9 @@ property_partitions:
 - uri: http://www.w3.org/ns/sparql-service-description#endpoint
   label: endpoint
   count: 1
+- uri: http://www.w3.org/ns/sparql-service-description#url
+  label: url
+  count: 1
 - uri: http://rdfs.org/ns/void#feature
   label: void:feature
   count: 1
@@ -311,10 +317,4 @@ property_partitions:
   count: 1
 - uri: http://xmlns.com/foaf/0.1/page
   label: foaf:page
-  count: 1
-- uri: http://rdfs.org/ns/void#exampleResource
-  label: void:exampleResource
-  count: 1
-- uri: http://purl.org/dc/terms/created
-  label: dct:created
   count: 1

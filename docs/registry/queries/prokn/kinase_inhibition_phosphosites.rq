@@ -19,127 +19,31 @@ PREFIX upcore: <http://purl.uniprot.org/core/>
 PREFIX schema: <http://schema.org/>
 PREFIX reproduceme: <https://w3id.org/reproduceme#>
 
-SELECT DISTINCT (?pert as ?Perturbagen)(?pertLabel as ?PerturbagenLabel)(?oph as ?Phosphorylation)(?ophLabel as ?PhosphorylationLabel)
+SELECT DISTINCT (?pertLabel as ?Perturbagen) (?e as ?Experiment) (?ptmLabel as ?PhosphorylationSite) (?log2Ratio as ?Value)
 WHERE {
+  # 1. Find the perturbagen entity
+  ?pert a bao:0003059 ;
+        rdfs:label ?pertLabel .
+  FILTER(LCASE(STR(?pertLabel)) = "selumetinib")
 
-    ## ================================================
-    ## VALUES block for specifying perturbagen of interest
-    ## ================================================
-    VALUES ?pertLabel { "Selumetinib" }  # Can add more perturbagens here
+  # 2. Link the perturbagen to the experiment(s) it was used in
+  ?pert eco:9000000 ?e .
+  
+  # 3. Find the reified statements for affected phosphorylation sites
+  # Matches your current data: subject is Experiment, object is PTMSite
+  ?stmt rdf:type rdf:Statement ;
+        rdf:predicate biolink:affected_by ;
+        rdf:subject ?ptmSite ;
+        rdf:object ?e;
+        ns:log2Ratio ?log2Ratio ;
+        dc:source ?source .
+  
+  # 4. Filter for downregulation (e.g., log2Ratio <= -1.0)
+  FILTER(xsd:decimal(?log2Ratio) <= -1.0)
 
-    {
-        ## ================================================
-        ## BLOCK 1: LINCS P100 data - driven approach
-        ## This block finds phosphorylation sites experimentally observed 
-        ## to be downregulated in LINCS P100 phosphoproteomics data
-        ## ================================================
-
-        ## 1. Identify the perturbagen entity
-        ?pert a bao:0003059;                # Instance of Perturbagen class
-              rdfs:label ?pertLabel.        # With matching label
-
-        ## 2. Link perturbagen to experiment via ECO:9000000(perturbagen used in)
-        ?r rdf:subject ?pert ;
-           rdf:predicate eco:9000000;       # "perturbagen used in" relation
-           rdf:object ?e.
-        ?e a reproduceme:Experiment.        # Experiment entity
-
-        ## 3. Retrieve LINCS phosphosite perturbation effects
-        ?r1 rdf:subject ?lincs ;
-            rdf:predicate biolink:affected_by;   # "is result of" relation
-            rdf:object ?e ;
-            ns:log2Ratio ?diff_val.               # Experimental log2 fold-change
-
-        # FILTER for downregulation (≤ -1 log2 fold-change)
-        FILTER(xsd:decimal(?diff_val) <= -1.0)
-
-        ## 4. Connect LINCS phosphosite to its protein (bidirectional relation)
-        { ?r2 rdf:subject ?lincs ; rdf:object ?lincssub. }    # Site → Protein
-        UNION
-        { ?r2 rdf:subject ?lincssub ; rdf:object ?lincs. }    # Protein → Site
-        ?lincssub a upcore:Protein.                # Protein entity
-
-        ## 5. Map to iPTMnet phosphorylation annotation
-        ?iptm a upcore:PTM_Annotation;             # iPTMnet modification annotation
-               dc:source "iPTMnet";                 # From iPTMnet database
-               dc:type "PHOSPHORYLATION";           # Specifically phosphorylation
-               upcore:Site_Annotation ?lincs_site_id. # Matches LINCS site ID
-
-        ## Bidirectional connection between protein and PTM annotation
-        { ?r5 rdf:subject ?lincssub ; rdf:object ?iptm. }
-        UNION
-        { ?r5 rdf:subject ?iptm ; rdf:object ?lincssub. }
-
-        ## 6. Identify kinase catalyzing this phosphorylation
-        ?k a upcore:Protein;                        # Kinase protein
-           dc:source ?k_sab.                         # Source database
-        FILTER(STR(?k_sab) IN ("UniProtKB", "iPTMnet"))  # From trusted sources
-
-        ?r6 rdf:subject ?k ;
-            rdf:predicate biolink:catalyzes;        # Kinase catalyzes the PTM
-            rdf:object ?iptm.
-
-        ## 7. Expand to other phosphorylation targets of the same kinase
-        ## (optional - find additional sites that might be affected)
-        OPTIONAL {
-            ?r7 rdf:subject ?k ;                     # Same kinase
-                rdf:predicate biolink:catalyzes;     # Catalyzes relation
-                rdf:object ?oph.                      # Other phosphorylation site
-
-            ?oph a upcore:PTM_Annotation;             # Another iPTMnet annotation
-                 dc:source "iPTMnet";
-                 rdfs:label ?ophLabel ;               # Site label/identifier
-                 dc:type "PHOSPHORYLATION".
-        }
-    }
-
-    UNION 
-    {
-        ## ================================================
-        ## BLOCK 2: Pharmacological knowledge - driven approach
-        ## This block finds phosphorylation sites based on known 
-        ## drug - protein inhibition relationships from pharmacology
-        ## ================================================
-
-        ## Perturbagen with PubChem cross-reference
-        ?pert a bao:0003059;
-              rdfs:label ?pertLabel ;
-              obo:has_dbxref ?pubchemCid.     # Cross-reference to PubChem
-        
-        ## Drug entity sharing same PubChem CID
-        ?drug a schema:Drug;
-              rdfs:seeAlso ?pubchemCid.       # Links to same PubChem ID
-
-        ## Drug - protein inhibition mechanism (bidirectional)
-        { ?drug obo:RO_0002436 ?protein }     # Drug → Protein mechanism
-        UNION
-        { ?protein obo:RO_0002436 ?drug } .   # Protein → Drug mechanism
-
-        ?mechRel rdf:subject ?drug ;
-                 rdf:object ?protein ;
-                 allotrope:AFR_0003142 "INHIBITOR".   # Specifically inhibition action
-
-        ?protein a upcore:Protein.            # Target protein (likely a kinase)
-
-        ## Protein catalyzes phosphorylation (bidirectional)
-        { ?protein biolink:catalyzes ?ptm }    # Protein → PTM catalysis
-        UNION
-        { ?ptm biolink:catalyzes ?protein } .  # PTM → Protein catalysis
-
-        ?ptm a upcore:PTM_Annotation;                        # PTM entity
-             dc:type "PHOSPHORYLATION".                       # Specifically phosphorylation
-
-        ## OPTIONAL: Find downstream iPTMnet phosphorylations catalyzed by same protein
-        OPTIONAL {
-            ?r7 rdf:subject ?protein ;           # Same protein/kinase
-                rdf:predicate biolink:catalyzes; # Catalyzes relation
-                rdf:object ?oph.                  # Other phosphorylation site
-
-            ?oph a ns:PTM;
-                 dc:source "iPTMnet";            # From iPTMnet database
-                 rdfs:label ?ophLabel ;          # Site label/identifier
-                 dc:type "PHOSPHORYLATION".
-        }
-    }
+  # 5. Verify the target is a Phosphorylation PTM
+  ?ptmSite dc:type 'PHOSPHORYLATION' ;
+           rdfs:label ?ptmLabel .
 }
-LIMIT 500  # Return at most 500 results
+ORDER BY ?log2Ratio
+LIMIT 500

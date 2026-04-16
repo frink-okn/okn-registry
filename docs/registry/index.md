@@ -15,6 +15,7 @@
 | [biomarkerkg](kgs/biomarkerkg/) | BiomarkerKB KG | The BiomarkerKB knowledge graph is a structured network that connects biomarkers to diseases, drugs, biological entities, and evidence from the scientific literature. |
 | [climatemodelskg](kgs/climatemodelskg/) | Climate Models KG | Climate Models KG is a knowledge graph to support evaluation and development of climate models. |
 | [dreamkg](kgs/dreamkg/) | DREAM-KG | Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness With Explainable AI |
+| [evoweb](kgs/evoweb/) | EvoWeb | EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID) |
 | [fiokg](kgs/fiokg/) | SAWGraph FRS KG | The FRS (Facility Registry Service) KG is the part of the SAWGraph project that stores data about facilities from EPA's Facility Registry service (FRS) together with their NAICS industry classification and the spatial location. |
 | [gene-expression-atlas-okn](kgs/gene-expression-atlas-okn/) | Gene Expression Atlas | Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home). |
 | [geoconnex](kgs/geoconnex/) | GEOCONNEX | Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic features to enable seamless water data discovery, access, and collaborative monitoring. |
@@ -27,6 +28,8 @@
 | [nikg](kgs/nikg/) | Neighborhood Information KG | Neighborhood Information KG (NIKG) is a knowledge graph warehouse for neighborhood information. |
 | [oard-kg](kgs/oard-kg/) | Open Annotations for Rare Diseases (OARD) Knowledge Graph | Clinical associations between rare diseases and phenotypes derived from electronic health records |
 | [okn-void](kgs/okn-void/) | OKN VoID graph descriptions | Collected VoID (Vocabulary of Interlinked Datasets) metadata for all OKN graphs |
+| [pankgraph](kgs/pankgraph/) | PanKgraph | PanKgraph — PanKbase Knowledge Graph (NIDDK) |
+| [phaseskg](kgs/phaseskg/) | PHASES KG | Knowledge graph Promoting Healthy Aging through Semantic Enrichment |
 | [prokn](kgs/prokn/) | Protein Knowledge Network | The Protein Knowledge Network (ProKN) integrates protein-centric data with the genomic-centric datasets of the Common Fund Data Ecosystem (CFDE), spanning heterogeneous biological data types across multiple domains to foster CFDE re-use and collaboration through enhanced connectivity and data integration, enabling new capabilities for functional genomics and systems-level understanding of disease mechanisms. |
 | [rdkg](kgs/rdkg/) | Rare Disease Knowledge Graph | RDKG is an open knowledge graph for rare diseases that integrates standardized disease identifiers and cross-references to support discovery and evidence synthesis. |
 | [ruralkg](kgs/ruralkg/) | Rural Resilience KG | Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience. |

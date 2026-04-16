@@ -1,12 +1,12 @@
-# Query Knowledge Graphs in FRINK
+# Query Knowledge Graphs in the Open Knowledge Network
 
-## FRINK Query Page
+## [OKN Query Page](https://frink.apps.renci.org)
 
-FRINK offers a query page that enables anyone to query specific Theme 1 graphs or query across graphs (i.e., a federated query). The FRINK Query Page is located at [https://frink.apps.renci.org](https://frink.apps.renci.org).
+OKN Fabric offers a query page that enables anyone to query specific Theme 1 graphs or query across graphs (i.e., a federated query). The OKN Query Page (formerly FRINK) is located at [https://frink.apps.renci.org](https://frink.apps.renci.org).
 
 ### Query Across Graphs
 
-If you wish to query over all available data sources, select **FRINK Federated SPARQL** from the Sources drop down. Be sure to deselect all other sources. This will submit the query to a server-side endpoint federating all sources.
+To query over all available data sources, select **Proto-OKN Federated SPARQL** from the Sources drop down. Be sure to deselect all other sources. This will submit the query to a server-side endpoint federating all sources.
 
 <img src="../../assets/images/Federated.png" width="400">
 
@@ -20,7 +20,7 @@ From the **Sources** drop-down menu (shown below)
 
 <img src="../../assets/images/Sources-DropDown-Empty.png" width="400">
 
-You can select one or many of the graphs comprising FRINK.
+You can select one or many of the graphs comprising OKN.
 
 <img src="../../assets/images/SourcesDropDown2.png" width="400">
 
@@ -30,9 +30,9 @@ Then you can construct a query in SPARQL using the **SPARQL Query** pane and run
 
 Note: Currently, selecting multiple sources uses the Comunica package to perform a federated query against Triple Pattern Fragment endpoints for those sources. The practical result of this is that the query execution happens locally, in your browser. This can be quite a bit slower than running a SPARQL query within the database server. An alternative approach is detailed below.
 
-#### Using named graphs in the FRINK Federated SPARQL endpoint
+#### Using named graphs in the Proto-OKN Federated SPARQL endpoint
 
-Instead of selecting individual graphs in the **Sources** drop-down, deselect them all and choose **FRINK Federated SPARQL**. This graph is not truly federated, but instead is a large triplestore containing all the OKN knowledge graphs. By default, a query will include all graphs. To select a specific set of graphs to query over, use `FROM` clauses to list the desired graphs, e.g.:
+Instead of selecting individual graphs in the **Sources** drop-down, deselect them all and choose **Proto-OKN Federated SPARQL**. This graph is not truly federated, but instead is a large triplestore containing all the OKN knowledge graphs. By default, a query will include all graphs. To select a specific set of graphs to query over, use `FROM` clauses to list the desired graphs, e.g.:
 
 ```
 SELECT *
@@ -62,17 +62,17 @@ In the **RESULTS** pane, you can click the blue download button to download the 
 
 ## SPARQL Endpoints
 
-FRINK deploys standardized API endpoints for each hosted knowledge graph. Currently FRINK provides the following kinds of APIs:
+Fabric deploys standardized API endpoints for each hosted knowledge graph. Currently, Fabric provides the following kinds of APIs:
 
 - [SPARQL](https://www.w3.org/TR/sparql11-query/): SPARQL is the standard graph querying language for RDF datasets.
 
 - [TPF](https://linkeddatafragments.org/specification/triple-pattern-fragments/): TPF (Triple Pattern Fragments) is a low-cost interface to RDF datasets that supports querying a single triple pattern at a time.
 
-The FRINK API endpoints can be used progammatically (see below), or else accessed using the FRINK SPARQL query page, built on the [Comunica](https://comunica.dev/) knowledge graph querying framework.
+The Fabric API endpoints can be used progammatically (see below), or else accessed using the OKN SPARQL query page, built on the [Comunica](https://comunica.dev/) knowledge graph querying framework.
 
 ### Theme 1 Specific Endpoints
 
-See the [OKN Registry entries](../registry/) to view the graphs currently available within FRINK. The service endpoints for SPARQL and TPF are listed in each graph's entry. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the FRINK query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide [a browser UI](https://frink.apps.renci.org/ldf/).
+See the [OKN Registry entries](../registry/) to view the graphs currently available within the OKN. The service endpoints for SPARQL and TPF are listed in each graph's entry. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the OKN query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide [a browser UI](https://frink.apps.renci.org/ldf/).
 
 ### Cross-OKN query endpoint
 

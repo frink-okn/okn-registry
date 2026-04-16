@@ -1,0 +1,35 @@
+triples: 95913
+distinct_subjects: 19383
+distinct_objects: 15452
+properties: 7
+classes: 2
+last_checked: '2026-04-14'
+class_partitions:
+- uri: http://medicaldevice.com/ontology/MAUDEReport
+  label: MAUDEReport
+  count: 15284
+- uri: http://medicaldevice.com/ontology/MedicalDevice
+  label: MedicalDevice
+  count: 4099
+property_partitions:
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
+  count: 19383
+- uri: http://medicaldevice.com/ontology/involvesDevice
+  label: involvesDevice
+  count: 15285
+- uri: http://medicaldevice.com/ontology/dateReceived
+  label: dateReceived
+  count: 15285
+- uri: http://medicaldevice.com/ontology/eventType
+  label: eventType
+  count: 15279
+- uri: http://medicaldevice.com/ontology/productCode
+  label: productCode
+  count: 15277
+- uri: http://medicaldevice.com/ontology/dateOfEvent
+  label: dateOfEvent
+  count: 11276
+- uri: http://medicaldevice.com/ontology/label
+  label: label
+  count: 4128

@@ -1,4 +1,4 @@
-site_name: "FRINK OKN"
+site_name: "Proto-OKN: Fabric"
 theme:
   name: material
   custom_dir: material
@@ -8,7 +8,7 @@ theme:
     primary: custom
   font:
     text: Open Sans
-  features: 
+  features:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
@@ -22,6 +22,7 @@ extra_css:
   - styles.css
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/header-button.js
   - javascripts/tablesort.js
   - javascripts/mermaid.mjs
 hooks:
@@ -29,7 +30,6 @@ hooks:
 watch:
   - docs/registry/void
   - docs/registry/queries
-  - build/query-diagrams
   - hooks
   - material
 plugins:
@@ -49,24 +49,28 @@ markdown_extensions:
           format: !!python/name:mermaid2.fence_mermaid
   - def_list
   - pymdownx.tasklist:
-      custom_checkbox: true     
+      custom_checkbox: true
 nav:
-  - Home: index.md
-  - Quick Start Guide:
-    - help/index.md
-    - Setup Your FRINK Repo in the Landing Zone: help/setup.md
-    - Update Your Graph in FRINK: help/update.md
-    - Query knowledge graphs in FRINK: help/query-page.md
-    - Update Example Queries on FRINK UI: help/update-queries.md
-  - The OKN Book:
-    - book/index.md
-    - Graph Construction Best Practices: book/best-practices.md
-    - About External Identifiers: book/identifiers.md
-    - Biomedical Identifier Choices: book/biomedical-identifiers.md
-    - Ingesting Identifier Sources: book/new-id-sources.md
-  - The OKN Registry:
+  - Explore:
     - registry/index.md
-    - Query FRINK: https://frink.apps.renci.org
+    - KG Statistics: okn/kgstatus.md
+    - Knowledge Map: okn/learn/index.md
+  - Query:
+    - Query Tool: query/query-page.md
+    - Sample Query Library: query/sample-query-library.md
+  - Contribute:
+    - The OKN Book:
+      - Overview: book/index.md
+      - Graph Construction Best Practices: book/best-practices.md
+      - About External Identifiers: book/identifiers.md
+      - Biomedical Identifier Choices: book/biomedical-identifiers.md
+      - Ingesting Identifier Sources: book/new-id-sources.md
+    - Quick Start Guide:
+      - help/index.md
+      - Setup Your FRINK Repo in the Landing Zone: help/setup.md
+      - Update Query Tool: help/update.md
+      - Query knowledge graphs in FRINK: help/query-page.md
+      - Update Example Queries on FRINK UI: help/update-queries.md
 site_url: https://frink-okn.github.io
 repo_url: https://github.com/frink-okn/frink-landing-zone/
 

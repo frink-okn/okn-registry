@@ -25,6 +25,7 @@ prefixes:
   'Y': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/Y/'
   'MT': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/MT/'
   'GL456211.1': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/GL456211.1/'
+  'GL456212.1': 'https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome/GL456212.1/'
 identifier_properties:
   - 'identifier'
 mappings:

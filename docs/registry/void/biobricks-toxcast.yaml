@@ -3,7 +3,7 @@ distinct_subjects: 6718851
 distinct_objects: 6730612
 properties: 11
 classes: 7
-last_checked: '2026-03-09'
+last_checked: '2026-04-14'
 class_partitions:
 - uri: http://www.bioassayontology.org/bao#BAO_0000040
   label: BAO_0000040
@@ -11,17 +11,17 @@ class_partitions:
 - uri: http://www.bioassayontology.org/bao#BAO_0000179
   label: BAO_0000179
   count: 3344010
-- uri: http://purl.obolibrary.org/obo/CHEMINF_000000
-  label: obo:CHEMINF_000000
-  count: 9542
-- uri: http://purl.obolibrary.org/obo/CHEMINF_000446
-  label: obo:CHEMINF_000446
+- uri: https://w3id.org/biolink/vocab/ChemicalEntity
+  label: biolink:ChemicalEntity
   count: 9542
 - uri: http://purl.obolibrary.org/obo/CHEMINF_000568
   label: obo:CHEMINF_000568
   count: 9542
-- uri: https://w3id.org/biolink/vocab/ChemicalEntity
-  label: biolink:ChemicalEntity
+- uri: http://purl.obolibrary.org/obo/CHEMINF_000446
+  label: obo:CHEMINF_000446
+  count: 9542
+- uri: http://purl.obolibrary.org/obo/CHEMINF_000000
+  label: obo:CHEMINF_000000
   count: 9542
 - uri: http://www.bioassayontology.org/bao#BAO_0000015
   label: BAO_0000015

@@ -3,7 +3,7 @@ distinct_subjects: 22494
 distinct_objects: 85068
 properties: 68
 classes: 26
-last_checked: '2026-03-09'
+last_checked: '2026-04-14'
 class_partitions:
 - uri: http://edamontology.org/data_1025
   label: data_1025
@@ -29,8 +29,8 @@ class_partitions:
 - uri: http://semanticscience.org/resource/CHEMINF_000407
   label: CHEMINF_000407
   count: 799
-- uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54571
-  label: C54571
+- uri: http://purl.obolibrary.org/obo/NCIT_C54571
+  label: obo:NCIT_C54571
   count: 658
 - uri: http://purl.obolibrary.org/obo/GO_0008150
   label: obo:GO_0008150
@@ -50,11 +50,11 @@ class_partitions:
 - uri: http://semanticscience.org/resource/CHEMINF_000567
   label: CHEMINF_000567
   count: 402
-- uri: http://semanticscience.org/resource/CHEMINF_000000
-  label: CHEMINF_000000
-  count: 391
 - uri: http://semanticscience.org/resource/CHEMINF_000446
   label: CHEMINF_000446
+  count: 391
+- uri: http://semanticscience.org/resource/CHEMINF_000000
+  label: CHEMINF_000000
   count: 391
 - uri: http://semanticscience.org/resource/CHEMINF_000412
   label: CHEMINF_000412
@@ -65,8 +65,8 @@ class_partitions:
 - uri: http://semanticscience.org/resource/CHEMINF_000406
   label: CHEMINF_000406
   count: 210
-- uri: http://purl.bioontology.org/ontology/NCBITAXON/131567
-  label: '131567'
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_131567
+  label: obo:NCBITaxon_131567
   count: 166
 - uri: http://aopkb.org/aop_ontology#OrganContext
   label: OrganContext
@@ -132,11 +132,11 @@ property_partitions:
 - uri: http://aopkb.org/aop_ontology#has_key_event_relationship
   label: has_key_event_relationship
   count: 2778
-- uri: http://aopkb.org/aop_ontology#has_upstream_key_event
-  label: has_upstream_key_event
-  count: 2060
 - uri: http://aopkb.org/aop_ontology#has_downstream_key_event
   label: has_downstream_key_event
+  count: 2060
+- uri: http://aopkb.org/aop_ontology#has_upstream_key_event
+  label: has_upstream_key_event
   count: 2060
 - uri: http://purl.org/dc/elements/1.1/description
   label: dc:description
@@ -150,11 +150,11 @@ property_partitions:
 - uri: http://edamontology.org/data_1033
   label: data_1033
   count: 1478
-- uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25664
-  label: C25664
+- uri: http://purl.obolibrary.org/obo/NCIT_C25664
+  label: obo:NCIT_C25664
   count: 1469
-- uri: http://purl.bioontology.org/ontology/NCBITAXON/131567
-  label: '131567'
+- uri: http://purl.obolibrary.org/obo/NCBITaxon_131567
+  label: obo:NCBITaxon_131567
   count: 1199
 - uri: http://purl.obolibrary.org/obo/PATO_0000001
   label: obo:PATO_0000001
@@ -174,14 +174,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/PATO_0001241
   label: obo:PATO_0001241
   count: 705
-- uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C80263
-  label: C80263
+- uri: http://purl.obolibrary.org/obo/NCIT_C80263
+  label: obo:NCIT_C80263
   count: 623
 - uri: http://edamontology.org/data_2042
   label: data_2042
   count: 613
-- uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54571
-  label: C54571
+- uri: http://purl.obolibrary.org/obo/NCIT_C54571
+  label: obo:NCIT_C54571
   count: 603
 - uri: http://aopkb.org/aop_ontology#has_adverse_outcome
   label: has_adverse_outcome
@@ -189,8 +189,8 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#sameAs
   label: owl:sameAs
   count: 526
-- uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C71478
-  label: C71478
+- uri: http://purl.obolibrary.org/obo/NCIT_C71478
+  label: obo:NCIT_C71478
   count: 515
 - uri: http://purl.obolibrary.org/obo/MMO_0000000
   label: obo:MMO_0000000
@@ -207,11 +207,11 @@ property_partitions:
 - uri: http://semanticscience.org/resource/CHEMINF_000405
   label: CHEMINF_000405
   count: 406
-- uri: http://aopkb.org/aop_ontology#has_chemical_entity
-  label: has_chemical_entity
-  count: 403
 - uri: http://semanticscience.org/resource/CHEMINF_000140
   label: CHEMINF_000140
+  count: 403
+- uri: http://aopkb.org/aop_ontology#has_chemical_entity
+  label: has_chemical_entity
   count: 403
 - uri: http://semanticscience.org/resource/CHEMINF_000567
   label: CHEMINF_000567
@@ -246,23 +246,23 @@ property_partitions:
 - uri: http://aopkb.org/aop_ontology#AopContext
   label: AopContext
   count: 158
-- uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48192
-  label: C48192
+- uri: http://purl.obolibrary.org/obo/NCIT_C48192
+  label: obo:NCIT_C48192
   count: 148
 - uri: http://aopkb.org/aop_ontology#has_evidence
   label: has_evidence
   count: 143
-- uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25217
-  label: C25217
+- uri: http://purl.obolibrary.org/obo/NCIT_C25217
+  label: obo:NCIT_C25217
   count: 140
-- uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25688
-  label: C25688
+- uri: http://purl.obolibrary.org/obo/NCIT_C25688
+  label: obo:NCIT_C25688
   count: 138
 - uri: http://edamontology.org/operation_3799
   label: operation_3799
   count: 117
-- uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25725
-  label: C25725
+- uri: http://purl.obolibrary.org/obo/NCIT_C25725
+  label: obo:NCIT_C25725
   count: 104
 - uri: http://semanticscience.org/resource/CHEMINF_000564
   label: CHEMINF_000564
@@ -273,18 +273,18 @@ property_partitions:
 - uri: http://purl.org/pav/createdWith
   label: pav:createdWith
   count: 4
-- uri: http://xmlns.com/foaf/0.1/homepage
-  label: foaf:homepage
-  count: 2
-- uri: http://purl.org/dc/terms/accuralPeriodicity
-  label: dct:accuralPeriodicity
-  count: 2
-- uri: http://purl.org/pav/importedOn
-  label: pav:importedOn
+- uri: http://purl.org/pav/createdOn
+  label: pav:createdOn
   count: 2
 - uri: http://purl.org/pav/createdBy
   label: pav:createdBy
   count: 2
-- uri: http://purl.org/pav/createdOn
-  label: pav:createdOn
+- uri: http://purl.org/pav/importedOn
+  label: pav:importedOn
+  count: 2
+- uri: http://purl.org/dc/terms/accuralPeriodicity
+  label: dct:accuralPeriodicity
+  count: 2
+- uri: http://xmlns.com/foaf/0.1/homepage
+  label: foaf:homepage
   count: 2

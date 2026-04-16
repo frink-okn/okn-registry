@@ -286,9 +286,11 @@ kgs:
     lakefs-repo: ncipidkg
   homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
   shortname: ncipidkg
+  sparql: https://frink.apps.renci.org/ncipidkg/sparql
   stats: https://frink.renci.org/kg-stats/ncipidkg
   template: overrides/kg.html
   title: NCI-PID 2.0 KG
+  tpf: https://frink.apps.renci.org/ldf/ncipidkg
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -445,6 +447,22 @@ kgs:
   title: DREAM-KG
   tpf: https://frink.apps.renci.org/ldf/dreamkg
 - contacts:
+  - email: Erik.Wright@bcm.edu
+    github: WrightLabScience
+    label: Erik Wright
+  description: EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)
+  frink-options:
+    documentation-path: evoweb
+    lakefs-repo: evoweb
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
+  homepage: https://data.niaid.nih.gov/
+  shortname: evoweb
+  sparql: https://frink.apps.renci.org/evoweb/sparql
+  stats: https://frink.renci.org/kg-stats/evoweb
+  template: overrides/kg.html
+  title: EvoWeb
+  tpf: https://frink.apps.renci.org/ldf/evoweb
+- contacts:
   - email: asu@scripps.edu
     github: andrewsu
     label: Andrew Su
@@ -569,6 +587,23 @@ kgs:
   title: SAWGraph Spatial KG
   tpf: https://frink.apps.renci.org/ldf/spatialkg
 - contacts:
+  - email: drjieliu@umich.edu
+    github: jieliu6
+    label: Jie Liu
+  description: "PanKgraph \u2014 PanKbase Knowledge Graph (NIDDK)"
+  frink-options:
+    documentation-path: pankbase-kg
+    lakefs-repo: pankbase-kg
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/pankgraph.yaml
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
+  homepage: https://pankbase.org/
+  shortname: pankgraph
+  sparql: https://frink.apps.renci.org/pankgraph/sparql
+  stats: https://frink.renci.org/kg-stats/pankbase-kg
+  template: overrides/kg.html
+  title: PanKgraph
+  tpf: https://frink.apps.renci.org/ldf/pankgraph
+- contacts:
   - email: jinlian.wang@uth.tmc.edu
     github: wnagjl99
     label: Jinlian Wang
@@ -580,6 +615,22 @@ kgs:
   shortname: rdkg
   template: overrides/kg.html
   title: Rare Disease Knowledge Graph
+- contacts:
+  - email: johnbeve@buffalo.edu
+    github: johnbeve
+    label: John Beverley
+  - email: rhurley3@buffalo.edu
+    github: Regina-Hurley
+    label: Regina Hurley
+  description: Knowledge graph Promoting Healthy Aging through Semantic Enrichment
+  frink-options:
+    documentation-path: phases-kg
+    lakefs-repo: phases-kg
+  funding: https://reporter.nih.gov/project-details/11184405
+  homepage: https://healthyphases.org/
+  shortname: phaseskg
+  template: overrides/kg.html
+  title: PHASES KG
 - contacts:
   - email: katrina.schweikert@maine.edu
     github: kschweikert
@@ -624,15 +675,21 @@ kgs:
   title: SAWGraph PFAS KG
   tpf: https://frink.apps.renci.org/ldf/sawgraph
 - contacts:
-  - email: prabh120220@gmail.com
+  - email: psingh37@pride.hofstra.edu
     github: Prabhadeus
     label: Prabhjot Singh
   description: Knowledge graph constructed from FDA MAUDE adverse event reports using
     standardized FDA product codes.
+  frink-options:
+    documentation-path: maudekg
+    lakefs-repo: maude-kg
   homepage: https://github.com/Prabhadeus/Proto-OKN
   shortname: maudekg
+  sparql: https://frink.apps.renci.org/maudekg/sparql
+  stats: https://frink.renci.org/kg-stats/maudekg
   template: overrides/kg.html
   title: FDA MAUDE Adverse Event Knowledge Graph
+  tpf: https://frink.apps.renci.org/ldf/maudekg
 - contacts:
   - email: tianyi@purdue.edu
     github: tianyi-zhang
