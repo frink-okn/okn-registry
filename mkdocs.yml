@@ -51,10 +51,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 nav:
-  - Explore:
-    - registry/index.md
-    - KG Statistics: okn/kgstatus.md
-    - Knowledge Map: okn/learn/index.md
+  - Explore: registry/index.md
   - Query:
     - Query Tool: query/query-page.md
     - Sample Query Library: query/sample-query-library.md
@@ -71,7 +68,5 @@ nav:
       - Update Query Tool: help/update.md
       - Query knowledge graphs in FRINK: help/query-page.md
       - Update Example Queries on FRINK UI: help/update-queries.md
-site_url: https://frink-okn.github.io
-repo_url: https://github.com/frink-okn/frink-landing-zone/
-
-#     - Knowledge Graph (KG) Dataset Status: okn/kgstatus.md (add these links to the registry pages)
+site_url: https://frink.renci.org
+repo_url: https://github.com/frink-okn/okn-registry/
