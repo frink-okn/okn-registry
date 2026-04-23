@@ -19,11 +19,13 @@ theme:
     - toc.integrate #puts the page anchor links on the left, instead of the right
     - navigation.indexes
 extra_css:
+  - https://cdn.datatables.net/2.3.7/css/dataTables.dataTables.css
   - styles.css
 extra_javascript:
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - https://code.jquery.com/jquery-3.7.1.min.js
+  - https://cdn.datatables.net/2.3.7/js/dataTables.js
   - javascripts/header-button.js
-  - javascripts/tablesort.js
+  - javascripts/datatables.js
   - javascripts/mermaid.mjs
 hooks:
   - hooks/kg_page_data.py

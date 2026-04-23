@@ -117,3 +117,13 @@ rule generate_registry_index:
         "docs/registry/index.md"
     shell:
         """uv run {input.script} {output} {input.files}"""
+
+rule generate_query_list:
+    input:
+        files=all_query_rq_files,
+        script="scripts/generate_query_list.py",
+        uv_project="pyproject.toml"
+    output:
+        "docs/query/sample-query-library.md"
+    shell:
+        """uv run {input.script} {output} {input.files}"""
