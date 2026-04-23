@@ -63,7 +63,12 @@ nav:
       - Overview: book/index.md
       - Graph Construction Best Practices: book/best-practices.md
       - About External Identifiers: book/identifiers.md
-      - Biomedical Identifier Choices: book/biomedical-identifiers.md
+      - Identifier Choices:
+        - Biomedical: book/biomedical-identifiers.md
+        - Environmental: book/environmental-identifiers.md
+        - Geospatial: book/geospatial-identifiers.md
+        - Institutions: book/institutions.md
+        - Justice: book/justice.md
       - Ingesting Identifier Sources: book/new-id-sources.md
     - Quick Start Guide:
       - help/index.md
