@@ -688,3 +688,10 @@ dd { margin-left: 0 !important; padding: 0 0 0.5em 0; }
 .kg-pager-info {
   color: var(--bs-gray-600);
 }
+
+[dir="ltr"] .md-header__title{
+  margin-left: 0;
+}
+.md-header__button.md-logo img{
+  height: 2rem;
+}
