@@ -1,0 +1,15 @@
+#+ summary: Publications using a specific dataset, matching identifiers against DOIs on Wikidata
+#+ tags:
+#+   - federation
+
+PREFIX sdo: <https://schema.org/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX schema: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
+SELECT ?item ?identifier ?title
+WHERE {
+	?Publication schema:USES_DATASET <https://nasa-gesdisc.proto-okn.net/kg/node/186> .
+    ?Publication dct:identifier ?identifier ; sdo:title ?title .
+    ?item wdt:P356 ?identifier .
+}
+LIMIT 25

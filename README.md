@@ -27,5 +27,5 @@ This site makes use of the SPARQL-to-Mermaid diagram renderer developed by [SIB]
 ### Run the website locally
 
 ```
-uv run mkdocs serve
+uv run mkdocs serve --livereload
 ```
