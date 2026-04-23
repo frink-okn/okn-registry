@@ -46,7 +46,7 @@ Some of the entries below also refer to the Google Data Commons, but some genera
 * IRI format: https://datacommons.org/browser/geoId/$1
 * Example: Census Tract 110, Penobscot County, Maine = https://datacommons.org/browser/geoId/23019011000
 
-### U.S. census track block groups
+### U.S. census tract block groups
 
 (Data Commons)
 
