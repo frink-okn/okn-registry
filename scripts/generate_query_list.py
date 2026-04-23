@@ -3,7 +3,14 @@ import re
 import sys
 import os
 import urllib.parse
-import frontmatter
+
+
+def _escape_table_cell(s: str) -> str:
+    return s.replace("\\", "\\\\").replace("|", "\\|")
+
+
+def _escape_link_text(s: str) -> str:
+    return _escape_table_cell(s).replace("[", "\\[").replace("]", "\\]")
 
 
 def _parse_query_header(rq_path: str) -> dict:
@@ -48,15 +55,16 @@ def process_sparql_files(input_files, output_file):
 | Title | Description |
 | :---- | :---------- |
 """
-    # Write the combined YAML to the output file
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    for file in sorted(input_files):
-        doc = _parse_query_header(file)
-        taglist = ', '.join([tag for tag in doc['tags']])
-        source_list = urllib.parse.quote(json.dumps(doc['tags']))
+    docs = [_parse_query_header(file) for file in input_files]
+    docs.sort(key=lambda d: d["summary"].lower())
+    for doc in docs:
+        taglist = _escape_table_cell(", ".join(doc["tags"]))
+        source_list = urllib.parse.quote(json.dumps(doc["tags"]))
         query_text = urllib.parse.quote_plus(doc["text"])
-        query_url = f'https://frink.apps.renci.org?sources={source_list}&amp;query={query_text}'
-        output += f"| [{doc['summary']}]({query_url}) | {taglist} |\n"
+        query_url = f"https://frink.apps.renci.org?sources={source_list}&amp;query={query_text}"
+        summary = _escape_link_text(doc["summary"])
+        output += f"| [{summary}]({query_url}) | {taglist} |\n"
     with open(output_file, "w") as f:
         f.write(output)
 

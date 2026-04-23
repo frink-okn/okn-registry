@@ -22,7 +22,7 @@ extra_css:
   - https://cdn.datatables.net/2.3.7/css/dataTables.dataTables.css
   - styles.css
 extra_javascript:
-  - https://code.jquery.com/jquery-4.0.0.min.js
+  - https://code.jquery.com/jquery-3.7.1.min.js
   - https://cdn.datatables.net/2.3.7/js/dataTables.js
   - javascripts/header-button.js
   - javascripts/datatables.js
