@@ -26,12 +26,12 @@ One way to do this is to use a [SKOS mapping property](https://www.w3.org/TR/sko
 - <http://purl.obolibrary.org/obo/NCIT_C14202> ⸻ <http://www.w3.org/2004/02/skos/core#exactMatch> ⸻ <http://purl.uniprot.org/taxonomy/7215>
 - <http://purl.uniprot.org/taxonomy/7215> ⸻ <http://www.w3.org/2004/02/skos/core#exactMatch> ⸻ <http://www.wikidata.org/entity/Q312154>
 
-## Identifiers in the Proto-OKN
+## Identifiers in the OKN
 
-It is preferred throughout the Proto-OKN that entities be referred to using IRIs that encode different identifiers (that is, the first representation described in the previous section).
+It is preferred throughout the OKN that entities be referred to using IRIs that encode different identifiers (that is, the first representation described in the previous section).
 Thus the city of Lancaster, Pennsylvania should be referred to with the IRI <http://stko-kwg.geog.ucsb.edu/lod/resource/statisticalArea.29540>, rather than using some other arbitrary IRI that is merely connected to the string "statisticalArea.29540".
 
-The Proto-OKN Fabric provides as a starting point for linkages Wikidata's data and the Ubergraph, which contain definitions for different concepts using different identifiers in their IRIs:
+The OKN Fabric provides as a starting point for linkages Wikidata's data and the Ubergraph, which contain definitions for different concepts using different identifiers in their IRIs:
 
 - The entity in the NCIt (provided in the Ubergraph) for that same county is referred to with <http://purl.obolibrary.org/obo/NCIT_C109967>, where "C109967" is the NCIt ID for that county.
 - The Wikidata entity for Lancaster County, Pennsylvania is referred to with <http://www.wikidata.org/entity/Q142369>, where "Q142369" is the Wikidata item ID for that county.

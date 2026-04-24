@@ -1,10 +1,10 @@
-# Set Up Your FRINK Repo in the Landing Zone
-Theme 1 Teams, there are several ways to upload your graph to the FRINK Landing Zone found on lakeFS. We recommend uploading through the website for smaller files and using Amazon's S3 Tool for larger files or for automating the process. 
+# Set Up Your Repo in the Landing Zone
+There are several ways for Theme 1 teams to upload graph to the Landing Zone found on lakeFS. We recommend uploading through the website for smaller files and using Amazon's S3 Tool for larger files or for automating the process. 
 
 !!! note
 
     For each method, you will need to request credentials for accessing lakeFS. These credentials are an **Access Key ID** and a **Secret Acess 
-    Key**. You may request these either by direct messaging Yaphet Kebede through our PROTO-OKN Slack channel or by emailing Yaphet at kebedey at
+    Key**. You may request these either by direct messaging Yaphet Kebede through our OKN Slack channel or by emailing Yaphet at kebedey at
     renci dot org. With your request please provide the name of your dataset, that will be used to create a repository to host your data on lakeFS.
 
 !!! warning "File Upload Size Requirements"
@@ -19,7 +19,7 @@ Theme 1 Teams, there are several ways to upload your graph to the FRINK Landing 
 
 ## Repository Structure
 
-Every dataset hosted in FRINK will have its own lakeFS repository. Data submissions should be made by uploading the data to the develop branch of the respective repository. After uploads and commits are completed on the develop branch, the data update can be finalized by creating a merge request to the main branch.
+Every dataset hosted in the OKN will have its own lakeFS repository. Data submissions should be made by uploading the data to the develop branch of the respective repository. After uploads and commits are completed on the develop branch, the data update can be finalized by creating a merge request to the main branch.
 
 <img src="../../assets/images/branch-struct.png">
 

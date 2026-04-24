@@ -1,10 +1,10 @@
-# Updating User Queries on the Frink UI Page
+# Updating User Queries
 
-This document outlines the process for updating the example user queries that appear on the Frink UI page.
+This document outlines the process for updating the example user queries that appear on the Fabric UI page.
 
 ## Overview
 
-The example queries displayed in the Frink UI are fetched from the [frink-okn/okn-registry](https://github.com/frink-okn/okn-registry/tree/main/docs/registry/queries) GitHub repository. To add or modify these queries, you will need to create or edit `.rq` files within a `docs/registry/queries` in that repository.
+The example queries displayed in the Fabric UI (previously called FRINK) are fetched from the [frink-okn/okn-registry](https://github.com/frink-okn/okn-registry/tree/main/docs/registry/queries) GitHub repository. To add or modify these queries, you will need to create or edit `.rq` files within a `docs/registry/queries` in that repository.
 
 ## How to Update Queries
 
@@ -45,9 +45,9 @@ The example queries displayed in the Frink UI are fetched from the [frink-okn/ok
 
 ## Important Notes on Caching
 
-* **Browser Caching:** The Frink UI caches requests to GitHub for **24 hours** in the browser's local storage. This means that newly added or updated queries might not appear immediately for all users.
+* **Browser Caching:** The Fabric UI caches requests to GitHub for **24 hours** in the browser's local storage. This means that newly added or updated queries might not appear immediately for all users.
 * **Invalidating Cache (for Maintainers):**
-    * To see changes immediately (primarily for maintainers verifying updates), a "invalidate cache" button is available on the settings page of the Frink UI.
+    * To see changes immediately (primarily for maintainers verifying updates), a "invalidate cache" button is available on the settings page of the Fabric UI.
     * **Deployment Note:** This cache invalidation feature may not yet be deployed on the Sterling instance. To use it, you will need to test on the GitHub Pages deployment: [https://frink-okn.github.io/frink-query-ui](https://frink-okn.github.io/frink-query-ui).
 
 ## Summary of Process

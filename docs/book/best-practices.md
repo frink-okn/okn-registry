@@ -1,8 +1,8 @@
 # Best Practice Guidelines for Knowledge Graph Construction
 
-Here are links to documents developed in collaboration with EduGate (Theme 3) and SPIDER (Theme 2) to support Theme 1 groups in enhancing the integrity of knowledge graphs and advancing their interoperability. 
+Here are links to documents developed in collaboration with EduGate (Theme 3) and Fabric (Theme 2) to support Theme 1 groups in enhancing the integrity of knowledge graphs and advancing their interoperability. 
 
-If you would like to discuss these documents, ask questions, or suggest new topics that should be addressed, please visit us on the #kg-development-qa channel in the Proto-OKN Slack.
+If you would like to discuss these documents, ask questions, or suggest new topics that should be addressed, please visit us on the #kg-development-qa channel in the OKN Slack.
 
 - [Relations, Classes](https://kastle-lab.github.io/education-gateway/resource-pages/graph-construction-guidelines-part2.html)
 
