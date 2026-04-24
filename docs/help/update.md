@@ -1,7 +1,7 @@
-# Update Your Graph in FRINK
+# Update Your Graph in the OKN
 
 
-To ensure a smooth and automated deployment of data pipelines, establishing structured rules and policies around branch and tag usage in our data repositories is essential. This guide focuses on implementing best practices for versioning datasets and aligning the workflows for raw and stable data processing. By following these guidelines, teams can leverage FRINK's lakeFS repository version control capabilities more efficiently and streamline their automatic deployment processes.
+To ensure a smooth and automated deployment of data pipelines, establishing structured rules and policies around branch and tag usage in our data repositories is essential. This guide focuses on implementing best practices for versioning datasets and aligning the workflows for raw and stable data processing. By following these guidelines, teams can leverage OKN Fabric's lakeFS repository version control capabilities more efficiently and streamline their automatic deployment processes.
 
 ### **Repository Structure**
 
@@ -22,9 +22,9 @@ The branching strategy revolves around separating the stages of data processing 
 - **Usage**: Data owners make changes here, after which a merge is made into the main branch.
   
 #### Stable Branch
-- **Purpose**: Contains processed and validated datasets ready for deployment. These branches are used by FRINK's automation tools.
+- **Purpose**: Contains processed and validated datasets ready for deployment. These branches are used by Fabric's automation tools.
 - **Naming Convention**: follow the format `stable_vX_X_X` (e.g., `stable_v0_90_1`).
-- **Usage**: Acts as an intermediary for processed datasets before being deployed to FRINK database servers.
+- **Usage**: Acts as an intermediary for processed datasets before being deployed to Fabric database servers.
 
 ### **Workflows and Processing**
 !!! info inline end ""	
@@ -38,7 +38,7 @@ The branching strategy revolves around separating the stages of data processing 
     - Single HDT (WIP)
 
 
-Different workflows will manage the transition of raw data to stable datasets in HDT format (preferred by the FRINK system). These workflows can involve data conversion, preprocessing, or other transformations necessary for your system.
+Different workflows will manage the transition of raw data to stable datasets in HDT format (preferred by the Fabric system). These workflows can involve data conversion, preprocessing, or other transformations necessary for your system.
 
     
 ??? Note

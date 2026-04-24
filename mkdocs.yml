@@ -1,4 +1,4 @@
-site_name: "Proto-OKN: Fabric"
+site_name: "OKN: Fabric"
 theme:
   name: material
   custom_dir: material
@@ -53,12 +53,14 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 nav:
-  - Explore: registry/index.md
-  - Query:
+  - OKN Registry: 
+    - registry/index.md
+    - Contribute to the Registry: registry/contribute.md
+  - Query the OKN:
+    - query/index.md
     - Query Tool: query/query-page.md
     - Sample Query Library: query/sample-query-library.md
-  - Contribute:
-    - The OKN Book:
+  - Building Graphs:
       - Overview: book/index.md
       - Graph Construction Best Practices: book/best-practices.md
       - About External Identifiers: book/identifiers.md
@@ -69,11 +71,12 @@ nav:
         - Institutions: book/institutions.md
         - Justice: book/justice.md
       - Ingesting Identifier Sources: book/new-id-sources.md
-    - Quick Start Guide:
+  - Uploading Graphs: 
       - help/index.md
-      - Setup Your FRINK Repo in the Landing Zone: help/setup.md
-      - Update Query Tool: help/update.md
-      - Query knowledge graphs in FRINK: help/query-page.md
-      - Update Example Queries on FRINK UI: help/update-queries.md
-site_url: https://frink.renci.org
-repo_url: https://github.com/frink-okn/okn-registry/
+      - Setup a Repo in the Landing Zone: help/setup.md
+      - Update Graphs in the OKN: help/update.md
+      - Update Example Queries: help/update-queries.md
+site_url: https://frink-okn.github.io
+repo_url: https://github.com/frink-okn/frink-landing-zone/
+
+#     - Knowledge Graph (KG) Dataset Status: okn/kgstatus.md (add these links to the registry pages)

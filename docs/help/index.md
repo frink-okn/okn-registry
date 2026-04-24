@@ -1,9 +1,9 @@
-# FRINK Quick Start Guide
-This section offers assistance for using various FRINK services.
+# Uploading and Updating Graphs in the OKN
+This section offers assistance for using various OKN Fabric services.
 
-- Learn how to [Setup Your FRINK Repo in the Landing Zone](setup.md)
-- Learn how to [Update Your Graph in FRINK](update.md)
-- Learn how to [Query knowledge graphs in FRINK](query-page.md) 
-- Learn how to [Update Example Queries on FRINK UI](update-queries.md)
+- Learn how to [Setup Your Repo in the Landing Zone](setup.md)
+- Learn how to [Update Your Graph](update.md)
+- Learn how to [Query OKN knowledge graphs](query-page.md) 
+- Learn how to [Update Example Queries](update-queries.md)
 
 
