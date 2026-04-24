@@ -1,0 +1,33 @@
+#+ summary: Retrieve all solid waste landfills (NAICS Industry Code 562212) in the state of Georgia (FIPS code 13) and their name and the town they are located in.
+#+ tags:
+#+   - fiokg
+#+   - spatialkg
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fio: <http://w3id.org/fio/v1/fio#>
+PREFIX naics: <http://w3id.org/fio/v1/naics#> 
+PREFIX epa-frs: <http://w3id.org/fio/v1/epa-frs#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX kwgr: <http://stko-kwg.geog.ucsb.edu/lod/resource/>
+PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
+
+
+SELECT * WHERE {
+  VALUES ?code {naics:NAICS-562212}
+  ?fac rdf:type fio:Facility ;
+       fio:ofIndustry ?code ;
+       spatial:connectedTo ?town ;
+       geo:hasGeometry/geo:asWKT ?facWKT;
+       rdfs:label ?facilityName.
+
+  # filter by administrative region (kwgr:administrativeRegion.USA.13 denotes the state of Georgia) and retrieve town
+  ?town rdf:type kwg-ont:AdministrativeRegion_3 ;
+                   kwg-ont:administrativePartOf+ kwgr:administrativeRegion.USA.13 ;
+                   rdfs:label ?townLabel .
+
+  # also retrieve any labels associated with the facility and industry 
+  OPTIONAL { ?fac rdfs:label ?faclabel . }
+  OPTIONAL { ?code rdfs:label ?ind . }
+}
