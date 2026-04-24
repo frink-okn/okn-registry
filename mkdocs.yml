@@ -56,7 +56,6 @@ nav:
   - OKN Registry: 
     - registry/index.md
     - Contribute to the Registry: registry/contribute.md
-    - Knowledge Map: okn/learn/index.md
   - Query the OKN:
     - query/index.md
     - Query Tool: query/query-page.md
