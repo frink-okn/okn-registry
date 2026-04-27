@@ -3,7 +3,7 @@ distinct_subjects: 145678
 distinct_objects: 905035
 properties: 28
 classes: 7
-last_checked: '2026-04-23'
+last_checked: '2026-04-27'
 class_partitions:
 - uri: https://nasa-gesdisc.proto-okn.net/kg/schema/Publication
   label: nasa-gesdisc:Publication

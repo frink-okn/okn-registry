@@ -3,7 +3,7 @@ distinct_subjects: 591543
 distinct_objects: 1799216
 properties: 30
 classes: 7
-last_checked: '2026-04-23'
+last_checked: '2026-04-27'
 class_partitions:
 - uri: http://schema.org/Person
   label: Person
