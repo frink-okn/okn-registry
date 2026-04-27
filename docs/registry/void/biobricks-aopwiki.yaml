@@ -3,7 +3,7 @@ distinct_subjects: 22494
 distinct_objects: 85068
 properties: 68
 classes: 26
-last_checked: '2026-04-23'
+last_checked: '2026-04-27'
 class_partitions:
 - uri: http://edamontology.org/data_1025
   label: data_1025

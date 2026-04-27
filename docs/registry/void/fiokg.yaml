@@ -3,7 +3,7 @@ distinct_subjects: 18379636
 distinct_objects: 45801705
 properties: 68
 classes: 109
-last_checked: '2026-04-23'
+last_checked: '2026-04-27'
 class_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#Resource
   label: rdfs:Resource

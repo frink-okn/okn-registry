@@ -3,7 +3,7 @@ distinct_subjects: 55890
 distinct_objects: 387082
 properties: 116
 classes: 48
-last_checked: '2026-04-23'
+last_checked: '2026-04-27'
 class_partitions:
 - uri: https://climatepub4kg.github.io/ontology#City
   label: climatepub4:City
