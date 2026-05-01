@@ -1,0 +1,14 @@
+#+ summary: Retrieve the NAICS Industry classifications of the facility with FRS ID  110000428662.
+#+ tags:
+#+   - fio-kg
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fio: <http://w3id.org/fio/v1/fio#>
+PREFIX naics: <http://w3id.org/fio/v1/naics#> 
+PREFIX epa-frs-data: <http://w3id.org/fio/v1/epa-frs-data#>
+
+select ?o ?label where {
+    epa-frs-data:d.FRS-Facility.110000428662 fio:ofIndustry ?o .
+    ?o rdfs:label ?label.
+} 
