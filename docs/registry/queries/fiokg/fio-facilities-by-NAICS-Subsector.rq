@@ -1,4 +1,4 @@
-#+ summary: Retrieve all chemical manufacturing facilities (NAICS code 325), their 6-digit industry code and their locations.
+#+ summary: Retrieve all chemical manufacturing facilities (NAICS code 325) and their 6-digit industry code.
 #+ tags:
 #+   - fiokg
 
@@ -10,15 +10,12 @@ PREFIX epa-frs: <http://w3id.org/fio/v1/epa-frs#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
 
-SELECT ?fac ?faclabel ?code ?codelabel ?fac_s2 ?fac_wkt WHERE {
+SELECT ?fac ?faclabel ?code ?codelabel  WHERE {
   VALUES ?subsector {naics:NAICS-325}
   ?fac rdf:type fio:Facility ;
-       fio:ofIndustry ?code ;
-       kwg-ont:sfWithin ?fac_s2.
+       fio:ofIndustry ?code .
   ?code rdf:type naics:NAICS-IndustryCode; 
     fio:subcodeOf ?subsector.
-  ?fac_s2 a kwg-ont:S2Cell_Level13.
-  ?fac_s2 geo:hasGeometry/geo:asWKT ?fac_wkt .
 
   # also retrieve any labels associated with the facility and industry 
   OPTIONAL { ?fac rdfs:label ?faclabel . }
