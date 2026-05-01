@@ -1,7 +1,6 @@
 #+ summary: Retrieve all solid waste landfills (NAICS Industry Code 562212) in the state of Georgia (FIPS code 13) and their name and the town they are located in.
 #+ tags:
-#+   - fiokg
-#+   - spatialkg
+#+   - federation
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
