@@ -1,0 +1,78 @@
+#+ summary: Find proteins encoded by genes associated with phenotypes of linked with factors such as Opioid Abuse influenced by SDoH
+#+ tags:
+#+   - prokn
+
+PREFIX ns:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX biohealth:<https://biohealthkg.proto-okn.net/kg/schema/>
+PREFIX w3id:     <https://w3id.org/biolink/vocab/>
+PREFIX hp:       <http://purl.obolibrary.org/obo/HP_>
+PREFIX obo:      <http://purl.obolibrary.org/obo/>
+PREFIX dc:       <http://purl.org/dc/terms/>
+PREFIX biolink:  <https://biolink.github.io/biolink-model/>
+PREFIX ss:       <http://semanticscience.org/resource/>
+PREFIX efo:      <http://www.ebi.ac.uk/efo/EFO_>
+
+SELECT * {
+
+  {
+    SELECT (STR(?phenotype) AS ?phenotype_label)
+    WHERE {
+
+      {
+        SELECT DISTINCT ?phenotype ?resource
+        WHERE {
+          SERVICE <https://frink.apps.renci.org/biohealth/sparql> {
+            BIND (<https://biohealthkg.proto-okn.net/kg/node/C0029095> AS ?opioid)
+            BIND (w3id:coexists_with AS ?coexists_with)
+
+            ?rel1 ns:predicate ?coexists_with ;
+                  ns:subject   ?op_phenotype ;
+                  ns:object    ?opioid .
+
+            ?op_phenotype rdfs:label ?op_phenotype_label .
+
+            FILTER (?op_phenotype_label != 'Syndrome')
+            FILTER (?op_phenotype_label != 'Complication')
+
+            BIND (LCASE(STR(?op_phenotype_label)) AS ?phenotype)
+            BIND ("biohealthkg" AS ?resource)
+          }
+        }
+      }
+
+      UNION
+
+      {
+        SELECT DISTINCT ?phenotype ?resource
+        WHERE {
+          ?hp_subj rdf:type   efo:0000651 ;
+                   dc:source  "DDKG_HGNCHPO" ;
+                   rdfs:label ?hp_term .
+
+          BIND (LCASE(STRBEFORE(STR(?hp_term), "_HP:")) AS ?phenotype)
+          BIND ("prokn" AS ?resource)
+        }
+      }
+
+    }
+    GROUP BY ?phenotype
+    HAVING (COUNT(*) > 1)
+  }
+
+  ?hp_subj_o rdf:type   efo:0000651 ;
+             dc:source  "DDKG_HGNCHPO" ;
+             rdfs:label ?hp_term_o .
+
+  FILTER (STR(LCASE(STRBEFORE(STR(?hp_term_o), "_HP:"))) = ?phenotype_label)
+
+  ?gene biolink:associated_with ?hp_subj_o ;
+        rdfs:label               ?gene_label ;
+        ss:SIO_010078            ?protein .
+
+  ?protein obo:NCIT_C25402 ?uniprotAccession .
+
+}
+
+
