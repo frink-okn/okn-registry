@@ -6,8 +6,8 @@ description: Bio-Health KG is a dynamically-updated open knowledge network for h
 # homepage: 
 stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
-sparql: https://frink.apps.renci.org/biohealth/sparql
-tpf: https://frink.apps.renci.org/ldf/biohealth
+sparql: https://apps.okn.us/biohealth/sparql
+tpf: https://apps.okn.us/ldf/biohealth
 frink-options:
   lakefs-repo: biohealth
   documentation-path: "biohealth"

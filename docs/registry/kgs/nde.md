@@ -6,8 +6,8 @@ description: The nde (NIAID Data Ecosystem) KG contains infectious and immune-me
 stats: https://frink.renci.org/kg-stats/nde
 homepage: https://data.niaid.nih.gov/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
-sparql: https://frink.apps.renci.org/nde/sparql
-tpf: https://frink.apps.renci.org/ldf/nde
+sparql: https://apps.okn.us/nde/sparql
+tpf: https://apps.okn.us/ldf/nde
 frink-options:
   lakefs-repo: nde
   documentation-path: nde

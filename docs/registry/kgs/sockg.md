@@ -6,8 +6,8 @@ description: The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soi
 stats: https://frink.renci.org/kg-stats/soc-kg
 homepage: https://idir.sockg.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
-sparql: https://frink.apps.renci.org/sockg/sparql
-tpf: https://frink.apps.renci.org/ldf/sockg
+sparql: https://apps.okn.us/sockg/sparql
+tpf: https://apps.okn.us/ldf/sockg
 frink-options:
   lakefs-repo: soc-kg
   documentation-path: soc-kg

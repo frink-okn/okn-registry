@@ -6,8 +6,8 @@ description: Supply and Demand Open Knowledge Network is an interconnected netwo
 stats: https://frink.renci.org/kg-stats/sudokn
 homepage: https://projects.engineering.asu.edu/sudokn/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
-sparql: https://frink.apps.renci.org/sudokn/sparql
-tpf: https://frink.apps.renci.org/ldf/sudokn
+sparql: https://apps.okn.us/sudokn/sparql
+tpf: https://apps.okn.us/ldf/sudokn
 frink-options:
   lakefs-repo: sudokn-kg
   documentation-path: sudokn-kg

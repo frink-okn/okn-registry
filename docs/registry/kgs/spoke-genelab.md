@@ -9,8 +9,8 @@ description: The spoke-genelab KG complements the spokeokn (SPOKE Open Knowledge
 stats: https://frink.renci.org/kg-stats/spoke-genelab
 homepage: https://github.com/BaranziniLab/spoke_genelab
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
-sparql: https://frink.apps.renci.org/spoke-genelab/sparql
-tpf: https://frink.apps.renci.org/ldf/spoke-genelab
+sparql: https://apps.okn.us/spoke-genelab/sparql
+tpf: https://apps.okn.us/ldf/spoke-genelab
 frink-options:
   lakefs-repo: spoke-genelab-kg
   documentation-path: spoke-genelab

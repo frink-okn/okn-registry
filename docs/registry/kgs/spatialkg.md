@@ -6,8 +6,8 @@ description: The SAWGraph Spatial KG is part of the Safe Agricultural Products a
 homepage: https://sawgraph.github.io/
 stats: https://frink.renci.org/kg-stats/spatial-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-sparql: https://frink.apps.renci.org/spatialkg/sparql
-tpf: https://frink.apps.renci.org/ldf/spatialkg
+sparql: https://apps.okn.us/spatialkg/sparql
+tpf: https://apps.okn.us/ldf/spatialkg
 frink-options:
   lakefs-repo: spatial-kg
   documentation-path: spatial-kg

@@ -6,8 +6,8 @@ description: The Hydrology KG is the part of the SAWGraph project that describes
 stats: https://frink.renci.org/kg-stats/hydrology-kg
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-sparql: https://frink.apps.renci.org/hydrologykg/sparql
-tpf: https://frink.apps.renci.org/ldf/hydrologykg
+sparql: https://apps.okn.us/hydrologykg/sparql
+tpf: https://apps.okn.us/ldf/hydrologykg
 frink-options:
   lakefs-repo: hydrology-kg
   documentation-path: hydrology-kg

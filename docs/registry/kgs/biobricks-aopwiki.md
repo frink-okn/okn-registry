@@ -6,8 +6,8 @@ description: BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome P
 stats: https://frink.renci.org/kg-stats/biobricks-aopwiki-kg
 homepage: https://github.com/biobricks-ai/aopwikirdf-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
-sparql: https://frink.apps.renci.org/biobricks-aopwiki/sparql
-tpf: https://frink.apps.renci.org/ldf/biobricks-aopwiki
+sparql: https://apps.okn.us/biobricks-aopwiki/sparql
+tpf: https://apps.okn.us/ldf/biobricks-aopwiki
 frink-options:
   lakefs-repo: biobricks-aopwiki-kg
   documentation-path: biobricks-aopwiki-kg
