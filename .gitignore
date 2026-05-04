@@ -2,3 +2,9 @@
 **/.DS_Store
 .snakemake
 /pyenv
+/site
+__pycache__
+
+# Generated query build artifacts (sparql-examples-utils)
+/build/
+/tools/

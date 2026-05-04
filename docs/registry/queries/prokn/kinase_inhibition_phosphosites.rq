@@ -47,4 +47,3 @@ WHERE {
 }
 ORDER BY ?log2Ratio
 LIMIT 500
-

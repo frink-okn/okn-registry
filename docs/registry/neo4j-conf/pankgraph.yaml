@@ -1,0 +1,315 @@
+base: "https://purl.org/okn/frink/kg/pankgraph/"
+prefixes:
+  CL: "http://purl.obolibrary.org/obo/CL_"
+  GO: "http://purl.obolibrary.org/obo/GO_"
+  MONDO: "http://purl.obolibrary.org/obo/MONDO_"
+  UBERON: "http://purl.obolibrary.org/obo/UBERON_"
+identifier_properties:
+  - "id"
+mappings:
+  # -------------------------------------------------------
+  # Node label mappings (class IRIs and identifier bases)
+  # -------------------------------------------------------
+  gene:
+    iri: "https://w3id.org/biolink/vocab/Gene"
+    base: "http://identifiers.org/ensembl/"
+  Ensembl_genes:
+    iri: "https://w3id.org/biolink/vocab/Gene"
+    base: "http://identifiers.org/ensembl/"
+  coding_elements:
+    iri: "https://w3id.org/biolink/vocab/Gene"
+    base: "http://identifiers.org/ensembl/"
+  snp:
+    iri: "http://purl.obolibrary.org/obo/SO_0000694"
+    base: "https://identifiers.org/dbsnp/"
+  sequence_variant:
+    iri: "http://purl.obolibrary.org/obo/SO_0001483"
+    base: "https://identifiers.org/dbsnp/"
+  variants:
+    iri: "http://purl.obolibrary.org/obo/SO_0001483"
+    base: "https://identifiers.org/dbsnp/"
+  go:
+    base: "http://purl.obolibrary.org/obo/"
+  ontology:
+    iri: "https://w3id.org/biolink/vocab/OntologyClass"
+  cell_type:
+    iri: "https://w3id.org/biolink/vocab/Cell"
+    base: "http://purl.obolibrary.org/obo/"
+  cell_line:
+    iri: "https://w3id.org/biolink/vocab/CellLine"
+    base: "http://purl.obolibrary.org/obo/"
+  disease:
+    iri: "https://w3id.org/biolink/vocab/Disease"
+    base: "http://purl.obolibrary.org/obo/"
+  Article:
+    iri: "https://w3id.org/biolink/vocab/Article"
+  article_nodes:
+    iri: "https://w3id.org/biolink/vocab/Article"
+  OCR:
+    iri: "http://purl.obolibrary.org/obo/SO_0001747"
+  scATACseq_OCR_supernode:
+    iri: "http://purl.obolibrary.org/obo/SO_0001747"
+
+  # -------------------------------------------------------
+  # Shared / common property mappings
+  # -------------------------------------------------------
+  name:
+    iri: "http://www.w3.org/2000/01/rdf-schema#label"
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  description:
+    iri: "http://www.w3.org/2000/01/rdf-schema#comment"
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  definition:
+    iri: "http://www.w3.org/2000/01/rdf-schema#comment"
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  synonyms:
+    iri: "https://w3id.org/biolink/vocab/synonym"
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  url:
+    type: "http://www.w3.org/2001/XMLSchema#anyURI"
+    iri: "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+  link:
+    type: "http://www.w3.org/2001/XMLSchema#anyURI"
+    iri: "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+  data_source:
+    iri: "http://purl.org/dc/terms/source"
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  data_version:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  source:
+    iri: "http://purl.org/dc/terms/source"
+    type: "http://www.w3.org/2001/XMLSchema#string"
+
+  # -------------------------------------------------------
+  # Gene node properties
+  # -------------------------------------------------------
+  id:
+    type: "IRI"
+  chr:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  start_loc:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  end_loc:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  strand:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  type:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  GC_percentage:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  id_version:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  gencode_annotation:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+
+  # -------------------------------------------------------
+  # Article node properties
+  # -------------------------------------------------------
+  title:
+    iri: "http://purl.org/dc/terms/title"
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  abstract:
+    iri: "https://schema.org/abstract"
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  pubmedid:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  pmcid:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  consortium:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  # pubdate values are not ISO-formatted (e.g. "9/4/24")
+  pubdate:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+
+  # -------------------------------------------------------
+  # Relationship label mappings
+  # -------------------------------------------------------
+  regulation:
+    iri: "https://w3id.org/biolink/vocab/interacts_with"
+  function_annotation:
+    iri: "https://w3id.org/biolink/vocab/functional_association"
+  expression_level:
+    iri: "https://w3id.org/biolink/vocab/expressed_in"
+  Differential_Expression:
+    iri: "https://w3id.org/biolink/vocab/expressed_in"
+  fine_mapped_eQTL:
+    iri: "https://w3id.org/biolink/vocab/affects_expression_of"
+  OCR_activity:
+    iri: "https://w3id.org/biolink/vocab/associated_with"
+  OCR_locate_in:
+    iri: "https://w3id.org/biolink/vocab/located_in"
+  RelatedTo:
+    iri: "https://w3id.org/biolink/vocab/related_to"
+  effector_gene:
+    iri: "https://w3id.org/biolink/vocab/gene_associated_with_condition"
+
+  # -------------------------------------------------------
+  # Relationship properties — regulation (BioGRID)
+  # -------------------------------------------------------
+  biogrid_interaction_id:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  biogrid_id_interactor_a:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  biogrid_id_interactor_b:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  Entrez_ID_A:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  Entrez_ID_B:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  official_symbol_interactor_a:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  official_symbol_interactor_b:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  organism_id_interactor_a:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  organism_id_interactor_b:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  experimental_system:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  experimental_system_type:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  publication_source:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  throughput:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  author:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  qualifications:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  score:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  modification:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+
+  # -------------------------------------------------------
+  # Relationship properties — expression_level
+  # -------------------------------------------------------
+  All__expression_mean:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  All__expression_median:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  All__expression_min:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  All__expression_max:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  All__expression_25_quantile:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  All__expression_75_quantile:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  NonDiabetic__expression_mean:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  NonDiabetic__expression_median:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  NonDiabetic__expression_min:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  NonDiabetic__expression_max:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  NonDiabetic__expression_25_quantile:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  NonDiabetic__expression_75_quantile:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  Type1Diabetic__expression_mean:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  Type1Diabetic__expression_median:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  Type1Diabetic__expression_min:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  Type1Diabetic__expression_max:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  Type1Diabetic__expression_25_quantile:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  Type1Diabetic__expression_75_quantile:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+
+  # -------------------------------------------------------
+  # Relationship properties — OCR_activity
+  # -------------------------------------------------------
+  OCR_GeneActivityScore_mean:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  OCR_GeneActivityScore_median:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  non_diabetic__OCR_GeneActivityScore_mean:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  non_diabetic__OCR_GeneActivityScore_median:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  AAB_pos__OCR_GeneActivityScore_mean:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  AAB_pos__OCR_GeneActivityScore_median:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  type_1_diabetes__OCR_GeneActivityScore_mean:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  type_1_diabetes__OCR_GeneActivityScore_median:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  type_2_diabetes__OCR_GeneActivityScore_mean:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  type_2_diabetes__OCR_GeneActivityScore_median:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+
+  # -------------------------------------------------------
+  # Relationship properties — fine_mapped_eQTL
+  # -------------------------------------------------------
+  gene_name:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  tissue_name:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  tissue_id:
+    type: "IRI"
+    base: "http://purl.obolibrary.org/obo/"
+  pip:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  slope:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  nominal_p:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  lbf:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  purity:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  n_snp:
+    type: "http://www.w3.org/2001/XMLSchema#integer"
+  credible_set:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  credibleset:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  effect_allele:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  other_allele:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+
+  # -------------------------------------------------------
+  # Relationship properties — Differential_Expression
+  # -------------------------------------------------------
+  Log2FoldChange:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  SE_of_Log2FoldChange:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  P_value:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  Adjusted_P_value:
+    type: "http://www.w3.org/2001/XMLSchema#double"
+  UpOrDownRegulation:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+
+  # -------------------------------------------------------
+  # Relationship properties — effector_gene
+  # -------------------------------------------------------
+  ConfidenceLevel:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  ResearchMethod:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  data_source_url:
+    type: "http://www.w3.org/2001/XMLSchema#anyURI"
+  EpigenomeEvidence:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  QtlEvidence:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  ModelSystemEvidence:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+  CodingVariantEvidence:
+    type: "http://www.w3.org/2001/XMLSchema#string"
+
+  # -------------------------------------------------------
+  # Relationship properties — RelatedTo
+  # -------------------------------------------------------
+  directly_related_term:
+    type: "http://www.w3.org/2001/XMLSchema#string"

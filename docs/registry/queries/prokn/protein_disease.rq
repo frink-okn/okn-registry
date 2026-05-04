@@ -1,0 +1,30 @@
+#+ summary: Find proteins associated with rare diseases by querying ProKN and Open Annotations Rare Disease (OARD) KG
+#+ tags:
+#+   - prokn  
+
+PREFIX biolinkw3id: <https://w3id.org/biolink/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX upcore: <http://purl.uniprot.org/core/>
+PREFIX biolinkmodel: <https://biolink.github.io/biolink-model/>
+
+SELECT 
+DISTINCT ?diseaseLabel (GROUP_CONCAT(CONCAT(STR(?uniprotAccession),"(",STR(?geneName),")"); separator=";") AS ?assocProteins)
+WHERE {
+
+    SERVICE <https://frink.apps.renci.org/federation/sparql>{
+        # From OARD KG
+        ?disease biolinkw3id:category biolinkw3id:Disease ;
+            rdfs:label ?diseaseLabel .
+    }
+            
+    # From ProKN
+    ?protein obo:NCIT_C25402 ?uniprotAccession ;
+        biolinkmodel:associated_with ?omimDisease ;
+        upcore:organism 'Homo sapiens' ;
+        obo:NCIT_C164806 ?geneName .
+
+    ?omimDisease rdfs:seeAlso ?disease .
+}
+GROUP BY ?diseaseLabel ?organism
+
