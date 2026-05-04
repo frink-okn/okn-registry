@@ -1,0 +1,37 @@
+#+ summary: Find all gravel wells that connect to sand and gravel aquifers in Penobscot County, Maine.
+#+ tags:
+#+   - federation
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX me_mgs: <http://sawgraph.spatialai.org/v1/me-mgs#>
+PREFIX fio: <http://w3id.org/fio/v1/fio#>
+PREFIX naics: <http://sawgraph.spatialai.org/v1/fio/naics#>
+PREFIX us_frs: <http://sawgraph.spatialai.org/v1/us-frs#>
+PREFIX me_mgs_data: <http://sawgraph.spatialai.org/v1/me-mgs-data#>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
+PREFIX kwgr: <http://stko-kwg.geog.ucsb.edu/lod/resource/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX saw_water: <http://sawgraph.spatialai.org/v1/saw_water#>
+PREFIX gwml2: <http://gwml2.org/def/gwml2#>
+
+SELECT DISTINCT ?well ?use ?depth_val ?wellType ?aq ?aqtype WHERE {
+  ?well a me_mgs:MGS-Well ;
+        me_mgs:hasUse ?use ;
+        me_mgs:ofWellType me_mgs_data:d.wellType.Gravel ;
+        me_mgs:ofWellType ?wellType ;
+        me_mgs:wellDepth ?wellDepth ;
+        kwg-ont:sfWithin ?s2neighbor ;
+        kwg-ont:sfWithin ?aq_s2 .
+  ?wellDepth qudt:numericValue ?depth_val .
+  ?s2neighbor spatial:connectedTo kwgr:administrativeRegion.USA.23019.
+  ?aq rdf:type gwml2:GW_Aquifer ;
+      saw_water:aquiferType ?aqtype ;
+      rdf:type gwml2:GW_Aquifer .
+  FILTER(?aqtype = 'sand and gravel')
+  ?sp_s2 spatial:connectedTo ?aq ;
+         rdf:type kwg-ont:S2Cell_Level13 .
+  ?aq_s2 spatial:connectedTo ?aq ;
+         rdf:type kwg-ont:S2Cell_Level13 .
+} ORDER BY ?depth_val
