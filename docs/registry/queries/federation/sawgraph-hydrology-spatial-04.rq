@@ -1,0 +1,27 @@
+#+ summary: Which water bodies are called 'Great Pond' or 'Long Pond' and where are they located?
+#+ tags:
+#+   - federation
+
+PREFIX hyf: <https://www.opengis.net/def/schema/hy_features/hyf/>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX nhdplusv2: <http://nhdplusv2.spatialai.org/v1/nhdplusv2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
+
+SELECT DISTINCT ?name ?ftype ?county_name WHERE {
+  # Select water bodies along with their names, type, and comid
+  ?waterbody rdf:type hyf:HY_WaterBody ;
+             schema:name ?name ;
+             nhdplusv2:hasFTYPE ?ftype ;
+             nhdplusv2:hasCOMID ?comid .
+  # Keep only water bodies with the desired names
+  VALUES ?name { 'Great Pond' 'Long Pond' }
+  ?s2cell spatial:connectedTo ?waterbody ;
+          rdf:type kwg-ont:S2Cell_Level13 .
+  ?county spatial:connectedTo ?s2cell ;
+          rdf:type kwg-ont:AdministrativeRegion_2 ;
+          rdfs:label ?county_name .
+  FILTER regex(str(?county), "datacommons")
+} ORDER BY ?name ?county_name
