@@ -1,0 +1,21 @@
+#+ summary: Find NSDUH variables that explicitly mention a substance entity.
+#+ tags:
+#+   - ruralkg
+
+PREFIX schema:         <https://schema.org/>
+PREFIX substanceabuse: <http://sail.ua.edu/ruralkg/substanceabuse/>
+PREFIX variable:       <http://sail.ua.edu/ruralkg/variable/>
+
+SELECT ?substanceName ?variable ?variableCode ?variableContent
+WHERE {
+  ?variable variable:fromDataset ?dataset ;
+            variable:code ?variableCode ;
+            variable:content ?variableContent ;
+            substanceabuse:mentionsSubstance ?substance .
+
+  ?substance schema:name ?substanceName .
+
+  FILTER(STR(?dataset) = "NSDUH")
+}
+ORDER BY ?substanceName ?variableCode
+LIMIT 100
