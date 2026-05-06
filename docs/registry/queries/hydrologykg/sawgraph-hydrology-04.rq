@@ -1,0 +1,27 @@
+#+ summary: What surface water bodies are downstream from a particular S2 cell?
+#+ tags:
+#+   - hydrologykg
+
+PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX hyf: <https://www.opengis.net/def/schema/hy_features/hyf/>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX nhdplusv2: <http://nhdplusv2.spatialai.org/v1/nhdplusv2#>
+PREFIX schema: <https://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?us_fl_name ?downstream_flowline ?ds_fl_name ?ds_fl_ftype WHERE {
+  ?upstream_flowline rdf:type hyf:HY_FlowPath ;
+                     spatial:connectedTo <http://stko-kwg.geog.ucsb.edu/lod/resource/s2.level13.5526595845832572928> ;
+                     # find all flowlines downstream
+                     # hyf:downstreamWaterBodyTC gets the transitive closure
+                     hyf:downstreamFlowPathTC ?downstream_flowline ;
+                     geo:hasGeometry/geo:asWKT ?us_fl_geom .
+  # If available, pull the GNIS name for each flowline
+  OPTIONAL { ?upstream_flowline schema:name ?us_fl_name . }
+  OPTIONAL { ?downstream_flowline schema:name ?ds_fl_name . }
+  # Retrieve the flowline type and geometry for each downstream flowline
+  ?downstream_flowline nhdplusv2:hasFTYPE ?ds_fl_ftype ;
+                       geo:hasGeometry/geo:asWKT ?ds_fl_geom .
+} ORDER BY ?downstream_flowline

@@ -1,0 +1,15 @@
+#+ summary: Retrieve all counties for New Mexico (FIPS = 35)
+#+ tags:
+#+   - spatialkg
+
+PREFIX kwgr: <http://stko-kwg.geog.ucsb.edu/lod/resource/>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT * WHERE {
+  ?s rdf:type kwg-ont:AdministrativeRegion_2 ;
+     rdfs:label ?name ;
+     kwg-ont:administrativePartOf kwgr:administrativeRegion.USA.35 .
+  FILTER(regex(str(?s), "datacommons"))
+} ORDER BY ?name

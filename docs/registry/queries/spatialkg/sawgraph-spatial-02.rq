@@ -1,0 +1,16 @@
+#+ summary: Retrieve all Census Bureau county subdivisions for Penobscot County, Maine.
+#+ tags:
+#+   - spatialkg
+
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX kwgr: <http://stko-kwg.geog.ucsb.edu/lod/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?cousub_label ?cousub WHERE {
+    # Select county subdivisions and their names
+    #    from Clare County, MI (FIPS = 26035)
+    ?cousub rdf:type kwg-ont:AdministrativeRegion_3 ;
+            kwg-ont:administrativePartOf kwgr:administrativeRegion.USA.26035 ;
+            rdfs:label ?cousub_label .
+} ORDER BY ?cousub_label
