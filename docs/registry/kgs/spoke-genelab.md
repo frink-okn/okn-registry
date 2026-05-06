@@ -6,7 +6,7 @@ description: The spoke-genelab KG complements the spokeokn (SPOKE Open Knowledge
   Network) KG and is designed to integrate omics data from NASA’s Open Science
   Data Repository (OSDR/GeneLab), which hosts results from spaceflight
   experiments.
-stats: https://frink.renci.org/kg-stats/spoke-genelab
+stats: https://registry.okn.us/kg-stats/spoke-genelab
 homepage: https://github.com/BaranziniLab/spoke_genelab
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
 sparql: https://apps.okn.us/spoke-genelab/sparql

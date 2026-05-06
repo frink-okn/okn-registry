@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: spoke-okn
 title: SPOKE-OKN
 description: The spoke-okn (SPOKE Open Knowledge Network) KG is a comprehensive biomedical and environmental health knowledge graph that integrates diverse data across genomics, environmental science, and public health.
-stats: https://frink.renci.org/kg-stats/spoke-okn
+stats: https://registry.okn.us/kg-stats/spoke-okn
 homepage: https://spoke.ucsf.edu
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
 sparql: https://apps.okn.us/spoke-okn/sparql

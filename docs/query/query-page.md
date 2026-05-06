@@ -1,8 +1,8 @@
 # Query Knowledge Graphs in the Open Knowledge Network
 
-## [OKN Query Page](https://frink.apps.renci.org)
+## [OKN Query Page](https://apps.okn.us)
 
-OKN Fabric offers a query page that enables anyone to query specific Theme 1 graphs or query across graphs (i.e., a federated query). The OKN Query Page (formerly FRINK) is located at [https://frink.apps.renci.org](https://frink.apps.renci.org).
+OKN Fabric offers a query page that enables anyone to query specific Theme 1 graphs or query across graphs (i.e., a federated query). The okn.us Query Page is located at [https://apps.okn.us](https://apps.okn.us).
 
 ### Query Across Graphs
 
@@ -72,7 +72,7 @@ The Fabric API endpoints can be used progammatically (see below), or else access
 
 ### Theme 1 Specific Endpoints
 
-See the [OKN Registry entries](../registry/) to view the graphs currently available within the OKN. The service endpoints for SPARQL and TPF are listed in each graph's entry. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the OKN query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide [a browser UI](https://frink.apps.renci.org/ldf/).
+See the [OKN Registry entries](../registry/) to view the graphs currently available within the OKN. The service endpoints for SPARQL and TPF are listed in each graph's entry. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the OKN query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide [a browser UI](https://apps.okn.us/ldf/).
 
 ### Cross-OKN query endpoint
 

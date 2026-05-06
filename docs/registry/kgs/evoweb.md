@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: evoweb
 title: EvoWeb
 description: EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)
-stats: https://frink.renci.org/kg-stats/evoweb
+stats: https://registry.okn.us/kg-stats/evoweb
 homepage: https://data.niaid.nih.gov/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
 frink-options:

@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: ncipidkg
 title: NCI-PID 2.0 KG
 description: The NCI-PID 2.0 Knowledge Graph converts NCI Pathway Interaction Database version 2.0 networks into RDF, capturing protein interactions, signaling pathways, and post-translational modifications enriched with INDRA evidence metadata.
-stats: https://frink.renci.org/kg-stats/ncipidkg
+stats: https://registry.okn.us/kg-stats/ncipidkg
 homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
 # funding: NSF Proto-OKN
 sparql: https://apps.okn.us/ncipidkg/sparql

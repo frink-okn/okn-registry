@@ -6,7 +6,7 @@ description: Mappings using standard RDF predicates between Wikidata entities an
 frink-options:
   lakefs-repo: identifier-mappings
   documentation-path: "identifier-mappings"
-stats: https://frink.renci.org/kg-stats/identifier-mappings
+stats: https://registry.okn.us/kg-stats/identifier-mappings
 homepage: https://www.wikidata.org/
 sparql: https://apps.okn.us/identifier-mappings/sparql
 tpf: https://apps.okn.us/ldf/identifier-mappings
@@ -15,4 +15,4 @@ contact:
   github: "mahir256"
   label: "Mahir Morshed"
 ---
-This graph is a subset of the Wikidata graph, consisting of mappings between Wikidata entities, mostly items, and external identifiers on those entities. They have been produced through taking existing triples from the Wikidata RDF dump representing those mappings and converting their custom predicates to standard predicates such as "skos:exactMatch". This mapping graph is provided by the NSF [FRINK](https://frink.renci.org) project.
+This graph is a subset of the Wikidata graph, consisting of mappings between Wikidata entities, mostly items, and external identifiers on those entities. They have been produced through taking existing triples from the Wikidata RDF dump representing those mappings and converting their custom predicates to standard predicates such as "skos:exactMatch". This mapping graph is provided by okn.us.

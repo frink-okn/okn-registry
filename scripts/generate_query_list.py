@@ -62,7 +62,7 @@ def process_sparql_files(input_files, output_file):
         taglist = _escape_table_cell(", ".join(doc["tags"]))
         source_list = urllib.parse.quote(json.dumps(doc["tags"]))
         query_text = urllib.parse.quote_plus(doc["text"])
-        query_url = f"https://frink.apps.renci.org?sources={source_list}&amp;query={query_text}"
+        query_url = f"https://apps.okn.us?sources={source_list}&amp;query={query_text}"
         summary = _escape_link_text(doc["summary"])
         output += f"| [{summary}]({query_url}) | {taglist} |\n"
     with open(output_file, "w") as f:

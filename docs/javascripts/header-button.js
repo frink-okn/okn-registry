@@ -20,7 +20,7 @@
   }
   function createButton() {
     const a = document.createElement('a');
-    a.href = 'https://frink.apps.renci.org';
+    a.href = 'https://apps.okn.us';
     a.target = '_blank';
     a.className = `md-button ${BTN_CLASS}`;
     a.setAttribute('aria-label', 'Query the OKN');

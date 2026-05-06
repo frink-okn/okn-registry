@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: pankgraph
 title: PanKgraph
 description: PanKgraph — PanKbase Knowledge Graph (NIDDK)
-stats: https://frink.renci.org/kg-stats/pankbase-kg
+stats: https://registry.okn.us/kg-stats/pankbase-kg
 homepage: https://pankbase.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
 frink-options:

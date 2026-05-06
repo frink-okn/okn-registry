@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: maudekg
 title: FDA MAUDE Adverse Event Knowledge Graph
 description: Knowledge graph constructed from FDA MAUDE adverse event reports using standardized FDA product codes.
-stats: https://frink.renci.org/kg-stats/maudekg
+stats: https://registry.okn.us/kg-stats/maudekg
 homepage: https://github.com/Prabhadeus/Proto-OKN
 sparql: https://apps.okn.us/maudekg/sparql
 tpf: https://apps.okn.us/ldf/maudekg
