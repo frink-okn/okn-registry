@@ -10,6 +10,7 @@ and writes a YAML file per KG into <output_dir>/<shortname>.yaml.
 import sys
 import json
 from datetime import date
+from time import sleep
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
@@ -20,6 +21,8 @@ import yaml
 DATASET_BASE = "https://purl.org/okn/frink/kg/"
 PREFIXES_FILE = Path(__file__).resolve().parent.parent / "docs" / "registry" / "prefixes.yaml"
 TIMEOUT = 30  # seconds per query
+MAX_RETRIES = 3
+RETRY_DELAY = 5  # seconds, multiplied by the attempt number
 
 # Loaded at runtime from prefixes.yaml; maps namespace URI -> "prefix:"
 PREFIXES: dict[str, str] = {}
@@ -56,18 +59,31 @@ def compact_uri(uri: str) -> str:
     return uri
 
 
-def sparql_query(endpoint: str, query: str) -> list[dict]:
+def sparql_query(endpoint: str, query: str, label: str) -> list[dict]:
     """Execute a SPARQL SELECT query and return the bindings list."""
     params = urlencode({"query": query})
     url = f"{endpoint}?{params}"
     req = Request(url, headers={"Accept": "application/sparql-results+json"})
-    try:
-        with urlopen(req, timeout=TIMEOUT) as resp:
-            data = json.loads(resp.read())
-            return data["results"]["bindings"]
-    except (URLError, TimeoutError, json.JSONDecodeError, KeyError) as e:
-        print(f"  SPARQL query failed: {e}", file=sys.stderr)
-        return []
+    last_error: Exception | None = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            with urlopen(req, timeout=TIMEOUT) as resp:
+                data = json.loads(resp.read())
+                return data["results"]["bindings"]
+        except (URLError, TimeoutError, json.JSONDecodeError, KeyError) as e:
+            last_error = e
+            if attempt == MAX_RETRIES:
+                break
+            delay = RETRY_DELAY * attempt
+            print(
+                f"  SPARQL query failed for {label} "
+                f"(attempt {attempt}/{MAX_RETRIES}): {e}; retrying in {delay}s",
+                file=sys.stderr,
+            )
+            sleep(delay)
+    raise RuntimeError(
+        f"SPARQL query failed for {label} after {MAX_RETRIES} attempts: {last_error}"
+    )
 
 
 def get_value(binding: dict, var: str, as_int: bool = False):
@@ -99,7 +115,7 @@ def fetch_summary_stats(endpoint: str, shortnames: list[str]) -> dict[str, dict]
       OPTIONAL {{ ?dataset dct:issued ?issued }}
     }}
     """
-    bindings = sparql_query(endpoint, query)
+    bindings = sparql_query(endpoint, query, "summary stats")
     results = {}
     for b in bindings:
         uri = get_value(b, "dataset")
@@ -128,7 +144,7 @@ def fetch_all_class_partitions(endpoint: str, shortnames: list[str]) -> dict[str
       OPTIONAL {{ ?cp void:entities ?entityCount }}
     }} ORDER BY ?dataset DESC(?entityCount)
     """
-    bindings = sparql_query(endpoint, query)
+    bindings = sparql_query(endpoint, query, "class partitions")
     results: dict[str, list[dict]] = {}
     for b in bindings:
         ds = get_value(b, "dataset")
@@ -156,7 +172,7 @@ def fetch_all_property_partitions(endpoint: str, shortnames: list[str]) -> dict[
       OPTIONAL {{ ?pp void:triples ?tripleCount }}
     }} ORDER BY ?dataset DESC(?tripleCount)
     """
-    bindings = sparql_query(endpoint, query)
+    bindings = sparql_query(endpoint, query, "property partitions")
     results: dict[str, list[dict]] = {}
     for b in bindings:
         ds = get_value(b, "dataset")
@@ -219,6 +235,11 @@ def main() -> int:
     summary = fetch_summary_stats(void_endpoint, shortnames)
     all_classes = fetch_all_class_partitions(void_endpoint, shortnames)
     all_properties = fetch_all_property_partitions(void_endpoint, shortnames)
+    if summary and not all_classes and not all_properties:
+        raise RuntimeError(
+            "No VoID class or property partitions were fetched; "
+            "refusing to overwrite existing partition data with empty results"
+        )
     today = date.today().isoformat()
 
     for shortname in shortnames:
