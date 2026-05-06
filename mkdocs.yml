@@ -1,4 +1,4 @@
-site_name: "OKN: Fabric"
+site_name: "okn.us"
 theme:
   name: material
   custom_dir: material
@@ -18,6 +18,27 @@ theme:
     - toc.follow
     - toc.integrate #puts the page anchor links on the left, instead of the right
     - navigation.indexes
+copyright: "Powered by RENCI and Onai with <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091' target='_blank'>NSF Award #2535091</a>"
+extra:
+  homepage: https://okn.us
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/frink-okn/okn-registry
+    - icon: okn-us/nsf
+      link: https://www.nsf.gov/
+      name: National Science Foundation
+    - icon: material/lock
+      link: https://okn.us/privacy
+      name: okn.us Privacy Policy
+    - icon: material/email
+      link: mailto:contact@proto-okn.net
+      name: Get in touch with okn.us via email
+    - icon: material/email-box
+      link: https://www.proto-okn.net/contact/
+      name: Get in touch with okn.us via a form
+    - icon: fontawesome/solid/play-circle
+      link: https://www.proto-okn.net/presentations/
+      name: See videos about okn.us
 extra_css:
   - https://cdn.datatables.net/2.3.7/css/dataTables.dataTables.css
   - styles.css
@@ -52,14 +73,22 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - material/.icons
 nav:
-  - OKN Registry: 
+  - Graph Registry:
     - registry/index.md
     - Contribute to the Registry: registry/contribute.md
-  - Query the OKN:
+  - Querying Graphs:
     - query/index.md
-    - Query Tool: query/query-page.md
+    - How to Use the Query Tool: query/query-page.md
     - Sample Query Library: query/sample-query-library.md
+    - Explore Graph Embeddings: https://apps.okn.us/embeddings/
+    - Model Context Protocol Server: https://apps.okn.us/okn-mcp/mcp
   - Building Graphs:
       - Overview: book/index.md
       - Graph Construction Best Practices: book/best-practices.md
@@ -71,12 +100,11 @@ nav:
         - Institutions: book/institutions.md
         - Justice: book/justice.md
       - Ingesting Identifier Sources: book/new-id-sources.md
-  - Uploading Graphs: 
+  - Uploading Graphs:
       - help/index.md
       - Setup a Repo in the Landing Zone: help/setup.md
       - Update Graphs in the OKN: help/update.md
       - Update Example Queries: help/update-queries.md
-site_url: https://frink-okn.github.io
-repo_url: https://github.com/frink-okn/frink-landing-zone/
+site_url: https://registry.okn.us
 
 #     - Knowledge Graph (KG) Dataset Status: okn/kgstatus.md (add these links to the registry pages)
