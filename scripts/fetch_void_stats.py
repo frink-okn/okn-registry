@@ -3,13 +3,12 @@
 Usage:
     python fetch_void_stats.py <registry_yaml> <output_dir>
 
-Queries https://frink.apps.renci.org/okn-void/sparql for VoID metadata
+Queries the okn-void SPARQL endpoint listed in the registry for VoID metadata
 and writes a YAML file per KG into <output_dir>/<shortname>.yaml.
 """
 
 import sys
 import json
-import os
 from datetime import date
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -18,7 +17,6 @@ from urllib.error import URLError
 
 import yaml
 
-VOID_ENDPOINT = "https://frink.apps.renci.org/okn-void/sparql"
 DATASET_BASE = "https://purl.org/okn/frink/kg/"
 PREFIXES_FILE = Path(__file__).resolve().parent.parent / "docs" / "registry" / "prefixes.yaml"
 TIMEOUT = 30  # seconds per query
@@ -58,10 +56,10 @@ def compact_uri(uri: str) -> str:
     return uri
 
 
-def sparql_query(query: str) -> list[dict]:
+def sparql_query(endpoint: str, query: str) -> list[dict]:
     """Execute a SPARQL SELECT query and return the bindings list."""
     params = urlencode({"query": query})
-    url = f"{VOID_ENDPOINT}?{params}"
+    url = f"{endpoint}?{params}"
     req = Request(url, headers={"Accept": "application/sparql-results+json"})
     try:
         with urlopen(req, timeout=TIMEOUT) as resp:
@@ -85,7 +83,7 @@ def get_value(binding: dict, var: str, as_int: bool = False):
     return val
 
 
-def fetch_summary_stats(shortnames: list[str]) -> dict[str, dict]:
+def fetch_summary_stats(endpoint: str, shortnames: list[str]) -> dict[str, dict]:
     """Fetch top-level VoID stats for all KGs in a single query."""
     values = " ".join(f"<{DATASET_BASE}{s}>" for s in shortnames)
     query = f"""
@@ -101,7 +99,7 @@ def fetch_summary_stats(shortnames: list[str]) -> dict[str, dict]:
       OPTIONAL {{ ?dataset dct:issued ?issued }}
     }}
     """
-    bindings = sparql_query(query)
+    bindings = sparql_query(endpoint, query)
     results = {}
     for b in bindings:
         uri = get_value(b, "dataset")
@@ -118,7 +116,7 @@ def fetch_summary_stats(shortnames: list[str]) -> dict[str, dict]:
     return results
 
 
-def fetch_all_class_partitions(shortnames: list[str]) -> dict[str, list[dict]]:
+def fetch_all_class_partitions(endpoint: str, shortnames: list[str]) -> dict[str, list[dict]]:
     """Fetch class partition data for all KGs in a single query."""
     values = " ".join(f"<{DATASET_BASE}{s}>" for s in shortnames)
     query = f"""
@@ -130,7 +128,7 @@ def fetch_all_class_partitions(shortnames: list[str]) -> dict[str, list[dict]]:
       OPTIONAL {{ ?cp void:entities ?entityCount }}
     }} ORDER BY ?dataset DESC(?entityCount)
     """
-    bindings = sparql_query(query)
+    bindings = sparql_query(endpoint, query)
     results: dict[str, list[dict]] = {}
     for b in bindings:
         ds = get_value(b, "dataset")
@@ -146,7 +144,7 @@ def fetch_all_class_partitions(shortnames: list[str]) -> dict[str, list[dict]]:
     return results
 
 
-def fetch_all_property_partitions(shortnames: list[str]) -> dict[str, list[dict]]:
+def fetch_all_property_partitions(endpoint: str, shortnames: list[str]) -> dict[str, list[dict]]:
     """Fetch property partition data for all KGs in a single query."""
     values = " ".join(f"<{DATASET_BASE}{s}>" for s in shortnames)
     query = f"""
@@ -158,7 +156,7 @@ def fetch_all_property_partitions(shortnames: list[str]) -> dict[str, list[dict]
       OPTIONAL {{ ?pp void:triples ?tripleCount }}
     }} ORDER BY ?dataset DESC(?tripleCount)
     """
-    bindings = sparql_query(query)
+    bindings = sparql_query(endpoint, query)
     results: dict[str, list[dict]] = {}
     for b in bindings:
         ds = get_value(b, "dataset")
@@ -174,11 +172,28 @@ def fetch_all_property_partitions(shortnames: list[str]) -> dict[str, list[dict]
     return results
 
 
-def load_shortnames(registry_yaml: str) -> list[str]:
-    """Load all shortnames from the compiled registry YAML."""
+def load_registry(registry_yaml: str) -> list[dict]:
+    """Load KG entries from the compiled registry YAML."""
     with open(registry_yaml) as f:
-        data = yaml.safe_load(f)
-    return [kg["shortname"] for kg in data.get("kgs", []) if "shortname" in kg]
+        data = yaml.safe_load(f) or {}
+    return data.get("kgs", [])
+
+
+def load_shortnames(kgs: list[dict]) -> list[str]:
+    """Load all shortnames from the registry entries."""
+    return [kg["shortname"] for kg in kgs if "shortname" in kg]
+
+
+def load_void_endpoint(kgs: list[dict]) -> str:
+    """Load the okn-void SPARQL endpoint from the registry entries."""
+    for kg in kgs:
+        if kg.get("shortname") != "okn-void":
+            continue
+        endpoint = kg.get("sparql")
+        if not endpoint:
+            raise ValueError("Registry entry for okn-void has no sparql field")
+        return endpoint
+    raise ValueError("No okn-void entry found in registry")
 
 
 def main() -> int:
@@ -195,13 +210,15 @@ def main() -> int:
 
     load_prefixes()
 
-    shortnames = load_shortnames(registry_yaml)
-    print(f"Fetching VoID stats for {len(shortnames)} KGs...")
+    kgs = load_registry(registry_yaml)
+    shortnames = load_shortnames(kgs)
+    void_endpoint = load_void_endpoint(kgs)
+    print(f"Fetching VoID stats for {len(shortnames)} KGs from {void_endpoint}...")
 
     # Batch fetch all stats
-    summary = fetch_summary_stats(shortnames)
-    all_classes = fetch_all_class_partitions(shortnames)
-    all_properties = fetch_all_property_partitions(shortnames)
+    summary = fetch_summary_stats(void_endpoint, shortnames)
+    all_classes = fetch_all_class_partitions(void_endpoint, shortnames)
+    all_properties = fetch_all_property_partitions(void_endpoint, shortnames)
     today = date.today().isoformat()
 
     for shortname in shortnames:
