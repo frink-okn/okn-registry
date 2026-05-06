@@ -12,6 +12,10 @@ on:
       - "docs/registry/queries/**/*.rq"
       - "scripts/generate_query_list.py"
 
+concurrency:
+  group: update-registry-metadata
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,6 +38,8 @@ jobs:
         with:
           commit-message: "🚀 Automatically rebuilt derived files"
           committer: "GitHub Action <action@github.com>"
+          branch: automation/update-registry-metadata
+          delete-branch: true
           title: "Update KG registry metadata"
           body: |
             Recreates all KG registry metadata.

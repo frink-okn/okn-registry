@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "30 9 * * *"
 
+concurrency:
+  group: update-void-stats
+  cancel-in-progress: false
+
 jobs:
   update-void:
     runs-on: ubuntu-latest
@@ -28,6 +32,8 @@ jobs:
         with:
           commit-message: "Automatically updated VoID stats"
           committer: "GitHub Action <action@github.com>"
+          branch: automation/update-void-stats
+          delete-branch: true
           title: "Update VoID stats from okn-void endpoint"
           body: |
             Fetched the latest VoID statistics for all registered KGs
