@@ -1,9 +1,5 @@
 
-# The Open Knowledge Network Registry
-
-The OKN Registry serves as the central discovery layer for the OKN, providing a structured catalog of the interconnected nodes and "fabric" that make up the system. 
-
-Its primary purpose is to enable interoperability and data findability via a directory of domain-specific knowledge graphs, technical endpoints, and metadata. The registry allows users to query complex information across multiple sectors like health, justice, and the environment. It acts as the essential infrastructure that transforms siloed data into a cohesive, searchable network designed to support AI-driven societal solutions.
+# OKN registry
 
 ## Knowledge graphs registered with the Open Knowledge Network
 
@@ -18,6 +14,7 @@ Its primary purpose is to enable interoperability and data findability via a dir
 | [biohealth](kgs/biohealth/) | Bio-Health KG | Bio-Health KG is a dynamically-updated open knowledge network for health, integrating biomedical insights with social determinants of health. |
 | [biomarkerkg](kgs/biomarkerkg/) | BiomarkerKB KG | The BiomarkerKB knowledge graph is a structured network that connects biomarkers to diseases, drugs, biological entities, and evidence from the scientific literature. |
 | [climatemodelskg](kgs/climatemodelskg/) | Climate Models KG | Climate Models KG is a knowledge graph to support evaluation and development of climate models. |
+| [digcfdekg](kgs/digcfdekg/) | CFDE REVEAL Knowledge Graph | The CFDE REVEAL Knowledge Graph is a statistically inferred genomic evidence graph to integrate and disseminate knowledge within the Common Fund Data Ecosystem (CFDE). |
 | [dreamkg](kgs/dreamkg/) | DREAM-KG | Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness With Explainable AI |
 | [evoweb](kgs/evoweb/) | EvoWeb | EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID) |
 | [fiokg](kgs/fiokg/) | SAWGraph FRS KG | The FRS (Facility Registry Service) KG is the part of the SAWGraph project that stores data about facilities from EPA's Facility Registry service (FRS) together with their NAICS industry classification and the spatial location. |
