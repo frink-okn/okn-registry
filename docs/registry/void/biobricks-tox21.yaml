@@ -1,7 +1,7 @@
-triples: 184333
-distinct_subjects: 22494
-distinct_objects: 85068
-properties: 68
+triples: 26939
+distinct_subjects: 8947
+distinct_objects: 9023
+properties: 3
 classes: 0
 last_checked: '2026-05-06'
 class_partitions: []
