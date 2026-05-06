@@ -648,8 +648,10 @@ kgs:
   funding: https://reporter.nih.gov/project-details/11184405
   homepage: https://healthyphases.org/
   shortname: phaseskg
+  sparql: https://apps.okn.us/phaseskg/sparql
   template: overrides/kg.html
   title: PHASES KG
+  tpf: https://apps.okn.us/ldf/phaseskg
 - contacts:
   - email: katrina.schweikert@maine.edu
     github: kschweikert
