@@ -18,7 +18,7 @@ theme:
     - toc.follow
     - toc.integrate #puts the page anchor links on the left, instead of the right
     - navigation.indexes
-copyright: "Powered by RENCI and Onai with <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091' target='_blank'>NSF Award #2535091</a>"
+copyright: "Powered by <a href='https://renci.org/' target='_blank'>RENCI</a> and <a href='https://onai.com/' target='_blank'>Onai</a> with <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091' target='_blank'>NSF Award #2535091</a>"
 extra:
   homepage: https://okn.us
   social:
