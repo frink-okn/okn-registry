@@ -5,8 +5,8 @@ title: PHASES KG
 description: Knowledge graph Promoting Healthy Aging through Semantic Enrichment
 homepage: https://healthyphases.org/
 funding: https://reporter.nih.gov/project-details/11184405
-#sparql: https://frink.apps.renci.org/phaseskg/sparql
-#tpf: https://frink.apps.renci.org/ldf/phaseskg
+sparql: https://apps.okn.us/phaseskg/sparql
+tpf: https://apps.okn.us/ldf/phaseskg
 frink-options:
   lakefs-repo: phases-kg
   documentation-path: phases-kg
