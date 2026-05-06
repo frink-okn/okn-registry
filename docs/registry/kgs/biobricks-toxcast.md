@@ -6,8 +6,8 @@ description: BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-t
 stats: https://frink.renci.org/kg-stats/biobricks-toxcast-kg
 homepage: https://github.com/biobricks-ai/biobricks-okg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
-sparql: https://frink.apps.renci.org/biobricks-toxcast/sparql
-tpf: https://frink.apps.renci.org/ldf/biobricks-toxcast
+sparql: https://apps.okn.us/biobricks-toxcast/sparql
+tpf: https://apps.okn.us/ldf/biobricks-toxcast
 frink-options:
   lakefs-repo: biobricks-toxcast-kg
   documentation-path: biobricks-toxcast-kg

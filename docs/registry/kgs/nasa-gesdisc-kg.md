@@ -6,8 +6,8 @@ description: The NASA Knowledge Graph Dataset is an expansive graph-based datase
 stats: https://frink.renci.org/kg-stats/nasa-gesdisc-kg
 homepage: https://disc.gsfc.nasa.gov
 funding:
-sparql: https://frink.apps.renci.org/nasa-gesdisc-kg/sparql
-tpf: https://frink.apps.renci.org/ldf/nasa-gesdisc-kg
+sparql: https://apps.okn.us/nasa-gesdisc-kg/sparql
+tpf: https://apps.okn.us/ldf/nasa-gesdisc-kg
 frink-options:
   lakefs-repo: nasa-gesdisc
   documentation-path: nasa-gesdisc

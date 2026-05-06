@@ -6,8 +6,8 @@ description: Rural Resilience KG is a cross-domain knowledge graph to integrate 
 stats: https://frink.renci.org/kg-stats/rural-kg
 #homepage: 
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
-sparql: https://frink.apps.renci.org/ruralkg/sparql
-tpf: https://frink.apps.renci.org/ldf/ruralkg
+sparql: https://apps.okn.us/ruralkg/sparql
+tpf: https://apps.okn.us/ldf/ruralkg
 frink-options:
   lakefs-repo: rural-kg
   documentation-path: rural-kg

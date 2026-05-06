@@ -5,8 +5,8 @@ title: SemOpenAlex
 description: Comprehensive information on scientific publications and related entities.
 # stats:
 homepage: https://semopenalex.org/
-sparql: https://frink.apps.renci.org/semopenalex/sparql
-tpf: https://frink.apps.renci.org/ldf/semopenalex
+sparql: https://apps.okn.us/semopenalex/sparql
+tpf: https://apps.okn.us/ldf/semopenalex
 frink-options:
   lakefs-repo: sem-open-alex-kg
   documentation-path: sem-open-alex-kg

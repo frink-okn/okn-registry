@@ -6,8 +6,8 @@ description: The NCI-PID 2.0 Knowledge Graph converts NCI Pathway Interaction Da
 stats: https://frink.renci.org/kg-stats/ncipidkg
 homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
 # funding: NSF Proto-OKN
-sparql: https://frink.apps.renci.org/ncipidkg/sparql
-tpf: https://frink.apps.renci.org/ldf/ncipidkg
+sparql: https://apps.okn.us/ncipidkg/sparql
+tpf: https://apps.okn.us/ldf/ncipidkg
 frink-options:
   lakefs-repo: ncipidkg
   documentation-path: ncipidkg

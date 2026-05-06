@@ -5,8 +5,8 @@ title: OKN VoID graph descriptions
 description: Collected VoID (Vocabulary of Interlinked Datasets) metadata for all OKN graphs
 homepage: https://frink.renci.org/registry/kgs/okn-void/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
-sparql: https://frink.apps.renci.org/okn-void/sparql
-tpf: https://frink.apps.renci.org/ldf/okn-void
+sparql: https://apps.okn.us/okn-void/sparql
+tpf: https://apps.okn.us/ldf/okn-void
 frink-options:
   lakefs-repo: okn-void
   documentation-path: okn-void

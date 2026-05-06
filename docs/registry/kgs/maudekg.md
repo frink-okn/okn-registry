@@ -5,8 +5,8 @@ title: FDA MAUDE Adverse Event Knowledge Graph
 description: Knowledge graph constructed from FDA MAUDE adverse event reports using standardized FDA product codes.
 stats: https://frink.renci.org/kg-stats/maudekg
 homepage: https://github.com/Prabhadeus/Proto-OKN
-sparql: https://frink.apps.renci.org/maudekg/sparql
-tpf: https://frink.apps.renci.org/ldf/maudekg
+sparql: https://apps.okn.us/maudekg/sparql
+tpf: https://apps.okn.us/ldf/maudekg
 
 frink-options:
   lakefs-repo: maude-kg

@@ -6,8 +6,8 @@ description: The Safe Agricultural Products and Water Graph (SAWGraph) PFAS KG s
 stats: https://frink.renci.org/kg-stats/sawgraph
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-sparql: https://frink.apps.renci.org/sawgraph/sparql
-tpf: https://frink.apps.renci.org/ldf/sawgraph
+sparql: https://apps.okn.us/sawgraph/sparql
+tpf: https://apps.okn.us/ldf/sawgraph
 frink-options:
   lakefs-repo: sawgraph-kg
   documentation-path: sawgraph-kg

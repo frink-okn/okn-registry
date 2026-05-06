@@ -6,8 +6,8 @@ description: Geoconnex is an open, community-driven knowledge graph linking U.S.
 stats: https://frink.renci.org/kg-stats/geoconnex
 homepage: https://docs.geoconnex.us/about/intro
 funding: 
-sparql: https://frink.apps.renci.org/geoconnex/sparql
-tpf: https://frink.apps.renci.org/ldf/geoconnex
+sparql: https://apps.okn.us/geoconnex/sparql
+tpf: https://apps.okn.us/ldf/geoconnex
 frink-options:
   lakefs-repo: geoconnex
   documentation-path: geoconnex

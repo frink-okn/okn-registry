@@ -6,8 +6,8 @@ description: The FRS (Facility Registry Service) KG is the part of the SAWGraph 
 stats: https://frink.renci.org/kg-stats/fio-kg
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-sparql: https://frink.apps.renci.org/fiokg/sparql
-tpf: https://frink.apps.renci.org/ldf/fiokg
+sparql: https://apps.okn.us/fiokg/sparql
+tpf: https://apps.okn.us/ldf/fiokg
 frink-options:
   lakefs-repo: fio-kg
   documentation-path: fio-kg

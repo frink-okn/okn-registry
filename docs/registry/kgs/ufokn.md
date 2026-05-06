@@ -6,8 +6,8 @@ description: The Urban Flooding Open Knowledge Network (UF-OKN) is an informatio
 stats: https://frink.renci.org/kg-stats/wen-kg
 homepage: https://ufokn.com
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
-sparql: https://frink.apps.renci.org/ufokn/sparql
-tpf: https://frink.apps.renci.org/ldf/ufokn
+sparql: https://apps.okn.us/ufokn/sparql
+tpf: https://apps.okn.us/ldf/ufokn
 frink-options:
   lakefs-repo: urban-flooding-open-knowledge-network
   documentation-path: ufokn-kg  

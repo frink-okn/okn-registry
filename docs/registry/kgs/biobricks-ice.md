@@ -6,8 +6,8 @@ description: BioBricks ICE (Integrated Chemical Environment) is an open knowledg
 stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
 homepage: https://github.com/biobricks-ai/biobricks-okg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
-sparql: https://frink.apps.renci.org/biobricks-ice/sparql
-tpf: https://frink.apps.renci.org/ldf/biobricks-ice
+sparql: https://apps.okn.us/biobricks-ice/sparql
+tpf: https://apps.okn.us/ldf/biobricks-ice
 frink-options:
   lakefs-repo: biobricks-ice-kg
   documentation-path: biobricks-ice-kg

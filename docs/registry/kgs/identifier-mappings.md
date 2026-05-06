@@ -8,8 +8,8 @@ frink-options:
   documentation-path: "identifier-mappings"
 stats: https://frink.renci.org/kg-stats/identifier-mappings
 homepage: https://www.wikidata.org/
-sparql: https://frink.apps.renci.org/identifier-mappings/sparql
-tpf: https://frink.apps.renci.org/ldf/identifier-mappings
+sparql: https://apps.okn.us/identifier-mappings/sparql
+tpf: https://apps.okn.us/ldf/identifier-mappings
 contact: 
   email: morshedm@renci.org
   github: "mahir256"

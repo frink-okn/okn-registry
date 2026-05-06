@@ -6,8 +6,8 @@ description: BioBricks PubChem Annotations is an open knowledge graph of chemica
 stats: https://frink.renci.org/kg-stats/biobricks-pubchem-annotations-kg
 homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
-sparql: https://frink.apps.renci.org/biobricks-pubchem-annotations/sparql
-tpf: https://frink.apps.renci.org/ldf/biobricks-pubchem-annotations
+sparql: https://apps.okn.us/biobricks-pubchem-annotations/sparql
+tpf: https://apps.okn.us/ldf/biobricks-pubchem-annotations
 frink-options:
   lakefs-repo: biobricks-pubchem-annotations-kg
   documentation-path: biobricks-pubchem-annotations-kg
