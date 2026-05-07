@@ -1,0 +1,18 @@
+#+ summary: List RuralKG mental health service categories and their service counts.
+#+ tags:
+#+   - ruralkg
+
+PREFIX rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema:    <https://schema.org/>
+PREFIX treatment: <http://sail.ua.edu/ruralkg/treatment/>
+
+SELECT ?category ?categoryName ?categoryCode (COUNT(DISTINCT ?service) AS ?serviceCount)
+WHERE {
+  ?category rdf:type treatment:MentalHealthServiceCategory ;
+            schema:name ?categoryName ;
+            treatment:code ?categoryCode ;
+            treatment:containsService ?service .
+}
+GROUP BY ?category ?categoryName ?categoryCode
+ORDER BY DESC(?serviceCount) ?categoryName
+LIMIT 100
