@@ -1,0 +1,38 @@
+#+ summary: Find proteins variants casually related to diseases linked with SDoH factors by querying ProKN and SPOKE KG
+#+ tags:
+#+   - prokn  
+
+PREFIX biolink: <https://w3id.org/biolink/vocab/> 
+PREFIX spcore: <https://purl.org/okn/frink/kg/spoke-okn/schema/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX biolinkw3id: <https://w3id.org/biolink/vocab/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX upcore: <http://purl.uniprot.org/core/>
+PREFIX biolinkmodel: <https://biolink.github.io/biolink-model/>
+prefix omim: <https://www.omim.org/entry/>
+PREFIX schema: <http://schema.org/>
+
+SELECT 
+DISTINCT ?sdoh_label ?disease_label ?disease_rel1 ?variant_desc ?variant_label ?other_diseases_label
+WHERE {
+SERVICE <https://frink.apps.renci.org/spoke-okn/sparql> {
+    # Diseases associated with SDoH class
+    ?sdoh rdf:type spcore:SDoH ;
+        rdfs:label ?sdoh_label ;
+        spcore:ASSOCIATES_SaD ?disease .
+
+    ?disease rdfs:label ?disease_label .
+}
+        
+# Relationship for casually related to
+BIND(<http://purl.obolibrary.org/obo/RO_0002410> as ?disease_rel1)
+            
+?variant ?disease_rel1 ?disease ;
+    schema:description ?variant_desc ;
+    rdfs:label ?variant_label ;
+    ?disease_rel1 ?other_diseases .
+                
+?other_diseases rdfs:label ?other_diseases_label .
+            
+} 

@@ -1,4 +1,4 @@
-#+ summary: "Find protein kinases in ProKN."
+#+ summary: Find protein kinases in ProKN
 #+ tags:
 #+   - prokn
 
@@ -14,3 +14,4 @@ SELECT ?kinase ?accession ?ecNumber WHERE {
             edam:data_1011 ?ecNumber .
     FILTER regex(?ecNumber, "(^|;)2\\.7[^;]*")
 }
+

@@ -16,3 +16,4 @@ WHERE {
   ?Subject ?Predicate ?Object
 }
 ORDER BY ?Subject
+
