@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: gene-expression-atlas-okn
 title: Gene Expression Atlas
 description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
-stats: https://frink.renci.org/kg-stats/gene-expression-atlas-okn
+stats: https://registry.okn.us/kg-stats/gene-expression-atlas-okn
 homepage: https://www.ebi.ac.uk/gxa/home
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
 sparql: https://apps.okn.us/gene-expression-atlas-okn/sparql

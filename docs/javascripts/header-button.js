@@ -7,7 +7,7 @@
     .md-header__inner { display: flex; align-items: center; }
     header.md-header, .md-header__inner { position: relative; }
     .${CONTAINER_CLASS} { margin-left: auto; display: flex; align-items: center; gap: 0.4rem; }
-    .${BTN_CLASS} { text-decoration: none; color: inherit; padding: 0.05rem 1.8rem; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); font-size: 0.9rem; letter-spacing: 0.01em; min-width: 10rem; }
+    .${BTN_CLASS} { text-decoration: none; color: inherit; padding: 0.05rem 0.5rem; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); font-size: 0.9rem; letter-spacing: 0.01em; }
     .${BTN_CLASS}:hover { background: rgba(255,255,255,0.2); }
     @media (max-width: 768px) { .${CONTAINER_CLASS} { display: none; } }
   `;
@@ -20,11 +20,11 @@
   }
   function createButton() {
     const a = document.createElement('a');
-    a.href = 'https://frink.apps.renci.org';
+    a.href = 'https://apps.okn.us';
     a.target = '_blank';
     a.className = `md-button ${BTN_CLASS}`;
-    a.setAttribute('aria-label', 'Query the OKN');
-    a.textContent = 'Query the OKN';
+    a.setAttribute('aria-label', 'Query okn.us');
+    a.textContent = 'Query okn.us';
     return a;
   }
   function insertRightAligned() {

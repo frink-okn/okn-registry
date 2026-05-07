@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: ruralkg
 title: Rural Resilience KG
 description: Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience.
-stats: https://frink.renci.org/kg-stats/rural-kg
+stats: https://registry.okn.us/kg-stats/rural-kg
 #homepage: 
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
 sparql: https://apps.okn.us/ruralkg/sparql

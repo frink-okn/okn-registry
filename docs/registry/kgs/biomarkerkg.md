@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: biomarkerkg
 title: BiomarkerKB KG
 description: The BiomarkerKB knowledge graph is a structured network that connects biomarkers to diseases, drugs, biological entities, and evidence from the scientific literature.
-stats: https://frink.renci.org/kg-stats/biomarkerkg
+stats: https://registry.okn.us/kg-stats/biomarkerkg
 homepage: https://biomarkerkb.org/home/
 funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
 sparql: https://apps.okn.us/biomarkerkg/sparql

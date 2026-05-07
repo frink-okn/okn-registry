@@ -3,7 +3,7 @@ template: overrides/kg.html
 shortname: dreamkg
 title: DREAM-KG
 description: Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness With Explainable AI
-stats: https://frink.renci.org/kg-stats/dream-kg
+stats: https://registry.okn.us/kg-stats/dream-kg
 homepage: https://dreamkg.com/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
 sparql: https://apps.okn.us/dreamkg/sparql
