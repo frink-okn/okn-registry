@@ -3,7 +3,7 @@ distinct_subjects: 10275601
 distinct_objects: 11882852
 properties: 50
 classes: 898
-last_checked: '2026-04-23'
+last_checked: '2026-05-21'
 class_partitions:
 - uri: https://w3id.org/secure-chain/SoftwareVersion
   label: secure-chain:SoftwareVersion
@@ -32,11 +32,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/WebAddress
   label: sudokn:WebAddress
   count: 13950
-- uri: https://spec.industrialontologies.org/ontology/core/Core/Manufacturer
-  label: iof-core:Manufacturer
-  count: 13921
 - uri: http://asu.edu/semantics/SUDOKN/BusinessDescription
   label: sudokn:BusinessDescription
+  count: 13921
+- uri: https://spec.industrialontologies.org/ontology/core/Core/Manufacturer
+  label: iof-core:Manufacturer
   count: 13921
 - uri: http://asu.edu/semantics/SUDOKN/GeospatialLocation
   label: sudokn:GeospatialLocation
@@ -44,11 +44,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/City
   label: sudokn:City
   count: 11365
-- uri: http://asu.edu/semantics/SUDOKN/TwoDimensionalCartesianSpatialCoordinateDatum
-  label: sudokn:TwoDimensionalCartesianSpatialCoordinateDatum
-  count: 11234
 - uri: http://asu.edu/semantics/SUDOKN/USPostalCode
   label: sudokn:USPostalCode
+  count: 11234
+- uri: http://asu.edu/semantics/SUDOKN/TwoDimensionalCartesianSpatialCoordinateDatum
+  label: sudokn:TwoDimensionalCartesianSpatialCoordinateDatum
   count: 11234
 - uri: http://asu.edu/semantics/SUDOKN/PostalAddress
   label: sudokn:PostalAddress
@@ -182,11 +182,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/DrillingCapability
   label: sudokn:DrillingCapability
   count: 814
-- uri: http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability
-  label: sudokn:AdditiveManufacturingCapability
-  count: 801
 - uri: http://asu.edu/semantics/SUDOKN/IronProcessingCapability
   label: sudokn:IronProcessingCapability
+  count: 801
+- uri: http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability
+  label: sudokn:AdditiveManufacturingCapability
   count: 801
 - uri: http://asu.edu/semantics/SUDOKN/WaterjetCuttingCapability
   label: sudokn:WaterjetCuttingCapability
@@ -305,11 +305,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/ISO14001
   label: sudokn:ISO14001
   count: 398
-- uri: http://asu.edu/semantics/SUDOKN/ShearingCapability
-  label: sudokn:ShearingCapability
-  count: 392
 - uri: http://asu.edu/semantics/SUDOKN/UrethaneProcessingCapability
   label: sudokn:UrethaneProcessingCapability
+  count: 392
+- uri: http://asu.edu/semantics/SUDOKN/ShearingCapability
+  label: sudokn:ShearingCapability
   count: 392
 - uri: http://asu.edu/semantics/SUDOKN/ISO13485
   label: sudokn:ISO13485
@@ -335,11 +335,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NADCAP
   label: sudokn:NADCAP
   count: 339
-- uri: http://asu.edu/semantics/SUDOKN/HoningCapability
-  label: sudokn:HoningCapability
-  count: 326
 - uri: http://asu.edu/semantics/SUDOKN/SpotWeldingCapability
   label: sudokn:SpotWeldingCapability
+  count: 326
+- uri: http://asu.edu/semantics/SUDOKN/HoningCapability
+  label: sudokn:HoningCapability
   count: 326
 - uri: http://asu.edu/semantics/SUDOKN/GasMetalArcWeldingCapability
   label: sudokn:GasMetalArcWeldingCapability
@@ -419,11 +419,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/RollFormingCapability
   label: sudokn:RollFormingCapability
   count: 216
-- uri: http://asu.edu/semantics/SUDOKN/AnnealingCapability
-  label: sudokn:AnnealingCapability
-  count: 215
 - uri: http://asu.edu/semantics/SUDOKN/UHMWProcessingCapability
   label: sudokn:UHMWProcessingCapability
+  count: 215
+- uri: http://asu.edu/semantics/SUDOKN/AnnealingCapability
+  label: sudokn:AnnealingCapability
   count: 215
 - uri: http://asu.edu/semantics/SUDOKN/CompressionMoldingCapability
   label: sudokn:CompressionMoldingCapability
@@ -437,11 +437,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/UltrasonicWeldingCapability
   label: sudokn:UltrasonicWeldingCapability
   count: 211
-- uri: http://asu.edu/semantics/SUDOKN/GasTungstenArcWeldingCapability
-  label: sudokn:GasTungstenArcWeldingCapability
-  count: 209
 - uri: http://asu.edu/semantics/SUDOKN/ShieldedMetalArcWeldingCapability
   label: sudokn:ShieldedMetalArcWeldingCapability
+  count: 209
+- uri: http://asu.edu/semantics/SUDOKN/GasTungstenArcWeldingCapability
+  label: sudokn:GasTungstenArcWeldingCapability
   count: 209
 - uri: http://asu.edu/semantics/SUDOKN/LeadProcessingCapability
   label: sudokn:LeadProcessingCapability
@@ -452,11 +452,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/MoldMakingCapability
   label: sudokn:MoldMakingCapability
   count: 202
-- uri: http://asu.edu/semantics/SUDOKN/Oxy-FuelCuttingCapability
-  label: sudokn:Oxy-FuelCuttingCapability
-  count: 199
 - uri: http://asu.edu/semantics/SUDOKN/ISOQuality
   label: sudokn:ISOQuality
+  count: 199
+- uri: http://asu.edu/semantics/SUDOKN/Oxy-FuelCuttingCapability
+  label: sudokn:Oxy-FuelCuttingCapability
   count: 199
 - uri: http://asu.edu/semantics/SUDOKN/MechanicalJoiningCapability
   label: sudokn:MechanicalJoiningCapability
@@ -566,14 +566,14 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/HaynesProcessingCapability
   label: sudokn:HaynesProcessingCapability
   count: 119
+- uri: http://asu.edu/semantics/SUDOKN/EmbossingCapability
+  label: sudokn:EmbossingCapability
+  count: 118
 - uri: http://asu.edu/semantics/SUDOKN/ReamingCapability
   label: sudokn:ReamingCapability
   count: 118
 - uri: http://asu.edu/semantics/SUDOKN/LaminatedObjectManufacturingCapability
   label: sudokn:LaminatedObjectManufacturingCapability
-  count: 118
-- uri: http://asu.edu/semantics/SUDOKN/EmbossingCapability
-  label: sudokn:EmbossingCapability
   count: 118
 - uri: http://asu.edu/semantics/SUDOKN/AdhesiveBondingCapability
   label: sudokn:AdhesiveBondingCapability
@@ -608,11 +608,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/GearCuttingCapability
   label: sudokn:GearCuttingCapability
   count: 102
-- uri: http://asu.edu/semantics/SUDOKN/InvarProcessingCapability
-  label: sudokn:InvarProcessingCapability
-  count: 101
 - uri: http://asu.edu/semantics/SUDOKN/ElectricalResistanceWeldingCapability
   label: sudokn:ElectricalResistanceWeldingCapability
+  count: 101
+- uri: http://asu.edu/semantics/SUDOKN/InvarProcessingCapability
+  label: sudokn:InvarProcessingCapability
   count: 101
 - uri: http://asu.edu/semantics/SUDOKN/State
   label: sudokn:State
@@ -629,17 +629,17 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/RotationalMoldingCapability
   label: sudokn:RotationalMoldingCapability
   count: 96
-- uri: http://asu.edu/semantics/SUDOKN/TumblingCapability
-  label: sudokn:TumblingCapability
-  count: 95
 - uri: http://asu.edu/semantics/SUDOKN/NotchingCapability
   label: sudokn:NotchingCapability
   count: 95
-- uri: http://asu.edu/semantics/SUDOKN/SlittingCapability
-  label: sudokn:SlittingCapability
-  count: 93
+- uri: http://asu.edu/semantics/SUDOKN/TumblingCapability
+  label: sudokn:TumblingCapability
+  count: 95
 - uri: http://asu.edu/semantics/SUDOKN/PlasticMachiningCapability
   label: sudokn:PlasticMachiningCapability
+  count: 93
+- uri: http://asu.edu/semantics/SUDOKN/SlittingCapability
+  label: sudokn:SlittingCapability
   count: 93
 - uri: http://asu.edu/semantics/SUDOKN/CPVCProcessingCapability
   label: sudokn:CPVCProcessingCapability
@@ -686,20 +686,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/InductionHardeningCapability
   label: sudokn:InductionHardeningCapability
   count: 82
-- uri: http://asu.edu/semantics/SUDOKN/CoiningCapability
-  label: sudokn:CoiningCapability
-  count: 81
 - uri: http://asu.edu/semantics/SUDOKN/ThermaweldingCapability
   label: sudokn:ThermaweldingCapability
+  count: 81
+- uri: http://asu.edu/semantics/SUDOKN/CoiningCapability
+  label: sudokn:CoiningCapability
   count: 81
 - uri: http://asu.edu/semantics/SUDOKN/CopperPlatingCapability
   label: sudokn:CopperPlatingCapability
   count: 79
-- uri: http://asu.edu/semantics/SUDOKN/ChemicalsProcessingCapability
-  label: sudokn:ChemicalsProcessingCapability
-  count: 77
 - uri: http://asu.edu/semantics/SUDOKN/FrictionWeldingCapability
   label: sudokn:FrictionWeldingCapability
+  count: 77
+- uri: http://asu.edu/semantics/SUDOKN/ChemicalsProcessingCapability
+  label: sudokn:ChemicalsProcessingCapability
   count: 77
 - uri: http://asu.edu/semantics/SUDOKN/DeepHoleDrillingCapability
   label: sudokn:DeepHoleDrillingCapability
@@ -737,20 +737,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/CounterSinkingCapability
   label: sudokn:CounterSinkingCapability
   count: 70
-- uri: http://asu.edu/semantics/SUDOKN/LabelingCapability
-  label: sudokn:LabelingCapability
+- uri: http://asu.edu/semantics/SUDOKN/ThermalSprayCoatingCapability
+  label: sudokn:ThermalSprayCoatingCapability
   count: 69
 - uri: http://asu.edu/semantics/SUDOKN/HardeningCapability
   label: sudokn:HardeningCapability
   count: 69
-- uri: http://asu.edu/semantics/SUDOKN/ThermalSprayCoatingCapability
-  label: sudokn:ThermalSprayCoatingCapability
+- uri: http://asu.edu/semantics/SUDOKN/LabelingCapability
+  label: sudokn:LabelingCapability
   count: 69
-- uri: http://asu.edu/semantics/SUDOKN/ButtWeldingCapability
-  label: sudokn:ButtWeldingCapability
-  count: 68
 - uri: http://asu.edu/semantics/SUDOKN/GasWedlingCapability
   label: sudokn:GasWedlingCapability
+  count: 68
+- uri: http://asu.edu/semantics/SUDOKN/ButtWeldingCapability
+  label: sudokn:ButtWeldingCapability
   count: 68
 - uri: http://asu.edu/semantics/SUDOKN/VibratoryDeburringCapability
   label: sudokn:VibratoryDeburringCapability
@@ -776,20 +776,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/FusedDepositionModelingCapability
   label: sudokn:FusedDepositionModelingCapability
   count: 62
-- uri: http://asu.edu/semantics/SUDOKN/ThermalWeldingCapability
-  label: sudokn:ThermalWeldingCapability
-  count: 61
 - uri: http://asu.edu/semantics/SUDOKN/GoldPlatingCapability
   label: sudokn:GoldPlatingCapability
   count: 61
+- uri: http://asu.edu/semantics/SUDOKN/ThermalWeldingCapability
+  label: sudokn:ThermalWeldingCapability
+  count: 61
+- uri: http://asu.edu/semantics/SUDOKN/CNCCylindricalGrindingCapability
+  label: sudokn:CNCCylindricalGrindingCapability
+  count: 60
 - uri: http://asu.edu/semantics/SUDOKN/NitridingCapability
   label: sudokn:NitridingCapability
   count: 60
 - uri: http://asu.edu/semantics/SUDOKN/SelectiveLaserSinteringCapability
   label: sudokn:SelectiveLaserSinteringCapability
-  count: 60
-- uri: http://asu.edu/semantics/SUDOKN/CNCCylindricalGrindingCapability
-  label: sudokn:CNCCylindricalGrindingCapability
   count: 60
 - uri: http://asu.edu/semantics/SUDOKN/PolysulfoneProcessingCapability
   label: sudokn:PolysulfoneProcessingCapability
@@ -803,20 +803,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/StereolithographyCapability
   label: sudokn:StereolithographyCapability
   count: 57
-- uri: http://asu.edu/semantics/SUDOKN/CounterBoringCapability
-  label: sudokn:CounterBoringCapability
-  count: 56
 - uri: http://asu.edu/semantics/SUDOKN/CadmiumPlatingCapability
   label: sudokn:CadmiumPlatingCapability
+  count: 56
+- uri: http://asu.edu/semantics/SUDOKN/CounterBoringCapability
+  label: sudokn:CounterBoringCapability
   count: 56
 - uri: http://asu.edu/semantics/SUDOKN/WireBendingCapability
   label: sudokn:WireBendingCapability
   count: 55
-- uri: http://asu.edu/semantics/SUDOKN/MetalInjectionMoldingCapability
-  label: sudokn:MetalInjectionMoldingCapability
-  count: 53
 - uri: http://asu.edu/semantics/SUDOKN/HorizontalBoringCapability
   label: sudokn:HorizontalBoringCapability
+  count: 53
+- uri: http://asu.edu/semantics/SUDOKN/MetalInjectionMoldingCapability
+  label: sudokn:MetalInjectionMoldingCapability
   count: 53
 - uri: http://asu.edu/semantics/SUDOKN/ChemicalVaporDepositionCapability
   label: sudokn:ChemicalVaporDepositionCapability
@@ -824,23 +824,23 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/SwaggingCapability
   label: sudokn:SwaggingCapability
   count: 52
-- uri: http://asu.edu/semantics/SUDOKN/ThreadMillingCapability
-  label: sudokn:ThreadMillingCapability
-  count: 51
 - uri: http://asu.edu/semantics/SUDOKN/QS9000
   label: sudokn:QS9000
   count: 51
-- uri: http://asu.edu/semantics/SUDOKN/OHSAS18001
-  label: sudokn:OHSAS18001
-  count: 49
+- uri: http://asu.edu/semantics/SUDOKN/ThreadMillingCapability
+  label: sudokn:ThreadMillingCapability
+  count: 51
 - uri: http://asu.edu/semantics/SUDOKN/SurfaceHardeningCapability
   label: sudokn:SurfaceHardeningCapability
   count: 49
-- uri: http://asu.edu/semantics/SUDOKN/TubingCapability
-  label: sudokn:TubingCapability
+- uri: http://asu.edu/semantics/SUDOKN/OHSAS18001
+  label: sudokn:OHSAS18001
   count: 49
 - uri: http://asu.edu/semantics/SUDOKN/PermanentMoldCastingCapability
   label: sudokn:PermanentMoldCastingCapability
+  count: 49
+- uri: http://asu.edu/semantics/SUDOKN/TubingCapability
+  label: sudokn:TubingCapability
   count: 49
 - uri: http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability
   label: sudokn:CastSteelProcessingCapability
@@ -848,14 +848,14 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/VaporizedMetalCoatingCapability
   label: sudokn:VaporizedMetalCoatingCapability
   count: 48
-- uri: http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety
-  label: sudokn:OccupationalHealthAndSafety
-  count: 46
 - uri: http://asu.edu/semantics/SUDOKN/TorchCuttingCapability
   label: sudokn:TorchCuttingCapability
   count: 46
 - uri: http://asu.edu/semantics/SUDOKN/PalladiumProcessingCapability
   label: sudokn:PalladiumProcessingCapability
+  count: 46
+- uri: http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety
+  label: sudokn:OccupationalHealthAndSafety
   count: 46
 - uri: http://asu.edu/semantics/SUDOKN/GritBlastingCapability
   label: sudokn:GritBlastingCapability
@@ -866,20 +866,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/CuttoLengthTubingCapability
   label: sudokn:CuttoLengthTubingCapability
   count: 45
-- uri: http://asu.edu/semantics/SUDOKN/PowderMetalFormingCapability
-  label: sudokn:PowderMetalFormingCapability
+- uri: http://asu.edu/semantics/SUDOKN/AbrasiveMachiningCapability
+  label: sudokn:AbrasiveMachiningCapability
   count: 44
 - uri: http://asu.edu/semantics/SUDOKN/ChemicalMachiningCapability
   label: sudokn:ChemicalMachiningCapability
   count: 44
-- uri: http://asu.edu/semantics/SUDOKN/MechanicalPolishingCapability
-  label: sudokn:MechanicalPolishingCapability
-  count: 44
-- uri: http://asu.edu/semantics/SUDOKN/AbrasiveMachiningCapability
-  label: sudokn:AbrasiveMachiningCapability
-  count: 44
 - uri: http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability
   label: sudokn:ChemicalCoatingCapability
+  count: 44
+- uri: http://asu.edu/semantics/SUDOKN/PowderMetalFormingCapability
+  label: sudokn:PowderMetalFormingCapability
+  count: 44
+- uri: http://asu.edu/semantics/SUDOKN/MechanicalPolishingCapability
+  label: sudokn:MechanicalPolishingCapability
   count: 44
 - uri: http://asu.edu/semantics/SUDOKN/PlasmaArcWeldingCapability
   label: sudokn:PlasmaArcWeldingCapability
@@ -905,20 +905,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/PhosphateConversionCoatingCapability
   label: sudokn:PhosphateConversionCoatingCapability
   count: 38
+- uri: http://asu.edu/semantics/SUDOKN/FlameHardeningCapability
+  label: sudokn:FlameHardeningCapability
+  count: 38
 - uri: http://asu.edu/semantics/SUDOKN/TubeDrawingCapability
   label: sudokn:TubeDrawingCapability
   count: 38
 - uri: http://asu.edu/semantics/SUDOKN/VacuumCastingCapability
   label: sudokn:VacuumCastingCapability
   count: 38
-- uri: http://asu.edu/semantics/SUDOKN/FlameHardeningCapability
-  label: sudokn:FlameHardeningCapability
-  count: 38
-- uri: http://asu.edu/semantics/SUDOKN/VacuumBrazingCapability
-  label: sudokn:VacuumBrazingCapability
-  count: 37
 - uri: http://asu.edu/semantics/SUDOKN/UpsetForgingCapability
   label: sudokn:UpsetForgingCapability
+  count: 37
+- uri: http://asu.edu/semantics/SUDOKN/VacuumBrazingCapability
+  label: sudokn:VacuumBrazingCapability
   count: 37
 - uri: http://asu.edu/semantics/SUDOKN/ChemicalCleaningCapability
   label: sudokn:ChemicalCleaningCapability
@@ -944,23 +944,23 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/VacuumFormingCapability
   label: sudokn:VacuumFormingCapability
   count: 33
-- uri: http://asu.edu/semantics/SUDOKN/LiveToolingCapability
-  label: sudokn:LiveToolingCapability
-  count: 33
 - uri: http://asu.edu/semantics/SUDOKN/SemiconductorFabricatingCapability
   label: sudokn:SemiconductorFabricatingCapability
+  count: 33
+- uri: http://asu.edu/semantics/SUDOKN/LiveToolingCapability
+  label: sudokn:LiveToolingCapability
   count: 33
 - uri: http://asu.edu/semantics/SUDOKN/NIST800171
   label: sudokn:NIST800171
   count: 31
-- uri: http://asu.edu/semantics/SUDOKN/StretchFormingCapability
-  label: sudokn:StretchFormingCapability
-  count: 30
 - uri: http://asu.edu/semantics/SUDOKN/InductionBrazingCapability
   label: sudokn:InductionBrazingCapability
   count: 30
 - uri: http://asu.edu/semantics/SUDOKN/PercussionWeldingCapability
   label: sudokn:PercussionWeldingCapability
+  count: 30
+- uri: http://asu.edu/semantics/SUDOKN/StretchFormingCapability
+  label: sudokn:StretchFormingCapability
   count: 30
 - uri: http://asu.edu/semantics/SUDOKN/CarbonArcWeldingCapability
   label: sudokn:CarbonArcWeldingCapability
@@ -968,56 +968,56 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/ISO50001
   label: sudokn:ISO50001
   count: 27
-- uri: http://asu.edu/semantics/SUDOKN/GravityCastingCapability
-  label: sudokn:GravityCastingCapability
-  count: 27
 - uri: http://asu.edu/semantics/SUDOKN/ContinuousCastingCapability
   label: sudokn:ContinuousCastingCapability
   count: 27
+- uri: http://asu.edu/semantics/SUDOKN/GravityCastingCapability
+  label: sudokn:GravityCastingCapability
+  count: 27
+- uri: http://asu.edu/semantics/SUDOKN/PlungeGrindingCapability
+  label: sudokn:PlungeGrindingCapability
+  count: 26
 - uri: http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability
   label: sudokn:DiamondMachiningCapability
   count: 26
 - uri: http://asu.edu/semantics/SUDOKN/AS9120
   label: sudokn:AS9120
   count: 26
-- uri: http://asu.edu/semantics/SUDOKN/PlungeGrindingCapability
-  label: sudokn:PlungeGrindingCapability
-  count: 26
-- uri: http://asu.edu/semantics/SUDOKN/CreepFeedGrindingCapability
-  label: sudokn:CreepFeedGrindingCapability
-  count: 25
-- uri: http://asu.edu/semantics/SUDOKN/PlasmaSprayingCapability
-  label: sudokn:PlasmaSprayingCapability
+- uri: http://asu.edu/semantics/SUDOKN/ExplosiveWeldingCapability
+  label: sudokn:ExplosiveWeldingCapability
   count: 25
 - uri: http://asu.edu/semantics/SUDOKN/IATF
   label: sudokn:IATF
   count: 25
-- uri: http://asu.edu/semantics/SUDOKN/AbrasiveCleaningCapability
-  label: sudokn:AbrasiveCleaningCapability
-  count: 25
-- uri: http://asu.edu/semantics/SUDOKN/ExplosiveWeldingCapability
-  label: sudokn:ExplosiveWeldingCapability
-  count: 25
 - uri: http://asu.edu/semantics/SUDOKN/ResinTransferMoldingCapability
   label: sudokn:ResinTransferMoldingCapability
   count: 25
-- uri: http://asu.edu/semantics/SUDOKN/PhotochemicalMachiningCapability
-  label: sudokn:PhotochemicalMachiningCapability
+- uri: http://asu.edu/semantics/SUDOKN/CreepFeedGrindingCapability
+  label: sudokn:CreepFeedGrindingCapability
+  count: 25
+- uri: http://asu.edu/semantics/SUDOKN/AbrasiveCleaningCapability
+  label: sudokn:AbrasiveCleaningCapability
+  count: 25
+- uri: http://asu.edu/semantics/SUDOKN/PlasmaSprayingCapability
+  label: sudokn:PlasmaSprayingCapability
+  count: 25
+- uri: http://asu.edu/semantics/SUDOKN/SmallHoleDrillingCapability
+  label: sudokn:SmallHoleDrillingCapability
+  count: 24
+- uri: http://asu.edu/semantics/SUDOKN/FDA21CFRPart820
+  label: sudokn:FDA21CFRPart820
   count: 24
 - uri: http://asu.edu/semantics/SUDOKN/ExtrusionBlowMoldingCapability
   label: sudokn:ExtrusionBlowMoldingCapability
   count: 24
-- uri: http://asu.edu/semantics/SUDOKN/SmallHoleDrillingCapability
-  label: sudokn:SmallHoleDrillingCapability
+- uri: http://asu.edu/semantics/SUDOKN/PhotochemicalMachiningCapability
+  label: sudokn:PhotochemicalMachiningCapability
   count: 24
 - uri: http://asu.edu/semantics/SUDOKN/FlameSprayingCapability
   label: sudokn:FlameSprayingCapability
   count: 24
 - uri: http://asu.edu/semantics/SUDOKN/RadelProcessingCapability
   label: sudokn:RadelProcessingCapability
-  count: 24
-- uri: http://asu.edu/semantics/SUDOKN/FDA21CFRPart820
-  label: sudokn:FDA21CFRPart820
   count: 24
 - uri: http://asu.edu/semantics/SUDOKN/BabbitProcessingCapability
   label: sudokn:BabbitProcessingCapability
@@ -1031,11 +1031,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/WireDrawingCapability
   label: sudokn:WireDrawingCapability
   count: 22
-- uri: http://asu.edu/semantics/SUDOKN/SelectiveLaserMeltingCapability
-  label: sudokn:SelectiveLaserMeltingCapability
-  count: 22
 - uri: http://asu.edu/semantics/SUDOKN/ReactionInjectionMoldingCapability
   label: sudokn:ReactionInjectionMoldingCapability
+  count: 22
+- uri: http://asu.edu/semantics/SUDOKN/SelectiveLaserMeltingCapability
+  label: sudokn:SelectiveLaserMeltingCapability
   count: 22
 - uri: http://asu.edu/semantics/SUDOKN/RamEDMCapability
   label: sudokn:RamEDMCapability
@@ -1046,14 +1046,14 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/GasWeldingCapability
   label: sudokn:GasWeldingCapability
   count: 21
-- uri: http://asu.edu/semantics/SUDOKN/VerticalBoringCapability
-  label: sudokn:VerticalBoringCapability
+- uri: http://asu.edu/semantics/SUDOKN/ImpressionDieForgingCapability
+  label: sudokn:ImpressionDieForgingCapability
   count: 21
 - uri: http://asu.edu/semantics/SUDOKN/WeavingCapability
   label: sudokn:WeavingCapability
   count: 21
-- uri: http://asu.edu/semantics/SUDOKN/ImpressionDieForgingCapability
-  label: sudokn:ImpressionDieForgingCapability
+- uri: http://asu.edu/semantics/SUDOKN/VerticalBoringCapability
+  label: sudokn:VerticalBoringCapability
   count: 21
 - uri: http://asu.edu/semantics/SUDOKN/ManMadeFiberProcessingCapability
   label: sudokn:ManMadeFiberProcessingCapability
@@ -1064,14 +1064,14 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/ClyindricalGrindingCapability
   label: sudokn:ClyindricalGrindingCapability
   count: 20
+- uri: http://asu.edu/semantics/SUDOKN/DipBrazingCapability
+  label: sudokn:DipBrazingCapability
+  count: 20
 - uri: http://asu.edu/semantics/SUDOKN/LDPEProcessingCapability
   label: sudokn:LDPEProcessingCapability
   count: 20
 - uri: http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability
   label: sudokn:SevenAxisMachiningCapability
-  count: 20
-- uri: http://asu.edu/semantics/SUDOKN/DipBrazingCapability
-  label: sudokn:DipBrazingCapability
   count: 20
 - uri: http://asu.edu/semantics/SUDOKN/InjectionBlowMoldingCapability
   label: sudokn:InjectionBlowMoldingCapability
@@ -1079,11 +1079,17 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/ShellMoldingCapability
   label: sudokn:ShellMoldingCapability
   count: 19
+- uri: http://asu.edu/semantics/SUDOKN/WaveSolderingCapability
+  label: sudokn:WaveSolderingCapability
+  count: 19
 - uri: http://asu.edu/semantics/SUDOKN/VacuumPackagingCapability
   label: sudokn:VacuumPackagingCapability
   count: 19
-- uri: http://asu.edu/semantics/SUDOKN/WaveSolderingCapability
-  label: sudokn:WaveSolderingCapability
+- uri: http://asu.edu/semantics/SUDOKN/VacuumPressingCapability
+  label: sudokn:VacuumPressingCapability
+  count: 19
+- uri: http://asu.edu/semantics/SUDOKN/TorchBrazingCapability
+  label: sudokn:TorchBrazingCapability
   count: 19
 - uri: http://asu.edu/semantics/SUDOKN/NIST
   label: sudokn:NIST
@@ -1093,12 +1099,6 @@ class_partitions:
   count: 19
 - uri: http://asu.edu/semantics/SUDOKN/ThermalDeburringCapability
   label: sudokn:ThermalDeburringCapability
-  count: 19
-- uri: http://asu.edu/semantics/SUDOKN/VacuumPressingCapability
-  label: sudokn:VacuumPressingCapability
-  count: 19
-- uri: http://asu.edu/semantics/SUDOKN/TorchBrazingCapability
-  label: sudokn:TorchBrazingCapability
   count: 19
 - uri: http://asu.edu/semantics/SUDOKN/VacuumThermoformingCapability
   label: sudokn:VacuumThermoformingCapability
@@ -1121,26 +1121,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/Country
   label: sudokn:Country
   count: 17
-- uri: http://asu.edu/semantics/SUDOKN/FDAPMA
-  label: sudokn:FDAPMA
-  count: 16
 - uri: http://asu.edu/semantics/SUDOKN/StretchBlowMoldingCapability
   label: sudokn:StretchBlowMoldingCapability
   count: 16
-- uri: http://asu.edu/semantics/SUDOKN/ElectroSlagWeldingCapability
-  label: sudokn:ElectroSlagWeldingCapability
-  count: 15
+- uri: http://asu.edu/semantics/SUDOKN/FDAPMA
+  label: sudokn:FDAPMA
+  count: 16
 - uri: http://asu.edu/semantics/SUDOKN/LuciteProcessingCapability
   label: sudokn:LuciteProcessingCapability
   count: 15
+- uri: http://asu.edu/semantics/SUDOKN/ElectroSlagWeldingCapability
+  label: sudokn:ElectroSlagWeldingCapability
+  count: 15
 - uri: http://asu.edu/semantics/SUDOKN/PowderDepositionCapability
   label: sudokn:PowderDepositionCapability
-  count: 14
-- uri: http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability
-  label: sudokn:CeramicMoldCastingCapability
-  count: 14
-- uri: http://asu.edu/semantics/SUDOKN/HoleDrillingEDMCapability
-  label: sudokn:HoleDrillingEDMCapability
   count: 14
 - uri: http://asu.edu/semantics/SUDOKN/FaceMillingCapability
   label: sudokn:FaceMillingCapability
@@ -1148,41 +1142,47 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/ErtalyteProcessingCapability
   label: sudokn:ErtalyteProcessingCapability
   count: 14
+- uri: http://asu.edu/semantics/SUDOKN/HoleDrillingEDMCapability
+  label: sudokn:HoleDrillingEDMCapability
+  count: 14
+- uri: http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability
+  label: sudokn:CeramicMoldCastingCapability
+  count: 14
 - uri: http://asu.edu/semantics/SUDOKN/AS9102
   label: sudokn:AS9102
   count: 13
 - uri: http://asu.edu/semantics/SUDOKN/ThroughHardeningCapability
   label: sudokn:ThroughHardeningCapability
   count: 13
-- uri: http://asu.edu/semantics/SUDOKN/ColdChamberDieCastingCapability
-  label: sudokn:ColdChamberDieCastingCapability
+- uri: http://asu.edu/semantics/SUDOKN/PlaningCapability
+  label: sudokn:PlaningCapability
   count: 13
 - uri: http://asu.edu/semantics/SUDOKN/MachiningOfCastingCapability
   label: sudokn:MachiningOfCastingCapability
   count: 13
-- uri: http://asu.edu/semantics/SUDOKN/PlaningCapability
-  label: sudokn:PlaningCapability
-  count: 13
 - uri: http://asu.edu/semantics/SUDOKN/BeltSandingCapability
   label: sudokn:BeltSandingCapability
+  count: 13
+- uri: http://asu.edu/semantics/SUDOKN/ColdChamberDieCastingCapability
+  label: sudokn:ColdChamberDieCastingCapability
   count: 13
 - uri: http://asu.edu/semantics/SUDOKN/TechtronProcessingCapability
   label: sudokn:TechtronProcessingCapability
   count: 12
-- uri: http://asu.edu/semantics/SUDOKN/MechanicalCapability
-  label: sudokn:MechanicalCapability
-  count: 12
-- uri: http://asu.edu/semantics/SUDOKN/ChemicalMechanicalPolishingCapability
-  label: sudokn:ChemicalMechanicalPolishingCapability
-  count: 12
 - uri: http://asu.edu/semantics/SUDOKN/FurnaceBrazingCapability
   label: sudokn:FurnaceBrazingCapability
+  count: 12
+- uri: http://asu.edu/semantics/SUDOKN/EndMillingCapability
+  label: sudokn:EndMillingCapability
   count: 12
 - uri: http://asu.edu/semantics/SUDOKN/HACCP
   label: sudokn:HACCP
   count: 12
-- uri: http://asu.edu/semantics/SUDOKN/EndMillingCapability
-  label: sudokn:EndMillingCapability
+- uri: http://asu.edu/semantics/SUDOKN/ChemicalMechanicalPolishingCapability
+  label: sudokn:ChemicalMechanicalPolishingCapability
+  count: 12
+- uri: http://asu.edu/semantics/SUDOKN/MechanicalCapability
+  label: sudokn:MechanicalCapability
   count: 12
 - uri: http://asu.edu/semantics/SUDOKN/ElectrochemicalGrindingCapability
   label: sudokn:ElectrochemicalGrindingCapability
@@ -1193,29 +1193,26 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/AerospaceQuality
   label: sudokn:AerospaceQuality
   count: 11
-- uri: http://asu.edu/semantics/SUDOKN/SlittingCapabilityCapability
-  label: sudokn:SlittingCapabilityCapability
-  count: 10
 - uri: http://asu.edu/semantics/SUDOKN/WaterQuenchHardeningCapability
   label: sudokn:WaterQuenchHardeningCapability
   count: 10
-- uri: http://asu.edu/semantics/SUDOKN/VacuumAssistedResinTransferMoldingCapability
-  label: sudokn:VacuumAssistedResinTransferMoldingCapability
+- uri: http://asu.edu/semantics/SUDOKN/SlittingCapabilityCapability
+  label: sudokn:SlittingCapabilityCapability
   count: 10
 - uri: http://asu.edu/semantics/SUDOKN/ThermalCoatingCapability
   label: sudokn:ThermalCoatingCapability
   count: 10
-- uri: http://asu.edu/semantics/SUDOKN/CurvicGrindingCapability
-  label: sudokn:CurvicGrindingCapability
+- uri: http://asu.edu/semantics/SUDOKN/VacuumAssistedResinTransferMoldingCapability
+  label: sudokn:VacuumAssistedResinTransferMoldingCapability
   count: 10
 - uri: http://asu.edu/semantics/SUDOKN/AS9003
   label: sudokn:AS9003
   count: 10
+- uri: http://asu.edu/semantics/SUDOKN/CurvicGrindingCapability
+  label: sudokn:CurvicGrindingCapability
+  count: 10
 - uri: http://asu.edu/semantics/SUDOKN/BrazeWeldingCapability
   label: sudokn:BrazeWeldingCapability
-  count: 9
-- uri: http://asu.edu/semantics/SUDOKN/DyeingCapability
-  label: sudokn:DyeingCapability
   count: 9
 - uri: http://asu.edu/semantics/SUDOKN/ShrinkFittingCapability
   label: sudokn:ShrinkFittingCapability
@@ -1226,50 +1223,53 @@ class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
   label: rdf:Property
   count: 9
+- uri: http://asu.edu/semantics/SUDOKN/DyeingCapability
+  label: sudokn:DyeingCapability
+  count: 9
 - uri: http://asu.edu/semantics/SUDOKN/PlasterMoldCastingCapability
   label: sudokn:PlasterMoldCastingCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/ISO14000
-  label: sudokn:ISO14000
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/MicroDrillingCapability
-  label: sudokn:MicroDrillingCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/BulgeFormingCapability
-  label: sudokn:BulgeFormingCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/SqueezeCastingCapability
-  label: sudokn:SqueezeCastingCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/ThermalJoiningCapability
-  label: sudokn:ThermalJoiningCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/ZytelProcessingCapability
-  label: sudokn:ZytelProcessingCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/KnittingCapability
-  label: sudokn:KnittingCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability
-  label: sudokn:HDPEProcessingCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/DirectExtrusionCapability
-  label: sudokn:DirectExtrusionCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/CarbideMachiningCapability
-  label: sudokn:CarbideMachiningCapability
-  count: 8
-- uri: http://asu.edu/semantics/SUDOKN/ChemicalPolishingCapability
-  label: sudokn:ChemicalPolishingCapability
   count: 8
 - uri: http://asu.edu/semantics/SUDOKN/DecorativeAnodizingCapability
   label: sudokn:DecorativeAnodizingCapability
   count: 8
-- uri: http://asu.edu/semantics/SUDOKN/IriditeCapability
-  label: sudokn:IriditeCapability
+- uri: http://asu.edu/semantics/SUDOKN/ISO14000
+  label: sudokn:ISO14000
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability
+  label: sudokn:HDPEProcessingCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/CarbideMachiningCapability
+  label: sudokn:CarbideMachiningCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/SqueezeCastingCapability
+  label: sudokn:SqueezeCastingCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/DirectExtrusionCapability
+  label: sudokn:DirectExtrusionCapability
   count: 8
 - uri: http://asu.edu/semantics/SUDOKN/PolycrystallineDiamondMachiningCapability
   label: sudokn:PolycrystallineDiamondMachiningCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/BulgeFormingCapability
+  label: sudokn:BulgeFormingCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/KnittingCapability
+  label: sudokn:KnittingCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/ThermalJoiningCapability
+  label: sudokn:ThermalJoiningCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/MicroDrillingCapability
+  label: sudokn:MicroDrillingCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/ZytelProcessingCapability
+  label: sudokn:ZytelProcessingCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/IriditeCapability
+  label: sudokn:IriditeCapability
+  count: 8
+- uri: http://asu.edu/semantics/SUDOKN/ChemicalPolishingCapability
+  label: sudokn:ChemicalPolishingCapability
   count: 8
 - uri: http://asu.edu/semantics/SUDOKN/OilQuenchHardeningCapability
   label: sudokn:OilQuenchHardeningCapability
@@ -1283,14 +1283,14 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/AS9000
   label: sudokn:AS9000
   count: 7
+- uri: http://asu.edu/semantics/SUDOKN/AcetronProcessingCapability
+  label: sudokn:AcetronProcessingCapability
+  count: 7
 - uri: http://asu.edu/semantics/SUDOKN/GasBrazingCapability
   label: sudokn:GasBrazingCapability
   count: 7
 - uri: http://asu.edu/semantics/SUDOKN/BarrelFinishingCapability
   label: sudokn:BarrelFinishingCapability
-  count: 7
-- uri: http://asu.edu/semantics/SUDOKN/AcetronProcessingCapability
-  label: sudokn:AcetronProcessingCapability
   count: 7
 - uri: http://asu.edu/semantics/SUDOKN/ZeroStockMachiningCapability
   label: sudokn:ZeroStockMachiningCapability
@@ -1298,53 +1298,53 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/BABA
   label: sudokn:BABA
   count: 6
+- uri: http://asu.edu/semantics/SUDOKN/ColdTreatmentCapability
+  label: sudokn:ColdTreatmentCapability
+  count: 6
+- uri: http://asu.edu/semantics/SUDOKN/VDA
+  label: sudokn:VDA
+  count: 6
 - uri: http://asu.edu/semantics/SUDOKN/ResistanceBrazingCapability
   label: sudokn:ResistanceBrazingCapability
   count: 6
 - uri: http://asu.edu/semantics/SUDOKN/RubberInjectionmMoldingCapability
   label: sudokn:RubberInjectionmMoldingCapability
   count: 6
-- uri: http://asu.edu/semantics/SUDOKN/VDA
-  label: sudokn:VDA
-  count: 6
 - uri: http://asu.edu/semantics/SUDOKN/ThermaJoiningCapability
   label: sudokn:ThermaJoiningCapability
-  count: 6
-- uri: http://asu.edu/semantics/SUDOKN/ColdTreatmentCapability
-  label: sudokn:ColdTreatmentCapability
   count: 6
 - uri: http://asu.edu/semantics/SUDOKN/WaveSoldeingCapability
   label: sudokn:WaveSoldeingCapability
   count: 6
-- uri: http://asu.edu/semantics/SUDOKN/HotVacuumPressingCapability
-  label: sudokn:HotVacuumPressingCapability
-  count: 6
 - uri: http://asu.edu/semantics/SUDOKN/MartemperingCapability
   label: sudokn:MartemperingCapability
+  count: 6
+- uri: http://asu.edu/semantics/SUDOKN/HotVacuumPressingCapability
+  label: sudokn:HotVacuumPressingCapability
   count: 6
 - uri: http://asu.edu/semantics/SUDOKN/HighEnergyBeamWeldingCapability
   label: sudokn:HighEnergyBeamWeldingCapability
   count: 5
-- uri: http://asu.edu/semantics/SUDOKN/RollForgingCapability
-  label: sudokn:RollForgingCapability
+- uri: http://asu.edu/semantics/SUDOKN/Single-PointCuttingCapability
+  label: sudokn:Single-PointCuttingCapability
+  count: 5
+- uri: http://asu.edu/semantics/SUDOKN/BarDrawingCapability
+  label: sudokn:BarDrawingCapability
   count: 5
 - uri: http://asu.edu/semantics/SUDOKN/ChemicalEngravingCapability
   label: sudokn:ChemicalEngravingCapability
   count: 5
+- uri: http://asu.edu/semantics/SUDOKN/RollForgingCapability
+  label: sudokn:RollForgingCapability
+  count: 5
 - uri: http://asu.edu/semantics/SUDOKN/BritishRetailConsortium
   label: sudokn:BritishRetailConsortium
-  count: 5
-- uri: http://asu.edu/semantics/SUDOKN/RotaryBroachingCapability
-  label: sudokn:RotaryBroachingCapability
-  count: 5
-- uri: http://asu.edu/semantics/SUDOKN/Single-PointCuttingCapability
-  label: sudokn:Single-PointCuttingCapability
   count: 5
 - uri: http://asu.edu/semantics/SUDOKN/SolidDepositionCapability
   label: sudokn:SolidDepositionCapability
   count: 5
-- uri: http://asu.edu/semantics/SUDOKN/BarDrawingCapability
-  label: sudokn:BarDrawingCapability
+- uri: http://asu.edu/semantics/SUDOKN/RotaryBroachingCapability
+  label: sudokn:RotaryBroachingCapability
   count: 5
 - uri: http://asu.edu/semantics/SUDOKN/SquareTubingCapability
   label: sudokn:SquareTubingCapability
@@ -1355,20 +1355,29 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/ChromizingCapability
   label: sudokn:ChromizingCapability
   count: 4
-- uri: http://asu.edu/semantics/SUDOKN/ColdVacuumPressingCapability
-  label: sudokn:ColdVacuumPressingCapability
-  count: 4
-- uri: http://asu.edu/semantics/SUDOKN/ElectronBeamMachiningCapability
-  label: sudokn:ElectronBeamMachiningCapability
+- uri: http://asu.edu/semantics/SUDOKN/InfraredBrazingCapability
+  label: sudokn:InfraredBrazingCapability
   count: 4
 - uri: http://asu.edu/semantics/SUDOKN/AgeQuenchHardeningCapability
   label: sudokn:AgeQuenchHardeningCapability
   count: 4
+- uri: http://asu.edu/semantics/SUDOKN/FullAnnealingCapability
+  label: sudokn:FullAnnealingCapability
+  count: 4
 - uri: http://asu.edu/semantics/SUDOKN/AlkalineOxideConversionCoatingCapability
   label: sudokn:AlkalineOxideConversionCoatingCapability
   count: 4
+- uri: http://asu.edu/semantics/SUDOKN/ElectronBeamMachiningCapability
+  label: sudokn:ElectronBeamMachiningCapability
+  count: 4
 - uri: http://www.w3.org/2002/07/owl#Class
   label: owl:Class
+  count: 4
+- uri: http://asu.edu/semantics/SUDOKN/FlangingEDMCapability
+  label: sudokn:FlangingEDMCapability
+  count: 4
+- uri: http://asu.edu/semantics/SUDOKN/OwnershipStatusClassifier
+  label: sudokn:OwnershipStatusClassifier
   count: 4
 - uri: http://asu.edu/semantics/SUDOKN/ISO22000
   label: sudokn:ISO22000
@@ -1376,38 +1385,41 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/MultipointCuttingCapability
   label: sudokn:MultipointCuttingCapability
   count: 4
-- uri: http://asu.edu/semantics/SUDOKN/FlangingEDMCapability
-  label: sudokn:FlangingEDMCapability
-  count: 4
-- uri: http://asu.edu/semantics/SUDOKN/InfraredBrazingCapability
-  label: sudokn:InfraredBrazingCapability
-  count: 4
-- uri: http://asu.edu/semantics/SUDOKN/FullAnnealingCapability
-  label: sudokn:FullAnnealingCapability
-  count: 4
-- uri: http://asu.edu/semantics/SUDOKN/OwnershipStatusClassifier
-  label: sudokn:OwnershipStatusClassifier
+- uri: http://asu.edu/semantics/SUDOKN/ColdVacuumPressingCapability
+  label: sudokn:ColdVacuumPressingCapability
   count: 4
 - uri: http://asu.edu/semantics/SUDOKN/WireDawingCapability
   label: sudokn:WireDawingCapability
   count: 3
-- uri: http://asu.edu/semantics/SUDOKN/ZeluxProcessingCapability
-  label: sudokn:ZeluxProcessingCapability
-  count: 3
 - uri: http://asu.edu/semantics/SUDOKN/GearGashingCapability
   label: sudokn:GearGashingCapability
+  count: 3
+- uri: http://asu.edu/semantics/SUDOKN/ThinWallMachiningCapability
+  label: sudokn:ThinWallMachiningCapability
+  count: 3
+- uri: https://climatepub4kg.github.io/ontology#Source
+  label: climatepub4:Source
+  count: 3
+- uri: http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability
+  label: sudokn:BlueTempSteelProcessingCapability
   count: 3
 - uri: http://asu.edu/semantics/SUDOKN/CombustibleGasWeldingCapability
   label: sudokn:CombustibleGasWeldingCapability
   count: 3
-- uri: http://asu.edu/semantics/SUDOKN/CarbonDioxideMoldCastingCapability
-  label: sudokn:CarbonDioxideMoldCastingCapability
+- uri: http://asu.edu/semantics/SUDOKN/Quality
+  label: sudokn:Quality
   count: 3
 - uri: http://asu.edu/semantics/SUDOKN/IndirectExtrusionCapability
   label: sudokn:IndirectExtrusionCapability
   count: 3
-- uri: http://asu.edu/semantics/SUDOKN/ThinWallMachiningCapability
-  label: sudokn:ThinWallMachiningCapability
+- uri: http://asu.edu/semantics/SUDOKN/HighEnergyBeamMachiningCapability
+  label: sudokn:HighEnergyBeamMachiningCapability
+  count: 3
+- uri: http://asu.edu/semantics/SUDOKN/ZeluxProcessingCapability
+  label: sudokn:ZeluxProcessingCapability
+  count: 3
+- uri: http://asu.edu/semantics/SUDOKN/CarbonDioxideMoldCastingCapability
+  label: sudokn:CarbonDioxideMoldCastingCapability
   count: 3
 - uri: http://asu.edu/semantics/SUDOKN/ECGTubeCuttingCapability
   label: sudokn:ECGTubeCuttingCapability
@@ -1415,179 +1427,86 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/CTFEProcessingCapability
   label: sudokn:CTFEProcessingCapability
   count: 3
-- uri: http://asu.edu/semantics/SUDOKN/Quality
-  label: sudokn:Quality
+- uri: http://asu.edu/semantics/SUDOKN/CyanidingCapability
+  label: sudokn:CyanidingCapability
   count: 3
 - uri: http://asu.edu/semantics/SUDOKN/SlabMillingCapability
   label: sudokn:SlabMillingCapability
   count: 3
-- uri: https://climatepub4kg.github.io/ontology#Source
-  label: climatepub4:Source
-  count: 3
-- uri: http://asu.edu/semantics/SUDOKN/CyanidingCapability
-  label: sudokn:CyanidingCapability
-  count: 3
-- uri: http://asu.edu/semantics/SUDOKN/HighEnergyBeamMachiningCapability
-  label: sudokn:HighEnergyBeamMachiningCapability
-  count: 3
-- uri: http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability
-  label: sudokn:BlueTempSteelProcessingCapability
-  count: 3
-- uri: http://asu.edu/semantics/SUDOKN/RecoveryAnnealingCapability
-  label: sudokn:RecoveryAnnealingCapability
+- uri: http://asu.edu/semantics/SUDOKN/InductionSolderingCapability
+  label: sudokn:InductionSolderingCapability
   count: 2
 - uri: http://asu.edu/semantics/SUDOKN/AtomicHydrogenWeldingCapability
   label: sudokn:AtomicHydrogenWeldingCapability
   count: 2
-- uri: http://asu.edu/semantics/SUDOKN/InductionSolderingCapability
-  label: sudokn:InductionSolderingCapability
+- uri: http://asu.edu/semantics/SUDOKN/TL9000
+  label: sudokn:TL9000
+  count: 2
+- uri: http://asu.edu/semantics/SUDOKN/RecoveryAnnealingCapability
+  label: sudokn:RecoveryAnnealingCapability
   count: 2
 - uri: http://asu.edu/semantics/SUDOKN/MetricTubingCapability
   label: sudokn:MetricTubingCapability
   count: 2
-- uri: http://asu.edu/semantics/SUDOKN/TL9000
-  label: sudokn:TL9000
-  count: 2
 - uri: http://asu.edu/semantics/SUDOKN/ErosionMachiningCapability
   label: sudokn:ErosionMachiningCapability
-  count: 2
-- uri: http://asu.edu/semantics/SUDOKN/ProcessAnnealingCapability
-  label: sudokn:ProcessAnnealingCapability
-  count: 2
-- uri: http://asu.edu/semantics/SUDOKN/QSQuality
-  label: sudokn:QSQuality
   count: 2
 - uri: http://asu.edu/semantics/SUDOKN/SparkPlasmaSinteringCapability
   label: sudokn:SparkPlasmaSinteringCapability
   count: 2
+- uri: http://asu.edu/semantics/SUDOKN/QSQuality
+  label: sudokn:QSQuality
+  count: 2
+- uri: http://asu.edu/semantics/SUDOKN/ProcessAnnealingCapability
+  label: sudokn:ProcessAnnealingCapability
+  count: 2
 - uri: http://asu.edu/semantics/SUDOKN/HarperizingCapability
   label: sudokn:HarperizingCapability
   count: 2
-- uri: http://asu.edu/semantics/SUDOKN/telecommunicationsIndustry
-  label: sudokn:telecommunicationsIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332439.0
+  label: sudokn:NAICS332439.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334210.0
-  label: sudokn:NAICS334210.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334111.0
-  label: sudokn:NAICS334111.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332813.0
-  label: sudokn:NAICS332813.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS327110.0
-  label: sudokn:NAICS327110.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311919.0
-  label: sudokn:NAICS311919.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334515.0
-  label: sudokn:NAICS334515.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334510.0
-  label: sudokn:NAICS334510.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS331529.0
-  label: sudokn:NAICS331529.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS335311.0
-  label: sudokn:NAICS335311.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339930.0
-  label: sudokn:NAICS339930.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS325520.0
-  label: sudokn:NAICS325520.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333310.0
-  label: sudokn:NAICS333310.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336211.0
-  label: sudokn:NAICS336211.0
+- uri: http://asu.edu/semantics/SUDOKN/aerospaceIndustry
+  label: sudokn:aerospaceIndustry
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS334112.0
   label: sudokn:NAICS334112.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336611.0
-  label: sudokn:NAICS336611.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/CommunicationAndElectronicPowerUtilitiesIndustry
-  label: sudokn:CommunicationAndElectronicPowerUtilitiesIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS325520.0
+  label: sudokn:NAICS325520.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS325211.0
   label: sudokn:NAICS325211.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/EducationIndustry
-  label: sudokn:EducationIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311612.0
+  label: sudokn:NAICS311612.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS326130.0
-  label: sudokn:NAICS326130.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS325180.0
+  label: sudokn:NAICS325180.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS325620.0
-  label: sudokn:NAICS325620.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339930.0
+  label: sudokn:NAICS339930.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339940.0
-  label: sudokn:NAICS339940.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/ToolAndDieIndustry
-  label: sudokn:ToolAndDieIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/FurnitureIndustry
-  label: sudokn:FurnitureIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS323113.0
-  label: sudokn:NAICS323113.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311920.0
-  label: sudokn:NAICS311920.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS315250.0
-  label: sudokn:NAICS315250.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS324121.0
-  label: sudokn:NAICS324121.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332996.0
-  label: sudokn:NAICS332996.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332722.0
-  label: sudokn:NAICS332722.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339992.0
-  label: sudokn:NAICS339992.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS322291.0
-  label: sudokn:NAICS322291.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339115.0
-  label: sudokn:NAICS339115.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/ApparelIndustry
-  label: sudokn:ApparelIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336414.0
-  label: sudokn:NAICS336414.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332119.0
-  label: sudokn:NAICS332119.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS325314.0
-  label: sudokn:NAICS325314.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333310.0
+  label: sudokn:NAICS333310.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/semiconductorfabricatingCapability
   label: sudokn:semiconductorfabricatingCapability
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311612.0
-  label: sudokn:NAICS311612.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS325314.0
+  label: sudokn:NAICS325314.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS335210.0
-  label: sudokn:NAICS335210.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332119.0
+  label: sudokn:NAICS332119.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS321114.0
-  label: sudokn:NAICS321114.0
+- uri: http://asu.edu/semantics/SUDOKN/nist
+  label: sudokn:nist
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS324191.0
-  label: sudokn:NAICS324191.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336414.0
+  label: sudokn:NAICS336414.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS325620.0
+  label: sudokn:NAICS325620.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS314994.0
   label: sudokn:NAICS314994.0
@@ -1595,26 +1514,44 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS332613.0
   label: sudokn:NAICS332613.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332710.0
-  label: sudokn:NAICS332710.0
+- uri: http://asu.edu/semantics/SUDOKN/EducationIndustry
+  label: sudokn:EducationIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334416.0
-  label: sudokn:NAICS334416.0
+- uri: http://asu.edu/semantics/SUDOKN/FurnitureIndustry
+  label: sudokn:FurnitureIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS327120.0
-  label: sudokn:NAICS327120.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS326130.0
+  label: sudokn:NAICS326130.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332911.0
-  label: sudokn:NAICS332911.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336611.0
+  label: sudokn:NAICS336611.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/ironProcessingCapability
-  label: sudokn:ironProcessingCapability
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336211.0
+  label: sudokn:NAICS336211.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/TuffakProcessingCapability
-  label: sudokn:TuffakProcessingCapability
+- uri: http://asu.edu/semantics/SUDOKN/ApparelIndustry
+  label: sudokn:ApparelIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333991.0
-  label: sudokn:NAICS333991.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332813.0
+  label: sudokn:NAICS332813.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS335210.0
+  label: sudokn:NAICS335210.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/CommunicationAndElectronicPowerUtilitiesIndustry
+  label: sudokn:CommunicationAndElectronicPowerUtilitiesIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/ToolAndDieIndustry
+  label: sudokn:ToolAndDieIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS321114.0
+  label: sudokn:NAICS321114.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS324191.0
+  label: sudokn:NAICS324191.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS327211.0
+  label: sudokn:NAICS327211.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS322211.0
   label: sudokn:NAICS322211.0
@@ -1628,212 +1565,230 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/RecyclingIndustry
   label: sudokn:RecyclingIndustry
   count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS322291.0
+  label: sudokn:NAICS322291.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339992.0
+  label: sudokn:NAICS339992.0
+  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS333519.0
   label: sudokn:NAICS333519.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS327211.0
-  label: sudokn:NAICS327211.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332722.0
+  label: sudokn:NAICS332722.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332431.0
-  label: sudokn:NAICS332431.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339115.0
+  label: sudokn:NAICS339115.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334416.0
+  label: sudokn:NAICS334416.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS315250.0
+  label: sudokn:NAICS315250.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332996.0
+  label: sudokn:NAICS332996.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS324121.0
+  label: sudokn:NAICS324121.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS325414.0
   label: sudokn:NAICS325414.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS316990.0
-  label: sudokn:NAICS316990.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/nist
-  label: sudokn:nist
-  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS325413.0
   label: sudokn:NAICS325413.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336360.0
-  label: sudokn:NAICS336360.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS316990.0
+  label: sudokn:NAICS316990.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/SemiconductorIndustry
-  label: sudokn:SemiconductorIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332710.0
+  label: sudokn:NAICS332710.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332911.0
+  label: sudokn:NAICS332911.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334210.0
+  label: sudokn:NAICS334210.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS327110.0
+  label: sudokn:NAICS327110.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311919.0
+  label: sudokn:NAICS311919.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334515.0
+  label: sudokn:NAICS334515.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332431.0
+  label: sudokn:NAICS332431.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS327120.0
+  label: sudokn:NAICS327120.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339940.0
+  label: sudokn:NAICS339940.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS323113.0
+  label: sudokn:NAICS323113.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/telecommunicationsIndustry
+  label: sudokn:telecommunicationsIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/ironProcessingCapability
+  label: sudokn:ironProcessingCapability
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/TuffakProcessingCapability
+  label: sudokn:TuffakProcessingCapability
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS327992.0
   label: sudokn:NAICS327992.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332439.0
-  label: sudokn:NAICS332439.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333991.0
+  label: sudokn:NAICS333991.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/aerospaceIndustry
-  label: sudokn:aerospaceIndustry
+- uri: http://asu.edu/semantics/SUDOKN/SemiconductorIndustry
+  label: sudokn:SemiconductorIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS325180.0
-  label: sudokn:NAICS325180.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336360.0
+  label: sudokn:NAICS336360.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332721.0
-  label: sudokn:NAICS332721.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311920.0
+  label: sudokn:NAICS311920.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/MedicalDevicesIndustry
-  label: sudokn:MedicalDevicesIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332212.0
+  label: sudokn:NAICS332212.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS314110.0
-  label: sudokn:NAICS314110.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/pharmaceuticalIndustry
-  label: sudokn:pharmaceuticalIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS316210.0
-  label: sudokn:NAICS316210.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS331318.0
-  label: sudokn:NAICS331318.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/beverageIndustry
-  label: sudokn:beverageIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332323.0
-  label: sudokn:NAICS332323.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/SportsAndLeisureIndustry
-  label: sudokn:SportsAndLeisureIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332994.0
-  label: sudokn:NAICS332994.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311225.0
-  label: sudokn:NAICS311225.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333924.0
-  label: sudokn:NAICS333924.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311340.0
-  label: sudokn:NAICS311340.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/watertreatmentandmanagementIndustry
-  label: sudokn:watertreatmentandmanagementIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336412.0
-  label: sudokn:NAICS336412.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333992.0
-  label: sudokn:NAICS333992.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336310.0
-  label: sudokn:NAICS336310.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS331210.0
-  label: sudokn:NAICS331210.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336999.0
-  label: sudokn:NAICS336999.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334514.0
-  label: sudokn:NAICS334514.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS335312.0
-  label: sudokn:NAICS335312.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311423.0
-  label: sudokn:NAICS311423.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332116.0
-  label: sudokn:NAICS332116.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/FractionalTubingCapability
-  label: sudokn:FractionalTubingCapability
+- uri: http://asu.edu/semantics/SUDOKN/NAICS327420.0
+  label: sudokn:NAICS327420.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/AutomotiveIndustry
   label: sudokn:AutomotiveIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332913.0
-  label: sudokn:NAICS332913.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333517.0
-  label: sudokn:NAICS333517.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS331410.0
-  label: sudokn:NAICS331410.0
-  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS335132.0
   label: sudokn:NAICS335132.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS313310.0
-  label: sudokn:NAICS313310.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/MetalProductionIndustry
-  label: sudokn:MetalProductionIndustry
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS333912.0
   label: sudokn:NAICS333912.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/TransportationIndustry
-  label: sudokn:TransportationIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336310.0
+  label: sudokn:NAICS336310.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/MetalProductionIndustry
+  label: sudokn:MetalProductionIndustry
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/joiningCapability
   label: sudokn:joiningCapability
   count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332994.0
+  label: sudokn:NAICS332994.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332323.0
+  label: sudokn:NAICS332323.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/pharmaceuticalIndustry
+  label: sudokn:pharmaceuticalIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/TransportationIndustry
+  label: sudokn:TransportationIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311340.0
+  label: sudokn:NAICS311340.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/SportsAndLeisureIndustry
+  label: sudokn:SportsAndLeisureIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS331410.0
+  label: sudokn:NAICS331410.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311423.0
+  label: sudokn:NAICS311423.0
+  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/AerospaceIndustry
   label: sudokn:AerospaceIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS331318.0
+  label: sudokn:NAICS331318.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS331210.0
+  label: sudokn:NAICS331210.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/MedicalDevicesIndustry
+  label: sudokn:MedicalDevicesIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333517.0
+  label: sudokn:NAICS333517.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS314110.0
+  label: sudokn:NAICS314110.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS327332.0
   label: sudokn:NAICS327332.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/foodIndustry
-  label: sudokn:foodIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333924.0
+  label: sudokn:NAICS333924.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339991.0
-  label: sudokn:NAICS339991.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311225.0
+  label: sudokn:NAICS311225.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333241.0
-  label: sudokn:NAICS333241.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336412.0
+  label: sudokn:NAICS336412.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332510.0
-  label: sudokn:NAICS332510.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS323117.0
+  label: sudokn:NAICS323117.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS321992.0
-  label: sudokn:NAICS321992.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS322219.0
-  label: sudokn:NAICS322219.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/WindEnergyIndustry
-  label: sudokn:WindEnergyIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS325312.0
-  label: sudokn:NAICS325312.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/TextilesIndustry
-  label: sudokn:TextilesIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS312140.0
+  label: sudokn:NAICS312140.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS332313.0
   label: sudokn:NAICS332313.0
   count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333922.0
+  label: sudokn:NAICS333922.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/TextilesIndustry
+  label: sudokn:TextilesIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/petrochemicalIndustry
+  label: sudokn:petrochemicalIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339991.0
+  label: sudokn:NAICS339991.0
+  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS332991.0
   label: sudokn:NAICS332991.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332998.0
+  label: sudokn:NAICS332998.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS331313.0
+  label: sudokn:NAICS331313.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332812.0
+  label: sudokn:NAICS332812.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332997.0
+  label: sudokn:NAICS332997.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS334417.0
   label: sudokn:NAICS334417.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS312120.0
-  label: sudokn:NAICS312120.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS321911.0
+  label: sudokn:NAICS321911.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/FoodIndustry
-  label: sudokn:FoodIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS316110.0
+  label: sudokn:NAICS316110.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/transportationIndustry
-  label: sudokn:transportationIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339999.0
+  label: sudokn:NAICS339999.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS325315.0
-  label: sudokn:NAICS325315.0
+- uri: http://asu.edu/semantics/SUDOKN/FusedNitrateConversionCoatingCapability
+  label: sudokn:FusedNitrateConversionCoatingCapability
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336390.0
-  label: sudokn:NAICS336390.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS315990.0
+  label: sudokn:NAICS315990.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339116.0
-  label: sudokn:NAICS339116.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/HardwareAndDevicesIndustry
-  label: sudokn:HardwareAndDevicesIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333914.0
-  label: sudokn:NAICS333914.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS316210.0
+  label: sudokn:NAICS316210.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS332115.0
   label: sudokn:NAICS332115.0
@@ -1841,89 +1796,53 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/plasticProcessingCapability
   label: sudokn:plasticProcessingCapability
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS315990.0
-  label: sudokn:NAICS315990.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/FusedNitrateConversionCoatingCapability
-  label: sudokn:FusedNitrateConversionCoatingCapability
+- uri: http://asu.edu/semantics/SUDOKN/beverageIndustry
+  label: sudokn:beverageIndustry
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/professionalservicesIndustry
   label: sudokn:professionalservicesIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339999.0
-  label: sudokn:NAICS339999.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332112.0
-  label: sudokn:NAICS332112.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS316110.0
-  label: sudokn:NAICS316110.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS321911.0
-  label: sudokn:NAICS321911.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332312.0
-  label: sudokn:NAICS332312.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS337122.0
-  label: sudokn:NAICS337122.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS325320.0
-  label: sudokn:NAICS325320.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334220.0
-  label: sudokn:NAICS334220.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336991.0
-  label: sudokn:NAICS336991.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS312140.0
-  label: sudokn:NAICS312140.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332997.0
-  label: sudokn:NAICS332997.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS331313.0
-  label: sudokn:NAICS331313.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332998.0
-  label: sudokn:NAICS332998.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS321113.0
-  label: sudokn:NAICS321113.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332811.0
-  label: sudokn:NAICS332811.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334418.0
-  label: sudokn:NAICS334418.0
+- uri: http://asu.edu/semantics/SUDOKN/WaterAndSewerUtilitiesIndustry
+  label: sudokn:WaterAndSewerUtilitiesIndustry
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS323120.0
   label: sudokn:NAICS323120.0
   count: 1
+- uri: http://asu.edu/semantics/SUDOKN/BeverageIndustry
+  label: sudokn:BeverageIndustry
+  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/TLQuality
   label: sudokn:TLQuality
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS326220.0
-  label: sudokn:NAICS326220.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332992.0
+  label: sudokn:NAICS332992.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS335931.0
-  label: sudokn:NAICS335931.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS326299.0
+  label: sudokn:NAICS326299.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS322299.0
-  label: sudokn:NAICS322299.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334512.0
+  label: sudokn:NAICS334512.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336510.0
+  label: sudokn:NAICS336510.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/ceramicProcessingCapability
+  label: sudokn:ceramicProcessingCapability
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS321991.0
+  label: sudokn:NAICS321991.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS335999.0
   label: sudokn:NAICS335999.0
   count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332112.0
+  label: sudokn:NAICS332112.0
+  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/TelecommunicationsIndustry
   label: sudokn:TelecommunicationsIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/BeverageIndustry
-  label: sudokn:BeverageIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333996.0
-  label: sudokn:NAICS333996.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS331492.0
+  label: sudokn:NAICS331492.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS327999.0
   label: sudokn:NAICS327999.0
@@ -1931,32 +1850,26 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS321215.0
   label: sudokn:NAICS321215.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334290.0
-  label: sudokn:NAICS334290.0
+- uri: http://asu.edu/semantics/SUDOKN/ThermalSubtractionCapability
+  label: sudokn:ThermalSubtractionCapability
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/HardwareAndDevicesIndustry
+  label: sudokn:HardwareAndDevicesIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336390.0
+  label: sudokn:NAICS336390.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS331491.0
   label: sudokn:NAICS331491.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333922.0
-  label: sudokn:NAICS333922.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS325315.0
+  label: sudokn:NAICS325315.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS335910.0
-  label: sudokn:NAICS335910.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/petrochemicalIndustry
-  label: sudokn:petrochemicalIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS321991.0
-  label: sudokn:NAICS321991.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336999.0
+  label: sudokn:NAICS336999.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS332311.0
   label: sudokn:NAICS332311.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/ThermalSubtractionCapability
-  label: sudokn:ThermalSubtractionCapability
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS331492.0
-  label: sudokn:NAICS331492.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS322120.0
   label: sudokn:NAICS322120.0
@@ -1964,23 +1877,11 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS332213.0
   label: sudokn:NAICS332213.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/WaterAndSewerUtilitiesIndustry
-  label: sudokn:WaterAndSewerUtilitiesIndustry
-  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS336413.0
   label: sudokn:NAICS336413.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/CrochetCapability
   label: sudokn:CrochetCapability
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332812.0
-  label: sudokn:NAICS332812.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/ceramicProcessingCapability
-  label: sudokn:ceramicProcessingCapability
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336510.0
-  label: sudokn:NAICS336510.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS312112.0
   label: sudokn:NAICS312112.0
@@ -1991,29 +1892,110 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/OffshoreWindEnergyIndustry
   label: sudokn:OffshoreWindEnergyIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334512.0
-  label: sudokn:NAICS334512.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334514.0
+  label: sudokn:NAICS334514.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS326299.0
-  label: sudokn:NAICS326299.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332811.0
+  label: sudokn:NAICS332811.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332992.0
-  label: sudokn:NAICS332992.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS335312.0
+  label: sudokn:NAICS335312.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332919.0
-  label: sudokn:NAICS332919.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333992.0
+  label: sudokn:NAICS333992.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS322130.0
-  label: sudokn:NAICS322130.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334418.0
+  label: sudokn:NAICS334418.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334310.0
-  label: sudokn:NAICS334310.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS326220.0
+  label: sudokn:NAICS326220.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333131.0
-  label: sudokn:NAICS333131.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS335931.0
+  label: sudokn:NAICS335931.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS337126.0
-  label: sudokn:NAICS337126.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332721.0
+  label: sudokn:NAICS332721.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS322299.0
+  label: sudokn:NAICS322299.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS321113.0
+  label: sudokn:NAICS321113.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333996.0
+  label: sudokn:NAICS333996.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334290.0
+  label: sudokn:NAICS334290.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/watertreatmentandmanagementIndustry
+  label: sudokn:watertreatmentandmanagementIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/FractionalTubingCapability
+  label: sudokn:FractionalTubingCapability
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333914.0
+  label: sudokn:NAICS333914.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS337122.0
+  label: sudokn:NAICS337122.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS313310.0
+  label: sudokn:NAICS313310.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS325320.0
+  label: sudokn:NAICS325320.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334220.0
+  label: sudokn:NAICS334220.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336991.0
+  label: sudokn:NAICS336991.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333241.0
+  label: sudokn:NAICS333241.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332510.0
+  label: sudokn:NAICS332510.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332913.0
+  label: sudokn:NAICS332913.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS322219.0
+  label: sudokn:NAICS322219.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS335910.0
+  label: sudokn:NAICS335910.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332116.0
+  label: sudokn:NAICS332116.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/WindEnergyIndustry
+  label: sudokn:WindEnergyIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS325312.0
+  label: sudokn:NAICS325312.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/foodIndustry
+  label: sudokn:foodIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS312120.0
+  label: sudokn:NAICS312120.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/FoodIndustry
+  label: sudokn:FoodIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/transportationIndustry
+  label: sudokn:transportationIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339116.0
+  label: sudokn:NAICS339116.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332312.0
+  label: sudokn:NAICS332312.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/RestaurantIndustry
+  label: sudokn:RestaurantIndustry
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS311412.0
   label: sudokn:NAICS311412.0
@@ -2045,8 +2027,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS324110.0
   label: sudokn:NAICS324110.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/medicalIndustry
-  label: sudokn:medicalIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332919.0
+  label: sudokn:NAICS332919.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/SolarPowerIndustry
   label: sudokn:SolarPowerIndustry
@@ -2057,8 +2039,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/ResistanceSolderingCapability
   label: sudokn:ResistanceSolderingCapability
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/RestaurantIndustry
-  label: sudokn:RestaurantIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS337126.0
+  label: sudokn:NAICS337126.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/defenseIndustry
   label: sudokn:defenseIndustry
@@ -2090,20 +2072,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/communicationIndustry
   label: sudokn:communicationIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS335991.0
-  label: sudokn:NAICS335991.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339114.0
+  label: sudokn:NAICS339114.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334513.0
-  label: sudokn:NAICS334513.0
+- uri: http://asu.edu/semantics/SUDOKN/AgricultureIndustry
+  label: sudokn:AgricultureIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS326121.0
-  label: sudokn:NAICS326121.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332214.0
+  label: sudokn:NAICS332214.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332322.0
-  label: sudokn:NAICS332322.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332420.0
+  label: sudokn:NAICS332420.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334519.0
-  label: sudokn:NAICS334519.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333923.0
+  label: sudokn:NAICS333923.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS322110.0
   label: sudokn:NAICS322110.0
@@ -2135,8 +2117,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NuclearEnergyIndustry
   label: sudokn:NuclearEnergyIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339114.0
-  label: sudokn:NAICS339114.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS335991.0
+  label: sudokn:NAICS335991.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/PaperboardProductsIndustry
   label: sudokn:PaperboardProductsIndustry
@@ -2147,8 +2129,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS313210.0
   label: sudokn:NAICS313210.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS333923.0
-  label: sudokn:NAICS333923.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339950.0
+  label: sudokn:NAICS339950.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS321920.0
   label: sudokn:NAICS321920.0
@@ -2177,20 +2159,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS339113.0
   label: sudokn:NAICS339113.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339910.0
-  label: sudokn:NAICS339910.0
+- uri: http://asu.edu/semantics/SUDOKN/medicalIndustry
+  label: sudokn:medicalIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/OilAndGasIndustry
-  label: sudokn:OilAndGasIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS322130.0
+  label: sudokn:NAICS322130.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS326211.0
-  label: sudokn:NAICS326211.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334310.0
+  label: sudokn:NAICS334310.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS327991.0
-  label: sudokn:NAICS327991.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS333131.0
+  label: sudokn:NAICS333131.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS336110.0
-  label: sudokn:NAICS336110.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS326112.0
+  label: sudokn:NAICS326112.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS337121.0
   label: sudokn:NAICS337121.0
@@ -2222,8 +2204,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS336212.0
   label: sudokn:NAICS336212.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS325998.0
-  label: sudokn:NAICS325998.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339910.0
+  label: sudokn:NAICS339910.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS327213.0
   label: sudokn:NAICS327213.0
@@ -2234,8 +2216,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS326122.0
   label: sudokn:NAICS326122.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS326112.0
-  label: sudokn:NAICS326112.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS336110.0
+  label: sudokn:NAICS336110.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS325411.0
   label: sudokn:NAICS325411.0
@@ -2261,23 +2243,26 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS332114.0
   label: sudokn:NAICS332114.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS323117.0
-  label: sudokn:NAICS323117.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS321992.0
+  label: sudokn:NAICS321992.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339994.0
-  label: sudokn:NAICS339994.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334111.0
+  label: sudokn:NAICS334111.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/AgricultureIndustry
-  label: sudokn:AgricultureIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334510.0
+  label: sudokn:NAICS334510.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332214.0
-  label: sudokn:NAICS332214.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS331529.0
+  label: sudokn:NAICS331529.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332420.0
-  label: sudokn:NAICS332420.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS335311.0
+  label: sudokn:NAICS335311.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339950.0
-  label: sudokn:NAICS339950.0
+- uri: http://asu.edu/semantics/SUDOKN/GovernmentIndustry
+  label: sudokn:GovernmentIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311611.0
+  label: sudokn:NAICS311611.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS324122.0
   label: sudokn:NAICS324122.0
@@ -2309,8 +2294,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS339995.0
   label: sudokn:NAICS339995.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS327420.0
-  label: sudokn:NAICS327420.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339994.0
+  label: sudokn:NAICS339994.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS326160.0
   label: sudokn:NAICS326160.0
@@ -2321,8 +2306,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/AudioAndVisualIndustry
   label: sudokn:AudioAndVisualIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311611.0
-  label: sudokn:NAICS311611.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS327212.0
+  label: sudokn:NAICS327212.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS325199.0
   label: sudokn:NAICS325199.0
@@ -2351,17 +2336,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/RetailIndustry
   label: sudokn:RetailIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS327320.0
-  label: sudokn:NAICS327320.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS325998.0
+  label: sudokn:NAICS325998.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/MilitaryIndustry
-  label: sudokn:MilitaryIndustry
+- uri: http://asu.edu/semantics/SUDOKN/OilAndGasIndustry
+  label: sudokn:OilAndGasIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332321.0
-  label: sudokn:NAICS332321.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS326211.0
+  label: sudokn:NAICS326211.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311511.0
-  label: sudokn:NAICS311511.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS327991.0
+  label: sudokn:NAICS327991.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS337127.0
+  label: sudokn:NAICS337127.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS333111.0
   label: sudokn:NAICS333111.0
@@ -2396,8 +2384,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS333998.0
   label: sudokn:NAICS333998.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/EntertainmentAndMediaIndustry
-  label: sudokn:EntertainmentAndMediaIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS327320.0
+  label: sudokn:NAICS327320.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/constructionIndustry
   label: sudokn:constructionIndustry
@@ -2405,8 +2393,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/MachineryAndEquipmentIndustry
   label: sudokn:MachineryAndEquipmentIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS337127.0
-  label: sudokn:NAICS337127.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311511.0
+  label: sudokn:NAICS311511.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS325611.0
   label: sudokn:NAICS325611.0
@@ -2438,17 +2426,20 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS334118.0
   label: sudokn:NAICS334118.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311812.0
-  label: sudokn:NAICS311812.0
+- uri: http://asu.edu/semantics/SUDOKN/BusinessEquipmentIndustry
+  label: sudokn:BusinessEquipmentIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332212.0
-  label: sudokn:NAICS332212.0
+- uri: http://asu.edu/semantics/SUDOKN/chemicalIndustry
+  label: sudokn:chemicalIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/GovernmentIndustry
-  label: sudokn:GovernmentIndustry
+- uri: http://asu.edu/semantics/SUDOKN/DefenseIndustry
+  label: sudokn:DefenseIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS327212.0
-  label: sudokn:NAICS327212.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334516.0
+  label: sudokn:NAICS334516.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS314120.0
+  label: sudokn:NAICS314120.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS325110.0
   label: sudokn:NAICS325110.0
@@ -2483,8 +2474,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS337215.0
   label: sudokn:NAICS337215.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334419.0
-  label: sudokn:NAICS334419.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311812.0
+  label: sudokn:NAICS311812.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS336411.0
   label: sudokn:NAICS336411.0
@@ -2492,8 +2483,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS311111.0
   label: sudokn:NAICS311111.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS314120.0
-  label: sudokn:NAICS314120.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332322.0
+  label: sudokn:NAICS332322.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS334412.0
   label: sudokn:NAICS334412.0
@@ -2525,20 +2516,17 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS336612.0
   label: sudokn:NAICS336612.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/waterandsewerutilitiesIndustry
-  label: sudokn:waterandsewerutilitiesIndustry
+- uri: http://asu.edu/semantics/SUDOKN/EntertainmentAndMediaIndustry
+  label: sudokn:EntertainmentAndMediaIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311830.0
-  label: sudokn:NAICS311830.0
+- uri: http://asu.edu/semantics/SUDOKN/MilitaryIndustry
+  label: sudokn:MilitaryIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/apparelIndustry
-  label: sudokn:apparelIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332321.0
+  label: sudokn:NAICS332321.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS335139.0
-  label: sudokn:NAICS335139.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS327910.0
-  label: sudokn:NAICS327910.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS312111.0
+  label: sudokn:NAICS312111.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS326150.0
   label: sudokn:NAICS326150.0
@@ -2570,8 +2558,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS337211.0
   label: sudokn:NAICS337211.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/chemicalIndustry
-  label: sudokn:chemicalIndustry
+- uri: http://asu.edu/semantics/SUDOKN/waterandsewerutilitiesIndustry
+  label: sudokn:waterandsewerutilitiesIndustry
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS332111.0
   label: sudokn:NAICS332111.0
@@ -2582,8 +2570,8 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/PlasticAndRubberIndustry
   label: sudokn:PlasticAndRubberIndustry
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS312111.0
-  label: sudokn:NAICS312111.0
+- uri: http://asu.edu/semantics/SUDOKN/ElectricAutomotiveIndustry
+  label: sudokn:ElectricAutomotiveIndustry
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS322230.0
   label: sudokn:NAICS322230.0
@@ -2609,26 +2597,26 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS333132.0
   label: sudokn:NAICS333132.0
   count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334419.0
+  label: sudokn:NAICS334419.0
+  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS334511.0
   label: sudokn:NAICS334511.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/BusinessEquipmentIndustry
-  label: sudokn:BusinessEquipmentIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334513.0
+  label: sudokn:NAICS334513.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/PaperIndustry
-  label: sudokn:PaperIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS326121.0
+  label: sudokn:NAICS326121.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/DefenseIndustry
-  label: sudokn:DefenseIndustry
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS334516.0
-  label: sudokn:NAICS334516.0
+- uri: http://asu.edu/semantics/SUDOKN/NAICS334519.0
+  label: sudokn:NAICS334519.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS336415.0
   label: sudokn:NAICS336415.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/ElectricAutomotiveIndustry
-  label: sudokn:ElectricAutomotiveIndustry
+- uri: http://asu.edu/semantics/SUDOKN/NAICS335139.0
+  label: sudokn:NAICS335139.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/healthcareservicesIndustry
   label: sudokn:healthcareservicesIndustry
@@ -2657,17 +2645,41 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS333243.0
   label: sudokn:NAICS333243.0
   count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311421.0
+  label: sudokn:NAICS311421.0
+  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS332211.0
   label: sudokn:NAICS332211.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339920.0
+  label: sudokn:NAICS339920.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS332215.0
+  label: sudokn:NAICS332215.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/glassProcessingCapability
+  label: sudokn:glassProcessingCapability
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS322220.0
+  label: sudokn:NAICS322220.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS327910.0
+  label: sudokn:NAICS327910.0
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/apparelIndustry
+  label: sudokn:apparelIndustry
+  count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS311830.0
+  label: sudokn:NAICS311830.0
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS335314.0
   label: sudokn:NAICS335314.0
   count: 1
+- uri: http://asu.edu/semantics/SUDOKN/PaperIndustry
+  label: sudokn:PaperIndustry
+  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/galvanizingCapability
   label: sudokn:galvanizingCapability
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/WarehousingAndStorageIndustry
-  label: sudokn:WarehousingAndStorageIndustry
   count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS336340.0
   label: sudokn:NAICS336340.0
@@ -2678,26 +2690,14 @@ class_partitions:
 - uri: http://asu.edu/semantics/SUDOKN/NAICS327215.0
   label: sudokn:NAICS327215.0
   count: 1
+- uri: http://asu.edu/semantics/SUDOKN/NAICS339112.0
+  label: sudokn:NAICS339112.0
+  count: 1
 - uri: http://asu.edu/semantics/SUDOKN/NAICS333242.0
   label: sudokn:NAICS333242.0
   count: 1
-- uri: http://asu.edu/semantics/SUDOKN/glassProcessingCapability
-  label: sudokn:glassProcessingCapability
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS322220.0
-  label: sudokn:NAICS322220.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS332215.0
-  label: sudokn:NAICS332215.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339920.0
-  label: sudokn:NAICS339920.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS311421.0
-  label: sudokn:NAICS311421.0
-  count: 1
-- uri: http://asu.edu/semantics/SUDOKN/NAICS339112.0
-  label: sudokn:NAICS339112.0
+- uri: http://asu.edu/semantics/SUDOKN/WarehousingAndStorageIndustry
+  label: sudokn:WarehousingAndStorageIndustry
   count: 1
 property_partitions:
 - uri: https://w3id.org/secure-chain/dependsOn
@@ -2724,11 +2724,11 @@ property_partitions:
 - uri: https://w3id.org/secure-chain/vulnerableTo
   label: secure-chain:vulnerableTo
   count: 870457
-- uri: https://w3id.org/secure-chain/ecosystem
-  label: secure-chain:ecosystem
-  count: 803769
 - uri: http://schema.org/programmingLanguage
   label: programmingLanguage
+  count: 803769
+- uri: https://w3id.org/secure-chain/ecosystem
+  label: secure-chain:ecosystem
   count: 803769
 - uri: http://schema.org/identifier
   label: identifier
@@ -2835,11 +2835,11 @@ property_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#range
   label: rdfs:range
   count: 9
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
-  label: rdf:rest
-  count: 8
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
   label: rdf:first
+  count: 8
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+  label: rdf:rest
   count: 8
 - uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
   label: rdfs:subClassOf

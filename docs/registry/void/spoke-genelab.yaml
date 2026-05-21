@@ -3,7 +3,7 @@ distinct_subjects: 50396948
 distinct_objects: 91690146
 properties: 59
 classes: 10
-last_checked: '2026-04-23'
+last_checked: '2026-05-21'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
@@ -23,11 +23,11 @@ class_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/Organism
   label: spoke-genelab:Organism
   count: 46
-- uri: https://w3id.org/biolink/vocab/AnatomicalEntity
-  label: biolink:AnatomicalEntity
-  count: 42
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/Mission
   label: spoke-genelab:Mission
+  count: 42
+- uri: https://w3id.org/biolink/vocab/AnatomicalEntity
+  label: biolink:AnatomicalEntity
   count: 42
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/MetaNode
   label: spoke-genelab:MetaNode
@@ -72,11 +72,11 @@ property_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
   count: 141950
-- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/taxonomy
-  label: spoke-genelab:taxonomy
-  count: 138950
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/organism
   label: spoke-genelab:organism
+  count: 138950
+- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/taxonomy
+  label: spoke-genelab:taxonomy
   count: 138950
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/symbol
   label: spoke-genelab:symbol
@@ -99,23 +99,23 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/MEASURED_DIFFERENTIAL_METHYLATION_ASmMR
   label: spoke-genelab:MEASURED_DIFFERENTIAL_METHYLATION_ASmMR
   count: 27454
-- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/differential_analysis_method
-  label: spoke-genelab:differential_analysis_method
+- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/technology
+  label: spoke-genelab:technology
   count: 13147
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/measurement
   label: spoke-genelab:measurement
   count: 13147
-- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/technology
-  label: spoke-genelab:technology
+- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/differential_analysis_method
+  label: spoke-genelab:differential_analysis_method
   count: 13147
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/PERFORMED_SpAS
   label: spoke-genelab:PERFORMED_SpAS
   count: 13146
-- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/material_2
-  label: spoke-genelab:material_2
-  count: 10059
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/material_1
   label: spoke-genelab:material_1
+  count: 10059
+- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/material_2
+  label: spoke-genelab:material_2
   count: 10059
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/material_name_1
   label: spoke-genelab:material_name_1
@@ -132,14 +132,14 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/METHYLATED_IN_MGmMR
   label: spoke-genelab:METHYLATED_IN_MGmMR
   count: 8270
-- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome
-  label: spoke-genelab:chromosome
+- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/end
+  label: spoke-genelab:end
   count: 8004
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/start
   label: spoke-genelab:start
   count: 8004
-- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/end
-  label: spoke-genelab:end
+- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/chromosome
+  label: spoke-genelab:chromosome
   count: 8004
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/INVESTIGATED_ASiA
   label: spoke-genelab:INVESTIGATED_ASiA
@@ -204,12 +204,12 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/from
   label: spoke-genelab:from
   count: 9
-- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/host_strain
-  label: spoke-genelab:host_strain
-  count: 2
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/host_organism
   label: spoke-genelab:host_organism
   count: 2
 - uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/host_taxonomy
   label: spoke-genelab:host_taxonomy
+  count: 2
+- uri: https://purl.org/okn/frink/kg/spoke-genelab/schema/host_strain
+  label: spoke-genelab:host_strain
   count: 2

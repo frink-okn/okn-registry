@@ -3,7 +3,7 @@ distinct_subjects: 9985697
 distinct_objects: 9460861
 properties: 28
 classes: 16
-last_checked: '2026-04-23'
+last_checked: '2026-05-21'
 class_partitions:
 - uri: https://w3id.org/biolink/vocab/GeneExpressionMixin
   label: biolink:GeneExpressionMixin
@@ -60,14 +60,14 @@ property_partitions:
 - uri: https://w3id.org/biolink/vocab/object
   label: biolink:object
   count: 9116569
-- uri: https://w3id.org/biolink/vocab/subject
-  label: biolink:subject
+- uri: http://purl.org/okn/wobd/direction
+  label: direction
   count: 9116569
 - uri: http://purl.org/okn/wobd/adj_p_value
   label: adj_p_value
   count: 9116569
-- uri: http://purl.org/okn/wobd/direction
-  label: direction
+- uri: https://w3id.org/biolink/vocab/subject
+  label: biolink:subject
   count: 9116569
 - uri: https://w3id.org/biolink/vocab/predicate
   label: biolink:predicate
@@ -81,11 +81,11 @@ property_partitions:
 - uri: https://w3id.org/biolink/vocab/symbol
   label: biolink:symbol
   count: 376071
-- uri: http://purl.org/okn/wobd/p_value
-  label: p_value
-  count: 287615
 - uri: http://purl.org/okn/wobd/effect_size
   label: effect_size
+  count: 287615
+- uri: http://purl.org/okn/wobd/p_value
+  label: p_value
   count: 287615
 - uri: http://purl.org/okn/wobd/enrichment_source
   label: enrichment_source
@@ -96,14 +96,14 @@ property_partitions:
 - uri: https://w3id.org/biolink/vocab/has_attribute
   label: biolink:has_attribute
   count: 20916
+- uri: https://w3id.org/biolink/vocab/has_output
+  label: biolink:has_output
+  count: 14850
 - uri: http://purl.org/okn/wobd/contrast_id
   label: contrast_id
   count: 14850
 - uri: http://purl.org/okn/wobd/technology
   label: technology
-  count: 14850
-- uri: https://w3id.org/biolink/vocab/has_output
-  label: biolink:has_output
   count: 14850
 - uri: http://purl.org/okn/wobd/array_design
   label: array_design
@@ -111,11 +111,11 @@ property_partitions:
 - uri: http://purl.org/okn/wobd/source
   label: source
   count: 4668
-- uri: http://purl.org/okn/wobd/submitter_name
-  label: submitter_name
-  count: 4664
 - uri: http://purl.org/okn/wobd/experimental_factors
   label: experimental_factors
+  count: 4664
+- uri: http://purl.org/okn/wobd/submitter_name
+  label: submitter_name
   count: 4664
 - uri: http://purl.org/okn/wobd/project_title
   label: project_title
