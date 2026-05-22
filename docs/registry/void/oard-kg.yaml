@@ -1,11 +1,41 @@
-triples: 48265545
+triples: 58392097
 distinct_subjects: 10126552
 distinct_objects: 10702397
-properties: 15
-classes: 0
-last_checked: '2026-04-23'
-class_partitions: []
+properties: 16
+classes: 9
+last_checked: '2026-05-21'
+class_partitions:
+- uri: https://w3id.org/biolink/vocab/ConceptCountAnalysisResult
+  label: biolink:ConceptCountAnalysisResult
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/LogOddsAnalysisResult
+  label: biolink:LogOddsAnalysisResult
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/Study
+  label: biolink:Study
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/PhenotypicFeatureToPhenotypicFeatureAssociation
+  label: biolink:PhenotypicFeatureToPhenotypicFeatureAssociation
+  count: 1886452
+- uri: https://w3id.org/biolink/vocab/DiseaseToPhenotypicFeatureAssociation
+  label: biolink:DiseaseToPhenotypicFeatureAssociation
+  count: 406403
+- uri: https://w3id.org/biolink/vocab/EntityToDiseaseAssociation
+  label: biolink:EntityToDiseaseAssociation
+  count: 27424
+- uri: https://w3id.org/biolink/vocab/PhenotypicFeature
+  label: biolink:PhenotypicFeature
+  count: 6496
+- uri: https://w3id.org/biolink/vocab/Disease
+  label: biolink:Disease
+  count: 2297
+- uri: https://w3id.org/biolink/vocab/Dataset
+  label: biolink:Dataset
+  count: 3
 property_partitions:
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
+  count: 10126552
 - uri: https://w3id.org/biolink/vocab/category
   label: biolink:category
   count: 10126552
@@ -15,11 +45,20 @@ property_partitions:
 - uri: https://w3id.org/biolink/vocab/log_odds_ratio_95_ci
   label: biolink:log_odds_ratio_95_ci
   count: 5177770
-- uri: https://w3id.org/biolink/vocab/has_supporting_studies
-  label: biolink:has_supporting_studies
+- uri: https://w3id.org/biolink/vocab/concept_pair_count
+  label: biolink:concept_pair_count
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/log_odds_ratio
+  label: biolink:log_odds_ratio
   count: 2599159
 - uri: https://w3id.org/biolink/vocab/dataset_count
   label: biolink:dataset_count
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/total_sample_size
+  label: biolink:total_sample_size
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/concept_count_subject
+  label: biolink:concept_count_subject
   count: 2599159
 - uri: https://w3id.org/biolink/vocab/concept_count_object
   label: biolink:concept_count_object
@@ -27,17 +66,8 @@ property_partitions:
 - uri: https://w3id.org/biolink/vocab/supporting_data_set
   label: biolink:supporting_data_set
   count: 2599159
-- uri: https://w3id.org/biolink/vocab/concept_count_subject
-  label: biolink:concept_count_subject
-  count: 2599159
-- uri: https://w3id.org/biolink/vocab/log_odds_ratio
-  label: biolink:log_odds_ratio
-  count: 2599159
-- uri: https://w3id.org/biolink/vocab/concept_pair_count
-  label: biolink:concept_pair_count
-  count: 2599159
-- uri: https://w3id.org/biolink/vocab/total_sample_size
-  label: biolink:total_sample_size
+- uri: https://w3id.org/biolink/vocab/has_supporting_studies
+  label: biolink:has_supporting_studies
   count: 2599159
 - uri: https://w3id.org/biolink/vocab/predicate
   label: biolink:predicate
