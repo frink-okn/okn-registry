@@ -3,13 +3,14 @@
 #+   - federation
 
 PREFIX sdo: <https://schema.org/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wdtn: <http://www.wikidata.org/prop/direct-normalized/>
 PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX schema: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
+PREFIX bibo: <http://purl.org/ontology/bibo/doi>
+PREFIX schema: <https://purl.org/okn/frink/kg/nasa-gesdisc/schema/>
 SELECT ?item ?identifier ?title
 WHERE {
 	?Publication schema:USES_DATASET <https://nasa-gesdisc.proto-okn.net/kg/node/186> .
-    ?Publication dct:identifier ?identifier ; sdo:title ?title .
-    ?item wdt:P356 ?identifier .
+    ?Publication bibo:doi ?identifier ; sdo:title ?title .
+    ?item wdtn:P356 ?identifier .
 }
 LIMIT 25
