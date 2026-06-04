@@ -2,10 +2,10 @@
 #+ tags:
 #+   - nasa-gesdisc-kg
 
-PREFIX schema: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
+PREFIX schema: <https://purl.org/okn/frink/kg/nasa-gesdisc/schema/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?ScienceKeyword (COUNT (DISTINCT ?Publication) AS ?PublicationCount)
-WHERE { 
+WHERE {
         ?Publication schema:USES_DATASET ?Dataset .
         ?Dataset schema:HAS_SCIENCEKEYWORD ?Keyword .
         ?Keyword rdfs:label ?ScienceKeyword
