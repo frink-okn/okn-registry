@@ -3,7 +3,7 @@ distinct_subjects: 10126552
 distinct_objects: 10702397
 properties: 16
 classes: 9
-last_checked: '2026-05-21'
+last_checked: '2026-06-08'
 class_partitions:
 - uri: https://w3id.org/biolink/vocab/ConceptCountAnalysisResult
   label: biolink:ConceptCountAnalysisResult
