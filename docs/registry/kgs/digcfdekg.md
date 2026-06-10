@@ -16,6 +16,7 @@ contacts:
   - email: burtt@broadinstitute.org
     github: ""
     label: "Noël Burtt"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 The CFDE REVEAL Knowledge Graph is a statistically inferred genomic evidence graph to integrate and disseminate knowledge within the Common Fund Data Ecosystem (CFDE).
 
