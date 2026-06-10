@@ -17,7 +17,8 @@ contacts:
   label: "Andrew Su"
 - email: plwhetzel@gmail.com
   github: "twhetzel"
-  label: "Trish Whetzel" 
+  label: "Trish Whetzel"
+license: "https://creativecommons.org/publicdomain/zero/1.0/"
 ---
 
 The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated disease datasets. These include datasets from NIAID-funded repositories as well as globally-relevant infectious and immune-mediated disease (IID) repositories from NIH and beyond. The datasets include -omics data, clinical data, epidemiological data, pathogen-host interaction data, flow cytometry, and imaging.
