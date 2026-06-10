@@ -18,7 +18,7 @@ contacts:
   - email: "torsten.hahmann@maine.edu"
     github: "thahmann"
     label: "Torsten Hahmann"
-  
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 The SAWGraph Hydrology KG is part of the Safe Agricultural Products and Water Graph (SAWGraph) that facilities environmental regulators, water safety officials, and PFAS researchers to trace pollutant pathways, identify upstream contamination sources, assess downstream impacts from point sources, and determine which water wells are hydrologically connected to contaminated sites. 
 The Hydrology knowledge graph integrates surface water features including stream reaches, watersheds and waterbodies (e.g. lakes), groundwater features like aquifers and wells, and hydrological connectivity data to support contaminant tracing and water quality analysis. It is built from USGS’s National Hydrography Dataset (NHDPlus) and state well and aquifer datasets. 
