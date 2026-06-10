@@ -18,5 +18,6 @@ contacts:
 - email: cw2384@cumc.columbia.edu  
   github: ChunhuaWeng
   label: Chunhua Weng
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 [OARD-KG](https://github.com/WengLab-InformaticsResearch/oard-react) is an RDF triplestore which provides a SPARQL query endpoint for clinical associations between rare diseases and phenotypes derived from electronic health records.
