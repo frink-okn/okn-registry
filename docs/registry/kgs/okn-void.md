@@ -14,6 +14,7 @@ contact:
   email: balhoff@renci.org
   github: "balhoff"
   label: "Jim Balhoff"
+license: "https://creativecommons.org/publicdomain/zero/1.0/"
 ---
 This is a meta-graph collecting descriptive data for all the graphs that are part of the Proto-OKN. 
 Information about the kinds of classes and properties, and the number of triples used for each, 
