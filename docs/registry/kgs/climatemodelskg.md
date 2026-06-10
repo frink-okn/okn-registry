@@ -15,6 +15,7 @@ contact:
   email: climatepub4kg@tuprd.onmicrosoft.com
   github: "aayushacharya"
   label: "Aayush Acharya"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 Climate Models KG is a knowledge graph to support evaluation and development of climate models.
 
