@@ -16,6 +16,7 @@ contact:
   email: sergio.baranzini@ucsf.edu
   github: "baranzini-lab"
   label: "Sergio Baranzini"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 
 The spoke-okn (SPOKE Open Knowledge Network) KG is a comprehensive biomedical and environmental health knowledge graph that integrates diverse data across genomics, environmental science, and public health. It encompasses multiple primary entity types, including organisms, geographic locations (from countries to ZIP codes), genes, diseases, chemical compounds, social determinants of health, and environmental contexts. With detailed hierarchical coverage of geographic information, spoke-okn supports spatial analyses of health outcomes, environmental exposures, and socioeconomic factors across a range of geographic scales.
