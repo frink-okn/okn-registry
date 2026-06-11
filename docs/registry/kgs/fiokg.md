@@ -12,7 +12,7 @@ frink-options:
   lakefs-repo: fio-kg
   documentation-path: fio-kg
 contacts:
-  - email: katrina.schweikert@maine.edu	  
+  - email: katrina.schweikert@maine.edu
     github: "kschweikert"
     label: "Katrina Schweikert"
   - email: "torsten.hahmann@maine.edu"
