@@ -14,5 +14,6 @@ contact:
   email: lew.lefton@gmail.com  
   github: ""
   label: "Lew Lefton"
+license: "https://creativecommons.org/publicdomain/zero/1.0/"
 ---
 This Proto-OKN copy of [SemOpenAlex](https://semopenalex.org/) is provided by the NSF [CollabNext](https://collabnext.io) project.
