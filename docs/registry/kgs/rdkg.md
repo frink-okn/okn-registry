@@ -11,6 +11,7 @@ contacts:
   - email: jinlian.wang@uth.tmc.edu
     github: wnagjl99
     label: Jinlian Wang
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 
 Rare Disease Knowledge Graph (RDKG) is an open knowledge graph that harmonizes rare disease entities and their cross-references to major biomedical terminologies. It is designed to support rare disease knowledge discovery, entity linking across sources, and downstream analytics for evidence synthesis.
