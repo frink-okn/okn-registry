@@ -18,6 +18,7 @@ contacts:
   - email: "scottgdaniel@gmail.com"
     github: scottgdaniel
     label: "Scott Daniel"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 SCALES is an integrated justice platform to connect criminal justice data across data silos.
 
