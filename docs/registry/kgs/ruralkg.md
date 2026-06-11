@@ -15,6 +15,7 @@ contact:
   email: jiaqi.gong@ua.edu
   github: "SAIL-UA"
   label: "Jiaqi Gong"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience.
 
