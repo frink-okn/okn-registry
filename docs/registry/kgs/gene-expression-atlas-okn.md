@@ -17,7 +17,8 @@ contacts:
   label: "Andrew Su"
 - email: plwhetzel@gmail.com
   github: "twhetzel"
-  label: "Trish Whetzel" 
+  label: "Trish Whetzel"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 
 Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
