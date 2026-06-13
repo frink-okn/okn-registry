@@ -7,15 +7,14 @@ stats: https://registry.okn.us/kg-stats/maudekg
 homepage: https://github.com/Prabhadeus/Proto-OKN
 sparql: https://apps.okn.us/maudekg/sparql
 tpf: https://apps.okn.us/ldf/maudekg
-
 frink-options:
   lakefs-repo: maude-kg
   documentation-path: maudekg
-
 contacts:
   - email: psingh37@pride.hofstra.edu
     github: Prabhadeus
     label: Prabhjot Singh
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 
 The MAUDE Knowledge Graph models FDA MAUDE adverse event reports using an ontology-first RDF design. Data is retrieved from the openFDA API using standardized FDA product codes and transformed into RDF/Turtle format. The graph enables structured querying of adverse event data through SPARQL and supports downstream statistical analysis of medical device safety patterns.
