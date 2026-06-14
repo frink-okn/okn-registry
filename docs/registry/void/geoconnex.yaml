@@ -3,7 +3,7 @@ distinct_subjects: 71430662
 distinct_objects: 135184264
 properties: 90
 classes: 79
-last_checked: '2026-05-21'
+last_checked: '2026-06-14'
 class_partitions:
 - uri: https://schema.org/Dataset
   label: schema:Dataset
@@ -35,11 +35,11 @@ class_partitions:
 - uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/GW
   label: GW
   count: 1435538
-- uri: http://gnis-ld.org/lod/gnis/ontology/Feature
-  label: Feature
-  count: 969026
 - uri: http://www.opengis.net/ont/geosparql#Geometry
   label: geo:Geometry
+  count: 969026
+- uri: http://gnis-ld.org/lod/gnis/ontology/Feature
+  label: Feature
   count: 969026
 - uri: schema:GeoCoordinates
   label: schema:GeoCoordinates
@@ -65,11 +65,11 @@ class_partitions:
 - uri: http://www.opengis.net/ont/sf#LineString
   label: sf:LineString
   count: 34084
-- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_WaterBody
-  label: hyf:HY_WaterBody
-  count: 34082
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_FlowPath
   label: hyf:HY_FlowPath
+  count: 34082
+- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_WaterBody
+  label: hyf:HY_WaterBody
   count: 34082
 - uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/SP
   label: SP
@@ -233,11 +233,11 @@ class_partitions:
 - uri: http://www.opengis.net/ont/sf#GeometryCollection
   label: sf:GeometryCollection
   count: 3
-- uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/FA-AWL
-  label: FA-AWL
-  count: 2
 - uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/LA-PLY
   label: LA-PLY
+  count: 2
+- uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/FA-AWL
+  label: FA-AWL
   count: 2
 - uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/LA-VOL
   label: LA-VOL
@@ -267,11 +267,11 @@ property_partitions:
 - uri: https://schema.org/temporalCoverage
   label: schema:temporalCoverage
   count: 23613966
-- uri: https://schema.org/encodingFormat
-  label: schema:encodingFormat
-  count: 23484830
 - uri: https://schema.org/contentUrl
   label: schema:contentUrl
+  count: 23484830
+- uri: https://schema.org/encodingFormat
+  label: schema:encodingFormat
   count: 23484830
 - uri: http://purl.org/dc/terms/conformsTo
   label: dct:conformsTo
@@ -285,11 +285,11 @@ property_partitions:
 - uri: https://schema.org/propertyID
   label: schema:propertyID
   count: 4420144
-- uri: http://www.opengis.net/ont/geosparql#hasGeometry
-  label: geo:hasGeometry
-  count: 3788137
 - uri: http://www.opengis.net/ont/geosparql#asWKT
   label: geo:asWKT
+  count: 3788137
+- uri: http://www.opengis.net/ont/geosparql#hasGeometry
+  label: geo:hasGeometry
   count: 3788137
 - uri: https://schema.org/geo
   label: schema:geo
@@ -315,11 +315,11 @@ property_partitions:
 - uri: https://schema.org/containedInPlace
   label: schema:containedInPlace
   count: 1941295
-- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_IndirectPosition
-  label: hyf:HY_IndirectPosition
-  count: 1807475
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/referencedPosition
   label: hyf:referencedPosition
+  count: 1807475
+- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_IndirectPosition
+  label: hyf:HY_IndirectPosition
   count: 1807475
 - uri: http://www.opengis.net/ont/geosparql#sfWithin
   label: geo:sfWithin
@@ -333,23 +333,11 @@ property_partitions:
 - uri: https://schema.org/measurementTechnique
   label: schema:measurementTechnique
   count: 1071496
-- uri: http://gnis-ld.org/lod/gnis/ontology/dateFeatureCreated
-  label: dateFeatureCreated
-  count: 969026
 - uri: http://purl.org/dc/terms/created
   label: dct:created
   count: 969026
-- uri: http://gnis-ld.org/lod/gnis/ontology/dateFeatureEdited
-  label: dateFeatureEdited
-  count: 969026
-- uri: http://gnis-ld.org/lod/gnis/ontology/officialName
-  label: officialName
-  count: 969026
-- uri: http://gnis-ld.org/lod/gnis/ontology/featureId
-  label: featureId
-  count: 969026
-- uri: http://gnis-ld.org/lod/gnis/ontology/state
-  label: state
+- uri: http://gnis-ld.org/lod/gnis/ontology/dateFeatureCreated
+  label: dateFeatureCreated
   count: 969026
 - uri: http://gnis-ld.org/lod/gnis/ontology/county
   label: county
@@ -357,11 +345,23 @@ property_partitions:
 - uri: http://purl.org/dc/terms/modified
   label: dct:modified
   count: 969026
-- uri: schema:longitude
-  label: schema:longitude
-  count: 833051
+- uri: http://gnis-ld.org/lod/gnis/ontology/featureId
+  label: featureId
+  count: 969026
+- uri: http://gnis-ld.org/lod/gnis/ontology/state
+  label: state
+  count: 969026
+- uri: http://gnis-ld.org/lod/gnis/ontology/dateFeatureEdited
+  label: dateFeatureEdited
+  count: 969026
+- uri: http://gnis-ld.org/lod/gnis/ontology/officialName
+  label: officialName
+  count: 969026
 - uri: schema:latitude
   label: schema:latitude
+  count: 833051
+- uri: schema:longitude
+  label: schema:longitude
   count: 833051
 - uri: http://gnis-ld.org/lod/gnis/ontology/description
   label: description
@@ -429,11 +429,11 @@ property_partitions:
 - uri: https://schema.org/isBasedOn
   label: schema:isBasedOn
   count: 49424
-- uri: schema:line
-  label: schema:line
-  count: 34082
 - uri: https://www.wikidata.org/wiki/Property:P2043
   label: Property:P2043
+  count: 34082
+- uri: schema:line
+  label: schema:line
   count: 34082
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/downstreamWaterbody
   label: hyf:downstreamWaterbody
@@ -444,14 +444,14 @@ property_partitions:
 - uri: https://schema.org/head_nhdpv1_comid
   label: schema:head_nhdpv1_comid
   count: 20050
+- uri: https://schema.org/outlet_rf1id
+  label: schema:outlet_rf1id
+  count: 20050
 - uri: https://schema.org/head_rf1id
   label: schema:head_rf1id
   count: 20050
 - uri: https://schema.org/outlet_nhdpv1_comid
   label: schema:outlet_nhdpv1_comid
-  count: 20050
-- uri: https://schema.org/outlet_rf1id
-  label: schema:outlet_rf1id
   count: 20050
 - uri: https://schema.org/sname
   label: schema:sname
