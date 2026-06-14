@@ -1,15 +1,15 @@
-triples: 58392097
+triples: 58394394
 distinct_subjects: 10126552
-distinct_objects: 10702397
-properties: 16
+distinct_objects: 10702398
+properties: 17
 classes: 9
-last_checked: '2026-05-21'
+last_checked: '2026-06-14'
 class_partitions:
-- uri: https://w3id.org/biolink/vocab/ConceptCountAnalysisResult
-  label: biolink:ConceptCountAnalysisResult
-  count: 2599159
 - uri: https://w3id.org/biolink/vocab/LogOddsAnalysisResult
   label: biolink:LogOddsAnalysisResult
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/ConceptCountAnalysisResult
+  label: biolink:ConceptCountAnalysisResult
   count: 2599159
 - uri: https://w3id.org/biolink/vocab/Study
   label: biolink:Study
@@ -33,11 +33,11 @@ class_partitions:
   label: biolink:Dataset
   count: 3
 property_partitions:
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-  label: rdf:type
-  count: 10126552
 - uri: https://w3id.org/biolink/vocab/category
   label: biolink:category
+  count: 10126552
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
   count: 10126552
 - uri: https://w3id.org/biolink/vocab/has_study_results
   label: biolink:has_study_results
@@ -45,6 +45,9 @@ property_partitions:
 - uri: https://w3id.org/biolink/vocab/log_odds_ratio_95_ci
   label: biolink:log_odds_ratio_95_ci
   count: 5177770
+- uri: https://w3id.org/biolink/vocab/has_supporting_studies
+  label: biolink:has_supporting_studies
+  count: 2599159
 - uri: https://w3id.org/biolink/vocab/concept_pair_count
   label: biolink:concept_pair_count
   count: 2599159
@@ -66,18 +69,18 @@ property_partitions:
 - uri: https://w3id.org/biolink/vocab/supporting_data_set
   label: biolink:supporting_data_set
   count: 2599159
-- uri: https://w3id.org/biolink/vocab/has_supporting_studies
-  label: biolink:has_supporting_studies
-  count: 2599159
 - uri: https://w3id.org/biolink/vocab/predicate
   label: biolink:predicate
-  count: 2320279
-- uri: https://w3id.org/biolink/vocab/object
-  label: biolink:object
   count: 2320279
 - uri: https://w3id.org/biolink/vocab/subject
   label: biolink:subject
   count: 2320279
+- uri: https://w3id.org/biolink/vocab/object
+  label: biolink:object
+  count: 2320279
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
   count: 8796
+- uri: http://www.geneontology.org/formats/oboInOwl#inSubset
+  label: oboInOwl:inSubset
+  count: 2297
