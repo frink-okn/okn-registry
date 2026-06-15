@@ -3,7 +3,7 @@ distinct_subjects: 7117289
 distinct_objects: 7520059
 properties: 107
 classes: 90
-last_checked: '2026-05-21'
+last_checked: '2026-06-15'
 class_partitions:
 - uri: http://qudt.org/schema/qudt/QuantityValue
   label: qudt:QuantityValue
@@ -113,11 +113,11 @@ class_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#Rotation
   label: sockg:Rotation
   count: 66
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_2
-  label: kwg-ont:AdministrativeRegion_2
-  count: 62
 - uri: http://www.w3.org/2002/07/owl#ObjectProperty
   label: owl:ObjectProperty
+  count: 62
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_2
+  label: kwg-ont:AdministrativeRegion_2
   count: 62
 - uri: https://idir.uta.edu/sockg-ontology#TillageMethod
   label: sockg:TillageMethod
@@ -131,11 +131,11 @@ class_partitions:
 - uri: https://lod.nal.usda.gov/nalt/7140
   label: nalt:7140
   count: 48
-- uri: http://qudt.org/schema/qudt/Unit
-  label: qudt:Unit
-  count: 41
 - uri: http://www.opengis.net/ont/geosparql#Geometry
   label: geo:Geometry
+  count: 41
+- uri: http://qudt.org/schema/qudt/Unit
+  label: qudt:Unit
   count: 41
 - uri: https://idir.uta.edu/sockg-ontology#PesticideTarget
   label: sockg:PesticideTarget
@@ -191,17 +191,17 @@ class_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#Tillage
   label: sockg:Tillage
   count: 8
-- uri: https://idir.uta.edu/sockg-ontology#SpeciesMix
-  label: sockg:SpeciesMix
+- uri: https://idir.uta.edu/sockg-ontology#Timing
+  label: sockg:Timing
   count: 7
 - uri: https://idir.uta.edu/sockg-ontology#FundingSource
   label: sockg:FundingSource
   count: 7
+- uri: https://idir.uta.edu/sockg-ontology#SpeciesMix
+  label: sockg:SpeciesMix
+  count: 7
 - uri: https://idir.uta.edu/sockg-ontology#ChamberPlacement
   label: sockg:ChamberPlacement
-  count: 7
-- uri: https://idir.uta.edu/sockg-ontology#Timing
-  label: sockg:Timing
   count: 7
 - uri: https://idir.uta.edu/sockg-ontology#PlantingMethod
   label: sockg:PlantingMethod
@@ -212,17 +212,26 @@ class_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#AnimalClass
   label: sockg:AnimalClass
   count: 4
-- uri: https://idir.uta.edu/sockg-ontology#Thesis
-  label: sockg:Thesis
-  count: 4
 - uri: https://idir.uta.edu/sockg-ontology#FertilizerAmendment
   label: sockg:FertilizerAmendment
   count: 4
 - uri: https://idir.uta.edu/sockg-ontology#Irrigation
   label: sockg:Irrigation
   count: 4
+- uri: https://idir.uta.edu/sockg-ontology#Thesis
+  label: sockg:Thesis
+  count: 4
+- uri: https://idir.uta.edu/sockg-ontology#ResidueRemoval
+  label: sockg:ResidueRemoval
+  count: 3
+- uri: https://idir.uta.edu/sockg-ontology#StartStopInterval
+  label: sockg:StartStopInterval
+  count: 3
 - uri: https://idir.uta.edu/sockg-ontology#Project
   label: sockg:Project
+  count: 3
+- uri: https://idir.uta.edu/sockg-ontology#Abstract
+  label: sockg:Abstract
   count: 3
 - uri: https://idir.uta.edu/sockg-ontology#GrazingRate
   label: sockg:GrazingRate
@@ -233,20 +242,11 @@ class_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#Proceedings
   label: sockg:Proceedings
   count: 3
-- uri: https://idir.uta.edu/sockg-ontology#StartStopInterval
-  label: sockg:StartStopInterval
-  count: 3
-- uri: https://idir.uta.edu/sockg-ontology#ResidueRemoval
-  label: sockg:ResidueRemoval
-  count: 3
-- uri: https://idir.uta.edu/sockg-ontology#Abstract
-  label: sockg:Abstract
-  count: 3
-- uri: https://idir.uta.edu/sockg-ontology#LossesOrDeposition
-  label: sockg:LossesOrDeposition
-  count: 2
 - uri: https://idir.uta.edu/sockg-ontology#BroadleafOrGrass
   label: sockg:BroadleafOrGrass
+  count: 2
+- uri: https://idir.uta.edu/sockg-ontology#LossesOrDeposition
+  label: sockg:LossesOrDeposition
   count: 2
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_0
   label: kwg-ont:AdministrativeRegion_0
@@ -263,8 +263,8 @@ class_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#OtherEvents
   label: sockg:OtherEvents
   count: 2
-- uri: http://www.w3.org/2000/01/rdf-schema#Datatype
-  label: rdfs:Datatype
+- uri: https://idir.uta.edu/sockg-ontology#Report
+  label: sockg:Report
   count: 1
 - uri: https://idir.uta.edu/sockg-ontology#PopularArticle
   label: sockg:PopularArticle
@@ -272,8 +272,8 @@ class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Ontology
   label: owl:Ontology
   count: 1
-- uri: https://idir.uta.edu/sockg-ontology#Report
-  label: sockg:Report
+- uri: http://www.w3.org/2000/01/rdf-schema#Datatype
+  label: rdfs:Datatype
   count: 1
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
@@ -285,14 +285,14 @@ property_partitions:
 - uri: http://qudt.org/schema/qudt/numericValue
   label: qudt:numericValue
   count: 3381570
-- uri: https://idir.uta.edu/sockg-ontology#of
-  label: sockg:of
-  count: 3180012
 - uri: http://qudt.org/schema/qudt/quantityValue
   label: qudt:quantityValue
   count: 3180012
 - uri: https://idir.uta.edu/sockg-ontology#hasMeasurement
   label: sockg:hasMeasurement
+  count: 3180012
+- uri: https://idir.uta.edu/sockg-ontology#of
+  label: sockg:of
   count: 3180012
 - uri: http://purl.org/dc/terms/date
   label: dct:date
@@ -312,11 +312,11 @@ property_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#hasCrop
   label: sockg:hasCrop
   count: 278818
-- uri: https://idir.uta.edu/sockg-ontology#badValueFlag
-  label: sockg:badValueFlag
-  count: 149774
 - uri: https://idir.uta.edu/sockg-ontology#weatherAt
   label: sockg:weatherAt
+  count: 149774
+- uri: https://idir.uta.edu/sockg-ontology#badValueFlag
+  label: sockg:badValueFlag
   count: 149774
 - uri: https://idir.uta.edu/sockg-ontology#hasChamberPlacement
   label: sockg:hasChamberPlacement
@@ -324,11 +324,11 @@ property_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#startDate
   label: sockg:startDate
   count: 107758
-- uri: https://idir.uta.edu/sockg-ontology#upperDepth
-  label: sockg:upperDepth
-  count: 100779
 - uri: https://idir.uta.edu/sockg-ontology#lowerDepth
   label: sockg:lowerDepth
+  count: 100779
+- uri: https://idir.uta.edu/sockg-ontology#upperDepth
+  label: sockg:upperDepth
   count: 100779
 - uri: https://idir.uta.edu/sockg-ontology#hasGrowthStage
   label: sockg:hasGrowthStage
@@ -339,11 +339,11 @@ property_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#unitHasAmendment
   label: sockg:unitHasAmendment
   count: 47106
-- uri: https://idir.uta.edu/sockg-ontology#hasTillageEvent
-  label: sockg:hasTillageEvent
-  count: 27450
 - uri: https://idir.uta.edu/sockg-ontology#treatmentHasTillageManagement
   label: sockg:treatmentHasTillageManagement
+  count: 27450
+- uri: https://idir.uta.edu/sockg-ontology#hasTillageEvent
+  label: sockg:hasTillageEvent
   count: 27450
 - uri: https://idir.uta.edu/sockg-ontology#unitHasTillageManagement
   label: sockg:unitHasTillageManagement
@@ -399,11 +399,11 @@ property_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#usesIrrigation
   label: sockg:usesIrrigation
   count: 6063
-- uri: https://idir.uta.edu/sockg-ontology#treatmentHasGrowthStageManagement
-  label: sockg:treatmentHasGrowthStageManagement
-  count: 5148
 - uri: https://idir.uta.edu/sockg-ontology#unitHasGrowthStageManagement
   label: sockg:unitHasGrowthStageManagement
+  count: 5148
+- uri: https://idir.uta.edu/sockg-ontology#treatmentHasGrowthStageManagement
+  label: sockg:treatmentHasGrowthStageManagement
   count: 5148
 - uri: http://purl.org/dc/terms/identifier
   label: dct:identifier
@@ -468,14 +468,14 @@ property_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#irrigation
   label: sockg:irrigation
   count: 774
-- uri: https://idir.uta.edu/sockg-ontology#usesResidueRemoval
-  label: sockg:usesResidueRemoval
+- uri: https://idir.uta.edu/sockg-ontology#hasTreatment
+  label: sockg:hasTreatment
   count: 769
 - uri: https://idir.uta.edu/sockg-ontology#organicManagement
   label: sockg:organicManagement
   count: 769
-- uri: https://idir.uta.edu/sockg-ontology#hasTreatment
-  label: sockg:hasTreatment
+- uri: https://idir.uta.edu/sockg-ontology#usesResidueRemoval
+  label: sockg:usesResidueRemoval
   count: 769
 - uri: https://idir.uta.edu/sockg-ontology#hasRotation
   label: sockg:hasRotation
@@ -495,23 +495,23 @@ property_partitions:
 - uri: https://idir.uta.edu/sockg-ontology#cites
   label: sockg:cites
   count: 177
-- uri: http://purl.org/dc/terms/bibliographicCitation
-  label: dct:bibliographicCitation
-  count: 177
 - uri: http://purl.org/dc/terms/issued
   label: dct:issued
+  count: 177
+- uri: http://purl.org/dc/terms/bibliographicCitation
+  label: dct:bibliographicCitation
   count: 177
 - uri: http://purl.org/dc/terms/creator
   label: dct:creator
   count: 173
-- uri: https://schema.org/familyName
-  label: schema:familyName
-  count: 158
 - uri: https://schema.org/workLocation
   label: schema:workLocation
   count: 158
 - uri: https://schema.org/givenName
   label: schema:givenName
+  count: 158
+- uri: https://schema.org/familyName
+  label: schema:familyName
   count: 158
 - uri: https://schema.org/hasOccupation
   label: schema:hasOccupation
@@ -588,11 +588,11 @@ property_partitions:
 - uri: http://purl.org/dc/terms/isPartOf
   label: dct:isPartOf
   count: 2
-- uri: http://www.w3.org/2002/07/owl#equivalentProperty
-  label: owl:equivalentProperty
-  count: 1
 - uri: http://www.w3.org/2002/07/owl#disjointWith
   label: owl:disjointWith
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#equivalentProperty
+  label: owl:equivalentProperty
   count: 1
 - uri: http://www.w3.org/2002/07/owl#inverseOf
   label: owl:inverseOf

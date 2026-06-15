@@ -3,7 +3,7 @@ distinct_subjects: 72376
 distinct_objects: 178925
 properties: 22
 classes: 13
-last_checked: '2026-05-21'
+last_checked: '2026-06-15'
 class_partitions:
 - uri: https://w3id.org/biolink/vocab/Disease
   label: biolink:Disease
@@ -57,11 +57,11 @@ property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 72376
-- uri: https://w3id.org/biolink/vocab/id
-  label: biolink:id
-  count: 72368
 - uri: https://w3id.org/biolink/vocab/category
   label: biolink:category
+  count: 72368
+- uri: https://w3id.org/biolink/vocab/id
+  label: biolink:id
   count: 72368
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label

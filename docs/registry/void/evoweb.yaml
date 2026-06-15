@@ -1,9 +1,9 @@
-triples: 3306378
+triples: 3436180
 distinct_subjects: 18257
-distinct_objects: 3276779
-properties: 3
+distinct_objects: 3393426
+properties: 5
 classes: 1
-last_checked: '2026-05-21'
+last_checked: '2026-06-15'
 class_partitions:
 - uri: http://www.w3.org/2004/02/skos/core#Collection
   label: skos:Collection
@@ -12,6 +12,12 @@ property_partitions:
 - uri: http://www.w3.org/2004/02/skos/core#member
   label: skos:member
   count: 3269864
+- uri: https://purl.org/okn/frink/kg/evoweb/schema/secondaryComponent
+  label: secondaryComponent
+  count: 102882
+- uri: https://purl.org/okn/frink/kg/evoweb/schema/connectedTo
+  label: connectedTo
+  count: 26920
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
   count: 18257
