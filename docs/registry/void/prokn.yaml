@@ -3,7 +3,7 @@ distinct_subjects: 11873080
 distinct_objects: 8653756
 properties: 115
 classes: 25
-last_checked: '2026-05-21'
+last_checked: '2026-06-15'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
@@ -71,11 +71,11 @@ class_partitions:
 - uri: http://purl.obolibrary.org/obo/FBcv_0003016
   label: obo:FBcv_0003016
   count: 42
-- uri: http://purl.obolibrary.org/obo/NCIT_C231
-  label: obo:NCIT_C231
-  count: 7
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
   label: rdf:Property
+  count: 7
+- uri: http://purl.obolibrary.org/obo/NCIT_C231
+  label: obo:NCIT_C231
   count: 7
 - uri: https://www.w3.org/2002/07/owl#Class
   label: Class
@@ -87,14 +87,14 @@ property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 11886666
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
-  label: rdf:object
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
+  label: rdf:predicate
   count: 8910159
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
   label: rdf:subject
   count: 8910159
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
-  label: rdf:predicate
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
+  label: rdf:object
   count: 8910159
 - uri: http://schema.org/provider
   label: provider
@@ -126,11 +126,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002558
   label: obo:RO_0002558
   count: 687957
-- uri: https://biolink.github.io/biolink-model/provided_by
-  label: provided_by
-  count: 641467
 - uri: http://purl.org/dc/terms/date
   label: dct:date
+  count: 641467
+- uri: https://biolink.github.io/biolink-model/provided_by
+  label: provided_by
   count: 641467
 - uri: http://purl.obolibrary.org/obo/RO_0002434
   label: obo:RO_0002434
@@ -153,14 +153,14 @@ property_partitions:
 - uri: http://www.w3.org/2004/02/skos/core#exactMatch
   label: skos:exactMatch
   count: 301912
-- uri: https://research.bioinformatics.udel.edu/ProKN/rdf/deltaLog2Ratio
-  label: deltaLog2Ratio
+- uri: https://biolink.github.io/biolink-model/affected_by
+  label: affected_by
   count: 206671
 - uri: https://research.bioinformatics.udel.edu/ProKN/rdf/log2Ratio
   label: log2Ratio
   count: 206671
-- uri: https://biolink.github.io/biolink-model/affected_by
-  label: affected_by
+- uri: https://research.bioinformatics.udel.edu/ProKN/rdf/deltaLog2Ratio
+  label: deltaLog2Ratio
   count: 206671
 - uri: http://purl.obolibrary.org/obo/RO_0000056
   label: obo:RO_0000056
@@ -171,14 +171,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_C164806
   label: obo:NCIT_C164806
   count: 143024
-- uri: http://purl.uniprot.org/core/position
-  label: position
+- uri: http://purl.uniprot.org/core/Molecule
+  label: Molecule
   count: 135145
 - uri: http://purl.uniprot.org/core/category
   label: category
   count: 135145
-- uri: http://purl.uniprot.org/core/Molecule
-  label: Molecule
+- uri: http://purl.uniprot.org/core/position
+  label: position
   count: 135145
 - uri: http://purl.obolibrary.org/obo/RO_0002331
   label: obo:RO_0002331
@@ -234,11 +234,11 @@ property_partitions:
 - uri: http://purl.uniprot.org/core/annotation
   label: annotation
   count: 48534
-- uri: http://purl.obolibrary.org/obo/MI_0116
-  label: obo:MI_0116
-  count: 46179
 - uri: http://edamontology.org/data_1756
   label: data_1756
+  count: 46179
+- uri: http://purl.obolibrary.org/obo/MI_0116
+  label: obo:MI_0116
   count: 46179
 - uri: https://biolink.github.io/biolink-model/treats
   label: treats
@@ -312,11 +312,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002566
   label: obo:RO_0002566
   count: 2206
-- uri: http://purl.org/dc/terms/identifier
-  label: dct:identifier
-  count: 1986
 - uri: http://www.w3.org/ns/prov#wasAttributedTo
   label: prov:wasAttributedTo
+  count: 1986
+- uri: http://purl.org/dc/terms/identifier
+  label: dct:identifier
   count: 1986
 - uri: http://purl.uniprot.org/core/scientificName
   label: scientificName
@@ -327,14 +327,14 @@ property_partitions:
 - uri: http://purl.uniprot.org/core/part_of
   label: part_of
   count: 1482
+- uri: http://rs.tdwg.org/dwc/terms/taxonID
+  label: taxonID
+  count: 1215
 - uri: http://schema.org/name
   label: name
   count: 1215
 - uri: http://purl.uniprot.org/core/source
   label: source
-  count: 1215
-- uri: http://rs.tdwg.org/dwc/terms/taxonID
-  label: taxonID
   count: 1215
 - uri: http://purl.obolibrary.org/obo/RO_0002180
   label: obo:RO_0002180
@@ -420,9 +420,9 @@ property_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#isDefinedBy
   label: rdfs:isDefinedBy
   count: 2
-- uri: http://purl.uniprot.org/core/version
-  label: version
-  count: 1
 - uri: http://purl.uniprot.org/core/md5Checksum
   label: md5Checksum
+  count: 1
+- uri: http://purl.uniprot.org/core/version
+  label: version
   count: 1

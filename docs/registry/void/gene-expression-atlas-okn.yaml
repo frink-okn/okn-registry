@@ -3,7 +3,7 @@ distinct_subjects: 9985697
 distinct_objects: 9460861
 properties: 28
 classes: 16
-last_checked: '2026-05-21'
+last_checked: '2026-06-15'
 class_partitions:
 - uri: https://w3id.org/biolink/vocab/GeneExpressionMixin
   label: biolink:GeneExpressionMixin
@@ -96,14 +96,14 @@ property_partitions:
 - uri: https://w3id.org/biolink/vocab/has_attribute
   label: biolink:has_attribute
   count: 20916
-- uri: https://w3id.org/biolink/vocab/has_output
-  label: biolink:has_output
-  count: 14850
 - uri: http://purl.org/okn/wobd/contrast_id
   label: contrast_id
   count: 14850
 - uri: http://purl.org/okn/wobd/technology
   label: technology
+  count: 14850
+- uri: https://w3id.org/biolink/vocab/has_output
+  label: biolink:has_output
   count: 14850
 - uri: http://purl.org/okn/wobd/array_design
   label: array_design
@@ -111,14 +111,14 @@ property_partitions:
 - uri: http://purl.org/okn/wobd/source
   label: source
   count: 4668
-- uri: http://purl.org/okn/wobd/experimental_factors
-  label: experimental_factors
+- uri: http://purl.org/okn/wobd/project_title
+  label: project_title
   count: 4664
 - uri: http://purl.org/okn/wobd/submitter_name
   label: submitter_name
   count: 4664
-- uri: http://purl.org/okn/wobd/project_title
-  label: project_title
+- uri: http://purl.org/okn/wobd/experimental_factors
+  label: experimental_factors
   count: 4664
 - uri: https://w3id.org/biolink/vocab/description
   label: biolink:description

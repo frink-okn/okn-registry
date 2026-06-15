@@ -1,43 +1,43 @@
 triples: 1472753
 distinct_subjects: 150351
 distinct_objects: 718244
-properties: 24
+properties: 25
 classes: 7
-last_checked: '2026-05-21'
+last_checked: '2026-06-15'
 class_partitions:
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/Publication
-  label: nasa-gesdisc:Publication
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Publication
+  label: Publication
   count: 138704
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/Dataset
-  label: nasa-gesdisc:Dataset
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Dataset
+  label: Dataset
   count: 8058
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/ScienceKeyword
-  label: nasa-gesdisc:ScienceKeyword
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/ScienceKeyword
+  label: ScienceKeyword
   count: 1609
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/Instrument
-  label: nasa-gesdisc:Instrument
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Instrument
+  label: Instrument
   count: 921
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/Platform
-  label: nasa-gesdisc:Platform
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Platform
+  label: Platform
   count: 455
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/Project
-  label: nasa-gesdisc:Project
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Project
+  label: Project
   count: 415
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/DataCenter
-  label: nasa-gesdisc:DataCenter
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/DataCenter
+  label: DataCenter
   count: 189
 property_partitions:
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/CITES
-  label: nasa-gesdisc:CITES
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/CITES
+  label: CITES
   count: 208616
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/globalId
-  label: nasa-gesdisc:globalId
-  count: 150351
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 150351
 - uri: http://purl.org/dc/terms/identifier
   label: dct:identifier
+  count: 150351
+- uri: http://purl.org/ontology/bibo/doi
+  label: bibo:doi
   count: 146762
 - uri: https://schema.org/abstract
   label: schema:abstract
@@ -48,26 +48,23 @@ property_partitions:
 - uri: http://www.w3.org/2006/time#year
   label: time:year
   count: 138053
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/HAS_APPLIEDRESEARCHAREA
-  label: nasa-gesdisc:HAS_APPLIEDRESEARCHAREA
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/HAS_APPLIEDRESEARCHAREA
+  label: HAS_APPLIEDRESEARCHAREA
   count: 121553
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/authors
-  label: nasa-gesdisc:authors
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/authors
+  label: authors
   count: 109517
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/USES_DATASET
-  label: nasa-gesdisc:USES_DATASET
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/USES_DATASET
+  label: USES_DATASET
   count: 44354
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/HAS_SCIENCEKEYWORD
-  label: nasa-gesdisc:HAS_SCIENCEKEYWORD
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/HAS_SCIENCEKEYWORD
+  label: HAS_SCIENCEKEYWORD
   count: 25553
-- uri: http://purl.org/dc/terms/date
-  label: dct:date
-  count: 12796
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/HAS_PLATFORM
-  label: nasa-gesdisc:HAS_PLATFORM
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/HAS_PLATFORM
+  label: HAS_PLATFORM
   count: 11944
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/HAS_DATASET
-  label: nasa-gesdisc:HAS_DATASET
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/HAS_DATASET
+  label: HAS_DATASET
   count: 11698
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
@@ -75,27 +72,33 @@ property_partitions:
 - uri: http://purl.org/dc/terms/subject
   label: dct:subject
   count: 9843
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/daac
-  label: nasa-gesdisc:daac
+- uri: http://purl.org/dc/terms/accrualPeriodicity
+  label: dct:accrualPeriodicity
   count: 8058
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/temporalFrequency
-  label: nasa-gesdisc:temporalFrequency
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/daac
+  label: daac
   count: 8058
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/cmrId
-  label: nasa-gesdisc:cmrId
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/cmrId
+  label: cmrId
   count: 8058
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/OF_PROJECT
-  label: nasa-gesdisc:OF_PROJECT
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/OF_PROJECT
+  label: OF_PROJECT
   count: 8031
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/HAS_INSTRUMENT
-  label: nasa-gesdisc:HAS_INSTRUMENT
+- uri: https://schema.org/startDate
+  label: schema:startDate
+  count: 7959
+- uri: https://schema.org/endDate
+  label: schema:endDate
+  count: 4837
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/HAS_INSTRUMENT
+  label: HAS_INSTRUMENT
   count: 2631
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/HAS_SUBCATEGORY
-  label: nasa-gesdisc:HAS_SUBCATEGORY
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/HAS_SUBCATEGORY
+  label: HAS_SUBCATEGORY
   count: 1823
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/Type
-  label: nasa-gesdisc:Type
+- uri: http://purl.org/dc/terms/type
+  label: dct:type
   count: 448
-- uri: https://nasa-gesdisc.proto-okn.net/kg/schema/url
-  label: nasa-gesdisc:url
+- uri: https://schema.org/url
+  label: schema:url
   count: 189

@@ -3,7 +3,7 @@ distinct_subjects: 22883
 distinct_objects: 41410
 properties: 37
 classes: 14
-last_checked: '2026-05-21'
+last_checked: '2026-06-15'
 class_partitions:
 - uri: http://schema.org/Review
   label: Review
@@ -14,14 +14,14 @@ class_partitions:
 - uri: http://schema.org/ServiceChannel
   label: ServiceChannel
   count: 2642
-- uri: http://schema.org/ContactPoint
-  label: ContactPoint
+- uri: http://schema.org/Service
+  label: Service
   count: 1321
 - uri: http://schema.org/TextObject
   label: TextObject
   count: 1321
-- uri: http://schema.org/Service
-  label: Service
+- uri: http://schema.org/ContactPoint
+  label: ContactPoint
   count: 1321
 - uri: http://schema.org/Place
   label: Place
@@ -99,11 +99,11 @@ property_partitions:
 - uri: http://schema.org/areaServed
   label: areaServed
   count: 1321
-- uri: http://schema.org/identifier
-  label: identifier
-  count: 1321
 - uri: http://schema.org/provider
   label: provider
+  count: 1321
+- uri: http://schema.org/identifier
+  label: identifier
   count: 1321
 - uri: http://schema.org/telephone
   label: telephone
@@ -111,14 +111,14 @@ property_partitions:
 - uri: http://schema.org/address
   label: address
   count: 1051
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
-  label: kwg-ont:sfWithin
-  count: 1045
 - uri: http://schema.org/containedInPlace
   label: containedInPlace
   count: 1045
 - uri: http://schema.org/postalCode
   label: postalCode
+  count: 1045
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
+  label: kwg-ont:sfWithin
   count: 1045
 - uri: http://schema.org/longitude
   label: longitude
@@ -132,11 +132,11 @@ property_partitions:
 - uri: http://schema.org/hasMap
   label: hasMap
   count: 1000
-- uri: http://www.opengis.net/ont/geosparql#defaultGeometry
-  label: geo:defaultGeometry
-  count: 996
 - uri: http://www.opengis.net/ont/geosparql#hasGeometry
   label: geo:hasGeometry
+  count: 996
+- uri: http://www.opengis.net/ont/geosparql#defaultGeometry
+  label: geo:defaultGeometry
   count: 996
 - uri: http://schema.org/codeValue
   label: codeValue

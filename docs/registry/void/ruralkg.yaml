@@ -1,9 +1,9 @@
-triples: 632849
-distinct_subjects: 32765
-distinct_objects: 76038
-properties: 48
-classes: 13
-last_checked: '2026-05-21'
+triples: 931549
+distinct_subjects: 67050
+distinct_objects: 189251
+properties: 57
+classes: 14
+last_checked: '2026-06-15'
 class_partitions:
 - uri: http://sail.ua.edu/ruralkg/variable/NSDUHAnswer
   label: ruralkg-var:NSDUHAnswer
@@ -41,6 +41,9 @@ class_partitions:
 - uri: http://sail.ua.edu/ruralkg/settlementtype/RUCC
   label: ruralkg-settlement:RUCC
   count: 10
+- uri: http://www.w3.org/2002/07/owl#AnnotationProperty
+  label: owl:AnnotationProperty
+  count: 5
 - uri: http://www.w3.org/2002/07/owl#Ontology
   label: owl:Ontology
   count: 1
@@ -48,32 +51,56 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/treatment/providesService
   label: ruralkg-treatment:providesService
   count: 442841
+- uri: https://schema.org/name
+  label: schema:name
+  count: 43577
+- uri: http://purl.org/dc/terms/identifier
+  label: dct:identifier
+  count: 37443
+- uri: http://sail.ua.edu/ruralkg/property/stateFipsCode
+  label: stateFipsCode
+  count: 34280
+- uri: http://sail.ua.edu/ruralkg/property/countyFipsCode
+  label: countyFipsCode
+  count: 34246
+- uri: https://schema.org/containedInPlace
+  label: schema:containedInPlace
+  count: 34246
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 32758
-- uri: http://sail.ua.edu/ruralkg/variable/answerCode
-  label: ruralkg-var:answerCode
-  count: 17181
+  count: 32763
+- uri: https://schema.org/longitude
+  label: schema:longitude
+  count: 31002
+- uri: https://schema.org/latitude
+  label: schema:latitude
+  count: 31002
+- uri: http://sail.ua.edu/ruralkg/property/cityPopulationRank
+  label: cityPopulationRank
+  count: 30985
+- uri: http://sail.ua.edu/ruralkg/property/gnisFeatureId
+  label: gnisFeatureId
+  count: 30971
 - uri: http://sail.ua.edu/ruralkg/variable/answerContent
   label: ruralkg-var:answerContent
+  count: 17181
+- uri: http://sail.ua.edu/ruralkg/variable/answerCode
+  label: ruralkg-var:answerCode
   count: 17181
 - uri: http://sail.ua.edu/ruralkg/variable/hasAnswer
   label: ruralkg-var:hasAnswer
   count: 17181
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
-  count: 12337
-- uri: https://schema.org/name
-  label: schema:name
-  count: 9274
+  count: 12342
+- uri: https://schema.org/postalCode
+  label: schema:postalCode
+  count: 9037
 - uri: http://www.w3.org/2004/02/skos/core#altLabel
   label: skos:altLabel
   count: 9037
 - uri: https://schema.org/telephone
   label: schema:telephone
-  count: 9037
-- uri: https://schema.org/postalCode
-  label: schema:postalCode
   count: 9037
 - uri: https://schema.org/address
   label: schema:address
@@ -81,6 +108,9 @@ property_partitions:
 - uri: https://schema.org/serviceLocation
   label: schema:serviceLocation
   count: 8114
+- uri: http://sail.ua.edu/ruralkg/property/fipsCode
+  label: fipsCode
+  count: 3309
 - uri: http://sail.ua.edu/ruralkg/settlementtype/year
   label: ruralkg-settlement:year
   count: 3244
@@ -93,26 +123,23 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/settlementtype/hasRUCC
   label: ruralkg-settlement:hasRUCC
   count: 3234
-- uri: http://purl.org/dc/terms/identifier
-  label: dct:identifier
-  count: 3163
 - uri: http://purl.org/dc/terms/description
   label: dct:description
   count: 3143
-- uri: http://sail.ua.edu/ruralkg/variable/content
-  label: ruralkg-var:content
-  count: 2934
 - uri: http://sail.ua.edu/ruralkg/variable/generatedDescription
   label: ruralkg-var:generatedDescription
+  count: 2934
+- uri: http://sail.ua.edu/ruralkg/variable/content
+  label: ruralkg-var:content
   count: 2934
 - uri: http://sail.ua.edu/ruralkg/variable/fromDataset
   label: ruralkg-var:fromDataset
   count: 2933
-- uri: http://sail.ua.edu/ruralkg/variable/code
-  label: ruralkg-var:code
-  count: 2933
 - uri: http://sail.ua.edu/ruralkg/variable/year
   label: ruralkg-var:year
+  count: 2933
+- uri: http://sail.ua.edu/ruralkg/variable/code
+  label: ruralkg-var:code
   count: 2933
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/hasVariable
   label: ruralkg-sa:hasVariable
@@ -137,21 +164,24 @@ property_partitions:
   count: 176
 - uri: http://www.w3.org/2000/01/rdf-schema#comment
   label: rdfs:comment
-  count: 126
+  count: 131
 - uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
   label: rdfs:subClassOf
   count: 120
-- uri: http://sail.ua.edu/ruralkg/substanceabuse/fromDataset
-  label: ruralkg-sa:fromDataset
-  count: 40
+- uri: https://schema.org/alternateName
+  label: schema:alternateName
+  count: 56
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/year
   label: ruralkg-sa:year
   count: 40
-- uri: http://sail.ua.edu/ruralkg/substanceabuse/hierarchyLevel
-  label: ruralkg-sa:hierarchyLevel
-  count: 39
+- uri: http://sail.ua.edu/ruralkg/substanceabuse/fromDataset
+  label: ruralkg-sa:fromDataset
+  count: 40
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/domainCategory
   label: ruralkg-sa:domainCategory
+  count: 39
+- uri: http://sail.ua.edu/ruralkg/substanceabuse/hierarchyLevel
+  label: ruralkg-sa:hierarchyLevel
   count: 39
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/conceptType
   label: ruralkg-sa:conceptType
@@ -162,30 +192,30 @@ property_partitions:
 - uri: http://www.w3.org/2004/02/skos/core#exactMatch
   label: skos:exactMatch
   count: 30
-- uri: http://sail.ua.edu/ruralkg/substanceabuse/wikidataId
-  label: ruralkg-sa:wikidataId
-  count: 23
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/code
   label: ruralkg-sa:code
+  count: 23
+- uri: http://sail.ua.edu/ruralkg/substanceabuse/wikidataId
+  label: ruralkg-sa:wikidataId
   count: 23
 - uri: http://sail.ua.edu/ruralkg/settlementtype/code
   label: ruralkg-settlement:code
   count: 10
 - uri: http://www.w3.org/2000/01/rdf-schema#isDefinedBy
   label: rdfs:isDefinedBy
-  count: 5
-- uri: http://purl.org/dc/terms/title
-  label: dct:title
-  count: 1
-- uri: http://purl.org/dc/terms/modified
-  label: dct:modified
+  count: 10
+- uri: http://purl.org/dc/terms/creator
+  label: dct:creator
   count: 1
 - uri: http://purl.org/dc/terms/created
   label: dct:created
   count: 1
+- uri: http://purl.org/dc/terms/title
+  label: dct:title
+  count: 1
 - uri: http://purl.org/dc/terms/hasVersion
   label: dct:hasVersion
   count: 1
-- uri: http://purl.org/dc/terms/creator
-  label: dct:creator
+- uri: http://purl.org/dc/terms/modified
+  label: dct:modified
   count: 1

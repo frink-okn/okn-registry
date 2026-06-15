@@ -3,7 +3,7 @@ distinct_subjects: 16767822
 distinct_objects: 50429901
 properties: 35
 classes: 27
-last_checked: '2026-05-21'
+last_checked: '2026-06-15'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -20,11 +20,11 @@ class_partitions:
 - uri: http://www.opengis.net/ont/geosparql#Geometry
   label: geo:Geometry
   count: 7442807
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell
-  label: kwg-ont:S2Cell
-  count: 7404184
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell_Level13
   label: kwg-ont:S2Cell_Level13
+  count: 7404184
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell
+  label: kwg-ont:S2Cell
   count: 7404184
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Cell
   label: kwg-ont:Cell
@@ -71,20 +71,20 @@ class_partitions:
 - uri: http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
   label: rdfs:ContainerMembershipProperty
   count: 1
+- uri: http://www.w3.org/2000/01/rdf-schema#Resource
+  label: rdfs:Resource
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#Ontology
+  label: owl:Ontology
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#ReflexiveProperty
+  label: owl:ReflexiveProperty
+  count: 1
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#List
   label: rdf:List
   count: 1
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty
   label: rdf:ObjectProperty
-  count: 1
-- uri: http://www.w3.org/2000/01/rdf-schema#Resource
-  label: rdfs:Resource
-  count: 1
-- uri: http://www.w3.org/2002/07/owl#ReflexiveProperty
-  label: owl:ReflexiveProperty
-  count: 1
-- uri: http://www.w3.org/2002/07/owl#Ontology
-  label: owl:Ontology
   count: 1
 property_partitions:
 - uri: http://purl.org/spatialai/spatial/spatial-full#connectedTo
@@ -117,11 +117,11 @@ property_partitions:
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfOverlaps
   label: kwg-ont:sfOverlaps
   count: 8276384
-- uri: http://www.opengis.net/ont/geosparql#defaultGeometry
-  label: geo:defaultGeometry
-  count: 7445972
 - uri: http://www.opengis.net/ont/geosparql#hasGeometry
   label: geo:hasGeometry
+  count: 7445972
+- uri: http://www.opengis.net/ont/geosparql#defaultGeometry
+  label: geo:defaultGeometry
   count: 7445972
 - uri: http://www.opengis.net/ont/geosparql#asWKT
   label: geo:asWKT
@@ -165,23 +165,23 @@ property_partitions:
 - uri: http://purl.org/dc/terms/contributor
   label: dct:contributor
   count: 2
-- uri: http://purl.org/dc/terms/description
-  label: dct:description
+- uri: http://purl.org/dc/terms/publisher
+  label: dct:publisher
   count: 1
 - uri: http://purl.org/dc/elements/1.1/source
   label: dc:source
   count: 1
+- uri: http://purl.org/dc/terms/description
+  label: dct:description
+  count: 1
 - uri: http://purl.org/dc/terms/created
   label: dct:created
   count: 1
-- uri: http://purl.org/dc/terms/creator
-  label: dct:creator
+- uri: http://www.w3.org/2002/07/owl#versionInfo
+  label: owl:versionInfo
   count: 1
 - uri: http://purl.org/dc/terms/modified
   label: dct:modified
-  count: 1
-- uri: http://purl.org/dc/terms/publisher
-  label: dct:publisher
   count: 1
 - uri: http://purl.org/dc/terms/title
   label: dct:title
@@ -189,6 +189,6 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#inverseOf
   label: owl:inverseOf
   count: 1
-- uri: http://www.w3.org/2002/07/owl#versionInfo
-  label: owl:versionInfo
+- uri: http://purl.org/dc/terms/creator
+  label: dct:creator
   count: 1
