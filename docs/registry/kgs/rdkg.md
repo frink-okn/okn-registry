@@ -9,7 +9,7 @@ frink-options:
   documentation-path: rdkg
 contacts:
   - email: jinlian.wang@uth.tmc.edu
-    github: wnagjl99
+    github: wangjl99
     label: Jinlian Wang
 ---
 
