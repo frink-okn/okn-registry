@@ -15,6 +15,6 @@ contact:
   email: "apadilla@lincolninst.edu"
   github: "adplincinst"
   label: "Andrew Padilla"
-license: "https://creativecommons.org/licenses/by/4.0/"
+license: "https://creativecommons.org/publicdomain/zero/1.0/"
 ---
 Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic features to enable seamless water data discovery, access, and collaborative monitoring.
