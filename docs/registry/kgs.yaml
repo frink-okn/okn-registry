@@ -28,6 +28,7 @@ kgs:
     lakefs-repo: geoconnex
   funding: null
   homepage: https://docs.geoconnex.us/about/intro
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: geoconnex
   sparql: https://apps.okn.us/geoconnex/sparql
   stats: https://registry.okn.us/kg-stats/geoconnex
@@ -45,6 +46,7 @@ kgs:
     lakefs-repo: okn-void
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://registry.okn.us/registry/kgs/okn-void/
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: okn-void
   sparql: https://apps.okn.us/okn-void/sparql
   template: overrides/kg.html
@@ -71,6 +73,7 @@ kgs:
   description: Wikidata is a free and open knowledge base that can be read and edited
     by both humans and machines
   homepage: https://www.wikidata.org/
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: wikidata
   sparql: https://frink.apps.renci.org/wikidata/sparql
   template: overrides/kg.html
@@ -230,6 +233,7 @@ kgs:
     documentation-path: identifier-mappings
     lakefs-repo: identifier-mappings
   homepage: https://www.wikidata.org/
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: identifier-mappings
   sparql: https://apps.okn.us/identifier-mappings/sparql
   stats: https://registry.okn.us/kg-stats/identifier-mappings
@@ -624,7 +628,7 @@ kgs:
   title: CFDE REVEAL Knowledge Graph
 - contacts:
   - email: jinlian.wang@uth.tmc.edu
-    github: wnagjl99
+    github: wangjl99
     label: Jinlian Wang
   description: RDKG is an open knowledge graph for rare diseases that integrates standardized
     disease identifiers and cross-references to support discovery and evidence synthesis.
