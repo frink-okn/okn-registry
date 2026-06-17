@@ -16,6 +16,7 @@ contact:
   email: xzhang33@nd.edu
   github: "XiangqiWang77"
   label: "Xiangliang Zhang"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 This project seeks to create a comprehensive, integrative knowledge network for the management of wildlife in the context of climate change.
 
