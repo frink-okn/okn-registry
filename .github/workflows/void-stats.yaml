@@ -39,3 +39,4 @@ jobs:
             Fetched the latest VoID statistics for all registered KGs
             from the okn-void SPARQL endpoint.
           assignees: balhoff
+          add-paths: docs/registry/void
