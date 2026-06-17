@@ -522,6 +522,7 @@ kgs:
     lakefs-repo: oard-kg
   funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://github.com/WengLab-InformaticsResearch/oard-react
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: oard-kg
   sparql: https://apps.okn.us/oard-kg/sparql
   template: overrides/kg.html
