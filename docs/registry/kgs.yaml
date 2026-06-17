@@ -163,6 +163,7 @@ kgs:
     lakefs-repo: biomarkerkg
   funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
   homepage: https://biomarkerkb.org/home/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: biomarkerkg
   sparql: https://apps.okn.us/biomarkerkg/sparql
   stats: https://registry.okn.us/kg-stats/biomarkerkg
@@ -409,6 +410,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
   homepage: https://sites.nd.edu/kn-wildlife/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: wildlifekn
   sparql: https://apps.okn.us/wildlifekn/sparql
   template: overrides/kg.html
@@ -479,6 +481,7 @@ kgs:
     lakefs-repo: gene-expression-atlas-okn
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://www.ebi.ac.uk/gxa/home
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: gene-expression-atlas-okn
   sparql: https://apps.okn.us/gene-expression-atlas-okn/sparql
   stats: https://registry.okn.us/kg-stats/gene-expression-atlas-okn
@@ -522,6 +525,7 @@ kgs:
     lakefs-repo: oard-kg
   funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://github.com/WengLab-InformaticsResearch/oard-react
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: oard-kg
   sparql: https://apps.okn.us/oard-kg/sparql
   template: overrides/kg.html
