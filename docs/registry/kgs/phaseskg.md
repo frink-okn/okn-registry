@@ -17,6 +17,7 @@ contacts:
   - email: "rhurley3@buffalo.edu"
     github: "Regina-Hurley"
     label: "Regina Hurley"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 The HealthyPhases Project promotes healthy aging through the semantic enrichment of solitude research (PHASES), creating standardized frameworks for understanding the relationship between solitude and gerotranscendence.
 Our multidisciplinary team brings together expertise in ontology development, psychology, computer science, and gerontology to address challenges of terminological ambiguity and data interoperability in solitude and aging research.
