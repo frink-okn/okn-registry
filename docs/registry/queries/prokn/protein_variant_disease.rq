@@ -8,6 +8,7 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX upcore: <http://purl.uniprot.org/core/>
 PREFIX biolinkmodel: <https://biolink.github.io/biolink-model/>
 PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
 
 SELECT DISTINCT ?diseaseLabel ?variantDesc ?variantDiseaseAssoc
 WHERE {
@@ -24,7 +25,7 @@ WHERE {
         upcore:organism 'Homo sapiens' ;
         obo:NCIT_C164806 ?geneName .
 
-    ?omimDisease rdfs:seeAlso ?disease .
+    ?omimDisease skos:exactMatch ?disease .
     
     ?protein biolinkmodel:has_sequence_variant ?proteinVariant .
     ?proteinVariant <http://purl.obolibrary.org/obo/RO_0002410> ?diseaseObj ;
