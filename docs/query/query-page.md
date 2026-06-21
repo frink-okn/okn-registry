@@ -76,4 +76,4 @@ See the [OKN Registry entries](../registry/) to view the graphs currently availa
 
 ### Cross-OKN query endpoint
 
-- SPARQL: `https://frink.apps.renci.org/federation/sparql`
+- SPARQL: `https://apps.okn.us/federation/sparql`
