@@ -545,6 +545,7 @@ kgs:
     lakefs-repo: scales-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
   homepage: https://scales-okn.org/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: scales
   sparql: https://apps.okn.us/scales/sparql
   stats: https://registry.okn.us/kg-stats/scales-kg
