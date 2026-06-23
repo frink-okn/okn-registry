@@ -4,7 +4,6 @@
 > into a `docs/` tree once content stabilizes.
 >
 > **Callout legend:**
-> - **CONFIRM** — an inference the author (a fabric developer) should verify or fill in.
 > - **Intended** — a connection that *should* exist by design but is **not yet wired up**.
 > - **Forthcoming** — a component/step that is planned but **not yet implemented**.
 > - **Idea** — a possibility under consideration, not yet committed.
