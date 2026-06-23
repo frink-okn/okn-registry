@@ -145,6 +145,7 @@ kgs:
     lakefs-repo: sudokn-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
   homepage: https://projects.engineering.asu.edu/sudokn/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: sudokn
   sparql: https://apps.okn.us/sudokn/sparql
   stats: https://registry.okn.us/kg-stats/sudokn
