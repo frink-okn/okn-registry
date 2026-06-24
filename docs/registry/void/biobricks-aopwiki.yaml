@@ -3,7 +3,7 @@ distinct_subjects: 22494
 distinct_objects: 85068
 properties: 68
 classes: 26
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: http://edamontology.org/data_1025
   label: data_1025
@@ -216,11 +216,11 @@ property_partitions:
 - uri: http://semanticscience.org/resource/CHEMINF_000567
   label: CHEMINF_000567
   count: 402
-- uri: http://semanticscience.org/resource/CHEMINF_000568
-  label: CHEMINF_000568
-  count: 391
 - uri: http://semanticscience.org/resource/CHEMINF_000446
   label: CHEMINF_000446
+  count: 391
+- uri: http://semanticscience.org/resource/CHEMINF_000568
+  label: CHEMINF_000568
   count: 391
 - uri: http://purl.org/dc/elements/1.1/creator
   label: dc:creator
@@ -273,8 +273,8 @@ property_partitions:
 - uri: http://purl.org/pav/createdWith
   label: pav:createdWith
   count: 4
-- uri: http://purl.org/pav/importedOn
-  label: pav:importedOn
+- uri: http://purl.org/dc/terms/accuralPeriodicity
+  label: dct:accuralPeriodicity
   count: 2
 - uri: http://purl.org/pav/createdBy
   label: pav:createdBy
@@ -282,9 +282,9 @@ property_partitions:
 - uri: http://purl.org/pav/createdOn
   label: pav:createdOn
   count: 2
+- uri: http://purl.org/pav/importedOn
+  label: pav:importedOn
+  count: 2
 - uri: http://xmlns.com/foaf/0.1/homepage
   label: foaf:homepage
-  count: 2
-- uri: http://purl.org/dc/terms/accuralPeriodicity
-  label: dct:accuralPeriodicity
   count: 2

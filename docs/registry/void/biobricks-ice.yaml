@@ -3,7 +3,7 @@ distinct_subjects: 4509929
 distinct_objects: 4845730
 properties: 21
 classes: 10
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: http://www.bioassayontology.org/bao#BAO_0000179
   label: BAO_0000179
@@ -54,11 +54,11 @@ property_partitions:
 - uri: http://semanticscience.org/resource/SIO_000221
   label: SIO_000221
   count: 3020705
-- uri: http://purl.obolibrary.org/obo/RO_0000057
-  label: obo:RO_0000057
-  count: 2306975
 - uri: http://purl.obolibrary.org/obo/RO_0000056
   label: obo:RO_0000056
+  count: 2306975
+- uri: http://purl.obolibrary.org/obo/RO_0000057
+  label: obo:RO_0000057
   count: 2306975
 - uri: http://purl.org/dc/elements/1.1/source
   label: dc:source
@@ -75,27 +75,27 @@ property_partitions:
 - uri: https://ice.ntp.niehs.nih.gov/property/mayInformOn
   label: mayInformOn
   count: 3570
-- uri: https://identifiers.org/umls:C1708327
-  label: umls:C1708327
-  count: 3015
 - uri: https://ice.ntp.niehs.nih.gov/property/throughMechanisticTarget_NCIm
   label: throughMechanisticTarget_NCIm
+  count: 3015
+- uri: https://identifiers.org/umls:C1708327
+  label: umls:C1708327
   count: 3015
 - uri: https://ice.ntp.niehs.nih.gov/property/throughMechanisticTarget
   label: throughMechanisticTarget
   count: 2753
-- uri: https://ice.ntp.niehs.nih.gov/property/assay_source
-  label: assay_source
-  count: 1814
 - uri: https://ice.ntp.niehs.nih.gov/property/assay_entrez_gene_id
   label: assay_entrez_gene_id
   count: 1814
-- uri: https://ice.ntp.niehs.nih.gov/property/assay_tissue
-  label: assay_tissue
+- uri: https://ice.ntp.niehs.nih.gov/property/assay_invitro_assay_format
+  label: assay_invitro_assay_format
+  count: 1814
+- uri: https://ice.ntp.niehs.nih.gov/property/assay_source
+  label: assay_source
   count: 1814
 - uri: https://ice.ntp.niehs.nih.gov/property/assay_species
   label: assay_species
   count: 1814
-- uri: https://ice.ntp.niehs.nih.gov/property/assay_invitro_assay_format
-  label: assay_invitro_assay_format
+- uri: https://ice.ntp.niehs.nih.gov/property/assay_tissue
+  label: assay_tissue
   count: 1814
