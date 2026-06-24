@@ -3,7 +3,7 @@ distinct_subjects: 2437717
 distinct_objects: 5583396
 properties: 80
 classes: 24
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: http://id.nlm.nih.gov/mesh/vocab#Term
   label: meshv:Term
@@ -65,17 +65,17 @@ class_partitions:
 - uri: http://rdfs.org/ns/void#DatasetDescription
   label: void:DatasetDescription
   count: 1
-- uri: http://www.w3.org/ns/sparql-service-description#Service
-  label: Service
-  count: 1
-- uri: http://www.w3.org/2002/07/owl#AnnotationProperty
-  label: owl:AnnotationProperty
-  count: 1
 - uri: http://www.w3.org/2002/07/owl#TransitiveProperty
   label: owl:TransitiveProperty
   count: 1
 - uri: http://rdfs.org/ns/void#Dataset
   label: void:Dataset
+  count: 1
+- uri: http://www.w3.org/ns/sparql-service-description#Service
+  label: Service
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#AnnotationProperty
+  label: owl:AnnotationProperty
   count: 1
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
@@ -96,11 +96,11 @@ property_partitions:
 - uri: http://id.nlm.nih.gov/mesh/vocab#thesaurusID
   label: meshv:thesaurusID
   count: 909053
-- uri: http://id.nlm.nih.gov/mesh/vocab#prefLabel
-  label: meshv:prefLabel
-  count: 862579
 - uri: http://id.nlm.nih.gov/mesh/vocab#lexicalTag
   label: meshv:lexicalTag
+  count: 862579
+- uri: http://id.nlm.nih.gov/mesh/vocab#prefLabel
+  label: meshv:prefLabel
   count: 862579
 - uri: http://id.nlm.nih.gov/mesh/vocab#preferredTerm
   label: meshv:preferredTerm
@@ -258,35 +258,41 @@ property_partitions:
 - uri: http://purl.org/dc/terms/creator
   label: dct:creator
   count: 2
-- uri: http://www.w3.org/ns/sparql-service-description#feature
-  label: feature
-  count: 2
 - uri: http://www.w3.org/2002/07/owl#versionInfo
   label: owl:versionInfo
+  count: 2
+- uri: http://www.w3.org/ns/sparql-service-description#feature
+  label: feature
   count: 2
 - uri: http://purl.org/dc/terms/title
   label: dct:title
   count: 2
-- uri: http://purl.org/dc/terms/created
-  label: dct:created
-  count: 1
-- uri: http://www.w3.org/ns/sparql-service-description#supportedLanguage
-  label: supportedLanguage
-  count: 1
-- uri: http://xmlns.com/foaf/0.1/primaryTopic
-  label: foaf:primaryTopic
-  count: 1
-- uri: http://rdfs.org/ns/void#exampleResource
-  label: void:exampleResource
+- uri: http://xmlns.com/foaf/0.1/page
+  label: foaf:page
   count: 1
 - uri: http://xmlns.com/foaf/0.1/homepage
   label: foaf:homepage
   count: 1
-- uri: http://rdfs.org/ns/void#uriLookupEndpoint
-  label: void:uriLookupEndpoint
+- uri: http://www.w3.org/ns/sparql-service-description#url
+  label: url
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#propertyDisjointWith
+  label: owl:propertyDisjointWith
+  count: 1
+- uri: http://purl.org/dc/terms/created
+  label: dct:created
+  count: 1
+- uri: http://purl.org/dc/terms/subject
+  label: dct:subject
   count: 1
 - uri: http://purl.org/dc/terms/license
   label: dct:license
+  count: 1
+- uri: http://xmlns.com/foaf/0.1/primaryTopic
+  label: foaf:primaryTopic
+  count: 1
+- uri: http://rdfs.org/ns/void#uriLookupEndpoint
+  label: void:uriLookupEndpoint
   count: 1
 - uri: http://rdfs.org/ns/void#sparqlEndpoint
   label: void:sparqlEndpoint
@@ -297,8 +303,8 @@ property_partitions:
 - uri: http://www.w3.org/ns/sparql-service-description#endpoint
   label: endpoint
   count: 1
-- uri: http://purl.org/dc/terms/subject
-  label: dct:subject
+- uri: http://rdfs.org/ns/void#exampleResource
+  label: void:exampleResource
   count: 1
 - uri: http://rdfs.org/ns/void#feature
   label: void:feature
@@ -306,15 +312,9 @@ property_partitions:
 - uri: http://purl.org/dc/terms/publisher
   label: dct:publisher
   count: 1
-- uri: http://www.w3.org/2002/07/owl#propertyDisjointWith
-  label: owl:propertyDisjointWith
-  count: 1
 - uri: http://rdfs.org/ns/void#uriSpace
   label: void:uriSpace
   count: 1
-- uri: http://www.w3.org/ns/sparql-service-description#url
-  label: url
-  count: 1
-- uri: http://xmlns.com/foaf/0.1/page
-  label: foaf:page
+- uri: http://www.w3.org/ns/sparql-service-description#supportedLanguage
+  label: supportedLanguage
   count: 1

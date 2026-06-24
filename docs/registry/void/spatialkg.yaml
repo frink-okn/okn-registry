@@ -3,7 +3,7 @@ distinct_subjects: 16767822
 distinct_objects: 50429901
 properties: 35
 classes: 27
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
@@ -23,11 +23,11 @@ class_partitions:
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell_Level13
   label: kwg-ont:S2Cell_Level13
   count: 7404184
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell
-  label: kwg-ont:S2Cell
-  count: 7404184
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/Cell
   label: kwg-ont:Cell
+  count: 7404184
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/S2Cell
+  label: kwg-ont:S2Cell
   count: 7404184
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion
   label: kwg-ont:AdministrativeRegion
@@ -68,17 +68,8 @@ class_partitions:
 - uri: http://www.w3.org/2002/07/owl#SymmetricProperty
   label: owl:SymmetricProperty
   count: 2
-- uri: http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
-  label: rdfs:ContainerMembershipProperty
-  count: 1
 - uri: http://www.w3.org/2000/01/rdf-schema#Resource
   label: rdfs:Resource
-  count: 1
-- uri: http://www.w3.org/2002/07/owl#Ontology
-  label: owl:Ontology
-  count: 1
-- uri: http://www.w3.org/2002/07/owl#ReflexiveProperty
-  label: owl:ReflexiveProperty
   count: 1
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#List
   label: rdf:List
@@ -86,15 +77,24 @@ class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty
   label: rdf:ObjectProperty
   count: 1
+- uri: http://www.w3.org/2002/07/owl#ReflexiveProperty
+  label: owl:ReflexiveProperty
+  count: 1
+- uri: http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
+  label: rdfs:ContainerMembershipProperty
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#Ontology
+  label: owl:Ontology
+  count: 1
 property_partitions:
-- uri: http://purl.org/spatialai/spatial/spatial-full#connectedTo
-  label: spatial-full:connectedTo
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/spatialRelation
+  label: kwg-ont:spatialRelation
   count: 152433602
 - uri: http://purl.org/spatialai/spatial/spatial-full#spatiallyRelatedTo
   label: spatial-full:spatiallyRelatedTo
   count: 152433602
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/spatialRelation
-  label: kwg-ont:spatialRelation
+- uri: http://purl.org/spatialai/spatial/spatial-full#connectedTo
+  label: spatial-full:connectedTo
   count: 152433602
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
@@ -165,9 +165,6 @@ property_partitions:
 - uri: http://purl.org/dc/terms/contributor
   label: dct:contributor
   count: 2
-- uri: http://purl.org/dc/terms/publisher
-  label: dct:publisher
-  count: 1
 - uri: http://purl.org/dc/elements/1.1/source
   label: dc:source
   count: 1
@@ -177,18 +174,21 @@ property_partitions:
 - uri: http://purl.org/dc/terms/created
   label: dct:created
   count: 1
+- uri: http://purl.org/dc/terms/publisher
+  label: dct:publisher
+  count: 1
+- uri: http://purl.org/dc/terms/creator
+  label: dct:creator
+  count: 1
 - uri: http://www.w3.org/2002/07/owl#versionInfo
   label: owl:versionInfo
+  count: 1
+- uri: http://www.w3.org/2002/07/owl#inverseOf
+  label: owl:inverseOf
   count: 1
 - uri: http://purl.org/dc/terms/modified
   label: dct:modified
   count: 1
 - uri: http://purl.org/dc/terms/title
   label: dct:title
-  count: 1
-- uri: http://www.w3.org/2002/07/owl#inverseOf
-  label: owl:inverseOf
-  count: 1
-- uri: http://purl.org/dc/terms/creator
-  label: dct:creator
   count: 1

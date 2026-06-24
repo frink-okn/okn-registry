@@ -1,65 +1,65 @@
-triples: 4815282
-distinct_subjects: 1253068
-distinct_objects: 1347202
+triples: 4819802
+distinct_subjects: 1254257
+distinct_objects: 1348645
 properties: 18
 classes: 1
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: http://rdfs.org/ns/void#Dataset
   label: void:Dataset
-  count: 1253068
+  count: 1254257
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 1253068
+  count: 1254257
 - uri: http://rdfs.org/ns/void#triples
   label: void:triples
-  count: 1253068
+  count: 1254257
 - uri: http://ldf.fi/void-ext#objectClassPartition
   label: void-ext:objectClassPartition
-  count: 742715
+  count: 743141
 - uri: http://rdfs.org/ns/void#class
   label: void:class
-  count: 545572
+  count: 545758
 - uri: http://rdfs.org/ns/void#propertyPartition
   label: void:propertyPartition
-  count: 498369
+  count: 498846
 - uri: http://rdfs.org/ns/void#property
   label: void:property
-  count: 498369
+  count: 498846
 - uri: http://ldf.fi/void-ext#datatype
   label: void-ext:datatype
-  count: 6447
+  count: 6700
 - uri: http://ldf.fi/void-ext#datatypePartition
   label: void-ext:datatypePartition
-  count: 6447
+  count: 6700
 - uri: http://rdfs.org/ns/void#classPartition
   label: void:classPartition
-  count: 4831
+  count: 4863
 - uri: http://rdfs.org/ns/void#entities
   label: void:entities
-  count: 4831
+  count: 4863
 - uri: http://ldf.fi/void-ext#languagePartition
   label: void-ext:languagePartition
   count: 667
 - uri: http://ldf.fi/void-ext#language
   label: void-ext:language
   count: 667
-- uri: http://rdfs.org/ns/void#distinctObjects
-  label: void:distinctObjects
-  count: 39
 - uri: http://rdfs.org/ns/void#distinctSubjects
   label: void:distinctSubjects
-  count: 39
+  count: 40
+- uri: http://rdfs.org/ns/void#distinctObjects
+  label: void:distinctObjects
+  count: 40
 - uri: http://rdfs.org/ns/void#properties
   label: void:properties
-  count: 39
+  count: 40
 - uri: http://purl.org/pav/version
   label: pav:version
-  count: 38
+  count: 39
 - uri: http://purl.org/dc/terms/modified
   label: dct:modified
-  count: 38
+  count: 39
 - uri: http://purl.org/pav/lastUpdatedOn
   label: pav:lastUpdatedOn
-  count: 38
+  count: 39
