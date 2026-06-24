@@ -3,25 +3,25 @@ distinct_subjects: 22883
 distinct_objects: 41410
 properties: 37
 classes: 14
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
-- uri: http://schema.org/Review
-  label: Review
-  count: 3762
 - uri: http://schema.org/Rating
   label: Rating
+  count: 3762
+- uri: http://schema.org/Review
+  label: Review
   count: 3762
 - uri: http://schema.org/ServiceChannel
   label: ServiceChannel
   count: 2642
+- uri: http://schema.org/ContactPoint
+  label: ContactPoint
+  count: 1321
 - uri: http://schema.org/Service
   label: Service
   count: 1321
 - uri: http://schema.org/TextObject
   label: TextObject
-  count: 1321
-- uri: http://schema.org/ContactPoint
-  label: ContactPoint
   count: 1321
 - uri: http://schema.org/Place
   label: Place
@@ -90,20 +90,20 @@ property_partitions:
 - uri: http://schema.org/conditionsOfAccess
   label: conditionsOfAccess
   count: 1326
+- uri: http://schema.org/areaServed
+  label: areaServed
+  count: 1321
+- uri: http://schema.org/identifier
+  label: identifier
+  count: 1321
+- uri: http://schema.org/provider
+  label: provider
+  count: 1321
 - uri: http://schema.org/serviceLocation
   label: serviceLocation
   count: 1321
 - uri: http://schema.org/servicePhone
   label: servicePhone
-  count: 1321
-- uri: http://schema.org/areaServed
-  label: areaServed
-  count: 1321
-- uri: http://schema.org/provider
-  label: provider
-  count: 1321
-- uri: http://schema.org/identifier
-  label: identifier
   count: 1321
 - uri: http://schema.org/telephone
   label: telephone
@@ -132,11 +132,11 @@ property_partitions:
 - uri: http://schema.org/hasMap
   label: hasMap
   count: 1000
-- uri: http://www.opengis.net/ont/geosparql#hasGeometry
-  label: geo:hasGeometry
-  count: 996
 - uri: http://www.opengis.net/ont/geosparql#defaultGeometry
   label: geo:defaultGeometry
+  count: 996
+- uri: http://www.opengis.net/ont/geosparql#hasGeometry
+  label: geo:hasGeometry
   count: 996
 - uri: http://schema.org/codeValue
   label: codeValue

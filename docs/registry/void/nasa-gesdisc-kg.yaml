@@ -3,7 +3,7 @@ distinct_subjects: 150351
 distinct_objects: 718244
 properties: 25
 classes: 7
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Publication
   label: Publication
@@ -30,11 +30,11 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/CITES
   label: CITES
   count: 208616
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-  label: rdf:type
-  count: 150351
 - uri: http://purl.org/dc/terms/identifier
   label: dct:identifier
+  count: 150351
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
   count: 150351
 - uri: http://purl.org/ontology/bibo/doi
   label: bibo:doi
@@ -75,11 +75,11 @@ property_partitions:
 - uri: http://purl.org/dc/terms/accrualPeriodicity
   label: dct:accrualPeriodicity
   count: 8058
-- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/daac
-  label: daac
-  count: 8058
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/cmrId
   label: cmrId
+  count: 8058
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/daac
+  label: daac
   count: 8058
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/OF_PROJECT
   label: OF_PROJECT

@@ -3,7 +3,7 @@ distinct_subjects: 111387
 distinct_objects: 543810
 properties: 119
 classes: 51
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: https://climatepub4kg.github.io/ontology#City
   label: climatepub4:City
@@ -41,20 +41,20 @@ class_partitions:
 - uri: https://climatepub4kg.github.io/ontology#Keyword
   label: climatepub4:Keyword
   count: 2344
-- uri: https://climatepub4kg.github.io/ontology#Task
-  label: climatepub4:Task
+- uri: https://climatepub4kg.github.io/ontology#Innovation
+  label: climatepub4:Innovation
   count: 2000
 - uri: https://climatepub4kg.github.io/ontology#Method
   label: climatepub4:Method
-  count: 2000
-- uri: https://climatepub4kg.github.io/ontology#Innovation
-  label: climatepub4:Innovation
   count: 2000
 - uri: https://climatepub4kg.github.io/ontology#Paper
   label: climatepub4:Paper
   count: 2000
 - uri: https://climatepub4kg.github.io/ontology#Problem
   label: climatepub4:Problem
+  count: 2000
+- uri: https://climatepub4kg.github.io/ontology#Task
+  label: climatepub4:Task
   count: 2000
 - uri: https://climatepub4kg.github.io/ontology#Instrument
   label: climatepub4:Instrument
@@ -134,11 +134,11 @@ class_partitions:
 - uri: https://climatepub4kg.github.io/ontology#Activity
   label: climatepub4:Activity
   count: 26
-- uri: https://climatepub4kg.github.io/ontology#SourceType
-  label: climatepub4:SourceType
-  count: 16
 - uri: https://climatepub4kg.github.io/ontology#Frequency
   label: climatepub4:Frequency
+  count: 16
+- uri: https://climatepub4kg.github.io/ontology#SourceType
+  label: climatepub4:SourceType
   count: 16
 - uri: https://climatepub4kg.github.io/ontology#Resolution
   label: climatepub4:Resolution
@@ -195,26 +195,26 @@ property_partitions:
 - uri: https://climatepub4kg.github.io/ontology#admin1_code
   label: climatepub4:admin1_code
   count: 30346
-- uri: https://climatepub4kg.github.io/ontology#feature_code
-  label: climatepub4:feature_code
-  count: 30346
-- uri: https://climatepub4kg.github.io/ontology#latitude
-  label: climatepub4:latitude
-  count: 30346
 - uri: https://climatepub4kg.github.io/ontology#admin2_code
   label: climatepub4:admin2_code
+  count: 30346
+- uri: https://climatepub4kg.github.io/ontology#admin3_code
+  label: climatepub4:admin3_code
+  count: 30346
+- uri: https://climatepub4kg.github.io/ontology#admin4_code
+  label: climatepub4:admin4_code
   count: 30346
 - uri: https://climatepub4kg.github.io/ontology#alternatenames
   label: climatepub4:alternatenames
   count: 30346
-- uri: https://climatepub4kg.github.io/ontology#modification_date
-  label: climatepub4:modification_date
+- uri: https://climatepub4kg.github.io/ontology#cc2
+  label: climatepub4:cc2
   count: 30346
-- uri: https://climatepub4kg.github.io/ontology#longitude
-  label: climatepub4:longitude
+- uri: https://climatepub4kg.github.io/ontology#country_code
+  label: climatepub4:country_code
   count: 30346
-- uri: https://climatepub4kg.github.io/ontology#admin3_code
-  label: climatepub4:admin3_code
+- uri: https://climatepub4kg.github.io/ontology#dem
+  label: climatepub4:dem
   count: 30346
 - uri: https://climatepub4kg.github.io/ontology#elevation
   label: climatepub4:elevation
@@ -222,26 +222,26 @@ property_partitions:
 - uri: https://climatepub4kg.github.io/ontology#feature_class
   label: climatepub4:feature_class
   count: 30346
-- uri: https://climatepub4kg.github.io/ontology#admin4_code
-  label: climatepub4:admin4_code
+- uri: https://climatepub4kg.github.io/ontology#feature_code
+  label: climatepub4:feature_code
   count: 30346
-- uri: https://climatepub4kg.github.io/ontology#dem
-  label: climatepub4:dem
+- uri: https://climatepub4kg.github.io/ontology#latitude
+  label: climatepub4:latitude
   count: 30346
-- uri: https://climatepub4kg.github.io/ontology#country_code
-  label: climatepub4:country_code
+- uri: https://climatepub4kg.github.io/ontology#longitude
+  label: climatepub4:longitude
+  count: 30346
+- uri: https://climatepub4kg.github.io/ontology#modification_date
+  label: climatepub4:modification_date
   count: 30346
 - uri: https://climatepub4kg.github.io/ontology#timezone
   label: climatepub4:timezone
   count: 30346
-- uri: https://climatepub4kg.github.io/ontology#cc2
-  label: climatepub4:cc2
-  count: 30346
-- uri: https://climatepub4kg.github.io/ontology#PAPER_HAS_RESULT
-  label: climatepub4:PAPER_HAS_RESULT
-  count: 28977
 - uri: https://climatepub4kg.github.io/ontology#METHOD_HAS_RESULT
   label: climatepub4:METHOD_HAS_RESULT
+  count: 28977
+- uri: https://climatepub4kg.github.io/ontology#PAPER_HAS_RESULT
+  label: climatepub4:PAPER_HAS_RESULT
   count: 28977
 - uri: https://climatepub4kg.github.io/ontology#PAPER_HAS_KEYWORD
   label: climatepub4:PAPER_HAS_KEYWORD
@@ -276,17 +276,17 @@ property_partitions:
 - uri: https://climatepub4kg.github.io/ontology#MODEL_USES_METRIC
   label: climatepub4:MODEL_USES_METRIC
   count: 4472
+- uri: https://climatepub4kg.github.io/ontology#east
+  label: climatepub4:east
+  count: 4429
+- uri: https://climatepub4kg.github.io/ontology#north
+  label: climatepub4:north
+  count: 4429
 - uri: https://climatepub4kg.github.io/ontology#south
   label: climatepub4:south
   count: 4429
 - uri: https://climatepub4kg.github.io/ontology#west
   label: climatepub4:west
-  count: 4429
-- uri: https://climatepub4kg.github.io/ontology#north
-  label: climatepub4:north
-  count: 4429
-- uri: https://climatepub4kg.github.io/ontology#east
-  label: climatepub4:east
   count: 4429
 - uri: https://climatepub4kg.github.io/ontology#MODEL_HAS_RESULT
   label: climatepub4:MODEL_HAS_RESULT
@@ -312,11 +312,11 @@ property_partitions:
 - uri: https://climatepub4kg.github.io/ontology#METHOD_EXPERIMENTS_ON_OBSERVATIONAL_DATASET
   label: climatepub4:METHOD_EXPERIMENTS_ON_OBSERVATIONAL_DATASET
   count: 2783
-- uri: https://climatepub4kg.github.io/ontology#TASK_EXPERIMENTS_ON_OBSERVATIONAL_DATASET
-  label: climatepub4:TASK_EXPERIMENTS_ON_OBSERVATIONAL_DATASET
-  count: 2783
 - uri: https://climatepub4kg.github.io/ontology#PAPER_EXPERIMENTS_ON_OBSERVATIONAL_DATASET
   label: climatepub4:PAPER_EXPERIMENTS_ON_OBSERVATIONAL_DATASET
+  count: 2783
+- uri: https://climatepub4kg.github.io/ontology#TASK_EXPERIMENTS_ON_OBSERVATIONAL_DATASET
+  label: climatepub4:TASK_EXPERIMENTS_ON_OBSERVATIONAL_DATASET
   count: 2783
 - uri: https://climatepub4kg.github.io/ontology#PERFORMED_BY_INSTITUTE
   label: climatepub4:PERFORMED_BY_INSTITUTE
@@ -327,44 +327,44 @@ property_partitions:
 - uri: https://climatepub4kg.github.io/ontology#USED_IN_EXPERIMENT
   label: climatepub4:USED_IN_EXPERIMENT
   count: 2019
-- uri: https://climatepub4kg.github.io/ontology#METHOD_SOLVES_PROBLEM
-  label: climatepub4:METHOD_SOLVES_PROBLEM
-  count: 2000
-- uri: https://climatepub4kg.github.io/ontology#PAPER_APPLIES_METHOD
-  label: climatepub4:PAPER_APPLIES_METHOD
-  count: 2000
-- uri: https://climatepub4kg.github.io/ontology#publication_year
-  label: climatepub4:publication_year
-  count: 2000
 - uri: https://climatepub4kg.github.io/ontology#METHOD_HAS_INNOVATION
   label: climatepub4:METHOD_HAS_INNOVATION
   count: 2000
-- uri: https://climatepub4kg.github.io/ontology#id
-  label: climatepub4:id
+- uri: https://climatepub4kg.github.io/ontology#METHOD_SOLVES_PROBLEM
+  label: climatepub4:METHOD_SOLVES_PROBLEM
   count: 2000
 - uri: https://climatepub4kg.github.io/ontology#METHOD_WORKS_ON_TASK
   label: climatepub4:METHOD_WORKS_ON_TASK
   count: 2000
-- uri: https://climatepub4kg.github.io/ontology#PAPER_WORKS_ON_TASK
-  label: climatepub4:PAPER_WORKS_ON_TASK
-  count: 2000
-- uri: https://climatepub4kg.github.io/ontology#PAPER_PUBLISHED_IN_VENUE
-  label: climatepub4:PAPER_PUBLISHED_IN_VENUE
+- uri: https://climatepub4kg.github.io/ontology#PAPER_APPLIES_METHOD
+  label: climatepub4:PAPER_APPLIES_METHOD
   count: 2000
 - uri: https://climatepub4kg.github.io/ontology#PAPER_BELONGS_TO_FIELD
   label: climatepub4:PAPER_BELONGS_TO_FIELD
   count: 2000
-- uri: https://climatepub4kg.github.io/ontology#title
-  label: climatepub4:title
-  count: 2000
 - uri: https://climatepub4kg.github.io/ontology#PAPER_HAS_INNOVATION
   label: climatepub4:PAPER_HAS_INNOVATION
+  count: 2000
+- uri: https://climatepub4kg.github.io/ontology#PAPER_PUBLISHED_IN_VENUE
+  label: climatepub4:PAPER_PUBLISHED_IN_VENUE
   count: 2000
 - uri: https://climatepub4kg.github.io/ontology#PAPER_SOLVES_PROBLEM
   label: climatepub4:PAPER_SOLVES_PROBLEM
   count: 2000
+- uri: https://climatepub4kg.github.io/ontology#PAPER_WORKS_ON_TASK
+  label: climatepub4:PAPER_WORKS_ON_TASK
+  count: 2000
 - uri: https://climatepub4kg.github.io/ontology#TASK_FACES_PROBLEM
   label: climatepub4:TASK_FACES_PROBLEM
+  count: 2000
+- uri: https://climatepub4kg.github.io/ontology#id
+  label: climatepub4:id
+  count: 2000
+- uri: https://climatepub4kg.github.io/ontology#publication_year
+  label: climatepub4:publication_year
+  count: 2000
+- uri: https://climatepub4kg.github.io/ontology#title
+  label: climatepub4:title
   count: 2000
 - uri: https://climatepub4kg.github.io/ontology#doi
   label: climatepub4:doi
@@ -420,42 +420,6 @@ property_partitions:
 - uri: https://climatepub4kg.github.io/ontology#iso
   label: climatepub4:iso
   count: 259
-- uri: https://climatepub4kg.github.io/ontology#phone
-  label: climatepub4:phone
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#iso3
-  label: climatepub4:iso3
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#postal_code_regex
-  label: climatepub4:postal_code_regex
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#country
-  label: climatepub4:country
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#tld
-  label: climatepub4:tld
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#languages
-  label: climatepub4:languages
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#equivalent_fips_code
-  label: climatepub4:equivalent_fips_code
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#postal_code_format
-  label: climatepub4:postal_code_format
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#currencycode
-  label: climatepub4:currencycode
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#isonumeric
-  label: climatepub4:isonumeric
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#neighbours
-  label: climatepub4:neighbours
-  count: 252
-- uri: https://climatepub4kg.github.io/ontology#currencyname
-  label: climatepub4:currencyname
-  count: 252
 - uri: https://climatepub4kg.github.io/ontology#area_sqkm
   label: climatepub4:area_sqkm
   count: 252
@@ -465,8 +429,44 @@ property_partitions:
 - uri: https://climatepub4kg.github.io/ontology#continent
   label: climatepub4:continent
   count: 252
+- uri: https://climatepub4kg.github.io/ontology#country
+  label: climatepub4:country
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#currencycode
+  label: climatepub4:currencycode
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#currencyname
+  label: climatepub4:currencyname
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#equivalent_fips_code
+  label: climatepub4:equivalent_fips_code
+  count: 252
 - uri: https://climatepub4kg.github.io/ontology#fips
   label: climatepub4:fips
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#iso3
+  label: climatepub4:iso3
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#isonumeric
+  label: climatepub4:isonumeric
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#languages
+  label: climatepub4:languages
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#neighbours
+  label: climatepub4:neighbours
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#phone
+  label: climatepub4:phone
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#postal_code_format
+  label: climatepub4:postal_code_format
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#postal_code_regex
+  label: climatepub4:postal_code_regex
+  count: 252
+- uri: https://climatepub4kg.github.io/ontology#tld
+  label: climatepub4:tld
   count: 252
 - uri: https://climatepub4kg.github.io/ontology#HAS_METRIC
   label: climatepub4:HAS_METRIC
