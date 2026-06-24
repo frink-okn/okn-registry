@@ -13,7 +13,7 @@ SELECT
 DISTINCT ?diseaseLabel (GROUP_CONCAT(CONCAT(STR(?uniprotAccession),"(",STR(?geneName),")"); separator=";") AS ?assocProteins)
 WHERE {
 
-    SERVICE <https://frink.apps.renci.org/federation/sparql>{
+    SERVICE <https://apps.okn.us/oard-kg/sparql> {
         # From OARD KG
         ?disease biolinkw3id:category biolinkw3id:Disease ;
             rdfs:label ?diseaseLabel .
@@ -28,4 +28,3 @@ WHERE {
     ?omimDisease skos:exactMatch ?disease .
 }
 GROUP BY ?diseaseLabel ?organism
-
