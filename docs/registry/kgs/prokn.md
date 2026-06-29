@@ -15,5 +15,6 @@ contact:
   email: chenc@udel.edu  
   github: "chenchuming"
   label: "Chuming Chen"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 The Protein Knowledge Network (ProKN), developed by the University of Delaware as part of the NIH Common Fund Data Ecosystem (CFDE), is an integrative bioinformatics platform designed to harmonize and explore complex relationships within protein-related data. By utilizing a knowledge graph approach, ProKN links proteins with their post-translational modifications, genetic variants, and functional pathways, offering specialized tools like KSMoFinder for predicting kinase-substrate interactions, as well as services for ID mapping, variant mapping, and protein embeddings. The portal supports the FAIR data principles by providing advanced visualization interfaces alongside programmatic access via SPARQL and REST APIs, ultimately enabling researchers to bridge disparate datasets and generate new hypotheses for precision medicine and drug discovery.
