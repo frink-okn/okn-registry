@@ -1,12 +1,12 @@
 ---
 template: overrides/kg.html
-shortname: maudekg
-title: FDA MAUDE Adverse Event Knowledge Graph
+shortname: medical-device-kg
+title: Medical Device Knowledge Graph
 description: Knowledge graph constructed from FDA MAUDE adverse event reports using standardized FDA product codes.
-stats: https://registry.okn.us/kg-stats/maudekg
+stats: https://registry.okn.us/kg-stats/medical-device-kg
 homepage: https://github.com/Prabhadeus/Proto-OKN
-sparql: https://apps.okn.us/maudekg/sparql
-tpf: https://apps.okn.us/ldf/maudekg
+sparql: https://apps.okn.us/medical-device-kg/sparql
+tpf: https://apps.okn.us/ldf/medical-device-kg
 
 frink-options:
   lakefs-repo: maude-kg
