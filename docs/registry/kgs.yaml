@@ -94,6 +94,7 @@ kgs:
     lakefs-repo: prokn
   funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://research.bioinformatics.udel.edu/ProKN/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: prokn
   sparql: https://apps.okn.us/prokn/sparql
   stats: https://registry.okn.us/kg-stats/prokn
@@ -255,6 +256,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-genelab.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://github.com/BaranziniLab/spoke_genelab
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: spoke-genelab
   sparql: https://apps.okn.us/spoke-genelab/sparql
   stats: https://registry.okn.us/kg-stats/spoke-genelab
@@ -274,6 +276,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-okn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://spoke.ucsf.edu
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: spoke-okn
   sparql: https://apps.okn.us/spoke-okn/sparql
   stats: https://registry.okn.us/kg-stats/spoke-okn
