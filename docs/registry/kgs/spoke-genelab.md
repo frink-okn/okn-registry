@@ -19,6 +19,7 @@ contact:
   email: sergio.baranzini@ucsf.edu
   github: "baranzini-lab"
   label: "Sergio Baranzini"
+license: "https://creativecommons.org/publicdomain/zero/1.0/"
 ---
 The spoke-genelab KG complements the spoke-okn (SPOKE Open Knowledge Network) KG and is designed to integrate omics data from NASA’s Open Science Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments. 
 
