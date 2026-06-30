@@ -9,6 +9,8 @@ funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
 frink-options:
   lakefs-repo: digcfdekg
   documentation-path: digcfdekg
+sparql: https://apps.okn.us/digcfdekg/sparql
+tpf: https://apps.okn.us/ldf/digcfdekg
 contacts:
   - email: flannick@broadinstitute.org
     github: "flannick"
