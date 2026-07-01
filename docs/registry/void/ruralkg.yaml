@@ -3,7 +3,7 @@ distinct_subjects: 67050
 distinct_objects: 189251
 properties: 57
 classes: 14
-last_checked: '2026-06-24'
+last_checked: '2026-07-01'
 class_partitions:
 - uri: http://sail.ua.edu/ruralkg/variable/NSDUHAnswer
   label: ruralkg-var:NSDUHAnswer
