@@ -3,7 +3,7 @@ distinct_subjects: 136
 distinct_objects: 277
 properties: 14
 classes: 2
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
@@ -15,20 +15,20 @@ property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
   count: 136
+- uri: http://example.org/okn/evidenceCount
+  label: evidenceCount
+  count: 120
 - uri: http://example.org/okn/evidenceUrl
   label: evidenceUrl
   count: 120
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
   label: rdf:object
   count: 120
-- uri: http://example.org/okn/evidenceCount
-  label: evidenceCount
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
+  label: rdf:predicate
   count: 120
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
   label: rdf:subject
-  count: 120
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
-  label: rdf:predicate
   count: 120
 - uri: http://www.w3.org/2002/07/owl#sameAs
   label: owl:sameAs
@@ -42,11 +42,11 @@ property_partitions:
 - uri: http://example.org/okn/processType
   label: processType
   count: 18
-- uri: http://www.w3.org/2000/01/rdf-schema#label
-  label: rdfs:label
-  count: 16
 - uri: http://purl.obolibrary.org/obo/RO_0002630
   label: obo:RO_0002630
+  count: 16
+- uri: http://www.w3.org/2000/01/rdf-schema#label
+  label: rdfs:label
   count: 16
 - uri: http://purl.obolibrary.org/obo/RO_0002578
   label: obo:RO_0002578

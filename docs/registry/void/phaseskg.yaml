@@ -3,7 +3,7 @@ distinct_subjects: 390
 distinct_objects: 1228
 properties: 70
 classes: 14
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#AnnotationProperty
   label: owl:AnnotationProperty
@@ -38,14 +38,14 @@ class_partitions:
 - uri: http://www.w3.org/2002/07/owl#AllDifferent
   label: owl:AllDifferent
   count: 2
-- uri: http://www.w3.org/2002/07/owl#Ontology
-  label: owl:Ontology
+- uri: http://www.geneontology.org/formats/oboInOwl#Subset
+  label: oboInOwl:Subset
   count: 1
 - uri: http://www.w3.org/2000/01/rdf-schema#Datatype
   label: rdfs:Datatype
   count: 1
-- uri: http://www.geneontology.org/formats/oboInOwl#Subset
-  label: oboInOwl:Subset
+- uri: http://www.w3.org/2002/07/owl#Ontology
+  label: owl:Ontology
   count: 1
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
@@ -99,11 +99,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/IAO_0000119
   label: obo:IAO_0000119
   count: 47
-- uri: http://www.w3.org/2000/01/rdf-schema#comment
-  label: rdfs:comment
-  count: 46
 - uri: http://purl.obolibrary.org/obo/IAO_0000114
   label: obo:IAO_0000114
+  count: 46
+- uri: http://www.w3.org/2000/01/rdf-schema#comment
+  label: rdfs:comment
   count: 46
 - uri: http://purl.obolibrary.org/obo/IAO_0000412
   label: obo:IAO_0000412
@@ -141,32 +141,32 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/BFO_0000180
   label: obo:BFO_0000180
   count: 15
-- uri: http://www.w3.org/2000/01/rdf-schema#range
-  label: rdfs:range
-  count: 14
 - uri: http://purl.org/dc/elements/1.1/contributor
   label: dc:contributor
+  count: 14
+- uri: http://www.w3.org/2000/01/rdf-schema#range
+  label: rdfs:range
   count: 14
 - uri: http://www.w3.org/2000/01/rdf-schema#domain
   label: rdfs:domain
   count: 13
+- uri: http://purl.obolibrary.org/obo/IAO_0000118
+  label: obo:IAO_0000118
+  count: 12
 - uri: http://purl.obolibrary.org/obo/IAO_0000601
   label: obo:IAO_0000601
   count: 12
 - uri: http://www.w3.org/2000/01/rdf-schema#seeAlso
   label: rdfs:seeAlso
   count: 12
-- uri: http://purl.obolibrary.org/obo/IAO_0000118
-  label: obo:IAO_0000118
-  count: 12
 - uri: http://purl.org/dc/terms/source
   label: dct:source
   count: 10
-- uri: http://www.w3.org/2002/07/owl#someValuesFrom
-  label: owl:someValuesFrom
-  count: 9
 - uri: http://www.w3.org/2002/07/owl#onProperty
   label: owl:onProperty
+  count: 9
+- uri: http://www.w3.org/2002/07/owl#someValuesFrom
+  label: owl:someValuesFrom
   count: 9
 - uri: http://purl.obolibrary.org/obo/IAO_0000232
   label: obo:IAO_0000232
@@ -189,14 +189,17 @@ property_partitions:
 - uri: http://www.geneontology.org/formats/oboInOwl#hasDbXref
   label: oboInOwl:hasDbXref
   count: 4
-- uri: http://www.geneontology.org/formats/oboInOwl#id
-  label: oboInOwl:id
-  count: 3
 - uri: http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
   label: oboInOwl:hasExactSynonym
   count: 3
-- uri: http://www.w3.org/2004/02/skos/core#altLabel
-  label: skos:altLabel
+- uri: http://www.geneontology.org/formats/oboInOwl#id
+  label: oboInOwl:id
+  count: 3
+- uri: http://www.geneontology.org/formats/oboInOwl#created_by
+  label: oboInOwl:created_by
+  count: 2
+- uri: http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+  label: oboInOwl:hasOBONamespace
   count: 2
 - uri: http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
   label: oboInOwl:hasRelatedSynonym
@@ -204,32 +207,26 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#distinctMembers
   label: owl:distinctMembers
   count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#created_by
-  label: oboInOwl:created_by
+- uri: http://www.w3.org/2004/02/skos/core#altLabel
+  label: skos:altLabel
   count: 2
-- uri: http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
-  label: oboInOwl:hasOBONamespace
-  count: 2
+- uri: http://purl.obolibrary.org/obo/IAO_0000231
+  label: obo:IAO_0000231
+  count: 1
 - uri: http://purl.obolibrary.org/obo/IAO_0000425
   label: obo:IAO_0000425
-  count: 1
-- uri: http://purl.obolibrary.org/obo/RO_0001900
-  label: obo:RO_0001900
-  count: 1
-- uri: http://www.w3.org/2002/07/owl#versionInfo
-  label: owl:versionInfo
   count: 1
 - uri: http://purl.obolibrary.org/obo/IAO_0000589
   label: obo:IAO_0000589
   count: 1
-- uri: https://www.wikidata.org/wiki/Property:P5191
-  label: Property:P5191
+- uri: http://purl.obolibrary.org/obo/MFOEM_000010
+  label: obo:MFOEM_000010
   count: 1
-- uri: http://www.w3.org/2002/07/owl#versionIRI
-  label: owl:versionIRI
+- uri: http://purl.obolibrary.org/obo/OMO_0002000
+  label: obo:OMO_0002000
   count: 1
-- uri: http://purl.obolibrary.org/obo/IAO_0000231
-  label: obo:IAO_0000231
+- uri: http://purl.obolibrary.org/obo/RO_0001900
+  label: obo:RO_0001900
   count: 1
 - uri: http://purl.org/dc/terms/license
   label: dct:license
@@ -237,24 +234,27 @@ property_partitions:
 - uri: http://purl.org/dc/terms/title
   label: dct:title
   count: 1
-- uri: https://schema.org/alternateName
-  label: schema:alternateName
-  count: 1
-- uri: http://purl.obolibrary.org/obo/OMO_0002000
-  label: obo:OMO_0002000
+- uri: http://www.geneontology.org/formats/oboInOwl#creation_date
+  label: oboInOwl:creation_date
   count: 1
 - uri: http://www.w3.org/2002/07/owl#deprecated
   label: owl:deprecated
   count: 1
-- uri: http://purl.obolibrary.org/obo/MFOEM_000010
-  label: obo:MFOEM_000010
+- uri: http://www.w3.org/2002/07/owl#disjointWith
+  label: owl:disjointWith
   count: 1
 - uri: http://www.w3.org/2002/07/owl#unionOf
   label: owl:unionOf
   count: 1
-- uri: http://www.w3.org/2002/07/owl#disjointWith
-  label: owl:disjointWith
+- uri: http://www.w3.org/2002/07/owl#versionIRI
+  label: owl:versionIRI
   count: 1
-- uri: http://www.geneontology.org/formats/oboInOwl#creation_date
-  label: oboInOwl:creation_date
+- uri: http://www.w3.org/2002/07/owl#versionInfo
+  label: owl:versionInfo
+  count: 1
+- uri: https://schema.org/alternateName
+  label: schema:alternateName
+  count: 1
+- uri: https://www.wikidata.org/wiki/Property:P5191
+  label: Property:P5191
   count: 1

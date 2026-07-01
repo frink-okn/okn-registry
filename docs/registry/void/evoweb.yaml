@@ -3,7 +3,7 @@ distinct_subjects: 18257
 distinct_objects: 3393426
 properties: 5
 classes: 1
-last_checked: '2026-06-15'
+last_checked: '2026-06-24'
 class_partitions:
 - uri: http://www.w3.org/2004/02/skos/core#Collection
   label: skos:Collection
@@ -18,9 +18,9 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/evoweb/schema/connectedTo
   label: connectedTo
   count: 26920
-- uri: http://www.w3.org/2000/01/rdf-schema#label
-  label: rdfs:label
-  count: 18257
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
+  count: 18257
+- uri: http://www.w3.org/2000/01/rdf-schema#label
+  label: rdfs:label
   count: 18257

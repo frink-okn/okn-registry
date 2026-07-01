@@ -1,0 +1,45 @@
+#+ summary: In study OSD-244, find model-organism genes that are significantly differentially expressed (FDR-adjusted p-value < 0.05) between spaceflight and matched ground control for the 60-day cohort. Consider only assays that directly contrast a Space Flight test group against a Ground Control reference group, oriented so the log2 fold change reflects spaceflight relative to ground control, and exclude reverse-direction duplicates. The two compared groups must be matched on biological material and on every experimental factor except the one distinguishing spaceflight from ground control: each non-spaceflight factor present on one side must also be present on the other, in both directions, so any assay whose groups differ on an additional covariate is rejected. Return each gene's IRI and symbol with the log2 fold change and adjusted p-value, ordered by ascending adjusted p-value and then by gene IRI to break ties, limited to the first 10 results. [medium]
+#+ tags:
+#+   - spoke-genelab
+
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX sch:     <https://purl.org/okn/frink/kg/spoke-genelab/schema/>
+SELECT ?gene ?symbol ?log2fc ?adj_p_value WHERE {
+  GRAPH <https://purl.org/okn/frink/kg/spoke-genelab> {
+    ?study a biolink:Study ; rdfs:label "OSD-244" ; sch:PERFORMED_SpAS ?assay .
+    # Space Flight (group 1 = numerator) vs Ground Control (group 2); fixes the log2fc
+    # orientation and drops reverse-direction duplicates.
+    ?assay sch:factor_space_1 "Space Flight" ;
+           sch:factor_space_2 "Ground Control" ;
+           sch:material_1 ?mat1 ; sch:material_2 ?mat2 ;
+           sch:factors_1 "~60 day" .                 # 60-day cohort
+    FILTER(?mat1 = ?mat2)                            # matched biological material
+    # Both arms carry the same number of experimental factors (neither side adds a covariate).
+    { SELECT ?assay (COUNT(DISTINCT ?a) AS ?n1) WHERE { ?assay sch:factors_1 ?a } GROUP BY ?assay }
+    { SELECT ?assay (COUNT(DISTINCT ?b) AS ?n2) WHERE { ?assay sch:factors_2 ?b } GROUP BY ?assay }
+    FILTER(?n1 = ?n2)
+    # Factor-consistency: reject the assay if any factor on the Space-Flight arm that is
+    # absent from its own Ground-Control arm nonetheless appears on some other Ground-Control
+    # arm in the study -- i.e. it is a shared covariate the two arms disagree on, not a
+    # spaceflight-specific factor. (Flight-specific tokens never occur on any ground arm.)
+    MINUS {
+      ?study sch:PERFORMED_SpAS ?assay .
+      ?assay sch:factors_1 ?f1 .
+      ?study sch:PERFORMED_SpAS ?gx .
+      ?gx sch:factor_space_2 "Ground Control" ; sch:factors_2 ?f1 .
+      FILTER NOT EXISTS { ?assay sch:factors_2 ?f1 }
+    }
+    # Differential-expression edge for a model-organism gene
+    ?stmt rdf:type rdf:Statement ;
+          rdf:subject ?assay ;
+          rdf:predicate sch:MEASURED_DIFFERENTIAL_EXPRESSION_ASmMG ;
+          rdf:object ?gene ;
+          sch:log2fc ?log2fc ; sch:adj_p_value ?adj_p_value .
+    FILTER(?adj_p_value < 0.05)
+    ?gene a biolink:Gene ; sch:symbol ?symbol .
+  }
+}
+ORDER BY ASC(?adj_p_value) ASC(?gene)
+LIMIT 10

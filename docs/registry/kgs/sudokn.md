@@ -15,6 +15,7 @@ contact:
   email: farhad.ameri@asu.edu
   github: "fameri"
   label: "Farhad Ameri"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 SUDOKN is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers.
 
