@@ -94,6 +94,7 @@ kgs:
     lakefs-repo: prokn
   funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://research.bioinformatics.udel.edu/ProKN/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: prokn
   sparql: https://apps.okn.us/prokn/sparql
   stats: https://registry.okn.us/kg-stats/prokn
@@ -255,6 +256,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-genelab.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://github.com/BaranziniLab/spoke_genelab
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: spoke-genelab
   sparql: https://apps.okn.us/spoke-genelab/sparql
   stats: https://registry.okn.us/kg-stats/spoke-genelab
@@ -274,6 +276,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-okn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://spoke.ucsf.edu
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: spoke-okn
   sparql: https://apps.okn.us/spoke-okn/sparql
   stats: https://registry.okn.us/kg-stats/spoke-okn
@@ -629,9 +632,11 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://cfdeknowledge.org/
   shortname: digcfdekg
+  sparql: https://apps.okn.us/digcfdekg/sparql
   stats: https://registry.okn.us/kg-stats/digcfdekg
   template: overrides/kg.html
   title: CFDE REVEAL Knowledge Graph
+  tpf: https://apps.okn.us/ldf/digcfdekg
 - contacts:
   - email: jinlian.wang@uth.tmc.edu
     github: wangjl99
@@ -712,15 +717,15 @@ kgs:
   description: Knowledge graph constructed from FDA MAUDE adverse event reports using
     standardized FDA product codes.
   frink-options:
-    documentation-path: maudekg
-    lakefs-repo: maude-kg
+    documentation-path: medical-device-kg
+    lakefs-repo: medical-device-kg
   homepage: https://github.com/Prabhadeus/Proto-OKN
-  shortname: maudekg
-  sparql: https://apps.okn.us/maudekg/sparql
-  stats: https://registry.okn.us/kg-stats/maudekg
+  shortname: medical-device-kg
+  sparql: https://apps.okn.us/medical-device-kg/sparql
+  stats: https://registry.okn.us/kg-stats/medical-device-kg
   template: overrides/kg.html
-  title: FDA MAUDE Adverse Event Knowledge Graph
-  tpf: https://apps.okn.us/ldf/maudekg
+  title: Medical Device Knowledge Graph
+  tpf: https://apps.okn.us/ldf/medical-device-kg
 - contacts:
   - email: tianyi@purdue.edu
     github: tianyi-zhang
