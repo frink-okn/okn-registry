@@ -3,7 +3,7 @@ distinct_subjects: 22883
 distinct_objects: 41410
 properties: 37
 classes: 14
-last_checked: '2026-06-24'
+last_checked: '2026-07-02'
 class_partitions:
 - uri: http://schema.org/Rating
   label: Rating
