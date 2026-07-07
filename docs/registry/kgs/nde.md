@@ -11,24 +11,6 @@ tpf: https://apps.okn.us/ldf/nde
 frink-options:
   lakefs-repo: nde
   documentation-path: nde
-keywords:
-- dataset discovery
-- find datasets
-- gene expression
-- transcriptomics
-- RNA-seq
-- single-cell
-- microarray
-- GEO
-- ArrayExpress
-- meta-analysis
-- omics
-- disease datasets
-example_queries:
-- What datasets are available to study gene expression in diabetic nephropathy?
-- Find human RNA-seq datasets for a given kidney disease.
-- Which GEO datasets exist for a specific disease, and in which species?
-- List transcriptomics datasets I could pool for a differential-expression meta-analysis of a condition.
 contacts:
 - email: asu@scripps.edu
   github: "andrewsu"
