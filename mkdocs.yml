@@ -83,6 +83,7 @@ nav:
   - Graph Registry:
     - registry/index.md
     - Contribute to the Registry: registry/contribute.md
+    - Uploading Graphs: help/index.md
   - Querying Graphs:
     - query/index.md
     - How to Use the Query Tool: query/query-page.md

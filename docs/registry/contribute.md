@@ -28,13 +28,13 @@ The frontmatter, preceded and followed by a line of three hyphens ("---"), shoul
 
     !!! warning
 
-        If you have *not* already uploaded data to https://repository.okn.us/ *and* triggered the conversion process ([see this documentation page for more](https://registry.okn.us/help/update/#workflows-and-processing)), then please skip this field. We will add it once your graph's individual SPARQL endpoint is up and running.
+        If you have *not* already uploaded data to https://repository.okn.us/ *and* triggered the conversion process ([see the documentation page on graph upload workflows and processing](https://registry.okn.us/help/update/#workflows-and-processing)), then please skip this field. We will add it once your graph's individual SPARQL endpoint is up and running.
 
 * `tpf`: This should be a link composed of `https://apps.okn.us/ldf/` followed by your graph's shortname.
 
     !!! warning
 
-        If you have *not* already uploaded data to https://repository.okn.us/ *and* triggered the conversion process ([see this documentation page for more](https://registry.okn.us/help/update/#workflows-and-processing)), then please skip this field. We will add it once your graph's individual Linked Data Fragments endpoint is up and running.
+        If you have *not* already uploaded data to https://repository.okn.us/ *and* triggered the conversion process ([see the documentation page on graph upload workflows and processing](https://registry.okn.us/help/update/#workflows-and-processing)), then please skip this field. We will add it once your graph's individual Linked Data Fragments endpoint is up and running.
 
 * `frink-options`: This should contain two subfields, `lakefs-repo` and `documentation-path`, each of whose value should be your graph's shortname.
 
@@ -108,6 +108,10 @@ The end result should look something like this:
     ```
 
 Once you have saved this file, open a pull request for the addition of your graph entry file to the Registry.
+
+!!! success
+
+    As soon as the pull request is accepted, you can then move on to [setting up a repository in okn.us's landing zone](https://registry.okn.us/help/setup/) and uploading your graph.
 
 ## Updating an existing Registry entry
 
