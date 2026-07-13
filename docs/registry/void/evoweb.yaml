@@ -3,7 +3,7 @@ distinct_subjects: 18257
 distinct_objects: 3393426
 properties: 5
 classes: 1
-last_checked: '2026-07-06'
+last_checked: '2026-07-13'
 class_partitions:
 - uri: http://www.w3.org/2004/02/skos/core#Collection
   label: skos:Collection
