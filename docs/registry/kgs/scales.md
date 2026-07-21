@@ -11,6 +11,11 @@ tpf: https://apps.okn.us/ldf/scales
 frink-options:
   lakefs-repo: scales-kg
   documentation-path: scales-kg
+  augmentations:
+    - name: map-predicate
+      params:
+        from: https://scales.okn.us/property/hasName
+        to: http://www.w3.org/2000/01/rdf-schema#label
 contacts:
   - email: "danny.e.oneal@gmail.com"
     github: danny-oneal
