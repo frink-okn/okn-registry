@@ -2,7 +2,7 @@
 template: overrides/kg.html
 shortname: medical-device-kg
 title: Medical Device Knowledge Graph
-description: Knowledge graph constructed from FDA MAUDE adverse event reports using standardized FDA product codes.
+description: A unified medical-device knowledge graph integrating regulatory, clinical, research, safety, and other relevant data from multiple sources.
 stats: https://registry.okn.us/kg-stats/medical-device-kg
 homepage: https://github.com/Prabhadeus/Proto-OKN
 sparql: https://apps.okn.us/medical-device-kg/sparql
@@ -11,14 +11,14 @@ frink-options:
   lakefs-repo: medical-device-kg
   documentation-path: medical-device-kg
 contacts:
+  - email: mbukhari1@pride.hofstra.edu
+    label: Mustafa Bukhari
+  - email: Marco.Romanelli@hofstra.edu
+    label: "Dr. Marco Romanelli"
+  - email: RocheRey.C.DeGuzman@hofstra.edu
+    label: "Dr. Roche C. de Guzman"
   - email: psingh37@pride.hofstra.edu
     github: Prabhadeus
     label: Prabhjot Singh
 ---
-
-The Medical Device Knowledge Graph models FDA MAUDE adverse event reports using an ontology-first RDF design. Data is retrieved from the openFDA API using standardized FDA product codes and transformed into RDF/Turtle format. The graph enables structured querying of adverse event data through SPARQL and supports downstream statistical analysis of medical device safety patterns.
-
-Graph statistics:
-- Triples: 95,938
-- File size: ~5 MB
-- Data source: openFDA MAUDE API
+The Medical Device Knowledge Graph integrates medical-device data from multiple regulatory, clinical, research, and safety sources using a unified ontology-first RDF design. Source records are standardized and transformed into RDF/Turtle so related devices, manufacturers, regulatory submissions, studies, outcomes, recalls, and adverse events can be connected and queried through SPARQL. The graph supports cross-dataset analysis, medical-device safety research, risk modeling, and the continued integration of additional data sources.
