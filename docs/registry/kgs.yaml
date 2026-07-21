@@ -662,6 +662,7 @@ kgs:
     lakefs-repo: phases-kg
   funding: https://reporter.nih.gov/project-details/11184405
   homepage: https://healthyphases.org/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: phaseskg
   sparql: https://apps.okn.us/phaseskg/sparql
   template: overrides/kg.html
