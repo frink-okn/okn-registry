@@ -712,11 +712,17 @@ kgs:
   title: SAWGraph PFAS KG
   tpf: https://apps.okn.us/ldf/sawgraph
 - contacts:
+  - email: mbukhari1@pride.hofstra.edu
+    label: Mustafa Bukhari
+  - email: Marco.Romanelli@hofstra.edu
+    label: Dr. Marco Romanelli
+  - email: RocheRey.C.DeGuzman@hofstra.edu
+    label: Dr. Roche C. de Guzman
   - email: psingh37@pride.hofstra.edu
     github: Prabhadeus
     label: Prabhjot Singh
-  description: Knowledge graph constructed from FDA MAUDE adverse event reports using
-    standardized FDA product codes.
+  description: A unified medical-device knowledge graph integrating regulatory, clinical,
+    research, safety, and other relevant data from multiple sources.
   frink-options:
     documentation-path: medical-device-kg
     lakefs-repo: medical-device-kg
