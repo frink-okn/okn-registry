@@ -3,7 +3,7 @@ distinct_subjects: 71430662
 distinct_objects: 135184264
 properties: 90
 classes: 79
-last_checked: '2026-07-06'
+last_checked: '2026-07-24'
 class_partitions:
 - uri: https://schema.org/Dataset
   label: schema:Dataset
