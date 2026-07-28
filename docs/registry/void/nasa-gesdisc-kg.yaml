@@ -1,13 +1,22 @@
-triples: 1472753
-distinct_subjects: 150351
-distinct_objects: 718244
-properties: 25
-classes: 7
+triples: 30013241
+distinct_subjects: 4583036
+distinct_objects: 6253757
+properties: 42
+classes: 10
 last_checked: '2026-07-28'
 class_partitions:
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
+  label: rdf:Statement
+  count: 3173783
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Author
+  label: Author
+  count: 905086
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Publication
   label: Publication
-  count: 138704
+  count: 457085
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Institution
+  label: Institution
+  count: 35435
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/Dataset
   label: Dataset
   count: 8058
@@ -27,27 +36,69 @@ class_partitions:
   label: DataCenter
   count: 189
 property_partitions:
-- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/CITES
-  label: CITES
-  count: 208616
-- uri: http://purl.org/dc/terms/identifier
-  label: dct:identifier
-  count: 150351
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 150351
+  count: 4583036
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
+  label: rdf:object
+  count: 3173783
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
+  label: rdf:predicate
+  count: 3173783
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+  label: rdf:subject
+  count: 3173783
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/AUTHORED_BY
+  label: AUTHORED_BY
+  count: 2540881
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/authorPosition
+  label: authorPosition
+  count: 2540881
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/AFFILIATED_WITH
+  label: AFFILIATED_WITH
+  count: 1441939
+- uri: http://purl.org/dc/terms/identifier
+  label: dct:identifier
+  count: 1409253
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/CITES
+  label: CITES
+  count: 982434
+- uri: http://www.w3.org/2000/01/rdf-schema#label
+  label: rdfs:label
+  count: 952168
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/openalexId
+  label: openalexId
+  count: 940521
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/derived
+  label: derived
+  count: 632902
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/weight
+  label: weight
+  count: 632902
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/WORKS_WITH_DATASET
+  label: WORKS_WITH_DATASET
+  count: 604929
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/orcid
+  label: orcid
+  count: 543086
 - uri: http://purl.org/ontology/bibo/doi
   label: bibo:doi
-  count: 146762
+  count: 465143
+- uri: http://www.w3.org/2006/time#year
+  label: time:year
+  count: 456434
+- uri: https://schema.org/title
+  label: schema:title
+  count: 456226
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/crawlHop
+  label: crawlHop
+  count: 318381
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/source
+  label: source
+  count: 318381
 - uri: https://schema.org/abstract
   label: schema:abstract
   count: 144364
-- uri: https://schema.org/title
-  label: schema:title
-  count: 138055
-- uri: http://www.w3.org/2006/time#year
-  label: time:year
-  count: 138053
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/HAS_APPLIEDRESEARCHAREA
   label: HAS_APPLIEDRESEARCHAREA
   count: 121553
@@ -56,7 +107,19 @@ property_partitions:
   count: 109517
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/USES_DATASET
   label: USES_DATASET
-  count: 44354
+  count: 55313
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/ror
+  label: ror
+  count: 35371
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/citersFetched
+  label: citersFetched
+  count: 35134
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/country
+  label: country
+  count: 34040
+- uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/CO_USED_WITH
+  label: CO_USED_WITH
+  count: 27973
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/HAS_SCIENCEKEYWORD
   label: HAS_SCIENCEKEYWORD
   count: 25553
@@ -66,9 +129,6 @@ property_partitions:
 - uri: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/HAS_DATASET
   label: HAS_DATASET
   count: 11698
-- uri: http://www.w3.org/2000/01/rdf-schema#label
-  label: rdfs:label
-  count: 11647
 - uri: http://purl.org/dc/terms/subject
   label: dct:subject
   count: 9843

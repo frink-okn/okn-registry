@@ -1,65 +1,65 @@
-triples: 4819802
-distinct_subjects: 1254257
-distinct_objects: 1348645
+triples: 4761079
+distinct_subjects: 1239755
+distinct_objects: 1328703
 properties: 18
 classes: 1
 last_checked: '2026-07-28'
 class_partitions:
 - uri: http://rdfs.org/ns/void#Dataset
   label: void:Dataset
-  count: 1254257
+  count: 1239755
 property_partitions:
 - uri: http://rdfs.org/ns/void#triples
   label: void:triples
-  count: 1254257
+  count: 1239755
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 1254257
+  count: 1239755
 - uri: http://ldf.fi/void-ext#objectClassPartition
   label: void-ext:objectClassPartition
-  count: 743141
+  count: 738256
 - uri: http://rdfs.org/ns/void#class
   label: void:class
-  count: 545758
+  count: 540154
 - uri: http://rdfs.org/ns/void#property
   label: void:property
-  count: 498846
+  count: 488428
 - uri: http://rdfs.org/ns/void#propertyPartition
   label: void:propertyPartition
-  count: 498846
+  count: 488428
 - uri: http://ldf.fi/void-ext#datatype
   label: void-ext:datatype
-  count: 6700
+  count: 7442
 - uri: http://ldf.fi/void-ext#datatypePartition
   label: void-ext:datatypePartition
-  count: 6700
+  count: 7442
 - uri: http://rdfs.org/ns/void#classPartition
   label: void:classPartition
-  count: 4863
+  count: 4906
 - uri: http://rdfs.org/ns/void#entities
   label: void:entities
-  count: 4863
+  count: 4906
 - uri: http://ldf.fi/void-ext#language
   label: void-ext:language
-  count: 667
+  count: 682
 - uri: http://ldf.fi/void-ext#languagePartition
   label: void-ext:languagePartition
-  count: 667
+  count: 682
 - uri: http://rdfs.org/ns/void#distinctObjects
   label: void:distinctObjects
-  count: 40
+  count: 41
 - uri: http://rdfs.org/ns/void#distinctSubjects
   label: void:distinctSubjects
-  count: 40
+  count: 41
 - uri: http://rdfs.org/ns/void#properties
   label: void:properties
-  count: 40
+  count: 41
 - uri: http://purl.org/dc/terms/modified
   label: dct:modified
-  count: 39
+  count: 40
 - uri: http://purl.org/pav/lastUpdatedOn
   label: pav:lastUpdatedOn
-  count: 39
+  count: 40
 - uri: http://purl.org/pav/version
   label: pav:version
-  count: 39
+  count: 40
