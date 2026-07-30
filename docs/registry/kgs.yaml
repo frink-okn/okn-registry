@@ -479,7 +479,15 @@ kgs:
   - email: plwhetzel@gmail.com
     github: twhetzel
     label: Trish Whetzel
-  description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
+  description: "Query pre-computed differential gene expression (log2 fold changes\
+    \ and adjusted p-values) for genes across diseases, tissues, cell types, developmental\
+    \ stages, and sex, drawn from a curated selection of 243 EMBL-EBI Expression Atlas\
+    \ studies. Use this graph to retrieve computed differential-expression results\
+    \ and expression associations for the studies it includes. It is a hand-picked\
+    \ subset, NOT a comprehensive index of the gene-expression datasets available\
+    \ for a given disease \u2014 to discover the full set of datasets for a condition\
+    \ (for example when assembling studies for your own pooled or meta-analysis),\
+    \ use a dataset-discovery index such as the NIAID Data Ecosystem (nde) graph."
   frink-options:
     documentation-path: gene-expression-atlas-okn
     lakefs-repo: gene-expression-atlas-okn
@@ -499,11 +507,20 @@ kgs:
   - email: plwhetzel@gmail.com
     github: twhetzel
     label: Trish Whetzel
-  description: The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated
-    disease datasets. These include datasets from NIAID-funded repositories as well
-    as globally-relevant infectious and immune-mediated disease (IID) repositories
-    from NIH and beyond. The datasets include -omics data, clinical data, epidemiological
-    data, pathogen-host interaction data, flow cytometry, and imaging.
+  description: "The nde (NIAID Data Ecosystem) knowledge graph is a dataset-discovery\
+    \ index for finding biomedical research datasets \u2014 including gene-expression\
+    \ / transcriptomics data (RNA-seq, microarray, single-cell / single-nucleus),\
+    \ other -omics, clinical, epidemiological, imaging, and flow-cytometry data \u2014\
+    \ searchable by disease or condition, organism, and source repository. It mirrors\
+    \ dataset metadata from NCBI GEO, ArrayExpress, and 70+ repositories; coverage\
+    \ is deepest for infectious and immune-mediated disease (its NIAID mission) but,\
+    \ because it indexes general-purpose repositories such as GEO, it also covers\
+    \ datasets for many non-infectious diseases and conditions (e.g. cancer, diabetes,\
+    \ kidney disease). Use it to find and triage candidate datasets for a specific\
+    \ disease \u2014 for example when assembling studies for a pooled or meta-analysis\
+    \ of differential gene expression. It stores dataset-level metadata and links\
+    \ to the primary repository; it does NOT store per-sample data or computed differential-expression\
+    \ values (log2 fold changes / p-values)."
   frink-options:
     documentation-path: nde
     lakefs-repo: nde
@@ -545,6 +562,11 @@ kgs:
   description: SCALES is an integrated justice platform to connect criminal justice
     data across data silos.
   frink-options:
+    augmentations:
+    - name: map-predicate
+      params:
+        from: https://scales.okn.us/property/hasName
+        to: http://www.w3.org/2000/01/rdf-schema#label
     documentation-path: scales-kg
     lakefs-repo: scales-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
