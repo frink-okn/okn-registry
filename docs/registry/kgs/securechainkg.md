@@ -18,6 +18,7 @@ contacts:
   - email: "di5@purdue.edu"
     github: "NecoraNyaru"
     label: "Yifeng Di"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 SecureChain KG is a knowledge graph for resilient, trustworthy, and secure software supply chains.
 
