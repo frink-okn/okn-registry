@@ -15,6 +15,7 @@ contact:
   email: support@ndexbio.org
   github: ""
   label: "Cytoscape and NDEx Team"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 
 The NCI-PID 2.0 Knowledge Graph (NCI-PID 2.0 KG) is a semantic knowledge graph derived from the NCI Pathway Interaction Database (NCI-PID) version 2.0 networks. These networks represent curated biomolecular interactions and cellular signaling pathways, enhanced with evidence from the INDRA (Integrated Network and Dynamical Reasoning Assembler) system.
