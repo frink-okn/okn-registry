@@ -303,6 +303,25 @@ kgs:
   title: NCI-PID 2.0 KG
   tpf: https://apps.okn.us/ldf/ncipidkg
 - contact:
+    email: support@ndexbio.org
+    github: ''
+    label: Cytoscape and NDEx Team
+  description: The NeST (Nested Systems in Tumors) Knowledge Graph converts the NeST
+    hierarchical map of cancer protein systems into RDF, capturing the nested containment
+    hierarchy of protein assemblies, their member proteins, and system-level annotations
+    derived from integrated cancer proteomics and interaction data.
+  frink-options:
+    documentation-path: nestkg
+    lakefs-repo: nestkg
+  homepage: https://www.ndexbio.org/viewer/networks/4731187a-8796-11f1-857e-005056ae3c32
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: nestkg
+  sparql: https://apps.okn.us/nestkg/sparql
+  stats: https://registry.okn.us/kg-stats/nestkg
+  template: overrides/kg.html
+  title: NeST KG
+  tpf: https://apps.okn.us/ldf/nestkg
+- contact:
     email: tom@insilica.co
     github: tomlue
     label: Tom Luechtefeld
