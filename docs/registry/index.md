@@ -5,6 +5,7 @@
 
 | Shortname | Title | Description |
 | :-------- | :---- | :---------- |
+| [babel](kgs/babel/) | Babel KG | Babel creates cliques of equivalent identifiers across many biomedical vocabularies |
 | [bio101](kgs/bio101/) | KB Bio 101 | A knowledge base created from an introductory biology textbook |
 | [biobricks-aopwiki](kgs/biobricks-aopwiki/) | BioBricks AOP-Wiki | BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways from the AOP-Wiki. |
 | [biobricks-ice](kgs/biobricks-ice/) | BioBricks ICE | BioBricks ICE (Integrated Chemical Environment) is an open knowledge graph for cheminformatics and chemical safety data from EPA's CompTox database. |

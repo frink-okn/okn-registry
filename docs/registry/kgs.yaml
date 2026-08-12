@@ -39,6 +39,20 @@ kgs:
     email: balhoff@renci.org
     github: balhoff
     label: Jim Balhoff
+  description: Babel creates cliques of equivalent identifiers across many biomedical
+    vocabularies
+  frink-options:
+    documentation-path: babel
+    lakefs-repo: babel
+  homepage: https://github.com/NCATSTranslator/Babel
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: babel
+  template: overrides/kg.html
+  title: Babel KG
+- contact:
+    email: balhoff@renci.org
+    github: balhoff
+    label: Jim Balhoff
   description: Collected VoID (Vocabulary of Interlinked Datasets) metadata for all
     OKN graphs
   frink-options:
