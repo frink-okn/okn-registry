@@ -1,0 +1,18 @@
+#+ summary: NeST systems significantly enriched for somatic mutation (HiSig adjusted p < 0.05)
+#+ tags:
+#+   - nestkg
+
+PREFIX ndexv: <https://www.ndexbio.org/vocab/>
+PREFIX nestv: <https://www.ndexbio.org/vocab/nest/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?system ?label ?adjP ?weight ?members WHERE {
+  ?system a ndexv:ProteinSystem ;
+          rdfs:label ?label ;
+          ndexv:memberCount ?members ;
+          nestv:hisigAdjustedPValue ?adjP .
+  OPTIONAL { ?system nestv:hisigWeight ?weight }
+  FILTER(?adjP < 0.05)
+}
+ORDER BY ?adjP
+LIMIT 100
