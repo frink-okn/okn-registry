@@ -3,7 +3,7 @@ distinct_subjects: 86312
 distinct_objects: 96078
 properties: 15
 classes: 3
-last_checked: '2026-07-28'
+last_checked: '2026-08-17'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement

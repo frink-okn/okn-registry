@@ -3,7 +3,7 @@ distinct_subjects: 2297726541
 distinct_objects: 3775555918
 properties: 61371
 classes: 1824
-last_checked: '2026-07-28'
+last_checked: '2026-08-17'
 class_partitions:
 - uri: http://wikiba.se/ontology#Statement
   label: wikibase:Statement
