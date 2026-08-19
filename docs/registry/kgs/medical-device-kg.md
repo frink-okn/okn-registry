@@ -7,6 +7,7 @@ stats: https://registry.okn.us/kg-stats/medical-device-kg
 homepage: https://github.com/Prabhadeus/Proto-OKN
 sparql: https://apps.okn.us/medical-device-kg/sparql
 tpf: https://apps.okn.us/ldf/medical-device-kg
+license: "https://creativecommons.org/licenses/by/4.0/"
 frink-options:
   lakefs-repo: medical-device-kg
   documentation-path: medical-device-kg
