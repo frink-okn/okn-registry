@@ -784,6 +784,7 @@ kgs:
     documentation-path: medical-device-kg
     lakefs-repo: medical-device-kg
   homepage: https://github.com/Prabhadeus/Proto-OKN
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: medical-device-kg
   sparql: https://apps.okn.us/medical-device-kg/sparql
   stats: https://registry.okn.us/kg-stats/medical-device-kg
