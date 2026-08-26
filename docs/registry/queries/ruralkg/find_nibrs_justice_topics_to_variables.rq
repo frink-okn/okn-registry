@@ -1,0 +1,18 @@
+#+ summary: Find NIBRS justice topics connected to NIBRS variables.
+#+ tags:
+#+   - ruralkg
+
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX justice:  <http://sail.ua.edu/ruralkg/justice/>
+PREFIX variable: <http://sail.ua.edu/ruralkg/variable/>
+
+SELECT ?justiceTopic ?justiceLabel ?variable ?variableCode ?variableContent
+WHERE {
+  ?justiceTopic justice:hasVariable ?variable .
+
+  OPTIONAL { ?justiceTopic rdfs:label ?justiceLabel . }
+  OPTIONAL { ?variable variable:code ?variableCode . }
+  OPTIONAL { ?variable variable:content ?variableContent . }
+}
+ORDER BY ?justiceLabel ?variableCode
+LIMIT 100

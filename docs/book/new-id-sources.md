@@ -5,13 +5,13 @@ These guidelines are relevant for graphs that are considering including, as part
 ## Reasonable sizes
 
 If an external database is of a reasonable size, the Fabric may ingest it if your graph requires it.
-A “reasonable size” is one that does not cause the external database to form the plurality of triples in the Proto-OKN.
+A “reasonable size” is one that does not cause the external database to form the plurality of triples in the OKN.
 UniProt and SemOpenAlex are great examples of databases of an unreasonable size.
 
 ## Text metadata (labels, descriptions)
 
 Graphs should not try to reproduce the labels/descriptions of entities from external sources.
-(While such reproduction is not inherently a problem for the FRINK Federated SPARQL endpoint, since duplicate triples are simply merged there, it can cause consistency issues when federating between graphs.)
+(While such reproduction is not inherently a problem for the Fabric Federated SPARQL endpoint, since duplicate triples are simply merged there, it can cause consistency issues when federating between graphs.)
 
 Graphs may attach auxiliary information (e.g. the five predicates [listed here whose names end with 'note'](https://www.w3.org/TR/skos-reference/#notes)) to such entities to clarify their use in those graphs; such notes must make clear to which graph they apply.
 
@@ -31,4 +31,4 @@ If for whatever reason the Fabric allows the redefinition of a class of entities
 
 ## Supplementation of existing entities
 
-Graphs may ascribe *new information* to external entities if such information is not present elsewhere, either in the external source of those entities or in other Proto-OKN graphs.
+Graphs may ascribe *new information* to external entities if such information is not present elsewhere, either in the external source of those entities or in other OKN graphs.

@@ -1,0 +1,22 @@
+#+ summary: Find drugs that treat diseases strongly associated with a social determinant of health (odds ratio > 5 and Fisher's exact p-value < 0.001 for the SDoH-disease co-occurrence). Return the SDoH name, disease name, odds ratio, Fisher's p-value, and compound name, ordered by descending odds ratio, limited to the first 10 results. [hard]
+#+ tags:
+#+   - spoke-okn
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://purl.org/okn/frink/kg/spoke-okn/schema/>
+
+SELECT DISTINCT ?sdohLabel ?diseaseLabel ?odds ?fisher ?compoundLabel {
+    ?stmt rdf:subject ?sdoh ;
+          rdf:predicate schema:ASSOCIATES_SaD ;
+          rdf:object ?disease ;
+          schema:odds ?odds ;
+          schema:fisher ?fisher .
+    FILTER(?odds > 5.0 && ?fisher < 0.001)
+    ?compound schema:TREATS_CtD ?disease ;
+              rdfs:label ?compoundLabel .
+    ?sdoh rdfs:label ?sdohLabel .
+    ?disease rdfs:label ?diseaseLabel .
+}
+ORDER BY DESC(?odds)
+LIMIT 10

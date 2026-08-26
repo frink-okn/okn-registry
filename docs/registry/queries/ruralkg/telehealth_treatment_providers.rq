@@ -1,0 +1,21 @@
+#+ summary: Find RuralKG treatment providers that offer telemedicine or telehealth therapy.
+#+ tags:
+#+   - ruralkg
+
+PREFIX rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema:    <https://schema.org/>
+PREFIX treatment: <http://sail.ua.edu/ruralkg/treatment/>
+
+SELECT ?providerName ?serviceName ?gnisLocation ?telephone
+WHERE {
+  ?provider rdf:type treatment:TreatmentProvider ;
+            schema:name ?providerName ;
+            treatment:providesService treatment:MHS_TELE .
+
+  treatment:MHS_TELE schema:name ?serviceName .
+
+  OPTIONAL { ?provider schema:serviceLocation ?gnisLocation . }
+  OPTIONAL { ?provider schema:telephone ?telephone . }
+}
+ORDER BY ?providerName
+LIMIT 100

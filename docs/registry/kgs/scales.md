@@ -3,14 +3,19 @@ template: overrides/kg.html
 shortname: scales
 title: SCALES
 description: SCALES is an integrated justice platform to connect criminal justice data across data silos.
-stats: https://frink.renci.org/kg-stats/scales-kg
+stats: https://registry.okn.us/kg-stats/scales-kg
 homepage: https://scales-okn.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
-sparql: https://frink.apps.renci.org/scales/sparql
-tpf: https://frink.apps.renci.org/ldf/scales
+sparql: https://apps.okn.us/scales/sparql
+tpf: https://apps.okn.us/ldf/scales
 frink-options:
   lakefs-repo: scales-kg
   documentation-path: scales-kg
+  augmentations:
+    - name: map-predicate
+      params:
+        from: https://scales.okn.us/property/hasName
+        to: http://www.w3.org/2000/01/rdf-schema#label
 contacts:
   - email: "danny.e.oneal@gmail.com"
     github: danny-oneal
@@ -18,6 +23,7 @@ contacts:
   - email: "scottgdaniel@gmail.com"
     github: scottgdaniel
     label: "Scott Daniel"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 SCALES is an integrated justice platform to connect criminal justice data across data silos.
 

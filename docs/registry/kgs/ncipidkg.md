@@ -3,11 +3,11 @@ template: overrides/kg.html
 shortname: ncipidkg
 title: NCI-PID 2.0 KG
 description: The NCI-PID 2.0 Knowledge Graph converts NCI Pathway Interaction Database version 2.0 networks into RDF, capturing protein interactions, signaling pathways, and post-translational modifications enriched with INDRA evidence metadata.
-stats: https://frink.renci.org/kg-stats/ncipidkg
+stats: https://registry.okn.us/kg-stats/ncipidkg
 homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
 # funding: NSF Proto-OKN
-sparql: https://frink.apps.renci.org/ncipidkg/sparql
-tpf: https://frink.apps.renci.org/ldf/ncipidkg
+sparql: https://apps.okn.us/ncipidkg/sparql
+tpf: https://apps.okn.us/ldf/ncipidkg
 frink-options:
   lakefs-repo: ncipidkg
   documentation-path: ncipidkg
@@ -15,6 +15,7 @@ contact:
   email: support@ndexbio.org
   github: ""
   label: "Cytoscape and NDEx Team"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 
 The NCI-PID 2.0 Knowledge Graph (NCI-PID 2.0 KG) is a semantic knowledge graph derived from the NCI Pathway Interaction Database (NCI-PID) version 2.0 networks. These networks represent curated biomolecular interactions and cellular signaling pathways, enhanced with evidence from the INDRA (Integrated Network and Dynamical Reasoning Assembler) system.

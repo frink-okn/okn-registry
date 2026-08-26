@@ -1,0 +1,33 @@
+#+ summary: Find proteins variants causally related to rare diseases by querying ProKN and Open Annotations Rare Disease (OARD) KG
+#+ tags:
+#+   - prokn  
+
+PREFIX biolinkw3id: <https://w3id.org/biolink/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX upcore: <http://purl.uniprot.org/core/>
+PREFIX biolinkmodel: <https://biolink.github.io/biolink-model/>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
+
+SELECT DISTINCT ?rareDiseaseLabel ?casuallyRelated ?proteinVariant ?variantLabel
+WHERE {
+
+    SERVICE <https://apps.okn.us/oard-kg/sparql>{
+        # From OARD KG
+        ?rareDisease biolinkw3id:category biolinkw3id:Disease ;
+            rdfs:label ?rareDiseaseLabel .
+    }
+            
+    # From ProKN
+
+    ?proknDisease skos:exactMatch ?rareDisease .
+    
+  	BIND(<http://purl.obolibrary.org/obo/RO_0002410> AS ?casuallyRelated)
+  
+    ?proteinVariant a <http://purl.uniprot.org/core/Natural_Variant_Annotation> ;
+      ?casuallyRelated ?proknDisease ;
+                    rdfs:label ?variantLabel .
+    
+}
+

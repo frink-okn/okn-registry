@@ -304,7 +304,7 @@ Prefer [PubChem CIDs](https://pubchem.ncbi.nlm.nih.gov/) (http://rdf.ncbi.nlm.ni
 
 Prefer [EDAM IDs](https://edamontology.org/page)
 
-* (No Wikidata identifier property for this; must map from Wikidata item to RDF URL using [identifier mappings](https://frink.apps.renci.org/ldf/identifier-mappings))
+* (No Wikidata identifier property for this; must map from Wikidata item to RDF URL using [identifier mappings](https://apps.okn.us/ldf/identifier-mappings))
 * Only 44 IDs mapped to Wikidata; no harm in adding remainder to Wikidata if not already present
 
 ### Diseases

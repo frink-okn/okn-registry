@@ -3,11 +3,11 @@ template: overrides/kg.html
 shortname: sawgraph
 title: SAWGraph PFAS KG
 description: The Safe Agricultural Products and Water Graph (SAWGraph) PFAS KG stores data on PFAS observations and releases, describing the samples, the geospatial features they were taken from, the sampled environmental media, the specific chemical substances and the measurement values observed.
-stats: https://frink.renci.org/kg-stats/sawgraph
+stats: https://registry.okn.us/kg-stats/sawgraph
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
-sparql: https://frink.apps.renci.org/sawgraph/sparql
-tpf: https://frink.apps.renci.org/ldf/sawgraph
+sparql: https://apps.okn.us/sawgraph/sparql
+tpf: https://apps.okn.us/ldf/sawgraph
 frink-options:
   lakefs-repo: sawgraph-kg
   documentation-path: sawgraph-kg

@@ -3,11 +3,11 @@ template: overrides/kg.html
 shortname: oard-kg
 title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
 description: Clinical associations between rare diseases and phenotypes derived from electronic health records
-#stats: https://frink.renci.org/kg-stats/oard-kg
+#stats: https://registry.okn.us/kg-stats/oard-kg
 homepage: https://github.com/WengLab-InformaticsResearch/oard-react
 funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
-sparql: https://frink.apps.renci.org/oard-kg/sparql
-tpf: https://frink.apps.renci.org/ldf/oard-kg
+sparql: https://apps.okn.us/oard-kg/sparql
+tpf: https://apps.okn.us/ldf/oard-kg
 frink-options:
   lakefs-repo: oard-kg
   documentation-path: oard-kg
@@ -18,5 +18,6 @@ contacts:
 - email: cw2384@cumc.columbia.edu  
   github: ChunhuaWeng
   label: Chunhua Weng
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 [OARD-KG](https://github.com/WengLab-InformaticsResearch/oard-react) is an RDF triplestore which provides a SPARQL query endpoint for clinical associations between rare diseases and phenotypes derived from electronic health records.

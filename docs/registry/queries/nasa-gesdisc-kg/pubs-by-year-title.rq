@@ -5,7 +5,7 @@
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX schema: <https://schema.org/>
-PREFIX gesdisc: <https://nasa-gesdisc.proto-okn.net/kg/schema/>
+PREFIX gesdisc: <https://purl.org/okn/frink/kg/nasa-gesdisc/schema/>
 SELECT ?pub ?year ?title   {
   ?pub a gesdisc:Publication .
   ?pub time:year ?year .

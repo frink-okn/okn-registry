@@ -2,11 +2,14 @@
 #+ tags:
 #+   - ruralkg
 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX sa: <http://sail.ua.edu/ruralkg/substanceabuse/>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <https://schema.org/>
+PREFIX sa:     <http://sail.ua.edu/ruralkg/substanceabuse/>
+
 SELECT ?substance ?name
 WHERE {
-  ?substance rdf:type sa:Substance .
-  ?substance sa:name ?name .
+  ?substance rdf:type sa:Substance ;
+             schema:name ?name .
 }
+ORDER BY ?name
 LIMIT 100

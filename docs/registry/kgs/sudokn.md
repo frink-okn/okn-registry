@@ -3,11 +3,11 @@ template: overrides/kg.html
 shortname: sudokn
 title: SUDOKN
 description: Supply and Demand Open Knowledge Network is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers.
-stats: https://frink.renci.org/kg-stats/sudokn
+stats: https://registry.okn.us/kg-stats/sudokn
 homepage: https://projects.engineering.asu.edu/sudokn/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
-sparql: https://frink.apps.renci.org/sudokn/sparql
-tpf: https://frink.apps.renci.org/ldf/sudokn
+sparql: https://apps.okn.us/sudokn/sparql
+tpf: https://apps.okn.us/ldf/sudokn
 frink-options:
   lakefs-repo: sudokn-kg
   documentation-path: sudokn-kg
@@ -15,6 +15,7 @@ contact:
   email: farhad.ameri@asu.edu
   github: "fameri"
   label: "Farhad Ameri"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 SUDOKN is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers.
 

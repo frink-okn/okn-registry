@@ -3,10 +3,10 @@ template: overrides/kg.html
 shortname: okn-void
 title: OKN VoID graph descriptions
 description: Collected VoID (Vocabulary of Interlinked Datasets) metadata for all OKN graphs
-homepage: https://frink.renci.org/registry/kgs/okn-void/
+homepage: https://registry.okn.us/registry/kgs/okn-void/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
-sparql: https://frink.apps.renci.org/okn-void/sparql
-tpf: https://frink.apps.renci.org/ldf/okn-void
+sparql: https://apps.okn.us/okn-void/sparql
+tpf: https://apps.okn.us/ldf/okn-void
 frink-options:
   lakefs-repo: okn-void
   documentation-path: okn-void
@@ -14,6 +14,7 @@ contact:
   email: balhoff@renci.org
   github: "balhoff"
   label: "Jim Balhoff"
+license: "https://creativecommons.org/publicdomain/zero/1.0/"
 ---
 This is a meta-graph collecting descriptive data for all the graphs that are part of the Proto-OKN. 
 Information about the kinds of classes and properties, and the number of triples used for each, 

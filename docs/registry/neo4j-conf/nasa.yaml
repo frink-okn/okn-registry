@@ -1,10 +1,12 @@
-base: 'https://nasa-gesdisc.proto-okn.net/kg/'
+base: 'https://purl.org/okn/frink/kg/nasa-gesdisc/'
 mappings:
   globalId:
     type: 'http://www.w3.org/2001/XMLSchema#string'
-  doi:
-    type: 'http://www.w3.org/2001/XMLSchema#string'
     iri: 'http://purl.org/dc/terms/identifier'
+  doi:
+    type: 'IRI'
+    iri: 'http://purl.org/ontology/bibo/doi'
+    base: 'http://dx.doi.org/'
   shortName:
     type: 'http://www.w3.org/2001/XMLSchema#string'
     iri: 'http://www.w3.org/2000/01/rdf-schema#label'
@@ -20,31 +22,20 @@ mappings:
     type: 'http://www.w3.org/2001/XMLSchema#string'
   temporalFrequency:
     type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://purl.org/dc/terms/accrualPeriodicity'
   temporalExtentStart:
     type: 'http://www.w3.org/2001/XMLSchema#dateTime'
-    iri: 'http://purl.org/dc/terms/date'
+    iri: 'https://schema.org/startDate'
   temporalExtentEnd:
     type: 'http://www.w3.org/2001/XMLSchema#dateTime'
-    iri: 'http://purl.org/dc/terms/date'
-  nwCorner_crs:
-    type: 'http://www.w3.org/2001/XMLSchema#string'
-  nwCorner_latitude:
-    type: 'http://www.w3.org/2001/XMLSchema#decimal'
-  nwCorner_longitude:
-    type: 'http://www.w3.org/2001/XMLSchema#decimal'
-  seCorner_crs:
-    type: 'http://www.w3.org/2001/XMLSchema#string'
-  seCorner_latitude:
-    type: 'http://www.w3.org/2001/XMLSchema#decimal'
-  seCorner_longitude:
-    type: 'http://www.w3.org/2001/XMLSchema#decimal'
+    iri: 'https://schema.org/endDate'
   landingPageUrl:
     type: http://www.w3.org/2001/XMLSchema#anyURI
-  pagerank_publication_dataset:
-    type: 'http://www.w3.org/2001/XMLSchema#float'
+    iri: http://www.w3.org/ns/dcat#landingPage
   DOI:
-    type: 'http://www.w3.org/2001/XMLSchema#string'
-    iri: 'http://purl.org/dc/terms/identifier'
+    type: 'IRI'
+    iri: 'http://purl.org/ontology/bibo/doi'
+    base: 'http://dx.doi.org/'
   title:
     type: 'http://www.w3.org/2001/XMLSchema#string'
     iri: 'https://schema.org/title'
@@ -58,5 +49,7 @@ mappings:
     iri: 'http://www.w3.org/2000/01/rdf-schema#label'
   Type:
     type: 'http://www.w3.org/2001/XMLSchema#string'
+    iri: 'http://purl.org/dc/terms/type'
   url:
     type: http://www.w3.org/2001/XMLSchema#anyURI
+    iri: 'https://schema.org/url'

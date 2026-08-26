@@ -1,12 +1,20 @@
-#+ summary: List 100 providers in RURAL-KG
+#+ summary: List RuralKG treatment providers with GNIS service-location identifiers.
 #+ tags:
 #+   - ruralkg
 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX treatment: <http://sail.ua.edu/ruralkg/treatmentprovider/>
-SELECT ?provider ?providerName
+PREFIX rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema:    <https://schema.org/>
+PREFIX treatment: <http://sail.ua.edu/ruralkg/treatment/>
+
+SELECT ?provider ?providerName ?address ?postalCode ?telephone ?gnisLocation
 WHERE {
   ?provider rdf:type treatment:TreatmentProvider ;
-    treatment:name ?providerName .
+            schema:name ?providerName .
+
+  OPTIONAL { ?provider schema:address ?address . }
+  OPTIONAL { ?provider schema:postalCode ?postalCode . }
+  OPTIONAL { ?provider schema:telephone ?telephone . }
+  OPTIONAL { ?provider schema:serviceLocation ?gnisLocation . }
 }
+ORDER BY ?providerName
 LIMIT 100

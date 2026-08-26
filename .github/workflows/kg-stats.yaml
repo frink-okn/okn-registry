@@ -4,13 +4,17 @@ on:
   schedule:
     - cron: "0 9 * * *"
 
+concurrency:
+  group: update-kg-stats
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     container: snakemake/snakemake:v8.27.1
     permissions: write-all
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
@@ -25,10 +29,12 @@ jobs:
           cd ..
           rm -rf graph-descriptions
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           commit-message: "🚀 Automatically updated kg-stats from graph-descriptions"
           committer: "GitHub Action <action@github.com>"
+          branch: automation/update-kg-stats
+          delete-branch: true
           title: 'Updated kg-stats from graph-descriptions'
           body: |
             Retrieved the latest READMEs for each graph from https://github.com/frink-okn/graph-descriptions

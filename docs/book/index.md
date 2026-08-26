@@ -1,6 +1,6 @@
-# The OKN Book
+# Building a Knowledge Graph
 
-This section holds informational guidance on adding and managing graphs and graph data within the Proto-OKN.
+This section holds informational guidance on adding and managing graphs and graph data within the OKN.
 
 - [Graph construction best practices](best-practices.md)
 - [About external identifiers](identifiers.md)

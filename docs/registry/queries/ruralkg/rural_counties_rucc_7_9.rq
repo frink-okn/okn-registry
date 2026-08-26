@@ -1,0 +1,21 @@
+#+ summary: List RuralKG counties in high-rurality RUCC categories 7 through 9.
+#+ tags:
+#+   - ruralkg
+
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX settlement: <http://sail.ua.edu/ruralkg/settlementtype/>
+
+SELECT ?kwgCounty ?year ?population ?ruccCode
+WHERE {
+  ?countyStatus rdf:type settlement:CountyStatus ;
+                settlement:censusCounty ?kwgCounty ;
+                settlement:year ?year ;
+                settlement:population ?population ;
+                settlement:hasRUCC ?rucc .
+
+  ?rucc settlement:code ?ruccCode .
+
+  FILTER(STR(?ruccCode) IN ("7", "8", "9"))
+}
+ORDER BY DESC(?year) DESC(?population)
+LIMIT 100

@@ -1,0 +1,19 @@
+#+ summary: Find compounds that downregulate genes associated with Alzheimer's disease. Return each gene's IRI and label (name) together with each compound's IRI and label (name), ordered alphabetically by gene name then compound name, limited to the first 10 results. [medium]
+#+ tags:
+#+   - spoke-okn
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX schema: <https://purl.org/okn/frink/kg/spoke-okn/schema/>
+
+SELECT DISTINCT ?gene ?geneLabel ?compound ?compoundLabel {
+    ?disease a biolink:Disease ;
+             rdfs:label ?diseaseLabel .
+    FILTER(LCASE(STR(?diseaseLabel)) = "alzheimer's disease")
+    ?disease schema:ASSOCIATES_DaG ?gene .
+    ?gene rdfs:label ?geneLabel .
+    ?compound schema:DOWNREGULATES_CdG ?gene ;
+              rdfs:label ?compoundLabel .
+}
+ORDER BY ?geneLabel ?compoundLabel
+LIMIT 10
