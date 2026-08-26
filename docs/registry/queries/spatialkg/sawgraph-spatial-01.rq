@@ -1,4 +1,4 @@
-#+ summary: Retrieve all flowlines named 'Illinois River'
+#+ summary: Return the level 13 S2 cells for each county in Illinois
 #+ tags:
 #+   - spatialkg
 
