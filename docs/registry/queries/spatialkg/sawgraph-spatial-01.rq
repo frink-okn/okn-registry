@@ -1,0 +1,24 @@
+#+ summary: Retrieve all flowlines named 'Illinois River'
+#+ tags:
+#+   - spatialkg
+
+# Note: This query returns ~172,000 level 13 s2 cells
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX kwgr: <http://stko-kwg.geog.ucsb.edu/lod/resource/>
+PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+  # Find counties and their names
+  # Restrict them to Illinois
+  # Retrieve their associated S2 cells
+  ?county rdf:type kwg-ont:AdministrativeRegion_2 ;
+          rdfs:label ?county_label ;
+          kwg-ont:administrativePartOf kwgr:administrativeRegion.USA.17 ;
+          spatial:connectedTo ?s2_cell .
+  ?s2_cell rdf:type kwg-ont:S2Cell_Level13 .
+  # Keep only the KWG administrative regions and ignore the dcgeoid duplicates
+  FILTER regex(str(?county), "admin")
+} ORDER BY ?county_label ?s2_cell
