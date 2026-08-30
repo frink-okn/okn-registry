@@ -3,7 +3,7 @@ distinct_subjects: 362516
 distinct_objects: 1353569
 properties: 146
 classes: 52
-last_checked: '2026-07-28'
+last_checked: '2026-08-30'
 class_partitions:
 - uri: https://climatepub4kg.github.io/ontology#Result
   label: climatepub4:Result
