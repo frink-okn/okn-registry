@@ -1,0 +1,14 @@
+#+ summary: Which groups are second-level connections to the dnaA gene group?
+#+ tags:
+#+   - evoweb
+#
+# This query assumes connectivity is commutative, even if the reverse of a connection pair is not explicit in the graph.)
+
+PREFIX ns0: <https://purl.org/okn/frink/kg/evoweb/schema/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?group ?groupLabel {
+  ns0:Node1 (ns0:connectedTo | ^ns0:connectedTo) ?intermediate . ?intermediate (ns0:connectedTo | ^ns0:connectedTo) ?group .
+  filter(?group != ns0:Node1) filter(?group != ?intermediate)
+  ?group rdfs:label ?groupLabel .
+}
