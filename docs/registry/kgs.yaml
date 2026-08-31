@@ -130,7 +130,7 @@ kgs:
   sparql: https://apps.okn.us/sockg/sparql
   stats: https://registry.okn.us/kg-stats/soc-kg
   template: overrides/kg.html
-  title: SOC-KG
+  title: SOCKG
   tpf: https://apps.okn.us/ldf/sockg
 - contact:
     email: climatepub4kg@tuprd.onmicrosoft.com
