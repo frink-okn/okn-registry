@@ -89,10 +89,10 @@ kgs:
   homepage: https://www.wikidata.org/
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: wikidata
-  sparql: https://frink.apps.renci.org/wikidata/sparql
+  sparql: https://apps.okn.us/wikidata/sparql
   template: overrides/kg.html
   title: Wikidata
-  tpf: https://frink.apps.renci.org/ldf/wikidata
+  tpf: https://apps.okn.us/ldf/wikidata
 - contact:
     email: chenc@udel.edu
     github: chenchuming
