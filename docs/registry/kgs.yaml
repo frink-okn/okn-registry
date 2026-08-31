@@ -47,8 +47,10 @@ kgs:
   homepage: https://github.com/NCATSTranslator/Babel
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: babel
+  sparql: https://apps.okn.us/babel/sparql
   template: overrides/kg.html
   title: Babel KG
+  tpf: https://apps.okn.us/ldf/babel
 - contact:
     email: balhoff@renci.org
     github: balhoff
@@ -202,20 +204,6 @@ kgs:
   template: overrides/kg.html
   title: Rural Resilience KG
   tpf: https://apps.okn.us/ldf/ruralkg
-- contact:
-    email: lew.lefton@gmail.com
-    github: ''
-    label: Lew Lefton
-  description: Comprehensive information on scientific publications and related entities.
-  frink-options:
-    documentation-path: sem-open-alex-kg
-    lakefs-repo: sem-open-alex-kg
-  homepage: https://semopenalex.org/
-  shortname: semopenalex
-  sparql: https://apps.okn.us/semopenalex/sparql
-  template: overrides/kg.html
-  title: SemOpenAlex
-  tpf: https://apps.okn.us/ldf/semopenalex
 - contact:
     email: lisa@renci.org
     github: lstillwe
