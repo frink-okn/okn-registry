@@ -41,7 +41,7 @@
 | [scales](kgs/scales/) | SCALES | SCALES is an integrated justice platform to connect criminal justice data across data silos. |
 | [securechainkg](kgs/securechainkg/) | SecureChain KG | SecureChain is a knowledge graph for resilient, trustworthy, and secure software supply chains. |
 | [semopenalex](kgs/semopenalex/) | SemOpenAlex | Comprehensive information on scientific publications and related entities. |
-| [sockg](kgs/sockg/) | SOC-KG | The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil carbon modeling, which is crucial for voluntary carbon markets. |
+| [sockg](kgs/sockg/) | SOCKG | The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil carbon modeling, which is crucial for voluntary carbon markets. |
 | [spatialkg](kgs/spatialkg/) | SAWGraph Spatial KG | The SAWGraph Spatial KG is part of the Safe Agricultural Products and Water Graph (SAWGraph) project. It contains all the Level 13 grid cells from the S2 grid as well as administrative regions of levels 1 to 3 (states, counties, and county subdivisions) and the spatial relationships between them for the 48 contiguous states in the U.S. |
 | [spoke-genelab](kgs/spoke-genelab/) | SPOKE GeneLab | The spoke-genelab KG complements the spokeokn (SPOKE Open Knowledge Network) KG and is designed to integrate omics data from NASA’s Open Science Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments. |
 | [spoke-okn](kgs/spoke-okn/) | SPOKE-OKN | The spoke-okn (SPOKE Open Knowledge Network) KG is a comprehensive biomedical and environmental health knowledge graph that integrates diverse data across genomics, environmental science, and public health. |
