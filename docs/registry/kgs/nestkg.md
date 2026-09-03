@@ -2,9 +2,9 @@
 template: overrides/kg.html
 shortname: nestkg
 title: NeST KG
-description: The NeST (Nested Systems in Tumors) Knowledge Graph converts the NeST hierarchical map of cancer protein systems into RDF, capturing the nested containment hierarchy of protein assemblies, their member proteins, and system-level annotations derived from integrated cancer proteomics and interaction data.
+description: The NeST (Nested Systems in Tumors) Knowledge Graph converts the NeST hierarchical map of cancer protein systems into RDF, together with the IAS (Integrated Association Stringency) protein-association network from which the map was derived. It captures the nested containment hierarchy of protein systems, their member proteins, per-system cancer-mutation statistics and MONDO-typed cancer associations, and ~210k scored protein-protein associations as reified statements.
 stats: https://registry.okn.us/kg-stats/nestkg
-homepage: https://www.ndexbio.org/viewer/networks/4731187a-8796-11f1-857e-005056ae3c32
+homepage: https://www.ndexbio.org/viewer/networks/9a8f5326-aa6e-11ea-aaef-0ac135e8bacf
 # funding: NSF Proto-OKN
 sparql: https://apps.okn.us/nestkg/sparql
 tpf: https://apps.okn.us/ldf/nestkg
@@ -25,18 +25,23 @@ The knowledge graph is constructed by converting the NeST networks from the Cyto
 ## Key Features
 
 - **Nested System Hierarchy**: Captures the containment relationships between protein systems, representing how smaller assemblies nest within larger functional systems
-- **System Membership**: Associates proteins (identified by UniProt accessions and gene symbols) with the systems they belong to
-- **System Annotations**: Each system is annotated with size, and where available, functional and disease-relevance metadata
-- **Standard Ontologies**: Uses Relations Ontology (RO) predicates for containment and membership semantics, and Semanticscience Integrated Ontology (SIO) for entity typing
+- **System Membership**: Associates proteins (identified by UniProt accessions, or numeric HGNC identifiers for the 12 symbols with no protein product) with the systems they belong to
+- **System Annotations**: Every system carries its size (`ndexv:memberCount`) and HiSig significance statistics (lasso weight, BH-adjusted p-value); systems significantly mutated in a cohort additionally carry cancer associations with a tumors-mutated fraction
+- **Standard Ontologies**: Uses [Biolink Model](https://biolink.github.io/biolink-model/) predicates for containment (`biolink:part_of`), system membership (`biolink:has_member`) and protein association (`biolink:interacts_with`), together with Biolink's `Association` pattern for system–cancer links; Semanticscience Integrated Ontology (SIO) for entity typing; and MONDO and ECO for cancer types and evidence codes.
+- **Querying**: `biolink:interacts_with` is symmetric but stored in one direction only — match both (`?a ^biolink:interacts_with|biolink:interacts_with ?b`). Per-edge IAS scores live on reified `rdf:Statement` nodes, not on the asserted triple.
 
 ## Ontologies Used
 
 | Prefix | Ontology | Usage |
 |--------|----------|-------|
-| RO | Relations Ontology | Containment and membership predicates (has part, part of) |
-| SIO | Semanticscience Integrated Ontology | Entity types (protein, system, complex) |
+| biolink | Biolink Model | Containment (`part_of`), system membership (`has_member`), protein associations (`interacts_with`), and association structure (`Association`, `genetically_associated_with`, `knowledge_level`, `agent_type`, `has_evidence`) |
+| SIO | Semanticscience Integrated Ontology | Entity types — `SIO:010043` (protein), `SIO:010035` (gene) |
 | UniProt | UniProt | Protein entity identifiers |
-| GO | Gene Ontology | Functional annotation of systems |
+| HGNC | HGNC | Gene entity identifiers — the 12 symbols with no protein product |
+| MONDO | Mondo Disease Ontology | Cancer types in system→disease associations (14 types, incl. pan-cancer `MONDO:0004992`) |
+| ECO | Evidence & Conclusion Ontology | Evidence code on each association |
+| STATO, OBI, NCIT | — | Referenced via `rdfs:seeAlso` on the statistical properties |
+| ndexv, nestv, iasv | Minted (NDEx) | `ndexv:ProteinSystem`, `ndexv:memberCount`, HiSig weight/p-value, IAS score |
 
 ## Funding
 
