@@ -11,6 +11,22 @@ tpf: https://apps.okn.us/ldf/geoconnex
 frink-options:
   lakefs-repo: geoconnex
   documentation-path: geoconnex
+  kgf:
+    semantics:
+      prefixes:
+        geoconnex: "https://geoconnex.us/"
+        geoconnex-nqhash: "https://docs.geoconnex.us/nqhash/"
+        iow-nqhash: "https://iow.io/nqhash/"
+        ogc-crs: "http://www.opengis.net/def/crs/"
+      roles:
+        label:
+          - "https://schema.org/name"
+          - "http://gnis-ld.org/lod/gnis/ontology/officialName"
+          - "https://schema.org/sname"
+          - "https://schema.org/alternateName"
+      authoritative_namespaces:
+        - geoconnex
+        - geoconnex-nqhash
 contact:
   email: "apadilla@lincolninst.edu"
   github: "adplincinst"

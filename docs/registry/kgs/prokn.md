@@ -11,6 +11,26 @@ tpf: https://apps.okn.us/ldf/prokn
 frink-options:
   lakefs-repo: prokn
   documentation-path: prokn
+  kgf:
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        prokn: "https://research.bioinformatics.udel.edu/ProKN/rdf/"
+        uniprot-core: "http://purl.uniprot.org/core/"
+        biolink-model: "https://biolink.github.io/biolink-model/"
+        meshv: "https://id.nlm.nih.gov/mesh/"
+        reproduceme: "https://w3id.org/reproduceme#"
+        edam: "http://edamontology.org/"
+        allotrope-result: "http://purl.allotrope.org/ontologies/result#"
+        chemrof: "https://chemkg.github.io/chemrof/"
+        bao: "http://www.bioassayontology.org/bao#"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://schema.org/name"
+          - "http://purl.uniprot.org/core/scientificName"
+      authoritative_namespaces:
+        - prokn
 contact:
   email: chenc@udel.edu  
   github: "chenchuming"

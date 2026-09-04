@@ -11,6 +11,32 @@ tpf: https://apps.okn.us/ldf/sawgraph
 frink-options:
   lakefs-repo: sawgraph-kg
   documentation-path: sawgraph-kg
+  kgf:
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        sawgraph-me: "http://w3id.org/sawgraph/v1/me-egad#"
+        sawgraph-wqp: "http://w3id.org/sawgraph/v1/us-wqp#"
+        sawgraph-sdwis: "http://w3id.org/sawgraph/v1/us-sdwis#"
+        saw-water: "http://sawgraph.spatialai.org/v1/saw_water#"
+        sawgraph-me-data: "http://w3id.org/sawgraph/v1/me-egad-data#"
+        sawgraph-wqp-data: "http://w3id.org/sawgraph/v1/us-wqp-data#"
+        sawgraph-sdwis-h: "http://sawgraph.spatialai.org/v1/us-sdwis#"
+        qudt: "http://qudt.org/vocab/unit/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://purl.org/dc/terms/title"
+          - "http://w3id.org/sawgraph/v1/me-egad#samplePointWebName"
+          - "http://w3id.org/sawgraph/v1/us-wqp#siteName"
+          - "http://www.w3.org/2004/02/skos/core#altLabel"
+      authoritative_namespaces:
+        - sawgraph-me
+        - sawgraph-me-data
+        - sawgraph-wqp
+        - sawgraph-wqp-data
+        - sawgraph-sdwis
+        - saw-water
 contacts:
   - email: katrina.schweikert@maine.edu	  
     github: "kschweikert"

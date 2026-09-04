@@ -11,6 +11,18 @@ tpf: https://apps.okn.us/ldf/dreamkg
 frink-options:
   lakefs-repo: dream-kg
   documentation-path: dream-kg
+  kgf:
+    # This KG uses the http:// form of schema.org, so `schema`
+    # overrides the shared https:// binding.
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        dreamkg: "https://purl.org/okn/frink/kg/dreamkg/"
+      roles:
+        label:
+          - "http://schema.org/name"
+      authoritative_namespaces:
+        - dreamkg
 contact:
   email: yuzhou.chen@temple.edu  
   github: "yuzhouguangc"

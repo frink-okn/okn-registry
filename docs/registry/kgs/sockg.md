@@ -11,6 +11,19 @@ tpf: https://apps.okn.us/ldf/sockg
 frink-options:
   lakefs-repo: soc-kg
   documentation-path: soc-kg
+  kgf:
+    semantics:
+      prefixes:
+        sockg: "https://idir.uta.edu/sockg-ontology#"
+        sockg-ind: "https://idir.uta.edu/sockg-ontology/individuals/"
+        qudt: "http://qudt.org/vocab/unit/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://purl.org/dc/terms/title"
+      authoritative_namespaces:
+        - sockg
+        - sockg-ind
 contact:
   email: cli@uta.edu
   github: "idirlab"

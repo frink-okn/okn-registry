@@ -11,6 +11,16 @@ tpf: https://apps.okn.us/ldf/gene-expression-atlas-okn
 frink-options:
   lakefs-repo: gene-expression-atlas-okn
   documentation-path: gene-expression-atlas-okn
+  kgf:
+    semantics:
+      prefixes:
+        wobd: "http://purl.org/okn/wobd/"
+      roles:
+        label:
+          - "https://w3id.org/biolink/vocab/name"
+          - "https://w3id.org/biolink/vocab/symbol"
+      authoritative_namespaces:
+        - wobd
 contacts:
 - email: asu@scripps.edu
   github: "andrewsu"

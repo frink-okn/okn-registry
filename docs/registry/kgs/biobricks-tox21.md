@@ -11,6 +11,11 @@ tpf: https://apps.okn.us/ldf/biobricks-tox21
 frink-options:
   lakefs-repo: biobricks-tox21-kg
   documentation-path: biobricks-tox21-kg
+  kgf:
+    semantics:
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
 contact:
   email: tom@insilica.co
   github: "tomlue"

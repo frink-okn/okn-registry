@@ -10,6 +10,10 @@ tpf: https://apps.okn.us/ldf/okn-void
 frink-options:
   lakefs-repo: okn-void
   documentation-path: okn-void
+  kgf:
+    semantics:
+      prefixes:
+        okn-kg: "https://purl.org/okn/frink/kg/"
 contact:
   email: balhoff@renci.org
   github: "balhoff"

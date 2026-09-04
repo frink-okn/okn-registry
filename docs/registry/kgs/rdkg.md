@@ -7,6 +7,16 @@ description: RDKG is an open knowledge graph for rare diseases that integrates s
 frink-options:
   lakefs-repo: rdkg
   documentation-path: rdkg
+  kgf:
+    semantics:
+      prefixes:
+        rdaccelerate: "https://rdaccelerate.org/resource/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://www.w3.org/2004/02/skos/core#prefLabel"
+      authoritative_namespaces:
+        - rdaccelerate
 contacts:
   - email: jinlian.wang@uth.tmc.edu
     github: wangjl99

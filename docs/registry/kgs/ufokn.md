@@ -11,6 +11,16 @@ tpf: https://apps.okn.us/ldf/ufokn
 frink-options:
   lakefs-repo: urban-flooding-open-knowledge-network
   documentation-path: ufokn-kg  
+  kgf:
+    semantics:
+      prefixes:
+        ufokn: "https://ufokn.org/id/"
+        kwg-ont-https: "https://stko-kwg.geog.ucsb.edu/lod/ontology#"
+      roles:
+        label:
+          - "https://schema.org/name"
+      authoritative_namespaces:
+        - ufokn
 contact: 
   email: "yeghialt@ucmail.uc.edu"
   github: ""

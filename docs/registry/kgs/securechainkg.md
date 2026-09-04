@@ -11,6 +11,20 @@ tpf: https://apps.okn.us/ldf/securechainkg
 frink-options:
   lakefs-repo: secure-chain-kg
   documentation-path: secure-chain-kg
+  kgf:
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        pypi: "https://pypi.org/project/"
+        crates: "https://crates.io/crates/"
+        spdx-license: "https://spdx.org/licenses/"
+        nvd: "https://nvd.nist.gov/vuln/detail/"
+        cwe: "https://cwe.mitre.org/data/definitions/"
+      roles:
+        label:
+          - "http://schema.org/name"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "https://w3id.org/secure-chain/versionName"
 contacts:
   - email: tianyi@purdue.edu
     github: "tianyi-zhang"

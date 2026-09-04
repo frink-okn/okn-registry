@@ -11,6 +11,19 @@ tpf: https://apps.okn.us/ldf/nestkg
 frink-options:
   lakefs-repo: nestkg
   documentation-path: nestkg
+  kgf:
+    semantics:
+      prefixes:
+        ndexv: "https://www.ndexbio.org/vocab/"
+        nestv: "https://www.ndexbio.org/vocab/nest/"
+        nest: "https://www.ndexbio.org/identifiers/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - ndexv
+        - nestv
+        - nest
 contact:
   email: support@ndexbio.org
   github: ""

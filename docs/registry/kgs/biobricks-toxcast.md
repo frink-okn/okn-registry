@@ -11,6 +11,16 @@ tpf: https://apps.okn.us/ldf/biobricks-toxcast
 frink-options:
   lakefs-repo: biobricks-toxcast-kg
   documentation-path: biobricks-toxcast-kg
+  kgf:
+    # toxcast-data is the graph's own subject namespace; it
+    # is minted under example.com upstream.
+    semantics:
+      prefixes:
+        toxcast-data: "http://example.com/toxcast/"
+        comptox: "https://comptox.epa.gov/dashboard/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
 contact:
   email: tom@insilica.co
   github: "tomlue"

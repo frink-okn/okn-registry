@@ -12,6 +12,21 @@ frink-options:
   lakefs-repo: biohealth
   documentation-path: "biohealth"
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/biohealth.yaml
+  kgf:
+    semantics:
+      prefixes:
+        biohealth: "https://biohealthkg.proto-okn.net/kg/schema/"
+        biohealth-node: "https://biohealthkg.proto-okn.net/kg/node/"
+        biohealth-rel: "https://biohealthkg.proto-okn.net/kg/relationship/"
+        biohealth-semtype: "https://biohealthkg.proto-okn.net/kg/semtype/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - biohealth
+        - biohealth-node
+        - biohealth-rel
+        - biohealth-semtype
 contact:
   email: aidong@virginia.edu
   label: "Aidong Zhang"

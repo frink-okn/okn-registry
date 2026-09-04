@@ -12,6 +12,16 @@ frink-options:
   lakefs-repo: wildlife-kg
   documentation-path: wildlife-kg
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
+  kgf:
+    semantics:
+      prefixes:
+        wildlifekn: "https://wildlife.proto-okn.net/kg/"
+        inaturalist: "https://www.inaturalist.org/observations/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - wildlifekn
 contact:
   email: xzhang33@nd.edu
   github: "XiangqiWang77"

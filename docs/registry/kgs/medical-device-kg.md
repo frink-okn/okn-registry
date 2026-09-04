@@ -11,6 +11,19 @@ license: "https://creativecommons.org/licenses/by/4.0/"
 frink-options:
   lakefs-repo: medical-device-kg
   documentation-path: medical-device-kg
+  kgf:
+    semantics:
+      prefixes:
+        mdkg: "http://medicaldevice.com/ontology/"
+        mdkg-device: "http://medicaldevice.com/resource/device/"
+        mdkg-report: "http://medicaldevice.com/resource/report/"
+      roles:
+        label:
+          - "http://medicaldevice.com/ontology/label"
+      authoritative_namespaces:
+        - mdkg
+        - mdkg-device
+        - mdkg-report
 contacts:
   - email: mbukhari1@pride.hofstra.edu
     label: Mustafa Bukhari

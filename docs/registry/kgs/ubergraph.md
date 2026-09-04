@@ -10,6 +10,24 @@ tpf: https://apps.okn.us/ldf/ubergraph
 frink-options:
   lakefs-repo: ubergraph
   documentation-path: ubergraph
+  kgf:
+    semantics:
+      prefixes:
+        bican: "https://purl.brain-bican.org/taxonomy/"
+        bican-ccn: "https://purl.brain-bican.org/taxonomy/CCN20230722#"
+        jcvi-nsf2: "http://www.jcvi.org/framework/nsf2_full_mtg#"
+        n2o: "http://n2o.neo/custom/"
+        chemrof: "https://w3id.org/chemrof/"
+        ubergraph-axioms: "http://translator.renci.org/ubergraph-axioms.ofn#"
+        reasoner: "http://reasoner.renci.org/vocab/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://www.w3.org/2004/02/skos/core#prefLabel"
+          - "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
+      authoritative_namespaces:
+        - ubergraph-axioms
+        - reasoner
 contact:
   email: balhoff@renci.org  
   github: balhoff
