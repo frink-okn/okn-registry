@@ -10,6 +10,22 @@ frink-options:
   lakefs-repo: pankbase-kg
   documentation-path: pankbase-kg
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/pankgraph.yaml
+  kgf:
+    semantics:
+      prefixes:
+        pankgraph: "https://purl.org/okn/frink/kg/pankgraph/schema/"
+        pankgraph-node: "https://purl.org/okn/frink/kg/pankgraph/node/"
+        pankgraph-rel: "https://purl.org/okn/frink/kg/pankgraph/relationship/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://purl.org/dc/terms/title"
+          - "https://purl.org/okn/frink/kg/pankgraph/schema/gene_name"
+          - "https://purl.org/okn/frink/kg/pankgraph/schema/tissue_name"
+      authoritative_namespaces:
+        - pankgraph
+        - pankgraph-node
+        - pankgraph-rel
 contacts:
 - email: drjieliu@umich.edu
   github: "jieliu6"

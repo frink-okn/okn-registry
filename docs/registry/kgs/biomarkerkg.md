@@ -11,6 +11,16 @@ tpf: https://apps.okn.us/ldf/biomarkerkg
 frink-options:
   lakefs-repo: biomarkerkg
   documentation-path: biomarkerkg
+  kgf:
+    semantics:
+      prefixes:
+        biomarker: "https://biomarkerkb.org/biomarker/"
+        dbsnp: "https://www.ncbi.nlm.nih.gov/snp/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - biomarker
 contact:
   email: pmcneely@gwu.edu  
   github: "pmcneely"

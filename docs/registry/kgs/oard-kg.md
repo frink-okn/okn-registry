@@ -11,6 +11,15 @@ tpf: https://apps.okn.us/ldf/oard-kg
 frink-options:
   lakefs-repo: oard-kg
   documentation-path: oard-kg
+  kgf:
+    semantics:
+      prefixes:
+        cohd: "https://rare.cohd.io/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - cohd
 contacts:
 - email: ct2865@cumc.columbia.edu  
   github: CaseyTa

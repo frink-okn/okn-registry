@@ -11,6 +11,19 @@ tpf: https://apps.okn.us/ldf/nde
 frink-options:
   lakefs-repo: nde
   documentation-path: nde
+  kgf:
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        wobd-okn: "https://okn.wobd.org/"
+        ror: "https://ror.org/"
+        uniprot-taxonomy: "https://www.uniprot.org/taxonomy/"
+      roles:
+        label:
+          - "http://schema.org/name"
+          - "http://schema.org/alternateName"
+      authoritative_namespaces:
+        - wobd-okn
 contacts:
 - email: asu@scripps.edu
   github: "andrewsu"

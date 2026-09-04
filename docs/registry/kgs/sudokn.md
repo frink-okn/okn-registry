@@ -11,6 +11,17 @@ tpf: https://apps.okn.us/ldf/sudokn
 frink-options:
   lakefs-repo: sudokn-kg
   documentation-path: sudokn-kg
+  kgf:
+    semantics:
+      prefixes:
+        sudokn: "http://asu.edu/semantics/SUDOKN/"
+        iof-av: "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://www.w3.org/2004/02/skos/core#altLabel"
+      authoritative_namespaces:
+        - sudokn
 contact:
   email: farhad.ameri@asu.edu
   github: "fameri"

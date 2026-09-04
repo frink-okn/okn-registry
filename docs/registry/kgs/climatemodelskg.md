@@ -11,6 +11,22 @@ tpf: https://apps.okn.us/ldf/climatemodelskg
 frink-options:
   lakefs-repo: climatepub4-kg
   documentation-path: climatepub4-kg
+  kgf:
+    # rdfs:label here names ontology terms; entity display
+    # names are climatepub4:name / :title.
+    semantics:
+      prefixes:
+        climatepub4: "https://climatepub4kg.github.io/ontology#"
+        climatepub4-id: "https://climatepub4kg.github.io/id/"
+      roles:
+        label:
+          - "https://climatepub4kg.github.io/ontology#name"
+          - "https://climatepub4kg.github.io/ontology#title"
+          - "https://climatepub4kg.github.io/ontology#asciiname"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - climatepub4
+        - climatepub4-id
 contact:
   email: climatepub4kg@tuprd.onmicrosoft.com
   github: "aayushacharya"

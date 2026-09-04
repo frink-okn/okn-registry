@@ -11,6 +11,25 @@ tpf: https://apps.okn.us/ldf/fiokg
 frink-options:
   lakefs-repo: fio-kg
   documentation-path: fio-kg
+  kgf:
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        fio: "http://w3id.org/fio/v1/fio#"
+        fio-epa: "http://w3id.org/fio/v1/epa-frs#"
+        fio-naics: "http://w3id.org/fio/v1/naics#"
+        fio-epa-data: "http://w3id.org/fio/v1/epa-frs-data#"
+        protonsys: "http://proton.semanticweb.org/protonsys#"
+        datacommons: "https://datacommons.org/browser/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://purl.org/dc/terms/title"
+      authoritative_namespaces:
+        - fio
+        - fio-epa
+        - fio-naics
+        - fio-epa-data
 contacts:
   - email: katrina.schweikert@maine.edu
     github: "kschweikert"

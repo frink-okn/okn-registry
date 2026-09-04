@@ -11,6 +11,14 @@ tpf: https://apps.okn.us/ldf/biobricks-aopwiki
 frink-options:
   lakefs-repo: biobricks-aopwiki-kg
   documentation-path: biobricks-aopwiki-kg
+  kgf:
+    semantics:
+      prefixes:
+        aopo: "http://aopkb.org/aop_ontology#"
+      roles:
+        label:
+          - "http://purl.org/dc/elements/1.1/title"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
 contact:
   email: tom@insilica.co
   github: "tomlue"

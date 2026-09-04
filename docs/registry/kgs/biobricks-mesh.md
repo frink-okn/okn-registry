@@ -11,6 +11,14 @@ tpf: https://apps.okn.us/ldf/biobricks-mesh
 frink-options:
   lakefs-repo: biobricks-mesh-kg
   documentation-path: biobricks-mesh-kg
+  kgf:
+    semantics:
+      roles:
+        label:
+          - "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+          - "http://id.nlm.nih.gov/mesh/vocab#casn1_label"
 contact:
   email: tom@insilica.co
   github: "tomlue"

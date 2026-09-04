@@ -21,6 +21,15 @@ frink-options:
           - http://release.niem.gov/niem/niem-core/5.0/#FacilityName
           - http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName
         to: http://www.w3.org/2000/01/rdf-schema#label
+  kgf:
+    semantics:
+      roles:
+        label:
+          - "http://release.niem.gov/niem/niem-core/5.0/#EntityName"
+          - "http://release.niem.gov/niem/niem-core/5.0/#PersonFullName"
+          - "http://release.niem.gov/niem/niem-core/5.0/#OrganizationName"
+          - "http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName"
+          - "http://release.niem.gov/niem/niem-core/5.0/#FacilityName"
 contacts:
   - email: "danny.e.oneal@gmail.com"
     github: danny-oneal

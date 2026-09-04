@@ -11,6 +11,14 @@ tpf: https://apps.okn.us/ldf/spatialkg
 frink-options:
   lakefs-repo: spatial-kg
   documentation-path: spatial-kg
+  kgf:
+    semantics:
+      prefixes:
+        datacommons: "https://datacommons.org/browser/"
+        saw-geo: "http://sawgraph.spatialai.org/v1/saw_geo#"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
 contacts:
   - email: david.kedrowski@maine.edu 
     github: "dkedrowski"

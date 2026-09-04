@@ -9,6 +9,11 @@ tpf: https://apps.okn.us/ldf/babel
 frink-options:
   lakefs-repo: babel
   documentation-path: babel
+  kgf:
+    semantics:
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
 contact:
   email: balhoff@renci.org
   github: "balhoff"

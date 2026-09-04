@@ -9,6 +9,20 @@ funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
 frink-options:
   lakefs-repo: digcfdekg
   documentation-path: digcfdekg
+  kgf:
+    semantics:
+      prefixes:
+        digcfdekg: "https://purl.org/okn/frink/kg/digcfdekg/schema/"
+        digcfdekg-node: "https://purl.org/okn/frink/kg/digcfdekg/node/"
+        digcfdekg-rel: "https://purl.org/okn/frink/kg/digcfdekg/relationship/"
+        ordo: "http://www.orpha.net/ORDO/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - digcfdekg
+        - digcfdekg-node
+        - digcfdekg-rel
 sparql: https://apps.okn.us/digcfdekg/sparql
 tpf: https://apps.okn.us/ldf/digcfdekg
 contacts:

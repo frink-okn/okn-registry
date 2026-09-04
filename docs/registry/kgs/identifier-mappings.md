@@ -6,6 +6,13 @@ description: Mappings using standard RDF predicates between Wikidata entities an
 frink-options:
   lakefs-repo: identifier-mappings
   documentation-path: "identifier-mappings"
+  kgf:
+    semantics:
+      prefixes:
+        loc-names: "http://id.loc.gov/authorities/names/"
+        worldcat-fast: "http://id.worldcat.org/fast/"
+        ensembl: "http://rdf.ebi.ac.uk/resource/ensembl/"
+        pubchem-compound: "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/"
 stats: https://registry.okn.us/kg-stats/identifier-mappings
 homepage: https://www.wikidata.org/
 sparql: https://apps.okn.us/identifier-mappings/sparql

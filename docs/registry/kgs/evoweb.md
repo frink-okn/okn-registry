@@ -9,6 +9,15 @@ funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
 frink-options:
   lakefs-repo: evoweb
   documentation-path: evoweb
+  kgf:
+    semantics:
+      prefixes:
+        evoweb: "https://purl.org/okn/frink/kg/evoweb/schema/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - evoweb
 contacts:
 - email: Erik.Wright@bcm.edu
   github: "WrightLabScience"

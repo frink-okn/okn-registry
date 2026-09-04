@@ -7,6 +7,16 @@ description: Wikidata is a free and open knowledge base that can be read and edi
 homepage: https://www.wikidata.org/
 sparql: https://apps.okn.us/wikidata/sparql
 tpf: https://apps.okn.us/ldf/wikidata
+frink-options:
+  kgf:
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://www.w3.org/2004/02/skos/core#prefLabel"
+          - "http://www.w3.org/2004/02/skos/core#altLabel"
 contact: 
   email: balhoff@renci.org
   github: balhoff

@@ -11,6 +11,14 @@ tpf: https://apps.okn.us/ldf/ncipidkg
 frink-options:
   lakefs-repo: ncipidkg
   documentation-path: ncipidkg
+  kgf:
+    semantics:
+      prefixes:
+        ncipid: "http://example.org/okn/"
+        indra: "https://db.indra.bio/statements/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
 contact:
   email: support@ndexbio.org
   github: ""

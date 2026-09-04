@@ -11,6 +11,10 @@ tpf: https://apps.okn.us/ldf/nikg
 frink-options:
   lakefs-repo: neighborhood-information-kg
   documentation-path: neighborhood-kg
+  kgf:
+    semantics:
+      prefixes:
+        phila: "https://metadata.phila.gov/"
 contacts:
   - label: "Wentao Chen"
     email: wenc056@ucsd.edu

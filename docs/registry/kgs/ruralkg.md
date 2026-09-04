@@ -11,6 +11,20 @@ tpf: https://apps.okn.us/ldf/ruralkg
 frink-options:
   lakefs-repo: rural-kg
   documentation-path: rural-kg
+  kgf:
+    semantics:
+      prefixes:
+        ruralkg: "http://sail.ua.edu/ruralkg/"
+        ruralkg-prop: "http://sail.ua.edu/ruralkg/property/"
+      roles:
+        label:
+          - "https://schema.org/name"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://www.w3.org/2004/02/skos/core#altLabel"
+          - "https://schema.org/alternateName"
+      authoritative_namespaces:
+        - ruralkg
+        - ruralkg-prop
 contact:
   email: jiaqi.gong@ua.edu
   github: "SAIL-UA"

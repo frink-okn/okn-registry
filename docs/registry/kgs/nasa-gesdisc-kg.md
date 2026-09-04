@@ -12,6 +12,20 @@ frink-options:
   lakefs-repo: nasa-gesdisc
   documentation-path: nasa-gesdisc
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/nasa.yaml
+  kgf:
+    semantics:
+      prefixes:
+        nasa-gesdisc-schema: "https://purl.org/okn/frink/kg/nasa-gesdisc/schema/"
+        nasa-gesdisc-node: "https://purl.org/okn/frink/kg/nasa-gesdisc/node/"
+        nasa-gesdisc-rel: "https://purl.org/okn/frink/kg/nasa-gesdisc/relationship/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "https://schema.org/title"
+      authoritative_namespaces:
+        - nasa-gesdisc-schema
+        - nasa-gesdisc-node
+        - nasa-gesdisc-rel
 contact:
   email: lisa@renci.org  
   github: "lstillwe"
