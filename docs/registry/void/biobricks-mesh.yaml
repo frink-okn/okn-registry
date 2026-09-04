@@ -3,7 +3,7 @@ distinct_subjects: 2437717
 distinct_objects: 5583396
 properties: 80
 classes: 24
-last_checked: '2026-07-28'
+last_checked: '2026-09-04'
 class_partitions:
 - uri: http://id.nlm.nih.gov/mesh/vocab#Term
   label: meshv:Term
@@ -75,7 +75,7 @@ class_partitions:
   label: owl:TransitiveProperty
   count: 1
 - uri: http://www.w3.org/ns/sparql-service-description#Service
-  label: Service
+  label: sd:Service
   count: 1
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
@@ -244,7 +244,7 @@ property_partitions:
   label: rdfs:subPropertyOf
   count: 8
 - uri: http://www.w3.org/ns/sparql-service-description#resultFormat
-  label: resultFormat
+  label: sd:resultFormat
   count: 8
 - uri: http://rdfs.org/ns/void#vocabulary
   label: void:vocabulary
@@ -265,7 +265,7 @@ property_partitions:
   label: owl:versionInfo
   count: 2
 - uri: http://www.w3.org/ns/sparql-service-description#feature
-  label: feature
+  label: sd:feature
   count: 2
 - uri: http://purl.org/dc/terms/created
   label: dct:created
@@ -301,13 +301,13 @@ property_partitions:
   label: owl:propertyDisjointWith
   count: 1
 - uri: http://www.w3.org/ns/sparql-service-description#endpoint
-  label: endpoint
+  label: sd:endpoint
   count: 1
 - uri: http://www.w3.org/ns/sparql-service-description#supportedLanguage
-  label: supportedLanguage
+  label: sd:supportedLanguage
   count: 1
 - uri: http://www.w3.org/ns/sparql-service-description#url
-  label: url
+  label: sd:url
   count: 1
 - uri: http://xmlns.com/foaf/0.1/homepage
   label: foaf:homepage

@@ -1,9 +1,9 @@
-triples: 931549
-distinct_subjects: 67050
-distinct_objects: 189251
-properties: 57
-classes: 14
-last_checked: '2026-07-28'
+triples: 987920
+distinct_subjects: 77286
+distinct_objects: 208033
+properties: 90
+classes: 20
+last_checked: '2026-09-04'
 class_partitions:
 - uri: http://sail.ua.edu/ruralkg/variable/NSDUHAnswer
   label: ruralkg-var:NSDUHAnswer
@@ -11,6 +11,9 @@ class_partitions:
 - uri: http://sail.ua.edu/ruralkg/treatment/TreatmentProvider
   label: ruralkg-treatment:TreatmentProvider
   count: 9037
+- uri: http://sail.ua.edu/ruralkg/variable/MEPSAnswer
+  label: ruralkg-var:MEPSAnswer
+  count: 6336
 - uri: http://sail.ua.edu/ruralkg/settlementtype/CountyStatus
   label: ruralkg-settlement:CountyStatus
   count: 3234
@@ -20,15 +23,27 @@ class_partitions:
 - uri: http://sail.ua.edu/ruralkg/variable/NIBRSAnswer
   label: ruralkg-var:NIBRSAnswer
   count: 2258
+- uri: http://sail.ua.edu/ruralkg/variable/BRFSSAnswer
+  label: ruralkg-var:BRFSSAnswer
+  count: 2011
+- uri: http://sail.ua.edu/ruralkg/variable/MEPS
+  label: ruralkg-var:MEPS
+  count: 1419
 - uri: http://sail.ua.edu/ruralkg/variable/NIBRS
   label: ruralkg-var:NIBRS
   count: 469
+- uri: http://sail.ua.edu/ruralkg/variable/BRFSS
+  label: ruralkg-var:BRFSS
+  count: 324
+- uri: http://www.w3.org/2000/01/rdf-schema#Class
+  label: rdfs:Class
+  count: 242
 - uri: http://sail.ua.edu/ruralkg/treatment/MentalHealthService
   label: ruralkg-treatment:MentalHealthService
   count: 176
-- uri: http://www.w3.org/2000/01/rdf-schema#Class
-  label: rdfs:Class
-  count: 125
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+  label: rdf:Property
+  count: 28
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/Substance
   label: ruralkg-sa:Substance
   count: 23
@@ -44,6 +59,9 @@ class_partitions:
 - uri: http://www.w3.org/2002/07/owl#AnnotationProperty
   label: owl:AnnotationProperty
   count: 5
+- uri: http://www.w3.org/2002/07/owl#ObjectProperty
+  label: owl:ObjectProperty
+  count: 1
 - uri: http://www.w3.org/2002/07/owl#Ontology
   label: owl:Ontology
   count: 1
@@ -54,9 +72,12 @@ property_partitions:
 - uri: https://schema.org/name
   label: schema:name
   count: 43577
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
+  count: 42999
 - uri: http://purl.org/dc/terms/identifier
   label: dct:identifier
-  count: 37443
+  count: 39186
 - uri: http://sail.ua.edu/ruralkg/property/stateFipsCode
   label: stateFipsCode
   count: 34280
@@ -66,9 +87,6 @@ property_partitions:
 - uri: https://schema.org/containedInPlace
   label: schema:containedInPlace
   count: 34246
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-  label: rdf:type
-  count: 32763
 - uri: https://schema.org/latitude
   label: schema:latitude
   count: 31002
@@ -83,16 +101,16 @@ property_partitions:
   count: 30971
 - uri: http://sail.ua.edu/ruralkg/variable/answerCode
   label: ruralkg-var:answerCode
-  count: 17181
+  count: 25528
 - uri: http://sail.ua.edu/ruralkg/variable/answerContent
   label: ruralkg-var:answerContent
-  count: 17181
+  count: 25528
 - uri: http://sail.ua.edu/ruralkg/variable/hasAnswer
   label: ruralkg-var:hasAnswer
-  count: 17181
+  count: 25525
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
-  count: 12342
+  count: 14199
 - uri: http://www.w3.org/2004/02/skos/core#altLabel
   label: skos:altLabel
   count: 9037
@@ -108,6 +126,24 @@ property_partitions:
 - uri: https://schema.org/serviceLocation
   label: schema:serviceLocation
   count: 8114
+- uri: http://purl.org/dc/terms/description
+  label: dct:description
+  count: 4886
+- uri: http://sail.ua.edu/ruralkg/variable/year
+  label: ruralkg-var:year
+  count: 4719
+- uri: http://sail.ua.edu/ruralkg/variable/content
+  label: ruralkg-var:content
+  count: 4677
+- uri: http://sail.ua.edu/ruralkg/variable/generatedDescription
+  label: ruralkg-var:generatedDescription
+  count: 4677
+- uri: http://sail.ua.edu/ruralkg/variable/code
+  label: ruralkg-var:code
+  count: 4676
+- uri: http://sail.ua.edu/ruralkg/variable/fromDataset
+  label: ruralkg-var:fromDataset
+  count: 4676
 - uri: http://sail.ua.edu/ruralkg/property/fipsCode
   label: fipsCode
   count: 3309
@@ -123,36 +159,42 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/settlementtype/population
   label: ruralkg-settlement:population
   count: 3234
-- uri: http://purl.org/dc/terms/description
-  label: dct:description
-  count: 3143
-- uri: http://sail.ua.edu/ruralkg/variable/content
-  label: ruralkg-var:content
-  count: 2934
-- uri: http://sail.ua.edu/ruralkg/variable/generatedDescription
-  label: ruralkg-var:generatedDescription
-  count: 2934
-- uri: http://sail.ua.edu/ruralkg/variable/code
-  label: ruralkg-var:code
-  count: 2933
-- uri: http://sail.ua.edu/ruralkg/variable/fromDataset
-  label: ruralkg-var:fromDataset
-  count: 2933
-- uri: http://sail.ua.edu/ruralkg/variable/year
-  label: ruralkg-var:year
-  count: 2933
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/hasVariable
   label: ruralkg-sa:hasVariable
-  count: 2027
+  count: 2065
+- uri: http://sail.ua.edu/ruralkg/variable/ontologyConfidence
+  label: ruralkg-var:ontologyConfidence
+  count: 1341
+- uri: http://sail.ua.edu/ruralkg/variable/ontologyPath
+  label: ruralkg-var:ontologyPath
+  count: 1341
+- uri: http://sail.ua.edu/ruralkg/variable/ontologyRationale
+  label: ruralkg-var:ontologyRationale
+  count: 1332
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/mentionedInVariable
   label: ruralkg-sa:mentionedInVariable
   count: 1220
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/mentionsSubstance
   label: ruralkg-sa:mentionsSubstance
   count: 1220
+- uri: http://sail.ua.edu/ruralkg/healthcare/hasVariable
+  label: hasVariable
+  count: 867
+- uri: http://sail.ua.edu/ruralkg/publichealth/hasVariable
+  label: hasVariable
+  count: 693
 - uri: http://sail.ua.edu/ruralkg/justice/hasVariable
   label: ruralkg-justice:hasVariable
   count: 309
+- uri: http://sail.ua.edu/ruralkg/variable/correspondingPredicate
+  label: ruralkg-var:correspondingPredicate
+  count: 264
+- uri: http://www.w3.org/2000/01/rdf-schema#comment
+  label: rdfs:comment
+  count: 249
+- uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  label: rdfs:subClassOf
+  count: 235
 - uri: http://sail.ua.edu/ruralkg/treatment/code
   label: ruralkg-treatment:code
   count: 197
@@ -162,15 +204,27 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/treatment/containsService
   label: ruralkg-treatment:containsService
   count: 176
-- uri: http://www.w3.org/2000/01/rdf-schema#comment
-  label: rdfs:comment
-  count: 131
-- uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
-  label: rdfs:subClassOf
-  count: 120
+- uri: http://fbi.gov/cjis/nibrs/2023.0/OffenseUCRCode
+  label: nibrs:OffenseUCRCode
+  count: 168
+- uri: http://fbi.gov/cjis/nibrs/2023.0/ChargeUCRCode
+  label: nibrs:ChargeUCRCode
+  count: 126
+- uri: http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+  label: rdfs:isDefinedBy
+  count: 124
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#VictimAggravatedAssaultHomicideFactorCode
+  label: jxdm:VictimAggravatedAssaultHomicideFactorCode
+  count: 112
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ItemCategoryNIBRSPropertyCategoryCode
+  label: jxdm:ItemCategoryNIBRSPropertyCategoryCode
+  count: 61
 - uri: https://schema.org/alternateName
   label: schema:alternateName
   count: 56
+- uri: http://fbi.gov/cjis/nibrs/2023.0/LocationCategoryCode
+  label: nibrs:LocationCategoryCode
+  count: 44
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/fromDataset
   label: ruralkg-sa:fromDataset
   count: 40
@@ -186,24 +240,78 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/hierarchyLevel
   label: ruralkg-sa:hierarchyLevel
   count: 39
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#VictimCategoryCode
+  label: jxdm:VictimCategoryCode
+  count: 32
 - uri: http://www.w3.org/2002/07/owl#sameAs
   label: owl:sameAs
   count: 30
 - uri: http://www.w3.org/2004/02/skos/core#exactMatch
   label: skos:exactMatch
   count: 30
+- uri: http://fbi.gov/cjis/nibrs/2023.0/NIBRSBiasMotivationCode
+  label: nibrs:NIBRSBiasMotivationCode
+  count: 27
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#PersonEthnicityCode
+  label: jxdm:PersonEthnicityCode
+  count: 24
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#PersonRaceCode
+  label: jxdm:PersonRaceCode
+  count: 24
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#PersonSexCode
+  label: jxdm:PersonSexCode
+  count: 24
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/code
   label: ruralkg-sa:code
   count: 23
 - uri: http://sail.ua.edu/ruralkg/substanceabuse/wikidataId
   label: ruralkg-sa:wikidataId
   count: 23
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#DrugCategoryCode
+  label: jxdm:DrugCategoryCode
+  count: 16
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#PersonResidentCode
+  label: jxdm:PersonResidentCode
+  count: 16
+- uri: http://fbi.gov/cjis/nibrs/2023.0/ArresteeArmedWithCode
+  label: nibrs:ArresteeArmedWithCode
+  count: 14
+- uri: http://fbi.gov/cjis/nibrs/2023.0/InjuryCategoryCode
+  label: nibrs:InjuryCategoryCode
+  count: 14
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ForceCategoryCode
+  label: jxdm:ForceCategoryCode
+  count: 12
 - uri: http://sail.ua.edu/ruralkg/settlementtype/code
   label: ruralkg-settlement:code
   count: 10
-- uri: http://www.w3.org/2000/01/rdf-schema#isDefinedBy
-  label: rdfs:isDefinedBy
-  count: 10
+- uri: http://fbi.gov/cjis/nibrs/2023.0/OffenseFactorCode
+  label: nibrs:OffenseFactorCode
+  count: 9
+- uri: http://fbi.gov/cjis/nibrs/2023.0/SubstanceUnitCode
+  label: nibrs:SubstanceUnitCode
+  count: 9
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ArrestSubjectCountCode
+  label: jxdm:ArrestSubjectCountCode
+  count: 8
+- uri: http://fbi.gov/cjis/nibrs/2023.0/CriminalActivityCategoryCode
+  label: nibrs:CriminalActivityCategoryCode
+  count: 7
+- uri: http://fbi.gov/cjis/nibrs/2023.0/OffenseAttemptedIndicator
+  label: nibrs:OffenseAttemptedIndicator
+  count: 6
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#PassagePointMethodCOde
+  label: jxdm:PassagePointMethodCOde
+  count: 6
+- uri: http://sail.ua.edu/ruralkg/settlementtype/hasVariable
+  label: ruralkg-settlement:hasVariable
+  count: 6
+- uri: http://fbi.gov/cjis/nibrs/2023.0/VictimToSubjectRelationshipCode
+  label: nibrs:VictimToSubjectRelationshipCode
+  count: 4
+- uri: http://fbi.gov/cjis/nibrs/2023.0/IncidentExceptionalClearanceCode
+  label: nibrs:IncidentExceptionalClearanceCode
+  count: 1
 - uri: http://purl.org/dc/terms/created
   label: dct:created
   count: 1
@@ -218,4 +326,13 @@ property_partitions:
   count: 1
 - uri: http://purl.org/dc/terms/title
   label: dct:title
+  count: 1
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ItemStatusCode
+  label: jxdm:ItemStatusCode
+  count: 1
+- uri: http://www.w3.org/2000/01/rdf-schema#domain
+  label: rdfs:domain
+  count: 1
+- uri: http://www.w3.org/2000/01/rdf-schema#range
+  label: rdfs:range
   count: 1
