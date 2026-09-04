@@ -33,4 +33,3 @@ equivalent sets across multiple semantic types following the conventions
 established by the [Biolink Model](https://github.com/biolink/biolink-model).
 
 This graph is an RDF rendering of Data Translators Babel dataset.
-```
