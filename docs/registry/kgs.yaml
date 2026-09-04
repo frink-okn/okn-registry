@@ -795,6 +795,7 @@ kgs:
     lakefs-repo: secure-chain-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
   homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: securechainkg
   sparql: https://apps.okn.us/securechainkg/sparql
   stats: https://registry.okn.us/kg-stats/secure-chain-kg
