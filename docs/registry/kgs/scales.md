@@ -14,7 +14,12 @@ frink-options:
   augmentations:
     - name: map-predicate
       params:
-        from: https://scales.okn.us/property/hasName
+        from:
+          - http://release.niem.gov/niem/niem-core/5.0/#EntityName
+          - http://release.niem.gov/niem/niem-core/5.0/#PersonFullName
+          - http://release.niem.gov/niem/niem-core/5.0/#OrganizationName
+          - http://release.niem.gov/niem/niem-core/5.0/#FacilityName
+          - http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName
         to: http://www.w3.org/2000/01/rdf-schema#label
 contacts:
   - email: "danny.e.oneal@gmail.com"
