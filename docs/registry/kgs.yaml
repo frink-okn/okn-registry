@@ -7,6 +7,21 @@ kgs:
     integrating biomedical insights with social determinants of health.
   frink-options:
     documentation-path: biohealth
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - biohealth
+        - biohealth-node
+        - biohealth-rel
+        - biohealth-semtype
+        prefixes:
+          biohealth: https://biohealthkg.proto-okn.net/kg/schema/
+          biohealth-node: https://biohealthkg.proto-okn.net/kg/node/
+          biohealth-rel: https://biohealthkg.proto-okn.net/kg/relationship/
+          biohealth-semtype: https://biohealthkg.proto-okn.net/kg/semtype/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biohealth
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/biohealth.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
@@ -25,6 +40,22 @@ kgs:
     monitoring.
   frink-options:
     documentation-path: geoconnex
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - geoconnex
+        - geoconnex-nqhash
+        prefixes:
+          geoconnex: https://geoconnex.us/
+          geoconnex-nqhash: https://docs.geoconnex.us/nqhash/
+          iow-nqhash: https://iow.io/nqhash/
+          ogc-crs: http://www.opengis.net/def/crs/
+        roles:
+          label:
+          - https://schema.org/name
+          - http://gnis-ld.org/lod/gnis/ontology/officialName
+          - https://schema.org/sname
+          - https://schema.org/alternateName
     lakefs-repo: geoconnex
   funding: null
   homepage: https://docs.geoconnex.us/about/intro
@@ -43,6 +74,11 @@ kgs:
     vocabularies
   frink-options:
     documentation-path: babel
+    kgf:
+      semantics:
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: babel
   homepage: https://github.com/NCATSTranslator/Babel
   license: https://creativecommons.org/licenses/by/4.0/
@@ -59,6 +95,10 @@ kgs:
     OKN graphs
   frink-options:
     documentation-path: okn-void
+    kgf:
+      semantics:
+        prefixes:
+          okn-kg: https://purl.org/okn/frink/kg/
     lakefs-repo: okn-void
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://registry.okn.us/registry/kgs/okn-void/
@@ -75,6 +115,24 @@ kgs:
   description: Integrated suite of OBO ontologies with precomputed inferred relationships
   frink-options:
     documentation-path: ubergraph
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - ubergraph-axioms
+        - reasoner
+        prefixes:
+          bican: https://purl.brain-bican.org/taxonomy/
+          bican-ccn: https://purl.brain-bican.org/taxonomy/CCN20230722#
+          chemrof: https://w3id.org/chemrof/
+          jcvi-nsf2: http://www.jcvi.org/framework/nsf2_full_mtg#
+          n2o: http://n2o.neo/custom/
+          reasoner: http://reasoner.renci.org/vocab/
+          ubergraph-axioms: http://translator.renci.org/ubergraph-axioms.ofn#
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#prefLabel
+          - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
     lakefs-repo: ubergraph
   homepage: https://github.com/INCATools/ubergraph/
   shortname: ubergraph
@@ -88,6 +146,16 @@ kgs:
     label: Jim Balhoff
   description: Wikidata is a free and open knowledge base that can be read and edited
     by both humans and machines
+  frink-options:
+    kgf:
+      semantics:
+        prefixes:
+          schema: http://schema.org/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#prefLabel
+          - http://www.w3.org/2004/02/skos/core#altLabel
   homepage: https://www.wikidata.org/
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: wikidata
@@ -107,6 +175,26 @@ kgs:
     mechanisms.
   frink-options:
     documentation-path: prokn
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - prokn
+        prefixes:
+          allotrope-result: http://purl.allotrope.org/ontologies/result#
+          bao: http://www.bioassayontology.org/bao#
+          biolink-model: https://biolink.github.io/biolink-model/
+          chemrof: https://chemkg.github.io/chemrof/
+          edam: http://edamontology.org/
+          meshv: https://id.nlm.nih.gov/mesh/
+          prokn: https://research.bioinformatics.udel.edu/ProKN/rdf/
+          reproduceme: https://w3id.org/reproduceme#
+          schema: http://schema.org/
+          uniprot-core: http://purl.uniprot.org/core/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://schema.org/name
+          - http://purl.uniprot.org/core/scientificName
     lakefs-repo: prokn
   funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://research.bioinformatics.udel.edu/ProKN/
@@ -125,6 +213,19 @@ kgs:
     carbon modeling, which is crucial for voluntary carbon markets.
   frink-options:
     documentation-path: soc-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - sockg
+        - sockg-ind
+        prefixes:
+          qudt: http://qudt.org/vocab/unit/
+          sockg: https://idir.uta.edu/sockg-ontology#
+          sockg-ind: https://idir.uta.edu/sockg-ontology/individuals/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
     lakefs-repo: soc-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
   homepage: https://idir.sockg.org/
@@ -142,6 +243,20 @@ kgs:
     of climate models.
   frink-options:
     documentation-path: climatepub4-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - climatepub4
+        - climatepub4-id
+        prefixes:
+          climatepub4: https://climatepub4kg.github.io/ontology#
+          climatepub4-id: https://climatepub4kg.github.io/id/
+        roles:
+          label:
+          - https://climatepub4kg.github.io/ontology#name
+          - https://climatepub4kg.github.io/ontology#title
+          - https://climatepub4kg.github.io/ontology#asciiname
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: climatepub4-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
   shortname: climatemodelskg
@@ -159,6 +274,17 @@ kgs:
     Manufacturers.
   frink-options:
     documentation-path: sudokn-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - sudokn
+        prefixes:
+          iof-av: https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/
+          sudokn: http://asu.edu/semantics/SUDOKN/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#altLabel
     lakefs-repo: sudokn-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
   homepage: https://projects.engineering.asu.edu/sudokn/
@@ -178,6 +304,16 @@ kgs:
     literature.
   frink-options:
     documentation-path: biomarkerkg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - biomarker
+        prefixes:
+          biomarker: https://biomarkerkb.org/biomarker/
+          dbsnp: https://www.ncbi.nlm.nih.gov/snp/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biomarkerkg
   funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
   homepage: https://biomarkerkb.org/home/
@@ -196,6 +332,20 @@ kgs:
     health and justice for rural resilience.
   frink-options:
     documentation-path: rural-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - ruralkg
+        - ruralkg-prop
+        prefixes:
+          ruralkg: http://sail.ua.edu/ruralkg/
+          ruralkg-prop: http://sail.ua.edu/ruralkg/property/
+        roles:
+          label:
+          - https://schema.org/name
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#altLabel
+          - https://schema.org/alternateName
     lakefs-repo: rural-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
   shortname: ruralkg
@@ -218,6 +368,20 @@ kgs:
     agencies and academic institutions.
   frink-options:
     documentation-path: nasa-gesdisc
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - nasa-gesdisc-schema
+        - nasa-gesdisc-node
+        - nasa-gesdisc-rel
+        prefixes:
+          nasa-gesdisc-node: https://purl.org/okn/frink/kg/nasa-gesdisc/node/
+          nasa-gesdisc-rel: https://purl.org/okn/frink/kg/nasa-gesdisc/relationship/
+          nasa-gesdisc-schema: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - https://schema.org/title
     lakefs-repo: nasa-gesdisc
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/nasa.yaml
   funding: null
@@ -237,6 +401,13 @@ kgs:
     external identifiers represented as RDF IRIs
   frink-options:
     documentation-path: identifier-mappings
+    kgf:
+      semantics:
+        prefixes:
+          ensembl: http://rdf.ebi.ac.uk/resource/ensembl/
+          loc-names: http://id.loc.gov/authorities/names/
+          pubchem-compound: http://rdf.ncbi.nlm.nih.gov/pubchem/compound/
+          worldcat-fast: http://id.worldcat.org/fast/
     lakefs-repo: identifier-mappings
   homepage: https://www.wikidata.org/
   license: https://creativecommons.org/publicdomain/zero/1.0/
@@ -255,6 +426,20 @@ kgs:
     \ Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments."
   frink-options:
     documentation-path: spoke-genelab
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - spoke-genelab
+        - spoke-genelab-node
+        - spoke-genelab-rel
+        prefixes:
+          spoke-genelab: https://purl.org/okn/frink/kg/spoke-genelab/schema/
+          spoke-genelab-node: https://purl.org/okn/frink/kg/spoke-genelab/node/
+          spoke-genelab-rel: https://purl.org/okn/frink/kg/spoke-genelab/relationship/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - https://purl.org/okn/frink/kg/spoke-genelab/schema/project_title
     lakefs-repo: spoke-genelab-kg
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-genelab.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
@@ -275,6 +460,27 @@ kgs:
     across genomics, environmental science, and public health.
   frink-options:
     documentation-path: spoke-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - spoke-okn
+        - spoke-okn-rel
+        - spoke-okn-location
+        - spoke-okn-organism
+        - spoke-okn-sdoh
+        prefixes:
+          pubchem-inchikey: http://rdf.ncbi.nlm.nih.gov/pubchem/inchikey/
+          spoke-okn: https://purl.org/okn/frink/kg/spoke-okn/schema/
+          spoke-okn-location: https://purl.org/okn/frink/kg/spoke-okn/location/
+          spoke-okn-organism: https://purl.org/okn/frink/kg/spoke-okn/organism/
+          spoke-okn-rel: https://purl.org/okn/frink/kg/spoke-okn/relationship/
+          spoke-okn-sdoh: https://purl.org/okn/frink/kg/spoke-okn/sdoh/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - https://purl.org/okn/frink/kg/spoke-okn/schema/location_name
+          - https://purl.org/okn/frink/kg/spoke-okn/schema/state_name
+          - https://purl.org/okn/frink/kg/spoke-okn/schema/host_name
     lakefs-repo: spoke-kg
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-okn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
@@ -295,6 +501,14 @@ kgs:
     and post-translational modifications enriched with INDRA evidence metadata.
   frink-options:
     documentation-path: ncipidkg
+    kgf:
+      semantics:
+        prefixes:
+          indra: https://db.indra.bio/statements/
+          ncipid: http://example.org/okn/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: ncipidkg
   homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
   license: https://creativecommons.org/licenses/by/4.0/
@@ -316,6 +530,19 @@ kgs:
     and ~210k scored protein-protein associations as reified statements.
   frink-options:
     documentation-path: nestkg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - ndexv
+        - nestv
+        - nest
+        prefixes:
+          ndexv: https://www.ndexbio.org/vocab/
+          nest: https://www.ndexbio.org/identifiers/
+          nestv: https://www.ndexbio.org/vocab/nest/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: nestkg
   homepage: https://www.ndexbio.org/viewer/networks/9a8f5326-aa6e-11ea-aaef-0ac135e8bacf
   license: https://creativecommons.org/licenses/by/4.0/
@@ -333,6 +560,14 @@ kgs:
     from the AOP-Wiki.
   frink-options:
     documentation-path: biobricks-aopwiki-kg
+    kgf:
+      semantics:
+        prefixes:
+          aopo: http://aopkb.org/aop_ontology#
+        roles:
+          label:
+          - http://purl.org/dc/elements/1.1/title
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biobricks-aopwiki-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/aopwikirdf-kg
@@ -350,6 +585,16 @@ kgs:
     graph for cheminformatics and chemical safety data from EPA's CompTox database.
   frink-options:
     documentation-path: biobricks-ice-kg
+    kgf:
+      semantics:
+        prefixes:
+          bao: http://www.bioassayontology.org/bao#
+          comptox: https://comptox.epa.gov/dashboard/chemical/details/
+          ice: https://ice.ntp.niehs.nih.gov/property/
+          ice-data: http://example.com/ice/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biobricks-ice-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
@@ -367,6 +612,14 @@ kgs:
     (MeSH) biomedical vocabulary.
   frink-options:
     documentation-path: biobricks-mesh-kg
+    kgf:
+      semantics:
+        roles:
+          label:
+          - http://id.nlm.nih.gov/mesh/vocab#prefLabel
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://id.nlm.nih.gov/mesh/vocab#altLabel
+          - http://id.nlm.nih.gov/mesh/vocab#casn1_label
     lakefs-repo: biobricks-mesh-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/mesh-kg
@@ -384,6 +637,12 @@ kgs:
     annotations from PubChem.
   frink-options:
     documentation-path: biobricks-pubchem-annotations-kg
+    kgf:
+      semantics:
+        prefixes:
+          pubchem-annotation: http://rdf.ncbi.nlm.nih.gov/pubchem/annotation/
+          pubchem-compound: http://rdf.ncbi.nlm.nih.gov/pubchem/compound/
+          pubchem-substance: http://rdf.ncbi.nlm.nih.gov/pubchem/substance/
     lakefs-repo: biobricks-pubchem-annotations-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
@@ -401,6 +660,11 @@ kgs:
     data.
   frink-options:
     documentation-path: biobricks-tox21-kg
+    kgf:
+      semantics:
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biobricks-tox21-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
@@ -418,6 +682,14 @@ kgs:
     screening data.
   frink-options:
     documentation-path: biobricks-toxcast-kg
+    kgf:
+      semantics:
+        prefixes:
+          comptox: https://comptox.epa.gov/dashboard/
+          toxcast-data: http://example.com/toxcast/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biobricks-toxcast-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
@@ -435,6 +707,16 @@ kgs:
     network for the management of wildlife in the context of climate change
   frink-options:
     documentation-path: wildlife-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - wildlifekn
+        prefixes:
+          inaturalist: https://www.inaturalist.org/observations/
+          wildlifekn: https://wildlife.proto-okn.net/kg/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: wildlife-kg
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
@@ -455,6 +737,16 @@ kgs:
     models.
   frink-options:
     documentation-path: ufokn-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - ufokn
+        prefixes:
+          kwg-ont-https: https://stko-kwg.geog.ucsb.edu/lod/ontology#
+          ufokn: https://ufokn.org/id/
+        roles:
+          label:
+          - https://schema.org/name
     lakefs-repo: urban-flooding-open-knowledge-network
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
   homepage: https://ufokn.com
@@ -472,6 +764,16 @@ kgs:
     to Address Homelessness With Explainable AI
   frink-options:
     documentation-path: dream-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - dreamkg
+        prefixes:
+          dreamkg: https://purl.org/okn/frink/kg/dreamkg/
+          schema: http://schema.org/
+        roles:
+          label:
+          - http://schema.org/name
     lakefs-repo: dream-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
   homepage: https://dreamkg.com/
@@ -488,6 +790,15 @@ kgs:
   description: EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)
   frink-options:
     documentation-path: evoweb
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - evoweb
+        prefixes:
+          evoweb: https://purl.org/okn/frink/kg/evoweb/schema/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: evoweb
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://data.niaid.nih.gov/
@@ -515,6 +826,16 @@ kgs:
     \ use a dataset-discovery index such as the NIAID Data Ecosystem (nde) graph."
   frink-options:
     documentation-path: gene-expression-atlas-okn
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - wobd
+        prefixes:
+          wobd: http://purl.org/okn/wobd/
+        roles:
+          label:
+          - https://w3id.org/biolink/vocab/name
+          - https://w3id.org/biolink/vocab/symbol
     lakefs-repo: gene-expression-atlas-okn
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://www.ebi.ac.uk/gxa/home
@@ -548,6 +869,19 @@ kgs:
     \ values (log2 fold changes / p-values)."
   frink-options:
     documentation-path: nde
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - wobd-okn
+        prefixes:
+          ror: https://ror.org/
+          schema: http://schema.org/
+          uniprot-taxonomy: https://www.uniprot.org/taxonomy/
+          wobd-okn: https://okn.wobd.org/
+        roles:
+          label:
+          - http://schema.org/name
+          - http://schema.org/alternateName
     lakefs-repo: nde
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://data.niaid.nih.gov/
@@ -568,6 +902,15 @@ kgs:
     from electronic health records
   frink-options:
     documentation-path: oard-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - cohd
+        prefixes:
+          cohd: https://rare.cohd.io/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: oard-kg
   funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://github.com/WengLab-InformaticsResearch/oard-react
@@ -598,6 +941,15 @@ kgs:
         - http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName
         to: http://www.w3.org/2000/01/rdf-schema#label
     documentation-path: scales-kg
+    kgf:
+      semantics:
+        roles:
+          label:
+          - http://release.niem.gov/niem/niem-core/5.0/#EntityName
+          - http://release.niem.gov/niem/niem-core/5.0/#PersonFullName
+          - http://release.niem.gov/niem/niem-core/5.0/#OrganizationName
+          - http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName
+          - http://release.niem.gov/niem/niem-core/5.0/#FacilityName
     lakefs-repo: scales-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
   homepage: https://scales-okn.org/
@@ -619,6 +971,30 @@ kgs:
     streams, waterbodies and wells and their locations.
   frink-options:
     documentation-path: hydrology-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - efive
+        - isgs
+        - isgs-data
+        - mgs
+        - mgs-data
+        prefixes:
+          datacommons: https://datacommons.org/browser/
+          efive: http://www.semanticweb.org/efive/
+          isgs: http://sawgraph.spatialai.org/v1/il-isgs#
+          isgs-data: http://sawgraph.spatialai.org/v1/il-isgs-data#
+          mgs: http://sawgraph.spatialai.org/v1/me-mgs#
+          mgs-data: http://sawgraph.spatialai.org/v1/me-mgs-data#
+          nhdplusv2-comid: https://geoconnex.us/nhdplusv2/comid/
+          sawgraph-sdwis-h: http://sawgraph.spatialai.org/v1/us-sdwis#
+          stad-mls: http://purl.org/spatialai/stad/v2/mls/
+        roles:
+          label:
+          - https://schema.org/name
+          - http://purl.org/dc/terms/title
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://sawgraph.spatialai.org/v1/us-sdwis#pwsName
     lakefs-repo: hydrology-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
@@ -642,6 +1018,14 @@ kgs:
     contiguous states in the U.S.
   frink-options:
     documentation-path: spatial-kg
+    kgf:
+      semantics:
+        prefixes:
+          datacommons: https://datacommons.org/browser/
+          saw-geo: http://sawgraph.spatialai.org/v1/saw_geo#
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: spatial-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
@@ -658,6 +1042,22 @@ kgs:
   description: "PanKgraph \u2014 PanKbase Knowledge Graph (NIDDK)"
   frink-options:
     documentation-path: pankbase-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - pankgraph
+        - pankgraph-node
+        - pankgraph-rel
+        prefixes:
+          pankgraph: https://purl.org/okn/frink/kg/pankgraph/schema/
+          pankgraph-node: https://purl.org/okn/frink/kg/pankgraph/node/
+          pankgraph-rel: https://purl.org/okn/frink/kg/pankgraph/relationship/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
+          - https://purl.org/okn/frink/kg/pankgraph/schema/gene_name
+          - https://purl.org/okn/frink/kg/pankgraph/schema/tissue_name
     lakefs-repo: pankbase-kg
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/pankgraph.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
@@ -680,6 +1080,20 @@ kgs:
     Ecosystem (CFDE).
   frink-options:
     documentation-path: digcfdekg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - digcfdekg
+        - digcfdekg-node
+        - digcfdekg-rel
+        prefixes:
+          digcfdekg: https://purl.org/okn/frink/kg/digcfdekg/schema/
+          digcfdekg-node: https://purl.org/okn/frink/kg/digcfdekg/node/
+          digcfdekg-rel: https://purl.org/okn/frink/kg/digcfdekg/relationship/
+          ordo: http://www.orpha.net/ORDO/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: digcfdekg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://cfdeknowledge.org/
@@ -697,6 +1111,16 @@ kgs:
     disease identifiers and cross-references to support discovery and evidence synthesis.
   frink-options:
     documentation-path: rdkg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - rdaccelerate
+        prefixes:
+          rdaccelerate: https://rdaccelerate.org/resource/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#prefLabel
     lakefs-repo: rdkg
   shortname: rdkg
   template: overrides/kg.html
@@ -711,6 +1135,17 @@ kgs:
   description: Knowledge graph Promoting Healthy Aging through Semantic Enrichment
   frink-options:
     documentation-path: phases-kg
+    kgf:
+      semantics:
+        prefixes:
+          hbcp: http://humanbehaviourchange.org/ontology/
+          unep-sdg: http://purl.unep.org/sdg/
+        roles:
+          label:
+          - http://www.w3.org/2004/02/skos/core#prefLabel
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
+          - http://www.w3.org/2004/02/skos/core#altLabel
     lakefs-repo: phases-kg
   funding: https://reporter.nih.gov/project-details/11184405
   homepage: https://healthyphases.org/
@@ -732,6 +1167,25 @@ kgs:
     (FRS) together with their NAICS industry classification and the spatial location.
   frink-options:
     documentation-path: fio-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - fio
+        - fio-epa
+        - fio-naics
+        - fio-epa-data
+        prefixes:
+          datacommons: https://datacommons.org/browser/
+          fio: http://w3id.org/fio/v1/fio#
+          fio-epa: http://w3id.org/fio/v1/epa-frs#
+          fio-epa-data: http://w3id.org/fio/v1/epa-frs-data#
+          fio-naics: http://w3id.org/fio/v1/naics#
+          protonsys: http://proton.semanticweb.org/protonsys#
+          schema: http://schema.org/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
     lakefs-repo: fio-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
@@ -754,6 +1208,32 @@ kgs:
     substances and the measurement values observed.
   frink-options:
     documentation-path: sawgraph-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - sawgraph-me
+        - sawgraph-me-data
+        - sawgraph-wqp
+        - sawgraph-wqp-data
+        - sawgraph-sdwis
+        - saw-water
+        prefixes:
+          qudt: http://qudt.org/vocab/unit/
+          saw-water: http://sawgraph.spatialai.org/v1/saw_water#
+          sawgraph-me: http://w3id.org/sawgraph/v1/me-egad#
+          sawgraph-me-data: http://w3id.org/sawgraph/v1/me-egad-data#
+          sawgraph-sdwis: http://w3id.org/sawgraph/v1/us-sdwis#
+          sawgraph-sdwis-h: http://sawgraph.spatialai.org/v1/us-sdwis#
+          sawgraph-wqp: http://w3id.org/sawgraph/v1/us-wqp#
+          sawgraph-wqp-data: http://w3id.org/sawgraph/v1/us-wqp-data#
+          schema: http://schema.org/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
+          - http://w3id.org/sawgraph/v1/me-egad#samplePointWebName
+          - http://w3id.org/sawgraph/v1/us-wqp#siteName
+          - http://www.w3.org/2004/02/skos/core#altLabel
     lakefs-repo: sawgraph-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
@@ -777,6 +1257,19 @@ kgs:
     research, safety, and other relevant data from multiple sources.
   frink-options:
     documentation-path: medical-device-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - mdkg
+        - mdkg-device
+        - mdkg-report
+        prefixes:
+          mdkg: http://medicaldevice.com/ontology/
+          mdkg-device: http://medicaldevice.com/resource/device/
+          mdkg-report: http://medicaldevice.com/resource/report/
+        roles:
+          label:
+          - http://medicaldevice.com/ontology/label
     lakefs-repo: medical-device-kg
   homepage: https://github.com/Prabhadeus/Proto-OKN
   license: https://creativecommons.org/licenses/by/4.0/
@@ -797,6 +1290,20 @@ kgs:
     software supply chains.
   frink-options:
     documentation-path: secure-chain-kg
+    kgf:
+      semantics:
+        prefixes:
+          crates: https://crates.io/crates/
+          cwe: https://cwe.mitre.org/data/definitions/
+          nvd: https://nvd.nist.gov/vuln/detail/
+          pypi: https://pypi.org/project/
+          schema: http://schema.org/
+          spdx-license: https://spdx.org/licenses/
+        roles:
+          label:
+          - http://schema.org/name
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - https://w3id.org/secure-chain/versionName
     lakefs-repo: secure-chain-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
   homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
@@ -832,6 +1339,10 @@ kgs:
     neighborhood information.
   frink-options:
     documentation-path: neighborhood-kg
+    kgf:
+      semantics:
+        prefixes:
+          phila: https://metadata.phila.gov/
     lakefs-repo: neighborhood-information-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
   shortname: nikg
