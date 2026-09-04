@@ -3,7 +3,7 @@ distinct_subjects: 71430662
 distinct_objects: 135184264
 properties: 90
 classes: 79
-last_checked: '2026-07-28'
+last_checked: '2026-09-04'
 class_partitions:
 - uri: https://schema.org/Dataset
   label: schema:Dataset
@@ -36,7 +36,7 @@ class_partitions:
   label: GW
   count: 1435538
 - uri: http://gnis-ld.org/lod/gnis/ontology/Feature
-  label: Feature
+  label: gnis:Feature
   count: 969026
 - uri: http://www.opengis.net/ont/geosparql#Geometry
   label: geo:Geometry
@@ -102,7 +102,7 @@ class_partitions:
   label: schema:AdministrativeArea
   count: 3299
 - uri: http://gnis-ld.org/lod/gnis/ontology/County
-  label: County
+  label: gnis:County
   count: 3243
 - uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/ST-CA
   label: ST-CA
@@ -213,7 +213,7 @@ class_partitions:
   label: FA-SPS
   count: 57
 - uri: http://gnis-ld.org/lod/gnis/ontology/State
-  label: State
+  label: gnis:State
   count: 56
 - uri: https://schema.org/State
   label: schema:State
@@ -334,22 +334,22 @@ property_partitions:
   label: schema:measurementTechnique
   count: 1071496
 - uri: http://gnis-ld.org/lod/gnis/ontology/county
-  label: county
+  label: gnis:county
   count: 969026
 - uri: http://gnis-ld.org/lod/gnis/ontology/dateFeatureCreated
-  label: dateFeatureCreated
+  label: gnis:dateFeatureCreated
   count: 969026
 - uri: http://gnis-ld.org/lod/gnis/ontology/dateFeatureEdited
-  label: dateFeatureEdited
+  label: gnis:dateFeatureEdited
   count: 969026
 - uri: http://gnis-ld.org/lod/gnis/ontology/featureId
-  label: featureId
+  label: gnis:featureId
   count: 969026
 - uri: http://gnis-ld.org/lod/gnis/ontology/officialName
-  label: officialName
+  label: gnis:officialName
   count: 969026
 - uri: http://gnis-ld.org/lod/gnis/ontology/state
-  label: state
+  label: gnis:state
   count: 969026
 - uri: http://purl.org/dc/terms/created
   label: dct:created
@@ -364,10 +364,10 @@ property_partitions:
   label: schema:longitude
   count: 833051
 - uri: http://gnis-ld.org/lod/gnis/ontology/description
-  label: description
+  label: gnis:description
   count: 822529
 - uri: http://gnis-ld.org/lod/gnis/ontology/history
-  label: history
+  label: gnis:history
   count: 786766
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/containingCatchment
   label: hyf:containingCatchment
@@ -463,10 +463,10 @@ property_partitions:
   label: schema:frequency
   count: 7727
 - uri: http://gnis-ld.org/lod/gnis/ontology/countyName
-  label: countyName
+  label: gnis:countyName
   count: 3268
 - uri: http://gnis-ld.org/lod/gnis/ontology/countyCode
-  label: countyCode
+  label: gnis:countyCode
   count: 3243
 - uri: http://www.opengeospatial.org/standards/waterml2/hy_features/flowpath
   label: hyf-old:flowpath
@@ -505,10 +505,10 @@ property_partitions:
   label: schema:sameAs
   count: 118
 - uri: http://gnis-ld.org/lod/gnis/ontology/stateCode
-  label: stateCode
+  label: gnis:stateCode
   count: 112
 - uri: http://gnis-ld.org/lod/gnis/ontology/stateName
-  label: stateName
+  label: gnis:stateName
   count: 65
 - uri: https://schema.org/line
   label: schema:line

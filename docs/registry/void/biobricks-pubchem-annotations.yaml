@@ -3,10 +3,10 @@ distinct_subjects: 21436186
 distinct_objects: 36897927
 properties: 6
 classes: 1
-last_checked: '2026-07-28'
+last_checked: '2026-09-04'
 class_partitions:
 - uri: http://www.w3.org/ns/oa#Annotation
-  label: Annotation
+  label: oa:Annotation
   count: 10718093
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#value
@@ -16,7 +16,7 @@ property_partitions:
   label: dc:subject
   count: 17550399
 - uri: http://www.w3.org/ns/oa#hasTarget
-  label: hasTarget
+  label: oa:hasTarget
   count: 17550399
 - uri: http://purl.org/dc/elements/1.1/format
   label: dc:format
@@ -25,5 +25,5 @@ property_partitions:
   label: rdf:type
   count: 10718093
 - uri: http://www.w3.org/ns/oa#hasBody
-  label: hasBody
+  label: oa:hasBody
   count: 10718093

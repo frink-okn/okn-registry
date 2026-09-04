@@ -3,7 +3,7 @@ distinct_subjects: 14200722
 distinct_objects: 10193530
 properties: 218
 classes: 41
-last_checked: '2026-07-28'
+last_checked: '2026-09-04'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
@@ -36,7 +36,7 @@ class_partitions:
   label: Gene
   count: 38372
 - uri: http://www.ebi.ac.uk/efo/EFO_0000651
-  label: EFO_0000651
+  label: EFO:0000651
   count: 27488
 - uri: http://purl.obolibrary.org/obo/NCIT_C19398
   label: obo:NCIT_C19398
@@ -93,7 +93,7 @@ class_partitions:
   label: Antibody
   count: 465
 - uri: http://snomed.info/id/276239002
-  label: '276239002'
+  label: sct:276239002
   count: 433
 - uri: http://purl.obolibrary.org/obo/NCIT_C20130
   label: obo:NCIT_C20130
@@ -157,7 +157,7 @@ property_partitions:
   label: oboInOwl:evidence
   count: 2369357
 - uri: http://semanticscience.org/resource/SIO_001077
-  label: SIO_001077
+  label: sio:SIO_001077
   count: 1573380
 - uri: http://www.w3.org/2000/01/rdf-schema#comment
   label: rdfs:comment
@@ -373,7 +373,7 @@ property_partitions:
   label: catalyzes
   count: 16856
 - uri: http://snomed.info/id/257544000
-  label: '257544000'
+  label: sct:257544000
   count: 15048
 - uri: http://purl.allotrope.org/ontologies/result#AFX_0000408
   label: AFX_0000408
@@ -400,13 +400,13 @@ property_partitions:
   label: data_1049
   count: 12854
 - uri: http://semanticscience.org/resource/SIO_000272
-  label: SIO_000272
+  label: sio:SIO_000272
   count: 10514
 - uri: http://purl.obolibrary.org/obo/SEPIO_0000403
   label: obo:SEPIO_0000403
   count: 9739
 - uri: http://semanticscience.org/resource/SIO_010078
-  label: SIO_010078
+  label: sio:SIO_010078
   count: 8327
 - uri: http://purl.allotrope.org/ontologies/result#AFR_0003142
   label: AFR_0003142
@@ -487,19 +487,19 @@ property_partitions:
   label: obo:NCIT_C25425
   count: 3250
 - uri: http://semanticscience.org/resource/SIO_000254
-  label: SIO_000254
+  label: sio:SIO_000254
   count: 3119
 - uri: http://purl.obolibrary.org/obo/MI_2241
   label: obo:MI_2241
   count: 3107
 - uri: http://snomed.info/id/276239002
-  label: '276239002'
+  label: sct:276239002
   count: 2852
 - uri: https://biolink.github.io/biolink-model/homologous_to
   label: homologous_to
   count: 2688
 - uri: http://semanticscience.org/resource/CHEMINF_000032
-  label: CHEMINF_000032
+  label: sio:CHEMINF_000032
   count: 2635
 - uri: http://purl.obolibrary.org/obo/ECO_9000000
   label: obo:ECO_9000000
@@ -607,7 +607,7 @@ property_partitions:
   label: source
   count: 1216
 - uri: http://rs.tdwg.org/dwc/terms/taxonID
-  label: taxonID
+  label: dwc:taxonID
   count: 1216
 - uri: http://schema.org/name
   label: name
@@ -628,7 +628,7 @@ property_partitions:
   label: signedLog10PValue
   count: 1058
 - uri: http://www.ebi.ac.uk/efo/EFO_0000651
-  label: EFO_0000651
+  label: EFO:0000651
   count: 955
 - uri: http://purl.obolibrary.org/obo/RO_0002326
   label: obo:RO_0002326
@@ -664,10 +664,10 @@ property_partitions:
   label: obo:NCIT_C42581
   count: 384
 - uri: http://semanticscience.org/resource/SIO_000396
-  label: SIO_000396
+  label: sio:SIO_000396
   count: 342
 - uri: http://semanticscience.org/resource/SIO_000202
-  label: SIO_000202
+  label: sio:SIO_000202
   count: 335
 - uri: http://purl.obolibrary.org/obo/has_dbxref
   label: obo:has_dbxref
@@ -691,7 +691,7 @@ property_partitions:
   label: start_coordinate
   count: 138
 - uri: http://semanticscience.org/resource/CHEMINF_000007
-  label: CHEMINF_000007
+  label: sio:CHEMINF_000007
   count: 119
 - uri: http://purl.obolibrary.org/obo/RO_0004034
   label: obo:RO_0004034

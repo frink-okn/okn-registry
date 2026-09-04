@@ -1,0 +1,17 @@
+triples: 1510676589
+distinct_subjects: 638232683
+distinct_objects: 849935093
+properties: 3
+classes: 0
+last_checked: '2026-09-04'
+class_partitions: []
+property_partitions:
+- uri: http://www.w3.org/2004/02/skos/core#exactMatch
+  label: skos:exactMatch
+  count: 638334283
+- uri: https://w3id.org/biolink/vocab/category
+  label: biolink:category
+  count: 439115950
+- uri: http://www.w3.org/2000/01/rdf-schema#label
+  label: rdfs:label
+  count: 433226356

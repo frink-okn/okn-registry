@@ -3,7 +3,7 @@ distinct_subjects: 6718851
 distinct_objects: 6730612
 properties: 11
 classes: 7
-last_checked: '2026-07-28'
+last_checked: '2026-09-04'
 class_partitions:
 - uri: http://www.bioassayontology.org/bao#BAO_0000040
   label: BAO_0000040
@@ -31,7 +31,7 @@ property_partitions:
   label: rdf:type
   count: 6728393
 - uri: http://semanticscience.org/resource/SIO_000300
-  label: SIO_000300
+  label: sio:SIO_000300
   count: 3380300
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
