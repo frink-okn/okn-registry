@@ -3,7 +3,7 @@ distinct_subjects: 16767819
 distinct_objects: 50429890
 properties: 37
 classes: 25
-last_checked: '2026-09-04'
+last_checked: '2026-09-05'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Thing
   label: owl:Thing
