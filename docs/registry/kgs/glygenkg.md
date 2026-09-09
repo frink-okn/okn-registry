@@ -6,8 +6,8 @@ description: A knowledge graph of glycans, glycoproteins, genes that code for th
 stats: https://registry.okn.us/kg-stats/glygenkg
 homepage: https://www.glygen.org/
 funding: https://reporter.nih.gov/project-details/10494610
-sparql: https://apps.okn.us/glygenkg/sparql
-tpf: https://apps.okn.us/ldf/glygenkg
+#sparql: https://apps.okn.us/glygenkg/sparql
+#tpf: https://apps.okn.us/ldf/glygenkg
 frink-options:
   lakefs-repo: glygenkg
   documentation-path: glygenkg
