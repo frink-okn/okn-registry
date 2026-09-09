@@ -1,13 +1,25 @@
-triples: 588565599
-distinct_subjects: 92704141
-distinct_objects: 137474964
-properties: 279
-classes: 30
-last_checked: '2026-09-04'
+triples: 1084783977
+distinct_subjects: 171678070
+distinct_objects: 222163874
+properties: 289
+classes: 31
+last_checked: '2026-09-09'
 class_partitions:
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#RegisterAction
   label: jxdm:RegisterAction
   count: 58366941
+- uri: http://release.niem.gov/niem/niem-core/5.0/#Incident
+  label: niem-core:Incident
+  count: 41521798
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Charge
+  label: jxdm:Charge
+  count: 15461514
+- uri: http://release.niem.gov/niem/niem-core/5.0/#Person
+  label: niem-core:Person
+  count: 12278562
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Arrest
+  label: jxdm:Arrest
+  count: 11289986
 - uri: http://schemas.scales-okn.org/rdf/scales#Party
   label: scales:Party
   count: 11286631
@@ -23,9 +35,6 @@ class_partitions:
 - uri: http://release.niem.gov/niem/niem-core/5.0/#CourtCase
   label: niem-core:CourtCase
   count: 4164091
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Charge
-  label: jxdm:Charge
-  count: 3567581
 - uri: http://schemas.scales-okn.org/rdf/scales#LawFirm
   label: scales:LawFirm
   count: 2929549
@@ -44,38 +53,32 @@ class_partitions:
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Attorney
   label: jxdm:Attorney
   count: 537560
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Sentence
+  label: jxdm:Sentence
+  count: 475308
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#BookingSubject
   label: jxdm:BookingSubject
   count: 420312
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeSubject
   label: jxdm:ChargeSubject
   count: 420312
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Sentence
-  label: jxdm:Sentence
-  count: 155917
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Booking
   label: jxdm:Booking
   count: 143152
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Arrest
-  label: jxdm:Arrest
-  count: 140072
-- uri: http://release.niem.gov/niem/niem-core/5.0/#Person
-  label: niem-core:Person
-  count: 140072
-- uri: http://release.niem.gov/niem/niem-core/5.0/#Incident
-  label: niem-core:Incident
-  count: 83347
 - uri: http://release.niem.gov/niem/niem-core/5.0/#RelativeLocation
   label: niem-core:RelativeLocation
   count: 30103
 - uri: http://release.niem.gov/niem/niem-core/5.0/#RelativeLocationDistanceMeasure
   label: niem-core:RelativeLocationDistanceMeasure
   count: 15044
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ArrestAgency
+  label: jxdm:ArrestAgency
+  count: 13540
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Judge
   label: jxdm:Judge
   count: 5385
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#LawEnforcementOfficial
-  label: jxdm:LawEnforcementOfficial
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#EnforcementOfficial
+  label: jxdm:EnforcementOfficial
   count: 2016
 - uri: http://release.niem.gov/niem/niem-core/5.0/#Location
   label: niem-core:Location
@@ -85,65 +88,116 @@ class_partitions:
   count: 536
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#SentenceTerm
   label: jxdm:SentenceTerm
-  count: 294
+  count: 501
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
   label: rdf:Property
-  count: 282
+  count: 290
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Court
   label: jxdm:Court
   count: 94
 - uri: http://www.w3.org/2000/01/rdf-schema#Class
   label: rdfs:Class
-  count: 33
+  count: 42
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 107754943
+  count: 184708886
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#RegisterAction
   label: jxdm:RegisterAction
   count: 60555322
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#RegisterActionDate
+  label: jxdm:RegisterActionDate
+  count: 58366941
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#RegisterActionDescriptionText
   label: jxdm:RegisterActionDescriptionText
   count: 58366941
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#RegisterActionDate
-  label: jxdm:RegisterActionDate
-  count: 58366940
 - uri: http://release.niem.gov/niem/niem-core/5.0/#DocumentSequenceID
   label: niem-core:DocumentSequenceID
   count: 57800962
+- uri: http://release.niem.gov/niem/niem-core/5.0/#ActivityDate
+  label: niem-core:ActivityDate
+  count: 52721480
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#IncidentArrest
+  label: jxdm:IncidentArrest
+  count: 51928907
+- uri: http://release.niem.gov/niem/niem-core/5.0/#Incident
+  label: niem-core:Incident
+  count: 51928907
+- uri: http://schemas.scales-okn.org/rdf/scales#OntologyLabel
+  label: scales:OntologyLabel
+  count: 49293404
 - uri: http://release.niem.gov/niem/niem-core/5.0/#AdministrativeID
   label: niem-core:AdministrativeID
-  count: 30414852
-- uri: http://schemas.scales-okn.org/rdf/scales#hasEntityReference
-  label: scales:hasEntityReference
+  count: 41617057
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Arrest
+  label: jxdm:Arrest
+  count: 40381198
+- uri: http://schemas.scales-okn.org/rdf/scales#DisambiguatedEntity
+  label: scales:DisambiguatedEntity
+  count: 25719101
+- uri: http://www.w3.org/2000/01/rdf-schema#label
+  label: rdfs:label
+  count: 24593501
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#PersonCharge
+  label: jxdm:PersonCharge
+  count: 15084766
+- uri: http://fbi.gov/cjis/nibrs/2023.0/OffenseUCRCode
+  label: nibrs:OffenseUCRCode
+  count: 14157743
+- uri: http://fbi.gov/cjis/nibrs/2023.0/NIBRSReportCategoryCode
+  label: nibrs:NIBRSReportCategoryCode
+  count: 14087340
+- uri: http://schemas.scales-okn.org/rdf/scales#EntityReference
+  label: scales:EntityReference
   count: 12370921
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeSubject
+  label: jxdm:ChargeSubject
+  count: 12107807
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#PersonSexCode
+  label: jxdm:PersonSexCode
+  count: 12052253
+- uri: http://release.niem.gov/niem/niem-core/5.0/#PersonRaceText
+  label: niem-core:PersonRaceText
+  count: 12026107
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ArrestCharge
+  label: jxdm:ArrestCharge
+  count: 11687495
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ArrestSubject
+  label: jxdm:ArrestSubject
+  count: 11687495
+- uri: http://schemas.scales-okn.org/rdf/scales#BirthYear
+  label: scales:BirthYear
+  count: 11645726
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ArrestAgency
+  label: jxdm:ArrestAgency
+  count: 11289986
 - uri: http://release.niem.gov/niem/niem-core/5.0/#EntityName
   label: niem-core:EntityName
+  count: 11286631
+- uri: http://schemas.scales-okn.org/rdf/scales#Party
+  label: scales:Party
   count: 11286631
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ParticipantRoleCategoryText
   label: jxdm:ParticipantRoleCategoryText
   count: 11265814
-- uri: http://schemas.scales-okn.org/rdf/scales#hasReferenceToOtherEntry
-  label: scales:hasReferenceToOtherEntry
+- uri: http://schemas.scales-okn.org/rdf/scales#ReferenceToOtherEntry
+  label: scales:ReferenceToOtherEntry
   count: 10618350
 - uri: http://release.niem.gov/niem/niem-core/5.0/#PersonFullName
   label: niem-core:PersonFullName
-  count: 10545999
-- uri: http://schemas.scales-okn.org/rdf/scales#isInstanceOfEntity
-  label: scales:isInstanceOfEntity
-  count: 10051968
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Arrest
-  label: jxdm:Arrest
-  count: 9140642
-- uri: http://schemas.scales-okn.org/rdf/scales#Party
-  label: scales:Party
-  count: 7362525
+  count: 10364152
+- uri: http://release.niem.gov/niem/niem-core/5.0/#PersonEthnicityText
+  label: niem-core:PersonEthnicityText
+  count: 7497861
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#CaseDefendantParty
   label: jxdm:CaseDefendantParty
-  count: 6013387
+  count: 6285337
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#CaseInitiatingParty
   label: jxdm:CaseInitiatingParty
   count: 4892601
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#DrugCategoryCode
+  label: jxdm:DrugCategoryCode
+  count: 4426748
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#CaseJudge
   label: jxdm:CaseJudge
   count: 4424121
@@ -171,18 +225,15 @@ property_partitions:
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeText
   label: jxdm:ChargeText
   count: 3480721
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#PersonCharge
-  label: jxdm:PersonCharge
-  count: 3397271
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeSequenceID
+  label: jxdm:ChargeSequenceID
+  count: 3200886
 - uri: http://release.niem.gov/niem/niem-core/5.0/#ContactMailingAddress
   label: niem-core:ContactMailingAddress
   count: 3083613
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeSequenceID
-  label: jxdm:ChargeSequenceID
-  count: 3063878
 - uri: http://release.niem.gov/niem/niem-core/5.0/#OrganizationName
   label: niem-core:OrganizationName
-  count: 2929550
+  count: 2942617
 - uri: http://schemas.scales-okn.org/rdf/scales#LawFirm
   label: scales:LawFirm
   count: 2929549
@@ -192,647 +243,614 @@ property_partitions:
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#CaseInitiatingAttorney
   label: jxdm:CaseInitiatingAttorney
   count: 2755161
-- uri: http://fbi.gov/cjis/nibrs/2023.0/OffenseUCRCode
-  label: nibrs:OffenseUCRCode
-  count: 2689214
-- uri: http://fbi.gov/cjis/nibrs/2023.0/NIBRSReportCategoryCode
-  label: nibrs:NIBRSReportCategoryCode
-  count: 2618811
 - uri: http://release.niem.gov/niem/niem-core/5.0/#CaseSubCategoryText
   label: niem-core:CaseSubCategoryText
   count: 1863523
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#CaseOfficialRoleText
   label: jxdm:CaseOfficialRoleText
   count: 1713199
-- uri: http://schemas.scales-okn.org/rdf/scales#OntologyLabel
-  label: scales:OntologyLabel
-  count: 1679138
-- uri: http://schemas.scales-okn.org/rdf/scales#hasExtraInfo
-  label: scales:hasExtraInfo
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Sentence
+  label: jxdm:Sentence
+  count: 897205
+- uri: http://schemas.scales-okn.org/rdf/scales#ExtraPartyText
+  label: scales:ExtraPartyText
   count: 861769
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCircuit
-  label: scales:hasIdbCircuit
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCircuit
+  label: scales:IdbCircuit
   count: 824286
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCounty
-  label: scales:hasIdbCounty
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCounty
+  label: scales:IdbCounty
   count: 824286
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDistrict
-  label: scales:hasIdbDistrict
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDistrict
+  label: scales:IdbDistrict
   count: 824286
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDocket
-  label: scales:hasIdbDocket
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDocket
+  label: scales:IdbDocket
   count: 824286
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFiledate
-  label: scales:hasIdbFiledate
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFiledate
+  label: scales:IdbFiledate
   count: 824286
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbIs_stub
-  label: scales:hasIdbIs_stub
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbIs_stub
+  label: scales:IdbIs_stub
   count: 824286
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbOffice
-  label: scales:hasIdbOffice
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbOffice
+  label: scales:IdbOffice
   count: 824286
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTapeyear
-  label: scales:hasIdbTapeyear
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTapeyear
+  label: scales:IdbTapeyear
   count: 824286
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbStatuscd
-  label: scales:hasIdbStatuscd
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbStatuscd
+  label: scales:IdbStatuscd
   count: 824285
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#StatuteKeywordText
   label: jxdm:StatuteKeywordText
   count: 718593
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTermdate
-  label: scales:hasIdbTermdate
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTermdate
+  label: scales:IdbTermdate
   count: 712609
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbAmtrec
-  label: scales:hasIdbAmtrec
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbAmtrec
+  label: scales:IdbAmtrec
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbArbit
-  label: scales:hasIdbArbit
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbArbit
+  label: scales:IdbArbit
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbClassact
-  label: scales:hasIdbClassact
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbClassact
+  label: scales:IdbClassact
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDef
-  label: scales:hasIdbDef
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDef
+  label: scales:IdbDef
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDemanded
-  label: scales:hasIdbDemanded
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDemanded
+  label: scales:IdbDemanded
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDisp
-  label: scales:hasIdbDisp
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDisp
+  label: scales:IdbDisp
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFdateuse
-  label: scales:hasIdbFdateuse
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFdateuse
+  label: scales:IdbFdateuse
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbJudgment
-  label: scales:hasIdbJudgment
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbJudgment
+  label: scales:IdbJudgment
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbJuris
-  label: scales:hasIdbJuris
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbJuris
+  label: scales:IdbJuris
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbJury
-  label: scales:hasIdbJury
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbJury
+  label: scales:IdbJury
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbMdldock
-  label: scales:hasIdbMdldock
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbMdldock
+  label: scales:IdbMdldock
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbNoj
-  label: scales:hasIdbNoj
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbNoj
+  label: scales:IdbNoj
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbNos
-  label: scales:hasIdbNos
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbNos
+  label: scales:IdbNos
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbOrigin
-  label: scales:hasIdbOrigin
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbOrigin
+  label: scales:IdbOrigin
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProcprog
-  label: scales:hasIdbProcprog
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProcprog
+  label: scales:IdbProcprog
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProse
-  label: scales:hasIdbProse
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProse
+  label: scales:IdbProse
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbResidenc
-  label: scales:hasIdbResidenc
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbResidenc
+  label: scales:IdbResidenc
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbSection
-  label: scales:hasIdbSection
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbSection
+  label: scales:IdbSection
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbSubsect
-  label: scales:hasIdbSubsect
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbSubsect
+  label: scales:IdbSubsect
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTransdoc
-  label: scales:hasIdbTransdoc
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTransdoc
+  label: scales:IdbTransdoc
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTransoff
-  label: scales:hasIdbTransoff
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTransoff
+  label: scales:IdbTransoff
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTransorg
-  label: scales:hasIdbTransorg
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTransorg
+  label: scales:IdbTransorg
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTrclact
-  label: scales:hasIdbTrclact
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTrclact
+  label: scales:IdbTrclact
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTrmarb
-  label: scales:hasIdbTrmarb
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTrmarb
+  label: scales:IdbTrmarb
   count: 702501
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbIfp
-  label: scales:hasIdbIfp
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbIfp
+  label: scales:IdbIfp
   count: 702500
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPlt
-  label: scales:hasIdbPlt
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPlt
+  label: scales:IdbPlt
   count: 702493
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTdateuse
-  label: scales:hasIdbTdateuse
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTdateuse
+  label: scales:IdbTdateuse
   count: 662201
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#CaseCharge
   label: jxdm:CaseCharge
   count: 607725
-- uri: http://release.niem.gov/niem/niem-core/5.0/#PersonRaceText
-  label: niem-core:PersonRaceText
-  count: 563201
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#PersonSexCode
-  label: jxdm:PersonSexCode
-  count: 559450
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Attorney
   label: jxdm:Attorney
   count: 537560
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeSeverityLevelCode
-  label: jxdm:ChargeSeverityLevelCode
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeSeverityLevel
+  label: jxdm:ChargeSeverityLevel
   count: 497264
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeSubject
-  label: jxdm:ChargeSubject
-  count: 420312
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#SentenceDescriptionText
+  label: jxdm:SentenceDescriptionText
+  count: 475308
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#SentenceTerm
+  label: jxdm:SentenceTerm
+  count: 475308
+- uri: http://schemas.scales-okn.org/rdf/scales#UnparsedSentenceText
+  label: scales:UnparsedSentenceText
+  count: 475308
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Booking
   label: jxdm:Booking
   count: 419411
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeDisposition
   label: jxdm:ChargeDisposition
   count: 389382
-- uri: http://schemas.scales-okn.org/rdf/scales#hasChargeType
-  label: scales:hasChargeType
+- uri: http://schemas.scales-okn.org/rdf/scales#ChargeLifecyclePhase
+  label: scales:ChargeLifecyclePhase
   count: 389374
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTitl
-  label: scales:hasIdbTitl
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTitl
+  label: scales:IdbTitl
   count: 325292
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#Sentence
-  label: jxdm:Sentence
-  count: 307342
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDjoined
-  label: scales:hasIdbDjoined
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeSentence
+  label: jxdm:ChargeSentence
+  count: 291677
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDjoined
+  label: scales:IdbDjoined
   count: 275529
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeFiledCase
-  label: jxdm:ChargeFiledCase
+- uri: http://release.niem.gov/niem/niem-core/5.0/#CourtCase
+  label: niem-core:CourtCase
   count: 218359
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIfpLabel
-  label: scales:hasIfpLabel
+- uri: http://schemas.scales-okn.org/rdf/scales#IfpLabel
+  label: scales:IfpLabel
   count: 197166
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIfpJudgeAttribution
-  label: scales:hasIfpJudgeAttribution
+- uri: http://schemas.scales-okn.org/rdf/scales#IfpJudgeAttribution
+  label: scales:IfpJudgeAttribution
   count: 175903
-- uri: http://schemas.scales-okn.org/rdf/scales#hasHighestOffenseLevelOpening
-  label: scales:hasHighestOffenseLevelOpening
+- uri: http://schemas.scales-okn.org/rdf/scales#HighestOffenseLevelOpening
+  label: scales:HighestOffenseLevelOpening
   count: 159337
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#SentenceDescriptionText
-  label: jxdm:SentenceDescriptionText
-  count: 155917
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#SentenceTerm
-  label: jxdm:SentenceTerm
-  count: 155917
-- uri: http://schemas.scales-okn.org/rdf/scales#hasUnknownExtraInfo
-  label: scales:hasUnknownExtraInfo
-  count: 155917
-- uri: http://release.niem.gov/niem/niem-core/5.0/#Location
-  label: niem-core:Location
-  count: 151368
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#DrugCategoryCode
-  label: jxdm:DrugCategoryCode
-  count: 147402
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#BookingFacility
   label: jxdm:BookingFacility
   count: 143152
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ArrestAgency
-  label: jxdm:ArrestAgency
+- uri: http://release.niem.gov/niem/niem-core/5.0/#DispositionCategoryText
+  label: niem-core:DispositionCategoryText
   count: 140072
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ArrestCharge
-  label: jxdm:ArrestCharge
-  count: 140072
+- uri: http://schemas.scales-okn.org/rdf/scales#RelatedCase
+  label: scales:RelatedCase
+  count: 125197
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbAppcd
+  label: scales:IdbAppcd
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbAppdate
+  label: scales:IdbAppdate
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCaslgky
+  label: scales:IdbCaslgky
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCtdef
+  label: scales:IdbCtdef
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCtfil
+  label: scales:IdbCtfil
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCtfilr
+  label: scales:IdbCtfilr
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCtfiltrn
+  label: scales:IdbCtfiltrn
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCtfilwor
+  label: scales:IdbCtfilwor
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCtpn
+  label: scales:IdbCtpn
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCtpnwof
+  label: scales:IdbCtpnwof
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCttr
+  label: scales:IdbCttr
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCttrr
+  label: scales:IdbCttrr
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCttrtrn
+  label: scales:IdbCttrtrn
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbCttrwor
+  label: scales:IdbCttrwor
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2foffcd1
+  label: scales:IdbD2foffcd1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2foffcd2
+  label: scales:IdbD2foffcd2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2foffcd3
+  label: scales:IdbD2foffcd3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2foffcd4
+  label: scales:IdbD2foffcd4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2foffcd5
+  label: scales:IdbD2foffcd5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2toffcd1
+  label: scales:IdbD2toffcd1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2toffcd2
+  label: scales:IdbD2toffcd2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2toffcd3
+  label: scales:IdbD2toffcd3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2toffcd4
+  label: scales:IdbD2toffcd4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbD2toffcd5
+  label: scales:IdbD2toffcd5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDeflgky
+  label: scales:IdbDeflgky
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDefno
+  label: scales:IdbDefno
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDisp1
+  label: scales:IdbDisp1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDisp2
+  label: scales:IdbDisp2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDisp3
+  label: scales:IdbDisp3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDisp4
+  label: scales:IdbDisp4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDisp5
+  label: scales:IdbDisp5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbDispdate
+  label: scales:IdbDispdate
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFcounsel
+  label: scales:IdbFcounsel
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFgenddate
+  label: scales:IdbFgenddate
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFgstrtdate
+  label: scales:IdbFgstrtdate
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFineamt1
+  label: scales:IdbFineamt1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFineamt2
+  label: scales:IdbFineamt2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFineamt3
+  label: scales:IdbFineamt3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFineamt4
+  label: scales:IdbFineamt4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFineamt5
+  label: scales:IdbFineamt5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFinetot
+  label: scales:IdbFinetot
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFiscalyr
+  label: scales:IdbFiscalyr
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFoffcd1
+  label: scales:IdbFoffcd1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFoffcd2
+  label: scales:IdbFoffcd2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFoffcd3
+  label: scales:IdbFoffcd3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFoffcd4
+  label: scales:IdbFoffcd4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFoffcd5
+  label: scales:IdbFoffcd5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFofflvl1
+  label: scales:IdbFofflvl1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFofflvl2
+  label: scales:IdbFofflvl2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFofflvl3
+  label: scales:IdbFofflvl3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFofflvl4
+  label: scales:IdbFofflvl4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFofflvl5
+  label: scales:IdbFofflvl5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFsev1
+  label: scales:IdbFsev1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFsev2
+  label: scales:IdbFsev2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFsev3
+  label: scales:IdbFsev3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFsev4
+  label: scales:IdbFsev4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFsev5
+  label: scales:IdbFsev5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFtitle1
+  label: scales:IdbFtitle1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFtitle2
+  label: scales:IdbFtitle2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFtitle3
+  label: scales:IdbFtitle3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFtitle4
+  label: scales:IdbFtitle4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFtitle5
+  label: scales:IdbFtitle5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbFugstat
+  label: scales:IdbFugstat
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbInt1
+  label: scales:IdbInt1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbInt2
+  label: scales:IdbInt2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbInt3
+  label: scales:IdbInt3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbLoaddate
+  label: scales:IdbLoaddate
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbMagdef
+  label: scales:IdbMagdef
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbMagdock
+  label: scales:IdbMagdock
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPriscd1
+  label: scales:IdbPriscd1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPriscd2
+  label: scales:IdbPriscd2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPriscd3
+  label: scales:IdbPriscd3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPriscd4
+  label: scales:IdbPriscd4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPriscd5
+  label: scales:IdbPriscd5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPristim1
+  label: scales:IdbPristim1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPristim2
+  label: scales:IdbPristim2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPristim3
+  label: scales:IdbPristim3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPristim4
+  label: scales:IdbPristim4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPristim5
+  label: scales:IdbPristim5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPristot
+  label: scales:IdbPristot
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbcd1
+  label: scales:IdbProbcd1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbcd2
+  label: scales:IdbProbcd2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbcd3
+  label: scales:IdbProbcd3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbcd4
+  label: scales:IdbProbcd4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbcd5
+  label: scales:IdbProbcd5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbmon1
+  label: scales:IdbProbmon1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbmon2
+  label: scales:IdbProbmon2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbmon3
+  label: scales:IdbProbmon3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbmon4
+  label: scales:IdbProbmon4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbmon5
+  label: scales:IdbProbmon5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProbtot
+  label: scales:IdbProbtot
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProccd
+  label: scales:IdbProccd
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbProcdate
+  label: scales:IdbProcdate
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbReopseq
+  label: scales:IdbReopseq
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbSentdate
+  label: scales:IdbSentdate
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbSupvrel1
+  label: scales:IdbSupvrel1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbSupvrel2
+  label: scales:IdbSupvrel2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbSupvrel3
+  label: scales:IdbSupvrel3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbSupvrel4
+  label: scales:IdbSupvrel4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbSupvrel5
+  label: scales:IdbSupvrel5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTcounsel
+  label: scales:IdbTcounsel
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTermoff
+  label: scales:IdbTermoff
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbToffcd1
+  label: scales:IdbToffcd1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbToffcd2
+  label: scales:IdbToffcd2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbToffcd3
+  label: scales:IdbToffcd3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbToffcd4
+  label: scales:IdbToffcd4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbToffcd5
+  label: scales:IdbToffcd5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTofflvl1
+  label: scales:IdbTofflvl1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTofflvl2
+  label: scales:IdbTofflvl2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTofflvl3
+  label: scales:IdbTofflvl3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTofflvl4
+  label: scales:IdbTofflvl4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTofflvl5
+  label: scales:IdbTofflvl5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTrandef
+  label: scales:IdbTrandef
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTrandist
+  label: scales:IdbTrandist
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTrandock
+  label: scales:IdbTrandock
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTranoff
+  label: scales:IdbTranoff
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTsev1
+  label: scales:IdbTsev1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTsev2
+  label: scales:IdbTsev2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTsev3
+  label: scales:IdbTsev3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTsev4
+  label: scales:IdbTsev4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTsev5
+  label: scales:IdbTsev5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTtitle1
+  label: scales:IdbTtitle1
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTtitle2
+  label: scales:IdbTtitle2
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTtitle3
+  label: scales:IdbTtitle3
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTtitle4
+  label: scales:IdbTtitle4
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTtitle5
+  label: scales:IdbTtitle5
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTypemag
+  label: scales:IdbTypemag
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTypereg
+  label: scales:IdbTypereg
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTypetrn
+  label: scales:IdbTypetrn
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbUpdate
+  label: scales:IdbUpdate
+  count: 121785
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbVer
+  label: scales:IdbVer
+  count: 121785
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#BailBondType
+  label: jxdm:BailBondType
+  count: 105383
+- uri: http://release.niem.gov/niem/niem-core/5.0/#Location
+  label: niem-core:Location
+  count: 105161
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#BailBondAmount
+  label: jxdm:BailBondAmount
+  count: 99402
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ArrestOfficial
   label: jxdm:ArrestOfficial
-  count: 140072
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ArrestSubject
-  label: jxdm:ArrestSubject
-  count: 140072
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeDispositionCategoryText
-  label: jxdm:ChargeDispositionCategoryText
-  count: 140072
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#IncidentArrest
-  label: jxdm:IncidentArrest
-  count: 140072
-- uri: http://release.niem.gov/niem/niem-core/5.0/#ActivityDate
-  label: niem-core:ActivityDate
-  count: 140072
-- uri: http://release.niem.gov/niem/niem-core/5.0/#Incident
-  label: niem-core:Incident
-  count: 140072
-- uri: http://schemas.scales-okn.org/rdf/scales#BirthYear
-  label: scales:BirthYear
-  count: 139412
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#ChargeSentence
-  label: jxdm:ChargeSentence
-  count: 126788
-- uri: http://schemas.scales-okn.org/rdf/scales#hasRelatedCase
-  label: scales:hasRelatedCase
-  count: 125197
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbAppcd
-  label: scales:hasIdbAppcd
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbAppdate
-  label: scales:hasIdbAppdate
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCaslgky
-  label: scales:hasIdbCaslgky
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCtdef
-  label: scales:hasIdbCtdef
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCtfil
-  label: scales:hasIdbCtfil
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCtfilr
-  label: scales:hasIdbCtfilr
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCtfiltrn
-  label: scales:hasIdbCtfiltrn
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCtfilwor
-  label: scales:hasIdbCtfilwor
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCtpn
-  label: scales:hasIdbCtpn
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCtpnwof
-  label: scales:hasIdbCtpnwof
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCttr
-  label: scales:hasIdbCttr
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCttrr
-  label: scales:hasIdbCttrr
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCttrtrn
-  label: scales:hasIdbCttrtrn
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbCttrwor
-  label: scales:hasIdbCttrwor
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2foffcd1
-  label: scales:hasIdbD2foffcd1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2foffcd2
-  label: scales:hasIdbD2foffcd2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2foffcd3
-  label: scales:hasIdbD2foffcd3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2foffcd4
-  label: scales:hasIdbD2foffcd4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2foffcd5
-  label: scales:hasIdbD2foffcd5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2toffcd1
-  label: scales:hasIdbD2toffcd1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2toffcd2
-  label: scales:hasIdbD2toffcd2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2toffcd3
-  label: scales:hasIdbD2toffcd3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2toffcd4
-  label: scales:hasIdbD2toffcd4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbD2toffcd5
-  label: scales:hasIdbD2toffcd5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDeflgky
-  label: scales:hasIdbDeflgky
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDefno
-  label: scales:hasIdbDefno
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDisp1
-  label: scales:hasIdbDisp1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDisp2
-  label: scales:hasIdbDisp2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDisp3
-  label: scales:hasIdbDisp3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDisp4
-  label: scales:hasIdbDisp4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDisp5
-  label: scales:hasIdbDisp5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbDispdate
-  label: scales:hasIdbDispdate
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFcounsel
-  label: scales:hasIdbFcounsel
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFgenddate
-  label: scales:hasIdbFgenddate
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFgstrtdate
-  label: scales:hasIdbFgstrtdate
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFineamt1
-  label: scales:hasIdbFineamt1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFineamt2
-  label: scales:hasIdbFineamt2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFineamt3
-  label: scales:hasIdbFineamt3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFineamt4
-  label: scales:hasIdbFineamt4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFineamt5
-  label: scales:hasIdbFineamt5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFinetot
-  label: scales:hasIdbFinetot
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFiscalyr
-  label: scales:hasIdbFiscalyr
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFoffcd1
-  label: scales:hasIdbFoffcd1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFoffcd2
-  label: scales:hasIdbFoffcd2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFoffcd3
-  label: scales:hasIdbFoffcd3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFoffcd4
-  label: scales:hasIdbFoffcd4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFoffcd5
-  label: scales:hasIdbFoffcd5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFofflvl1
-  label: scales:hasIdbFofflvl1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFofflvl2
-  label: scales:hasIdbFofflvl2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFofflvl3
-  label: scales:hasIdbFofflvl3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFofflvl4
-  label: scales:hasIdbFofflvl4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFofflvl5
-  label: scales:hasIdbFofflvl5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFsev1
-  label: scales:hasIdbFsev1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFsev2
-  label: scales:hasIdbFsev2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFsev3
-  label: scales:hasIdbFsev3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFsev4
-  label: scales:hasIdbFsev4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFsev5
-  label: scales:hasIdbFsev5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFtitle1
-  label: scales:hasIdbFtitle1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFtitle2
-  label: scales:hasIdbFtitle2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFtitle3
-  label: scales:hasIdbFtitle3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFtitle4
-  label: scales:hasIdbFtitle4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFtitle5
-  label: scales:hasIdbFtitle5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbFugstat
-  label: scales:hasIdbFugstat
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbInt1
-  label: scales:hasIdbInt1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbInt2
-  label: scales:hasIdbInt2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbInt3
-  label: scales:hasIdbInt3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbLoaddate
-  label: scales:hasIdbLoaddate
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbMagdef
-  label: scales:hasIdbMagdef
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbMagdock
-  label: scales:hasIdbMagdock
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPriscd1
-  label: scales:hasIdbPriscd1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPriscd2
-  label: scales:hasIdbPriscd2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPriscd3
-  label: scales:hasIdbPriscd3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPriscd4
-  label: scales:hasIdbPriscd4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPriscd5
-  label: scales:hasIdbPriscd5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPristim1
-  label: scales:hasIdbPristim1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPristim2
-  label: scales:hasIdbPristim2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPristim3
-  label: scales:hasIdbPristim3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPristim4
-  label: scales:hasIdbPristim4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPristim5
-  label: scales:hasIdbPristim5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPristot
-  label: scales:hasIdbPristot
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbcd1
-  label: scales:hasIdbProbcd1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbcd2
-  label: scales:hasIdbProbcd2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbcd3
-  label: scales:hasIdbProbcd3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbcd4
-  label: scales:hasIdbProbcd4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbcd5
-  label: scales:hasIdbProbcd5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbmon1
-  label: scales:hasIdbProbmon1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbmon2
-  label: scales:hasIdbProbmon2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbmon3
-  label: scales:hasIdbProbmon3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbmon4
-  label: scales:hasIdbProbmon4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbmon5
-  label: scales:hasIdbProbmon5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProbtot
-  label: scales:hasIdbProbtot
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProccd
-  label: scales:hasIdbProccd
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbProcdate
-  label: scales:hasIdbProcdate
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbReopseq
-  label: scales:hasIdbReopseq
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbSentdate
-  label: scales:hasIdbSentdate
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbSupvrel1
-  label: scales:hasIdbSupvrel1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbSupvrel2
-  label: scales:hasIdbSupvrel2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbSupvrel3
-  label: scales:hasIdbSupvrel3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbSupvrel4
-  label: scales:hasIdbSupvrel4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbSupvrel5
-  label: scales:hasIdbSupvrel5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTcounsel
-  label: scales:hasIdbTcounsel
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTermoff
-  label: scales:hasIdbTermoff
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbToffcd1
-  label: scales:hasIdbToffcd1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbToffcd2
-  label: scales:hasIdbToffcd2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbToffcd3
-  label: scales:hasIdbToffcd3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbToffcd4
-  label: scales:hasIdbToffcd4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbToffcd5
-  label: scales:hasIdbToffcd5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTofflvl1
-  label: scales:hasIdbTofflvl1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTofflvl2
-  label: scales:hasIdbTofflvl2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTofflvl3
-  label: scales:hasIdbTofflvl3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTofflvl4
-  label: scales:hasIdbTofflvl4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTofflvl5
-  label: scales:hasIdbTofflvl5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTrandef
-  label: scales:hasIdbTrandef
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTrandist
-  label: scales:hasIdbTrandist
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTrandock
-  label: scales:hasIdbTrandock
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTranoff
-  label: scales:hasIdbTranoff
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTsev1
-  label: scales:hasIdbTsev1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTsev2
-  label: scales:hasIdbTsev2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTsev3
-  label: scales:hasIdbTsev3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTsev4
-  label: scales:hasIdbTsev4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTsev5
-  label: scales:hasIdbTsev5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTtitle1
-  label: scales:hasIdbTtitle1
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTtitle2
-  label: scales:hasIdbTtitle2
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTtitle3
-  label: scales:hasIdbTtitle3
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTtitle4
-  label: scales:hasIdbTtitle4
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTtitle5
-  label: scales:hasIdbTtitle5
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTypemag
-  label: scales:hasIdbTypemag
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTypereg
-  label: scales:hasIdbTypereg
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTypetrn
-  label: scales:hasIdbTypetrn
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbUpdate
-  label: scales:hasIdbUpdate
-  count: 121785
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbVer
-  label: scales:hasIdbVer
-  count: 121785
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#BondType
-  label: jxdm:BondType
-  count: 105383
-- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#BondAmount
-  label: jxdm:BondAmount
-  count: 99402
-- uri: http://schemas.scales-okn.org/rdf/scales#hasMemberCase
-  label: scales:hasMemberCase
+  count: 87788
+- uri: http://schemas.scales-okn.org/rdf/scales#MemberCase
+  label: scales:MemberCase
   count: 83603
-- uri: http://schemas.scales-okn.org/rdf/scales#hasHighestOffenseLevelTerminated
-  label: scales:hasHighestOffenseLevelTerminated
+- uri: http://schemas.scales-okn.org/rdf/scales#HighestOffenseLevelTerminated
+  label: scales:HighestOffenseLevelTerminated
   count: 69523
-- uri: http://schemas.scales-okn.org/rdf/scales#assignedToDefendant
-  label: scales:assignedToDefendant
+- uri: http://schemas.scales-okn.org/rdf/scales#AssignedJudge
+  label: scales:AssignedJudge
   count: 55643
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbPretrial
-  label: scales:hasIdbPretrial
+- uri: http://release.niem.gov/niem/auxiliary/statistics/5.0/#Population
+  label: Population
+  count: 50386
+- uri: http://release.niem.gov/niem/niem-core/5.0/#MeasureIntegerValue
+  label: niem-core:MeasureIntegerValue
+  count: 50386
+- uri: http://release.niem.gov/niem/niem-core/5.0/#PopulationReferencePeriodDate
+  label: niem-core:PopulationReferencePeriodDate
+  count: 50386
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbPretrial
+  label: scales:IdbPretrial
   count: 41491
 - uri: http://release.niem.gov/niem/niem-core/5.0/#AddressPostalCode
   label: niem-core:AddressPostalCode
@@ -846,78 +864,96 @@ property_partitions:
 - uri: http://release.niem.gov/niem/niem-core/5.0/#RelativeLocationReferencePoint
   label: niem-core:RelativeLocationReferencePoint
   count: 30103
+- uri: http://release.niem.gov/niem/niem-core/5.0/#OrganizationLocation
+  label: niem-core:OrganizationLocation
+  count: 23518
+- uri: http://schemas.scales-okn.org/rdf/scales#CIKNumber
+  label: scales:CIKNumber
+  count: 15857
 - uri: http://release.niem.gov/niem/niem-core/5.0/#MeasureDecimalValue
   label: niem-core:MeasureDecimalValue
   count: 15044
 - uri: http://release.niem.gov/niem/niem-core/5.0/#MeasureUnitText
   label: niem-core:MeasureUnitText
   count: 15044
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTransdat
-  label: scales:hasIdbTransdat
+- uri: http://release.niem.gov/niem/niem-core/5.0/#Jurisdiction
+  label: niem-core:Jurisdiction
+  count: 13067
+- uri: http://schemas.scales-okn.org/rdf/scales#SICCode
+  label: scales:SICCode
+  count: 7115
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTransdat
+  label: scales:IdbTransdat
   count: 6137
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#JudicialOfficialCategoryText
   label: jxdm:JudicialOfficialCategoryText
   count: 5385
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTrialend
-  label: scales:hasIdbTrialend
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTrialend
+  label: scales:IdbTrialend
   count: 4417
-- uri: http://schemas.scales-okn.org/rdf/scales#hasCommissionDate
-  label: scales:hasCommissionDate
+- uri: http://schemas.scales-okn.org/rdf/scales#CommissionDate
+  label: scales:CommissionDate
   count: 4257
-- uri: http://schemas.scales-okn.org/rdf/scales#appointedByParty
-  label: scales:appointedByParty
+- uri: http://schemas.scales-okn.org/rdf/scales#PoliticalPartyOfAppointingPresident
+  label: scales:PoliticalPartyOfAppointingPresident
   count: 3912
 - uri: http://release.niem.gov/niem/niem-core/5.0/#URLID
   label: niem-core:URLID
   count: 3855
-- uri: http://schemas.scales-okn.org/rdf/scales#hasFJCJudgeDirID
-  label: scales:hasFJCJudgeDirID
+- uri: http://schemas.scales-okn.org/rdf/scales#FJCJudgeDirID
+  label: scales:FJCJudgeDirID
   count: 3855
 - uri: http://release.niem.gov/niem/niem-core/5.0/#PersonSexText
   label: niem-core:PersonSexText
   count: 3762
-- uri: http://schemas.scales-okn.org/rdf/scales#hasIdbTribegan
-  label: scales:hasIdbTribegan
+- uri: http://schemas.scales-okn.org/rdf/scales#IdbTribegan
+  label: scales:IdbTribegan
   count: 3565
 - uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeRegion_2
   label: kwg-ont:AdministrativeRegion_2
   count: 3041
-- uri: http://release.niem.gov/niem/niem-core/5.0/#PersonID
-  label: niem-core:PersonID
+- uri: http://release.niem.gov/niem/domains/jxdm/7.2/#EnforcementOfficialBadgeIdentification
+  label: jxdm:EnforcementOfficialBadgeIdentification
   count: 2020
-- uri: http://schemas.scales-okn.org/rdf/scales#containsNeighborhood
-  label: scales:containsNeighborhood
+- uri: http://schemas.scales-okn.org/rdf/scales#NAICSCode
+  label: scales:NAICSCode
+  count: 1780
+- uri: http://schemas.scales-okn.org/rdf/scales#IntersectingNeighborhood
+  label: scales:IntersectingNeighborhood
   count: 1513
-- uri: http://schemas.scales-okn.org/rdf/scales#hasUVAJudgeDirID
-  label: scales:hasUVAJudgeDirID
+- uri: http://schemas.scales-okn.org/rdf/scales#UVAJudgeDirID
+  label: scales:UVAJudgeDirID
   count: 988
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#TermDuration
   label: jxdm:TermDuration
-  count: 294
+  count: 501
 - uri: http://www.w3.org/2000/01/rdf-schema#comment
   label: rdfs:comment
-  count: 289
+  count: 297
 - uri: http://www.w3.org/2000/01/rdf-schema#domain
   label: rdfs:domain
-  count: 282
+  count: 290
 - uri: http://www.w3.org/2000/01/rdf-schema#range
   label: rdfs:range
-  count: 282
+  count: 290
+- uri: http://purl.org/dc/terms/isReplacedBy
+  label: dct:isReplacedBy
+  count: 205
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#CourtCategoryCode
   label: jxdm:CourtCategoryCode
   count: 100
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName
   label: jxdm:CourtName
   count: 100
-- uri: http://schemas.scales-okn.org/rdf/scales#isInCircuit
-  label: scales:isInCircuit
+- uri: http://schemas.scales-okn.org/rdf/scales#FederalJudicialCircuit
+  label: scales:FederalJudicialCircuit
   count: 94
+- uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  label: rdfs:subClassOf
+  count: 34
 - uri: http://sail.ua.edu/ruralkg/treatmentprovider/TreatmentProvider
   label: ruralkg-provider:TreatmentProvider
   count: 29
-- uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
-  label: rdfs:subClassOf
-  count: 25
 - uri: http://release.niem.gov/niem/codes/occs/5.0/#FacilityFunctionCode
   label: occs:FacilityFunctionCode
   count: 1
@@ -926,9 +962,6 @@ property_partitions:
   count: 1
 - uri: http://release.niem.gov/niem/niem-core/5.0/#FacilityName
   label: niem-core:FacilityName
-  count: 1
-- uri: http://release.niem.gov/niem/niem-core/5.0/#OrganizationLocation
-  label: niem-core:OrganizationLocation
   count: 1
 - uri: http://release.niem.gov/niem/niem-core/5.0/#PhysicalAddress
   label: niem-core:PhysicalAddress
