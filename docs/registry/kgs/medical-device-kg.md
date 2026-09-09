@@ -19,6 +19,7 @@ frink-options:
         mdkg-report: "http://medicaldevice.com/resource/report/"
       roles:
         label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
           - "http://medicaldevice.com/ontology/label"
       authoritative_namespaces:
         - mdkg
