@@ -1104,6 +1104,32 @@ kgs:
   title: CFDE REVEAL Knowledge Graph
   tpf: https://apps.okn.us/ldf/digcfdekg
 - contacts:
+  - email: jeetvora@gwu.edu
+    github: jeet-vora
+    label: Jeet Vora
+  - email: pmcneely@gwu.edu
+    github: pmcneely
+    label: Patrick McNeely
+  - email: sbhuiyan28@email.gwu.edu
+    github: ubhuiyan
+    label: Urnisha Bhuiyan
+  - email: mazumder@gwu.edu
+    github: rajamazumder
+    label: Raja Mazumder
+  description: A knowledge graph of glycans, glycoproteins, genes that code for these
+    proteins and glycosylation sites integrated with protein, gene, disease and publication
+    data.
+  frink-options:
+    documentation-path: glygenkg
+    lakefs-repo: glygenkg
+  funding: https://reporter.nih.gov/project-details/10494610
+  homepage: https://www.glygen.org/
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: glygenkg
+  stats: https://registry.okn.us/kg-stats/glygenkg
+  template: overrides/kg.html
+  title: GlyGen KG
+- contacts:
   - email: jinlian.wang@uth.tmc.edu
     github: wangjl99
     label: Jinlian Wang
