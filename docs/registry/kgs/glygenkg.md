@@ -15,6 +15,9 @@ contacts:
   - email: jeetvora@gwu.edu
     github: "jeet-vora"
     label: "Jeet Vora"
+  - email: pmcneely@gwu.edu
+    github: "pmcneely"
+    label: "Patrick McNeely"
   - email: sbhuiyan28@email.gwu.edu
     github: "ubhuiyan"
     label: "Urnisha Bhuiyan"
