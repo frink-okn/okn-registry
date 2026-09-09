@@ -1,9 +1,9 @@
-triples: 987920
-distinct_subjects: 77286
-distinct_objects: 208033
-properties: 90
+triples: 885098
+distinct_subjects: 77282
+distinct_objects: 208025
+properties: 86
 classes: 20
-last_checked: '2026-09-04'
+last_checked: '2026-09-09'
 class_partitions:
 - uri: http://sail.ua.edu/ruralkg/variable/NSDUHAnswer
   label: ruralkg-var:NSDUHAnswer
@@ -58,7 +58,7 @@ class_partitions:
   count: 10
 - uri: http://www.w3.org/2002/07/owl#AnnotationProperty
   label: owl:AnnotationProperty
-  count: 5
+  count: 1
 - uri: http://www.w3.org/2002/07/owl#ObjectProperty
   label: owl:ObjectProperty
   count: 1
@@ -74,16 +74,10 @@ property_partitions:
   count: 43577
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 42999
+  count: 42995
 - uri: http://purl.org/dc/terms/identifier
   label: dct:identifier
   count: 39186
-- uri: http://sail.ua.edu/ruralkg/property/stateFipsCode
-  label: stateFipsCode
-  count: 34280
-- uri: http://sail.ua.edu/ruralkg/property/countyFipsCode
-  label: countyFipsCode
-  count: 34246
 - uri: https://schema.org/containedInPlace
   label: schema:containedInPlace
   count: 34246
@@ -96,9 +90,6 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/property/cityPopulationRank
   label: cityPopulationRank
   count: 30985
-- uri: http://sail.ua.edu/ruralkg/property/gnisFeatureId
-  label: gnisFeatureId
-  count: 30971
 - uri: http://sail.ua.edu/ruralkg/variable/answerCode
   label: ruralkg-var:answerCode
   count: 25528
@@ -110,7 +101,7 @@ property_partitions:
   count: 25525
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
-  count: 14199
+  count: 14195
 - uri: http://www.w3.org/2004/02/skos/core#altLabel
   label: skos:altLabel
   count: 9037
@@ -144,9 +135,6 @@ property_partitions:
 - uri: http://sail.ua.edu/ruralkg/variable/fromDataset
   label: ruralkg-var:fromDataset
   count: 4676
-- uri: http://sail.ua.edu/ruralkg/property/fipsCode
-  label: fipsCode
-  count: 3309
 - uri: http://sail.ua.edu/ruralkg/settlementtype/year
   label: ruralkg-settlement:year
   count: 3244
@@ -191,7 +179,7 @@ property_partitions:
   count: 264
 - uri: http://www.w3.org/2000/01/rdf-schema#comment
   label: rdfs:comment
-  count: 249
+  count: 245
 - uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
   label: rdfs:subClassOf
   count: 235
@@ -212,7 +200,7 @@ property_partitions:
   count: 126
 - uri: http://www.w3.org/2000/01/rdf-schema#isDefinedBy
   label: rdfs:isDefinedBy
-  count: 124
+  count: 120
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#VictimAggravatedAssaultHomicideFactorCode
   label: jxdm:VictimAggravatedAssaultHomicideFactorCode
   count: 112
