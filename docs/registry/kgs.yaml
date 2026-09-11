@@ -156,6 +156,7 @@ kgs:
           - http://www.w3.org/2000/01/rdf-schema#label
           - http://www.w3.org/2004/02/skos/core#prefLabel
           - http://www.w3.org/2004/02/skos/core#altLabel
+    lakefs-repo: wikidata
   homepage: https://www.wikidata.org/
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: wikidata
