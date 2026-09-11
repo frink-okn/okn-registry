@@ -8,6 +8,7 @@ homepage: https://www.wikidata.org/
 sparql: https://apps.okn.us/wikidata/sparql
 tpf: https://apps.okn.us/ldf/wikidata
 frink-options:
+  lakefs-repo: wikidata
   kgf:
     semantics:
       prefixes:
