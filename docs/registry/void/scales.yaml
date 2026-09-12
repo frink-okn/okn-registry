@@ -3,7 +3,7 @@ distinct_subjects: 171678070
 distinct_objects: 222163874
 properties: 289
 classes: 31
-last_checked: '2026-09-09'
+last_checked: '2026-09-12'
 class_partitions:
 - uri: http://release.niem.gov/niem/domains/jxdm/7.2/#RegisterAction
   label: jxdm:RegisterAction
