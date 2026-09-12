@@ -1299,7 +1299,7 @@ kgs:
           - http://www.w3.org/2000/01/rdf-schema#label
           - http://medicaldevice.com/ontology/label
     lakefs-repo: medical-device-kg
-  homepage: https://github.com/Prabhadeus/Proto-OKN
+  homepage: https://github.com/medical-device-design
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: medical-device-kg
   sparql: https://apps.okn.us/medical-device-kg/sparql
