@@ -4,7 +4,7 @@ shortname: medical-device-kg
 title: Medical Device Knowledge Graph
 description: A unified medical-device knowledge graph integrating regulatory, clinical, research, safety, and other relevant data from multiple sources.
 stats: https://registry.okn.us/kg-stats/medical-device-kg
-homepage: https://github.com/Prabhadeus/Proto-OKN
+homepage: https://github.com/medical-device-design
 sparql: https://apps.okn.us/medical-device-kg/sparql
 tpf: https://apps.okn.us/ldf/medical-device-kg
 license: "https://creativecommons.org/licenses/by/4.0/"
