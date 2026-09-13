@@ -8,8 +8,7 @@ PREFIX pfas: <http://w3id.org/pfas/v1/>
 PREFIX dsstox: <http://w3id.org/DSSTox/v1/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 
-SELECT ?sample ?sampleName ?location ?coordinates (GROUP_CONCAT(DISTINCT ?materialTypeName;separator=",") as ?materialType) 
-?substance ?substanceName ?value ?unit ?date 
+SELECT ?sample ?sampleName ?location ?coordinates (GROUP_CONCAT(DISTINCT ?materialTypeName;separator=",") as ?materialType) ?substance ?substanceName ?value ?unit ?date 
 WHERE {
   ?sample rdf:type coso:BiotaSample;
             coso:sampleOfMaterialType ?sampletype;
