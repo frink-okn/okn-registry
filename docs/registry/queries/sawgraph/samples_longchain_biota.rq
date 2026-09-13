@@ -1,4 +1,4 @@
-# Retrieve all plant and animal (biota) sample results with the location type sampled, sample material type, observed property, substance, and detected result.  
+# Retrieve 100 plant and animal (biota) sample results with the location type sampled, sample material type, observed property, substance, and detected result.  
 PREFIX coso: <http://w3id.org/coso/v1/contaminoso#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
