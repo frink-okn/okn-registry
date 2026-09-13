@@ -1,0 +1,20 @@
+triples: 3306378
+distinct_subjects: 18257
+distinct_objects: 3276779
+properties: 3
+classes: 1
+last_checked: '2026-03-27'
+class_partitions:
+- uri: http://www.w3.org/2004/02/skos/core#Collection
+  label: skos:Collection
+  count: 18257
+property_partitions:
+- uri: http://www.w3.org/2004/02/skos/core#member
+  label: skos:member
+  count: 3269864
+- uri: http://www.w3.org/2000/01/rdf-schema#label
+  label: rdfs:label
+  count: 18257
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
+  count: 18257

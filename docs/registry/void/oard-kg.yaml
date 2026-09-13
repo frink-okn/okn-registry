@@ -1,0 +1,53 @@
+triples: 48265545
+distinct_subjects: 10126552
+distinct_objects: 10702397
+properties: 15
+classes: 0
+last_checked: '2026-03-27'
+class_partitions: []
+property_partitions:
+- uri: https://w3id.org/biolink/vocab/category
+  label: biolink:category
+  count: 10126552
+- uri: https://w3id.org/biolink/vocab/has_study_results
+  label: biolink:has_study_results
+  count: 5198318
+- uri: https://w3id.org/biolink/vocab/log_odds_ratio_95_ci
+  label: biolink:log_odds_ratio_95_ci
+  count: 5177770
+- uri: https://w3id.org/biolink/vocab/supporting_data_set
+  label: biolink:supporting_data_set
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/concept_count_object
+  label: biolink:concept_count_object
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/concept_count_subject
+  label: biolink:concept_count_subject
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/total_sample_size
+  label: biolink:total_sample_size
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/dataset_count
+  label: biolink:dataset_count
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/log_odds_ratio
+  label: biolink:log_odds_ratio
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/concept_pair_count
+  label: biolink:concept_pair_count
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/has_supporting_studies
+  label: biolink:has_supporting_studies
+  count: 2599159
+- uri: https://w3id.org/biolink/vocab/object
+  label: biolink:object
+  count: 2320279
+- uri: https://w3id.org/biolink/vocab/predicate
+  label: biolink:predicate
+  count: 2320279
+- uri: https://w3id.org/biolink/vocab/subject
+  label: biolink:subject
+  count: 2320279
+- uri: http://www.w3.org/2000/01/rdf-schema#label
+  label: rdfs:label
+  count: 8796

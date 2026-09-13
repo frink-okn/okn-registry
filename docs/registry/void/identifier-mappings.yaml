@@ -1,0 +1,23 @@
+triples: 25966897
+distinct_subjects: 14866317
+distinct_objects: 25875767
+properties: 5
+classes: 0
+last_checked: '2026-03-27'
+class_partitions: []
+property_partitions:
+- uri: http://www.w3.org/2004/02/skos/core#exactMatch
+  label: skos:exactMatch
+  count: 25963995
+- uri: http://www.w3.org/2002/07/owl#equivalentClass
+  label: owl:equivalentClass
+  count: 1721
+- uri: http://www.w3.org/2002/07/owl#equivalentProperty
+  label: owl:equivalentProperty
+  count: 791
+- uri: http://www.w3.org/2000/01/rdf-schema#subPropertyOf
+  label: rdfs:subPropertyOf
+  count: 295
+- uri: http://www.w3.org/2004/02/skos/core#narrowMatch
+  label: skos:narrowMatch
+  count: 95
