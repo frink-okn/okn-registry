@@ -13,16 +13,19 @@ PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
 PREFIX coso:<http://w3id.org/coso/v1/contaminoso#> 
 PREFIX qudt: <http://qudt.org/schema/qudt/>
 
-SELECT DISTINCT ?stateName ?townName ?obs ?conc ?unit ?substance ?date ?facLabel ?industryName WHERE {
+SELECT DISTINCT ?observation  ?stateName ?townName ?concentration ?unit ?normalizedConc ?substance ?date ?facilityName ?industryName WHERE {
   #find s2 cells with detect samples
    ?sp a coso:SamplePoint;
     kwg-ont:sfWithin ?s2, ?town.
-   ?obs coso:observedAtSamplePoint ?sp;
+   ?observation coso:observedAtSamplePoint ?sp;
         coso:ofDSSToxSubstance/skos:altLabel ?substance;
         coso:hasResult ?result;
         coso:observedTime ?date.
-   ?result qudt:quantityValue/qudt:numericValue ?conc;
-           qudt:quantityValue/qudt:hasUnit/qudt:symbol ?unit. #only detected values
+   ?result qudt:quantityValue/qudt:numericValue ?concentration;
+           qudt:quantityValue/qudt:hasUnit ?rawUnit.  #only detected values
+   ?rawUnit qudt:symbol ?unit;
+            qudt:conversionMultiplier ?unitConversion.
+  BIND((?unitConversion * ?concentration) as ?normalizedConc ) #normalize different units
   ?s2 rdf:type kwg-ont:S2Cell_Level13.
   ?town rdf:type kwg-ont:AdministrativeRegion_3;
         kwg-ont:administrativePartOf+ ?state;
@@ -33,11 +36,12 @@ SELECT DISTINCT ?stateName ?townName ?obs ?conc ?unit ?substance ?date ?facLabel
   #find facilities in s2 cells
   ?facility kwg-ont:sfWithin ?s2;
   		rdf:type fio:Facility;
-    	rdfs:label ?facLabel;
+    	rdfs:label ?facilityName;
         fio:ofIndustry ?industry.
   ?pfasIndustryList rdfs:subClassOf fio-pfas:IndustryCollectionByPFASContaminationConcern;
     				  fio:hasMember ?industry. 
   ?industry rdfs:label ?industryName. 
   
-} ORDER BY DESC(?conc)
+} ORDER BY DESC(?normalizedConc) # highest normalized concentration first
 limit 100
+
