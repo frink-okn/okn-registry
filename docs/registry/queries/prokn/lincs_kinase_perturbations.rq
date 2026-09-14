@@ -8,42 +8,42 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX bao: <http://www.bioassayontology.org/bao#BAO_>
 PREFIX ncit: <http://purl.obolibrary.org/obo/NCIT_>
 PREFIX upcore: <http://purl.uniprot.org/core/>
-PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
+PREFIX blv: <https://w3id.org/biolink/vocab/>
 PREFIX sio: <http://semanticscience.org/resource/SIO_>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX edam: <http://edamontology.org/>
-
+ 
 SELECT DISTINCT ?compoundLabel ?pubchemURI
 WHERE {
   # Perturbagen
   ?pert rdf:type bao:0003059 ;
             dc:source "LINCS_P100" ;
             obo:has_dbxref ?pubchemURI.
-
+ 
   # Compound
   ?comp rdf:type ncit:C43366 ;
             dc:source "DDKG_LINCS" ;
             rdfs:label ?compoundLabel.
    optional {
-  		?comp rdfs:seeAlso ?pubchemURI .
+  		?comp blv:exact_match ?pubchemURI .
   }
-
+ 
   # Relationship: Compound -> Gene
-  { ?comp ro:0002213 ?kgene. } # POSITIVELY_REGULATES
+  { ?comp blv:process_positively_regulates_process ?kgene. }
   UNION
-  { ?comp ro:0002212 ?kgene. } # NEGATIVELY_REGULATES
-
+  { ?comp blv:entity_negatively_regulates_entity ?kgene. }
+ 
   # Gene
   ?kgene rdf:type upcore:Gene.
-
+ 
   # Relationship: Gene -> Protein(IS_PROTEIN)
   ?kgene sio:010078 ?pr.
-
+ 
   # Protein
   ?pr rdf:type upcore:Protein ;
     edam:data_1011 ?ecNumber.
-
+ 
   FILTER regex(?ecNumber, "(^|;)2\\.7[^;]*")
 }
 ORDER BY ?compoundLabel ?pubchemURI
