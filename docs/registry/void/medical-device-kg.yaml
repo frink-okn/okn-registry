@@ -1,9 +1,9 @@
-triples: 17703975
-distinct_subjects: 887230
-distinct_objects: 2876177
-properties: 145
-classes: 29
-last_checked: '2026-09-09'
+triples: 17857085
+distinct_subjects: 897968
+distinct_objects: 2923555
+properties: 164
+classes: 36
+last_checked: '2026-09-19'
 class_partitions:
 - uri: http://medicaldevice.com/ontology/XrayAssemblerRecord
   label: XrayAssemblerRecord
@@ -41,6 +41,18 @@ class_partitions:
 - uri: http://medicaldevice.com/ontology/DeviceFDARecord
   label: DeviceFDARecord
   count: 12386
+- uri: https://spec.industrialontologies.org/ontology/core/Core/Manufacturer
+  label: iof-core:Manufacturer
+  count: 10432
+- uri: http://medicaldevice.com/ontology/Facility
+  label: Facility
+  count: 9120
+- uri: http://www.opengis.net/ont/geosparql#Feature
+  label: geo:Feature
+  count: 9120
+- uri: http://www.opengis.net/ont/geosparql#Geometry
+  label: geo:Geometry
+  count: 9120
 - uri: http://medicaldevice.com/ontology/ProductCode
   label: ProductCode
   count: 8014
@@ -65,6 +77,9 @@ class_partitions:
 - uri: http://medicaldevice.com/ontology/HumanitarianDeviceExemption
   label: HumanitarianDeviceExemption
   count: 1947
+- uri: http://medicaldevice.com/ontology/ProductCodeNAICSMapping
+  label: ProductCodeNAICSMapping
+  count: 1589
 - uri: http://medicaldevice.com/ontology/MammographyFacility
   label: MammographyFacility
   count: 975
@@ -76,7 +91,7 @@ class_partitions:
   count: 353
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
   label: rdf:Property
-  count: 251
+  count: 264
 - uri: http://medicaldevice.com/ontology/CliaWaivedAnalyte
   label: CliaWaivedAnalyte
   count: 152
@@ -88,10 +103,16 @@ class_partitions:
   count: 53
 - uri: http://www.w3.org/2000/01/rdf-schema#Class
   label: rdfs:Class
-  count: 50
+  count: 53
 - uri: http://medicaldevice.com/ontology/RecognizedConsensusStandard
   label: RecognizedConsensusStandard
   count: 49
+- uri: http://asu.edu/semantics/SUDOKN/NAICSClassifier
+  label: sudokn:NAICSClassifier
+  count: 13
+- uri: http://medicaldevice.com/ontology/NAICSClassification
+  label: NAICSClassification
+  count: 13
 property_partitions:
 - uri: http://medicaldevice.com/ontology/feiNumber
   label: feiNumber
@@ -104,7 +125,7 @@ property_partitions:
   count: 940792
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 887673
+  count: 927096
 - uri: http://medicaldevice.com/ontology/sourceDataset
   label: sourceDataset
   count: 685543
@@ -125,7 +146,7 @@ property_partitions:
   count: 532229
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
-  count: 377306
+  count: 377335
 - uri: http://medicaldevice.com/ontology/hasManufacturer
   label: hasManufacturer
   count: 373039
@@ -339,12 +360,18 @@ property_partitions:
 - uri: http://medicaldevice.com/ontology/hasRegulationNumber
   label: hasRegulationNumber
   count: 22308
+- uri: http://medicaldevice.com/ontology/hasNAICSClassification
+  label: hasNAICSClassification
+  count: 15561
 - uri: http://medicaldevice.com/ontology/involvesDevice
   label: involvesDevice
   count: 15285
 - uri: http://medicaldevice.com/ontology/eventType
   label: eventType
   count: 15279
+- uri: http://asu.edu/semantics/SUDOKN/hasNAICSClassifier
+  label: sudokn:hasNAICSClassifier
+  count: 13972
 - uri: http://medicaldevice.com/ontology/hasYearlyTrend
   label: hasYearlyTrend
   count: 12904
@@ -360,6 +387,30 @@ property_partitions:
 - uri: http://medicaldevice.com/ontology/dateOfEvent
   label: dateOfEvent
   count: 11276
+- uri: http://medicaldevice.com/ontology/geocodingConfidence
+  label: geocodingConfidence
+  count: 9120
+- uri: http://medicaldevice.com/ontology/geocodingSource
+  label: geocodingSource
+  count: 9120
+- uri: http://medicaldevice.com/ontology/normalizedAddress
+  label: normalizedAddress
+  count: 9120
+- uri: http://www.opengis.net/ont/geosparql#asWKT
+  label: geo:asWKT
+  count: 9120
+- uri: http://www.opengis.net/ont/geosparql#defaultGeometry
+  label: geo:defaultGeometry
+  count: 9120
+- uri: http://www.opengis.net/ont/geosparql#hasGeometry
+  label: geo:hasGeometry
+  count: 9120
+- uri: http://www.w3.org/2003/01/geo/wgs84_pos#lat
+  label: lat
+  count: 9120
+- uri: http://www.w3.org/2003/01/geo/wgs84_pos#long
+  label: long
+  count: 9120
 - uri: http://medicaldevice.com/ontology/gmpExemptFlag
   label: gmpExemptFlag
   count: 7071
@@ -438,6 +489,27 @@ property_partitions:
 - uri: http://medicaldevice.com/ontology/supplementType
   label: supplementType
   count: 1946
+- uri: http://medicaldevice.com/ontology/assignedNAICS
+  label: assignedNAICS
+  count: 1589
+- uri: http://medicaldevice.com/ontology/hasNAICSMapping
+  label: hasNAICSMapping
+  count: 1589
+- uri: http://medicaldevice.com/ontology/mappingConfidence
+  label: mappingConfidence
+  count: 1589
+- uri: http://medicaldevice.com/ontology/mappingMethod
+  label: mappingMethod
+  count: 1589
+- uri: http://medicaldevice.com/ontology/mappingReason
+  label: mappingReason
+  count: 1589
+- uri: http://medicaldevice.com/ontology/mappingReviewStatus
+  label: mappingReviewStatus
+  count: 1589
+- uri: http://medicaldevice.com/ontology/mappingSource
+  label: mappingSource
+  count: 1589
 - uri: http://medicaldevice.com/ontology/facilityName
   label: facilityName
   count: 976
@@ -507,11 +579,11 @@ property_partitions:
 - uri: http://medicaldevice.com/ontology/sampleSize
   label: sampleSize
   count: 67
-- uri: http://medicaldevice.com/ontology/document
-  label: document
-  count: 54
 - uri: http://www.w3.org/2000/01/rdf-schema#range
   label: rdfs:range
+  count: 57
+- uri: http://medicaldevice.com/ontology/document
+  label: document
   count: 54
 - uri: http://medicaldevice.com/ontology/recognitionNumber
   label: recognitionNumber
@@ -519,12 +591,18 @@ property_partitions:
 - uri: http://medicaldevice.com/ontology/fedRegNoticeDate
   label: fedRegNoticeDate
   count: 37
-- uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
-  label: rdfs:subClassOf
-  count: 26
 - uri: http://www.w3.org/2000/01/rdf-schema#domain
   label: rdfs:domain
-  count: 22
+  count: 34
+- uri: http://www.w3.org/2000/01/rdf-schema#subClassOf
+  label: rdfs:subClassOf
+  count: 27
+- uri: http://medicaldevice.com/ontology/naicsCode
+  label: naicsCode
+  count: 13
+- uri: http://medicaldevice.com/ontology/naicsVersion
+  label: naicsVersion
+  count: 13
 - uri: http://www.w3.org/2000/01/rdf-schema#comment
   label: rdfs:comment
   count: 1

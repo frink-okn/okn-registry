@@ -3,7 +3,7 @@ distinct_subjects: 14200722
 distinct_objects: 10193530
 properties: 218
 classes: 41
-last_checked: '2026-09-09'
+last_checked: '2026-09-19'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
@@ -147,8 +147,8 @@ property_partitions:
 - uri: http://schema.org/provider
   label: provider
   count: 5427782
-- uri: http://purl.obolibrary.org/obo/RO_0002206
-  label: obo:RO_0002206
+- uri: https://w3id.org/biolink/vocab/expressed_in
+  label: biolink:expressed_in
   count: 4668236
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
@@ -177,8 +177,8 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002434
   label: obo:RO_0002434
   count: 665179
-- uri: http://purl.obolibrary.org/obo/RO_0002558
-  label: obo:RO_0002558
+- uri: https://w3id.org/biolink/vocab/has_evidence
+  label: biolink:has_evidence
   count: 659744
 - uri: http://purl.org/dc/terms/date
   label: dct:date
@@ -261,8 +261,8 @@ property_partitions:
 - uri: http://www.bioassayontology.org/bao#BAO_0003063
   label: BAO_0003063
   count: 169628
-- uri: http://purl.obolibrary.org/obo/RO_0000056
-  label: obo:RO_0000056
+- uri: https://w3id.org/biolink/vocab/participates_in
+  label: biolink:participates_in
   count: 163353
 - uri: http://purl.uniprot.org/core/Molecule
   label: Molecule
@@ -270,8 +270,8 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_C164806
   label: obo:NCIT_C164806
   count: 127441
-- uri: http://purl.obolibrary.org/obo/RO_0002331
-  label: obo:RO_0002331
+- uri: https://w3id.org/biolink/vocab/actively_involved_in
+  label: biolink:actively_involved_in
   count: 120926
 - uri: http://purl.uniprot.org/core/organism
   label: organism
@@ -279,11 +279,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/NCIT_C25402
   label: obo:NCIT_C25402
   count: 113921
-- uri: http://purl.obolibrary.org/obo/RO_0002212
-  label: obo:RO_0002212
+- uri: https://w3id.org/biolink/vocab/entity_negatively_regulates_entity
+  label: biolink:entity_negatively_regulates_entity
   count: 112759
-- uri: http://purl.obolibrary.org/obo/RO_0002213
-  label: obo:RO_0002213
+- uri: https://w3id.org/biolink/vocab/process_positively_regulates_process
+  label: biolink:process_positively_regulates_process
   count: 112750
 - uri: http://purl.uniprot.org/core/taxon
   label: taxon
@@ -306,8 +306,8 @@ property_partitions:
 - uri: https://research.bioinformatics.udel.edu/ProKN/rdf/HAS_MARKER_GENE
   label: HAS_MARKER_GENE
   count: 104759
-- uri: http://purl.obolibrary.org/obo/RO_0002327
-  label: obo:RO_0002327
+- uri: https://w3id.org/biolink/vocab/catalyzes
+  label: biolink:catalyzes
   count: 90528
 - uri: http://purl.obolibrary.org/obo/GENO_0000382
   label: obo:GENO_0000382
@@ -336,8 +336,8 @@ property_partitions:
 - uri: http://purl.org/dc/terms/description
   label: dct:description
   count: 56442
-- uri: http://purl.obolibrary.org/obo/RO_0003000
-  label: obo:RO_0003000
+- uri: https://w3id.org/biolink/vocab/produces
+  label: biolink:produces
   count: 54509
 - uri: http://purl.obolibrary.org/obo/NCIT_C41184
   label: obo:NCIT_C41184
@@ -393,8 +393,8 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/GO_0005694
   label: obo:GO_0005694
   count: 13396
-- uri: http://purl.obolibrary.org/obo/BFO_0000050
-  label: obo:BFO_0000050
+- uri: https://w3id.org/biolink/vocab/part_of
+  label: biolink:part_of
   count: 13080
 - uri: http://edamontology.org/data_1049
   label: data_1049
@@ -429,11 +429,11 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/RO_0002566
   label: obo:RO_0002566
   count: 5527
-- uri: http://purl.obolibrary.org/obo/RO_0002432
-  label: obo:RO_0002432
-  count: 5190
 - uri: https://biolink.github.io/biolink-model/id
   label: id
+  count: 5190
+- uri: https://w3id.org/biolink/vocab/active_in
+  label: biolink:active_in
   count: 5190
 - uri: http://schema.org/MolecularEntity
   label: MolecularEntity
@@ -462,8 +462,8 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/bto#related_to
   label: obo:bto#related_to
   count: 4640
-- uri: http://purl.obolibrary.org/obo/RO_0002436
-  label: obo:RO_0002436
+- uri: https://w3id.org/biolink/vocab/directly_physically_interacts_with
+  label: biolink:directly_physically_interacts_with
   count: 4585
 - uri: http://www.bioassayontology.org/bao#BAO_0002646
   label: BAO_0002646
@@ -504,8 +504,8 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/ECO_9000000
   label: obo:ECO_9000000
   count: 2604
-- uri: http://purl.obolibrary.org/obo/RO_0002264
-  label: obo:RO_0002264
+- uri: https://w3id.org/biolink/vocab/acts_upstream_of_or_within
+  label: biolink:acts_upstream_of_or_within
   count: 2432
 - uri: http://schema.org/status
   label: status
@@ -630,14 +630,14 @@ property_partitions:
 - uri: http://www.ebi.ac.uk/efo/EFO_0000651
   label: EFO:0000651
   count: 955
-- uri: http://purl.obolibrary.org/obo/RO_0002326
-  label: obo:RO_0002326
+- uri: https://w3id.org/biolink/vocab/contributes_to
+  label: biolink:contributes_to
   count: 932
 - uri: http://purl.obolibrary.org/obo/NCIT_C41095
   label: obo:NCIT_C41095
   count: 926
-- uri: http://purl.obolibrary.org/obo/RO_0002325
-  label: obo:RO_0002325
+- uri: https://w3id.org/biolink/vocab/colocalizes_with
+  label: biolink:colocalizes_with
   count: 858
 - uri: https://research.bioinformatics.udel.edu/ProKN/rdf/speciesGroupFlag
   label: speciesGroupFlag
@@ -654,8 +654,8 @@ property_partitions:
 - uri: http://purl.uniprot.org/core/scientificName
   label: scientificName
   count: 646
-- uri: http://purl.obolibrary.org/obo/RO_0002263
-  label: obo:RO_0002263
+- uri: https://w3id.org/biolink/vocab/precedes
+  label: biolink:precedes
   count: 527
 - uri: https://research.bioinformatics.udel.edu/ProKN/rdf/HAS_MARKER_GENE_IN_KIDNEY
   label: HAS_MARKER_GENE_IN_KIDNEY
@@ -693,8 +693,8 @@ property_partitions:
 - uri: http://semanticscience.org/resource/CHEMINF_000007
   label: sio:CHEMINF_000007
   count: 119
-- uri: http://purl.obolibrary.org/obo/RO_0004034
-  label: obo:RO_0004034
+- uri: https://w3id.org/biolink/vocab/acts_upstream_of_positive_effect
+  label: biolink:acts_upstream_of_positive_effect
   count: 101
 - uri: https://w3id.org/reproduceme#reference
   label: reference
@@ -705,14 +705,14 @@ property_partitions:
 - uri: http://purl.obolibrary.org/obo/MI_0118
   label: obo:MI_0118
   count: 55
-- uri: http://purl.obolibrary.org/obo/RO_0004032
-  label: obo:RO_0004032
+- uri: https://w3id.org/biolink/vocab/acts_upstream_of_or_within_positive_effect
+  label: biolink:acts_upstream_of_or_within_positive_effect
   count: 42
 - uri: http://purl.obolibrary.org/obo/PATO_0000642
   label: obo:PATO_0000642
   count: 36
-- uri: http://purl.obolibrary.org/obo/RO_0004035
-  label: obo:RO_0004035
+- uri: https://w3id.org/biolink/vocab/acts_upstream_of_negative_effect
+  label: biolink:acts_upstream_of_negative_effect
   count: 33
 - uri: http://purl.allotrope.org/ontologies/result#AFX_0000684
   label: AFX_0000684
@@ -741,8 +741,8 @@ property_partitions:
 - uri: http://purl.uniprot.org/core/variO_term
   label: variO_term
   count: 13
-- uri: http://purl.obolibrary.org/obo/RO_0004033
-  label: obo:RO_0004033
+- uri: https://w3id.org/biolink/vocab/acts_upstream_of_or_within_negative_effect
+  label: biolink:acts_upstream_of_or_within_negative_effect
   count: 11
 - uri: http://www.w3.org/2000/01/rdf-schema#subPropertyOf
   label: rdfs:subPropertyOf
