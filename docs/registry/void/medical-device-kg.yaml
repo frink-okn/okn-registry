@@ -3,7 +3,7 @@ distinct_subjects: 897968
 distinct_objects: 2923555
 properties: 164
 classes: 36
-last_checked: '2026-09-19'
+last_checked: '2026-09-26'
 class_partitions:
 - uri: http://medicaldevice.com/ontology/XrayAssemblerRecord
   label: XrayAssemblerRecord
