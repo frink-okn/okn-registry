@@ -1,0 +1,19 @@
+#+ summary: Retrieve all HPO phenotypes associated with a rare disease (Marfan syndrome example)
+#+ tags:
+#+ - rdkg
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdkg: <https://github.com/wangjl99/RDKG#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?disease ?diseaseName ?phenotype ?hpId ?phenotypeName
+WHERE {
+  ?disease a rdkg:Disease ;
+           rdfs:label ?diseaseName ;
+           rdkg:HAS_PHENOTYPE ?phenotype .
+  ?phenotype a rdkg:Phenotype ;
+             rdfs:label ?phenotypeName ;
+             schema:identifier ?hpId .
+  FILTER(CONTAINS(LCASE(?diseaseName), "marfan"))
+}
+ORDER BY ?phenotypeName
