@@ -5,22 +5,13 @@ title: Wikidata
 description: Wikidata is a free and open knowledge base that can be read and edited by both humans and machines
 #stats:
 homepage: https://www.wikidata.org/
-sparql: https://apps.okn.us/wikidata/sparql
+sparql: https://qlever.dev/api/wikidata
 frink-options:
   lakefs-repo: wikidata
-  kgf:
-    semantics:
-      prefixes:
-        schema: "http://schema.org/"
-      roles:
-        label:
-          - "http://www.w3.org/2000/01/rdf-schema#label"
-          - "http://www.w3.org/2004/02/skos/core#prefLabel"
-          - "http://www.w3.org/2004/02/skos/core#altLabel"
 contact: 
   email: balhoff@renci.org
   github: balhoff
   label: Jim Balhoff
 license: "https://creativecommons.org/publicdomain/zero/1.0/"
 ---
-Wikidata is a free and open knowledge base that can be read and edited by both humans and machines. This Proto-OKN copy of the [Wikidata](https://www.wikidata.org/) triplestore is provided by the NSF [FRINK](https://frink.renci.org) project.
+[Wikidata](https://www.wikidata.org/) is a free and open knowledge base that can be read and edited by both humans and machines. The standalone SPARQL endpoint linked here is provided by the [Qlever project](https://qlever.dev/wikidata). A slightly out of date copy of the Wikidata graph is included in the merged SPARQL endpoint provided by [https://okn.us](https://okn.us). These two access methods will be reconciled in the near future.
