@@ -146,20 +146,11 @@ kgs:
   description: Wikidata is a free and open knowledge base that can be read and edited
     by both humans and machines
   frink-options:
-    kgf:
-      semantics:
-        prefixes:
-          schema: http://schema.org/
-        roles:
-          label:
-          - http://www.w3.org/2000/01/rdf-schema#label
-          - http://www.w3.org/2004/02/skos/core#prefLabel
-          - http://www.w3.org/2004/02/skos/core#altLabel
     lakefs-repo: wikidata
   homepage: https://www.wikidata.org/
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: wikidata
-  sparql: https://apps.okn.us/wikidata/sparql
+  sparql: https://qlever.dev/api/wikidata
   template: overrides/kg.html
   title: Wikidata
 - contact:
