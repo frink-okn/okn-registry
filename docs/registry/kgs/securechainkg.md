@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/secure-chain-kg
 homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
 sparql: https://apps.okn.us/securechainkg/sparql
-tpf: https://apps.okn.us/ldf/securechainkg
+tpf: https://apps.okn.us/kgf/securechainkg/latest/tpf
 frink-options:
   lakefs-repo: secure-chain-kg
   documentation-path: secure-chain-kg

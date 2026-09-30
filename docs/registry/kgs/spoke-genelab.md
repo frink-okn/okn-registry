@@ -10,7 +10,7 @@ stats: https://registry.okn.us/kg-stats/spoke-genelab
 homepage: https://github.com/BaranziniLab/spoke_genelab
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
 sparql: https://apps.okn.us/spoke-genelab/sparql
-tpf: https://apps.okn.us/ldf/spoke-genelab
+tpf: https://apps.okn.us/kgf/spoke-genelab/latest/tpf
 frink-options:
   lakefs-repo: spoke-genelab-kg
   documentation-path: spoke-genelab

@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/sawgraph
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://apps.okn.us/sawgraph/sparql
-tpf: https://apps.okn.us/ldf/sawgraph
+tpf: https://apps.okn.us/kgf/sawgraph/latest/tpf
 frink-options:
   lakefs-repo: sawgraph-kg
   documentation-path: sawgraph-kg

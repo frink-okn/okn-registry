@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/wen-kg
 homepage: https://ufokn.com
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
 sparql: https://apps.okn.us/ufokn/sparql
-tpf: https://apps.okn.us/ldf/ufokn
+tpf: https://apps.okn.us/kgf/ufokn/latest/tpf
 frink-options:
   lakefs-repo: urban-flooding-open-knowledge-network
   documentation-path: ufokn-kg  

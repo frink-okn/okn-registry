@@ -45,6 +45,8 @@ hyf2: "https://www.opengis.net/def/appschema/hy_features/hyf/"
 hyf-old: "http://www.opengeospatial.org/standards/waterml2/hy_features/"
 kwg-ont: "http://stko-kwg.geog.ucsb.edu/lod/ontology/"
 kwg: "http://stko-kwg.geog.ucsb.edu/lod/resource/"
+kwg-s2: "http://stko-kwg.geog.ucsb.edu/lod/resource/s2."
+kwg-s2geom: "http://stko-kwg.geog.ucsb.edu/lod/resource/geometry.polygon.s2."
 gnis: "http://gnis-ld.org/lod/gnis/ontology/"
 gnis-feature: "http://gnis-ld.org/lod/gnis/feature/"
 

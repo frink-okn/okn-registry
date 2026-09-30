@@ -30,7 +30,7 @@ The frontmatter, preceded and followed by a line of three hyphens ("---"), shoul
 
         If you have *not* already uploaded data to https://repository.okn.us/ *and* triggered the conversion process ([see the documentation page on graph upload workflows and processing](https://registry.okn.us/help/update/#workflows-and-processing)), then please skip this field. We will add it once your graph's individual SPARQL endpoint is up and running.
 
-* `tpf`: This should be a link composed of `https://apps.okn.us/ldf/` followed by your graph's shortname.
+* `tpf`: This should be a link composed of `https://apps.okn.us/kgf/`, followed by your graph's shortname, followed by `/latest/tpf`.
 
     !!! warning
 
@@ -81,7 +81,7 @@ The end result should look something like this:
     homepage: https://geocities.com/fruitkg
     funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=XXXX
     sparql: https://apps.okn.us/fruitkg/sparql
-    tpf: https://apps.okn.us/ldf/fruitkg
+    tpf: https://apps.okn.us/kgf/fruitkg/latest/tpf
     frink-options:
       lakefs-repo: fruitkg
       documentation-path: fruitkg

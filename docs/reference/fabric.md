@@ -223,20 +223,21 @@ Triple Pattern Fragments (TPF) endpoint.
 ### Triple Pattern Fragments (TPF)
 
 A low-cost interface that serves one triple pattern at a time. Each graph has its own TPF
-endpoint under the Linked Data Fragments (`ldf`) path:
+endpoint under the Knowledge Graph Fragments (`kgf`) path:
 
 ```
-https://apps.okn.us/ldf/{kg-shortname}
+https://apps.okn.us/kgf/{kg-shortname}/latest/tpf
 ```
 
-All loaded KGs can be browsed at **`https://apps.okn.us/ldf/`**. A fragment is selected
+`latest` redirects to the graph's current version (e.g. `/kgf/babel/v/v0.0.1/tpf`).
+All loaded KGs can be browsed at **`https://apps.okn.us/kgf/`**. A fragment is selected
 with the query arguments **`subject`**, **`predicate`**, and **`object`** (any subset);
 omitting all three returns the full graph, one page at a time. Each argument takes a
 **full IRI** (and `object` may also be a literal) — prefixed names like `rdf:type` are not
 part of the interface. Example:
 
 ```bash
-curl -G https://apps.okn.us/ldf/spoke-okn \
+curl -G -L https://apps.okn.us/kgf/spoke-okn/latest/tpf \
   --data-urlencode 'predicate=http://www.w3.org/1999/02/22-rdf-syntax-ns#type' \
   -H 'Accept: application/trig'
 ```
@@ -364,7 +365,7 @@ each rendered KG page by querying the **`okn-void` graph**. That graph is built 
 statistics computed per graph during the ingest pipeline, and is itself a reusable OKN
 resource: it gives **counts of every "kind" of triple** in each graph — i.e.
 class–predicate–class combinations. It is itself a registered graph, with a SPARQL endpoint
-at `https://apps.okn.us/okn-void/sparql` and TPF at `https://apps.okn.us/ldf/okn-void`.
+at `https://apps.okn.us/okn-void/sparql` and TPF at `https://apps.okn.us/kgf/okn-void/latest/tpf`.
 
 **Coupling to the build pipeline.** The registry is otherwise **decoupled** from the KACE
 build/deploy pipeline — metadata is contributor-maintained in the repo. This daily VoID

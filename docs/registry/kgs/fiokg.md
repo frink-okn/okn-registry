@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/fio-kg
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://apps.okn.us/fiokg/sparql
-tpf: https://apps.okn.us/ldf/fiokg
+tpf: https://apps.okn.us/kgf/fiokg/latest/tpf
 frink-options:
   lakefs-repo: fio-kg
   documentation-path: fio-kg

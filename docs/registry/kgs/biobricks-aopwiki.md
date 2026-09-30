@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/biobricks-aopwiki-kg
 homepage: https://github.com/biobricks-ai/aopwikirdf-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
 sparql: https://apps.okn.us/biobricks-aopwiki/sparql
-tpf: https://apps.okn.us/ldf/biobricks-aopwiki
+tpf: https://apps.okn.us/kgf/biobricks-aopwiki/latest/tpf
 frink-options:
   lakefs-repo: biobricks-aopwiki-kg
   documentation-path: biobricks-aopwiki-kg

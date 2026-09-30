@@ -7,7 +7,7 @@ homepage: https://sawgraph.github.io/
 stats: https://registry.okn.us/kg-stats/spatial-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://apps.okn.us/spatialkg/sparql
-tpf: https://apps.okn.us/ldf/spatialkg
+tpf: https://apps.okn.us/kgf/spatialkg/latest/tpf
 frink-options:
   lakefs-repo: spatial-kg
   documentation-path: spatial-kg

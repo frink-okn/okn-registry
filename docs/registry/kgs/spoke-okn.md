@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/spoke-okn
 homepage: https://spoke.ucsf.edu
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
 sparql: https://apps.okn.us/spoke-okn/sparql
-tpf: https://apps.okn.us/ldf/spoke-okn
+tpf: https://apps.okn.us/kgf/spoke-okn/latest/tpf
 frink-options:
   lakefs-repo: spoke-kg
   documentation-path: spoke-kg

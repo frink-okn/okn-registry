@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/ncipidkg
 homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
 # funding: NSF Proto-OKN
 sparql: https://apps.okn.us/ncipidkg/sparql
-tpf: https://apps.okn.us/ldf/ncipidkg
+tpf: https://apps.okn.us/kgf/ncipidkg/latest/tpf
 frink-options:
   lakefs-repo: ncipidkg
   documentation-path: ncipidkg

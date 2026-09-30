@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/biobricks-mesh-kg
 homepage: https://github.com/biobricks-ai/mesh-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
 sparql: https://apps.okn.us/biobricks-mesh/sparql
-tpf: https://apps.okn.us/ldf/biobricks-mesh
+tpf: https://apps.okn.us/kgf/biobricks-mesh/latest/tpf
 frink-options:
   lakefs-repo: biobricks-mesh-kg
   documentation-path: biobricks-mesh-kg
