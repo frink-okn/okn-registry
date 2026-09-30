@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/geoconnex
 homepage: https://docs.geoconnex.us/about/intro
 funding: 
 sparql: https://apps.okn.us/geoconnex/sparql
-tpf: https://apps.okn.us/ldf/geoconnex
+tpf: https://apps.okn.us/kgf/geoconnex/latest/tpf
 frink-options:
   lakefs-repo: geoconnex
   documentation-path: geoconnex

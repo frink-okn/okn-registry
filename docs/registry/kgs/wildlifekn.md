@@ -7,7 +7,7 @@ description: This project seeks to create a comprehensive, integrative knowledge
 homepage: https://sites.nd.edu/kn-wildlife/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
 sparql: https://apps.okn.us/wildlifekn/sparql
-tpf: https://apps.okn.us/ldf/wildlifekn
+tpf: https://apps.okn.us/kgf/wildlifekn/latest/tpf
 frink-options:
   lakefs-repo: wildlife-kg
   documentation-path: wildlife-kg

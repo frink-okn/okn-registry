@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/sudokn
 homepage: https://projects.engineering.asu.edu/sudokn/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
 sparql: https://apps.okn.us/sudokn/sparql
-tpf: https://apps.okn.us/ldf/sudokn
+tpf: https://apps.okn.us/kgf/sudokn/latest/tpf
 frink-options:
   lakefs-repo: sudokn-kg
   documentation-path: sudokn-kg

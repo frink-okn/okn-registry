@@ -4,6 +4,8 @@ shortname: rdkg
 title: Rare Disease Knowledge Graph
 description: RDKG is an open knowledge graph for rare diseases that integrates standardized disease identifiers and cross-references to support discovery and evidence synthesis.
 #homepage: https:// 
+sparql: https://apps.okn.us/rdkg/sparql
+tpf: https://apps.okn.us/kgf/rdkg/latest/tpf
 frink-options:
   lakefs-repo: rdkg
   documentation-path: rdkg

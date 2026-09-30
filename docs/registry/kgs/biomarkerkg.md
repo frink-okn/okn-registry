@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/biomarkerkg
 homepage: https://biomarkerkb.org/home/
 funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
 sparql: https://apps.okn.us/biomarkerkg/sparql
-tpf: https://apps.okn.us/ldf/biomarkerkg
+tpf: https://apps.okn.us/kgf/biomarkerkg/latest/tpf
 frink-options:
   lakefs-repo: biomarkerkg
   documentation-path: biomarkerkg

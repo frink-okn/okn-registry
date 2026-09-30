@@ -72,7 +72,7 @@ The Fabric API endpoints can be used progammatically (see below), or else access
 
 ### Theme 1 Specific Endpoints
 
-See the [OKN Registry entries](../registry/) to view the graphs currently available within the OKN. The service endpoints for SPARQL and TPF are listed in each graph's entry. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the OKN query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide [a browser UI](https://apps.okn.us/ldf/).
+See the [OKN Registry entries](../registry/) to view the graphs currently available within the OKN. The service endpoints for SPARQL and TPF are listed in each graph's entry. The SPARQL endpoints are service endpoints only (no user interface). You can query them via the OKN query page, or using a third party SPARQL tool such as [Yasgui](https://yasgui.triply.cc). The TPF endpoints are service endpoints but also provide [a browser UI](https://apps.okn.us/kgf/).
 
 ### Cross-OKN query endpoint
 

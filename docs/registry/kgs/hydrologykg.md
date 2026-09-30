@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/hydrology-kg
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://apps.okn.us/hydrologykg/sparql
-tpf: https://apps.okn.us/ldf/hydrologykg
+tpf: https://apps.okn.us/kgf/hydrologykg/latest/tpf
 frink-options:
   lakefs-repo: hydrology-kg
   documentation-path: hydrology-kg

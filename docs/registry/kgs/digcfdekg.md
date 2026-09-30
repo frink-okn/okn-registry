@@ -24,7 +24,7 @@ frink-options:
         - digcfdekg-node
         - digcfdekg-rel
 sparql: https://apps.okn.us/digcfdekg/sparql
-tpf: https://apps.okn.us/ldf/digcfdekg
+tpf: https://apps.okn.us/kgf/digcfdekg/latest/tpf
 contacts:
   - email: flannick@broadinstitute.org
     github: "flannick"

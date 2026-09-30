@@ -5,7 +5,7 @@ title: Babel KG
 description: Babel creates cliques of equivalent identifiers across many biomedical vocabularies
 homepage: https://github.com/NCATSTranslator/Babel
 sparql: https://apps.okn.us/babel/sparql
-tpf: https://apps.okn.us/ldf/babel
+tpf: https://apps.okn.us/kgf/babel/latest/tpf
 frink-options:
   lakefs-repo: babel
   documentation-path: babel

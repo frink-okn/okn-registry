@@ -23,7 +23,7 @@ contacts:
   github: "WrightLabScience"
   label: "Erik Wright"
 sparql: https://apps.okn.us/evoweb/sparql
-tpf: https://apps.okn.us/ldf/evoweb
+tpf: https://apps.okn.us/kgf/evoweb/latest/tpf
 ---
 EvoWeb is a weighted network of protein-protein functional relations, reconstructed from prior knowledge available from genomic sequences, allowing users to find hypothetical proteins involved in protein complexes or separate steps of a biochemical pathway, as well as 12 signals of coevolution to quantify the degree of shared evolution between genes.
 

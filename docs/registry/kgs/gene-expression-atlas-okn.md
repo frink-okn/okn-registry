@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/gene-expression-atlas-okn
 homepage: https://www.ebi.ac.uk/gxa/home
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
 sparql: https://apps.okn.us/gene-expression-atlas-okn/sparql
-tpf: https://apps.okn.us/ldf/gene-expression-atlas-okn
+tpf: https://apps.okn.us/kgf/gene-expression-atlas-okn/latest/tpf
 frink-options:
   lakefs-repo: gene-expression-atlas-okn
   documentation-path: gene-expression-atlas-okn

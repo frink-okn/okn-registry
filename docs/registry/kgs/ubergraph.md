@@ -6,7 +6,7 @@ description: Integrated suite of OBO ontologies with precomputed inferred relati
 #stats:
 homepage: https://github.com/INCATools/ubergraph/
 sparql: https://apps.okn.us/ubergraph/sparql
-tpf: https://apps.okn.us/ldf/ubergraph
+tpf: https://apps.okn.us/kgf/ubergraph/latest/tpf
 frink-options:
   lakefs-repo: ubergraph
   documentation-path: ubergraph

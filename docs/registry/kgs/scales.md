@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/scales-kg
 homepage: https://scales-okn.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
 sparql: https://apps.okn.us/scales/sparql
-tpf: https://apps.okn.us/ldf/scales
+tpf: https://apps.okn.us/kgf/scales/latest/tpf
 frink-options:
   lakefs-repo: scales-kg
   documentation-path: scales-kg

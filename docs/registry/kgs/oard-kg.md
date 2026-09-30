@@ -7,7 +7,7 @@ description: Clinical associations between rare diseases and phenotypes derived 
 homepage: https://github.com/WengLab-InformaticsResearch/oard-react
 funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
 sparql: https://apps.okn.us/oard-kg/sparql
-tpf: https://apps.okn.us/ldf/oard-kg
+tpf: https://apps.okn.us/kgf/oard-kg/latest/tpf
 frink-options:
   lakefs-repo: oard-kg
   documentation-path: oard-kg

@@ -16,7 +16,7 @@ frink-options:
 stats: https://registry.okn.us/kg-stats/identifier-mappings
 homepage: https://www.wikidata.org/
 sparql: https://apps.okn.us/identifier-mappings/sparql
-tpf: https://apps.okn.us/ldf/identifier-mappings
+tpf: https://apps.okn.us/kgf/identifier-mappings/latest/tpf
 contact: 
   email: morshedm@renci.org
   github: "mahir256"

@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/nasa-gesdisc-kg
 homepage: https://disc.gsfc.nasa.gov
 funding:
 sparql: https://apps.okn.us/nasa-gesdisc-kg/sparql
-tpf: https://apps.okn.us/ldf/nasa-gesdisc-kg
+tpf: https://apps.okn.us/kgf/nasa-gesdisc-kg/latest/tpf
 frink-options:
   lakefs-repo: nasa-gesdisc
   documentation-path: nasa-gesdisc

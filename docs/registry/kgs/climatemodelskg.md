@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/climate-kg
 # homepage: 
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
 sparql: https://apps.okn.us/climatemodelskg/sparql
-tpf: https://apps.okn.us/ldf/climatemodelskg
+tpf: https://apps.okn.us/kgf/climatemodelskg/latest/tpf
 frink-options:
   lakefs-repo: climatepub4-kg
   documentation-path: climatepub4-kg
