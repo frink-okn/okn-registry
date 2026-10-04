@@ -134,6 +134,7 @@ kgs:
           - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
     lakefs-repo: ubergraph
   homepage: https://github.com/INCATools/ubergraph/
+  kgf: https://apps.okn.us/kgf/ubergraph
   shortname: ubergraph
   sparql: https://apps.okn.us/ubergraph/sparql
   template: overrides/kg.html
