@@ -1,0 +1,12 @@
+#+ summary: Which other groups are connected to the dnaA gene group?
+#+ tags:
+#+   - evoweb
+#
+# This query assumes connectivity is commutative, even if the reverse of a connection pair is not explicit in the graph.)
+
+
+PREFIX ns0: <https://purl.org/okn/frink/kg/evoweb/schema/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?group ?groupLabel  {
+  ns0:Node1 (ns0:connectedTo | ^ns0:connectedTo) ?group . ?group rdfs:label ?groupLabel .
+}

@@ -1,47 +1,200 @@
-triples: 43754
-distinct_subjects: 6262
-distinct_objects: 10802
-properties: 9
-classes: 4
-last_checked: '2026-05-21'
+triples: 9424687
+distinct_subjects: 1094813
+distinct_objects: 1120086
+properties: 49
+classes: 15
+last_checked: '2026-10-04'
 class_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   label: rdf:Statement
-  count: 5205
+  count: 580827
+- uri: https://kn-wildlife.crc.nd.edu/kg/Observation
+  label: Observation
+  count: 420439
+- uri: http://www.opengis.net/ont/geosparql#Feature
+  label: geo:Feature
+  count: 72651
+- uri: https://kn-wildlife.crc.nd.edu/kg/Site
+  label: Site
+  count: 70009
+- uri: https://kn-wildlife.crc.nd.edu/kg/Species
+  label: Species
+  count: 14556
+- uri: https://kn-wildlife.crc.nd.edu/kg/Genus
+  label: Genus
+  count: 4018
+- uri: https://kn-wildlife.crc.nd.edu/kg/County
+  label: County
+  count: 2817
+- uri: https://kn-wildlife.crc.nd.edu/kg/Family
+  label: Family
+  count: 779
 - uri: https://wildlife.proto-okn.net/kg/Location
   label: Location
   count: 657
 - uri: https://wildlife.proto-okn.net/kg/Bird_name
   label: Bird_name
   count: 303
+- uri: https://kn-wildlife.crc.nd.edu/kg/Order
+  label: Order
+  count: 218
 - uri: https://wildlife.proto-okn.net/kg/Amphibian_name
   label: Amphibian_name
   count: 97
+- uri: https://kn-wildlife.crc.nd.edu/kg/State
+  label: State
+  count: 51
+- uri: https://kn-wildlife.crc.nd.edu/kg/TaxClass
+  label: TaxClass
+  count: 36
+- uri: https://kn-wildlife.crc.nd.edu/kg/Dataset
+  label: Dataset
+  count: 6
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 6262
+  count: 1167464
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
+  label: rdf:object
+  count: 580827
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
   label: rdf:predicate
-  count: 5205
+  count: 580827
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+  label: rdf:subject
+  count: 580827
+- uri: https://kn-wildlife.crc.nd.edu/kg/OBSERVED_ORGANISM
+  label: OBSERVED_ORGANISM
+  count: 576437
+- uri: https://kn-wildlife.crc.nd.edu/kg/measurement_result
+  label: measurement_result
+  count: 575622
+- uri: https://kn-wildlife.crc.nd.edu/kg/measurement_type
+  label: measurement_type
+  count: 575622
+- uri: https://kn-wildlife.crc.nd.edu/kg/measurement_unit
+  label: measurement_unit
+  count: 575622
+- uri: https://kn-wildlife.crc.nd.edu/kg/sampling_effort
+  label: sampling_effort
+  count: 575622
+- uri: https://kn-wildlife.crc.nd.edu/kg/sampling_effort_unit
+  label: sampling_effort_unit
+  count: 575622
+- uri: https://kn-wildlife.crc.nd.edu/kg/sampling_method
+  label: sampling_method
+  count: 575622
 - uri: http://purl.org/dc/terms/date
   label: dct:date
-  count: 5205
+  count: 425644
+- uri: https://kn-wildlife.crc.nd.edu/kg/FROM_DATASET
+  label: FROM_DATASET
+  count: 343912
+- uri: https://kn-wildlife.crc.nd.edu/kg/PRISM_precip_annual_mm
+  label: PRISM_precip_annual_mm
+  count: 335814
+- uri: https://kn-wildlife.crc.nd.edu/kg/PRISM_tmean_annual_degC
+  label: PRISM_tmean_annual_degC
+  count: 335814
+- uri: https://kn-wildlife.crc.nd.edu/kg/OBSERVED_IN
+  label: OBSERVED_IN
+  count: 283662
+- uri: http://www.w3.org/2000/01/rdf-schema#label
+  label: rdfs:label
+  count: 93547
+- uri: https://kn-wildlife.crc.nd.edu/kg/geo_asWKT
+  label: geo_asWKT
+  count: 72880
+- uri: https://kn-wildlife.crc.nd.edu/kg/additional_notes
+  label: additional_notes
+  count: 70015
+- uri: https://kn-wildlife.crc.nd.edu/kg/api_url
+  label: api_url
+  count: 70009
+- uri: https://kn-wildlife.crc.nd.edu/kg/lat4
+  label: lat4
+  count: 70009
+- uri: https://kn-wildlife.crc.nd.edu/kg/latitude_dd
+  label: latitude_dd
+  count: 70009
+- uri: https://kn-wildlife.crc.nd.edu/kg/lon4
+  label: lon4
+  count: 70009
+- uri: https://kn-wildlife.crc.nd.edu/kg/longitude_dd
+  label: longitude_dd
+  count: 70009
+- uri: https://kn-wildlife.crc.nd.edu/kg/site4key
+  label: site4key
+  count: 70009
+- uri: https://kn-wildlife.crc.nd.edu/kg/synthetic_location
+  label: synthetic_location
+  count: 36726
+- uri: https://kn-wildlife.crc.nd.edu/kg/decimalLatitudes
+  label: decimalLatitudes
+  count: 9466
+- uri: https://kn-wildlife.crc.nd.edu/kg/decimalLongitudes
+  label: decimalLongitudes
+  count: 9461
 - uri: https://schema.org/subjectOf
   label: schema:subjectOf
   count: 5205
 - uri: https://wildlife.proto-okn.net/kg/OBSERVED_AT
   label: OBSERVED_AT
   count: 5205
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
-  label: rdf:subject
-  count: 5205
 - uri: https://wildlife.proto-okn.net/kg/observed_times
   label: observed_times
   count: 5205
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#object
-  label: rdf:object
-  count: 5205
-- uri: http://www.w3.org/2000/01/rdf-schema#label
-  label: rdfs:label
-  count: 1057
+- uri: https://kn-wildlife.crc.nd.edu/kg/created_at
+  label: created_at
+  count: 4500
+- uri: https://kn-wildlife.crc.nd.edu/kg/obs_id
+  label: obs_id
+  count: 4500
+- uri: https://kn-wildlife.crc.nd.edu/kg/BELONGS_TO
+  label: BELONGS_TO
+  count: 4330
+- uri: https://kn-wildlife.crc.nd.edu/kg/state_fips
+  label: state_fips
+  count: 2864
+- uri: https://kn-wildlife.crc.nd.edu/kg/county_fips
+  label: county_fips
+  count: 2821
+- uri: https://kn-wildlife.crc.nd.edu/kg/state_name
+  label: state_name
+  count: 2814
+- uri: https://kn-wildlife.crc.nd.edu/kg/kwgIRI
+  label: kwgIRI
+  count: 2644
+- uri: https://kn-wildlife.crc.nd.edu/kg/wikidata_id
+  label: wikidata_id
+  count: 2312
+- uri: https://kn-wildlife.crc.nd.edu/kg/IUCN_id
+  label: IUCN_id
+  count: 2271
+- uri: https://kn-wildlife.crc.nd.edu/kg/IN_STATE
+  label: IN_STATE
+  count: 1659
+- uri: https://kn-wildlife.crc.nd.edu/kg/old_name
+  label: old_name
+  count: 1155
+- uri: https://kn-wildlife.crc.nd.edu/kg/state_abbrev
+  label: state_abbrev
+  count: 50
+- uri: https://kn-wildlife.crc.nd.edu/kg/dataset_urls
+  label: dataset_urls
+  count: 11
+- uri: https://kn-wildlife.crc.nd.edu/kg/dataset_citations
+  label: dataset_citations
+  count: 10
+- uri: https://kn-wildlife.crc.nd.edu/kg/agency_organization_researchGroup
+  label: agency_organization_researchGroup
+  count: 6
+- uri: https://kn-wildlife.crc.nd.edu/kg/download_date
+  label: download_date
+  count: 6
+- uri: https://kn-wildlife.crc.nd.edu/kg/program_name
+  label: program_name
+  count: 6
+- uri: https://kn-wildlife.crc.nd.edu/kg/data_type
+  label: data_type
+  count: 4

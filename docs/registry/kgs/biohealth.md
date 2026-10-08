@@ -7,11 +7,26 @@ description: Bio-Health KG is a dynamically-updated open knowledge network for h
 stats: https://registry.okn.us/kg-stats/biobricks-ice-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
 sparql: https://apps.okn.us/biohealth/sparql
-tpf: https://apps.okn.us/ldf/biohealth
+tpf: https://apps.okn.us/kgf/biohealth/latest/tpf
 frink-options:
   lakefs-repo: biohealth
   documentation-path: "biohealth"
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/biohealth.yaml
+  kgf:
+    semantics:
+      prefixes:
+        biohealth: "https://biohealthkg.proto-okn.net/kg/schema/"
+        biohealth-node: "https://biohealthkg.proto-okn.net/kg/node/"
+        biohealth-rel: "https://biohealthkg.proto-okn.net/kg/relationship/"
+        biohealth-semtype: "https://biohealthkg.proto-okn.net/kg/semtype/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - biohealth
+        - biohealth-node
+        - biohealth-rel
+        - biohealth-semtype
 contact:
   email: aidong@virginia.edu
   label: "Aidong Zhang"

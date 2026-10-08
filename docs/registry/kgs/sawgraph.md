@@ -7,18 +7,43 @@ stats: https://registry.okn.us/kg-stats/sawgraph
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://apps.okn.us/sawgraph/sparql
-tpf: https://apps.okn.us/ldf/sawgraph
+tpf: https://apps.okn.us/kgf/sawgraph/latest/tpf
 frink-options:
   lakefs-repo: sawgraph-kg
   documentation-path: sawgraph-kg
+  kgf:
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        sawgraph-me: "http://w3id.org/sawgraph/v1/me-egad#"
+        sawgraph-wqp: "http://w3id.org/sawgraph/v1/us-wqp#"
+        sawgraph-sdwis: "http://w3id.org/sawgraph/v1/us-sdwis#"
+        saw-water: "http://sawgraph.spatialai.org/v1/saw_water#"
+        sawgraph-me-data: "http://w3id.org/sawgraph/v1/me-egad-data#"
+        sawgraph-wqp-data: "http://w3id.org/sawgraph/v1/us-wqp-data#"
+        sawgraph-sdwis-h: "http://sawgraph.spatialai.org/v1/us-sdwis#"
+        qudt: "http://qudt.org/vocab/unit/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://purl.org/dc/terms/title"
+          - "http://w3id.org/sawgraph/v1/me-egad#samplePointWebName"
+          - "http://w3id.org/sawgraph/v1/us-wqp#siteName"
+          - "http://www.w3.org/2004/02/skos/core#altLabel"
+      authoritative_namespaces:
+        - sawgraph-me
+        - sawgraph-me-data
+        - sawgraph-wqp
+        - sawgraph-wqp-data
+        - sawgraph-sdwis
+        - saw-water
 contacts:
-  - email: katrina.schweikert@maine.edu	  
+  - email: katrina.schweikert@maine.edu
     github: "kschweikert"
     label: "Katrina Schweikert"
   - email: "torsten.hahmann@maine.edu"
     github: "thahmann"
-    label: "Torsten Hahmann"
-  
+    label: "Torsten Hahmann"  
 ---
 The Safe Agricultural Products and Water Graph (SAWGraph) is an open knowledge network designed for environmental health researchers, regulatory agencies, and public health officials to help track and monitor per- and polyfluoroalkyl substances (PFAS) and other contaminants in food and water systems. 
 The SAWGraph PFAS KG employs the ContaminOSO ontology (coso:) for standardized contamination modeling to encode the sampled features (e.g. wells, water bodies, facilities, fields), environmental media (e.g. groundwater, surface water, waste water, soil, animal or plant tissue), sample locations (Level 13 S2 cells and Level 3 administrative regions), sample type classification (based on FOODON categories like meat, dairy, produce, and seafood and NCBITaxon organisms), and tested chemical (DSSTox Substance IDs (DTXSID) and CAS numbers). Observations include measurement values, detection limits, lab qualifiers, and validation levels. Currently, the graph includes data from the national WaterQualityPortal (WQP) dataset and select state datasets, in particular from Maine's EGAD drinking water monitoring program.

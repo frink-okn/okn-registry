@@ -7,14 +7,29 @@ stats: https://registry.okn.us/kg-stats/nasa-gesdisc-kg
 homepage: https://disc.gsfc.nasa.gov
 funding:
 sparql: https://apps.okn.us/nasa-gesdisc-kg/sparql
-tpf: https://apps.okn.us/ldf/nasa-gesdisc-kg
+tpf: https://apps.okn.us/kgf/nasa-gesdisc-kg/latest/tpf
 frink-options:
   lakefs-repo: nasa-gesdisc
   documentation-path: nasa-gesdisc
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/nasa.yaml
+  kgf:
+    semantics:
+      prefixes:
+        nasa-gesdisc-schema: "https://purl.org/okn/frink/kg/nasa-gesdisc/schema/"
+        nasa-gesdisc-node: "https://purl.org/okn/frink/kg/nasa-gesdisc/node/"
+        nasa-gesdisc-rel: "https://purl.org/okn/frink/kg/nasa-gesdisc/relationship/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "https://schema.org/title"
+      authoritative_namespaces:
+        - nasa-gesdisc-schema
+        - nasa-gesdisc-node
+        - nasa-gesdisc-rel
 contact:
   email: lisa@renci.org  
   github: "lstillwe"
   label: "Lisa Stillwell"
+license: "https://creativecommons.org/publicdomain/zero/1.0/"
 ---
 The primary goal of the NASA Knowledge Graph is to bridge scientific publications with the datasets they reference, facilitating deeper insights and research opportunities within NASA's scientific and data ecosystem. By organizing these interconnections within a graph structure, this dataset enables advanced analyses, such as discovering influential datasets, understanding research trends, and exploring scientific collaborations. 

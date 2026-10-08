@@ -7,10 +7,29 @@ stats: https://registry.okn.us/kg-stats/scales-kg
 homepage: https://scales-okn.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
 sparql: https://apps.okn.us/scales/sparql
-tpf: https://apps.okn.us/ldf/scales
+tpf: https://apps.okn.us/kgf/scales/latest/tpf
 frink-options:
   lakefs-repo: scales-kg
   documentation-path: scales-kg
+  augmentations:
+    - name: map-predicate
+      params:
+        from:
+          - http://release.niem.gov/niem/niem-core/5.0/#EntityName
+          - http://release.niem.gov/niem/niem-core/5.0/#PersonFullName
+          - http://release.niem.gov/niem/niem-core/5.0/#OrganizationName
+          - http://release.niem.gov/niem/niem-core/5.0/#FacilityName
+          - http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName
+        to: http://www.w3.org/2000/01/rdf-schema#label
+  kgf:
+    semantics:
+      roles:
+        label:
+          - "http://release.niem.gov/niem/niem-core/5.0/#EntityName"
+          - "http://release.niem.gov/niem/niem-core/5.0/#PersonFullName"
+          - "http://release.niem.gov/niem/niem-core/5.0/#OrganizationName"
+          - "http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName"
+          - "http://release.niem.gov/niem/niem-core/5.0/#FacilityName"
 contacts:
   - email: "danny.e.oneal@gmail.com"
     github: danny-oneal
@@ -18,6 +37,7 @@ contacts:
   - email: "scottgdaniel@gmail.com"
     github: scottgdaniel
     label: "Scott Daniel"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 SCALES is an integrated justice platform to connect criminal justice data across data silos.
 

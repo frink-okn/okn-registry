@@ -10,12 +10,28 @@ frink-options:
   lakefs-repo: pankbase-kg
   documentation-path: pankbase-kg
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/pankgraph.yaml
+  kgf:
+    semantics:
+      prefixes:
+        pankgraph: "https://purl.org/okn/frink/kg/pankgraph/schema/"
+        pankgraph-node: "https://purl.org/okn/frink/kg/pankgraph/node/"
+        pankgraph-rel: "https://purl.org/okn/frink/kg/pankgraph/relationship/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://purl.org/dc/terms/title"
+          - "https://purl.org/okn/frink/kg/pankgraph/schema/gene_name"
+          - "https://purl.org/okn/frink/kg/pankgraph/schema/tissue_name"
+      authoritative_namespaces:
+        - pankgraph
+        - pankgraph-node
+        - pankgraph-rel
 contacts:
 - email: drjieliu@umich.edu
   github: "jieliu6"
   label: "Jie Liu"
 sparql: https://apps.okn.us/pankgraph/sparql
-tpf: https://apps.okn.us/ldf/pankgraph
+tpf: https://apps.okn.us/kgf/pankgraph/latest/tpf
 license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 PanKgraph is a state-of-the-art Knowledge Graph developed for the study of the human pancreas. By leveraging large language models (LLMs) and diverse data types, PanKgraph enables users to uncover biological connections and insights into diabetes pathogenesis. Previously disjointed entities such as genes, single nucleotide polymorphisms (SNPs), and pancreatic expression quantitative trait loci (eQTLs) can now be explored and connected in innovative ways.

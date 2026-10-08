@@ -1,65 +1,65 @@
-triples: 4815159
-distinct_subjects: 1253036
-distinct_objects: 1347154
+triples: 4750322
+distinct_subjects: 1237295
+distinct_objects: 1326826
 properties: 18
 classes: 1
-last_checked: '2026-05-21'
+last_checked: '2026-10-04'
 class_partitions:
 - uri: http://rdfs.org/ns/void#Dataset
   label: void:Dataset
-  count: 1253036
+  count: 1237295
 property_partitions:
-- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-  label: rdf:type
-  count: 1253036
 - uri: http://rdfs.org/ns/void#triples
   label: void:triples
-  count: 1253036
+  count: 1237295
+- uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  label: rdf:type
+  count: 1237295
 - uri: http://ldf.fi/void-ext#objectClassPartition
   label: void-ext:objectClassPartition
-  count: 742707
+  count: 732620
 - uri: http://rdfs.org/ns/void#class
   label: void:class
-  count: 545569
-- uri: http://rdfs.org/ns/void#propertyPartition
-  label: void:propertyPartition
-  count: 498348
+  count: 533589
 - uri: http://rdfs.org/ns/void#property
   label: void:property
-  count: 498348
-- uri: http://ldf.fi/void-ext#datatypePartition
-  label: void-ext:datatypePartition
-  count: 6445
+  count: 490412
+- uri: http://rdfs.org/ns/void#propertyPartition
+  label: void:propertyPartition
+  count: 490412
 - uri: http://ldf.fi/void-ext#datatype
   label: void-ext:datatype
-  count: 6445
+  count: 8501
+- uri: http://ldf.fi/void-ext#datatypePartition
+  label: void-ext:datatypePartition
+  count: 8501
 - uri: http://rdfs.org/ns/void#classPartition
   label: void:classPartition
-  count: 4830
+  count: 5040
 - uri: http://rdfs.org/ns/void#entities
   label: void:entities
-  count: 4830
+  count: 5040
 - uri: http://ldf.fi/void-ext#language
   label: void-ext:language
-  count: 667
+  count: 678
 - uri: http://ldf.fi/void-ext#languagePartition
   label: void-ext:languagePartition
-  count: 667
-- uri: http://rdfs.org/ns/void#properties
-  label: void:properties
-  count: 39
+  count: 678
 - uri: http://rdfs.org/ns/void#distinctObjects
   label: void:distinctObjects
-  count: 39
+  count: 44
 - uri: http://rdfs.org/ns/void#distinctSubjects
   label: void:distinctSubjects
-  count: 39
-- uri: http://purl.org/pav/version
-  label: pav:version
-  count: 38
-- uri: http://purl.org/pav/lastUpdatedOn
-  label: pav:lastUpdatedOn
-  count: 38
+  count: 44
+- uri: http://rdfs.org/ns/void#properties
+  label: void:properties
+  count: 44
 - uri: http://purl.org/dc/terms/modified
   label: dct:modified
-  count: 38
+  count: 43
+- uri: http://purl.org/pav/lastUpdatedOn
+  label: pav:lastUpdatedOn
+  count: 43
+- uri: http://purl.org/pav/version
+  label: pav:version
+  count: 43

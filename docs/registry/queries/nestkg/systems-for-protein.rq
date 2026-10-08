@@ -1,0 +1,18 @@
+#+ summary: All NeST systems a given protein belongs to, with mutation-enrichment status, keyed on UniProt
+#+ tags:
+#+   - nestkg
+
+PREFIX ndexv: <https://www.ndexbio.org/vocab/>
+PREFIX nestv: <https://www.ndexbio.org/vocab/nest/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX uniprot: <http://purl.uniprot.org/uniprot/>
+
+# Example protein: EGFR = uniprot:P00533. Swap in any UniProt accession.
+SELECT ?system ?label ?adjP (IF(?adjP < 0.05, "enriched", "not enriched") AS ?mutationStatus) WHERE {
+  ?system biolink:has_member uniprot:P00533 ;
+          rdfs:label ?label ;
+          nestv:hisigAdjustedPValue ?adjP .
+}
+ORDER BY ?adjP
+LIMIT 100

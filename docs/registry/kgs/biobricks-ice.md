@@ -7,10 +7,22 @@ stats: https://registry.okn.us/kg-stats/biobricks-ice-kg
 homepage: https://github.com/biobricks-ai/biobricks-okg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
 sparql: https://apps.okn.us/biobricks-ice/sparql
-tpf: https://apps.okn.us/ldf/biobricks-ice
+tpf: https://apps.okn.us/kgf/biobricks-ice/latest/tpf
 frink-options:
   lakefs-repo: biobricks-ice-kg
   documentation-path: biobricks-ice-kg
+  kgf:
+    # ice-data is the graph's own subject namespace; it is
+    # minted under example.com upstream.
+    semantics:
+      prefixes:
+        ice: "https://ice.ntp.niehs.nih.gov/property/"
+        ice-data: "http://example.com/ice/"
+        bao: "http://www.bioassayontology.org/bao#"
+        comptox: "https://comptox.epa.gov/dashboard/chemical/details/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
 contact:
   email: tom@insilica.co
   github: "tomlue"

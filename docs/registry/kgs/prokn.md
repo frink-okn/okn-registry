@@ -7,13 +7,34 @@ stats: https://registry.okn.us/kg-stats/prokn
 homepage: https://research.bioinformatics.udel.edu/ProKN/
 funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
 sparql: https://apps.okn.us/prokn/sparql
-tpf: https://apps.okn.us/ldf/prokn
+tpf: https://apps.okn.us/kgf/prokn/latest/tpf
 frink-options:
   lakefs-repo: prokn
   documentation-path: prokn
+  kgf:
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        prokn: "https://research.bioinformatics.udel.edu/ProKN/rdf/"
+        uniprot-core: "http://purl.uniprot.org/core/"
+        biolink-model: "https://biolink.github.io/biolink-model/"
+        meshv: "https://id.nlm.nih.gov/mesh/"
+        reproduceme: "https://w3id.org/reproduceme#"
+        edam: "http://edamontology.org/"
+        allotrope-result: "http://purl.allotrope.org/ontologies/result#"
+        chemrof: "https://chemkg.github.io/chemrof/"
+        bao: "http://www.bioassayontology.org/bao#"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://schema.org/name"
+          - "http://purl.uniprot.org/core/scientificName"
+      authoritative_namespaces:
+        - prokn
 contact:
   email: chenc@udel.edu  
   github: "chenchuming"
   label: "Chuming Chen"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 The Protein Knowledge Network (ProKN), developed by the University of Delaware as part of the NIH Common Fund Data Ecosystem (CFDE), is an integrative bioinformatics platform designed to harmonize and explore complex relationships within protein-related data. By utilizing a knowledge graph approach, ProKN links proteins with their post-translational modifications, genetic variants, and functional pathways, offering specialized tools like KSMoFinder for predicting kinase-substrate interactions, as well as services for ID mapping, variant mapping, and protein embeddings. The portal supports the FAIR data principles by providing advanced visualization interfaces alongside programmatic access via SPARQL and REST APIs, ultimately enabling researchers to bridge disparate datasets and generate new hypotheses for precision medicine and drug discovery.

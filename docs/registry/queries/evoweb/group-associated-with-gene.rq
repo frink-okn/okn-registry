@@ -1,0 +1,10 @@
+#+ summary: Which EvoWeb group is associated with the dnaA gene?
+#+ tags:
+#+   - evoweb
+#
+# This query is not ideal due to relying on a string search.
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?group ?groupLabel {
+  ?group rdfs:label ?groupLabel . filter(contains(str(?groupLabel),"chromosomal replication initiator protein DnaA"))
+}

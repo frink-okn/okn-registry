@@ -7,14 +7,26 @@ stats: https://registry.okn.us/kg-stats/sudokn
 homepage: https://projects.engineering.asu.edu/sudokn/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
 sparql: https://apps.okn.us/sudokn/sparql
-tpf: https://apps.okn.us/ldf/sudokn
+tpf: https://apps.okn.us/kgf/sudokn/latest/tpf
 frink-options:
   lakefs-repo: sudokn-kg
   documentation-path: sudokn-kg
+  kgf:
+    semantics:
+      prefixes:
+        sudokn: "http://asu.edu/semantics/SUDOKN/"
+        iof-av: "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://www.w3.org/2004/02/skos/core#altLabel"
+      authoritative_namespaces:
+        - sudokn
 contact:
   email: farhad.ameri@asu.edu
   github: "fameri"
   label: "Farhad Ameri"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 SUDOKN is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers.
 

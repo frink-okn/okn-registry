@@ -7,10 +7,19 @@ description: Clinical associations between rare diseases and phenotypes derived 
 homepage: https://github.com/WengLab-InformaticsResearch/oard-react
 funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
 sparql: https://apps.okn.us/oard-kg/sparql
-tpf: https://apps.okn.us/ldf/oard-kg
+tpf: https://apps.okn.us/kgf/oard-kg/latest/tpf
 frink-options:
   lakefs-repo: oard-kg
   documentation-path: oard-kg
+  kgf:
+    semantics:
+      prefixes:
+        cohd: "https://rare.cohd.io/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - cohd
 contacts:
 - email: ct2865@cumc.columbia.edu  
   github: CaseyTa
@@ -18,5 +27,6 @@ contacts:
 - email: cw2384@cumc.columbia.edu  
   github: ChunhuaWeng
   label: Chunhua Weng
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 [OARD-KG](https://github.com/WengLab-InformaticsResearch/oard-react) is an RDF triplestore which provides a SPARQL query endpoint for clinical associations between rare diseases and phenotypes derived from electronic health records.

@@ -7,6 +7,21 @@ kgs:
     integrating biomedical insights with social determinants of health.
   frink-options:
     documentation-path: biohealth
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - biohealth
+        - biohealth-node
+        - biohealth-rel
+        - biohealth-semtype
+        prefixes:
+          biohealth: https://biohealthkg.proto-okn.net/kg/schema/
+          biohealth-node: https://biohealthkg.proto-okn.net/kg/node/
+          biohealth-rel: https://biohealthkg.proto-okn.net/kg/relationship/
+          biohealth-semtype: https://biohealthkg.proto-okn.net/kg/semtype/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biohealth
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/biohealth.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
@@ -15,7 +30,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/biobricks-ice-kg
   template: overrides/kg.html
   title: Bio-Health KG
-  tpf: https://apps.okn.us/ldf/biohealth
+  tpf: https://apps.okn.us/kgf/biohealth/latest/tpf
 - contact:
     email: apadilla@lincolninst.edu
     github: adplincinst
@@ -25,15 +40,53 @@ kgs:
     monitoring.
   frink-options:
     documentation-path: geoconnex
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - geoconnex
+        - geoconnex-nqhash
+        prefixes:
+          geoconnex: https://geoconnex.us/
+          geoconnex-nqhash: https://docs.geoconnex.us/nqhash/
+          iow-nqhash: https://iow.io/nqhash/
+          ogc-crs: http://www.opengis.net/def/crs/
+        roles:
+          label:
+          - https://schema.org/name
+          - http://gnis-ld.org/lod/gnis/ontology/officialName
+          - https://schema.org/sname
+          - https://schema.org/alternateName
     lakefs-repo: geoconnex
   funding: null
   homepage: https://docs.geoconnex.us/about/intro
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: geoconnex
   sparql: https://apps.okn.us/geoconnex/sparql
   stats: https://registry.okn.us/kg-stats/geoconnex
   template: overrides/kg.html
   title: GEOCONNEX
-  tpf: https://apps.okn.us/ldf/geoconnex
+  tpf: https://apps.okn.us/kgf/geoconnex/latest/tpf
+- contact:
+    email: balhoff@renci.org
+    github: balhoff
+    label: Jim Balhoff
+  description: Babel creates cliques of equivalent identifiers across many biomedical
+    vocabularies
+  frink-options:
+    documentation-path: babel
+    kgf:
+      semantics:
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: babel
+  homepage: https://github.com/NCATSTranslator/Babel
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: babel
+  sparql: https://apps.okn.us/babel/sparql
+  template: overrides/kg.html
+  title: Babel KG
+  tpf: https://apps.okn.us/kgf/babel/latest/tpf
 - contact:
     email: balhoff@renci.org
     github: balhoff
@@ -42,14 +95,18 @@ kgs:
     OKN graphs
   frink-options:
     documentation-path: okn-void
+    kgf:
+      semantics:
+        prefixes:
+          okn-kg: https://purl.org/okn/frink/kg/
     lakefs-repo: okn-void
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://registry.okn.us/registry/kgs/okn-void/
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: okn-void
   sparql: https://apps.okn.us/okn-void/sparql
   template: overrides/kg.html
   title: OKN VoID graph descriptions
-  tpf: https://apps.okn.us/ldf/okn-void
 - contact:
     email: balhoff@renci.org
     github: balhoff
@@ -57,25 +114,46 @@ kgs:
   description: Integrated suite of OBO ontologies with precomputed inferred relationships
   frink-options:
     documentation-path: ubergraph
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - ubergraph-axioms
+        - reasoner
+        prefixes:
+          bican: https://purl.brain-bican.org/taxonomy/
+          bican-ccn: https://purl.brain-bican.org/taxonomy/CCN20230722#
+          chemrof: https://w3id.org/chemrof/
+          jcvi-nsf2: http://www.jcvi.org/framework/nsf2_full_mtg#
+          n2o: http://n2o.neo/custom/
+          reasoner: http://reasoner.renci.org/vocab/
+          ubergraph-axioms: http://translator.renci.org/ubergraph-axioms.ofn#
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#prefLabel
+          - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
     lakefs-repo: ubergraph
   homepage: https://github.com/INCATools/ubergraph/
+  kgf: https://apps.okn.us/kgf/ubergraph
   shortname: ubergraph
   sparql: https://apps.okn.us/ubergraph/sparql
   template: overrides/kg.html
   title: Ubergraph
-  tpf: https://apps.okn.us/ldf/ubergraph
+  tpf: https://apps.okn.us/kgf/ubergraph/latest/tpf
 - contact:
     email: balhoff@renci.org
     github: balhoff
     label: Jim Balhoff
   description: Wikidata is a free and open knowledge base that can be read and edited
     by both humans and machines
+  frink-options:
+    lakefs-repo: wikidata
   homepage: https://www.wikidata.org/
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: wikidata
-  sparql: https://frink.apps.renci.org/wikidata/sparql
+  sparql: https://qlever.dev/api/wikidata
   template: overrides/kg.html
   title: Wikidata
-  tpf: https://frink.apps.renci.org/ldf/wikidata
 - contact:
     email: chenc@udel.edu
     github: chenchuming
@@ -88,15 +166,36 @@ kgs:
     mechanisms.
   frink-options:
     documentation-path: prokn
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - prokn
+        prefixes:
+          allotrope-result: http://purl.allotrope.org/ontologies/result#
+          bao: http://www.bioassayontology.org/bao#
+          biolink-model: https://biolink.github.io/biolink-model/
+          chemrof: https://chemkg.github.io/chemrof/
+          edam: http://edamontology.org/
+          meshv: https://id.nlm.nih.gov/mesh/
+          prokn: https://research.bioinformatics.udel.edu/ProKN/rdf/
+          reproduceme: https://w3id.org/reproduceme#
+          schema: http://schema.org/
+          uniprot-core: http://purl.uniprot.org/core/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://schema.org/name
+          - http://purl.uniprot.org/core/scientificName
     lakefs-repo: prokn
   funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://research.bioinformatics.udel.edu/ProKN/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: prokn
   sparql: https://apps.okn.us/prokn/sparql
   stats: https://registry.okn.us/kg-stats/prokn
   template: overrides/kg.html
   title: Protein Knowledge Network
-  tpf: https://apps.okn.us/ldf/prokn
+  tpf: https://apps.okn.us/kgf/prokn/latest/tpf
 - contact:
     email: cli@uta.edu
     github: idirlab
@@ -105,6 +204,19 @@ kgs:
     carbon modeling, which is crucial for voluntary carbon markets.
   frink-options:
     documentation-path: soc-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - sockg
+        - sockg-ind
+        prefixes:
+          qudt: http://qudt.org/vocab/unit/
+          sockg: https://idir.uta.edu/sockg-ontology#
+          sockg-ind: https://idir.uta.edu/sockg-ontology/individuals/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
     lakefs-repo: soc-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
   homepage: https://idir.sockg.org/
@@ -112,8 +224,8 @@ kgs:
   sparql: https://apps.okn.us/sockg/sparql
   stats: https://registry.okn.us/kg-stats/soc-kg
   template: overrides/kg.html
-  title: SOC-KG
-  tpf: https://apps.okn.us/ldf/sockg
+  title: SOCKG
+  tpf: https://apps.okn.us/kgf/sockg/latest/tpf
 - contact:
     email: climatepub4kg@tuprd.onmicrosoft.com
     github: aayushacharya
@@ -122,6 +234,20 @@ kgs:
     of climate models.
   frink-options:
     documentation-path: climatepub4-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - climatepub4
+        - climatepub4-id
+        prefixes:
+          climatepub4: https://climatepub4kg.github.io/ontology#
+          climatepub4-id: https://climatepub4kg.github.io/id/
+        roles:
+          label:
+          - https://climatepub4kg.github.io/ontology#name
+          - https://climatepub4kg.github.io/ontology#title
+          - https://climatepub4kg.github.io/ontology#asciiname
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: climatepub4-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
   shortname: climatemodelskg
@@ -129,7 +255,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/climate-kg
   template: overrides/kg.html
   title: Climate Models KG
-  tpf: https://apps.okn.us/ldf/climatemodelskg
+  tpf: https://apps.okn.us/kgf/climatemodelskg/latest/tpf
 - contact:
     email: farhad.ameri@asu.edu
     github: fameri
@@ -139,15 +265,27 @@ kgs:
     Manufacturers.
   frink-options:
     documentation-path: sudokn-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - sudokn
+        prefixes:
+          iof-av: https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/
+          sudokn: http://asu.edu/semantics/SUDOKN/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#altLabel
     lakefs-repo: sudokn-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
   homepage: https://projects.engineering.asu.edu/sudokn/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: sudokn
   sparql: https://apps.okn.us/sudokn/sparql
   stats: https://registry.okn.us/kg-stats/sudokn
   template: overrides/kg.html
   title: SUDOKN
-  tpf: https://apps.okn.us/ldf/sudokn
+  tpf: https://apps.okn.us/kgf/sudokn/latest/tpf
 - contact:
     email: jeetvora@gwu.edu
     github: jeet-vora
@@ -157,15 +295,26 @@ kgs:
     literature.
   frink-options:
     documentation-path: biomarkerkg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - biomarker
+        prefixes:
+          biomarker: https://biomarkerkb.org/biomarker/
+          dbsnp: https://www.ncbi.nlm.nih.gov/snp/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biomarkerkg
   funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
   homepage: https://biomarkerkb.org/home/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: biomarkerkg
   sparql: https://apps.okn.us/biomarkerkg/sparql
   stats: https://registry.okn.us/kg-stats/biomarkerkg
   template: overrides/kg.html
   title: BiomarkerKB KG
-  tpf: https://apps.okn.us/ldf/biomarkerkg
+  tpf: https://apps.okn.us/kgf/biomarkerkg/latest/tpf
 - contact:
     email: jiaqi.gong@ua.edu
     github: SAIL-UA
@@ -174,6 +323,20 @@ kgs:
     health and justice for rural resilience.
   frink-options:
     documentation-path: rural-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - ruralkg
+        - ruralkg-prop
+        prefixes:
+          ruralkg: http://sail.ua.edu/ruralkg/
+          ruralkg-prop: http://sail.ua.edu/ruralkg/property/
+        roles:
+          label:
+          - https://schema.org/name
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#altLabel
+          - https://schema.org/alternateName
     lakefs-repo: rural-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
   shortname: ruralkg
@@ -181,21 +344,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/rural-kg
   template: overrides/kg.html
   title: Rural Resilience KG
-  tpf: https://apps.okn.us/ldf/ruralkg
-- contact:
-    email: lew.lefton@gmail.com
-    github: ''
-    label: Lew Lefton
-  description: Comprehensive information on scientific publications and related entities.
-  frink-options:
-    documentation-path: sem-open-alex-kg
-    lakefs-repo: sem-open-alex-kg
-  homepage: https://semopenalex.org/
-  shortname: semopenalex
-  sparql: https://apps.okn.us/semopenalex/sparql
-  template: overrides/kg.html
-  title: SemOpenAlex
-  tpf: https://apps.okn.us/ldf/semopenalex
+  tpf: https://apps.okn.us/kgf/ruralkg/latest/tpf
 - contact:
     email: lisa@renci.org
     github: lstillwe
@@ -210,16 +359,31 @@ kgs:
     agencies and academic institutions.
   frink-options:
     documentation-path: nasa-gesdisc
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - nasa-gesdisc-schema
+        - nasa-gesdisc-node
+        - nasa-gesdisc-rel
+        prefixes:
+          nasa-gesdisc-node: https://purl.org/okn/frink/kg/nasa-gesdisc/node/
+          nasa-gesdisc-rel: https://purl.org/okn/frink/kg/nasa-gesdisc/relationship/
+          nasa-gesdisc-schema: https://purl.org/okn/frink/kg/nasa-gesdisc/schema/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - https://schema.org/title
     lakefs-repo: nasa-gesdisc
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/nasa.yaml
   funding: null
   homepage: https://disc.gsfc.nasa.gov
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: nasa-gesdisc-kg
   sparql: https://apps.okn.us/nasa-gesdisc-kg/sparql
   stats: https://registry.okn.us/kg-stats/nasa-gesdisc-kg
   template: overrides/kg.html
   title: NASA-GESDISC-KG
-  tpf: https://apps.okn.us/ldf/nasa-gesdisc-kg
+  tpf: https://apps.okn.us/kgf/nasa-gesdisc-kg/latest/tpf
 - contact:
     email: morshedm@renci.org
     github: mahir256
@@ -228,14 +392,22 @@ kgs:
     external identifiers represented as RDF IRIs
   frink-options:
     documentation-path: identifier-mappings
+    kgf:
+      semantics:
+        prefixes:
+          ensembl: http://rdf.ebi.ac.uk/resource/ensembl/
+          loc-names: http://id.loc.gov/authorities/names/
+          pubchem-compound: http://rdf.ncbi.nlm.nih.gov/pubchem/compound/
+          worldcat-fast: http://id.worldcat.org/fast/
     lakefs-repo: identifier-mappings
   homepage: https://www.wikidata.org/
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: identifier-mappings
   sparql: https://apps.okn.us/identifier-mappings/sparql
   stats: https://registry.okn.us/kg-stats/identifier-mappings
   template: overrides/kg.html
   title: ID Mappings
-  tpf: https://apps.okn.us/ldf/identifier-mappings
+  tpf: https://apps.okn.us/kgf/identifier-mappings/latest/tpf
 - contact:
     email: sergio.baranzini@ucsf.edu
     github: baranzini-lab
@@ -245,16 +417,31 @@ kgs:
     \ Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments."
   frink-options:
     documentation-path: spoke-genelab
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - spoke-genelab
+        - spoke-genelab-node
+        - spoke-genelab-rel
+        prefixes:
+          spoke-genelab: https://purl.org/okn/frink/kg/spoke-genelab/schema/
+          spoke-genelab-node: https://purl.org/okn/frink/kg/spoke-genelab/node/
+          spoke-genelab-rel: https://purl.org/okn/frink/kg/spoke-genelab/relationship/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - https://purl.org/okn/frink/kg/spoke-genelab/schema/project_title
     lakefs-repo: spoke-genelab-kg
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-genelab.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://github.com/BaranziniLab/spoke_genelab
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: spoke-genelab
   sparql: https://apps.okn.us/spoke-genelab/sparql
   stats: https://registry.okn.us/kg-stats/spoke-genelab
   template: overrides/kg.html
   title: SPOKE GeneLab
-  tpf: https://apps.okn.us/ldf/spoke-genelab
+  tpf: https://apps.okn.us/kgf/spoke-genelab/latest/tpf
 - contact:
     email: sergio.baranzini@ucsf.edu
     github: baranzini-lab
@@ -264,16 +451,38 @@ kgs:
     across genomics, environmental science, and public health.
   frink-options:
     documentation-path: spoke-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - spoke-okn
+        - spoke-okn-rel
+        - spoke-okn-location
+        - spoke-okn-organism
+        - spoke-okn-sdoh
+        prefixes:
+          pubchem-inchikey: http://rdf.ncbi.nlm.nih.gov/pubchem/inchikey/
+          spoke-okn: https://purl.org/okn/frink/kg/spoke-okn/schema/
+          spoke-okn-location: https://purl.org/okn/frink/kg/spoke-okn/location/
+          spoke-okn-organism: https://purl.org/okn/frink/kg/spoke-okn/organism/
+          spoke-okn-rel: https://purl.org/okn/frink/kg/spoke-okn/relationship/
+          spoke-okn-sdoh: https://purl.org/okn/frink/kg/spoke-okn/sdoh/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - https://purl.org/okn/frink/kg/spoke-okn/schema/location_name
+          - https://purl.org/okn/frink/kg/spoke-okn/schema/state_name
+          - https://purl.org/okn/frink/kg/spoke-okn/schema/host_name
     lakefs-repo: spoke-kg
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-okn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://spoke.ucsf.edu
+  license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: spoke-okn
   sparql: https://apps.okn.us/spoke-okn/sparql
   stats: https://registry.okn.us/kg-stats/spoke-okn
   template: overrides/kg.html
   title: SPOKE-OKN
-  tpf: https://apps.okn.us/ldf/spoke-okn
+  tpf: https://apps.okn.us/kgf/spoke-okn/latest/tpf
 - contact:
     email: support@ndexbio.org
     github: ''
@@ -283,14 +492,57 @@ kgs:
     and post-translational modifications enriched with INDRA evidence metadata.
   frink-options:
     documentation-path: ncipidkg
+    kgf:
+      semantics:
+        prefixes:
+          indra: https://db.indra.bio/statements/
+          ncipid: http://example.org/okn/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: ncipidkg
   homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: ncipidkg
   sparql: https://apps.okn.us/ncipidkg/sparql
   stats: https://registry.okn.us/kg-stats/ncipidkg
   template: overrides/kg.html
   title: NCI-PID 2.0 KG
-  tpf: https://apps.okn.us/ldf/ncipidkg
+  tpf: https://apps.okn.us/kgf/ncipidkg/latest/tpf
+- contact:
+    email: support@ndexbio.org
+    github: ''
+    label: Cytoscape and NDEx Team
+  description: The NeST (Nested Systems in Tumors) Knowledge Graph converts the NeST
+    hierarchical map of cancer protein systems into RDF, together with the IAS (Integrated
+    Association Stringency) protein-association network from which the map was derived.
+    It captures the nested containment hierarchy of protein systems, their member
+    proteins, per-system cancer-mutation statistics and MONDO-typed cancer associations,
+    and ~210k scored protein-protein associations as reified statements.
+  frink-options:
+    documentation-path: nestkg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - ndexv
+        - nestv
+        - nest
+        prefixes:
+          ndexv: https://www.ndexbio.org/vocab/
+          nest: https://www.ndexbio.org/identifiers/
+          nestv: https://www.ndexbio.org/vocab/nest/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: nestkg
+  homepage: https://www.ndexbio.org/viewer/networks/9a8f5326-aa6e-11ea-aaef-0ac135e8bacf
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: nestkg
+  sparql: https://apps.okn.us/nestkg/sparql
+  stats: https://registry.okn.us/kg-stats/nestkg
+  template: overrides/kg.html
+  title: NeST KG
+  tpf: https://apps.okn.us/kgf/nestkg/latest/tpf
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -299,6 +551,14 @@ kgs:
     from the AOP-Wiki.
   frink-options:
     documentation-path: biobricks-aopwiki-kg
+    kgf:
+      semantics:
+        prefixes:
+          aopo: http://aopkb.org/aop_ontology#
+        roles:
+          label:
+          - http://purl.org/dc/elements/1.1/title
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biobricks-aopwiki-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/aopwikirdf-kg
@@ -307,7 +567,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/biobricks-aopwiki-kg
   template: overrides/kg.html
   title: BioBricks AOP-Wiki
-  tpf: https://apps.okn.us/ldf/biobricks-aopwiki
+  tpf: https://apps.okn.us/kgf/biobricks-aopwiki/latest/tpf
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -316,6 +576,16 @@ kgs:
     graph for cheminformatics and chemical safety data from EPA's CompTox database.
   frink-options:
     documentation-path: biobricks-ice-kg
+    kgf:
+      semantics:
+        prefixes:
+          bao: http://www.bioassayontology.org/bao#
+          comptox: https://comptox.epa.gov/dashboard/chemical/details/
+          ice: https://ice.ntp.niehs.nih.gov/property/
+          ice-data: http://example.com/ice/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biobricks-ice-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
@@ -324,7 +594,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/biobricks-ice-kg
   template: overrides/kg.html
   title: BioBricks ICE
-  tpf: https://apps.okn.us/ldf/biobricks-ice
+  tpf: https://apps.okn.us/kgf/biobricks-ice/latest/tpf
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -333,6 +603,14 @@ kgs:
     (MeSH) biomedical vocabulary.
   frink-options:
     documentation-path: biobricks-mesh-kg
+    kgf:
+      semantics:
+        roles:
+          label:
+          - http://id.nlm.nih.gov/mesh/vocab#prefLabel
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://id.nlm.nih.gov/mesh/vocab#altLabel
+          - http://id.nlm.nih.gov/mesh/vocab#casn1_label
     lakefs-repo: biobricks-mesh-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/mesh-kg
@@ -341,7 +619,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/biobricks-mesh-kg
   template: overrides/kg.html
   title: BioBricks MeSH
-  tpf: https://apps.okn.us/ldf/biobricks-mesh
+  tpf: https://apps.okn.us/kgf/biobricks-mesh/latest/tpf
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -350,6 +628,12 @@ kgs:
     annotations from PubChem.
   frink-options:
     documentation-path: biobricks-pubchem-annotations-kg
+    kgf:
+      semantics:
+        prefixes:
+          pubchem-annotation: http://rdf.ncbi.nlm.nih.gov/pubchem/annotation/
+          pubchem-compound: http://rdf.ncbi.nlm.nih.gov/pubchem/compound/
+          pubchem-substance: http://rdf.ncbi.nlm.nih.gov/pubchem/substance/
     lakefs-repo: biobricks-pubchem-annotations-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
@@ -358,7 +642,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/biobricks-pubchem-annotations-kg
   template: overrides/kg.html
   title: BioBricks PubChem Annotations
-  tpf: https://apps.okn.us/ldf/biobricks-pubchem-annotations
+  tpf: https://apps.okn.us/kgf/biobricks-pubchem-annotations/latest/tpf
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -367,6 +651,11 @@ kgs:
     data.
   frink-options:
     documentation-path: biobricks-tox21-kg
+    kgf:
+      semantics:
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biobricks-tox21-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
@@ -375,7 +664,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/biobricks-tox21-kg
   template: overrides/kg.html
   title: BioBricks Tox21
-  tpf: https://apps.okn.us/ldf/biobricks-tox21
+  tpf: https://apps.okn.us/kgf/biobricks-tox21/latest/tpf
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -384,6 +673,14 @@ kgs:
     screening data.
   frink-options:
     documentation-path: biobricks-toxcast-kg
+    kgf:
+      semantics:
+        prefixes:
+          comptox: https://comptox.epa.gov/dashboard/
+          toxcast-data: http://example.com/toxcast/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biobricks-toxcast-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
@@ -392,7 +689,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/biobricks-toxcast-kg
   template: overrides/kg.html
   title: BioBricks ToxCast
-  tpf: https://apps.okn.us/ldf/biobricks-toxcast
+  tpf: https://apps.okn.us/kgf/biobricks-toxcast/latest/tpf
 - contact:
     email: xzhang33@nd.edu
     github: XiangqiWang77
@@ -401,15 +698,26 @@ kgs:
     network for the management of wildlife in the context of climate change
   frink-options:
     documentation-path: wildlife-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - wildlifekn
+        prefixes:
+          inaturalist: https://www.inaturalist.org/observations/
+          wildlifekn: https://wildlife.proto-okn.net/kg/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: wildlife-kg
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
   homepage: https://sites.nd.edu/kn-wildlife/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: wildlifekn
   sparql: https://apps.okn.us/wildlifekn/sparql
   template: overrides/kg.html
   title: Wildlife-KN
-  tpf: https://apps.okn.us/ldf/wildlifekn
+  tpf: https://apps.okn.us/kgf/wildlifekn/latest/tpf
 - contact:
     email: yeghialt@ucmail.uc.edu
     github: ''
@@ -420,6 +728,16 @@ kgs:
     models.
   frink-options:
     documentation-path: ufokn-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - ufokn
+        prefixes:
+          kwg-ont-https: https://stko-kwg.geog.ucsb.edu/lod/ontology#
+          ufokn: https://ufokn.org/id/
+        roles:
+          label:
+          - https://schema.org/name
     lakefs-repo: urban-flooding-open-knowledge-network
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
   homepage: https://ufokn.com
@@ -428,7 +746,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/wen-kg
   template: overrides/kg.html
   title: UF-OKN
-  tpf: https://apps.okn.us/ldf/ufokn
+  tpf: https://apps.okn.us/kgf/ufokn/latest/tpf
 - contact:
     email: yuzhou.chen@temple.edu
     github: yuzhouguangc
@@ -437,6 +755,16 @@ kgs:
     to Address Homelessness With Explainable AI
   frink-options:
     documentation-path: dream-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - dreamkg
+        prefixes:
+          dreamkg: https://purl.org/okn/frink/kg/dreamkg/
+          schema: http://schema.org/
+        roles:
+          label:
+          - http://schema.org/name
     lakefs-repo: dream-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
   homepage: https://dreamkg.com/
@@ -445,7 +773,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/dream-kg
   template: overrides/kg.html
   title: DREAM-KG
-  tpf: https://apps.okn.us/ldf/dreamkg
+  tpf: https://apps.okn.us/kgf/dreamkg/latest/tpf
 - contacts:
   - email: Erik.Wright@bcm.edu
     github: WrightLabScience
@@ -453,6 +781,15 @@ kgs:
   description: EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)
   frink-options:
     documentation-path: evoweb
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - evoweb
+        prefixes:
+          evoweb: https://purl.org/okn/frink/kg/evoweb/schema/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: evoweb
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://data.niaid.nih.gov/
@@ -461,7 +798,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/evoweb
   template: overrides/kg.html
   title: EvoWeb
-  tpf: https://apps.okn.us/ldf/evoweb
+  tpf: https://apps.okn.us/kgf/evoweb/latest/tpf
 - contacts:
   - email: asu@scripps.edu
     github: andrewsu
@@ -469,18 +806,40 @@ kgs:
   - email: plwhetzel@gmail.com
     github: twhetzel
     label: Trish Whetzel
-  description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
+  description: "Query pre-computed differential gene expression (log2 fold changes\
+    \ and adjusted p-values) for genes across diseases, tissues, cell types, developmental\
+    \ stages, and sex, derived from the bulk EMBL-EBI Expression Atlas \u2014 4,668\
+    \ studies and 14,850 contrasts carrying 8.8 million differential-expression associations\
+    \ across 70 organisms. Use this graph to retrieve computed differential-expression\
+    \ values. It covers essentially all of the bulk Expression Atlas, but it is NOT\
+    \ a cross-repository dataset-discovery index \u2014 the Single Cell Expression\
+    \ Atlas is excluded entirely, baseline (non-differential) experiments carry no\
+    \ expression values, and disease annotation is sparse free text. To discover the\
+    \ full set of datasets for a condition (for example when assembling studies for\
+    \ your own pooled or meta-analysis), use a dataset-discovery index such as the\
+    \ NIAID Data Ecosystem (nde) graph."
   frink-options:
     documentation-path: gene-expression-atlas-okn
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - wobd
+        prefixes:
+          wobd: http://purl.org/okn/wobd/
+        roles:
+          label:
+          - https://w3id.org/biolink/vocab/name
+          - https://w3id.org/biolink/vocab/symbol
     lakefs-repo: gene-expression-atlas-okn
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://www.ebi.ac.uk/gxa/home
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: gene-expression-atlas-okn
   sparql: https://apps.okn.us/gene-expression-atlas-okn/sparql
   stats: https://registry.okn.us/kg-stats/gene-expression-atlas-okn
   template: overrides/kg.html
   title: Gene Expression Atlas
-  tpf: https://apps.okn.us/ldf/gene-expression-atlas-okn
+  tpf: https://apps.okn.us/kgf/gene-expression-atlas-okn/latest/tpf
 - contacts:
   - email: asu@scripps.edu
     github: andrewsu
@@ -488,13 +847,35 @@ kgs:
   - email: plwhetzel@gmail.com
     github: twhetzel
     label: Trish Whetzel
-  description: The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated
-    disease datasets. These include datasets from NIAID-funded repositories as well
-    as globally-relevant infectious and immune-mediated disease (IID) repositories
-    from NIH and beyond. The datasets include -omics data, clinical data, epidemiological
-    data, pathogen-host interaction data, flow cytometry, and imaging.
+  description: "The nde (NIAID Data Ecosystem) knowledge graph is a dataset-discovery\
+    \ index for finding biomedical research datasets \u2014 including gene-expression\
+    \ / transcriptomics data (RNA-seq, microarray, single-cell / single-nucleus),\
+    \ other -omics, clinical, epidemiological, imaging, and flow-cytometry data \u2014\
+    \ searchable by disease or condition, organism, and source repository. It mirrors\
+    \ dataset metadata from NCBI GEO, ArrayExpress, and 70+ repositories; coverage\
+    \ is deepest for infectious and immune-mediated disease (its NIAID mission) but,\
+    \ because it indexes general-purpose repositories such as GEO, it also covers\
+    \ datasets for many non-infectious diseases and conditions (e.g. cancer, diabetes,\
+    \ kidney disease). Use it to find and triage candidate datasets for a specific\
+    \ disease \u2014 for example when assembling studies for a pooled or meta-analysis\
+    \ of differential gene expression. It stores dataset-level metadata and links\
+    \ to the primary repository; it does NOT store per-sample data or computed differential-expression\
+    \ values (log2 fold changes / p-values)."
   frink-options:
     documentation-path: nde
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - wobd-okn
+        prefixes:
+          ror: https://ror.org/
+          schema: http://schema.org/
+          uniprot-taxonomy: https://www.uniprot.org/taxonomy/
+          wobd-okn: https://okn.wobd.org/
+        roles:
+          label:
+          - http://schema.org/name
+          - http://schema.org/alternateName
     lakefs-repo: nde
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://data.niaid.nih.gov/
@@ -503,7 +884,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/nde
   template: overrides/kg.html
   title: NIAID Data Ecosystem KG
-  tpf: https://apps.okn.us/ldf/nde
+  tpf: https://apps.okn.us/kgf/nde/latest/tpf
 - contacts:
   - email: ct2865@cumc.columbia.edu
     github: CaseyTa
@@ -515,14 +896,24 @@ kgs:
     from electronic health records
   frink-options:
     documentation-path: oard-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - cohd
+        prefixes:
+          cohd: https://rare.cohd.io/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: oard-kg
   funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://github.com/WengLab-InformaticsResearch/oard-react
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: oard-kg
   sparql: https://apps.okn.us/oard-kg/sparql
   template: overrides/kg.html
   title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
-  tpf: https://apps.okn.us/ldf/oard-kg
+  tpf: https://apps.okn.us/kgf/oard-kg/latest/tpf
 - contacts:
   - email: danny.e.oneal@gmail.com
     github: danny-oneal
@@ -533,16 +924,36 @@ kgs:
   description: SCALES is an integrated justice platform to connect criminal justice
     data across data silos.
   frink-options:
+    augmentations:
+    - name: map-predicate
+      params:
+        from:
+        - http://release.niem.gov/niem/niem-core/5.0/#EntityName
+        - http://release.niem.gov/niem/niem-core/5.0/#PersonFullName
+        - http://release.niem.gov/niem/niem-core/5.0/#OrganizationName
+        - http://release.niem.gov/niem/niem-core/5.0/#FacilityName
+        - http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName
+        to: http://www.w3.org/2000/01/rdf-schema#label
     documentation-path: scales-kg
+    kgf:
+      semantics:
+        roles:
+          label:
+          - http://release.niem.gov/niem/niem-core/5.0/#EntityName
+          - http://release.niem.gov/niem/niem-core/5.0/#PersonFullName
+          - http://release.niem.gov/niem/niem-core/5.0/#OrganizationName
+          - http://release.niem.gov/niem/domains/jxdm/7.2/#CourtName
+          - http://release.niem.gov/niem/niem-core/5.0/#FacilityName
     lakefs-repo: scales-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
   homepage: https://scales-okn.org/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: scales
   sparql: https://apps.okn.us/scales/sparql
   stats: https://registry.okn.us/kg-stats/scales-kg
   template: overrides/kg.html
   title: SCALES
-  tpf: https://apps.okn.us/ldf/scales
+  tpf: https://apps.okn.us/kgf/scales/latest/tpf
 - contacts:
   - email: david.kedrowski@maine.edu
     github: dkedrowski
@@ -554,6 +965,30 @@ kgs:
     streams, waterbodies and wells and their locations.
   frink-options:
     documentation-path: hydrology-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - efive
+        - isgs
+        - isgs-data
+        - mgs
+        - mgs-data
+        prefixes:
+          datacommons: https://datacommons.org/browser/
+          efive: http://www.semanticweb.org/efive/
+          isgs: http://sawgraph.spatialai.org/v1/il-isgs#
+          isgs-data: http://sawgraph.spatialai.org/v1/il-isgs-data#
+          mgs: http://sawgraph.spatialai.org/v1/me-mgs#
+          mgs-data: http://sawgraph.spatialai.org/v1/me-mgs-data#
+          nhdplusv2-comid: https://geoconnex.us/nhdplusv2/comid/
+          sawgraph-sdwis-h: http://sawgraph.spatialai.org/v1/us-sdwis#
+          stad-mls: http://purl.org/spatialai/stad/v2/mls/
+        roles:
+          label:
+          - https://schema.org/name
+          - http://purl.org/dc/terms/title
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://sawgraph.spatialai.org/v1/us-sdwis#pwsName
     lakefs-repo: hydrology-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
@@ -562,7 +997,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/hydrology-kg
   template: overrides/kg.html
   title: SAWGraph Hydrology KG
-  tpf: https://apps.okn.us/ldf/hydrologykg
+  tpf: https://apps.okn.us/kgf/hydrologykg/latest/tpf
 - contacts:
   - email: david.kedrowski@maine.edu
     github: dkedrowski
@@ -577,6 +1012,14 @@ kgs:
     contiguous states in the U.S.
   frink-options:
     documentation-path: spatial-kg
+    kgf:
+      semantics:
+        prefixes:
+          datacommons: https://datacommons.org/browser/
+          saw-geo: http://sawgraph.spatialai.org/v1/saw_geo#
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: spatial-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
@@ -585,7 +1028,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/spatial-kg
   template: overrides/kg.html
   title: SAWGraph Spatial KG
-  tpf: https://apps.okn.us/ldf/spatialkg
+  tpf: https://apps.okn.us/kgf/spatialkg/latest/tpf
 - contacts:
   - email: drjieliu@umich.edu
     github: jieliu6
@@ -593,6 +1036,22 @@ kgs:
   description: "PanKgraph \u2014 PanKbase Knowledge Graph (NIDDK)"
   frink-options:
     documentation-path: pankbase-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - pankgraph
+        - pankgraph-node
+        - pankgraph-rel
+        prefixes:
+          pankgraph: https://purl.org/okn/frink/kg/pankgraph/schema/
+          pankgraph-node: https://purl.org/okn/frink/kg/pankgraph/node/
+          pankgraph-rel: https://purl.org/okn/frink/kg/pankgraph/relationship/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
+          - https://purl.org/okn/frink/kg/pankgraph/schema/gene_name
+          - https://purl.org/okn/frink/kg/pankgraph/schema/tissue_name
     lakefs-repo: pankbase-kg
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/pankgraph.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
@@ -602,7 +1061,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/pankbase-kg
   template: overrides/kg.html
   title: PanKgraph
-  tpf: https://apps.okn.us/ldf/pankgraph
+  tpf: https://apps.okn.us/kgf/pankgraph/latest/tpf
 - contacts:
   - email: flannick@broadinstitute.org
     github: flannick
@@ -615,25 +1074,79 @@ kgs:
     Ecosystem (CFDE).
   frink-options:
     documentation-path: digcfdekg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - digcfdekg
+        - digcfdekg-node
+        - digcfdekg-rel
+        prefixes:
+          digcfdekg: https://purl.org/okn/frink/kg/digcfdekg/schema/
+          digcfdekg-node: https://purl.org/okn/frink/kg/digcfdekg/node/
+          digcfdekg-rel: https://purl.org/okn/frink/kg/digcfdekg/relationship/
+          ordo: http://www.orpha.net/ORDO/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: digcfdekg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://cfdeknowledge.org/
   shortname: digcfdekg
+  sparql: https://apps.okn.us/digcfdekg/sparql
   stats: https://registry.okn.us/kg-stats/digcfdekg
   template: overrides/kg.html
   title: CFDE REVEAL Knowledge Graph
+  tpf: https://apps.okn.us/kgf/digcfdekg/latest/tpf
+- contacts:
+  - email: jeetvora@gwu.edu
+    github: jeet-vora
+    label: Jeet Vora
+  - email: pmcneely@gwu.edu
+    github: pmcneely
+    label: Patrick McNeely
+  - email: sbhuiyan28@email.gwu.edu
+    github: ubhuiyan
+    label: Urnisha Bhuiyan
+  - email: mazumder@gwu.edu
+    github: rajamazumder
+    label: Raja Mazumder
+  description: A knowledge graph of glycans, glycoproteins, genes that code for these
+    proteins and glycosylation sites integrated with protein, gene, disease and publication
+    data.
+  frink-options:
+    documentation-path: glygenkg
+    lakefs-repo: glygenkg
+  funding: https://reporter.nih.gov/project-details/10494610
+  homepage: https://www.glygen.org/
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: glygenkg
+  stats: https://registry.okn.us/kg-stats/glygenkg
+  template: overrides/kg.html
+  title: GlyGen KG
 - contacts:
   - email: jinlian.wang@uth.tmc.edu
-    github: wnagjl99
+    github: wangjl99
     label: Jinlian Wang
   description: RDKG is an open knowledge graph for rare diseases that integrates standardized
     disease identifiers and cross-references to support discovery and evidence synthesis.
   frink-options:
     documentation-path: rdkg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - rdaccelerate
+        prefixes:
+          rdaccelerate: https://rdaccelerate.org/resource/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#prefLabel
     lakefs-repo: rdkg
   shortname: rdkg
+  sparql: https://apps.okn.us/rdkg/sparql
   template: overrides/kg.html
   title: Rare Disease Knowledge Graph
+  tpf: https://apps.okn.us/kgf/rdkg/latest/tpf
 - contacts:
   - email: johnbeve@buffalo.edu
     github: johnbeve
@@ -644,14 +1157,26 @@ kgs:
   description: Knowledge graph Promoting Healthy Aging through Semantic Enrichment
   frink-options:
     documentation-path: phases-kg
+    kgf:
+      semantics:
+        prefixes:
+          hbcp: http://humanbehaviourchange.org/ontology/
+          unep-sdg: http://purl.unep.org/sdg/
+        roles:
+          label:
+          - http://www.w3.org/2004/02/skos/core#prefLabel
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
+          - http://www.w3.org/2004/02/skos/core#altLabel
     lakefs-repo: phases-kg
   funding: https://reporter.nih.gov/project-details/11184405
   homepage: https://healthyphases.org/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: phaseskg
   sparql: https://apps.okn.us/phaseskg/sparql
   template: overrides/kg.html
   title: PHASES KG
-  tpf: https://apps.okn.us/ldf/phaseskg
+  tpf: https://apps.okn.us/kgf/phaseskg/latest/tpf
 - contacts:
   - email: katrina.schweikert@maine.edu
     github: kschweikert
@@ -664,6 +1189,25 @@ kgs:
     (FRS) together with their NAICS industry classification and the spatial location.
   frink-options:
     documentation-path: fio-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - fio
+        - fio-epa
+        - fio-naics
+        - fio-epa-data
+        prefixes:
+          datacommons: https://datacommons.org/browser/
+          fio: http://w3id.org/fio/v1/fio#
+          fio-epa: http://w3id.org/fio/v1/epa-frs#
+          fio-epa-data: http://w3id.org/fio/v1/epa-frs-data#
+          fio-naics: http://w3id.org/fio/v1/naics#
+          protonsys: http://proton.semanticweb.org/protonsys#
+          schema: http://schema.org/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
     lakefs-repo: fio-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
@@ -672,7 +1216,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/fio-kg
   template: overrides/kg.html
   title: SAWGraph FRS KG
-  tpf: https://apps.okn.us/ldf/fiokg
+  tpf: https://apps.okn.us/kgf/fiokg/latest/tpf
 - contacts:
   - email: katrina.schweikert@maine.edu
     github: kschweikert
@@ -686,6 +1230,32 @@ kgs:
     substances and the measurement values observed.
   frink-options:
     documentation-path: sawgraph-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - sawgraph-me
+        - sawgraph-me-data
+        - sawgraph-wqp
+        - sawgraph-wqp-data
+        - sawgraph-sdwis
+        - saw-water
+        prefixes:
+          qudt: http://qudt.org/vocab/unit/
+          saw-water: http://sawgraph.spatialai.org/v1/saw_water#
+          sawgraph-me: http://w3id.org/sawgraph/v1/me-egad#
+          sawgraph-me-data: http://w3id.org/sawgraph/v1/me-egad-data#
+          sawgraph-sdwis: http://w3id.org/sawgraph/v1/us-sdwis#
+          sawgraph-sdwis-h: http://sawgraph.spatialai.org/v1/us-sdwis#
+          sawgraph-wqp: http://w3id.org/sawgraph/v1/us-wqp#
+          sawgraph-wqp-data: http://w3id.org/sawgraph/v1/us-wqp-data#
+          schema: http://schema.org/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
+          - http://w3id.org/sawgraph/v1/me-egad#samplePointWebName
+          - http://w3id.org/sawgraph/v1/us-wqp#siteName
+          - http://www.w3.org/2004/02/skos/core#altLabel
     lakefs-repo: sawgraph-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
@@ -694,23 +1264,44 @@ kgs:
   stats: https://registry.okn.us/kg-stats/sawgraph
   template: overrides/kg.html
   title: SAWGraph PFAS KG
-  tpf: https://apps.okn.us/ldf/sawgraph
+  tpf: https://apps.okn.us/kgf/sawgraph/latest/tpf
 - contacts:
+  - email: mbukhari1@pride.hofstra.edu
+    label: Mustafa Bukhari
+  - email: Marco.Romanelli@hofstra.edu
+    label: Dr. Marco Romanelli
+  - email: RocheRey.C.DeGuzman@hofstra.edu
+    label: Dr. Roche C. de Guzman
   - email: psingh37@pride.hofstra.edu
     github: Prabhadeus
     label: Prabhjot Singh
-  description: Knowledge graph constructed from FDA MAUDE adverse event reports using
-    standardized FDA product codes.
+  description: A unified medical-device knowledge graph integrating regulatory, clinical,
+    research, safety, and other relevant data from multiple sources.
   frink-options:
-    documentation-path: maudekg
-    lakefs-repo: maude-kg
-  homepage: https://github.com/Prabhadeus/Proto-OKN
-  shortname: maudekg
-  sparql: https://apps.okn.us/maudekg/sparql
-  stats: https://registry.okn.us/kg-stats/maudekg
+    documentation-path: medical-device-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - mdkg
+        - mdkg-device
+        - mdkg-report
+        prefixes:
+          mdkg: http://medicaldevice.com/ontology/
+          mdkg-device: http://medicaldevice.com/resource/device/
+          mdkg-report: http://medicaldevice.com/resource/report/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://medicaldevice.com/ontology/label
+    lakefs-repo: medical-device-kg
+  homepage: https://github.com/medical-device-design
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: medical-device-kg
+  sparql: https://apps.okn.us/medical-device-kg/sparql
+  stats: https://registry.okn.us/kg-stats/medical-device-kg
   template: overrides/kg.html
-  title: FDA MAUDE Adverse Event Knowledge Graph
-  tpf: https://apps.okn.us/ldf/maudekg
+  title: Medical Device Knowledge Graph
+  tpf: https://apps.okn.us/kgf/medical-device-kg/latest/tpf
 - contacts:
   - email: tianyi@purdue.edu
     github: tianyi-zhang
@@ -722,15 +1313,30 @@ kgs:
     software supply chains.
   frink-options:
     documentation-path: secure-chain-kg
+    kgf:
+      semantics:
+        prefixes:
+          crates: https://crates.io/crates/
+          cwe: https://cwe.mitre.org/data/definitions/
+          nvd: https://nvd.nist.gov/vuln/detail/
+          pypi: https://pypi.org/project/
+          schema: http://schema.org/
+          spdx-license: https://spdx.org/licenses/
+        roles:
+          label:
+          - http://schema.org/name
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - https://w3id.org/secure-chain/versionName
     lakefs-repo: secure-chain-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
   homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: securechainkg
   sparql: https://apps.okn.us/securechainkg/sparql
   stats: https://registry.okn.us/kg-stats/secure-chain-kg
   template: overrides/kg.html
   title: SecureChain KG
-  tpf: https://apps.okn.us/ldf/securechainkg
+  tpf: https://apps.okn.us/kgf/securechainkg/latest/tpf
 - contacts:
   - email: vchaudhri@acm.org
     github: vchaudhri
@@ -756,6 +1362,10 @@ kgs:
     neighborhood information.
   frink-options:
     documentation-path: neighborhood-kg
+    kgf:
+      semantics:
+        prefixes:
+          phila: https://metadata.phila.gov/
     lakefs-repo: neighborhood-information-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
   shortname: nikg
@@ -763,4 +1373,4 @@ kgs:
   stats: https://registry.okn.us/kg-stats/nikg
   template: overrides/kg.html
   title: Neighborhood Information KG
-  tpf: https://apps.okn.us/ldf/nikg
+  tpf: https://apps.okn.us/kgf/nikg/latest/tpf

@@ -3,7 +3,7 @@ distinct_subjects: 71430662
 distinct_objects: 135184264
 properties: 90
 classes: 79
-last_checked: '2026-05-21'
+last_checked: '2026-10-04'
 class_partitions:
 - uri: https://schema.org/Dataset
   label: schema:Dataset
@@ -36,7 +36,7 @@ class_partitions:
   label: GW
   count: 1435538
 - uri: http://gnis-ld.org/lod/gnis/ontology/Feature
-  label: Feature
+  label: gnis:Feature
   count: 969026
 - uri: http://www.opengis.net/ont/geosparql#Geometry
   label: geo:Geometry
@@ -65,11 +65,11 @@ class_partitions:
 - uri: http://www.opengis.net/ont/sf#LineString
   label: sf:LineString
   count: 34084
-- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_WaterBody
-  label: hyf:HY_WaterBody
-  count: 34082
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_FlowPath
   label: hyf:HY_FlowPath
+  count: 34082
+- uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_WaterBody
+  label: hyf:HY_WaterBody
   count: 34082
 - uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/SP
   label: SP
@@ -102,7 +102,7 @@ class_partitions:
   label: schema:AdministrativeArea
   count: 3299
 - uri: http://gnis-ld.org/lod/gnis/ontology/County
-  label: County
+  label: gnis:County
   count: 3243
 - uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/ST-CA
   label: ST-CA
@@ -212,11 +212,11 @@ class_partitions:
 - uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/FA-SPS
   label: FA-SPS
   count: 57
+- uri: http://gnis-ld.org/lod/gnis/ontology/State
+  label: gnis:State
+  count: 56
 - uri: https://schema.org/State
   label: schema:State
-  count: 56
-- uri: http://gnis-ld.org/lod/gnis/ontology/State
-  label: State
   count: 56
 - uri: https://api.waterdata.usgs.gov/ogcapi/v0/collections/site-types/items/SB-CV
   label: SB-CV
@@ -267,11 +267,11 @@ property_partitions:
 - uri: https://schema.org/temporalCoverage
   label: schema:temporalCoverage
   count: 23613966
-- uri: https://schema.org/encodingFormat
-  label: schema:encodingFormat
-  count: 23484830
 - uri: https://schema.org/contentUrl
   label: schema:contentUrl
+  count: 23484830
+- uri: https://schema.org/encodingFormat
+  label: schema:encodingFormat
   count: 23484830
 - uri: http://purl.org/dc/terms/conformsTo
   label: dct:conformsTo
@@ -285,11 +285,11 @@ property_partitions:
 - uri: https://schema.org/propertyID
   label: schema:propertyID
   count: 4420144
-- uri: http://www.opengis.net/ont/geosparql#hasGeometry
-  label: geo:hasGeometry
-  count: 3788137
 - uri: http://www.opengis.net/ont/geosparql#asWKT
   label: geo:asWKT
+  count: 3788137
+- uri: http://www.opengis.net/ont/geosparql#hasGeometry
+  label: geo:hasGeometry
   count: 3788137
 - uri: https://schema.org/geo
   label: schema:geo
@@ -303,11 +303,11 @@ property_partitions:
 - uri: http://www.opengis.net/ont/geosparql#crs
   label: geo:crs
   count: 3345348
-- uri: https://schema.org/longitude
-  label: schema:longitude
-  count: 2811162
 - uri: https://schema.org/latitude
   label: schema:latitude
+  count: 2811162
+- uri: https://schema.org/longitude
+  label: schema:longitude
   count: 2811162
 - uri: https://schema.org/measurementMethod
   label: schema:measurementMethod
@@ -333,41 +333,41 @@ property_partitions:
 - uri: https://schema.org/measurementTechnique
   label: schema:measurementTechnique
   count: 1071496
+- uri: http://gnis-ld.org/lod/gnis/ontology/county
+  label: gnis:county
+  count: 969026
 - uri: http://gnis-ld.org/lod/gnis/ontology/dateFeatureCreated
-  label: dateFeatureCreated
+  label: gnis:dateFeatureCreated
+  count: 969026
+- uri: http://gnis-ld.org/lod/gnis/ontology/dateFeatureEdited
+  label: gnis:dateFeatureEdited
+  count: 969026
+- uri: http://gnis-ld.org/lod/gnis/ontology/featureId
+  label: gnis:featureId
+  count: 969026
+- uri: http://gnis-ld.org/lod/gnis/ontology/officialName
+  label: gnis:officialName
+  count: 969026
+- uri: http://gnis-ld.org/lod/gnis/ontology/state
+  label: gnis:state
   count: 969026
 - uri: http://purl.org/dc/terms/created
   label: dct:created
   count: 969026
-- uri: http://gnis-ld.org/lod/gnis/ontology/dateFeatureEdited
-  label: dateFeatureEdited
-  count: 969026
-- uri: http://gnis-ld.org/lod/gnis/ontology/officialName
-  label: officialName
-  count: 969026
-- uri: http://gnis-ld.org/lod/gnis/ontology/featureId
-  label: featureId
-  count: 969026
-- uri: http://gnis-ld.org/lod/gnis/ontology/state
-  label: state
-  count: 969026
-- uri: http://gnis-ld.org/lod/gnis/ontology/county
-  label: county
-  count: 969026
 - uri: http://purl.org/dc/terms/modified
   label: dct:modified
   count: 969026
-- uri: schema:longitude
-  label: schema:longitude
-  count: 833051
 - uri: schema:latitude
   label: schema:latitude
   count: 833051
+- uri: schema:longitude
+  label: schema:longitude
+  count: 833051
 - uri: http://gnis-ld.org/lod/gnis/ontology/description
-  label: description
+  label: gnis:description
   count: 822529
 - uri: http://gnis-ld.org/lod/gnis/ontology/history
-  label: history
+  label: gnis:history
   count: 786766
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/containingCatchment
   label: hyf:containingCatchment
@@ -396,17 +396,17 @@ property_partitions:
 - uri: https://schema.org/dateModified
   label: schema:dateModified
   count: 130259
-- uri: https://schema.org/unitCode
-  label: schema:unitCode
-  count: 127565
 - uri: https://schema.org/duration
   label: schema:duration
   count: 127565
-- uri: https://www.opengis.net/def/schema/hy_features/hyf/interpolative
-  label: hyf:interpolative
-  count: 118526
+- uri: https://schema.org/unitCode
+  label: schema:unitCode
+  count: 127565
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/HY_DistanceFromReferent
   label: hyf:HY_DistanceFromReferent
+  count: 118526
+- uri: https://www.opengis.net/def/schema/hy_features/hyf/interpolative
+  label: hyf:interpolative
   count: 118526
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/distanceExpression
   label: hyf:distanceExpression
@@ -429,11 +429,11 @@ property_partitions:
 - uri: https://schema.org/isBasedOn
   label: schema:isBasedOn
   count: 49424
-- uri: schema:line
-  label: schema:line
-  count: 34082
 - uri: https://www.wikidata.org/wiki/Property:P2043
   label: Property:P2043
+  count: 34082
+- uri: schema:line
+  label: schema:line
   count: 34082
 - uri: https://www.opengis.net/def/schema/hy_features/hyf/downstreamWaterbody
   label: hyf:downstreamWaterbody
@@ -456,23 +456,23 @@ property_partitions:
 - uri: https://schema.org/sname
   label: schema:sname
   count: 18725
-- uri: https://schema.org/frequency
-  label: schema:frequency
-  count: 7727
 - uri: https://schema.org/dateUpdated
   label: schema:dateUpdated
   count: 7727
+- uri: https://schema.org/frequency
+  label: schema:frequency
+  count: 7727
 - uri: http://gnis-ld.org/lod/gnis/ontology/countyName
-  label: countyName
+  label: gnis:countyName
   count: 3268
 - uri: http://gnis-ld.org/lod/gnis/ontology/countyCode
-  label: countyCode
+  label: gnis:countyCode
   count: 3243
-- uri: https://schema.org/about
-  label: schema:about
-  count: 2536
 - uri: http://www.opengeospatial.org/standards/waterml2/hy_features/flowpath
   label: hyf-old:flowpath
+  count: 2536
+- uri: https://schema.org/about
+  label: schema:about
   count: 2536
 - uri: https://schema.org/keywords
   label: schema:keywords
@@ -492,11 +492,11 @@ property_partitions:
 - uri: https://schema.org/email
   label: schema:email
   count: 515
-- uri: https://schema.org/isAccessibleForFree
-  label: schema:isAccessibleForFree
-  count: 442
 - uri: https://schema.org/image
   label: schema:image
+  count: 442
+- uri: https://schema.org/isAccessibleForFree
+  label: schema:isAccessibleForFree
   count: 442
 - uri: https://schema.org/supersededBy
   label: schema:supersededBy
@@ -505,10 +505,10 @@ property_partitions:
   label: schema:sameAs
   count: 118
 - uri: http://gnis-ld.org/lod/gnis/ontology/stateCode
-  label: stateCode
+  label: gnis:stateCode
   count: 112
 - uri: http://gnis-ld.org/lod/gnis/ontology/stateName
-  label: stateName
+  label: gnis:stateName
   count: 65
 - uri: https://schema.org/line
   label: schema:line

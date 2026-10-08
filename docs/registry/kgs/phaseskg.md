@@ -6,10 +6,21 @@ description: Knowledge graph Promoting Healthy Aging through Semantic Enrichment
 homepage: https://healthyphases.org/
 funding: https://reporter.nih.gov/project-details/11184405
 sparql: https://apps.okn.us/phaseskg/sparql
-tpf: https://apps.okn.us/ldf/phaseskg
+tpf: https://apps.okn.us/kgf/phaseskg/latest/tpf
 frink-options:
   lakefs-repo: phases-kg
   documentation-path: phases-kg
+  kgf:
+    semantics:
+      prefixes:
+        hbcp: "http://humanbehaviourchange.org/ontology/"
+        unep-sdg: "http://purl.unep.org/sdg/"
+      roles:
+        label:
+          - "http://www.w3.org/2004/02/skos/core#prefLabel"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://purl.org/dc/terms/title"
+          - "http://www.w3.org/2004/02/skos/core#altLabel"
 contacts:
   - email: "johnbeve@buffalo.edu"
     github: "johnbeve"
@@ -17,6 +28,7 @@ contacts:
   - email: "rhurley3@buffalo.edu"
     github: "Regina-Hurley"
     label: "Regina Hurley"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 The HealthyPhases Project promotes healthy aging through the semantic enrichment of solitude research (PHASES), creating standardized frameworks for understanding the relationship between solitude and gerotranscendence.
 Our multidisciplinary team brings together expertise in ontology development, psychology, computer science, and gerontology to address challenges of terminological ambiguity and data interoperability in solitude and aging research.

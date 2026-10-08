@@ -7,10 +7,24 @@ stats: https://registry.okn.us/kg-stats/rural-kg
 #homepage: 
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
 sparql: https://apps.okn.us/ruralkg/sparql
-tpf: https://apps.okn.us/ldf/ruralkg
+tpf: https://apps.okn.us/kgf/ruralkg/latest/tpf
 frink-options:
   lakefs-repo: rural-kg
   documentation-path: rural-kg
+  kgf:
+    semantics:
+      prefixes:
+        ruralkg: "http://sail.ua.edu/ruralkg/"
+        ruralkg-prop: "http://sail.ua.edu/ruralkg/property/"
+      roles:
+        label:
+          - "https://schema.org/name"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://www.w3.org/2004/02/skos/core#altLabel"
+          - "https://schema.org/alternateName"
+      authoritative_namespaces:
+        - ruralkg
+        - ruralkg-prop
 contact:
   email: jiaqi.gong@ua.edu
   github: "SAIL-UA"

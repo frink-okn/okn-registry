@@ -7,10 +7,16 @@ stats: https://registry.okn.us/kg-stats/biobricks-pubchem-annotations-kg
 homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
 sparql: https://apps.okn.us/biobricks-pubchem-annotations/sparql
-tpf: https://apps.okn.us/ldf/biobricks-pubchem-annotations
+tpf: https://apps.okn.us/kgf/biobricks-pubchem-annotations/latest/tpf
 frink-options:
   lakefs-repo: biobricks-pubchem-annotations-kg
   documentation-path: biobricks-pubchem-annotations-kg
+  kgf:
+    semantics:
+      prefixes:
+        pubchem-annotation: "http://rdf.ncbi.nlm.nih.gov/pubchem/annotation/"
+        pubchem-compound: "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/"
+        pubchem-substance: "http://rdf.ncbi.nlm.nih.gov/pubchem/substance/"
 contact:
   email: tom@insilica.co
   github: "tomlue"

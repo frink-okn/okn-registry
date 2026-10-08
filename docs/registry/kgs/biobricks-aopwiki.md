@@ -7,10 +7,18 @@ stats: https://registry.okn.us/kg-stats/biobricks-aopwiki-kg
 homepage: https://github.com/biobricks-ai/aopwikirdf-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
 sparql: https://apps.okn.us/biobricks-aopwiki/sparql
-tpf: https://apps.okn.us/ldf/biobricks-aopwiki
+tpf: https://apps.okn.us/kgf/biobricks-aopwiki/latest/tpf
 frink-options:
   lakefs-repo: biobricks-aopwiki-kg
   documentation-path: biobricks-aopwiki-kg
+  kgf:
+    semantics:
+      prefixes:
+        aopo: "http://aopkb.org/aop_ontology#"
+      roles:
+        label:
+          - "http://purl.org/dc/elements/1.1/title"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
 contact:
   email: tom@insilica.co
   github: "tomlue"

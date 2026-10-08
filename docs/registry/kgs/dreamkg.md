@@ -7,10 +7,22 @@ stats: https://registry.okn.us/kg-stats/dream-kg
 homepage: https://dreamkg.com/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
 sparql: https://apps.okn.us/dreamkg/sparql
-tpf: https://apps.okn.us/ldf/dreamkg
+tpf: https://apps.okn.us/kgf/dreamkg/latest/tpf
 frink-options:
   lakefs-repo: dream-kg
   documentation-path: dream-kg
+  kgf:
+    # This KG uses the http:// form of schema.org, so `schema`
+    # overrides the shared https:// binding.
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        dreamkg: "https://purl.org/okn/frink/kg/dreamkg/"
+      roles:
+        label:
+          - "http://schema.org/name"
+      authoritative_namespaces:
+        - dreamkg
 contact:
   email: yuzhou.chen@temple.edu  
   github: "yuzhouguangc"

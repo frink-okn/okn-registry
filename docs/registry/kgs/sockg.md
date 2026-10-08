@@ -1,16 +1,29 @@
 ---
 template: overrides/kg.html
 shortname: sockg
-title: SOC-KG
+title: SOCKG
 description: The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil carbon modeling, which is crucial for voluntary carbon markets. 
 stats: https://registry.okn.us/kg-stats/soc-kg
 homepage: https://idir.sockg.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
 sparql: https://apps.okn.us/sockg/sparql
-tpf: https://apps.okn.us/ldf/sockg
+tpf: https://apps.okn.us/kgf/sockg/latest/tpf
 frink-options:
   lakefs-repo: soc-kg
   documentation-path: soc-kg
+  kgf:
+    semantics:
+      prefixes:
+        sockg: "https://idir.uta.edu/sockg-ontology#"
+        sockg-ind: "https://idir.uta.edu/sockg-ontology/individuals/"
+        qudt: "http://qudt.org/vocab/unit/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://purl.org/dc/terms/title"
+      authoritative_namespaces:
+        - sockg
+        - sockg-ind
 contact:
   email: cli@uta.edu
   github: "idirlab"

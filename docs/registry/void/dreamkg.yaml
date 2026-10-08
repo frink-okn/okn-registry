@@ -3,13 +3,13 @@ distinct_subjects: 22883
 distinct_objects: 41410
 properties: 37
 classes: 14
-last_checked: '2026-05-21'
+last_checked: '2026-10-04'
 class_partitions:
-- uri: http://schema.org/Review
-  label: Review
-  count: 3762
 - uri: http://schema.org/Rating
   label: Rating
+  count: 3762
+- uri: http://schema.org/Review
+  label: Review
   count: 3762
 - uri: http://schema.org/ServiceChannel
   label: ServiceChannel
@@ -17,11 +17,11 @@ class_partitions:
 - uri: http://schema.org/ContactPoint
   label: ContactPoint
   count: 1321
-- uri: http://schema.org/TextObject
-  label: TextObject
-  count: 1321
 - uri: http://schema.org/Service
   label: Service
+  count: 1321
+- uri: http://schema.org/TextObject
+  label: TextObject
   count: 1321
 - uri: http://schema.org/Place
   label: Place
@@ -90,12 +90,6 @@ property_partitions:
 - uri: http://schema.org/conditionsOfAccess
   label: conditionsOfAccess
   count: 1326
-- uri: http://schema.org/serviceLocation
-  label: serviceLocation
-  count: 1321
-- uri: http://schema.org/servicePhone
-  label: servicePhone
-  count: 1321
 - uri: http://schema.org/areaServed
   label: areaServed
   count: 1321
@@ -105,20 +99,26 @@ property_partitions:
 - uri: http://schema.org/provider
   label: provider
   count: 1321
+- uri: http://schema.org/serviceLocation
+  label: serviceLocation
+  count: 1321
+- uri: http://schema.org/servicePhone
+  label: servicePhone
+  count: 1321
 - uri: http://schema.org/telephone
   label: telephone
   count: 1200
 - uri: http://schema.org/address
   label: address
   count: 1051
-- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
-  label: kwg-ont:sfWithin
-  count: 1045
 - uri: http://schema.org/containedInPlace
   label: containedInPlace
   count: 1045
 - uri: http://schema.org/postalCode
   label: postalCode
+  count: 1045
+- uri: http://stko-kwg.geog.ucsb.edu/lod/ontology/sfWithin
+  label: kwg-ont:sfWithin
   count: 1045
 - uri: http://schema.org/longitude
   label: longitude

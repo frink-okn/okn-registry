@@ -16,7 +16,7 @@ PREFIX schema: <http://schema.org/>
 SELECT 
 DISTINCT ?sdoh_label ?disease_label ?disease_rel1 ?variant_desc ?variant_label ?other_diseases_label
 WHERE {
-SERVICE <https://frink.apps.renci.org/spoke-okn/sparql> {
+SERVICE <https://apps.okn.us/spoke-okn/sparql> {
     # Diseases associated with SDoH class
     ?sdoh rdf:type spcore:SDoH ;
         rdfs:label ?sdoh_label ;

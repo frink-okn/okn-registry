@@ -7,15 +7,26 @@ description: This project seeks to create a comprehensive, integrative knowledge
 homepage: https://sites.nd.edu/kn-wildlife/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
 sparql: https://apps.okn.us/wildlifekn/sparql
-tpf: https://apps.okn.us/ldf/wildlifekn
+tpf: https://apps.okn.us/kgf/wildlifekn/latest/tpf
 frink-options:
   lakefs-repo: wildlife-kg
   documentation-path: wildlife-kg
   neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
+  kgf:
+    semantics:
+      prefixes:
+        wildlifekn: "https://wildlife.proto-okn.net/kg/"
+        inaturalist: "https://www.inaturalist.org/observations/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - wildlifekn
 contact:
   email: xzhang33@nd.edu
   github: "XiangqiWang77"
   label: "Xiangliang Zhang"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 This project seeks to create a comprehensive, integrative knowledge network for the management of wildlife in the context of climate change.
 

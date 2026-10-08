@@ -7,10 +7,14 @@ stats: https://registry.okn.us/kg-stats/nikg
 # homepage: 
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
 sparql: https://apps.okn.us/nikg/sparql
-tpf: https://apps.okn.us/ldf/nikg
+tpf: https://apps.okn.us/kgf/nikg/latest/tpf
 frink-options:
   lakefs-repo: neighborhood-information-kg
   documentation-path: neighborhood-kg
+  kgf:
+    semantics:
+      prefixes:
+        phila: "https://metadata.phila.gov/"
 contacts:
   - label: "Wentao Chen"
     email: wenc056@ucsd.edu

@@ -7,10 +7,24 @@ stats: https://registry.okn.us/kg-stats/secure-chain-kg
 homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
 sparql: https://apps.okn.us/securechainkg/sparql
-tpf: https://apps.okn.us/ldf/securechainkg
+tpf: https://apps.okn.us/kgf/securechainkg/latest/tpf
 frink-options:
   lakefs-repo: secure-chain-kg
   documentation-path: secure-chain-kg
+  kgf:
+    semantics:
+      prefixes:
+        schema: "http://schema.org/"
+        pypi: "https://pypi.org/project/"
+        crates: "https://crates.io/crates/"
+        spdx-license: "https://spdx.org/licenses/"
+        nvd: "https://nvd.nist.gov/vuln/detail/"
+        cwe: "https://cwe.mitre.org/data/definitions/"
+      roles:
+        label:
+          - "http://schema.org/name"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "https://w3id.org/secure-chain/versionName"
 contacts:
   - email: tianyi@purdue.edu
     github: "tianyi-zhang"
@@ -18,6 +32,7 @@ contacts:
   - email: "di5@purdue.edu"
     github: "NecoraNyaru"
     label: "Yifeng Di"
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 SecureChain KG is a knowledge graph for resilient, trustworthy, and secure software supply chains.
 
