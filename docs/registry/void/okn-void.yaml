@@ -3,7 +3,7 @@ distinct_subjects: 1237295
 distinct_objects: 1326826
 properties: 18
 classes: 1
-last_checked: '2026-10-04'
+last_checked: '2026-10-10'
 class_partitions:
 - uri: http://rdfs.org/ns/void#Dataset
   label: void:Dataset

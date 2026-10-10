@@ -3,7 +3,7 @@ distinct_subjects: 460141
 distinct_objects: 485643
 properties: 23
 classes: 127
-last_checked: '2026-10-04'
+last_checked: '2026-10-10'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Class
   label: owl:Class
