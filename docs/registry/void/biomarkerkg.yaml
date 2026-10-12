@@ -1,68 +1,68 @@
-triples: 1215057
-distinct_subjects: 205189
-distinct_objects: 301827
+triples: 1820793
+distinct_subjects: 206741
+distinct_objects: 333140
 properties: 13
 classes: 7
-last_checked: '2026-10-04'
+last_checked: '2026-10-12'
 class_partitions:
 - uri: http://purl.obolibrary.org/obo/OBCI_0000008
   label: obo:OBCI_0000008
-  count: 199314
+  count: 199342
 - uri: http://purl.obolibrary.org/obo/OBCI_0000002
   label: obo:OBCI_0000002
-  count: 2497
+  count: 2963
 - uri: http://purl.obolibrary.org/obo/OBCI_0000006
   label: obo:OBCI_0000006
-  count: 672
+  count: 726
 - uri: http://purl.uniprot.org/core/Protein
   label: Protein
-  count: 244
+  count: 266
 - uri: http://purl.obolibrary.org/obo/OBCI_0000003
   label: obo:OBCI_0000003
-  count: 92
+  count: 109
 - uri: http://purl.obolibrary.org/obo/OBCI_0000005
   label: obo:OBCI_0000005
-  count: 26
+  count: 32
 - uri: http://purl.obolibrary.org/obo/OBCI_0000004
   label: obo:OBCI_0000004
-  count: 1
+  count: 19
 property_partitions:
+- uri: http://purl.obolibrary.org/obo/RO_0002558
+  label: obo:RO_0002558
+  count: 597417
 - uri: http://www.w3.org/2000/01/rdf-schema#label
   label: rdfs:label
-  count: 205131
+  count: 206732
 - uri: http://purl.org/dc/terms/source
   label: dct:source
-  count: 202884
+  count: 204006
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 202846
-- uri: http://purl.obolibrary.org/obo/OBCI_1000011
-  label: obo:OBCI_1000011
-  count: 202827
-- uri: http://purl.obolibrary.org/obo/OBCI_1000008
-  label: obo:OBCI_1000008
-  count: 197681
-- uri: http://purl.obolibrary.org/obo/OBCI_1000016
-  label: obo:OBCI_1000016
-  count: 196073
-- uri: http://purl.obolibrary.org/obo/OBCI_1000018
-  label: obo:OBCI_1000018
-  count: 3451
-- uri: http://purl.obolibrary.org/obo/OBCI_1000002
-  label: obo:OBCI_1000002
-  count: 2500
-- uri: http://purl.obolibrary.org/obo/OBCI_1000006
-  label: obo:OBCI_1000006
-  count: 718
-- uri: http://purl.obolibrary.org/obo/OBCI_1000009
-  label: obo:OBCI_1000009
-  count: 691
-- uri: http://purl.obolibrary.org/obo/OBCI_1000015
-  label: obo:OBCI_1000015
-  count: 158
-- uri: http://purl.obolibrary.org/obo/OBCI_1000003
-  label: obo:OBCI_1000003
-  count: 96
-- uri: http://purl.obolibrary.org/obo/OBCI_1000017
-  label: obo:OBCI_1000017
-  count: 1
+  count: 203457
+- uri: http://purl.obolibrary.org/obo/OBCI_100000011
+  label: obo:OBCI_100000011
+  count: 203291
+- uri: http://purl.obolibrary.org/obo/OBCI_100000016
+  label: obo:OBCI_100000016
+  count: 199618
+- uri: http://purl.obolibrary.org/obo/RO_0020333
+  label: obo:RO_0020333
+  count: 197579
+- uri: http://purl.obolibrary.org/obo/OBCI_100000018
+  label: obo:OBCI_100000018
+  count: 3578
+- uri: http://purl.obolibrary.org/obo/RO_0020327
+  label: obo:RO_0020327
+  count: 2919
+- uri: http://purl.obolibrary.org/obo/OBCI_100000009
+  label: obo:OBCI_100000009
+  count: 1116
+- uri: http://purl.obolibrary.org/obo/RO_0020331
+  label: obo:RO_0020331
+  count: 773
+- uri: http://purl.obolibrary.org/obo/OBCI_100000015
+  label: obo:OBCI_100000015
+  count: 206
+- uri: http://purl.obolibrary.org/obo/RO_0020328
+  label: obo:RO_0020328
+  count: 101
