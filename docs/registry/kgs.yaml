@@ -25,6 +25,7 @@ kgs:
     lakefs-repo: biohealth
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/biohealth.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
+  kgf: https://apps.okn.us/kgf/biohealth
   shortname: biohealth
   sparql: https://apps.okn.us/biohealth/sparql
   stats: https://registry.okn.us/kg-stats/biobricks-ice-kg
@@ -59,6 +60,7 @@ kgs:
     lakefs-repo: geoconnex
   funding: null
   homepage: https://docs.geoconnex.us/about/intro
+  kgf: https://apps.okn.us/kgf/geoconnex
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: geoconnex
   sparql: https://apps.okn.us/geoconnex/sparql
@@ -81,6 +83,7 @@ kgs:
           - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: babel
   homepage: https://github.com/NCATSTranslator/Babel
+  kgf: https://apps.okn.us/kgf/babel
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: babel
   sparql: https://apps.okn.us/babel/sparql
@@ -190,6 +193,7 @@ kgs:
     lakefs-repo: prokn
   funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://research.bioinformatics.udel.edu/ProKN/
+  kgf: https://apps.okn.us/kgf/prokn
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: prokn
   sparql: https://apps.okn.us/prokn/sparql
@@ -221,6 +225,7 @@ kgs:
     lakefs-repo: soc-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
   homepage: https://idir.sockg.org/
+  kgf: https://apps.okn.us/kgf/sockg
   shortname: sockg
   sparql: https://apps.okn.us/sockg/sparql
   stats: https://registry.okn.us/kg-stats/soc-kg
@@ -251,6 +256,7 @@ kgs:
           - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: climatepub4-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
+  kgf: https://apps.okn.us/kgf/climatemodelskg
   shortname: climatemodelskg
   sparql: https://apps.okn.us/climatemodelskg/sparql
   stats: https://registry.okn.us/kg-stats/climate-kg
@@ -280,6 +286,7 @@ kgs:
     lakefs-repo: sudokn-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
   homepage: https://projects.engineering.asu.edu/sudokn/
+  kgf: https://apps.okn.us/kgf/sudokn
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: sudokn
   sparql: https://apps.okn.us/sudokn/sparql
@@ -309,6 +316,7 @@ kgs:
     lakefs-repo: biomarkerkg
   funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
   homepage: https://biomarkerkb.org/home/
+  kgf: https://apps.okn.us/kgf/biomarkerkg
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: biomarkerkg
   sparql: https://apps.okn.us/biomarkerkg/sparql
@@ -340,6 +348,7 @@ kgs:
           - https://schema.org/alternateName
     lakefs-repo: rural-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
+  kgf: https://apps.okn.us/kgf/ruralkg
   shortname: ruralkg
   sparql: https://apps.okn.us/ruralkg/sparql
   stats: https://registry.okn.us/kg-stats/rural-kg
@@ -378,6 +387,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/nasa.yaml
   funding: null
   homepage: https://disc.gsfc.nasa.gov
+  kgf: https://apps.okn.us/kgf/nasa-gesdisc-kg
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: nasa-gesdisc-kg
   sparql: https://apps.okn.us/nasa-gesdisc-kg/sparql
@@ -402,6 +412,7 @@ kgs:
           worldcat-fast: http://id.worldcat.org/fast/
     lakefs-repo: identifier-mappings
   homepage: https://www.wikidata.org/
+  kgf: https://apps.okn.us/kgf/identifier-mappings
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: identifier-mappings
   sparql: https://apps.okn.us/identifier-mappings/sparql
@@ -436,6 +447,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-genelab.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://github.com/BaranziniLab/spoke_genelab
+  kgf: https://apps.okn.us/kgf/spoke-genelab
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: spoke-genelab
   sparql: https://apps.okn.us/spoke-genelab/sparql
@@ -477,6 +489,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-okn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://spoke.ucsf.edu
+  kgf: https://apps.okn.us/kgf/spoke-okn
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: spoke-okn
   sparql: https://apps.okn.us/spoke-okn/sparql
@@ -503,6 +516,7 @@ kgs:
           - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: ncipidkg
   homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
+  kgf: https://apps.okn.us/kgf/ncipidkg
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: ncipidkg
   sparql: https://apps.okn.us/ncipidkg/sparql
@@ -537,6 +551,7 @@ kgs:
           - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: nestkg
   homepage: https://www.ndexbio.org/viewer/networks/9a8f5326-aa6e-11ea-aaef-0ac135e8bacf
+  kgf: https://apps.okn.us/kgf/nestkg
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: nestkg
   sparql: https://apps.okn.us/nestkg/sparql
@@ -563,6 +578,7 @@ kgs:
     lakefs-repo: biobricks-aopwiki-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/aopwikirdf-kg
+  kgf: https://apps.okn.us/kgf/biobricks-aopwiki
   shortname: biobricks-aopwiki
   sparql: https://apps.okn.us/biobricks-aopwiki/sparql
   stats: https://registry.okn.us/kg-stats/biobricks-aopwiki-kg
@@ -590,6 +606,7 @@ kgs:
     lakefs-repo: biobricks-ice-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
+  kgf: https://apps.okn.us/kgf/biobricks-ice
   shortname: biobricks-ice
   sparql: https://apps.okn.us/biobricks-ice/sparql
   stats: https://registry.okn.us/kg-stats/biobricks-ice-kg
@@ -615,6 +632,7 @@ kgs:
     lakefs-repo: biobricks-mesh-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/mesh-kg
+  kgf: https://apps.okn.us/kgf/biobricks-mesh
   shortname: biobricks-mesh
   sparql: https://apps.okn.us/biobricks-mesh/sparql
   stats: https://registry.okn.us/kg-stats/biobricks-mesh-kg
@@ -638,6 +656,7 @@ kgs:
     lakefs-repo: biobricks-pubchem-annotations-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
+  kgf: https://apps.okn.us/kgf/biobricks-pubchem-annotations
   shortname: biobricks-pubchem-annotations
   sparql: https://apps.okn.us/biobricks-pubchem-annotations/sparql
   stats: https://registry.okn.us/kg-stats/biobricks-pubchem-annotations-kg
@@ -660,6 +679,7 @@ kgs:
     lakefs-repo: biobricks-tox21-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
+  kgf: https://apps.okn.us/kgf/biobricks-tox21
   shortname: biobricks-tox21
   sparql: https://apps.okn.us/biobricks-tox21/sparql
   stats: https://registry.okn.us/kg-stats/biobricks-tox21-kg
@@ -685,6 +705,7 @@ kgs:
     lakefs-repo: biobricks-toxcast-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
+  kgf: https://apps.okn.us/kgf/biobricks-toxcast
   shortname: biobricks-toxcast
   sparql: https://apps.okn.us/biobricks-toxcast/sparql
   stats: https://registry.okn.us/kg-stats/biobricks-toxcast-kg
@@ -713,6 +734,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
   homepage: https://sites.nd.edu/kn-wildlife/
+  kgf: https://apps.okn.us/kgf/wildlifekn
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: wildlifekn
   sparql: https://apps.okn.us/wildlifekn/sparql
@@ -742,6 +764,7 @@ kgs:
     lakefs-repo: urban-flooding-open-knowledge-network
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
   homepage: https://ufokn.com
+  kgf: https://apps.okn.us/kgf/ufokn
   shortname: ufokn
   sparql: https://apps.okn.us/ufokn/sparql
   stats: https://registry.okn.us/kg-stats/wen-kg
@@ -769,6 +792,7 @@ kgs:
     lakefs-repo: dream-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
   homepage: https://dreamkg.com/
+  kgf: https://apps.okn.us/kgf/dreamkg
   shortname: dreamkg
   sparql: https://apps.okn.us/dreamkg/sparql
   stats: https://registry.okn.us/kg-stats/dream-kg
@@ -794,6 +818,7 @@ kgs:
     lakefs-repo: evoweb
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://data.niaid.nih.gov/
+  kgf: https://apps.okn.us/kgf/evoweb
   shortname: evoweb
   sparql: https://apps.okn.us/evoweb/sparql
   stats: https://registry.okn.us/kg-stats/evoweb
@@ -834,6 +859,7 @@ kgs:
     lakefs-repo: medical-device-kg
   funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://bmedesign.org/knowledgegraph
+  kgf: https://apps.okn.us/kgf/medical-device-kg
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: medical-device-kg
   sparql: https://apps.okn.us/medical-device-kg/sparql
@@ -875,6 +901,7 @@ kgs:
     lakefs-repo: gene-expression-atlas-okn
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://www.ebi.ac.uk/gxa/home
+  kgf: https://apps.okn.us/kgf/gene-expression-atlas-okn
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: gene-expression-atlas-okn
   sparql: https://apps.okn.us/gene-expression-atlas-okn/sparql
@@ -921,6 +948,7 @@ kgs:
     lakefs-repo: nde
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://data.niaid.nih.gov/
+  kgf: https://apps.okn.us/kgf/nde
   shortname: nde
   sparql: https://apps.okn.us/nde/sparql
   stats: https://registry.okn.us/kg-stats/nde
@@ -950,6 +978,7 @@ kgs:
     lakefs-repo: oard-kg
   funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://github.com/WengLab-InformaticsResearch/oard-react
+  kgf: https://apps.okn.us/kgf/oard-kg
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: oard-kg
   sparql: https://apps.okn.us/oard-kg/sparql
@@ -989,6 +1018,7 @@ kgs:
     lakefs-repo: scales-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
   homepage: https://scales-okn.org/
+  kgf: https://apps.okn.us/kgf/scales
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: scales
   sparql: https://apps.okn.us/scales/sparql
@@ -1034,6 +1064,7 @@ kgs:
     lakefs-repo: hydrology-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
+  kgf: https://apps.okn.us/kgf/hydrologykg
   shortname: hydrologykg
   sparql: https://apps.okn.us/hydrologykg/sparql
   stats: https://registry.okn.us/kg-stats/hydrology-kg
@@ -1065,6 +1096,7 @@ kgs:
     lakefs-repo: spatial-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
+  kgf: https://apps.okn.us/kgf/spatialkg
   shortname: spatialkg
   sparql: https://apps.okn.us/spatialkg/sparql
   stats: https://registry.okn.us/kg-stats/spatial-kg
@@ -1098,6 +1130,7 @@ kgs:
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/pankgraph.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://pankbase.org/
+  kgf: https://apps.okn.us/kgf/pankgraph
   shortname: pankgraph
   sparql: https://apps.okn.us/pankgraph/sparql
   stats: https://registry.okn.us/kg-stats/pankbase-kg
@@ -1133,6 +1166,7 @@ kgs:
     lakefs-repo: digcfdekg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://cfdeknowledge.org/
+  kgf: https://apps.okn.us/kgf/digcfdekg
   shortname: digcfdekg
   sparql: https://apps.okn.us/digcfdekg/sparql
   stats: https://registry.okn.us/kg-stats/digcfdekg
@@ -1204,6 +1238,7 @@ kgs:
           - http://www.w3.org/2000/01/rdf-schema#label
           - http://www.w3.org/2004/02/skos/core#prefLabel
     lakefs-repo: rdkg
+  kgf: https://apps.okn.us/kgf/rdkg
   shortname: rdkg
   sparql: https://apps.okn.us/rdkg/sparql
   template: overrides/kg.html
@@ -1233,6 +1268,7 @@ kgs:
     lakefs-repo: phases-kg
   funding: https://reporter.nih.gov/project-details/11184405
   homepage: https://healthyphases.org/
+  kgf: https://apps.okn.us/kgf/phaseskg
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: phaseskg
   sparql: https://apps.okn.us/phaseskg/sparql
@@ -1273,6 +1309,7 @@ kgs:
     lakefs-repo: fio-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
+  kgf: https://apps.okn.us/kgf/fiokg
   shortname: fiokg
   sparql: https://apps.okn.us/fiokg/sparql
   stats: https://registry.okn.us/kg-stats/fio-kg
@@ -1321,12 +1358,140 @@ kgs:
     lakefs-repo: sawgraph-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
+  kgf: https://apps.okn.us/kgf/sawgraph
   shortname: sawgraph
   sparql: https://apps.okn.us/sawgraph/sparql
   stats: https://registry.okn.us/kg-stats/sawgraph
   template: overrides/kg.html
   title: SAWGraph PFAS KG
   tpf: https://apps.okn.us/kgf/sawgraph/latest/tpf
+- contacts:
+  - email: shirlystephen@ucsb.edu
+    github: shirlysteph
+    label: Shirly Stephen
+  - email: cogan.shimizu@wright.edu
+    github: cogan-shimizu
+    label: Cogan Shimizu
+  description: Demographic and public health layers from KnowWhereGraph, covering
+    US Census statistical areas, county-level public health indicators, hospitals,
+    public health departments, and federally qualified health centers.
+  frink-options:
+    documentation-path: kwg-society
+    kgf:
+      semantics:
+        prefixes:
+          eo: http://knowwheregraph/ontology/expertise-ontology/
+          fibo-fnd-plc-adr: https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/
+          fibo-fnd-plc-loc: https://spec.edmcouncil.org/fibo/ontology/FND/Places/Locations/
+          org: http://www.w3.org/ns/org#
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: kwg-society
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033521
+  homepage: https://knowwheregraph.org/
+  kgf: https://apps.okn.us/kgf/kwg-society
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: kwg-society
+  stats: https://registry.okn.us/kg-stats/kwg-society
+  template: overrides/kg.html
+  title: KnowWhereGraph Society
+  tpf: https://apps.okn.us/kgf/kwg-society/latest/tpf
+- contacts:
+  - email: shirlystephen@ucsb.edu
+    github: shirlysteph
+    label: Shirly Stephen
+  - email: cogan.shimizu@wright.edu
+    github: cogan-shimizu
+    label: Cogan Shimizu
+  description: Environmental observation layers from KnowWhereGraph, covering SSURGO
+    soils, the USDA Cropland Data Layer, EPA air quality measurements, and NOAA climate
+    division observations for the United States.
+  frink-options:
+    documentation-path: kwg-environment
+    kgf:
+      semantics:
+        prefixes:
+          fibo-fnd-plc-adr: https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/
+          fibo-fnd-plc-loc: https://spec.edmcouncil.org/fibo/ontology/FND/Places/Locations/
+          unit: https://qudt.org/vocab/unit/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: kwg-environment
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033521
+  homepage: https://knowwheregraph.org/
+  kgf: https://apps.okn.us/kgf/kwg-environment
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: kwg-environment
+  stats: https://registry.okn.us/kg-stats/kwg-environment
+  template: overrides/kg.html
+  title: KnowWhereGraph Environment
+  tpf: https://apps.okn.us/kgf/kwg-environment/latest/tpf
+- contacts:
+  - email: shirlystephen@ucsb.edu
+    github: shirlysteph
+    label: Shirly Stephen
+  - email: cogan.shimizu@wright.edu
+    github: cogan-shimizu
+    label: Cogan Shimizu
+  description: Natural hazard and disaster layers from KnowWhereGraph, covering storms,
+    hurricanes, earthquakes, wildfires, smoke, drought, FEMA disaster declarations,
+    and ReliefWeb reports, located by S2 cell and administrative region.
+  frink-options:
+    documentation-path: kwg-hazards
+    kgf:
+      semantics:
+        prefixes:
+          dmdo: http://knowwheregraph/ontology/dmdo#
+          doid: http://purl.obolibrary.org/obo/doid#
+          eo: http://knowwheregraph/ontology/expertise-ontology/
+          fibo-fnd-arr-rep: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/
+          org: http://www.w3.org/ns/org#
+          undrr-hip: https://knowwheregraph.org/undrr-hip/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://purl.org/dc/terms/title
+    lakefs-repo: kwg-hazards
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033521
+  homepage: https://knowwheregraph.org/
+  kgf: https://apps.okn.us/kgf/kwg-hazards
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: kwg-hazards
+  stats: https://registry.okn.us/kg-stats/kwg-hazards
+  template: overrides/kg.html
+  title: KnowWhereGraph Hazards
+  tpf: https://apps.okn.us/kgf/kwg-hazards/latest/tpf
+- contacts:
+  - email: shirlystephen@ucsb.edu
+    github: shirlysteph
+    label: Shirly Stephen
+  - email: cogan.shimizu@wright.edu
+    github: cogan-shimizu
+    label: Cogan Shimizu
+  description: Place and region identifiers from KnowWhereGraph (global administrative
+    areas, US Census regions, ZIP code areas, weather forecast zones, judicial districts,
+    GNIS features, and highways) with their relations to each other and to S2 cells.
+  frink-options:
+    documentation-path: kwg-places
+    kgf:
+      semantics:
+        prefixes:
+          usgs: http://gnis-ld.org/lod/usgs/ontology/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: kwg-places
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033521
+  homepage: https://knowwheregraph.org/
+  kgf: https://apps.okn.us/kgf/kwg-places
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: kwg-places
+  stats: https://registry.okn.us/kg-stats/kwg-places
+  template: overrides/kg.html
+  title: KnowWhereGraph Places
+  tpf: https://apps.okn.us/kgf/kwg-places/latest/tpf
 - contacts:
   - email: tianyi@purdue.edu
     github: tianyi-zhang
@@ -1355,6 +1520,7 @@ kgs:
     lakefs-repo: secure-chain-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
   homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
+  kgf: https://apps.okn.us/kgf/securechainkg
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: securechainkg
   sparql: https://apps.okn.us/securechainkg/sparql
@@ -1402,6 +1568,7 @@ kgs:
           phila: https://metadata.phila.gov/
     lakefs-repo: neighborhood-information-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
+  kgf: https://apps.okn.us/kgf/nikg
   shortname: nikg
   sparql: https://apps.okn.us/nikg/sparql
   stats: https://registry.okn.us/kg-stats/nikg
