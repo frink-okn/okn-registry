@@ -3,9 +3,9 @@ template: overrides/kg.html
 shortname: wikidata
 title: Wikidata
 description: Wikidata is a free and open knowledge base that can be read and edited by both humans and machines
-#stats:
 homepage: https://www.wikidata.org/
 sparql: https://qlever.dev/api/wikidata
+tpf: https://apps.okn.us/ldf/wikidata
 frink-options:
   lakefs-repo: wikidata
 contact: 
