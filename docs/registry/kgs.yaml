@@ -1157,6 +1157,24 @@ kgs:
     data.
   frink-options:
     documentation-path: glygenkg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - glygen
+        - gly
+        prefixes:
+          gly: https://sparql.glygen.org/ontology/
+          glycan: http://purl.jp/bio/12/glyco/glycan#
+          glycoconjugate: http://purl.jp/bio/12/glyco/conjugate#
+          glygen: http://glygen.org/
+          uniprot-core: http://purl.uniprot.org/core/
+          uniprot-isoform: http://purl.uniprot.org/isoforms/
+        roles:
+          description:
+          - https://sparql.glygen.org/ontology/comment
+          synonym:
+          - http://www.w3.org/2004/02/skos/core#altLabel
+          - http://purl.uniprot.org/core/mnemonic
     lakefs-repo: glygenkg
   funding: https://reporter.nih.gov/project-details/10494610
   homepage: https://www.glygen.org/
