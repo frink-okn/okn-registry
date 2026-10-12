@@ -154,6 +154,7 @@ kgs:
   sparql: https://qlever.dev/api/wikidata
   template: overrides/kg.html
   title: Wikidata
+  tpf: https://apps.okn.us/ldf/wikidata
 - contact:
     email: chenc@udel.edu
     github: chenchuming
@@ -800,6 +801,47 @@ kgs:
   title: EvoWeb
   tpf: https://apps.okn.us/kgf/evoweb/latest/tpf
 - contacts:
+  - email: RocheRey.C.DeGuzman@hofstra.edu
+    github: Roche619
+    label: Dr. Roche C. de Guzman
+  - email: Marco.Romanelli@hofstra.edu
+    github: marcoromanelli-github
+    label: Dr. Marco Romanelli
+  - email: psingh37@pride.hofstra.edu
+    github: Prabhadeus
+    label: Prabhjot Singh
+  - email: mbukhari1@pride.hofstra.edu
+    github: MustafaSBny
+    label: Mustafa Bukhari
+  description: Public FDA medical-device data in one linked graph, covering clearances
+    and approvals, UDI device records, MAUDE adverse events, recalls, establishments,
+    standards, and 21 CFR.
+  frink-options:
+    documentation-path: medical-device-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - mdkg
+        - mdkg-id
+        prefixes:
+          mdkg: https://bmedesign.org/medical-device-kg/ns/
+          mdkg-id: https://bmedesign.org/medical-device-kg/id/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - https://bmedesign.org/medical-device-kg/ns/deviceName
+          - https://bmedesign.org/medical-device-kg/ns/name
+    lakefs-repo: medical-device-kg
+  funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  homepage: https://bmedesign.org/knowledgegraph
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: medical-device-kg
+  sparql: https://apps.okn.us/medical-device-kg/sparql
+  stats: https://registry.okn.us/kg-stats/medical-device-kg
+  template: overrides/kg.html
+  title: Medical Device Knowledge Graph
+  tpf: https://apps.okn.us/kgf/medical-device-kg/latest/tpf
+- contacts:
   - email: asu@scripps.edu
     github: andrewsu
     label: Andrew Su
@@ -1120,9 +1162,11 @@ kgs:
   homepage: https://www.glygen.org/
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: glygenkg
+  sparql: https://apps.okn.us/glygenkg/sparql
   stats: https://registry.okn.us/kg-stats/glygenkg
   template: overrides/kg.html
   title: GlyGen KG
+  tpf: https://apps.okn.us/kgf/glygenkg/latest/tpf
 - contacts:
   - email: jinlian.wang@uth.tmc.edu
     github: wangjl99
@@ -1266,43 +1310,6 @@ kgs:
   title: SAWGraph PFAS KG
   tpf: https://apps.okn.us/kgf/sawgraph/latest/tpf
 - contacts:
-  - email: mbukhari1@pride.hofstra.edu
-    label: Mustafa Bukhari
-  - email: Marco.Romanelli@hofstra.edu
-    label: Dr. Marco Romanelli
-  - email: RocheRey.C.DeGuzman@hofstra.edu
-    label: Dr. Roche C. de Guzman
-  - email: psingh37@pride.hofstra.edu
-    github: Prabhadeus
-    label: Prabhjot Singh
-  description: A unified medical-device knowledge graph integrating regulatory, clinical,
-    research, safety, and other relevant data from multiple sources.
-  frink-options:
-    documentation-path: medical-device-kg
-    kgf:
-      semantics:
-        authoritative_namespaces:
-        - mdkg
-        - mdkg-device
-        - mdkg-report
-        prefixes:
-          mdkg: http://medicaldevice.com/ontology/
-          mdkg-device: http://medicaldevice.com/resource/device/
-          mdkg-report: http://medicaldevice.com/resource/report/
-        roles:
-          label:
-          - http://www.w3.org/2000/01/rdf-schema#label
-          - http://medicaldevice.com/ontology/label
-    lakefs-repo: medical-device-kg
-  homepage: https://github.com/medical-device-design
-  license: https://creativecommons.org/licenses/by/4.0/
-  shortname: medical-device-kg
-  sparql: https://apps.okn.us/medical-device-kg/sparql
-  stats: https://registry.okn.us/kg-stats/medical-device-kg
-  template: overrides/kg.html
-  title: Medical Device Knowledge Graph
-  tpf: https://apps.okn.us/kgf/medical-device-kg/latest/tpf
-- contacts:
   - email: tianyi@purdue.edu
     github: tianyi-zhang
     label: Tianyi Zhang
@@ -1344,13 +1351,22 @@ kgs:
   description: A knowledge base created from an introductory biology textbook
   frink-options:
     documentation-path: bio101
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - aura
+        prefixes:
+          aura: http://www.projecthalo.com/aura#
     lakefs-repo: bio101
   funding: Project Halo, Vulcan Inc.
   homepage: https://www.ai.sri.com/~halo/public/exported-kb/biokb.html
+  kgf: https://apps.okn.us/kgf/bio101
   shortname: bio101
+  sparql: https://apps.okn.us/bio101/sparql
   stats: https://registry.okn.us/kg-stats/bio101
   template: overrides/kg.html
   title: KB Bio 101
+  tpf: https://apps.okn.us/kgf/bio101/latest/tpf
 - contacts:
   - email: wenc056@ucsd.edu
     github: John-Steve-C
