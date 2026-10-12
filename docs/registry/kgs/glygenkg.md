@@ -11,6 +11,24 @@ tpf: https://apps.okn.us/kgf/glygenkg/latest/tpf
 frink-options:
   lakefs-repo: glygenkg
   documentation-path: glygenkg
+  kgf:
+    semantics:
+      prefixes:
+        glygen: "http://glygen.org/"
+        gly: "https://sparql.glygen.org/ontology/"
+        glycan: "http://purl.jp/bio/12/glyco/glycan#"
+        glycoconjugate: "http://purl.jp/bio/12/glyco/conjugate#"
+        uniprot-core: "http://purl.uniprot.org/core/"
+        uniprot-isoform: "http://purl.uniprot.org/isoforms/"
+      roles:
+        synonym:
+          - "http://www.w3.org/2004/02/skos/core#altLabel"
+          - "http://purl.uniprot.org/core/mnemonic"
+        description:
+          - "https://sparql.glygen.org/ontology/comment"
+      authoritative_namespaces:
+        - glygen
+        - gly
 contacts:
   - email: jeetvora@gwu.edu
     github: "jeet-vora"
