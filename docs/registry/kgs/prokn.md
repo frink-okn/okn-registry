@@ -8,6 +8,7 @@ homepage: https://research.bioinformatics.udel.edu/ProKN/
 funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
 sparql: https://apps.okn.us/prokn/sparql
 tpf: https://apps.okn.us/kgf/prokn/latest/tpf
+kgf: https://apps.okn.us/kgf/prokn
 frink-options:
   lakefs-repo: prokn
   documentation-path: prokn

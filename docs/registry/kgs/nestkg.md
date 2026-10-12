@@ -8,6 +8,7 @@ homepage: https://www.ndexbio.org/viewer/networks/9a8f5326-aa6e-11ea-aaef-0ac135
 # funding: NSF Proto-OKN
 sparql: https://apps.okn.us/nestkg/sparql
 tpf: https://apps.okn.us/kgf/nestkg/latest/tpf
+kgf: https://apps.okn.us/kgf/nestkg
 frink-options:
   lakefs-repo: nestkg
   documentation-path: nestkg

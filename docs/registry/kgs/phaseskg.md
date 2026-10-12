@@ -7,6 +7,7 @@ homepage: https://healthyphases.org/
 funding: https://reporter.nih.gov/project-details/11184405
 sparql: https://apps.okn.us/phaseskg/sparql
 tpf: https://apps.okn.us/kgf/phaseskg/latest/tpf
+kgf: https://apps.okn.us/kgf/phaseskg
 frink-options:
   lakefs-repo: phases-kg
   documentation-path: phases-kg

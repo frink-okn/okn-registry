@@ -8,6 +8,7 @@ homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
 sparql: https://apps.okn.us/biobricks-pubchem-annotations/sparql
 tpf: https://apps.okn.us/kgf/biobricks-pubchem-annotations/latest/tpf
+kgf: https://apps.okn.us/kgf/biobricks-pubchem-annotations
 frink-options:
   lakefs-repo: biobricks-pubchem-annotations-kg
   documentation-path: biobricks-pubchem-annotations-kg

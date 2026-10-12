@@ -8,6 +8,7 @@ homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://apps.okn.us/hydrologykg/sparql
 tpf: https://apps.okn.us/kgf/hydrologykg/latest/tpf
+kgf: https://apps.okn.us/kgf/hydrologykg
 frink-options:
   lakefs-repo: hydrology-kg
   documentation-path: hydrology-kg

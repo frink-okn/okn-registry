@@ -17,6 +17,7 @@ stats: https://registry.okn.us/kg-stats/identifier-mappings
 homepage: https://www.wikidata.org/
 sparql: https://apps.okn.us/identifier-mappings/sparql
 tpf: https://apps.okn.us/kgf/identifier-mappings/latest/tpf
+kgf: https://apps.okn.us/kgf/identifier-mappings
 contact: 
   email: morshedm@renci.org
   github: "mahir256"

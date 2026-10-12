@@ -8,6 +8,7 @@ stats: https://registry.okn.us/kg-stats/spatial-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://apps.okn.us/spatialkg/sparql
 tpf: https://apps.okn.us/kgf/spatialkg/latest/tpf
+kgf: https://apps.okn.us/kgf/spatialkg
 frink-options:
   lakefs-repo: spatial-kg
   documentation-path: spatial-kg
