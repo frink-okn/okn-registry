@@ -88,6 +88,8 @@ PMID: "http://www.ncbi.nlm.nih.gov/pubmed/"
 sio: "http://semanticscience.org/resource/"
 sct: "http://snomed.info/id/"
 dwc: "http://rs.tdwg.org/dwc/terms/"
+ensembl: "http://rdf.ebi.ac.uk/resource/ensembl/"
+faldo: "http://biohackathon.org/resource/faldo#"
 
 # ── Proto-OKN KG-specific vocabularies ──
 sudokn: "http://asu.edu/semantics/SUDOKN/"
