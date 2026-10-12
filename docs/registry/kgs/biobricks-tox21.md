@@ -8,6 +8,7 @@ homepage: https://github.com/biobricks-ai/biobricks-okg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
 sparql: https://apps.okn.us/biobricks-tox21/sparql
 tpf: https://apps.okn.us/kgf/biobricks-tox21/latest/tpf
+kgf: https://apps.okn.us/kgf/biobricks-tox21
 frink-options:
   lakefs-repo: biobricks-tox21-kg
   documentation-path: biobricks-tox21-kg

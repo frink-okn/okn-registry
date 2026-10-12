@@ -8,6 +8,7 @@ stats: https://registry.okn.us/kg-stats/rural-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
 sparql: https://apps.okn.us/ruralkg/sparql
 tpf: https://apps.okn.us/kgf/ruralkg/latest/tpf
+kgf: https://apps.okn.us/kgf/ruralkg
 frink-options:
   lakefs-repo: rural-kg
   documentation-path: rural-kg

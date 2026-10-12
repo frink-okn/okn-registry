@@ -8,6 +8,7 @@ homepage: https://bmedesign.org/knowledgegraph
 funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
 sparql: https://apps.okn.us/medical-device-kg/sparql
 tpf: https://apps.okn.us/kgf/medical-device-kg/latest/tpf
+kgf: https://apps.okn.us/kgf/medical-device-kg
 license: "https://creativecommons.org/licenses/by/4.0/"
 frink-options:
   lakefs-repo: medical-device-kg

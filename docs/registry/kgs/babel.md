@@ -6,6 +6,7 @@ description: Babel creates cliques of equivalent identifiers across many biomedi
 homepage: https://github.com/NCATSTranslator/Babel
 sparql: https://apps.okn.us/babel/sparql
 tpf: https://apps.okn.us/kgf/babel/latest/tpf
+kgf: https://apps.okn.us/kgf/babel
 frink-options:
   lakefs-repo: babel
   documentation-path: babel

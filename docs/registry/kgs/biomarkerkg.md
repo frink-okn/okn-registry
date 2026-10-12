@@ -8,6 +8,7 @@ homepage: https://biomarkerkb.org/home/
 funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
 sparql: https://apps.okn.us/biomarkerkg/sparql
 tpf: https://apps.okn.us/kgf/biomarkerkg/latest/tpf
+kgf: https://apps.okn.us/kgf/biomarkerkg
 frink-options:
   lakefs-repo: biomarkerkg
   documentation-path: biomarkerkg

@@ -8,6 +8,7 @@ homepage: https://www.ebi.ac.uk/gxa/home
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
 sparql: https://apps.okn.us/gene-expression-atlas-okn/sparql
 tpf: https://apps.okn.us/kgf/gene-expression-atlas-okn/latest/tpf
+kgf: https://apps.okn.us/kgf/gene-expression-atlas-okn
 frink-options:
   lakefs-repo: gene-expression-atlas-okn
   documentation-path: gene-expression-atlas-okn

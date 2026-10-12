@@ -8,6 +8,7 @@ homepage: https://idir.sockg.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
 sparql: https://apps.okn.us/sockg/sparql
 tpf: https://apps.okn.us/kgf/sockg/latest/tpf
+kgf: https://apps.okn.us/kgf/sockg
 frink-options:
   lakefs-repo: soc-kg
   documentation-path: soc-kg

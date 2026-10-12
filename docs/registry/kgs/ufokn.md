@@ -8,6 +8,7 @@ homepage: https://ufokn.com
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
 sparql: https://apps.okn.us/ufokn/sparql
 tpf: https://apps.okn.us/kgf/ufokn/latest/tpf
+kgf: https://apps.okn.us/kgf/ufokn
 frink-options:
   lakefs-repo: urban-flooding-open-knowledge-network
   documentation-path: ufokn-kg  

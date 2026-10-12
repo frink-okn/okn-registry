@@ -8,6 +8,7 @@ homepage: https://github.com/biobricks-ai/biobricks-okg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
 sparql: https://apps.okn.us/biobricks-ice/sparql
 tpf: https://apps.okn.us/kgf/biobricks-ice/latest/tpf
+kgf: https://apps.okn.us/kgf/biobricks-ice
 frink-options:
   lakefs-repo: biobricks-ice-kg
   documentation-path: biobricks-ice-kg

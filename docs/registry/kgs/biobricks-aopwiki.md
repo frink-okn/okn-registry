@@ -8,6 +8,7 @@ homepage: https://github.com/biobricks-ai/aopwikirdf-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
 sparql: https://apps.okn.us/biobricks-aopwiki/sparql
 tpf: https://apps.okn.us/kgf/biobricks-aopwiki/latest/tpf
+kgf: https://apps.okn.us/kgf/biobricks-aopwiki
 frink-options:
   lakefs-repo: biobricks-aopwiki-kg
   documentation-path: biobricks-aopwiki-kg

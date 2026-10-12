@@ -8,6 +8,7 @@ homepage: https://data.niaid.nih.gov/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
 sparql: https://apps.okn.us/nde/sparql
 tpf: https://apps.okn.us/kgf/nde/latest/tpf
+kgf: https://apps.okn.us/kgf/nde
 frink-options:
   lakefs-repo: nde
   documentation-path: nde

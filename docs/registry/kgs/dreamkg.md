@@ -8,6 +8,7 @@ homepage: https://dreamkg.com/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
 sparql: https://apps.okn.us/dreamkg/sparql
 tpf: https://apps.okn.us/kgf/dreamkg/latest/tpf
+kgf: https://apps.okn.us/kgf/dreamkg
 frink-options:
   lakefs-repo: dream-kg
   documentation-path: dream-kg
