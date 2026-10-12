@@ -6,8 +6,8 @@ description: Environmental observation layers from KnowWhereGraph, covering SSUR
 stats: https://registry.okn.us/kg-stats/kwg-environment
 homepage: https://knowwheregraph.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033521
-# sparql: https://apps.okn.us/kwg-environment/sparql
-# tpf: https://apps.okn.us/ldf/kwg-environment
+tpf: https://apps.okn.us/kgf/kwg-environment/latest/tpf
+kgf: https://apps.okn.us/kgf/kwg-environment
 frink-options:
   lakefs-repo: kwg-environment
   documentation-path: kwg-environment

@@ -6,8 +6,8 @@ description: Demographic and public health layers from KnowWhereGraph, covering 
 stats: https://registry.okn.us/kg-stats/kwg-society
 homepage: https://knowwheregraph.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033521
-# sparql: https://apps.okn.us/kwg-society/sparql
-# tpf: https://apps.okn.us/ldf/kwg-society
+tpf: https://apps.okn.us/kgf/kwg-society/latest/tpf
+kgf: https://apps.okn.us/kgf/kwg-society
 frink-options:
   lakefs-repo: kwg-society
   documentation-path: kwg-society

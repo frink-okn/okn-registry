@@ -6,8 +6,8 @@ description: Place and region identifiers from KnowWhereGraph (global administra
 stats: https://registry.okn.us/kg-stats/kwg-places
 homepage: https://knowwheregraph.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033521
-# sparql: https://apps.okn.us/kwg-places/sparql
-# tpf: https://apps.okn.us/ldf/kwg-places
+tpf: https://apps.okn.us/kgf/kwg-places/latest/tpf
+kgf: https://apps.okn.us/kgf/kwg-places
 frink-options:
   lakefs-repo: kwg-places
   documentation-path: kwg-places

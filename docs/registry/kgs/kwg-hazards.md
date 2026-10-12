@@ -6,8 +6,8 @@ description: Natural hazard and disaster layers from KnowWhereGraph, covering st
 stats: https://registry.okn.us/kg-stats/kwg-hazards
 homepage: https://knowwheregraph.org/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033521
-# sparql: https://apps.okn.us/kwg-hazards/sparql
-# tpf: https://apps.okn.us/ldf/kwg-hazards
+tpf: https://apps.okn.us/kgf/kwg-hazards/latest/tpf
+kgf: https://apps.okn.us/kgf/kwg-hazards
 frink-options:
   lakefs-repo: kwg-hazards
   documentation-path: kwg-hazards
