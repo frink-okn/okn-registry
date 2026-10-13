@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/prokn
 homepage: https://research.bioinformatics.udel.edu/ProKN/
 funding:
 - https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
-- https://reporter.nih.gov/search/QERigebJD02-iHKdiy8SSA/project-details/11194011
+- https://reporter.nih.gov/project-details/11194011
 sparql: https://apps.okn.us/prokn/sparql
 tpf: https://apps.okn.us/kgf/prokn/latest/tpf
 kgf: https://apps.okn.us/kgf/prokn

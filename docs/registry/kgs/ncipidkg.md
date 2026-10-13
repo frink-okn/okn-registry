@@ -6,7 +6,7 @@ description: The NCI-PID 2.0 Knowledge Graph converts NCI Pathway Interaction Da
 stats: https://registry.okn.us/kg-stats/ncipidkg
 homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
 funding:
-- https://reporter.nih.gov/search/hzDbFMw1f0CpdruEPalKxA/project-details/11411190
+- https://reporter.nih.gov/project-details/11411190
 sparql: https://apps.okn.us/ncipidkg/sparql
 tpf: https://apps.okn.us/kgf/ncipidkg/latest/tpf
 kgf: https://apps.okn.us/kgf/ncipidkg

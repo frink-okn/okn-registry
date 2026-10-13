@@ -7,7 +7,7 @@ stats: https://registry.okn.us/kg-stats/digcfdekg
 homepage: https://cfdeknowledge.org/
 funding:
 - https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
-- https://reporter.nih.gov/search/VOOiwGu0a0uiFIm_PckZrA/project-details/11327746
+- https://reporter.nih.gov/project-details/11327746
 frink-options:
   lakefs-repo: digcfdekg
   documentation-path: digcfdekg
