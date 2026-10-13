@@ -10,6 +10,8 @@ sparql: https://apps.okn.us/medical-device-kg/sparql
 tpf: https://apps.okn.us/kgf/medical-device-kg/latest/tpf
 kgf: https://apps.okn.us/kgf/medical-device-kg
 license: "https://creativecommons.org/licenses/by/4.0/"
+funding:
+- https://reporter.nih.gov/search/LtUhe8KPaEiv4ffSLv4C0g/project-details/11261252
 frink-options:
   lakefs-repo: medical-device-kg
   documentation-path: medical-device-kg

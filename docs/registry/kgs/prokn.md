@@ -5,7 +5,9 @@ title: Protein Knowledge Network
 description: The Protein Knowledge Network (ProKN) integrates protein-centric data with the genomic-centric datasets of the Common Fund Data Ecosystem (CFDE), spanning heterogeneous biological data types across multiple domains to foster CFDE re-use and collaboration through enhanced connectivity and data integration, enabling new capabilities for functional genomics and systems-level understanding of disease mechanisms.
 stats: https://registry.okn.us/kg-stats/prokn
 homepage: https://research.bioinformatics.udel.edu/ProKN/
-funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+funding:
+- https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+- https://reporter.nih.gov/search/QERigebJD02-iHKdiy8SSA/project-details/11194011
 sparql: https://apps.okn.us/prokn/sparql
 tpf: https://apps.okn.us/kgf/prokn/latest/tpf
 kgf: https://apps.okn.us/kgf/prokn

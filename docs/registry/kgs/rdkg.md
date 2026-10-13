@@ -7,6 +7,8 @@ description: RDKG is an open knowledge graph for rare diseases that integrates s
 sparql: https://apps.okn.us/rdkg/sparql
 tpf: https://apps.okn.us/kgf/rdkg/latest/tpf
 kgf: https://apps.okn.us/kgf/rdkg
+funding:
+- https://reporter.nih.gov/search/aetsZn3DRESye-VxkGPBGw/project-details/11384758
 frink-options:
   lakefs-repo: rdkg
   documentation-path: rdkg
