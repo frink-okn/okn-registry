@@ -21,6 +21,10 @@ frink-options:
         uniprot-core: "http://purl.uniprot.org/core/"
         uniprot-isoform: "http://purl.uniprot.org/isoforms/"
       roles:
+        label:
+          - "http://www.w3.org/2004/02/skos/core#prefLabel"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://purl.uniprot.org/core/fullName"
         synonym:
           - "http://www.w3.org/2004/02/skos/core#altLabel"
           - "http://purl.uniprot.org/core/mnemonic"
