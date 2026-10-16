@@ -36,7 +36,7 @@ The FDA Animal Health Knowledge Graph publishes the Center for Veterinary Medici
 
 **Planned additions.** Animal Drugs @ FDA (NADA and ANADA applications, the Green Book), the VFD drug list and CVM recalls, which will give each drug node an application to link to.
 
-**Source and license.** openFDA animalandveterinary/event: public domain U.S. government works. Reactions are coded in VeDDRA, which is maintained by the European Medicines Agency (EMA); VeDDRA term names are kept in the published graph with attribution to EMA, whose legal notice allows reuse with acknowledgement, and are not covered by the CC0 dedication. Funded under NSF award 2535091 (Proto-OKN Theme 2: OKN-Fabric) through subaward 5136002. The graph is released under CC0 1.0.
+**Source and license.** openFDA animalandveterinary/event: public domain U.S. government works. Reactions are coded in VeDDRA, maintained by the European Medicines Agency (EMA). VeDDRA term names are kept in the published graph with EMA acknowledged as their source, as EMA's legal notice permits; they are not covered by the CC0 dedication. Funded under NSF award 2535091 (Proto-OKN Theme 2: OKN-Fabric) through subaward 5136002. The graph is released under CC0 1.0.
 
 
 ```
@@ -52,10 +52,10 @@ provenance:
           uri: https://open.fda.gov/license/
   - derivedFrom:
       label: VeDDRA (Veterinary Dictionary for Drug Regulatory Activities), European Medicines Agency
-      uri: https://www.ema.europa.eu/en/veterinary-regulatory-overview/post-authorisation-veterinary-medicines/pharmacovigilance-veterinary-medicines/eudravigilance-veterinary
+      uri: https://www.ema.europa.eu/en/veterinary-regulatory-overview/post-authorisation-veterinary-medicines
       kind: Terminology
       license:
         data:
-          label: EMA legal notice (reuse with acknowledgement)
-          uri: https://www.ema.europa.eu/en/about-us/legal-notice
+          label: EMA legal notice (reuse with acknowledgement of EMA as the source)
+          uri: https://www.ema.europa.eu/en/about-us/about-website/legal-notice
 ```

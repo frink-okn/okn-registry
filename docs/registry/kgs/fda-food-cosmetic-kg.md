@@ -33,7 +33,7 @@ The FDA Food and Cosmetic Knowledge Graph publishes the U.S. Food and Drug Admin
 - `fdafood:CosmeticEvent`: one cosmetic adverse event report (85,511), IRI `.../cosmetic-event/<report number>`, with `fdafood:reportType` (Pre-MoCRA or MoCRA), received and event dates, outcomes, patient gender and age, and one `fdafood:CosmeticProducts` child per product (`fdafood:role`, `fdafood:productName`).
 - Reaction terms: both sources code reactions with MedDRA preferred terms. Reaction terms withheld pending MedDRA license review; outcomes and product fields are published in full.
 
-**Food ingredient inventories.** Six FDA inventories: Substances Added to Food (3,971 substances), GRAS notices (1,360), effective food contact substance notifications (1,768), Select Committee on GRAS Substances reviews (381), 21 CFR food-contact substances (3,646) and color additives (304). Their CAS numbers link to `fda-substance-kg` (5,203 links).
+**Food ingredient inventories.** Six FDA inventories: Substances Added to Food (3,971), GRAS notices (1,360), effective food contact substance notifications (1,768), Select Committee on GRAS Substances reviews (381), 21 CFR food-contact substances (3,646) and color additives (304). Their CAS numbers link to `fda-substance-kg` (5,203 links).
 
 **Planned additions.** New dietary ingredient (NDI) notifications. Food and cosmetic recalls are in `fda-compliance-kg`.
 
@@ -61,8 +61,8 @@ provenance:
           spdx: CC0-1.0
           uri: https://open.fda.gov/license/
   - derivedFrom:
-      label: FDA food ingredient and packaging inventories
-      uri: https://www.fda.gov/food/food-ingredients-packaging/ingredients-additives-gras-packaging-guidance-documents-regulatory-information
+      label: FDA food ingredient inventories (Substances Added to Food, GRAS notices, FCN, SCOGS, color additives)
+      uri: https://www.fda.gov/food
       kind: Database
       license:
         data:

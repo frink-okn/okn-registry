@@ -29,7 +29,7 @@ contacts:
 The FDA Tobacco Knowledge Graph publishes the Center for Tobacco Products' public datasets as linked data, about 0.2 million triples in the first release. Every source field is kept, and every record carries its source dataset, record ID, source URL and download date.
 
 **Main classes.**
-- Tobacco marketing orders (1,226 orders, from FDA's published list at https://www.fda.gov/media/112123): the product, applicant, order type and decision date of each marketing granted order.
+- Tobacco marketing orders (1,226 orders, from FDA's published list at https://www.fda.gov/media/112123).
 - `fdatob:TobaccoProblemReport` (1,383 reports), IRI `https://bmedesign.org/fda-tobacco-kg/id/tobacco-problem/<report id>`: `fdatob:dateSubmitted` (xsd:date), `fdatob:tobaccoProducts` (one value per product type, for example e-cigarettes, cigarettes, smokeless), `fdatob:reportedProductProblems` and `fdatob:reportedHealthProblems` (one value each), `fdatob:nonuserAffected` and the counts of products and problems.
 - `fdatob:TobaccoHarmPerceptionRecord` (1,004 survey records, `.../tobacco-harm-record/<record>`): perceived relative risk and addictiveness of vaping, smokeless and menthol products, quit intentions, methods and barriers, as child nodes per question group.
 - `fdatob:TobaccoPreventionAdStudy` (42 study rows, `.../tobacco-prevention-ad/<study>_<ad>`): effect sizes with confidence bounds for cigarette and vape beliefs and attitudes, by risk status, gender, age group and race or ethnicity.

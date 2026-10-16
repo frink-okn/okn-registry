@@ -32,14 +32,14 @@ The FDA Compliance Knowledge Graph publishes U.S. Food and Drug Administration e
 - `fdacomp:Recall`: one product recall, IRI `https://bmedesign.org/fda-compliance-kg/id/recall/<recall number, lowercase, punctuation as _>` (for example `.../recall/d_0862_2026`). A recall that FDA has published before assigning its number is keyed by its event instead, `.../recall/event_<event id>_<n>`, and takes the numbered IRI at the first rebuild after FDA assigns one. Properties include `fdacomp:recallNumber`, `fdacomp:classification` (Class I, II, III), `fdacomp:status`, `fdacomp:productType`, `fdacomp:productDescription`, `fdacomp:reasonForRecall`, `fdacomp:codeInfo`, `fdacomp:distributionPattern`, `fdacomp:voluntaryMandated`, the firm's address fields, and the dates `fdacomp:recallInitiationDate`, `fdacomp:centerClassificationDate`, `fdacomp:reportDate` and `fdacomp:terminationDate` as `xsd:date`.
 - `fdacomp:RecallEvent`: the FDA recall event that groups several product recalls (`fdacomp:hasRecallEvent`, key `fdacomp:eventId`).
 - `fdacomp:RecallingFirm`: the firm as named in the enforcement report (`fdacomp:hasRecallingFirm`). Enforcement data carries no FEI, so firms are keyed by name in this release. Spelling variants are separate nodes until FEI-based resolution is added.
-- Warning letters: one record per letter in FDA's warning-letter index (issuing office, subject, issue and posting dates, letter URL). Each letter points to the same name-keyed firm node as the recalls, so a firm's recalls and warning letters join on one node.
-- Historical documents: FDA's historical document collection (8,858 records), with title, date, document type and URL.
+- Warning letters (2,658, from FDA's warning-letter index). Each letter points to the same name-keyed firm node as the recalls, so a firm's recalls and warning letters join on one node.
+- Historical documents (8,858 records from FDA's historical document collection).
 
 **Harmonized drug fields.** For drug recalls, openFDA's harmonized fields are kept as `fdacomp:openfda*` properties (for example `fdacomp:openfdaApplicationNumber`, `fdacomp:openfdaBrandName`, `fdacomp:openfdaGenericName`, `fdacomp:openfdaProductNdc`, `fdacomp:openfdaRxcui`, `fdacomp:openfdaSplSetId`, `fdacomp:openfdaUnii`).
 
 **Links to other graphs.** `fdacomp:hasSubstance` links a drug recall to each ingredient's substance in `fda-substance-kg` (`https://bmedesign.org/fda-substance-kg/id/unii/<unii>`). Device recalls stay in `medical-device-kg`. Recall numbers follow the same pattern in both graphs, so a query can match them on `recallNumber`.
 
-**Source and license.** openFDA enforcement data, the FDA warning-letter index and FDA historical documents are public domain U.S. government works (https://open.fda.gov/license/). Refreshed from FDA bulk downloads. Contact persons are not ingested. Funded under NSF award 2535091 (Proto-OKN Theme 2: OKN-Fabric) through subaward 5136002. The graph is released under CC0 1.0.
+**Source and license.** openFDA enforcement data, the FDA warning-letter index and FDA historical documents are public domain U.S. government works (https://open.fda.gov/license/). Contact persons are not ingested. Funded under NSF award 2535091 (Proto-OKN Theme 2: OKN-Fabric) through subaward 5136002. The graph is released under CC0 1.0.
 
 
 ```
