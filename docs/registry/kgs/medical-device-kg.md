@@ -5,13 +5,13 @@ title: Medical Device Knowledge Graph
 description: Public FDA medical-device data in one linked graph, covering clearances and approvals, UDI device records, MAUDE adverse events, recalls, establishments, standards, and 21 CFR.
 stats: https://registry.okn.us/kg-stats/medical-device-kg
 homepage: https://bmedesign.org/knowledgegraph
-funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
 sparql: https://apps.okn.us/medical-device-kg/sparql
 tpf: https://apps.okn.us/kgf/medical-device-kg/latest/tpf
 kgf: https://apps.okn.us/kgf/medical-device-kg
 license: "https://creativecommons.org/licenses/by/4.0/"
 funding:
-- https://reporter.nih.gov/project-details/11261252
+  - https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  - https://reporter.nih.gov/project-details/11261252
 frink-options:
   lakefs-repo: medical-device-kg
   documentation-path: medical-device-kg
