@@ -150,6 +150,28 @@ kgs:
   description: Wikidata is a free and open knowledge base that can be read and edited
     by both humans and machines
   frink-options:
+    kgf:
+      contents:
+        text:
+          untagged_language: none
+      semantics:
+        authoritative_namespaces:
+        - wd
+        - p
+        - wdv
+        - wdref
+        prefixes:
+          p: http://www.wikidata.org/prop/
+          schema: http://schema.org/
+          wd: http://www.wikidata.org/entity/
+          wdref: http://www.wikidata.org/reference/
+          wdv: http://www.wikidata.org/value/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#prefLabel
+          synonym:
+          - http://www.w3.org/2004/02/skos/core#altLabel
     lakefs-repo: wikidata
   homepage: https://www.wikidata.org/
   license: https://creativecommons.org/publicdomain/zero/1.0/
@@ -191,7 +213,9 @@ kgs:
           - http://schema.org/name
           - http://purl.uniprot.org/core/scientificName
     lakefs-repo: prokn
-  funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  funding:
+  - https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  - https://reporter.nih.gov/project-details/11194011
   homepage: https://research.bioinformatics.udel.edu/ProKN/
   kgf: https://apps.okn.us/kgf/prokn
   license: https://creativecommons.org/licenses/by/4.0/
@@ -314,7 +338,9 @@ kgs:
           label:
           - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: biomarkerkg
-  funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
+  funding:
+  - https://www.nsf.gov/awardsearch/search-results?queryText=2535091
+  - https://reporter.nih.gov/project-details/U24OD038423
   homepage: https://biomarkerkb.org/home/
   kgf: https://apps.okn.us/kgf/biomarkerkg
   license: https://creativecommons.org/licenses/by/4.0/
@@ -515,6 +541,8 @@ kgs:
           label:
           - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: ncipidkg
+  funding:
+  - https://reporter.nih.gov/project-details/11411190
   homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
   kgf: https://apps.okn.us/kgf/ncipidkg
   license: https://creativecommons.org/licenses/by/4.0/
@@ -857,7 +885,8 @@ kgs:
           - https://bmedesign.org/medical-device-kg/ns/deviceName
           - https://bmedesign.org/medical-device-kg/ns/name
     lakefs-repo: medical-device-kg
-  funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  funding:
+  - https://reporter.nih.gov/project-details/11261252
   homepage: https://bmedesign.org/knowledgegraph
   kgf: https://apps.okn.us/kgf/medical-device-kg
   license: https://creativecommons.org/licenses/by/4.0/
@@ -976,7 +1005,9 @@ kgs:
           label:
           - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: oard-kg
-  funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  funding:
+  - https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  - https://reporter.nih.gov/project-details/11396962
   homepage: https://github.com/WengLab-InformaticsResearch/oard-react
   kgf: https://apps.okn.us/kgf/oard-kg
   license: https://creativecommons.org/licenses/by/4.0/
@@ -1164,7 +1195,9 @@ kgs:
           label:
           - http://www.w3.org/2000/01/rdf-schema#label
     lakefs-repo: digcfdekg
-  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  funding:
+  - https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  - https://reporter.nih.gov/project-details/11327746
   homepage: https://cfdeknowledge.org/
   kgf: https://apps.okn.us/kgf/digcfdekg
   shortname: digcfdekg
@@ -1242,6 +1275,8 @@ kgs:
           - http://www.w3.org/2000/01/rdf-schema#label
           - http://www.w3.org/2004/02/skos/core#prefLabel
     lakefs-repo: rdkg
+  funding:
+  - https://reporter.nih.gov/project-details/11384758
   kgf: https://apps.okn.us/kgf/rdkg
   shortname: rdkg
   sparql: https://apps.okn.us/rdkg/sparql
