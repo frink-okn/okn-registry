@@ -886,6 +886,7 @@ kgs:
           - https://bmedesign.org/medical-device-kg/ns/name
     lakefs-repo: medical-device-kg
   funding:
+  - https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   - https://reporter.nih.gov/project-details/11261252
   homepage: https://bmedesign.org/knowledgegraph
   kgf: https://apps.okn.us/kgf/medical-device-kg
