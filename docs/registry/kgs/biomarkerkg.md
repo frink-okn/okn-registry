@@ -5,7 +5,9 @@ title: BiomarkerKB KG
 description: The BiomarkerKB knowledge graph is a structured network that connects biomarkers to diseases, drugs, biological entities, and evidence from the scientific literature.
 stats: https://registry.okn.us/kg-stats/biomarkerkg
 homepage: https://biomarkerkb.org/home/
-funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
+funding:
+- https://www.nsf.gov/awardsearch/search-results?queryText=2535091
+- https://reporter.nih.gov/project-details/U24OD038423
 sparql: https://apps.okn.us/biomarkerkg/sparql
 tpf: https://apps.okn.us/kgf/biomarkerkg/latest/tpf
 kgf: https://apps.okn.us/kgf/biomarkerkg

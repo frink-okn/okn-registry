@@ -5,7 +5,9 @@ title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
 description: Clinical associations between rare diseases and phenotypes derived from electronic health records
 #stats: https://registry.okn.us/kg-stats/oard-kg
 homepage: https://github.com/WengLab-InformaticsResearch/oard-react
-funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+funding:
+- https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+- https://reporter.nih.gov/project-details/11396962
 sparql: https://apps.okn.us/oard-kg/sparql
 tpf: https://apps.okn.us/kgf/oard-kg/latest/tpf
 kgf: https://apps.okn.us/kgf/oard-kg

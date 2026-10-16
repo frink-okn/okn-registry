@@ -5,7 +5,9 @@ title: CFDE REVEAL Knowledge Graph
 description: The CFDE REVEAL Knowledge Graph is a statistically inferred genomic evidence graph to integrate and disseminate knowledge within the Common Fund Data Ecosystem (CFDE).
 stats: https://registry.okn.us/kg-stats/digcfdekg
 homepage: https://cfdeknowledge.org/
-funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+funding:
+- https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+- https://reporter.nih.gov/project-details/11327746
 frink-options:
   lakefs-repo: digcfdekg
   documentation-path: digcfdekg
