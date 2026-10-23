@@ -1,0 +1,35 @@
+#+ summary: State-court parties that appear on both a criminal case and a civil case
+#+ tags:
+#+   - scales
+
+PREFIX scales: <http://schemas.scales-okn.org/rdf/scales#>
+PREFIX j: <http://release.niem.gov/niem/domains/jxdm/7.2/#>
+PREFIX nc: <http://release.niem.gov/niem/niem-core/5.0/#>
+
+SELECT ?spid ?civil_case ?civil_type ?criminal_case
+WHERE {
+  VALUES ?court_codes { "SUP" "MAG" "COC" }
+
+  {
+    SELECT ?spid ?civil_case ?civil_type
+    WHERE {
+      ?civil_case a scales:CivilCase ;
+                  scales:Party ?civil_party ;
+                  j:CaseCourt ?civil_court ;
+                  nc:CaseSubCategoryText ?civil_type .
+      ?civil_party scales:DisambiguatedEntity ?spid .
+      ?civil_court j:CourtCategoryCode ?court_codes .
+    }
+  }
+  
+  {
+    SELECT ?spid ?criminal_case
+    WHERE {
+      ?criminal_case a scales:CriminalCase ;
+                  j:CaseDefendantParty ?criminal_party ;
+                  j:CaseCourt ?criminal_court .
+      ?criminal_party scales:DisambiguatedEntity ?spid .
+      ?criminal_court j:CourtCategoryCode ?court_codes .
+    }
+  }
+}
