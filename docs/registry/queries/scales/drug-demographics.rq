@@ -1,0 +1,16 @@
+#+ summary: Demographic data for drug charges
+#+ tags:
+#+   - scales
+
+PREFIX j: <http://release.niem.gov/niem/domains/jxdm/7.2/#>
+PREFIX nc: <http://release.niem.gov/niem/niem-core/5.0/#>
+
+SELECT ?charge ?chargeText ?drugCode ?race
+WHERE { 
+    ?charge j:DrugCategoryCode ?drugCode ;
+            j:ChargeText ?chargeText .
+    OPTIONAL {
+        ?charge j:ChargeSubject ?person .
+        ?person nc:PersonRaceText ?race .
+    }
+}
