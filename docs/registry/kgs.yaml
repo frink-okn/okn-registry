@@ -1581,6 +1581,12 @@ kgs:
         - aura
         prefixes:
           aura: http://www.projecthalo.com/aura#
+        roles:
+          description:
+          - http://www.projecthalo.com/aura#user-description
+          - http://www.projecthalo.com/aura#description
+          label:
+          - http://www.projecthalo.com/aura#word
     lakefs-repo: bio101
   funding: Project Halo, Vulcan Inc.
   homepage: https://www.ai.sri.com/~halo/public/exported-kb/biokb.html
