@@ -174,12 +174,12 @@ kgs:
           - http://www.w3.org/2004/02/skos/core#altLabel
     lakefs-repo: wikidata
   homepage: https://www.wikidata.org/
-  kgf: https://frink.apps.renci.org/kgf/wikidata
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: wikidata
   sparql: https://qlever.dev/api/wikidata
   template: overrides/kg.html
   title: Wikidata
+  tpf: https://apps.okn.us/ldf/wikidata
 - contact:
     email: chenc@udel.edu
     github: chenchuming
