@@ -3,7 +3,7 @@ distinct_subjects: 313559
 distinct_objects: 311385
 properties: 46
 classes: 15
-last_checked: '2026-10-13'
+last_checked: '2026-10-31'
 class_partitions:
 - uri: https://sparql.glygen.org/ontology/Glycoprotein
   label: Glycoprotein
