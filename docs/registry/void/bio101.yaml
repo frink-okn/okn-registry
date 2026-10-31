@@ -1,16 +1,19 @@
-triples: 1060849
-distinct_subjects: 460141
-distinct_objects: 485643
-properties: 23
-classes: 127
-last_checked: '2026-10-13'
+triples: 1094330
+distinct_subjects: 467072
+distinct_objects: 491923
+properties: 32
+classes: 128
+last_checked: '2026-10-31'
 class_partitions:
 - uri: http://www.w3.org/2002/07/owl#Class
   label: owl:Class
-  count: 105292
+  count: 105253
 - uri: http://www.w3.org/2002/07/owl#Restriction
   label: owl:Restriction
-  count: 81646
+  count: 80718
+- uri: http://www.projecthalo.com/aura#Concept-Word-Frame
+  label: Concept-Word-Frame
+  count: 7537
 - uri: http://www.w3.org/2002/07/owl#NamedIndividual
   label: owl:NamedIndividual
   count: 634
@@ -389,19 +392,19 @@ class_partitions:
 property_partitions:
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#first
   label: rdf:first
-  count: 272205
+  count: 272566
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
   label: rdf:rest
-  count: 272205
+  count: 272566
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 188794
+  count: 195364
 - uri: http://www.w3.org/2002/07/owl#onProperty
   label: owl:onProperty
-  count: 81646
+  count: 80718
 - uri: http://www.w3.org/2002/07/owl#intersectionOf
   label: owl:intersectionOf
-  count: 77882
+  count: 77847
 - uri: http://www.w3.org/2002/07/owl#someValuesFrom
   label: owl:someValuesFrom
   count: 76580
@@ -417,39 +420,66 @@ property_partitions:
 - uri: http://www.w3.org/2002/07/owl#disjointWith
   label: owl:disjointWith
   count: 9290
+- uri: http://www.projecthalo.com/aura#part-of-speech
+  label: part-of-speech
+  count: 7537
+- uri: http://www.projecthalo.com/aura#word
+  label: word
+  count: 7537
+- uri: http://www.projecthalo.com/aura#synonym-for
+  label: synonym-for
+  count: 7399
 - uri: http://www.projecthalo.com/aura#user-description
   label: user-description
   count: 5723
 - uri: http://www.w3.org/2002/07/owl#hasValue
   label: owl:hasValue
   count: 4130
-- uri: http://www.w3.org/2002/07/owl#onClass
-  label: owl:onClass
-  count: 936
-- uri: http://www.w3.org/2002/07/owl#qualifiedCardinality
-  label: owl:qualifiedCardinality
-  count: 720
+- uri: http://www.projecthalo.com/aura#primary-noun-for
+  label: primary-noun-for
+  count: 2486
+- uri: http://www.projecthalo.com/aura#primary-verb-for
+  label: primary-verb-for
+  count: 1228
+- uri: http://www.projecthalo.com/aura#primary-nominalization-for
+  label: primary-nominalization-for
+  count: 1225
+- uri: http://www.projecthalo.com/aura#preposition
+  label: preposition
+  count: 662
+- uri: http://www.projecthalo.com/aura#grammatical-subject
+  label: grammatical-subject
+  count: 490
+- uri: http://www.projecthalo.com/aura#grammatical-object
+  label: grammatical-object
+  count: 369
 - uri: http://www.w3.org/2000/01/rdf-schema#range
   label: rdfs:range
   count: 234
 - uri: http://www.w3.org/2000/01/rdf-schema#domain
   label: rdfs:domain
   count: 231
-- uri: http://www.w3.org/2002/07/owl#minQualifiedCardinality
-  label: owl:minQualifiedCardinality
-  count: 188
 - uri: http://www.projecthalo.com/aura#description
   label: description
   count: 159
-- uri: http://www.w3.org/2002/07/owl#maxQualifiedCardinality
-  label: owl:maxQualifiedCardinality
-  count: 28
+- uri: http://www.projecthalo.com/aura#implied-participant
+  label: implied-participant
+  count: 75
 - uri: http://www.w3.org/2002/07/owl#unionOf
   label: owl:unionOf
   count: 14
+- uri: http://www.w3.org/2002/07/owl#onClass
+  label: owl:onClass
+  count: 8
 - uri: http://www.w3.org/2000/01/rdf-schema#subPropertyOf
   label: rdfs:subPropertyOf
   count: 5
+- uri: http://www.w3.org/2002/07/owl#minQualifiedCardinality
+  label: owl:minQualifiedCardinality
+  count: 4
+- uri: http://www.w3.org/2002/07/owl#qualifiedCardinality
+  label: owl:qualifiedCardinality
+  count: 4
 - uri: http://www.w3.org/2002/07/owl#inverseOf
   label: owl:inverseOf
   count: 2
