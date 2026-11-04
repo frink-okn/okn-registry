@@ -16,6 +16,7 @@
 | [biohealth](kgs/biohealth/) | Bio-Health KG | Bio-Health KG is a dynamically-updated open knowledge network for health, integrating biomedical insights with social determinants of health. |
 | [biomarkerkg](kgs/biomarkerkg/) | BiomarkerKB KG | The BiomarkerKB knowledge graph is a structured network that connects biomarkers to diseases, drugs, biological entities, and evidence from the scientific literature. |
 | [climatemodelskg](kgs/climatemodelskg/) | Climate Models KG | Climate Models KG is a knowledge graph to support evaluation and development of climate models. |
+| [cognitive-kb](kgs/cognitive-kb/) | Cognitive Active Inference knowledge base | Concept pages on Active Inference and related fields, with typed and untyped relations and citation records, as SKOS/Dublin Core/schema.org RDF. |
 | [digcfdekg](kgs/digcfdekg/) | CFDE REVEAL Knowledge Graph | The CFDE REVEAL Knowledge Graph is a statistically inferred genomic evidence graph to integrate and disseminate knowledge within the Common Fund Data Ecosystem (CFDE). |
 | [dreamkg](kgs/dreamkg/) | DREAM-KG | Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness With Explainable AI |
 | [evoweb](kgs/evoweb/) | EvoWeb | EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID) |

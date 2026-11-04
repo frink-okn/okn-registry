@@ -1018,6 +1018,20 @@ kgs:
   title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
   tpf: https://apps.okn.us/kgf/oard-kg/latest/tpf
 - contacts:
+  - email: daniel@activeinference.institute
+    github: docxology
+    label: Daniel Ari Friedman
+  description: Concept pages on Active Inference and related fields, with typed and
+    untyped relations and citation records, as SKOS/Dublin Core/schema.org RDF.
+  frink-options:
+    documentation-path: cognitive-kb
+    lakefs-repo: cognitive-kb
+  homepage: https://github.com/ActiveInferenceInstitute/cognitive
+  shortname: cognitive-kb
+  stats: https://registry.okn.us/kg-stats/cognitive-kb
+  template: overrides/kg.html
+  title: Cognitive Active Inference knowledge base
+- contacts:
   - email: danny.e.oneal@gmail.com
     github: danny-oneal
     label: Danny O'Neal
@@ -1581,6 +1595,12 @@ kgs:
         - aura
         prefixes:
           aura: http://www.projecthalo.com/aura#
+        roles:
+          description:
+          - http://www.projecthalo.com/aura#user-description
+          - http://www.projecthalo.com/aura#description
+          label:
+          - http://www.projecthalo.com/aura#word
     lakefs-repo: bio101
   funding: Project Halo, Vulcan Inc.
   homepage: https://www.ai.sri.com/~halo/public/exported-kb/biokb.html
