@@ -22,6 +22,7 @@ contacts:
 - email: Erik.Wright@bcm.edu
   github: "WrightLabScience"
   label: "Erik Wright"
+license: "https://creativecommons.org/licenses/by/4.0/"
 sparql: https://apps.okn.us/evoweb/sparql
 tpf: https://apps.okn.us/kgf/evoweb/latest/tpf
 kgf: https://apps.okn.us/kgf/evoweb
