@@ -1,0 +1,17 @@
+#+ summary: FDA-recognized consensus standards for each FDA product code, linked by product code or by regulation
+#+ tags:
+#+   - medical-device-kg
+
+PREFIX ex: <https://bmedesign.org/medical-device-kg/ns/>
+SELECT DISTINCT ?code ?linkedBy ?fdaRecognitionNumber ?sdo ?designation WHERE {
+  VALUES ?code { "MXD" "KDI" "MUD" "IKZ" "FNL" "LLI" "OSI" "FNJ" }
+  ?cls a ex:ProductClassificationRecord ; ex:productCode ?code ;
+       ex:hasProductCode ?pc ; ex:hasRegulationNumber ?r .
+  { ?cls ex:hasConsensusStandard ?std . BIND("product code page" AS ?linkedBy) }
+  UNION { ?std ex:listsProductCode ?pc . BIND("standards database, product code" AS ?linkedBy) }
+  UNION { ?std ex:citesRegulation ?r . BIND("standards database, regulation" AS ?linkedBy) }
+  ?std ex:recognitionNumber ?fdaRecognitionNumber .
+  OPTIONAL { ?std ex:standardsDevelopmentOrganization ?sdo }
+  OPTIONAL { ?std ex:standardDesignation ?designation }
+}
+ORDER BY ?code ?linkedBy ?fdaRecognitionNumber

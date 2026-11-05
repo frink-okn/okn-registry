@@ -33,7 +33,7 @@ Every dataset hosted in the OKN will have its own lakeFS repository. Data submis
   
 
 
-1. Navigate to [https://frink-lakefs.apps.renci.org/](https://frink-lakefs.apps.renci.org/)
+1. Navigate to [https://repository.okn.us/](https://repository.okn.us/)
 
 2. Enter your **Access Key ID** and your **Secret Access Key** to log in.
 
@@ -84,8 +84,7 @@ Every dataset hosted in the OKN will have its own lakeFS repository. Data submis
         ```bash
             export AWS_ACCESS_KEY_ID=<your-access-key-id>
             export AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
-            export LAKEFS_ENDPOINT=https://frink-lakefs.apps.renci.org
-   
+            export LAKEFS_ENDPOINT=https://repository.okn.us/
         ```
 
 3. **Upload files to the repository.**
@@ -163,7 +162,7 @@ Azure blob storage as an example.
         - `AWS Access Key ID`: Your lakeFS access key id .
         - `AWS Secret Access Key`: Your lakefs secret access key.
         - For region leave empty
-        - `Endpoint for S3 API`: this is the url for lakefs https://frink-lakefs.apps.renci.org
+        - `Endpoint for S3 API`: this is the url for lakefs https://repository.okn.us/
         - Follow the rest of the prompt according to your needs
     - **Save the configuration**:
       - After providing the necessary information, confirm the setup and save the configuration.

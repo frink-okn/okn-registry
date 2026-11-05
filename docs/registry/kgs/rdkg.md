@@ -4,12 +4,27 @@ shortname: rdkg
 title: Rare Disease Knowledge Graph
 description: RDKG is an open knowledge graph for rare diseases that integrates standardized disease identifiers and cross-references to support discovery and evidence synthesis.
 #homepage: https:// 
+sparql: https://apps.okn.us/rdkg/sparql
+tpf: https://apps.okn.us/kgf/rdkg/latest/tpf
+kgf: https://apps.okn.us/kgf/rdkg
+funding:
+- https://reporter.nih.gov/project-details/11384758
 frink-options:
   lakefs-repo: rdkg
   documentation-path: rdkg
+  kgf:
+    semantics:
+      prefixes:
+        rdaccelerate: "https://rdaccelerate.org/resource/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://www.w3.org/2004/02/skos/core#prefLabel"
+      authoritative_namespaces:
+        - rdaccelerate
 contacts:
   - email: jinlian.wang@uth.tmc.edu
-    github: wnagjl99
+    github: wangjl99
     label: Jinlian Wang
 ---
 

@@ -7,12 +7,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX upcore: <http://purl.uniprot.org/core/>
 PREFIX biolinkmodel: <https://biolink.github.io/biolink-model/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
 
 SELECT 
 DISTINCT ?diseaseLabel (GROUP_CONCAT(CONCAT(STR(?uniprotAccession),"(",STR(?geneName),")"); separator=";") AS ?assocProteins)
 WHERE {
 
-    SERVICE <https://frink.apps.renci.org/federation/sparql>{
+    SERVICE <https://apps.okn.us/oard-kg/sparql> {
         # From OARD KG
         ?disease biolinkw3id:category biolinkw3id:Disease ;
             rdfs:label ?diseaseLabel .
@@ -24,7 +25,6 @@ WHERE {
         upcore:organism 'Homo sapiens' ;
         obo:NCIT_C164806 ?geneName .
 
-    ?omimDisease rdfs:seeAlso ?disease .
+    ?omimDisease skos:exactMatch ?disease .
 }
 GROUP BY ?diseaseLabel ?organism
-

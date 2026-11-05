@@ -23,7 +23,7 @@ SELECT * {
       {
         SELECT DISTINCT ?phenotype ?resource
         WHERE {
-          SERVICE <https://frink.apps.renci.org/biohealth/sparql> {
+          SERVICE <https://apps.okn.us/biohealth/sparql> {
             BIND (<https://biohealthkg.proto-okn.net/kg/node/C0029095> AS ?opioid)
             BIND (w3id:coexists_with AS ?coexists_with)
 

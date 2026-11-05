@@ -1,0 +1,8 @@
+#+ summary: Which protein accessions are members of the dnaA gene group?
+#+ tags:
+#+   - evoweb
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+select ?member {
+  <https://purl.org/okn/frink/kg/evoweb/schema/Node1> skos:member ?member .
+} limit 100

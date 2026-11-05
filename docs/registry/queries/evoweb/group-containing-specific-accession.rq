@@ -1,0 +1,10 @@
+#+ summary: Which group contains protein accession number WP_151056081.1?
+#+ tags:
+#+   - evoweb
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ncbi-nih: <https://www.ncbi.nlm.nih.gov/protein/>
+select ?group ?groupLabel ?member {
+  ?group skos:member ncbi-nih:WP_151056081.1 ; rdfs:label ?groupLabel .
+}

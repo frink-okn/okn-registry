@@ -1,0 +1,16 @@
+#+ summary: Direct child subsystems of a given NeST system (one level down the hierarchy)
+#+ tags:
+#+   - nestkg
+
+PREFIX ndexv: <https://www.ndexbio.org/vocab/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX nest: <https://www.ndexbio.org/identifiers/>
+
+SELECT ?child ?childLabel ?members WHERE {
+  ?child biolink:part_of nest:NEST-1 ;
+         rdfs:label ?childLabel ;
+         ndexv:memberCount ?members .
+}
+ORDER BY DESC(?members)
+LIMIT 100

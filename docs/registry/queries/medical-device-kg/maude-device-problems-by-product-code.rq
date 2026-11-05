@@ -1,0 +1,12 @@
+#+ summary: MAUDE device problems by report count for each FDA product code (report counts are not failure rates)
+#+ tags:
+#+   - medical-device-kg
+
+PREFIX ex: <https://bmedesign.org/medical-device-kg/ns/>
+SELECT ?code ?deviceProblem ?reportCount ?caveat WHERE {
+  VALUES ?code { "MXD" "KDI" "MUD" "IKZ" "FNL" "LLI" "OSI" "FNJ" }
+  ?t a ex:TPLCRecord ; ex:productCode ?code ; ex:hasDeviceProblem ?dp .
+  ?dp ex:deviceProblem ?deviceProblem ; ex:reportCount ?reportCount .
+  BIND("MAUDE is passive surveillance: report counts are not failure rates, FDA does not verify causation, and absence of reports is not evidence of safety." AS ?caveat)
+}
+ORDER BY ?code DESC(?reportCount)
