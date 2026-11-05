@@ -847,6 +847,7 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://data.niaid.nih.gov/
   kgf: https://apps.okn.us/kgf/evoweb
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: evoweb
   sparql: https://apps.okn.us/evoweb/sparql
   stats: https://registry.okn.us/kg-stats/evoweb
