@@ -30,6 +30,8 @@ jobs:
         uses: astral-sh/setup-uv@v7
         with:
           version: "0.10.4"
+      - name: Check YAML frontmatter of KG registry files
+        run: uv run scripts/check_registry.py
       - name: Create local changes
         run: |
           touch docs/registry/kgs/*.md docs/registry/queries/*/*.rq; snakemake -c2 --show-failed-logs docs/registry/kgs.yaml docs/registry/index.md docs/query/sample-query-library.md
