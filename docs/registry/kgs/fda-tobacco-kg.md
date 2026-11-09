@@ -2,7 +2,7 @@
 template: overrides/kg.html
 shortname: fda-tobacco-kg
 title: FDA Tobacco Knowledge Graph
-description: FDA Center for Tobacco Products data as RDF: the Searchable Tobacco Products Database, tobacco marketing orders, tobacco product problem reports and the Center's published research datasets on harm perception, prevention advertising and the smokefree.gov program.
+description: "FDA Center for Tobacco Products data as RDF: the Searchable Tobacco Products Database, tobacco marketing orders, tobacco product problem reports and the Center's published research datasets on harm perception, prevention advertising and the smokefree.gov program."
 stats: https://registry.okn.us/kg-stats/fda-tobacco-kg
 homepage: https://github.com/medical-device-design/FDA-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
