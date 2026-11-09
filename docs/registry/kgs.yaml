@@ -1112,6 +1112,7 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
   kgf: https://apps.okn.us/kgf/hydrologykg
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: hydrologykg
   sparql: https://apps.okn.us/hydrologykg/sparql
   stats: https://registry.okn.us/kg-stats/hydrology-kg
@@ -1366,6 +1367,7 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
   kgf: https://apps.okn.us/kgf/fiokg
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: fiokg
   sparql: https://apps.okn.us/fiokg/sparql
   stats: https://registry.okn.us/kg-stats/fio-kg
@@ -1415,12 +1417,215 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
   kgf: https://apps.okn.us/kgf/sawgraph
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: sawgraph
   sparql: https://apps.okn.us/sawgraph/sparql
   stats: https://registry.okn.us/kg-stats/sawgraph
   template: overrides/kg.html
   title: SAWGraph PFAS KG
   tpf: https://apps.okn.us/kgf/sawgraph/latest/tpf
+- contacts:
+  - email: roche0619@outlook.com
+    github: Roche619
+    label: Roche de Guzman
+  description: 'FDA Center for Tobacco Products data as RDF: the Searchable Tobacco
+    Products Database, tobacco marketing orders, tobacco product problem reports and
+    the Center''s published research datasets on harm perception, prevention advertising
+    and the smokefree.gov program.'
+  frink-options:
+    documentation-path: fda-tobacco-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - fdatob
+        - fdatob-id
+        prefixes:
+          fdatob: https://bmedesign.org/fda-tobacco-kg/ns/
+          fdatob-id: https://bmedesign.org/fda-tobacco-kg/id/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: fda-tobacco-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://github.com/medical-device-design/FDA-kg
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: fda-tobacco-kg
+  stats: https://registry.okn.us/kg-stats/fda-tobacco-kg
+  template: overrides/kg.html
+  title: FDA Tobacco Knowledge Graph
+- contacts:
+  - email: roche0619@outlook.com
+    github: Roche619
+    label: Roche de Guzman
+  description: 'FDA drug and biologic regulatory data as RDF, keyed on the application
+    number (NDA, ANDA, BLA): Drugs@FDA, the NDC Directory, the Orange Book, the Purple
+    Book, NSDE, SPL drug labels, drug shortages, complete response letters, establishment
+    registries, inactive ingredients and drug master files, linked to FDA substances.'
+  frink-options:
+    documentation-path: fda-drug-biologic-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - fdadrug
+        - fdadrug-id
+        prefixes:
+          fdadrug: https://bmedesign.org/fda-drug-biologic-kg/ns/
+          fdadrug-id: https://bmedesign.org/fda-drug-biologic-kg/id/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: fda-drug-biologic-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://github.com/medical-device-design/FDA-kg
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: fda-drug-biologic-kg
+  stats: https://registry.okn.us/kg-stats/fda-drug-biologic-kg
+  template: overrides/kg.html
+  title: FDA Drug and Biologic Knowledge Graph
+- contacts:
+  - email: roche0619@outlook.com
+    github: Roche619
+    label: Roche de Guzman
+  description: FDA Adverse Event Reporting System (FAERS) and Vaccine Adverse Event
+    Reporting System (VAERS) reports as RDF, with patient, drug, vaccine, reaction
+    and outcome fields, linked to FDA applications, package NDCs and substances.
+  frink-options:
+    documentation-path: fda-drug-event-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - fdaevent
+        - fdaevent-id
+        prefixes:
+          fdaevent: https://bmedesign.org/fda-drug-event-kg/ns/
+          fdaevent-id: https://bmedesign.org/fda-drug-event-kg/id/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: fda-drug-event-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://github.com/medical-device-design/FDA-kg
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: fda-drug-event-kg
+  stats: https://registry.okn.us/kg-stats/fda-drug-event-kg
+  template: overrides/kg.html
+  title: FDA Drug and Vaccine Adverse Event Knowledge Graph
+- contacts:
+  - email: roche0619@outlook.com
+    github: Roche619
+    label: Roche de Guzman
+  description: FDA Center for Veterinary Medicine adverse event reports for animal
+    drugs and devices as RDF, with the animal, the drugs and active ingredients, doses,
+    routes and outcomes for 1.38 million reports, plus the approved animal drug applications
+    of Animal Drugs @ FDA (the Green Book).
+  frink-options:
+    documentation-path: fda-animal-health-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - fdavet
+        - fdavet-id
+        prefixes:
+          fdavet: https://bmedesign.org/fda-animal-health-kg/ns/
+          fdavet-id: https://bmedesign.org/fda-animal-health-kg/id/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: fda-animal-health-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://github.com/medical-device-design/FDA-kg
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: fda-animal-health-kg
+  stats: https://registry.okn.us/kg-stats/fda-animal-health-kg
+  template: overrides/kg.html
+  title: FDA Animal Health Knowledge Graph
+- contacts:
+  - email: roche0619@outlook.com
+    github: Roche619
+    label: Roche de Guzman
+  description: FDA adverse event reports for foods, dietary supplements and cosmetics
+    (CAERS and the cosmetic event reports), FDA's food ingredient inventories (Substances
+    Added to Food, GRAS notices, food contact notifications, SCOGS, food-contact regulations,
+    color additives and others), new dietary ingredient notifications and Total Diet
+    Study results as RDF.
+  frink-options:
+    documentation-path: fda-food-cosmetic-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - fdafood
+        - fdafood-id
+        prefixes:
+          fdafood: https://bmedesign.org/fda-food-cosmetic-kg/ns/
+          fdafood-id: https://bmedesign.org/fda-food-cosmetic-kg/id/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: fda-food-cosmetic-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://github.com/medical-device-design/FDA-kg
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: fda-food-cosmetic-kg
+  stats: https://registry.okn.us/kg-stats/fda-food-cosmetic-kg
+  template: overrides/kg.html
+  title: FDA Food and Cosmetic Knowledge Graph
+- contacts:
+  - email: roche0619@outlook.com
+    github: Roche619
+    label: Roche de Guzman
+  description: FDA recalls and enforcement reports for drugs and foods, warning letters,
+    inspections, compliance actions, import refusals, Import Alerts and the import
+    product code taxonomy as RDF, keyed on the FDA Establishment Identifier (FEI).
+    The shared compliance hub for the FDA regulated-products graphs.
+  frink-options:
+    documentation-path: fda-compliance-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - fdacomp
+        - fdacomp-id
+        prefixes:
+          fdacomp: https://bmedesign.org/fda-compliance-kg/ns/
+          fdacomp-id: https://bmedesign.org/fda-compliance-kg/id/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: fda-compliance-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://github.com/medical-device-design/FDA-kg
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: fda-compliance-kg
+  stats: https://registry.okn.us/kg-stats/fda-compliance-kg
+  template: overrides/kg.html
+  title: FDA Compliance Knowledge Graph
+- contacts:
+  - email: roche0619@outlook.com
+    github: Roche619
+    label: Roche de Guzman
+  description: FDA's Global Substance Registration System (GSRS) and UNII substance
+    identifiers as RDF, with CAS, PubChem, DSSTox, RxCUI and other cross-references
+    for linking drugs, foods, cosmetics, devices and chemical-safety graphs.
+  frink-options:
+    documentation-path: fda-substance-kg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - fdasub
+        - fdasub-id
+        prefixes:
+          fdasub: https://bmedesign.org/fda-substance-kg/ns/
+          fdasub-id: https://bmedesign.org/fda-substance-kg/id/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: fda-substance-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://github.com/medical-device-design/FDA-kg
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  shortname: fda-substance-kg
+  stats: https://registry.okn.us/kg-stats/fda-substance-kg
+  template: overrides/kg.html
+  title: FDA Substance Knowledge Graph
 - contacts:
   - email: shirlystephen@ucsb.edu
     github: shirlysteph
