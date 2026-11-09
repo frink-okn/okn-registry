@@ -1144,6 +1144,7 @@ kgs:
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
   kgf: https://apps.okn.us/kgf/spatialkg
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: spatialkg
   sparql: https://apps.okn.us/spatialkg/sparql
   stats: https://registry.okn.us/kg-stats/spatial-kg
