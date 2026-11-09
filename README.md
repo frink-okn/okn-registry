@@ -9,6 +9,8 @@ https://github.com/frink-okn/okn-registry/tree/main/docs/registry/kgs
 The Markdown file for each KG is the source of truth; these are automatically compiled into the
 [registry metadata file](https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/kgs.yaml).
 Each Markdown file contains a YAML metadata section at the top, which should use standardized properties (a schema is forthcoming for use in QC).
+Pull requests are checked for valid YAML in this section; to run the same check locally, use `uv run scripts/check_registry.py`.
+A common mistake is an unquoted value containing `: ` (colon and space), such as a description; put such values in double quotes.
 The remaining Markdown content can be used to provide a narrative overview of the KG.
 
 If you are a Proto-OKN KG maintainer, please propose edits to your registry file in a
