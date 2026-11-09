@@ -2,7 +2,7 @@
 template: overrides/kg.html
 shortname: fda-drug-biologic-kg
 title: FDA Drug and Biologic Knowledge Graph
-description: FDA drug and biologic regulatory data as RDF, keyed on the application number (NDA, ANDA, BLA): Drugs@FDA, the NDC Directory, the Orange Book, the Purple Book, NSDE, SPL drug labels, drug shortages, complete response letters, establishment registries, inactive ingredients and drug master files, linked to FDA substances.
+description: "FDA drug and biologic regulatory data as RDF, keyed on the application number (NDA, ANDA, BLA): Drugs@FDA, the NDC Directory, the Orange Book, the Purple Book, NSDE, SPL drug labels, drug shortages, complete response letters, establishment registries, inactive ingredients and drug master files, linked to FDA substances."
 stats: https://registry.okn.us/kg-stats/fda-drug-biologic-kg
 homepage: https://github.com/medical-device-design/FDA-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
