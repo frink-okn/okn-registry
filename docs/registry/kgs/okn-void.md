@@ -6,14 +6,18 @@ description: Collected VoID (Vocabulary of Interlinked Datasets) metadata for al
 homepage: https://registry.okn.us/registry/kgs/okn-void/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
 sparql: https://apps.okn.us/okn-void/sparql
-tpf: https://apps.okn.us/ldf/okn-void
 frink-options:
   lakefs-repo: okn-void
   documentation-path: okn-void
+  kgf:
+    semantics:
+      prefixes:
+        okn-kg: "https://purl.org/okn/frink/kg/"
 contact:
   email: balhoff@renci.org
   github: "balhoff"
   label: "Jim Balhoff"
+license: "https://creativecommons.org/publicdomain/zero/1.0/"
 ---
 This is a meta-graph collecting descriptive data for all the graphs that are part of the Proto-OKN. 
 Information about the kinds of classes and properties, and the number of triples used for each, 

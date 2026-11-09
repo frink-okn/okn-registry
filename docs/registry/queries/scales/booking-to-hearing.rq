@@ -1,0 +1,31 @@
+#+ summary: Booking dates and first-hearing dates for jailed individuals
+#+ tags:
+#+   - scales
+
+PREFIX scales: <http://schemas.scales-okn.org/rdf/scales#>
+PREFIX j: <http://release.niem.gov/niem/domains/jxdm/7.2/#>
+PREFIX nc: <http://release.niem.gov/niem/niem-core/5.0/#>
+
+SELECT DISTINCT ?case ?spid ?booking ?bookingDate ?firstHearingDate
+WHERE {
+
+  ?charge j:Booking ?booking ;
+          j:ChargeSubject ?party ;
+          nc:CourtCase ?case .
+  ?booking nc:StartDate ?bookingDate .
+  ?party scales:DisambiguatedEntity ?spid .
+  
+  {
+    SELECT ?case ?spid
+           (MIN(?hDate) AS ?firstHearingDate)
+    WHERE {
+      ?case j:RegisterAction ?regAction .
+      ?party_other scales:DisambiguatedEntity ?spid ;
+                   j:RegisterAction ?regAction .
+      ?regAction j:RegisterActionDate ?hDate .
+    }
+    GROUP BY ?case ?spid
+  }
+
+  FILTER(?firstHearingDate >= ?bookingDate)
+}

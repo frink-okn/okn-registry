@@ -1,0 +1,47 @@
+# Find PFAS results near suspected PFAS industry using facilities, by State
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX fio: <http://w3id.org/fio/v1/fio#>
+PREFIX fio-pfas: <http://w3id.org/fio/v1/pfas#>
+PREFIX naics: <http://w3id.org/fio/v1/naics#> 
+PREFIX epa-frs: <http://w3id.org/fio/v1/epa-frs#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX kwg-ont: <http://stko-kwg.geog.ucsb.edu/lod/ontology/>
+PREFIX kwgr: <http://stko-kwg.geog.ucsb.edu/lod/resource/>
+PREFIX spatial: <http://purl.org/spatialai/spatial/spatial-full#>
+PREFIX coso:<http://w3id.org/coso/v1/contaminoso#> 
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+SELECT DISTINCT ?observation  ?stateName ?townName ?concentration ?unit ?normalizedConc ?substance ?date ?facilityName ?industryName WHERE {
+  #find s2 cells with detect samples
+   ?sp a coso:SamplePoint;
+    kwg-ont:sfWithin ?s2, ?town.
+   ?observation coso:observedAtSamplePoint ?sp;
+        coso:ofDSSToxSubstance/skos:altLabel ?substance;
+        coso:hasResult ?result;
+        coso:observedTime ?date.
+   ?result qudt:quantityValue/qudt:numericValue ?concentration;
+           qudt:quantityValue/qudt:hasUnit ?rawUnit.  #only detected values
+   ?rawUnit qudt:symbol ?unit;
+            qudt:conversionMultiplier ?unitConversion.
+  BIND((?unitConversion * ?concentration) as ?normalizedConc ) #normalize different units
+  ?s2 rdf:type kwg-ont:S2Cell_Level13.
+  ?town rdf:type kwg-ont:AdministrativeRegion_3;
+        kwg-ont:administrativePartOf+ ?state;
+        rdfs:label ?townName.
+  ?state rdf:type kwg-ont:AdministrativeRegion_1;
+         rdfs:label ?stateName. 
+        
+  #find facilities in s2 cells
+  ?facility kwg-ont:sfWithin ?s2;
+  		rdf:type fio:Facility;
+    	rdfs:label ?facilityName;
+        fio:ofIndustry ?industry.
+  ?pfasIndustryList rdfs:subClassOf fio-pfas:IndustryCollectionByPFASContaminationConcern;
+    				  fio:hasMember ?industry. 
+  ?industry rdfs:label ?industryName. 
+  
+} ORDER BY DESC(?normalizedConc) # highest normalized concentration first
+limit 100
+

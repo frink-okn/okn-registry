@@ -7,10 +7,35 @@ stats: https://registry.okn.us/kg-stats/hydrology-kg
 homepage: https://sawgraph.github.io/
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
 sparql: https://apps.okn.us/hydrologykg/sparql
-tpf: https://apps.okn.us/ldf/hydrologykg
+tpf: https://apps.okn.us/kgf/hydrologykg/latest/tpf
+kgf: https://apps.okn.us/kgf/hydrologykg
 frink-options:
   lakefs-repo: hydrology-kg
   documentation-path: hydrology-kg
+  kgf:
+    semantics:
+      prefixes:
+        efive: "http://www.semanticweb.org/efive/"
+        sawgraph-sdwis-h: "http://sawgraph.spatialai.org/v1/us-sdwis#"
+        isgs: "http://sawgraph.spatialai.org/v1/il-isgs#"
+        isgs-data: "http://sawgraph.spatialai.org/v1/il-isgs-data#"
+        mgs: "http://sawgraph.spatialai.org/v1/me-mgs#"
+        mgs-data: "http://sawgraph.spatialai.org/v1/me-mgs-data#"
+        stad-mls: "http://purl.org/spatialai/stad/v2/mls/"
+        nhdplusv2-comid: "https://geoconnex.us/nhdplusv2/comid/"
+        datacommons: "https://datacommons.org/browser/"
+      roles:
+        label:
+          - "https://schema.org/name"
+          - "http://purl.org/dc/terms/title"
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+          - "http://sawgraph.spatialai.org/v1/us-sdwis#pwsName"
+      authoritative_namespaces:
+        - efive
+        - isgs
+        - isgs-data
+        - mgs
+        - mgs-data
 contacts:
   - email: david.kedrowski@maine.edu  
     github: "dkedrowski"
@@ -18,7 +43,7 @@ contacts:
   - email: "torsten.hahmann@maine.edu"
     github: "thahmann"
     label: "Torsten Hahmann"
-  
+license: "https://creativecommons.org/licenses/by/4.0/"
 ---
 The SAWGraph Hydrology KG is part of the Safe Agricultural Products and Water Graph (SAWGraph) that facilities environmental regulators, water safety officials, and PFAS researchers to trace pollutant pathways, identify upstream contamination sources, assess downstream impacts from point sources, and determine which water wells are hydrologically connected to contaminated sites. 
 The Hydrology knowledge graph integrates surface water features including stream reaches, watersheds and waterbodies (e.g. lakes), groundwater features like aquifers and wells, and hydrological connectivity data to support contaminant tracing and water quality analysis. It is built from USGS’s National Hydrography Dataset (NHDPlus) and state well and aquifer datasets. 
