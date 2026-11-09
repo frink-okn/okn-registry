@@ -319,38 +319,6 @@ kgs:
   title: SUDOKN
   tpf: https://apps.okn.us/kgf/sudokn/latest/tpf
 - contact:
-    email: jeetvora@gwu.edu
-    github: jeet-vora
-    label: Jeet Vora
-  description: The BiomarkerKB knowledge graph is a structured network that connects
-    biomarkers to diseases, drugs, biological entities, and evidence from the scientific
-    literature.
-  frink-options:
-    documentation-path: biomarkerkg
-    kgf:
-      semantics:
-        authoritative_namespaces:
-        - biomarker
-        prefixes:
-          biomarker: https://biomarkerkb.org/biomarker/
-          dbsnp: https://www.ncbi.nlm.nih.gov/snp/
-        roles:
-          label:
-          - http://www.w3.org/2000/01/rdf-schema#label
-    lakefs-repo: biomarkerkg
-  funding:
-  - https://www.nsf.gov/awardsearch/search-results?queryText=2535091
-  - https://reporter.nih.gov/project-details/U24OD038423
-  homepage: https://biomarkerkb.org/home/
-  kgf: https://apps.okn.us/kgf/biomarkerkg
-  license: https://creativecommons.org/licenses/by/4.0/
-  shortname: biomarkerkg
-  sparql: https://apps.okn.us/biomarkerkg/sparql
-  stats: https://registry.okn.us/kg-stats/biomarkerkg
-  template: overrides/kg.html
-  title: BiomarkerKB KG
-  tpf: https://apps.okn.us/kgf/biomarkerkg/latest/tpf
-- contact:
     email: jiaqi.gong@ua.edu
     github: SAIL-UA
     label: Jiaqi Gong
@@ -1424,6 +1392,41 @@ kgs:
   template: overrides/kg.html
   title: SAWGraph PFAS KG
   tpf: https://apps.okn.us/kgf/sawgraph/latest/tpf
+- contacts:
+  - email: pmcneely@gwu.edu
+    github: pmcneely
+    label: Patrick McNeely
+  - email: jeetvora@gwu.edu
+    github: jeet-vora
+    label: Jeet Vora
+  description: The BiomarkerKB knowledge graph is a structured network that connects
+    biomarkers to diseases, drugs, biological entities, and evidence from the scientific
+    literature.
+  frink-options:
+    documentation-path: biomarkerkg
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - biomarker
+        prefixes:
+          biomarker: https://biomarkerkb.org/biomarker/
+          dbsnp: https://www.ncbi.nlm.nih.gov/snp/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+    lakefs-repo: biomarkerkg
+  funding:
+  - https://www.nsf.gov/awardsearch/search-results?queryText=2535091
+  - https://reporter.nih.gov/project-details/U24OD038423
+  homepage: https://biomarkerkb.org/home/
+  kgf: https://apps.okn.us/kgf/biomarkerkg
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: biomarkerkg
+  sparql: https://apps.okn.us/biomarkerkg/sparql
+  stats: https://registry.okn.us/kg-stats/biomarkerkg
+  template: overrides/kg.html
+  title: BiomarkerKB KG
+  tpf: https://apps.okn.us/kgf/biomarkerkg/latest/tpf
 - contacts:
   - email: roche0619@outlook.com
     github: Roche619
