@@ -1,44 +1,44 @@
-triples: 4751233
-distinct_subjects: 1237530
-distinct_objects: 1327158
+triples: 4754593
+distinct_subjects: 1238421
+distinct_objects: 1328357
 properties: 18
 classes: 1
-last_checked: '2026-11-04'
+last_checked: '2026-11-10'
 class_partitions:
 - uri: http://rdfs.org/ns/void#Dataset
   label: void:Dataset
-  count: 1237530
+  count: 1238421
 property_partitions:
 - uri: http://rdfs.org/ns/void#triples
   label: void:triples
-  count: 1237530
+  count: 1238421
 - uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
   label: rdf:type
-  count: 1237530
+  count: 1238421
 - uri: http://ldf.fi/void-ext#objectClassPartition
   label: void-ext:objectClassPartition
-  count: 732696
+  count: 732966
 - uri: http://rdfs.org/ns/void#class
   label: void:class
-  count: 533632
+  count: 533698
 - uri: http://rdfs.org/ns/void#property
   label: void:property
-  count: 490538
+  count: 490951
 - uri: http://rdfs.org/ns/void#propertyPartition
   label: void:propertyPartition
-  count: 490538
+  count: 490951
 - uri: http://ldf.fi/void-ext#datatype
   label: void-ext:datatype
-  count: 8517
+  count: 8715
 - uri: http://ldf.fi/void-ext#datatypePartition
   label: void-ext:datatypePartition
-  count: 8517
+  count: 8715
 - uri: http://rdfs.org/ns/void#classPartition
   label: void:classPartition
-  count: 5056
+  count: 5066
 - uri: http://rdfs.org/ns/void#entities
   label: void:entities
-  count: 5056
+  count: 5066
 - uri: http://ldf.fi/void-ext#language
   label: void-ext:language
   count: 678
