@@ -3,7 +3,7 @@ distinct_subjects: 39949859
 distinct_objects: 148997573
 properties: 325
 classes: 46
-last_checked: '2026-11-10'
+last_checked: '2026-11-14'
 class_partitions:
 - uri: https://bmedesign.org/medical-device-kg/ns/MAUDEReport
   label: MAUDEReport
