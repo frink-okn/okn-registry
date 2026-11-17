@@ -98,10 +98,6 @@ kgs:
     OKN graphs
   frink-options:
     documentation-path: okn-void
-    kgf:
-      semantics:
-        prefixes:
-          okn-kg: https://purl.org/okn/frink/kg/
     lakefs-repo: okn-void
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://registry.okn.us/registry/kgs/okn-void/
