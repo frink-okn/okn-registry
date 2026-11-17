@@ -9,10 +9,6 @@ sparql: https://apps.okn.us/okn-void/sparql
 frink-options:
   lakefs-repo: okn-void
   documentation-path: okn-void
-  kgf:
-    semantics:
-      prefixes:
-        okn-kg: "https://purl.org/okn/frink/kg/"
 contact:
   email: balhoff@renci.org
   github: "balhoff"
