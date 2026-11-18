@@ -15,25 +15,31 @@ contacts:
 ---
 
 The knowledge base of the Active Inference Institute's `cognitive` repository as RDF. Every
-page is a `schema:CreativeWork`; articles on one idea are also `skos:Concept`s in one concept
-scheme, grouped into `skos:Collection`s by domain (mathematics, biology, cognitive science,
-philosophy, systems, ontology, citations). Edges are typed relations from each page's
-`semantic_relations` (`skos:related`, `dcterms:isPartOf`, `dcterms:hasPart` or a term under
-`https://purl.org/okn/frink/kg/cognitive-kb/relation/` that is a sub-property of
-`skos:semanticRelation`) and untyped body links (`dcterms:references`). Citation pages carry
-authors, year and DOI (`schema:sameAs`), and many concept pages link to the matching Wikidata item with `skos:closeMatch`. Provenance is `prov:wasDerivedFrom` the public
+page is a `schema:CreativeWork` document. Topic-bearing documents link through
+`schema:about` and `dcterms:subject` to separate stable `/concept/<path>` SKOS
+concepts in one concept scheme, grouped into domain `skos:Collection`s.
+Conceptual relations have concept endpoints and explicit predicate meanings;
+document references, citations, navigation, redirects and documentation relations
+retain document endpoints. Ambiguous mixed-role assertions are preserved under
+`https://purl.org/okn/frink/kg/cognitive-kb/relation/document/` without a SKOS
+super-property. Body links use `dcterms:references`. Citation pages carry
+authors, year and DOI (`schema:sameAs`). Explicit reviewed mappings use SKOS
+predicates with source, rationale and review-date evidence. Unreviewed Wikidata
+identifiers are `rdfs:seeAlso` discovery links. Tags point to concepts; citation
+relations reuse BIBO. Provenance is `prov:wasDerivedFrom` the public
 repository; repository-owned graph content is licensed under CC BY 4.0.
 The graph serves public research and education by connecting explanatory concepts
 and their literature across Active Inference, cognitive science, mathematics and
-biology. Wikidata mappings are candidate correspondences requiring review before
-using them as identity assertions. No external grant funding is claimed.
+biology. SKOS correspondences apply to concept meanings and do not assert OWL
+identity or clinical equivalence. No external grant funding is claimed.
 
-A cross-graph query follows the existing Wikidata mappings through the OKN
-identifier-mappings graph to labeled OBO identifiers in Ubergraph. Captured live
-responses, the query and replayable join evidence are in the source repository's
-`docs/okn/evidence/2026-10-13/`. This demonstrates identifier-based discovery;
-it does not promote candidate page mappings to identity assertions. The reusable
-capture and submission methods are maintained in `docxology/daf-okn`.
+A cross-graph query follows reviewed Wikidata mappings through the OKN
+identifier-mappings graph to labeled OBO identifiers in Ubergraph. The query,
+captured responses and replayable join evidence for the current corpus are in
+[`docs/okn/evidence/2026-11-16-current-corpus`](https://github.com/ActiveInferenceInstitute/cognitive/tree/main/docs/okn/evidence/2026-11-16-current-corpus).
+The join demonstrates identifier-based discovery while preserving the stated
+mapping predicates. The reusable capture and submission methods are maintained
+in `docxology/daf-okn`.
 
 Entity IRIs are under `https://purl.org/okn/frink/kg/cognitive-kb/`; the named graph is
 `https://purl.org/okn/frink/kg/cognitive-kb`. A prose description, vocabulary mapping, sample
