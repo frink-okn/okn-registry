@@ -1000,6 +1000,7 @@ kgs:
   homepage: https://github.com/ActiveInferenceInstitute/cognitive
   kgf: https://apps.okn.us/kgf/cognitive-kb
   shortname: cognitive-kb
+  sparql: https://apps.okn.us/cognitive-kb/sparql
   stats: https://registry.okn.us/kg-stats/cognitive-kb
   template: overrides/kg.html
   title: Cognitive Active Inference knowledge base
