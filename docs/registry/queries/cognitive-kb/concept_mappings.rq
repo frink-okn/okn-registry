@@ -7,11 +7,9 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX schema: <https://schema.org/>
 SELECT ?page ?concept ?label ?mapping ?external ?source
 WHERE {
-  GRAPH <https://purl.org/okn/frink/kg/cognitive-kb> {
-    ?concept a skos:Concept ; skos:prefLabel ?label ;
-             ?mapping ?external .
-    ?page schema:about ?concept ; dcterms:source ?source .
-    VALUES ?mapping { skos:exactMatch skos:closeMatch skos:broadMatch skos:narrowMatch skos:relatedMatch }
-  }
+  ?concept a skos:Concept ; skos:prefLabel ?label ;
+           ?mapping ?external .
+  ?page schema:about ?concept ; dcterms:source ?source .
+  VALUES ?mapping { skos:exactMatch skos:closeMatch skos:broadMatch skos:narrowMatch skos:relatedMatch }
 }
 ORDER BY ?concept
