@@ -5,6 +5,7 @@ title: Cognitive Active Inference knowledge base
 description: Concept pages on Active Inference and related fields, with typed and untyped relations and citation records, as SKOS/Dublin Core/schema.org RDF.
 stats: https://registry.okn.us/kg-stats/cognitive-kb
 homepage: https://github.com/ActiveInferenceInstitute/cognitive
+sparql: https://apps.okn.us/cognitive-kb/sparql
 tpf: https://apps.okn.us/kgf/cognitive-kb/latest/tpf
 kgf: https://apps.okn.us/kgf/cognitive-kb
 frink-options:
