@@ -6,6 +6,8 @@ description: "FDA Center for Tobacco Products data as RDF: the Searchable Tobacc
 stats: https://registry.okn.us/kg-stats/fda-tobacco-kg
 homepage: https://github.com/medical-device-design/FDA-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+tpf: https://apps.okn.us/kgf/fda-tobacco-kg/latest/tpf
+kgf: https://apps.okn.us/kgf/fda-tobacco-kg
 license: "https://creativecommons.org/publicdomain/zero/1.0/"
 frink-options:
   lakefs-repo: fda-tobacco-kg

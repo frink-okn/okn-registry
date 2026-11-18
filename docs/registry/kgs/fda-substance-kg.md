@@ -6,6 +6,8 @@ description: FDA's Global Substance Registration System (GSRS) and UNII substanc
 stats: https://registry.okn.us/kg-stats/fda-substance-kg
 homepage: https://github.com/medical-device-design/FDA-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+tpf: https://apps.okn.us/kgf/fda-substance-kg/latest/tpf
+kgf: https://apps.okn.us/kgf/fda-substance-kg
 license: "https://creativecommons.org/publicdomain/zero/1.0/"
 frink-options:
   lakefs-repo: fda-substance-kg

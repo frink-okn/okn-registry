@@ -8,6 +8,7 @@ homepage: https://www.glygen.org/
 funding: https://reporter.nih.gov/project-details/10494610
 sparql: https://apps.okn.us/glygenkg/sparql
 tpf: https://apps.okn.us/kgf/glygenkg/latest/tpf
+kgf: https://apps.okn.us/kgf/glygenkg
 frink-options:
   lakefs-repo: glygenkg
   documentation-path: glygenkg
