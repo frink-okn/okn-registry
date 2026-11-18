@@ -990,8 +990,15 @@ kgs:
     untyped relations and citation records, as SKOS/Dublin Core/schema.org RDF.
   frink-options:
     documentation-path: cognitive-kb
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - cognitive-kb
+        prefixes:
+          cognitive-kb: https://purl.org/okn/frink/kg/cognitive-kb/
     lakefs-repo: cognitive-kb
   homepage: https://github.com/ActiveInferenceInstitute/cognitive
+  kgf: https://apps.okn.us/kgf/cognitive-kb
   shortname: cognitive-kb
   stats: https://registry.okn.us/kg-stats/cognitive-kb
   template: overrides/kg.html
@@ -1231,6 +1238,7 @@ kgs:
     lakefs-repo: glygenkg
   funding: https://reporter.nih.gov/project-details/10494610
   homepage: https://www.glygen.org/
+  kgf: https://apps.okn.us/kgf/glygenkg
   license: https://creativecommons.org/licenses/by/4.0/
   shortname: glygenkg
   sparql: https://apps.okn.us/glygenkg/sparql
@@ -1447,11 +1455,13 @@ kgs:
     lakefs-repo: fda-tobacco-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://github.com/medical-device-design/FDA-kg
+  kgf: https://apps.okn.us/kgf/fda-tobacco-kg
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: fda-tobacco-kg
   stats: https://registry.okn.us/kg-stats/fda-tobacco-kg
   template: overrides/kg.html
   title: FDA Tobacco Knowledge Graph
+  tpf: https://apps.okn.us/kgf/fda-tobacco-kg/latest/tpf
 - contacts:
   - email: roche0619@outlook.com
     github: Roche619
@@ -1533,11 +1543,13 @@ kgs:
     lakefs-repo: fda-animal-health-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://github.com/medical-device-design/FDA-kg
+  kgf: https://apps.okn.us/kgf/fda-animal-health-kg
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: fda-animal-health-kg
   stats: https://registry.okn.us/kg-stats/fda-animal-health-kg
   template: overrides/kg.html
   title: FDA Animal Health Knowledge Graph
+  tpf: https://apps.okn.us/kgf/fda-animal-health-kg/latest/tpf
 - contacts:
   - email: roche0619@outlook.com
     github: Roche619
@@ -1563,11 +1575,13 @@ kgs:
     lakefs-repo: fda-food-cosmetic-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://github.com/medical-device-design/FDA-kg
+  kgf: https://apps.okn.us/kgf/fda-food-cosmetic-kg
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: fda-food-cosmetic-kg
   stats: https://registry.okn.us/kg-stats/fda-food-cosmetic-kg
   template: overrides/kg.html
   title: FDA Food and Cosmetic Knowledge Graph
+  tpf: https://apps.okn.us/kgf/fda-food-cosmetic-kg/latest/tpf
 - contacts:
   - email: roche0619@outlook.com
     github: Roche619
@@ -1592,11 +1606,13 @@ kgs:
     lakefs-repo: fda-compliance-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://github.com/medical-device-design/FDA-kg
+  kgf: https://apps.okn.us/kgf/fda-compliance-kg
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: fda-compliance-kg
   stats: https://registry.okn.us/kg-stats/fda-compliance-kg
   template: overrides/kg.html
   title: FDA Compliance Knowledge Graph
+  tpf: https://apps.okn.us/kgf/fda-compliance-kg/latest/tpf
 - contacts:
   - email: roche0619@outlook.com
     github: Roche619
@@ -1620,11 +1636,13 @@ kgs:
     lakefs-repo: fda-substance-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://github.com/medical-device-design/FDA-kg
+  kgf: https://apps.okn.us/kgf/fda-substance-kg
   license: https://creativecommons.org/publicdomain/zero/1.0/
   shortname: fda-substance-kg
   stats: https://registry.okn.us/kg-stats/fda-substance-kg
   template: overrides/kg.html
   title: FDA Substance Knowledge Graph
+  tpf: https://apps.okn.us/kgf/fda-substance-kg/latest/tpf
 - contacts:
   - email: shirlystephen@ucsb.edu
     github: shirlysteph
