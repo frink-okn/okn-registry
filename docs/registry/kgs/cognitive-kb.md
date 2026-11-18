@@ -5,9 +5,19 @@ title: Cognitive Active Inference knowledge base
 description: Concept pages on Active Inference and related fields, with typed and untyped relations and citation records, as SKOS/Dublin Core/schema.org RDF.
 stats: https://registry.okn.us/kg-stats/cognitive-kb
 homepage: https://github.com/ActiveInferenceInstitute/cognitive
+kgf: https://apps.okn.us/kgf/cognitive-kb
 frink-options:
   lakefs-repo: cognitive-kb
   documentation-path: cognitive-kb
+  kgf:
+    # No roles: the federation defaults already cover every naming predicate
+    # this graph uses (skos:prefLabel, dcterms:title, rdfs:label; skos:altLabel,
+    # schema:alternateName; dcterms:description, rdfs:comment, skos:definition).
+    semantics:
+      prefixes:
+        cognitive-kb: "https://purl.org/okn/frink/kg/cognitive-kb/"
+      authoritative_namespaces:
+        - cognitive-kb
 contacts:
   - email: daniel@activeinference.institute
     github: docxology
