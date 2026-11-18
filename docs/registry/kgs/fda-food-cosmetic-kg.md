@@ -6,6 +6,8 @@ description: FDA adverse event reports for foods, dietary supplements and cosmet
 stats: https://registry.okn.us/kg-stats/fda-food-cosmetic-kg
 homepage: https://github.com/medical-device-design/FDA-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+tpf: https://apps.okn.us/kgf/fda-food-cosmetic-kg/latest/tpf
+kgf: https://apps.okn.us/kgf/fda-food-cosmetic-kg
 license: "https://creativecommons.org/publicdomain/zero/1.0/"
 frink-options:
   lakefs-repo: fda-food-cosmetic-kg

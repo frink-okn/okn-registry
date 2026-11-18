@@ -6,6 +6,8 @@ description: FDA Center for Veterinary Medicine adverse event reports for animal
 stats: https://registry.okn.us/kg-stats/fda-animal-health-kg
 homepage: https://github.com/medical-device-design/FDA-kg
 funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+tpf: https://apps.okn.us/kgf/fda-animal-health-kg/latest/tpf
+kgf: https://apps.okn.us/kgf/fda-animal-health-kg
 license: "https://creativecommons.org/publicdomain/zero/1.0/"
 frink-options:
   lakefs-repo: fda-animal-health-kg
