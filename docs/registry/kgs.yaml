@@ -1003,6 +1003,7 @@ kgs:
   stats: https://registry.okn.us/kg-stats/cognitive-kb
   template: overrides/kg.html
   title: Cognitive Active Inference knowledge base
+  tpf: https://apps.okn.us/kgf/cognitive-kb/latest/tpf
 - contacts:
   - email: danny.e.oneal@gmail.com
     github: danny-oneal
