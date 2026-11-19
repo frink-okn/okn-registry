@@ -18,27 +18,24 @@ theme:
     - toc.follow
     - toc.integrate #puts the page anchor links on the left, instead of the right
     - navigation.indexes
-copyright: "Powered by <a href='https://renci.org/' target='_blank'>RENCI</a> and <a href='https://onai.com/' target='_blank'>Onai</a> with <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091' target='_blank'>NSF Award #2535091</a>"
+copyright: "Powered by <a href='https://renci.org/' target='_blank'>RENCI</a> and <a href='https://onai.com/' target='_blank'>Onai</a> with <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091' target='_blank'>NSF Award #2535091</a><br/>The Proto-OKN initiative is supported by <a href='/about/acknowledgments.md'>several federal agencies</a>."
 extra:
   homepage: https://okn.us
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/frink-okn/okn-registry
     - icon: okn-us/nsf
       link: https://www.nsf.gov/
       name: National Science Foundation
+    - icon: fontawesome/brands/github
+      link: https://github.com/frink-okn/okn-registry
     - icon: material/lock
       link: https://okn.us/privacy
       name: okn.us Privacy Policy
     - icon: material/email
       link: mailto:contact@proto-okn.net
       name: Get in touch with okn.us via email
-    - icon: material/email-box
-      link: https://www.proto-okn.net/contact/
-      name: Get in touch with okn.us via a form
-    - icon: fontawesome/solid/play-circle
-      link: https://www.proto-okn.net/presentations/
-      name: See videos about okn.us
+    - icon: material/slack
+      link: https://join.slack.com/t/okngroup/shared_invite/zt-2d0fhlmjp-43tyaQQrniKBwBlmivUKAA
+      name: Join the conversation on Slack
 extra_css:
   - https://cdn.datatables.net/2.3.7/css/dataTables.dataTables.css
   - styles.css
@@ -63,6 +60,7 @@ plugins:
         maxTextSize: 500000
 markdown_extensions:
   - admonition
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences:
         # make exceptions to highlighting of code:
@@ -106,6 +104,18 @@ nav:
       - Setup a Repo in the Landing Zone: help/setup.md
       - Update Graphs in the OKN: help/update.md
       - Update Example Queries: help/update-queries.md
+  - Resources:
+      - Presentations: resources/presentations.md # https://www.proto-okn.net/presentations/
+      - Publications: resources/publications.md # https://www.proto-okn.net/publications/
+  - About:
+      - about/index.md # https://www.proto-okn.net/about/
+      - Proto-OKN Projects:
+        - about/projects.md # https://www.proto-okn.net/projects/ (and subpages)
+        - Knowledge Graph Use Cases: about/theme-1-projects.md  # https://www.proto-okn.net/theme-1-projects/
+        - Fabric: about/theme-2-projects.md  # https://www.proto-okn.net/theme-2-projects/
+        - Education Gateway: about/theme-3-projects.md  # https://www.proto-okn.net/theme-3-projects/
+      - Contact us: about/contact.md # https://www.proto-okn.net/contact/ (just list emails)
+      - Support Acknowledgments: about/acknowledgments.md # https://www.proto-okn.net/ "The Proto-OKN initiative is supported by the following agencies:"  
 site_url: https://registry.okn.us
 
 #     - Knowledge Graph (KG) Dataset Status: okn/kgstatus.md (add these links to the registry pages)
