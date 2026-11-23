@@ -277,6 +277,7 @@ kgs:
     lakefs-repo: climatepub4-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
   kgf: https://apps.okn.us/kgf/climatemodelskg
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: climatemodelskg
   sparql: https://apps.okn.us/climatemodelskg/sparql
   stats: https://registry.okn.us/kg-stats/climate-kg
@@ -1395,6 +1396,32 @@ kgs:
   template: overrides/kg.html
   title: SAWGraph PFAS KG
   tpf: https://apps.okn.us/kgf/sawgraph/latest/tpf
+- contacts:
+  - email: margarita.bel@princeton.edu
+    github: across-stars
+    label: Margarita Belova
+  description: Diabetes-related biomedical knowledge graph extracted from PubMed Central
+    abstracts with GraphMERT, with per-triple provenance.
+  frink-options:
+    documentation-path: graphmert-diabetes
+    kgf:
+      semantics:
+        authoritative_namespaces:
+        - gm
+        prefixes:
+          gm: https://w3id.org/graphmert/diabetes/
+        roles:
+          label:
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2004/02/skos/core#altLabel
+    lakefs-repo: graphmert-diabetes
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216746
+  homepage: https://openreview.net/forum?id=tnXSdDhvqc
+  license: https://creativecommons.org/licenses/by/4.0/
+  shortname: graphmert-diabetes
+  stats: https://registry.okn.us/kg-stats/graphmert-diabetes
+  template: overrides/kg.html
+  title: GraphMERT Diabetes KG
 - contacts:
   - email: pmcneely@gwu.edu
     github: pmcneely
