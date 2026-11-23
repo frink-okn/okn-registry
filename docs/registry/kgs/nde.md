@@ -29,9 +29,6 @@ contacts:
 - email: asu@scripps.edu
   github: "andrewsu"
   label: "Andrew Su"
-- email: plwhetzel@gmail.com
-  github: "twhetzel"
-  label: "Trish Whetzel"
 ---
 
 The nde (NIAID Data Ecosystem) knowledge graph is a **dataset-discovery index**: use it to find and triage biomedical research datasets — including **gene-expression / transcriptomics** studies (RNA-seq, microarray, single-cell and single-nucleus), other **-omics**, clinical, epidemiological, pathogen–host interaction, flow-cytometry, and imaging data — as candidates for downstream reanalysis such as a **pooled or meta-analysis of differential gene expression**. Datasets are searchable by **disease or condition** (`healthCondition`), **organism** (`species`), **source repository** (`includedInDataCatalog`), infectious agent, authors, funding, and publications. The graph aggregates metadata mirrored from **NCBI GEO, ArrayExpress, and over 70 repositories**; while its coverage is deepest for **infectious and immune-mediated disease** (its NIAID mission), it indexes general-purpose repositories, so it also contains many datasets for **non-infectious diseases and conditions** (for example cancer, diabetes, and kidney disease). Note that nde holds **dataset-level metadata and links to the primary repository only** — it does not store per-sample records or computed expression values, so specific per-group sample counts must be retrieved from the source repository.
@@ -39,3 +36,19 @@ The nde (NIAID Data Ecosystem) knowledge graph is a **dataset-discovery index**:
 The NIAID Data Ecosystem (NDE) Knowledge Graph provides structured metadata for biomedical research resources, with deep coverage of infectious and immune-mediated disease (IID). Developed by the National Institute of Allergy and Infectious Diseases in collaboration with Scripps Research, this knowledge graph powers the NIAID Data Ecosystem Discovery Portal (https://data.niaid.nih.gov), which aggregates millions of datasets from over 70 sources including NIAID-funded repositories, globally-relevant IID repositories, and general-purpose archives such as NCBI GEO.
 
 The knowledge graph organizes metadata using Schema.org vocabulary, enabling unified search across diverse biomedical data types including -omics data (gene expression, transcriptomics, and other high-throughput assays), clinical studies, epidemiological data, pathogen-host interactions, flow cytometry, and imaging datasets. It connects datasets to their authors, funding sources, research projects, publications, and key disease and pathogen terms, facilitating discovery of resources related to COVID-19, HIV, malaria, tuberculosis, and — through its mirrored general repositories — many other diseases and conditions. By harmonizing heterogeneous metadata formats and providing both user-friendly search interfaces and programmatic API access, the NDE knowledge graph accelerates biomedical research and maximizes the impact of publicly-funded scientific data.
+
+```
+provenance:
+  - derivedFrom:
+      label: NIAID Data Ecosystem Discovery Portal
+      uri: https://data.niaid.nih.gov/
+      kind: Database
+      license:
+        data:
+          label: Multiple
+          note: >
+            Metadata generated or augmented by the NDE project (for example,
+            disease, species and infectious-agent annotations) is released
+            under CC0. Metadata harvested from source repositories, mostly
+            NCBI GEO, keeps the terms set by each source.
+```
