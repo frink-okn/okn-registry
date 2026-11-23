@@ -1,0 +1,76 @@
+#+ summary:Within NASA study OSD-48 (Rodent Research 1), find mouse genes (and their human orthologs) that show BOTH a transcriptomic and an epigenomic response to spaceflight: down-regulated in expression (log2 fold change < −1 and FDR-adjusted p-value < 0.05) AND linked to a differentially methylated genomic region (methylation q-value < 0.05). Draw the two signals from two distinct assays, one differential-expression assay and one differential-methylation assay, that each compare the  Space Flight condition against the Ground Control condition. Enforce experimental-condition consistency on the other (non-spaceflight) factors, not just on spaceflight status and biological material: within each assay, the two compared groups must have identical non-spaceflight experimental factors, so the groups differ only in spaceflight status and across the two assays, the differential-expression assay and the differential-methylation assay must use the same biological material and the same non-spaceflight factor value as each other. Return each human gene's IRI and symbol, the mouse gene symbol, the expression log2 fold change, the expression FDR-adjusted p-value, the methylation difference (percent), and the methylation q-value (and the shared condition factor), ordered by ascending log2 fold change, then ascending expression adjusted p-value, then human gene symbol, then human gene IRI, then mouse gene symbol, then methylation q-value, then ascending methylation difference, then methylation region IRI. [hard]
+#+ tags:
+#+   - spoke-genelab
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX schema: <https://purl.org/okn/frink/kg/spoke-genelab/schema/>
+
+SELECT ?human_gene_iri ?human_symbol ?mouse_symbol ?log2fc ?expr_adj_p_value
+       ?methylation_diff ?meth_q_value ?meth_region_iri ?condition_factor
+WHERE {
+  GRAPH <https://purl.org/okn/frink/kg/spoke-genelab> {
+
+    # --- Resolve study OSD-48 (Rodent Research 1) by its identifiers, not a hardcoded IRI ---
+    ?study a biolink:Study ;
+           rdfs:label "OSD-48" ;
+           schema:project_title "Rodent Research 1" .
+    ?study schema:PERFORMED_SpAS ?exprAssay , ?methAssay .
+
+    # --- Differential EXPRESSION assay: Space Flight vs Ground Control ---
+    ?exprAssay schema:measurement "transcription profiling" ;
+               schema:factor_space_1 "Space Flight" ;
+               schema:factor_space_2 "Ground Control" ;
+               schema:material_1 ?material ;
+               schema:material_2 ?material ;
+               schema:factors_1 ?ecf1 ;
+               schema:factors_2 ?ecf2 .
+    # within-assay: the non-spaceflight factor is identical in both compared groups
+    FILTER(?ecf1 NOT IN ("Space Flight","Ground Control","Basal Control","Vivarium Control"))
+    FILTER(?ecf2 NOT IN ("Space Flight","Ground Control","Basal Control","Vivarium Control"))
+    FILTER(?ecf1 = ?ecf2)
+    BIND(?ecf1 AS ?condition_factor)
+
+    ?exprStmt rdf:subject ?exprAssay ;
+              rdf:predicate schema:MEASURED_DIFFERENTIAL_EXPRESSION_ASmMG ;
+              rdf:object ?mouseGene ;
+              schema:log2fc ?log2fc ;
+              schema:adj_p_value ?expr_adj_p_value .
+    FILTER(?log2fc < -1.0)
+    FILTER(?expr_adj_p_value < 0.05)
+
+    # --- Differential METHYLATION assay: same material AND same condition factor ---
+    ?methAssay schema:measurement "DNA methylation profiling" ;
+               schema:factor_space_1 "Space Flight" ;
+               schema:factor_space_2 "Ground Control" ;
+               schema:material_1 ?material ;
+               schema:material_2 ?material ;
+               schema:factors_1 ?mcf1 ;
+               schema:factors_2 ?mcf2 .
+    # within-assay consistency
+    FILTER(?mcf1 NOT IN ("Space Flight","Ground Control","Basal Control","Vivarium Control"))
+    FILTER(?mcf2 NOT IN ("Space Flight","Ground Control","Basal Control","Vivarium Control"))
+    FILTER(?mcf1 = ?mcf2)
+    # across-assay: expression and methylation share the SAME non-spaceflight condition factor
+    FILTER(?mcf1 = ?condition_factor)
+
+    ?methStmt rdf:subject ?methAssay ;
+              rdf:predicate schema:MEASURED_DIFFERENTIAL_METHYLATION_ASmMR ;
+              rdf:object ?methRegion ;
+              schema:methylation_diff ?methylation_diff ;
+              schema:q_value ?meth_q_value .
+    FILTER(?meth_q_value < 0.05)
+
+    # --- Same mouse gene methylated in that differentially-methylated region ---
+    ?mouseGene schema:METHYLATED_IN_MGmMR ?methRegion ;
+               schema:symbol ?mouse_symbol .
+
+    # --- Human ortholog ---
+    ?mouseGene schema:IS_ORTHOLOG_MGiG ?humanGene .
+    ?humanGene schema:symbol ?human_symbol .
+
+    BIND(?humanGene AS ?human_gene_iri)
+    BIND(?methRegion AS ?meth_region_iri)
+  }
+}
+ORDER BY ASC(?log2fc) ASC(?expr_adj_p_value) ?human_symbol ?human_gene_iri ?mouse_symbol ?meth_q_value ?methylation_diff ?meth_region_iri

@@ -1,0 +1,17 @@
+#+ summary: Docket entries and their dates & ontology labels for a given nature of suit
+#+ tags:
+#+   - scales
+
+PREFIX j: <http://release.niem.gov/niem/domains/jxdm/7.2/#>
+PREFIX nc: <http://release.niem.gov/niem/niem-core/5.0/#>
+PREFIX scales: <http://schemas.scales-okn.org/rdf/scales#>
+
+SELECT ?case ?row_ordinal ?date ?label
+WHERE { 
+    ?case nc:CaseSubCategoryText ?nos ;
+        nc:StartDate ?date ;
+        j:RegisterAction ?entry .
+    ?entry nc:DocumentSequenceID ?row_ordinal ;
+        scales:OntologyLabel ?label .
+    FILTER regex(str(?nos), "44") .
+}

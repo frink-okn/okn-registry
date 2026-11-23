@@ -30,11 +30,13 @@ jobs:
         uses: astral-sh/setup-uv@v7
         with:
           version: "0.10.4"
+      - name: Check YAML frontmatter of KG registry files
+        run: uv run scripts/check_registry.py
       - name: Create local changes
         run: |
           touch docs/registry/kgs/*.md docs/registry/queries/*/*.rq; snakemake -c2 --show-failed-logs docs/registry/kgs.yaml docs/registry/index.md docs/query/sample-query-library.md
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           commit-message: "🚀 Automatically rebuilt derived files"
           committer: "GitHub Action <action@github.com>"

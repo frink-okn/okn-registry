@@ -99,6 +99,18 @@ def get_value(binding: dict, var: str, as_int: bool = False):
     return val
 
 
+def sort_partitions(partitions: list[dict]) -> list[dict]:
+    """Sort partition rows deterministically."""
+    return sorted(
+        partitions,
+        key=lambda item: (
+            item.get("count") is None,
+            -(item.get("count") or 0),
+            item["uri"],
+        ),
+    )
+
+
 def fetch_summary_stats(endpoint: str, shortnames: list[str]) -> dict[str, dict]:
     """Fetch top-level VoID stats for all KGs in a single query."""
     values = " ".join(f"<{DATASET_BASE}{s}>" for s in shortnames)
@@ -157,7 +169,10 @@ def fetch_all_class_partitions(endpoint: str, shortnames: list[str]) -> dict[str
             "label": compact_uri(uri),
             "count": get_value(b, "entityCount", as_int=True),
         })
-    return results
+    return {
+        shortname: sort_partitions(partitions)
+        for shortname, partitions in results.items()
+    }
 
 
 def fetch_all_property_partitions(endpoint: str, shortnames: list[str]) -> dict[str, list[dict]]:
@@ -185,7 +200,10 @@ def fetch_all_property_partitions(endpoint: str, shortnames: list[str]) -> dict[
             "label": compact_uri(uri),
             "count": get_value(b, "tripleCount", as_int=True),
         })
-    return results
+    return {
+        shortname: sort_partitions(partitions)
+        for shortname, partitions in results.items()
+    }
 
 
 def load_registry(registry_yaml: str) -> list[dict]:

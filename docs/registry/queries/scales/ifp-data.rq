@@ -1,0 +1,16 @@
+#+ summary: Labels describing "in forma pauperis" (IFP) grant/denial activity
+#+ tags:
+#+   - scales
+
+PREFIX j: <http://release.niem.gov/niem/domains/jxdm/7.2/#>
+PREFIX nc: <http://release.niem.gov/niem/niem-core/5.0/#>
+PREFIX scales: <http://schemas.scales-okn.org/rdf/scales#>
+
+SELECT ?case ?row_ordinal ?start_date ?court ?ifp_label
+WHERE { 
+    ?case j:RegisterAction ?entry ;
+        nc:StartDate ?start_date ;
+        j:CaseCourt ?court .
+    ?entry scales:IfpLabel ?ifp_label ;
+        nc:DocumentSequenceID ?row_ordinal .
+}

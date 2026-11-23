@@ -1,0 +1,29 @@
+#+ summary: Case duration by NIBRS offense code and drug code
+#+ tags:
+#+   - scales
+
+PREFIX j: <http://release.niem.gov/niem/domains/jxdm/7.2/#>
+PREFIX nibrs: <http://fbi.gov/cjis/nibrs/2023.0/>
+PREFIX nc: <http://release.niem.gov/niem/niem-core/5.0/#>
+PREFIX scales: <http://schemas.scales-okn.org/rdf/scales#>
+
+SELECT ?case ?startDate ?endDate
+       ?docketEntryCount ?nibrsOffense ?drugCode ?charge
+WHERE {
+  {
+    SELECT ?case ?startDate ?endDate
+           (COUNT(?de) AS ?docketEntryCount)
+    WHERE {
+      ?case a scales:CriminalCase ;
+            nc:StartDate ?startDate ;
+            nc:EndDate ?endDate ;
+            j:RegisterAction ?de .
+    }
+    GROUP BY ?case ?startDate ?endDate
+  }
+
+  ?case j:CaseDefendantParty ?defendant .
+  ?defendant j:PersonCharge ?charge .
+  ?charge nibrs:OffenseUCRCode ?nibrsOffense ;
+          j:DrugCategoryCode ?drugCode .
+}

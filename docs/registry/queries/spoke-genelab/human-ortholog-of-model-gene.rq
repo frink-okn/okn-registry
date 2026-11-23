@@ -1,0 +1,12 @@
+#+ summary: Find the human ortholog gene(s) of the model-organism gene with symbol "Adh1". Return each human gene's IRI and symbol, ordered alphabetically by symbol. [easy]
+#+ tags:
+#+   - spoke-genelab
+PREFIX schema: <https://purl.org/okn/frink/kg/spoke-genelab/schema/>
+SELECT DISTINCT ?human ?humanSymbol {
+    ?modelGene schema:symbol ?modelSymbol ;
+               schema:IS_ORTHOLOG_MGiG ?human .
+    FILTER(LCASE(STR(?modelSymbol)) = "adh1")
+    ?human schema:symbol ?humanSymbol ;
+           schema:organism "Homo sapiens" .
+}
+ORDER BY ?humanSymbol

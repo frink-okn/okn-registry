@@ -1,0 +1,17 @@
+#+ summary: Find chemical compounds that treat rheumatoid arthritis. Return each compound's IRI and its label (name), ordered alphabetically by compound name, limited to the first 10 results. [easy]
+#+ tags:
+#+   - spoke-okn
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX schema: <https://purl.org/okn/frink/kg/spoke-okn/schema/>
+
+SELECT DISTINCT ?compound ?compoundLabel {
+    ?disease a biolink:Disease ;
+             rdfs:label ?diseaseLabel .
+    FILTER(LCASE(STR(?diseaseLabel)) = "rheumatoid arthritis")
+    ?compound schema:TREATS_CtD ?disease ;
+              rdfs:label ?compoundLabel .
+}
+ORDER BY ?compoundLabel
+LIMIT 10

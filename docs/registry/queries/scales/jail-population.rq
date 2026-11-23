@@ -1,0 +1,23 @@
+#+ summary: List individuals who were in jail on a given day
+#+ tags:
+#+   - scales
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX scales: <http://schemas.scales-okn.org/rdf/scales#>
+PREFIX j: <http://release.niem.gov/niem/domains/jxdm/7.2/#>
+PREFIX nc: <http://release.niem.gov/niem/niem-core/5.0/#>
+
+SELECT DISTINCT ?entity WHERE {
+  VALUES ?date { "2021-02-01"^^xsd:date }
+
+  ?party j:PersonCharge ?charge ;
+         scales:DisambiguatedEntity ?entity .
+  ?charge nc:CourtCase ?case ;
+          j:Booking ?booking .
+  ?case j:RegisterAction ?entry .
+  ?booking nc:StartDate ?bookingDate .
+  OPTIONAL { ?booking nc:EndDate ?releaseDate . }
+    
+  FILTER(?bookingDate <= ?date)
+  FILTER(!BOUND(?releaseDate) || ?releaseDate >= ?date)
+}

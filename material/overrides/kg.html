@@ -273,7 +273,13 @@
     {% endif %}
     {% if page.meta.funding %}
     <dt>Funding</dt>
+    {% if page.meta.funding is string %}
     <dd><a href="{{ page.meta.funding }}">{{ page.meta.funding }}</a></dd>
+    {% else %}
+    {% for fundlink in page.meta.funding %}
+    <dd><a href="{{ fundlink }}">{{ fundlink }}</a></dd>
+    {% endfor %}
+    {% endif %}
     {% endif %}
   </dl>
 </aside>

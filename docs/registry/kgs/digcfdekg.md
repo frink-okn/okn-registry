@@ -5,10 +5,29 @@ title: CFDE REVEAL Knowledge Graph
 description: The CFDE REVEAL Knowledge Graph is a statistically inferred genomic evidence graph to integrate and disseminate knowledge within the Common Fund Data Ecosystem (CFDE).
 stats: https://registry.okn.us/kg-stats/digcfdekg
 homepage: https://cfdeknowledge.org/
-funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+funding:
+- https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+- https://reporter.nih.gov/project-details/11327746
 frink-options:
   lakefs-repo: digcfdekg
   documentation-path: digcfdekg
+  kgf:
+    semantics:
+      prefixes:
+        digcfdekg: "https://purl.org/okn/frink/kg/digcfdekg/schema/"
+        digcfdekg-node: "https://purl.org/okn/frink/kg/digcfdekg/node/"
+        digcfdekg-rel: "https://purl.org/okn/frink/kg/digcfdekg/relationship/"
+        ordo: "http://www.orpha.net/ORDO/"
+      roles:
+        label:
+          - "http://www.w3.org/2000/01/rdf-schema#label"
+      authoritative_namespaces:
+        - digcfdekg
+        - digcfdekg-node
+        - digcfdekg-rel
+sparql: https://apps.okn.us/digcfdekg/sparql
+tpf: https://apps.okn.us/kgf/digcfdekg/latest/tpf
+kgf: https://apps.okn.us/kgf/digcfdekg
 contacts:
   - email: flannick@broadinstitute.org
     github: "flannick"

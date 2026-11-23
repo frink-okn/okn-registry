@@ -1,0 +1,16 @@
+#+ summary: Device profile by FDA product code - device class, regulation number and title, number of 510(k) records and recalls
+#+ tags:
+#+   - medical-device-kg
+
+PREFIX ex: <https://bmedesign.org/medical-device-kg/ns/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?code ?deviceName ?deviceClass ?regulation ?regulationTitle ?k510Count ?recallCount WHERE {
+  VALUES ?code { "MXD" "KDI" "MUD" "IKZ" "FNL" "LLI" "OSI" "FNJ" }
+  ?cls a ex:ProductClassificationRecord ; ex:productCode ?code ; ex:deviceName ?deviceName ;
+       ex:deviceClass ?deviceClass ; ex:hasProductCode ?pc ; ex:hasRegulationNumber ?r .
+  ?r ex:regulationNumber ?regulation .
+  OPTIONAL { ?r ex:hasCFRSection ?sec . ?sec rdfs:label ?regulationTitle }
+  OPTIONAL { SELECT ?pc (COUNT(DISTINCT ?k) AS ?k510Count) WHERE { ?k a ex:K510Record ; ex:hasProductCode ?pc } GROUP BY ?pc }
+  OPTIONAL { SELECT ?pc (COUNT(DISTINCT ?rc) AS ?recallCount) WHERE { ?rc a ex:RecallRecord ; ex:hasProductCode ?pc } GROUP BY ?pc }
+}
+ORDER BY ?code

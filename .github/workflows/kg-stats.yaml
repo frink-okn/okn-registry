@@ -29,7 +29,7 @@ jobs:
           cd ..
           rm -rf graph-descriptions
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           commit-message: "🚀 Automatically updated kg-stats from graph-descriptions"
           committer: "GitHub Action <action@github.com>"

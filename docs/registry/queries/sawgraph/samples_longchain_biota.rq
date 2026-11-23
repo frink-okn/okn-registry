@@ -1,0 +1,35 @@
+# Retrieve 100 plant and animal (biota) sample results with the location type sampled, sample material type, observed property, substance, and detected result.  
+PREFIX coso: <http://w3id.org/coso/v1/contaminoso#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX pfas: <http://w3id.org/pfas/v1/>
+PREFIX dsstox: <http://w3id.org/DSSTox/v1/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+SELECT ?sample ?sampleName ?location ?coordinates (GROUP_CONCAT(DISTINCT ?materialTypeName;separator=",") as ?materialType) ?substance ?substanceName ?value ?unit ?date 
+WHERE {
+  ?sample rdf:type coso:BiotaSample;
+            coso:sampleOfMaterialType ?sampletype;
+    		coso:fromSamplePoint ?samplePoint;
+      		rdfs:label ?sampleName.
+  ?observation coso:analyzedSample ?sample;
+            a coso:ContaminantSampleObservation;
+            coso:hasFeatureOfInterest ?feature;
+            coso:ofSubstance ?substance;
+            coso:observedTime ?date;
+            coso:hasResult ?result.
+    ?substance rdf:type pfas:PerFAs; #Perfluoroalkyl substances (not poly)
+              skos:altLabel ?substanceName;
+              dsstox:hasCarbonChainLength ?carbonChainLength.
+  	FILTER(?carbonChainLength > 6)  #carbon chain > 6
+    ?result coso:measurementValue ?value.
+  	OPTIONAL{?result coso:measurementUnit/qudt:symbol ?unit.}  
+  	MINUS {VALUES ?value{"non-detect" "non-quantified"}} #only detect values
+  	?samplePoint geo:hasGeometry/geo:asWKT ?coordinates.
+  	?feature coso:ofFeatureType/rdfs:label ?location.
+  	?sampletype rdf:type coso:SampleMaterialType;
+            rdfs:label ?materialTypeName.
+} GROUP BY ?sample ?sampleName ?location ?substance ?substanceName ?value ?unit ?date ?coordinates
+LIMIT 100

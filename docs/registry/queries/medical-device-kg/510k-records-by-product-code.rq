@@ -1,0 +1,13 @@
+#+ summary: 510(k) records per FDA product code, newest first, with named predicate devices flagged
+#+ tags:
+#+   - medical-device-kg
+
+PREFIX ex: <https://bmedesign.org/medical-device-kg/ns/>
+SELECT ?code ?kNumber ?applicant ?decisionDate ?deviceName ?namedPredicate WHERE {
+  VALUES ?code { "MXD" "KDI" "MUD" "IKZ" "FNL" "LLI" "OSI" "FNJ" }
+  ?k a ex:K510Record ; ex:productCode ?code ; ex:kNumber ?kNumber ;
+     ex:applicant ?applicant ; ex:decisionDate ?decisionDate .
+  OPTIONAL { ?k ex:deviceName ?deviceName }
+  BIND(?kNumber IN ("K230553","K231328","K261074","K080964","K190334","K240601","K161237") AS ?namedPredicate)
+}
+ORDER BY ?code DESC(?decisionDate)
