@@ -908,9 +908,6 @@ kgs:
   - email: asu@scripps.edu
     github: andrewsu
     label: Andrew Su
-  - email: plwhetzel@gmail.com
-    github: twhetzel
-    label: Trish Whetzel
   description: "The nde (NIAID Data Ecosystem) knowledge graph is a dataset-discovery\
     \ index for finding biomedical research datasets \u2014 including gene-expression\
     \ / transcriptomics data (RNA-seq, microarray, single-cell / single-nucleus),\
