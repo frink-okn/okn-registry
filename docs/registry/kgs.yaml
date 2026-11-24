@@ -1190,6 +1190,7 @@ kgs:
   - https://reporter.nih.gov/project-details/11327746
   homepage: https://cfdeknowledge.org/
   kgf: https://apps.okn.us/kgf/digcfdekg
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: digcfdekg
   sparql: https://apps.okn.us/digcfdekg/sparql
   stats: https://registry.okn.us/kg-stats/digcfdekg
