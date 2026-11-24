@@ -1269,6 +1269,7 @@ kgs:
   funding:
   - https://reporter.nih.gov/project-details/11384758
   kgf: https://apps.okn.us/kgf/rdkg
+  license: https://creativecommons.org/licenses/by/4.0/
   shortname: rdkg
   sparql: https://apps.okn.us/rdkg/sparql
   template: overrides/kg.html
